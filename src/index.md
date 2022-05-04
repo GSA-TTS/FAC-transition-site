@@ -1,35 +1,44 @@
 ---
 layout: home.njk
 
-hero:
-  image: /assets/uswds/img/hero.png
-  callout:
-    alt: "Hero callout:"
-    text: Bring attention to a current priority
-  button:
-    href: /callout/
-    text: Call to action
-  link:
-    text: Link to more about that priority
-    href: /link/
-  content: Support the callout with some short explanatory text. You don't need more than a couple of sentences.
+outline:
+  title: The FAC transition
+  body: 
+    - The Federal Audit Clearinghouse is moving from Census to the GSA!
+    - Some things will change, some things will stay the same.
+
+grantees:
+  title: For grantees
+  links:
+    - title: You need a login.gov account.
+      link: pages/login
+
+auditors:
+  title: For auditors
+  links:
+    - title: You need a login.gov account.
+      link: grantees/login.gov
+
+feds:
+  title: For Feds
+  links:
+    - title:
+      link:
 
 cards:
-  - heading: Submit audits
+  - heading: For Grantees
     image:
       src: 
       alt: Alternative text
-    body: Submit a new audit or revise or certify an existing one. 
-  - heading: Review audits
+    body: Things grantees should know. 
+  - heading: For Auditors
     image:
       src: 
       alt: Alternative text
-    body: Review publicly available audits online.
-  - heading: Download audit data
+    body: Things auditors should know.
+  - heading: For Feds
     image:
       src: 
-      alt: Alternative text
-    button:
-      href: /
-      text: Download audit data
+      alt:
+    body: Things agencies should know.
 ---

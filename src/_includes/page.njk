@@ -1,0 +1,28 @@
+--- 
+layout: layout.njk 
+--- 
+{% import 'components/macros.njk' as m %}
+
+{% set dict_obj = "" %}
+{% for dk, obj in directory.pages %}
+    {% if dk == key %}
+        {% set dict_obj = obj %}
+    {% endif %}
+{% endfor %}
+
+<div class="grid-container">
+    <div class="grid-row grid-gap margin-05">
+        <div class="grid-col-fill">
+            <h1>{{dict_obj.title}}</h1>
+        </div>
+        <div class="grid-col-fill">
+            {{ m.applies_to(dict_obj.applies) }}
+        </div>
+    </div>
+   
+    <div class="grid-row margin-05">
+        <div class="grid-col-fill">
+            {{ content | safe }} 
+        </div>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+pages:
+  login:
+    title: Logging into the new FAC
+    applies:
+      - auditors
+      - grantees

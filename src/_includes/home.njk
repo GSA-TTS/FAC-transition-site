@@ -2,14 +2,46 @@
 layout: layout.njk 
 --- 
 
-{% include 'components/hero.njk' %} 
+{# {% include 'components/hero.njk' %} #}
 
-<section class="grid-container usa-section">
-  <ul class="usa-card-group">
-    {% for card in cards %} 
-      <li class="tablet:grid-col-4 usa-card">
-        {% include 'components/card.njk' %} 
-      </li>
-    {% endfor %}
-  </ul>
-</section>
+<div class="grid-container">
+
+<div class="grid-container">
+  <h1>{{ outline.title }} </h1>
+{% for p in outline.body %}
+  <p>{{p}}</p>
+{% endfor %}
+</div>
+
+<div class="grid-container">
+  <div class="grid-row">
+    <div class="tablet:grid-col">
+      <h2>{{grantees.title}}</h2>
+      <ul>
+      {% for k, v in directory.pages %}
+        {% if "grantees" in v.applies %}
+          <li><a href="/pages/{{v.key}}">{{v.title}}</a></li>
+        {% endif %}
+      {% endfor %}
+      </ul>
+    </div>
+    <div class="tablet:grid-col">
+      <h2>{{auditors.title}}</h2>
+      {% for k, v in directory.pages %}
+        {% if "auditors" in v.applies %}
+          <li><a href="/pages/{{v.key}}">{{v.title}}</a></li>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="tablet:grid-col">
+      <h2>{{feds.title}}</h2>
+      {% for k, v in directory.pages %}
+        {% if "feds" in v.applies %}
+          <li><a href="/pages/{{v.key}}">{{v.title}}</a></li>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+</div>
