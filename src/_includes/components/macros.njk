@@ -16,7 +16,7 @@
 </div>
 {% endmacro %}
 
-{% macro glossary(key, text) %}
+{% macro link(key, text) %}
   {% set url = "" %}
     {% for k, v in glossary %}
         {% if k == key %}

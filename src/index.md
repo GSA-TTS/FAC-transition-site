@@ -1,23 +1,12 @@
 ---
 layout: home.njk
 
-outline:
-  title: The FAC transition
-  body: 
-    - The Federal Audit Clearinghouse is moving from Census to the GSA!
-    - Some things will change, some things will stay the same.
-
 grantees:
   title: For grantees
   links:
-    - title: You need a login.gov account.
-      link: pages/login
-
 auditors:
   title: For auditors
   links:
-    - title: You need a login.gov account.
-      link: grantees/login.gov
 
 feds:
   title: For Feds
@@ -42,3 +31,10 @@ cards:
       alt:
     body: Things agencies should know.
 ---
+
+# The FAC Transition
+
+- The Federal Audit Clearinghouse (FAC) is moving from Census to the GSA!
+- This site will become the long-term home of the FAC.
+
+## Transition details...

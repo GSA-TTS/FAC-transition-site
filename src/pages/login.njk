@@ -1,12 +1,15 @@
 --- 
 layout: page.njk 
-key: login
+title: Logging into the FAC
+tags:
+    - grantees
+    - auditors
 --- 
 
 {% import 'components/macros.njk' as m %}
 
 <p>
-    To use the Federal Audit Clearinghouse, you will need to have an account with {{ m.glossary ("login", "login.gov") }}.
+    To use the Federal Audit Clearinghouse, you will need to have an account with {{ m.link ("login", "login.gov") }}.
 </p>
 
 <p>
@@ -16,7 +19,7 @@ key: login
 <ul>
     <li>Login.gov is free.</li>
     <li>Login.gov lets you have one username and password across many government services.</li>
-    <li>... and, really, {{ m.glossary("whatislogin", "they say it better than us") }}.</li>
+    <li>... and, really, {{ m.link("whatislogin", "they say it better than us") }}.</li>
 </ul>
 
 Login is used across many federal grants services. By using login.gov, we're working to create a uniform experience for grantees, auditors, and all users of the FAC.
