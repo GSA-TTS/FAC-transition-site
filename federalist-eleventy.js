@@ -6,6 +6,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('assets/img');
   
   return {
+    pathPrefix: "site/gsa-tts/fac-transition-site",
     dir: {
       input: 'src',
       includes: '_includes',
