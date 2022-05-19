@@ -11,11 +11,9 @@
 </head>
 
 <body>
-  <main id="main-content">
   {% include 'header.njk' %} 
-  <div class="grid-container"  style="margin: 10px;">
+  <main id="main-content">
     {{ content | safe }} 
-  </div>
   </main>
   {% include 'footer.njk' %}
   <script src="{{'/assets/js/uswds.min.js' | url}}" type="text/javascript"></script>

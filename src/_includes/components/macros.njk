@@ -1,4 +1,4 @@
-{% macro applies_to(applies, type='info') %} {# body, title='', type='info') #}
+{%- macro applies_to(applies, type='info') -%} {# body, title='', type='info') #}
 <div class="usa-alert usa-alert--{{type}} usa-alert--slim">
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">Does this apply to me?</h4>
@@ -14,14 +14,8 @@
     </p>
   </div>
 </div>
-{% endmacro %}
+{%- endmacro -%}
 
-{% macro link(key, text) %}
-  {% set url = "" %}
-    {% for k, v in glossary %}
-        {% if k == key %}
-          {% set url = v.url %}
-        {% endif %}
-    {% endfor %} 
-  <a href="{{url}}">{{text}}</a>
-{% endmacro %}
+{%- macro linkify(text, url) -%}
+  <a class="usa-link" href="{{url}}">{{text}}</a>
+{%- endmacro -%}
