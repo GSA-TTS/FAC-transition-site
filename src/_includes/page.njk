@@ -10,18 +10,19 @@ layout: layout.njk
     {% endif %}
 {% endfor %}
 
-<div class="grid-container">
-    <div class="grid-row grid-gap margin-05">
-        <div class="grid-col-fill">
+<div class="grid-container margin-y-4">
+    <div class="grid-row">
+        <div class="grid-col usa-prose">
             <h1>{{title}}</h1>
         </div>
-        <div class="grid-col-fill">
+
+        <div class="grid-col">
             {{ m.applies_to(dict_obj.applies) }}
         </div>
     </div>
    
-    <div class="grid-row margin-05">
-        <div class="grid-col-fill">
+    <div class="grid-row">
+        <div class="grid-col margin-y-4 desktop:grid-col-8 usa-prose">
             {{ content | safe }} 
         </div>
     </div>

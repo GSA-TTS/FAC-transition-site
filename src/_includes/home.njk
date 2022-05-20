@@ -1,15 +1,14 @@
 --- 
 layout: layout.njk 
 --- 
-<div class="grid-container">
 
-<div class="grid-container">
+<div class="grid-container margin-y-4 usa-prose">
   {{ content | safe }} 
 </div>
 
-<div class="grid-container">
+<div class="grid-container margin-y-4">
   <div class="grid-row">
-    <div class="tablet:grid-col">
+    <div class="grid-col desktop:grid-col-8">
       <h3>{{grantees.title}}</h3>
       <ul>
       {% for p in collections.grantees %}
@@ -17,13 +16,13 @@ layout: layout.njk
       {% endfor %}
       </ul>
     </div>
-    <div class="tablet:grid-col">
+    <div class="grid-col desktop:grid-col-8">
       <h3>{{auditors.title}}</h3>
       {% for p in collections.auditors %}
           <li><a href="{{p.url}}">{{p.data.title}}</a></li>
       {% endfor %}
     </div>
-    <div class="tablet:grid-col">
+    <div class="grid-col desktop:grid-col-8">
       <h3>{{feds.title}}</h3>
       {% for p in collections.feds %}
           <li><a href="{{p.url}}">{{p.data.title}}</a></li>
@@ -32,4 +31,3 @@ layout: layout.njk
   </div>
 </div>
 
-</div>
