@@ -1,4 +1,5 @@
 ---
+templateEngineOverride: njk,md
 layout: page.njk
 title: Logging into the FAC
 tags:
