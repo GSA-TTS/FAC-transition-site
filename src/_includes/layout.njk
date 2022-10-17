@@ -5,6 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Grab title from the page data and dump it here -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'script-src-elem' 'unsafe-inline'; object-src 'none'; worker-src 'none';">
+
+  <!-- Add Touchpoints intercept -->
+  <script src="https://touchpoints.app.cloud.gov/touchpoints/9412c559.js" async></script>
+
   <link rel="stylesheet" href="{{'/assets/css/styles.css' | url}}" media="all" type="text/css">
 
   <title>{{ global.site_name }}</title>
