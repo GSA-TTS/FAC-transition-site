@@ -2,11 +2,9 @@ site_name: Federal Audit Clearinghouse
 
 navigation:
   primary:
-    - text: Link
-      href: https://gsa.gov
-    - text: Section 1
-      links:
-        - text: Link 1
-          href: https://example.com
-        - text: Link 2
-          href: https://example.com
+    - text: Compliance
+      href: /compliance
+    - text: Worksheets
+      href: /worksheets
+    - text: How To
+      href: /fac-how-to
