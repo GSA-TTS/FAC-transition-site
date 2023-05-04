@@ -3,8 +3,8 @@ site_name: Federal Audit Clearinghouse
 navigation:
   primary:
     - text: Compliance
-      href: /compliance
+      href: compliance
     - text: Worksheets
-      href: /worksheets
+      href: worksheets
     - text: How To
-      href: /fac-how-to
+      href: fac-how-to
