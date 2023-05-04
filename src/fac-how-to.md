@@ -1,7 +1,7 @@
 ---
 templateEngineOverride: njk, md
 layout: page.njk
-title: Downloadable Worksheets
+title: How-To
 ---
 
 ## Level 2 heading
