@@ -1,12 +1,14 @@
 const yaml = require('js-yaml');
+const baseUrl = process.env.BASEURL;
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addDataExtension('yaml', (contents) => yaml.load(contents));
 
   eleventyConfig.addPassthroughCopy('assets/img');
-  
+
+
   return {
-    pathPrefix: "site/gsa-tts/fac-transition-site",
+    pathPrefix: baseUrl,
     dir: {
       input: 'src',
       includes: '_includes',
