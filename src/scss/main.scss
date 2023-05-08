@@ -1,1 +1,6 @@
 @use '_header.scss';
+
+
+.usa-date-picker__button {
+  @extend %usa-date-picker__button !optional;
+}
