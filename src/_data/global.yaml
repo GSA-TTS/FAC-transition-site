@@ -2,5 +2,9 @@ site_name: Federal Audit Clearinghouse
 
 navigation:
   primary:
-    - text: File an Audit
-      href: https://facweb.census.gov/
+    - text: Compliance
+      href: compliance
+    - text: Worksheets
+      href: worksheets
+    - text: How To
+      href: fac-how-to
