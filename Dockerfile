@@ -2,11 +2,9 @@
 FROM node:17
 
 WORKDIR /app
-COPY package*.json /app
+COPY . /app
 RUN npm install
 
 EXPOSE 8080
 
-# Run 11ty
-# CMD ["npx", "@11ty/eleventy", "--serve", "--port=8080", "--input=src"
 CMD ["npm", "run", "start"]
