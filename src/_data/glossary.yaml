@@ -3,3 +3,5 @@ sites:
     url: https://login.gov/
   whatislogin:
     url: https://login.gov/what-is-login/
+  gh_discussions:
+    url: https://github.com/GSA-TTS/FAC/discussions
