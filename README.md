@@ -24,10 +24,16 @@ npm run build
 
 ## Using Docker
 
-To build the container:
+One way is the compose:
 
 ```
-docker build -t fac/11ty .
+docker compose up --build
+```
+
+Or, to build the container:
+
+```
+docker build -t fac/11ty:latest .
 ```
 
 To run the container on the local directory:
