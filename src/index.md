@@ -32,9 +32,7 @@ OMB is extending the 2023 submission deadline.</h4>
   <li class="usa-card tablet:grid-col-4">
     <div class="usa-card__container">
       <div class="usa-card__header">
-        <h2 class="usa-card__heading"><svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-        <use xlink:href="/assets/img/sprite.svg#notifications_active"></use>
-      </svg> File</h2>
+        <h2 class="usa-card__heading">File</h2>
       </div>
       <div class="usa-card__body">
         <p>
@@ -49,9 +47,7 @@ OMB is extending the 2023 submission deadline.</h4>
   <li class="usa-card tablet:grid-col-4">
     <div class="usa-card__container">
       <div class="usa-card__header">
-        <h2 class="usa-card__heading"><svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-        <use xlink:href="/assets/img/sprite.svg#connect_without_contact"></use>
-      </svg> Connect</h2>
+        <h2 class="usa-card__heading">Connect</h2>
       </div>
       <div class="usa-card__body">
         <p>
@@ -69,9 +65,7 @@ OMB is extending the 2023 submission deadline.</h4>
   <li class="usa-card tablet:grid-col-4">
     <div class="usa-card__container">
       <div class="usa-card__header">
-        <h2 class="usa-card__heading"><svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-        <use xlink:href="/assets/img/sprite.svg#github"></use>
-      </svg> Contribute</h2>
+        <h2 class="usa-card__heading">Contribute</h2>
       </div>
       <div class="usa-card__body">
         <p>
