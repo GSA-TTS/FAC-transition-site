@@ -24,13 +24,6 @@ Our timeline in brief:
 
 ### General announcements
 
-{% set combined = [] %} 
-{% for item in updates.updates %}
-    {% if item.audience == "federal" or item.audience == "all" %}
-        {% set combined = (combined.push(item), combined) %}  
-    {% endif %}
-{% endfor %}
-
 <ul>
 {% for item in updates.updates %}
   {% if item.audience == "all" %}
