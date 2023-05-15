@@ -26,59 +26,18 @@ OMB is extending the 2023 submission deadline.</h4>
   </div>
 </div>
 
+## Ready to file?
 
-<div style="padding-top: 2em;">
-<ul class="usa-card-group">
-  <li class="usa-card tablet:grid-col-4">
-    <div class="usa-card__container">
-      <div class="usa-card__header">
-        <h2 class="usa-card__heading">File</h2>
-      </div>
-      <div class="usa-card__body">
-        <p>
-          To <a href="https://facweb.census.gov/uploadpdf.aspx">file your 2022 audits</a> and to <a href="https://facdissem.census.gov/Main.aspx">download 2022 and earlier data</a>, visit the current Federal Audit Clearinghouse page on census.gov's website.  
-        </p>
-      </div>
-      <div class="usa-card__footer">
-        <a href="https://facweb.census.gov/uploadpdf.aspx">File at census.gov</a>
-      </div>
-    </div>
-  </li>
-  <li class="usa-card tablet:grid-col-4">
-    <div class="usa-card__container">
-      <div class="usa-card__header">
-        <h2 class="usa-card__heading">Connect</h2>
-      </div>
-      <div class="usa-card__body">
-        <p>
-          Stay up-to-date on the progress of the fac.gov transition by catching up on our announcements, attending office hours, and signing up for our monthly newsletter.
-        </p>
-      </div>
-      <div class="usa-card__footer">
-        <a href="stay-connected/">Stay connected</a>
-      </div>
-    </div>
-  </li>
-  </ul>
-  <ul class="usa-card-group">
+To <a href="https://facweb.census.gov/uploadpdf.aspx">file your 2022 audits</a> and to <a href="https://facdissem.census.gov/Main.aspx">download 2022 and earlier data</a>, visit the current Federal Audit Clearinghouse page on [census.gov's website](https://facweb.census.gov/uploadpdf.aspx).  
 
-  <li class="usa-card tablet:grid-col-4">
-    <div class="usa-card__container">
-      <div class="usa-card__header">
-        <h2 class="usa-card__heading">Contribute</h2>
-      </div>
-      <div class="usa-card__body">
-        <p>
-          The FAC is developed in the open. Follow along, participate in testing and feedback, and even contribute!
-        </p>
-      </div>
-      <div class="usa-card__footer">
-        <a href="https://github.com/GSA-TTS/FAC/">The FAC @ GitHub</a>
-      </div>
-    </div>
-  </li>
-</ul>
-</div>
+## Updates
+
+Our updates are [for Federal staff as well as grantees and auditors](updates/).
+
+## See the FAC
+
+We have a [feature tour and overview of the FAC for grantees and auditors](/walkthrough/). We will begin beta testing in June, and open for broader testing later this summer.
+
 
 <!-- 
 Stay up-to-date on the progress of the fac.gov transition by signing up for our monthly newsletter.
