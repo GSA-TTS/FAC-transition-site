@@ -51,17 +51,21 @@
                 {% endfor %}
             </ul>
             <div class="sign-in-search">
-                <form class="usa-search usa-search--small" role="search">
-                    <label class="usa-sr-only" for="basic-search-field-en-small">
+                <form class="usa-search usa-search--small js-search-form" id="search_form"
+                      action="https://search.usa.gov/search"
+                      method="get"
+                      role="search">
+                    <input type="hidden" name="affiliate" id="affiliate" value="fac-transition-site" autocomplete="off" />
+                    <label class="usa-sr-only" for="query">
                         Search
                     </label>
                     <input
                         class="usa-input"
-                        id="basic-search-field-en-small"
+                        id="query"
                         type="search"
-                        name="search"
+                        name="query"
                     />
-                    <button class="usa-button" type="submit">
+                    <button class="usa-button" type="submit" data-disable-with="Search">
                         <img
                             src="{{ config.baseUrl }}assets/img/usa-icons-bg/search--white.svg"
                             class="usa-search__submit-icon"
