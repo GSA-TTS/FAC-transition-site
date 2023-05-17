@@ -5,3 +5,6 @@ sites:
     url: https://login.gov/what-is-login/
   gh_discussions:
     url: https://github.com/GSA-TTS/FAC/discussions
+terms:
+  gfac: GSA FAC
+  cfac: Census FAC

@@ -41,31 +41,7 @@ This walkthrough takes you step-by-step through the submission process while ans
         <h2 id="{{ item.data.title | slugify }}">{{item.data.title}}</h2>
 
   {{item.content | safe }}
-
-  <hr>
-  {% set num_questions = item.data.questions | length %}
-  {% if num_questions != 0 %}
-    <h3>Questions</h3>
-    <ol>
-    {% for inc in item.data.questions %}
-      {% set faq = faqs[inc] %}
-      {% if faq.audience == "submitter" %}
-        {% set audience = "auditee or auditor" %}
-        {% set prompt = "As either an" %}
-      {% else %}
-        {% set audience = faq.audience %}
-        {% set prompt = "As an" %}
-      {% endif %}
-      {% set ndx = "" %}
-      {% if num_questions > 1 %}
-        {% set ndx = loop.index %}
-      {% endif %}
-      <li>
-        <b>Q</b>: {{prompt}} {{audience}}, {{faq.question }}<br/>
-        <b>A</b>: {{faq.answer }}
-      </li>
-    {% endfor %}
-  {% endif %}
+  
   </div>
 </div>
   {% endif %}

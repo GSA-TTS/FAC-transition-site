@@ -32,7 +32,9 @@ To <a href="https://facweb.census.gov/uploadpdf.aspx">file your 2022 audits</a> 
 
 ## Updates
 
-Our updates are [for Federal staff as well as grantees and auditors](updates/).
+Our updates are [for federal staff as well as grantees and auditors](updates/).
+
+We have also consolidated [questions from the community](faq/) and provided brief answers in plain language.
 
 ## See the FAC
 
