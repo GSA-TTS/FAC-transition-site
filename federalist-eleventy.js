@@ -2,7 +2,7 @@ const yaml = require('js-yaml');
 const baseUrl = process.env.BASEURL;
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPlugin(require('.elevemty.js'));
+  eleventyConfig.addPlugin(require('.eleventy.js'));
 
   // eleventyConfig.addDataExtension('yaml', (contents) => yaml.load(contents));
 
