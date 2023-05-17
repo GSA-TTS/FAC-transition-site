@@ -34,6 +34,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("markdown", (markdownString) =>
     md.render(markdownString)
   );
+  eleventyConfig.addPassthroughCopy('robots.txt');
   
   return {
     markdownTemplateEngine: "njk",
