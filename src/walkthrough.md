@@ -36,7 +36,7 @@ This walkthrough takes you step-by-step through the submission process while ans
       <div class="grid-col-12 margin-top-8">
 
   {% if item.data.image %}
-      <img src="{{config.baseUrl}}/assets/img/walkthrough/{{item.data.image}}" width=400 style="margin-left: 2em; margin-bottom: 2em; float: right; border: 1px solid #555;"/>
+      <img src="{{config.baseUrl}}assets/img/walkthrough/{{item.data.image}}" width=400 style="margin-left: 2em; margin-bottom: 2em; float: right; border: 1px solid #555;"/>
   {% endif %}
         <h2 id="{{ item.data.title | slugify }}">{{item.data.title}}</h2>
 

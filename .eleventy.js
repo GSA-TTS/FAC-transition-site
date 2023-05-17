@@ -20,18 +20,16 @@ const hashCode = function(s) {
 };
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPlugin(pluginRss);
-
   eleventyConfig.addDataExtension('yaml', (contents) => yaml.load(contents));
   eleventyConfig.addPassthroughCopy('assets/img');
   eleventyConfig.addPassthroughCopy('favicon.ico');
+  eleventyConfig.addPassthroughCopy('robots.txt');
 
+  eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addFilter("hashcode", (s) => hashCode(s));
-
   eleventyConfig.addFilter("markdown", (markdownString) =>
     md.render(markdownString)
   );
-  eleventyConfig.addPassthroughCopy('robots.txt');
   
   return {
     markdownTemplateEngine: "njk",
