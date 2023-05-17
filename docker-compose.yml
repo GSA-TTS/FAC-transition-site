@@ -3,11 +3,11 @@ services:
   web:
     build:
       context: ./
-      target: dev
       dockerfile: Dockerfile.compose
     volumes:
-      - ./src:/src
-      - ./assets:/assets
+      # - ./src:/src
+      # - ./assets:/assets
+      - ./:/app
     command: npm run start
     ports:
       - "8080:8080"

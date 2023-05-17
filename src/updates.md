@@ -6,7 +6,7 @@ layout: home.njk
 
 <div class="usa-alert usa-alert--info">
   <div class="usa-alert__body">
-    <h4 class="usa-alert__heading">Informative status</h4>
+    <h4 class="usa-alert__heading">In brief</h4>
     <p class="usa-alert__text">
         Single Audits are being <a href="https://facdissem.census.gov/Main.aspx">collected at Census</a> until October 1, 2023.
 
@@ -15,7 +15,7 @@ layout: home.njk
   </div>
 </div>
 
-Our timeline in brief: 
+Our 2023 timeline: 
 
 * **Now**: API data dissemination pilot for Federal partners.
 * **June**: We begin beta testing with grantees and auditors.
@@ -25,29 +25,23 @@ Our timeline in brief:
 ### General announcements
 
 <ul>
-{% for item in updates.updates %}
-  {% if item.audience == "all" %}
-    <li>{{item.body}}</li>
-  {% endif %}
+{% for item in collections.general %}
+    <li>{{item.content | safe }}</li>
 {% endfor %}
 </ul>
 
-### Just for grantees and auditors
-
+### For grantees and auditors
 <ul>
-{% for item in updates.updates %}
-  {% if item.audience == "submitters" %}
-    <li>{{item.body}}</li>
-  {% endif %}
+{% for item in collections.submitters %}
+    <li>{{item.content | safe }}</li>
 {% endfor %}
 </ul>
 
-### Just for Feds
+
+### For agencies
 
 <ul>
-{% for item in updates.updates %}
-  {% if item.audience == "federal" %}
-    <li>{{item.body}}</li>
-  {% endif %}
+{% for item in collections.federal %}
+    <li>{{item.content | safe }}</li>
 {% endfor %}
 </ul>

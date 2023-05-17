@@ -1,8 +1,13 @@
 const yaml = require('js-yaml');
 
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const md = require("markdown-it")({
+  html: false,
+  breaks: true,
+  linkify: true,
+});
 
-hashCode = function(s) {
+const hashCode = function(s) {
   var hash = 0,
     i, chr;
   if (s.length === 0) return hash;
@@ -11,18 +16,25 @@ hashCode = function(s) {
     hash = ((hash << 5) - hash) + chr;
     hash |= 0;
   }
-  return hash;
+  return ((hash)>>>0).toString(16);
 };
 
+
+const markdownIt = require("markdown-it");
+
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(pluginRss);
+
   eleventyConfig.addDataExtension('yaml', (contents) => yaml.load(contents));
   eleventyConfig.addPassthroughCopy('assets/img');
   eleventyConfig.addPassthroughCopy('favicon.ico');
-  eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addFilter("hashcode", function(s) {
-    return hashcode(s);
-  });
 
+  eleventyConfig.addFilter("hashcode", (s) => hashCode(s));
+
+  eleventyConfig.addFilter("markdown", (markdownString) =>
+    md.render(markdownString)
+  );
+  
   return {
     markdownTemplateEngine: "njk",
     dir: {

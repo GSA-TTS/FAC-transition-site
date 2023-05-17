@@ -1,0 +1,35 @@
+login:
+  audience: submitter
+  # Will be prefaced with "As an auditee, "
+  question: do I need to use login.gov
+  answer: Yes. All users of the FAC will need accounts with login.gov.
+submission-start: 
+  audience: auditee
+  question: when can I start my submission?
+  answer: fac.gov will open for AY'23 submissions on October 1, 2023.
+submission-underway:
+  audience: submitter
+  question: can I expect submissions that are "in progress" to be transferred to the new system?
+  answer: No. If you start a submission on the Census system, you will need to complete it there. You will have a limited time window (~2 weeks) to complete audits that are "in progress."
+resubmissions:
+  audience: auditee
+  question: if I already submitted AY'23 on the Census system, will I have to resubmit?
+  answer: This should not be possible. The Census system currently only collects AY'22 and prior. If you encounter this, please submit a ticket to our help desk.
+new-forms:
+  audience: submitter
+  question: will I have to use new forms to submit my AY'23 Single Audit?
+  answer: Yes. We have worked closely with the community to create a transition experience that is consistent with previous years. It is our intent that the AY'23 forms will be *very familiar* to previous years.
+new-login-credentials:
+  audience: submitter
+  question: do I need new login credentials to access fac.gov?
+  answer: Yes. Everyone will need to [create an account with login.gov](https://login.gov/create-an-account/). 
+obtain-access:
+  audience: submitter
+  question: how do I get access to use fac.gov?
+  answer: "You will need to [create an account with login.gov](https://login.gov/create-an-account/). This will allow you to create new audit submissions, as well as specify additional auditors and auditees who should have access to any given Single Audit submission."
+auditor-experience:
+  audience: auditee
+  question: can my auditor support my submission on fac.gov like they did with the system at Census?
+  answer: Yes. We have worked with auditees and auditors to maintain the workflows you are familiar with. While there are some differences, it is still the case that auditees will work collaboratively with their auditors to upload their audit package and, ultimately, certify the legitimacy of their Single Audit.
+
+

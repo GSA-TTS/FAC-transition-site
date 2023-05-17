@@ -1,11 +1,8 @@
-FROM node:20-bullseye-slim as base
+FROM node:20-bullseye-slim
 
 WORKDIR /app
+COPY . /app
 COPY package*.json /
-EXPOSE 8080
-
-FROM base as dev
-ENV NODE_ENV=development
 RUN npm install
-COPY . /
-# CMD ["nodemon", "bin/www"]
+
+EXPOSE 8080

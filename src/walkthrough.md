@@ -1,103 +1,73 @@
 ---
 layout: home.njk
-walkthrough:
-    - title:
-      body: 
-      image: 
-    - title: Landing page
-      body: Your submission will begin with the fac.gov app homepage. You will need to sign in.
-      image: audit-home-page-20230515.png
-    - title: login.gov
-      body: |
-        First, **everyone** will need to have an account with [https://login.gov/](https://login.gov/). 
-        
-        Both auditors and grantees **must** have login.gov accounts. 
-      image: login-20230515.png
-    - title: Create a new audit
-      body: Once logged in, you can create a new audit, or see audits in-flight or already completed.
-      image: audit-create-new-20230515.png
-    - title: Criteria check
-      body: To start, we make sure you actually have to submit an audit.
-      image: submission-criteria-20230515.png
-    - title: Auditee information
-      body: |
-        Next, we ask for the auditee UEI. 
-        
-        **You must have a UEI**.
-
-        Everywhere that EINs were used previously, the Single Audit now expects UEIs.
-      image: auditee-info-20230515.png
-    - title: General information
-      body: |
-        We then ask for general information: auditor address, auditee address, and the like. 
-      image: general-info-20250515.png
-    - title: Workbook uploads
-      body: |
-        Once you have entered the general info, we ask you to upload a series of XLSX workbooks.
-
-        We will be providing templates for these files, and they will be available from fac.gov.
-        
-        Like prior years, there are some controls and validations build into the workbooks to help make sure your data entry is consistent. We check the basics (e.g. that you have correctly formatted your UEI), but it is up to you to check the correctness of your audit and findings.  
-      image: workbook-upload-20250515.png
-    - title: Audit package upload
-      body: |
-        As in the past, you will be asked to upload the audit package as a PDF.
-
-        continue to expect the PDF to be unlocked and generated so that the text is accessible.
-      image: upload-audit-package.png
-    - title: Certify your audit
-      body: |
-        Once you have uploaded all of your workbooks, and they are all validated, you can certify the correctness and completeness of your audit.
-
-        The Auditor Certifying Official **must** certify first.
-
-        The Auditee Certifying Official certifies second, as the auditee bears the ultimate responsibility for the contents of the Single Audit.
-
-        If anything changes after the auditor certification (e.g. a workbook or the audit package is re-uploaded), then the Auditor Certifying Official will need to certify again.
-      image: auditor-certification.png
-    - title: Almost done
-      body: |
-        After both the auditor and auditee have certified the Single Audit, it is possible to submit the entire package to the FAC.
-      image: submission-almost-done.png
-    - title: Success!
-      body: | 
-        You're done!
-
-        We highly recommend you keep a copy of all of your audit materials. If you find you need to resubmit, having the originals will make it *much* easier to reupload.
-      image: submitted-success.png
-    - title:
-      body: 
-      image: 
-    - title:
-      body: 
-      image: 
+terms:
+  cfac: Census FAC
+  cfac_url: https://facweb.census.gov/
+  gfac: GSA FAC
+  gfac_url: https://fac.gov/
 ---
 
-# FAC walkthrough
 
-What will the new FAC look like?
+# The new FAC
 
-We have built the new FAC to be accessible and consistent. It should "feel" like the old FAC, but it is ready for improvements in years to come.
+The new [fac.gov]({{terms.gfac_url}})&mdash;the {{terms.gfac}}&mdash;is designed to be accessible and consistent. It should "feel" like the previous FAC&mdash;the {{terms.cfac}}&mdash;but it is designed for significant improvements in years to come.
 
-Click on the screenshots to zoom in.
+This walkthrough takes you step-by-step through the submission process while answering questions auditors and auditees have asked as part of our user research.
 
-{% for item in walkthrough %}
-{% if item.title | length %}
+
+## The {{terms.gfac}} in brief 
+
+<ol>
+{% for item in collections.walkthrough %}
+  {% if item.data.title | length %}
+  <li>
+    <a href="#{{item.data.title | slugify }}">{{item.data.title}}</a>
+  </li>
+  {% endif %}
+{% endfor %}
 
 <div class="grid-container">
-  <div class="grid-row">
-    <div class="grid-col-3">
 
-{% if item.image %}
-    <img src="/assets/img/walkthrough/{{item.image}}" width=300 style="border: 1px solid #555"/>
-{% endif %}
-    </div>
-    <div class="grid-col-3 margin-left-3">
-      <h2>{{item.title}}</h2>
- 
-{{item.body }}
-    </div>
+{% for item in collections.walkthrough %}
+
+  {% if item.data.title | length %}
+
+    <div class="grid-row">
+      <div class="grid-col-12 margin-top-8">
+
+  {% if item.data.image %}
+      <img src="/assets/img/walkthrough/{{item.data.image}}" width=400 style="margin-left: 2em; margin-bottom: 2em; float: right; border: 1px solid #555;"/>
+  {% endif %}
+        <h2 id="{{item.data.title | slugify }}">{{item.data.title}}</h2>
+
+  {{item.content | safe }}
+
+  <hr>
+  {% set num_questions = item.data.questions | length %}
+  {% if num_questions != 0 %}
+    <h3>Questions</h3>
+    <ol>
+    {% for inc in item.data.questions %}
+      {% set faq = faqs[inc] %}
+      {% if faq.audience == "submitter" %}
+        {% set audience = "auditee or auditor" %}
+        {% set prompt = "As either an" %}
+      {% else %}
+        {% set audience = faq.audience %}
+        {% set prompt = "As an" %}
+      {% endif %}
+      {% set ndx = "" %}
+      {% if num_questions > 1 %}
+        {% set ndx = loop.index %}
+      {% endif %}
+      <li>
+        <b>Q</b>: {{prompt}} {{audience}}, {{faq.question }}<br/>
+        <b>A</b>: {{faq.answer }}
+      </li>
+    {% endfor %}
+  {% endif %}
   </div>
-{% endif %}
 </div>
+  {% endif %}
 {% endfor %}
+</div>
