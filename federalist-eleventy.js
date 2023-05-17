@@ -2,13 +2,16 @@ const yaml = require('js-yaml');
 const baseUrl = process.env.BASEURL;
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addDataExtension('yaml', (contents) => yaml.load(contents));
+  eleventyConfig.addPlugin(require('.elevemty.js'));
 
-  eleventyConfig.addPassthroughCopy('assets/img');
-  eleventyConfig.addPassthroughCopy('robots.txt');
+  // eleventyConfig.addDataExtension('yaml', (contents) => yaml.load(contents));
+
+  // eleventyConfig.addPassthroughCopy('assets/img');
+  // eleventyConfig.addPassthroughCopy('robots.txt');
 
 
   return {
+    markdownTemplateEngine: "njk",
     pathPrefix: baseUrl,
     dir: {
       input: 'src',
