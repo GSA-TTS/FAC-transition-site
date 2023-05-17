@@ -19,8 +19,8 @@ const hashCode = function(s) {
   return ((hash)>>>0).toString(16);
 };
 
+const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
-const markdownIt = require("markdown-it");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -28,6 +28,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addDataExtension('yaml', (contents) => yaml.load(contents));
   eleventyConfig.addPassthroughCopy('assets/img');
   eleventyConfig.addPassthroughCopy('favicon.ico');
+  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
   eleventyConfig.addFilter("hashcode", (s) => hashCode(s));
 
