@@ -4,9 +4,6 @@ layout: home.njk
 
 # The FAC transition
 
-* The Federal Audit Clearinghouse (FAC) is moving from Census to the GSA for the 2023 Audit Year.
-* In October, fac.gov will become the long-term home of the FAC and will begin collecting 2023 audits in September of this year.
-
 <div
   class="usa-summary-box"
   role="region"
@@ -17,10 +14,11 @@ layout: home.njk
 OMB is extending the 2023 submission deadline.</h4>
     <div class="usa-summary-box__text">
       <ul class="usa-list">
-      <li> Audits must now submitted within 9 months after the fiscal period end date.</li>
-        <li>
-        OMB is waiving Rule <a href="https://www.ecfr.gov/current/title-2/subtitle-A/chapter-II/part-200/subpart-F#p-200.512(a)(1)">2 CFR &sect; 200.512(1)</a>, stating that single audits are due to the FAC 30 days after receipt of auditor's report(s) for 2023 submissions. Audits with fiscal periods ending between January 1, 2023 and September 30, 2023 will be on time if submitted within 9 months of their fiscal period end date.    
-        </li>
+      {% for announcement in collections.frontpage %}
+        {% if "frontpage" in announcement.data.tags %}
+          <li>{{ announcement.content | safe }}</li>
+        {% endif %}
+      {% endfor %}
       </ul>
     </div>
   </div>

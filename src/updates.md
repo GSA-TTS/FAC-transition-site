@@ -15,33 +15,42 @@ layout: home.njk
   </div>
 </div>
 
-Our 2023 timeline: 
+#### Our 2023 timeline 
 
 * **Now**: API data dissemination pilot for Federal partners.
 * **June**: We begin beta testing with grantees and auditors.
 * **July**: Testing of search and download for AROs.
 * **August**: User acceptance testing with grantees, auditors, and federal staff.   
 
-### General announcements
+#### Jump to
+
+* [General updates](#general)
+* Updates for [grantees and auditors](#grantees-and-auditors)
+* Updates for [agencies](#agencies)
+
+<h3 id="general" >General updates</h3>
+
+{#
+Updates are sorted with newest posts at the top. The "date" field in the update's front matter is what we use. The date in the filename is the date we create the file, and is never seen outside of the repo.
+#}
 
 <ul>
-{% for item in collections.general %}
+{% for item in collections.general | sort(true, true, "date") %}
     <li>{{item.content | safe }}</li>
 {% endfor %}
 </ul>
 
-### For grantees and auditors
+<h3 id="grantees-and-auditors">For grantees and auditors</h3>
 <ul>
-{% for item in collections.submitters %}
+{% for item in collections.submitters | sort(true, true, "data.date") %}
     <li>{{item.content | safe }}</li>
 {% endfor %}
 </ul>
 
 
-### For agencies
-
+<h3 id="agencies">For agencies</h3>
 <ul>
-{% for item in collections.federal %}
+{% for item in collections.federal | sort(true, true, "time") %}
     <li>{{item.content | safe }}</li>
 {% endfor %}
 </ul>
