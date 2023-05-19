@@ -10,9 +10,9 @@ terms:
 
 # The new FAC
 
-The new [fac.gov]({{terms.gfac_url}})&mdash;the {{terms.gfac}}&mdash;is designed to be accessible and consistent. It should "feel" like the previous FAC&mdash;the {{terms.cfac}}&mdash;but it is designed for significant improvements in years to come.
+The new [fac.gov]({{terms.gfac_url}})&mdash;the GSA FAC&mdash;is designed to be accessible and consistent. It is similar to the Census FAC but follows human-centered design principles, which let your feedback guide our decisions. This will allow for continued improvements over time.
 
-This walkthrough takes you step-by-step through the submission process while answering questions auditors and auditees have asked as part of our user research.
+This overview goes through the submission process step-by-step.
 
 
 ## The {{terms.gfac}} in brief 
