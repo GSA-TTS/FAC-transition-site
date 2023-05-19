@@ -30,13 +30,11 @@ To <a href="https://facweb.census.gov/uploadpdf.aspx">file your 2022 audits</a> 
 
 ## Updates
 
-Our updates are [for federal staff as well as grantees and auditors](updates/).
-
-We have also consolidated [questions from the community](faq/) and provided brief answers in plain language.
+We provide regular [FAC updates for federal staff as well as grantees and auditors](updates/).
 
 ## See the FAC
 
-We have a [feature tour and overview of the FAC for grantees and auditors](walkthrough/). We will begin beta testing in June, and open for broader testing later this summer.
+We have [an overview of the FAC process for grantees and auditors](walkthrough/). We will begin beta testing in June, and open for broader testing later this summer.
 
 
 <!-- 
