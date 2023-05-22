@@ -3,4 +3,4 @@ tags: faq
 question: will I have to use new forms to submit my AY'23 Single Audit?
 ---
 
-Yes. We have worked closely with the community to create a transition experience that is consistent with previous years. It is our intent that the AY'23 forms will be *very familiar* to previous years.
+Yes. We've worked with the grants community to make the transition process as consistent as possible with previous years. We've done our best to make the AY'23 forms similar to previous years.
