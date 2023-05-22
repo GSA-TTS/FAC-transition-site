@@ -5,6 +5,7 @@ terms:
   cfac_url: https://facweb.census.gov/
   gfac: GSA FAC
   gfac_url: https://fac.gov/
+walkthrough_date: "20230519"
 ---
 
 
@@ -36,7 +37,7 @@ This overview goes through the submission process step-by-step.
       <div class="grid-col-12 margin-top-8">
 
   {% if item.data.image %}
-      <img src="{{config.baseUrl}}assets/img/walkthrough/{{item.data.image}}" width=400 style="margin-left: 2em; margin-bottom: 2em; float: right; border: 1px solid #555;"/>
+      <img src="{{config.baseUrl}}assets/img/walkthrough/{{walkthrough_date}}/{{item.data.image}}" width=400 style="margin-left: 2em; margin-bottom: 2em; float: right; border: 1px solid #555;"/>
   {% endif %}
         <h2 id="{{ item.data.title | slugify }}">{{item.data.title}}</h2>
 
