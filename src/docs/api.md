@@ -9,8 +9,6 @@ layout: home.njk
 
 The FAC dissemination API is actively under development. What follows is live documentation from the API as it exists today.
 
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/swagger-ui-dist@3/swagger-ui.css">
-
 <div id="fac-api-docs" />
 <script src="https://unpkg.com/swagger-ui-dist@3/swagger-ui-bundle.js"></script>
 <script>
