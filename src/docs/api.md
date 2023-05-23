@@ -2,16 +2,16 @@
 layout: home.njk
 api_endpoint: "https://api.data.gov/TEST/audit-clearinghouse/v0/dissemination"
 ---
-<style>
-    {% include "swagger.css" %}
-</style>
+
+<link rel="stylesheet" type="text/css" href="swagger-ui.css">
+
 
 # FAC API pilot documentation
 
 The FAC dissemination API is actively under development. What follows is live documentation from the API as it exists today.
 
 <div id="fac-api-docs" />
-<script src="https://unpkg.com/swagger-ui-dist@3/swagger-ui-bundle.js"></script>
+<script src="swagger-ui-bundle.js"></script>
 <script>
     window.onload = function () {
         const ui = SwaggerUIBundle({
