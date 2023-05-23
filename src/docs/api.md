@@ -1,5 +1,6 @@
 ---
 layout: home.njk
+api_endpoint: "https://api.data.gov/TEST/audit-clearinghouse/v0/dissemination"
 ---
 <style>
     {% include "swagger.css" %}
@@ -14,7 +15,7 @@ The FAC dissemination API is actively under development. What follows is live do
 <script>
     window.onload = function () {
         const ui = SwaggerUIBundle({
-            url: "https://fac-dev-postgrest.app.cloud.gov/#/",
+            url: "{{api_endpoint}}",
             dom_id: "#fac-api-docs",
             deepLinking: true,
             supportedSubmitMethods: [],
