@@ -1,6 +1,9 @@
 ---
 layout: home.njk
 ---
+<style>
+    {% include "swagger.css" %}
+</style>
 
 # FAC API pilot documentation
 
