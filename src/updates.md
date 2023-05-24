@@ -48,7 +48,7 @@ Updates are sorted with newest posts at the top. The "date" field in the update'
 </ul>
 
 
-<h3 id="agencies">For agencies</h3>
+<h3 id="agencies">For Federal awarding agencies</h3>
 <ul>
 {% for item in collections.federal | sort(true, true, "time") %}
     <li>{{item.content | safe }}</li>
