@@ -4,12 +4,6 @@ const baseUrl = process.env.BASEURL;
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(require('/tmp/work/site_repo/.eleventy.js'));
 
-  // eleventyConfig.addDataExtension('yaml', (contents) => yaml.load(contents));
-
-  // eleventyConfig.addPassthroughCopy('assets/img');
-  // eleventyConfig.addPassthroughCopy('robots.txt');
-
-
   return {
     markdownTemplateEngine: "njk",
     pathPrefix: baseUrl,

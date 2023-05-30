@@ -22,6 +22,7 @@ const hashCode = function(s) {
 module.exports = function (eleventyConfig) {
   eleventyConfig.addDataExtension('yaml', (contents) => yaml.load(contents));
   eleventyConfig.addPassthroughCopy('assets/img');
+  eleventyConfig.addPassthroughCopy('api.html');
   eleventyConfig.addPassthroughCopy('favicon.ico');
   eleventyConfig.addPassthroughCopy('robots.txt');
 
