@@ -8,7 +8,7 @@
     "start": "npx gulp copyAssets && npx gulp watch & npx @11ty/eleventy --serve",
     "build:docs": "npx redocly build-docs src/_data/api-spec.yaml --output=api.html",
     "build": "npm run build:docs && npx gulp copyAssets && npx gulp compile && npx @11ty/eleventy",
-    "federalist": "npx run build: docs && npx gulp copyAssets && npx gulp compile && npx @11ty/eleventy --config=federalist-eleventy.js"
+    "federalist": "npm run build:docs && npx gulp copyAssets && npx gulp compile && npx @11ty/eleventy --config=federalist-eleventy.js"
   },
   "keywords": [],
   "author": "",
