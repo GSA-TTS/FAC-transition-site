@@ -1,9 +1,9 @@
 ---
 layout: home.njk
-title: The Federal Audit Clearing House Transition
+title: The Federal Audit Clearinghouse transition
 meta:
-  name: The Federal Audit Clearing House Transition
-  description: The Fedearl Audit Clearinghouse is transitioning from the Census to GSA in October, 2023.
+  name: The Federal Audit Clearinghouse transition
+  description: The Federal Audit Clearinghouse is transitioning from the Census to GSA in October, 2023.
 ---
 
 # The FAC transition

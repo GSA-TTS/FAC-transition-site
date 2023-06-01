@@ -1,5 +1,9 @@
 ---
 layout: home.njk
+title: The new FAC
+meta:
+  name: The new FAC
+  description: Preview the new single audit submission process and instructions for completion.
 terms:
   cfac: Census FAC
   cfac_url: https://facweb.census.gov/
