@@ -1,6 +1,9 @@
 ---
 layout: home.njk
 title: Frequently asked questions
+meta:
+  name: Frequently asked questions about the FAC
+  description: Get the answers to your questions about the new FAC and the transition process.
 ---
 
 # {{title}}

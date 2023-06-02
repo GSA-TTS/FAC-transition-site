@@ -1,5 +1,9 @@
 ---
 layout: home.njk
+title: The Federal Audit Clearinghouse transition
+meta:
+  name: The Federal Audit Clearinghouse transition
+  description: The Federal Audit Clearinghouse is transitioning from the Census to GSA in October, 2023.
 ---
 
 # The FAC transition
@@ -7,8 +11,7 @@ layout: home.njk
 <div
   class="usa-summary-box"
   role="region"
-  aria-labelledby="summary-box-key-information"
->
+  aria-labelledby="summary-box-key-information">
   <div class="usa-summary-box__body">
     <h4 class="usa-summary-box__heading" id="summary-box-key-information">
 OMB is extending the 2023 submission deadline.</h4>
