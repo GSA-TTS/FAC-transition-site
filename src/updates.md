@@ -3,7 +3,7 @@ layout: home.njk
 title: Updates from the FAC
 meta:
   name: Updates from the Federal Audit Clearinghouse
-  description: Stay up-to-date on the FAC transition and the latest on the single audit process.
+  description: Stay up-to-date on the FAC transition and read the latest on the single audit process.
 ---
 
 # Updates
