@@ -19,10 +19,6 @@ meta:
   </div>
 </div>
 
-#### Our 2023 timeline 
-
-* **Now**: User testing with auditors.
-* **Late July-August**: Open beta testing.
 
 #### Jump to
 
