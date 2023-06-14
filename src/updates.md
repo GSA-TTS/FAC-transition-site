@@ -21,10 +21,8 @@ meta:
 
 #### Our 2023 timeline 
 
-* **Now**: API data dissemination pilot for Federal partners.
-* **June**: We begin beta testing with grantees and auditors.
-* **July**: Testing of search and download for AROs.
-* **August**: User acceptance testing with grantees, auditors, and federal staff.   
+* **Now**: User testing with auditors.
+* **Late July-August**: Open beta testing.
 
 #### Jump to
 
