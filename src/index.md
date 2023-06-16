@@ -37,7 +37,7 @@ We provide regular [FAC updates for federal staff as well as grantees and audito
 
 ## See the FAC
 
-We have [an overview of the FAC process for grantees and auditors](walkthrough/). We will begin beta testing in June, and open for broader testing later this summer.
+We have [an overview of the FAC process for grantees and auditors](walkthrough/).
 
 
 <!-- 
