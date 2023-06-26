@@ -2,19 +2,12 @@ site_name: Federal Audit Clearinghouse
 
 navigation:
   primary:
-    - text: Updates
-      href: updates
-    - text: Walkthrough
-      href: walkthrough
-    - text: FAQ
-      href: faq
+    - text: News
+      href: news
     - text: Resources & Policy
       href: resources
-      - text: Worksheets
-        href: worksheets
-      - text: Guides
-        href: guides
-      - text: Compliance
-        href: compliance
-      - text: Uniform Guidance
-        href: uniform guidance    
+    - text: FAQ
+      href: faq
+    - text: Contact
+      href: contact
+   
