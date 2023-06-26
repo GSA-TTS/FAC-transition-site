@@ -8,3 +8,13 @@ navigation:
       href: walkthrough
     - text: FAQ
       href: faq
+    - text: Resources & Policy
+      href: resources
+      - text: Worksheets
+        href: worksheets
+      - text: Guides
+        href: guides
+      - text: Compliance
+        href: compliance
+      - text: Uniform Guidance
+        href: uniform guidance    
