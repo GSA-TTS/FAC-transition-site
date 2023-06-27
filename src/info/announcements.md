@@ -8,16 +8,21 @@ meta:
 
 # Announcements
 
-<div class="usa-alert usa-alert--info">
-  <div class="usa-alert__body">
-    <h4 class="usa-alert__heading">In brief</h4>
-    <p class="usa-alert__text">
-        OPM is extending the 2023 submission deadline
-        <ul>
-{% for item in collections.general | sort(true, true, "date") %}
-    <li>{{item.content | safe }}</li>
-{% endfor %}
-</ul>.
-    </p>
+<div
+  class="usa-summary-box"
+  role="region"
+  aria-labelledby="summary-box-key-information">
+  <div class="usa-summary-box__body">
+    <h4 class="usa-summary-box__heading" id="summary-box-key-information">
+OMB is extending the 2023 submission deadline.</h4>
+    <div class="usa-summary-box__text">
+      <ul class="usa-list">
+      {% for announcement in collections.frontpage %}
+        {% if "frontpage" in announcement.data.tags %}
+          <li>{{ announcement.content | safe }}</li>
+        {% endif %}
+      {% endfor %}
+      </ul>
+    </div>
   </div>
 </div>
