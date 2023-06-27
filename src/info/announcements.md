@@ -1,9 +1,9 @@
 ---
 layout: home.njk
-title: Announcements from OPM
+title: OPM Announcements
 meta:
-  name: Updates from the Federal Audit Clearinghouse
-  description: Stay up-to-date on the FAC transition and read the latest on the single audit process.
+  name: OPM Announcements
+  description: Announcements and deadline information from the Office of Personnel Management.
 ---
 
 # Updates
