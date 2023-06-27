@@ -3,9 +3,21 @@ site_name: Federal Audit Clearinghouse
 navigation:
   primary:
     - text: News
-      href: news
+      links:
+        - text: OMB Announcements
+          href: omb announcements
+        - text: FAC updates
+          href: updates
     - text: Resources & Policy
-      href: resources
+      links:
+        - text: Worksheets
+          href: worksheets
+        - text: Instructions
+          href: instructions
+        - text: Compliance
+          href: compliance
+        - text: Uniform Guidance
+          href: guidance
     - text: FAQ
       href: faq
     - text: Contact
