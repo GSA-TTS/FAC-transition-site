@@ -12,7 +12,12 @@ meta:
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">In brief</h4>
     <p class="usa-alert__text">
-        Follow for the latest policy announcements from OPM.
+        OPM is extending the 2023 submission deadline
+        <ul>
+{% for item in collections.general | sort(true, true, "date") %}
+    <li>{{item.content | safe }}</li>
+{% endfor %}
+</ul>.
     </p>
   </div>
 </div>
