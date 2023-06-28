@@ -1,9 +1,9 @@
 ---
 layout: home.njk
-title: Frequently asked questions
+title: Contact the FAC
 meta:
-  name: Frequently asked questions about the FAC
-  description: Get the answers to your questions about the new FAC and the transition process.
+  name: Contact the FaC
+  description: Contact the FAC with questions about the single audit submission process.
 ---
 
 # {{title}}
