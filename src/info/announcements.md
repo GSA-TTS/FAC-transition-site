@@ -1,9 +1,9 @@
 ---
 layout: home.njk
-title: OPM Announcements
+title: OMB Announcements
 meta:
-  name: OPM Announcements
-  description: Announcements and deadline information from the Office of Personnel Management.
+  name: OMB Announcements
+  description: Announcements and deadline information from the Office of Management and Budget.
 ---
 
 # Announcements
