@@ -6,6 +6,6 @@ meta:
   description: Validate your single audit worksheets before submitting them to the FAC.
 ---
 
-## Level 2 heading
+## Worksheet validation
 
-Lorem ipsum and whatnot…
+Upload your worksheet below to confirm your data is accurate. The tool will return any errors in a table, along with recommended fixes. Currently, this tool can't cross-validate worksheets against each other.
