@@ -8,4 +8,4 @@ meta:
 
 ## 2023 Uniform Guidance
 
-Lorem ipsum and whatnot…
+The Uniform Guidance outlines the policy for single audits. States, local governments, and non-profit organizations should follow the guidance when completing audits.

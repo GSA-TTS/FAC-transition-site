@@ -8,4 +8,4 @@ meta:
 
 ## Compliance supplements
 
-These guides from the Office of Management and Budget are mean to help auditors complete the single audit process.
+These guides from the Office of Management and Budget are meant to help auditors complete the single audit process.
