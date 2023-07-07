@@ -8,4 +8,9 @@ meta:
 
 # Compliance supplements
 
-These guides from the Office of Management and Budget are meant to help auditors complete the single audit process.
+These guides from the Office of Management and Budget (OMB) are meant to help auditors complete the single audit process.
+
+- OMB 2023 Compliance Supplement
+- OMB 2022 Compliance Supplement
+- OMB 2021 Compliance Supplement
+- OMB 2020 Compliance Supplement
