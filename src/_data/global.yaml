@@ -5,21 +5,21 @@ navigation:
     - text: News
       links:
         - text: OMB Announcements
-          href: omb announcements
+          href: 'info/announcements'
         - text: FAC updates
-          href: updates
+          href: 'info/updates'
     - text: Resources & Policy
       links:
-        - text: Worksheets
-          href: worksheets
+        - text: Workbooks
+          href: 'resources/workbooks'
         - text: Instructions
-          href: instructions
+          href: 'resources/instructions'
         - text: Compliance
-          href: compliance
+          href: 'resources/compliance'
         - text: Uniform Guidance
-          href: guidance
+          href: 'resources/guidance'
     - text: FAQ
-      href: faq
+      href: 'faq'
     - text: Contact
-      href: contact
+      href: 'contact'
    
