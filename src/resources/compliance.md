@@ -10,7 +10,7 @@ meta:
 
 These guides from the Office of Management and Budget (OMB) are meant to help auditors complete the single audit process.
 
-- 2023 Compliance Supplement
-- 2022 Compliance Supplement
-- 2021 Compliance Supplement
-- 2020 Compliance Supplement
+- [2023 Compliance Supplement](/assets/compliance/2023-Compliance-Supplement.pdf)
+- [2022 Compliance Supplement](/assets/compliance/2022-Compliance-Supplement.pdf)
+- [2021 Compliance Supplement](/assets/compliance/2021-Compliance-Supplement.pdf)
+- [2020 Compliance Supplement](/assets/compliance/2020-Compliance-Supplement.pdf)
