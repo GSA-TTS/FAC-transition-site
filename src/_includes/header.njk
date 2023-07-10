@@ -25,14 +25,14 @@
 
                         <li class="usa-nav__primary-item">
                             <button
-                                class="usa-accordion__button usa-nav__link usa-current"
+                                class="usa-accordion__button usa-nav__link"
                                 aria-expanded="false"
-                                aria-controls="basic-nav-section-one"
+                                aria-controls="basic-nav-{{ section.id }}"
                             >
                                 <span>{{ section.text }}</span>
                             </button>
 
-                            <ul id="basic-nav-section-one" class="usa-nav__submenu">
+                            <ul id="basic-nav-{{ section.id }}" class="usa-nav__submenu">
                                 {% for link in section.links %}
                                     <li class="usa-nav__submenu-item">
                                         <a href="{{ [config.baseUrl, link.href] | join }}">{{ link.text }}</a>
