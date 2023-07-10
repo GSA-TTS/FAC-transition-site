@@ -4,3 +4,15 @@
 .usa-date-picker__button {
   @extend %usa-date-picker__button !optional;
 }
+
+.usa-card {
+  text-align:center;
+}
+
+.usa-card .usa-card__container {
+  padding: 2rem 0;
+}
+
+.usa-card__container {
+  margin-top: 2rem;
+}
