@@ -8,7 +8,6 @@ workbook:
   name: "audit-findings-text-workbook"
 ---
 
-
 {%  macro getInstructions(inst, named_range) %}
   {% for inst_nr, obj in inst %}
     {% if inst_nr == named_range %}
@@ -67,5 +66,5 @@ workbook:
 </div>
   
 <div>
-  {{ instructions(workbooks.InstructionsFederalAwardsFindingsText, workbook.name) }}
+  {{ instructions(workbooks.InstructionsFederalAwardsAuditFindingsText, workbook.name) }}
 </div>
