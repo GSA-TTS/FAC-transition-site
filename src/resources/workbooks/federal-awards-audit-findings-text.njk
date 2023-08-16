@@ -1,13 +1,12 @@
 ---
 layout: home.njk
-title: "Workbook 4: Corrective action plan"
+title: "Workbook 4: Federal awards audit findings text"
 meta:
-  name: "Workbook 4: Corrective action plan"
-  description: "Follow these step-by-step instructions for completing Workbook 4: Corrective action plan."
+  name: "Workbook 4: Federal awards audit findings text"
+  description: "Follow these step-by-step instructions for completing Workbook 4: Federal awards audit findings text."
 workbook:
-  name: "corrective-action-plan-workbook"
+  name: "audit-findings-text-workbook"
 ---
-
 
 {%  macro getInstructions(inst, named_range) %}
   {% for inst_nr, obj in inst %}
@@ -46,15 +45,15 @@ workbook:
     style="margin-left: 2em; margin-bottom: 2em; float: right; border: 1px solid #555;"/>
 {% endmacro %}
 
-<h2>Workbook 4: Corrective action plan</h2>
+<h2>Workbook 3: Federal awards audit findings text</h2>
 
 <div style="float: right">
     {{ img(workbook.name) }}
 </div>
 <div>
-  <p>Workbook 4: Corrective action plan must be submitted.</p>
+  <p>Workbook 3: Federal awards audit findings text must be submitted.</p>
 
-  <h3>If you do not have a corrective action plan:</h3>
+  <h3>If you do not have Federal awards findings text:</h3>
 
   <ol>
     <li>Open the workbook.</li>
@@ -62,10 +61,10 @@ workbook:
     <li>Save and submit the workbook.</li>
   </ol>
 
-  <h3>If you have a corrective action plan:</h3>
+  <h3>If you have Federal awards findings text:</h3>
 
 </div>
   
 <div>
-  {{ instructions(workbooks.InstructionsCorrectiveActionPlan, workbook.name) }}
+  {{ instructions(workbooks.InstructionsFederalAwardsAuditFindingsText, workbook.name) }}
 </div>

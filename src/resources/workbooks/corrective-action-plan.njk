@@ -1,11 +1,11 @@
 ---
 layout: home.njk
-title: "Workbook 7: Additional EINs"
+title: "Workbook 5: Corrective action plan"
 meta:
-  name: "Workbook 7: Additional EINs"
-  description: "Follow these step-by-step instructions for completing Workbook 7: Additional EINs."
+  name: "Workbook 5: Corrective action plan"
+  description: "Follow these step-by-step instructions for completing Workbook 5: Corrective action plan."
 workbook:
-  name: "additional-eins-workbook"
+  name: "corrective-action-plan-workbook"
 ---
 
 
@@ -46,19 +46,26 @@ workbook:
     style="margin-left: 2em; margin-bottom: 2em; float: right; border: 1px solid #555;"/>
 {% endmacro %}
 
-<h2>Workbook 7: Additional UEIs</h2>
+<h2>Workbook 4: Corrective action plan</h2>
 
 <div style="float: right">
     {{ img(workbook.name) }}
 </div>
 <div>
-  <p>This workbook is only necessary if the single audit report covers multiple EINs.</p>
+  <p>Workbook 4: Corrective action plan must be submitted.</p>
 
-  <h3>If the report covers multiple EINs:</h3>
+  <h3>If you do not have a corrective action plan:</h3>
 
-  <p><bold>Enter the EINs one per row in the workbook.</bold></p>
+  <ol>
+    <li>Open the workbook.</li>
+    <li>Enter the auditee UEI.</li>
+    <li>Save and submit the workbook.</li>
+  </ol>
+
+  <h3>If you have a corrective action plan:</h3>
+
 </div>
   
 <div>
-  {{ instructions(workbooks.InstructionsAdditionalEINs, workbook.name) }}
+  {{ instructions(workbooks.InstructionsCorrectiveActionPlan, workbook.name) }}
 </div>

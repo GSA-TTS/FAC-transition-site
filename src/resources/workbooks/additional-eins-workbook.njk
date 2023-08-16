@@ -1,11 +1,11 @@
 ---
 layout: home.njk
-title: "Workbook 2: Federal awards audit findings"
+title: "Workbook 8: Additional EINs"
 meta:
-  name: "Workbook 2: Federal awards audit findings"
-  description: "Follow these step-by-step instructions for completing Workbook 2: Federal awards audit findings."
+  name: "Workbook 8: Additional EINs"
+  description: "Follow these step-by-step instructions for completing Workbook 8: Additional EINs."
 workbook:
-  name: "federal-awards-audit-findings-workbook"
+  name: "additional-eins-workbook"
 ---
 
 
@@ -46,26 +46,19 @@ workbook:
     style="margin-left: 2em; margin-bottom: 2em; float: right; border: 1px solid #555;"/>
 {% endmacro %}
 
-<h2>Workbook 2: Federal awards audit findings</h2>
+<h2>Workbook 7: Additional UEIs</h2>
 
 <div style="float: right">
     {{ img(workbook.name) }}
 </div>
 <div>
-  <p>Workbook 2: Federal awards audit findings must be submitted.</p>
+  <p>This workbook is only necessary if the single audit report covers multiple EINs.</p>
 
-  <h3>If you do not have Federal awards findings:</h3>
+  <h3>If the report covers multiple EINs:</h3>
 
-  <ol>
-    <li>Open the workbook.</li>
-    <li>Enter the auditee UEI.</li>
-    <li>Save and submit the workbook.</li>
-  </ol>
-
-  <h3>If you have Federal awards findings:</h3>
-
+  <p><bold>Enter the EINs one per row in the workbook.</bold></p>
 </div>
   
 <div>
-  {{ instructions(workbooks.InstructionsFederalAwardsFindings, workbook.name) }}
+  {{ instructions(workbooks.InstructionsAdditionalEINs, workbook.name) }}
 </div>

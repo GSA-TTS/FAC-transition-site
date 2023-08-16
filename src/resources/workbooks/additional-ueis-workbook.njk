@@ -1,11 +1,11 @@
 ---
 layout: home.njk
-title: "Workbook 6: Secondary auditors"
+title: "Workbook 6: Additional UEIs"
 meta:
-  name: "Workbook 6: Secondary auditors"
-  description: "Follow these step-by-step instructions for completing Workbook 6: Secondary auditors."
+  name: "Workbook 6: Additional UEIs"
+  description: "Follow these step-by-step instructions for completing Workbook 6: Additional UEIs."
 workbook:
-  name: "secondary-auditors-workbook"
+  name: "additional-ueis-workbook"
 ---
 
 
@@ -46,19 +46,19 @@ workbook:
     style="margin-left: 2em; margin-bottom: 2em; float: right; border: 1px solid #555;"/>
 {% endmacro %}
 
-<h2>Workbook 6: Secondary auditors</h2>
+<h2>Workbook 5: Additional UEIs</h2>
 
 <div style="float: right">
     {{ img(workbook.name) }}
 </div>
 <div>
-  <p>This workbook is only necessary if multiple auditors did the audit work.</p>
+  <p>This workbook is only necessary if the single audit report covers multiple UEIs.</p>
 
-  <h3>If you have secondary auditors:</h3>
+  <h3>If the report covers multiple UEIs:</h3>
 
-  <p><bold>Enter the auditors one per row in the workbook.</bold></p>
+  <p><bold>Enter the UIEs one per row in the workbook.</bold></p>
 </div>
   
 <div>
-  {{ instructions(workbooks.InstructionsSecondaryAuditors, workbook.name) }}
+  {{ instructions(workbooks.InstructionsAdditionalUEIs, workbook.name) }}
 </div>
