@@ -6,36 +6,52 @@ meta:
   description: The Federal Audit Clearinghouse is the home of the single audit process for the federal government awards system.
 ---
 
-# The Federal Audit Clearinghouse
+<div class="usa-hero">
+  <div class="grid-container">
+    <h1 class="usa-hero__heading">
+        The Federal Audit Clearinghouse (FAC) is the place to submit and review federal
+        grant audits.
+    </h1>
 
-The Federal Audit Clearinghouse (FAC) operates on behalf of the Office of Management and Budget (OMB) and is the place to submit and review federal grant audits. 
+    <p class="intro-text">
+        When an organization spends $750,000 or more in federal grant funds in a given year, they are required to
+        submit an audit.
+    </p>
 
+    <p>
+        The FAC is moving to a new home at the General Services Administration (GSA). Only audits from 2022 will be
+        searchable on fac.gov for now.
+        <a href="https://facides.census.gov/Account/Login.aspx" aria-controls="legacy-fac-modal" data-open-modal="" role="button">Please use the U.S. Census Bureau FAC site to search for older records.</a>
+    </p>
 
-<ul class="usa-card-group">
-                <li class="usa-card desktop:grid-col-6">
-                    <div class="usa-card__container">
-                        <div>
-                            <a class="usa-button sign-in-button"
-                               aria-controls="login-modal"
-                               data-open-modal
-                               href="/openid/login/">Sign in</a>
-                        </div>
-                        <p class="usa-card__body">Sign in to submit and review your audits.</p>
-                    </div>
-                </li>
-                <li class="usa-card desktop:grid-col-6">
-                    <div class="usa-card__container">
-                        <div>
-                            <a class="usa-button usa-button--outline"
-                               href="https://facides.census.gov/Account/Login.aspx"
-                               aria-controls="legacy-fac-modal"
-                               data-open-modal>Search older audit reports</a>
-                        </div>
-                        <p class="usa-card__body">
-                            Search audit report records from before 2022.
-                            You don’t need a FAC account to search.
-                        </p>
-                    </div>
-                </li>
-            </ul>
-        </div>
+  <ul class="usa-card-group">
+          <li class="usa-card desktop:grid-col-6">
+              <div class="usa-card__container">
+                  <div>
+                      <a class="usa-button sign-in-button"
+                          aria-controls="login-modal"
+                          data-open-modal
+                          href="/openid/login/">Sign in</a>
+                  </div>
+                  <p class="usa-card__body">Sign in to submit and review your audits.</p>
+              </div>
+          </li>
+          <li class="usa-card desktop:grid-col-6">
+              <div class="usa-card__container">
+                  <div>
+                      <a class="usa-button usa-button--outline"
+                          href="https://facides.census.gov/Account/Login.aspx"
+                          aria-controls="legacy-fac-modal"
+                          data-open-modal>Search older audit reports</a>
+                  </div>
+                  <p class="usa-card__body">
+                      Search audit report records from before 2022.
+                      You don’t need a FAC account to search.
+                  </p>
+              </div>
+          </li>
+      </ul>
+  </div>
+
+  </div>
+</div>
