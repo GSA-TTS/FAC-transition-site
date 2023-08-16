@@ -22,6 +22,7 @@ instructions=(
 	"InstructionsFederalAwards.libsonnet"
 	"InstructionsFederalAwardsAuditFindingsText.libsonnet"
 	"InstructionsFederalAwardsFindings.libsonnet"
+	"InstructionsNotestoSEFA.libsonnet"
 	"InstructionsSecondaryAuditors.libsonnet"
 )
 
