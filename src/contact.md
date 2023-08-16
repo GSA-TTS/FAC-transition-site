@@ -8,5 +8,5 @@ meta:
 
 # Contact the FAC
 
-For questions or support, contact the FAC at [email address here] or visit [link to zendesk?].
+For questions or support, contact the FAC at [support@fac-gov.zendesk.com](mailto:support@fac-gov.zendesk.com).
 
