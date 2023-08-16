@@ -16,13 +16,14 @@ const hashCode = function(s) {
     hash = ((hash << 5) - hash) + chr;
     hash |= 0;
   }
-  return ((hash)>>>0).toString(16);
+  return ((hash) >>> 0).toString(16);
 };
 
-module.exports = function (eleventyConfig) {
+module.exports = function(eleventyConfig) {
   eleventyConfig.addDataExtension('yaml', (contents) => yaml.load(contents));
   eleventyConfig.addPassthroughCopy('assets/img');
   eleventyConfig.addPassthroughCopy('assets/compliance');
+  eleventyConfig.addPassthroughCopy('assets/workbooks');
   eleventyConfig.addPassthroughCopy('favicon.ico');
   eleventyConfig.addPassthroughCopy('robots.txt');
 
@@ -31,7 +32,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("markdown", (markdownString) =>
     md.render(markdownString)
   );
-  
+
   return {
     markdownTemplateEngine: "njk",
     dir: {
