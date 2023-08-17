@@ -23,9 +23,7 @@ meta:
             <div class="usa-card__container">
                 <div>
                     <a class="usa-button sign-in-button"
-                        aria-controls="login-modal"
-                        data-open-modal
-                        href="/openid/login/">Sign in</a>
+                        href="https://app.fac.gov/openid/login/">Sign in</a>
                 </div>
                 <p class="usa-card__body">Sign in to submit and review your audits.</p>
             </div>
