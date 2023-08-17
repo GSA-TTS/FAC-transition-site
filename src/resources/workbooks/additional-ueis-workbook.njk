@@ -8,43 +8,7 @@ workbook:
   name: "additional-ueis-workbook"
 ---
 
-
-{%  macro getInstructions(inst, named_range) %}
-  {% for inst_nr, obj in inst %}
-    {% if inst_nr == named_range %}
-      {{ obj.instructions }}
-    {% endif %}
-  {% endfor %}
-{% endmacro %}
-
-{%  macro instructions(inst, wb) %}
-  {% set the_sheet = "" %}
-  {% for named_range, v in inst %}
-    {% for sheet in workbooks[wb]["sheets"] %}
-      {% if loop.index == 2 %}
-        {% set the_sheet = sheet %}
-      {% endif %}
-    {% endfor %}
-  {% endfor %}
-
-  {% set ranges = the_sheet.open_ranges %}
-
-  <dl>
-  {% for column in ranges | sort(false, true, 'title_cell') %}
-      <dt class="text-bold">Column {{column.title_cell.slice(0,1)}}: {{column.title}}</dt>
-      <dd>
-        {{ getInstructions(inst, column.range_name) }}
-      </dd>
-  {% endfor%}
-  </dl>
-
-{% endmacro %}
-
-{% macro img(wb) %}
-  <img src="{{config.baseUrl}}assets/img/workbooks/{{wb}}.png" 
-    width=400 
-    style="margin-left: 2em; margin-bottom: 2em; float: right; border: 1px solid #555;"/>
-{% endmacro %}
+{% from "../../_includes/components/instructions.njk" import instructions, img with context %}
 
 <h2>Workbook 6: Additional UEIs</h2>
 

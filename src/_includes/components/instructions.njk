@@ -1,17 +1,9 @@
----
-layout: home.njk
-title: "Workbook 2: Notes to SEFA"
-meta:
-  name: "Workbook 2: Notes to SEFA"
-  description: "Follow these step-by-step instructions for completing Workbook Workbook 2: Notes to SEFA."
-workbook:
-  name: "notes-to-sefa-workbook"
----
-
 {%  macro getInstructions(inst, named_range) %}
   {% for inst_nr, obj in inst %}
     {% if inst_nr == named_range %}
-      <dd>{{ obj.instructions }}</dd>
+      {% for i in obj.instructions %}
+        <dd>{{ i }}</dd>
+      {% endfor %}
     {% endif %}
   {% endfor %}
 {% endmacro %}
@@ -44,19 +36,3 @@ workbook:
     width=400 
     style="margin-left: 2em; margin-bottom: 2em; float: right; border: 1px solid #555;"/>
 {% endmacro %}
-
-<h2>Workbook 2: Notes to SEFA</h2>
-
-<div style="float: right">
-    {{ img(workbook.name) }}
-</div>
-<div>
-  <p>Workbook 2: Notes to SEFA must be submitted.</p>
-
-    <p><a href="{{ config.baseUrl }}assets/workbooks/notes-to-sefa-workbook.xlsx">Download Workbook 2: Notes to SEFA</a></p> 
-
-</div>
-  
-<div>
-  {{ instructions(workbooks.InstructionsNotestoSEFA, workbook.name) }}
-</div>
