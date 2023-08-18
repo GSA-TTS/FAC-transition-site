@@ -32,6 +32,6 @@ We have three testing scenarios. Please do your best to complete the first scena
 
 1. Scenario One: Use the submission materials provided via email. This will let you go through the process more quickly to get a feel for it.
 
-1. *Optional* Scenario Two: Modify our provided submission materials. For example, you could insert intentional errors in a pre-filled workbook to see what happens when you try to submit it. 
+1. Scenario Two (optional): Modify our provided submission materials. For example, you could insert intentional errors in a pre-filled workbook to see what happens when you try to submit it. 
 
-1. *Optional* Scenario Three: Download [blank workbook templates](resources/workbooks/) and enter your own data. This scenario most resembles developing a new submission from scratch. (Reminder: No data entered as part of this test will be kept.)
+1. Scenario Three (optional): Download [blank workbook templates](resources/workbooks/) and enter your own data. This scenario most resembles developing a new submission from scratch. **Reminder: No data entered as part of this test will be kept.**
