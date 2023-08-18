@@ -1,18 +1,9 @@
----
-layout: home.njk
-title: "Workbook 7: Secondary auditors"
-meta:
-  name: "Workbook 7: Secondary auditors"
-  description: "Follow these step-by-step instructions for completing Workbook 7: Secondary auditors."
-workbook:
-  name: "secondary-auditors-workbook"
----
-
-
 {%  macro getInstructions(inst, named_range) %}
   {% for inst_nr, obj in inst %}
     {% if inst_nr == named_range %}
-      {{ obj.instructions }}
+      {% for i in obj.instructions %}
+        <dd>{{ i }}</dd>
+      {% endfor %}
     {% endif %}
   {% endfor %}
 {% endmacro %}
@@ -31,10 +22,10 @@ workbook:
 
   <dl>
   {% for column in ranges | sort(false, true, 'title_cell') %}
+    {% if not "Read Only" in column.title %}
       <dt class="text-bold">Column {{column.title_cell.slice(0,1)}}: {{column.title}}</dt>
-      <dd>
-        {{ getInstructions(inst, column.range_name) }}
-      </dd>
+      {{ getInstructions(inst, column.range_name) }}
+    {% endif %}
   {% endfor%}
   </dl>
 
@@ -45,19 +36,3 @@ workbook:
     width=400 
     style="margin-left: 2em; margin-bottom: 2em; float: right; border: 1px solid #555;"/>
 {% endmacro %}
-
-<h2>Workbook 7: Secondary auditors</h2>
-
-<div>
-  <p>This workbook is only necessary if multiple auditors did the audit work.</p>
-
-  <p><a href="{{ config.baseUrl }}assets/workbooks/secondary-auditors-workbook.xlsx">Download Workbook 7: Secondary auditors</a></p>
-
-  <h3>If you have secondary auditors:</h3>
-
-  <p><bold>Enter the auditors one per row in the workbook.</bold></p>
-</div>
-  
-<div>
-  {{ instructions(workbooks.InstructionsSecondaryAuditors, workbook.name) }}
-</div>
