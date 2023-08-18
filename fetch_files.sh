@@ -26,6 +26,12 @@ instructions=(
 	"InstructionsSecondaryAuditors.libsonnet"
 )
 
+
+# FIXME: We have to switch to the branch that is a prod tag 
+# for this script. We need to pull instructions and workbooks from a production
+# tag, otherwise we will get dynamic changes from main. 
+# ... when the time for that change comes, anyway.
+
 git clone --branch lh/workbook-instructions https://github.com/GSA-TTS/FAC wbi
 
 for file in ${templates[@]}; do
