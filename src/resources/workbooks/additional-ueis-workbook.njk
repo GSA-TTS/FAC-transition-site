@@ -1,0 +1,27 @@
+---
+layout: home.njk
+title: "Workbook 6: Additional UEIs"
+meta:
+  name: "Workbook 6: Additional UEIs"
+  description: "Follow these step-by-step instructions for completing Workbook 6: Additional UEIs."
+workbook:
+  name: "additional-ueis-workbook"
+---
+
+{% from "../../_includes/components/instructions.njk" import instructions, img with context %}
+
+<h2>Workbook 6: Additional UEIs</h2>
+
+<div>
+  <p>This workbook is only necessary if the single audit report covers multiple UEIs.</p>
+
+  <p><a href="{{ config.baseUrl }}assets/workbooks/additional-ueis-workbook.xlsx">Download Workbook 6: Additional UEIs</a></p> 
+
+  <h3>If the report covers multiple UEIs:</h3>
+
+  <p><bold>Enter the UIEs one per row in the workbook.</bold></p>
+</div>
+  
+<div>
+  {{ instructions(workbooks.InstructionsAdditionalUEIs, workbook.name) }}
+</div>

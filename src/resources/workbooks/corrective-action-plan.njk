@@ -1,0 +1,34 @@
+---
+layout: home.njk
+title: "Workbook 5: Corrective action plan"
+meta:
+  name: "Workbook 5: Corrective action plan"
+  description: "Follow these step-by-step instructions for completing Workbook 5: Corrective action plan."
+workbook:
+  name: "corrective-action-plan-workbook"
+---
+
+{% from "../../_includes/components/instructions.njk" import instructions, img with context %}
+
+<h2>Workbook 5: Corrective action plan</h2>
+
+<div>
+  <p>Workbook 5: Corrective action plan must be submitted.</p>
+
+  <p><a href="{{ config.baseUrl }}assets/workbooks/corrective-action-plan-workbook.xlsx">Download Workbook 5: Corrective action plan</a></p> 
+
+  <h3>If you do not have a corrective action plan:</h3>
+
+  <ol>
+    <li>Open the workbook.</li>
+    <li>Enter the auditee UEI.</li>
+    <li>Save and submit the workbook.</li>
+  </ol>
+
+  <h3>If you have a corrective action plan:</h3>
+
+</div>
+  
+<div>
+  {{ instructions(workbooks.InstructionsCorrectiveActionPlan, workbook.name) }}
+</div>

@@ -1,18 +1,9 @@
----
-layout: home.njk
-title: "Workbook 5: Additional UEIs"
-meta:
-  name: "Workbook 5: Additional UEIs"
-  description: "Follow these step-by-step instructions for completing Workbook 5: Additional UEIs."
-workbook:
-  name: "additional-ueis-workbook"
----
-
-
 {%  macro getInstructions(inst, named_range) %}
   {% for inst_nr, obj in inst %}
     {% if inst_nr == named_range %}
-      {{ obj.instructions }}
+      {% for i in obj.instructions %}
+        <dd>{{ i }}</dd>
+      {% endfor %}
     {% endif %}
   {% endfor %}
 {% endmacro %}
@@ -31,10 +22,10 @@ workbook:
 
   <dl>
   {% for column in ranges | sort(false, true, 'title_cell') %}
+    {% if not "Read Only" in column.title %}
       <dt class="text-bold">Column {{column.title_cell.slice(0,1)}}: {{column.title}}</dt>
-      <dd>
-        {{ getInstructions(inst, column.range_name) }}
-      </dd>
+      {{ getInstructions(inst, column.range_name) }}
+    {% endif %}
   {% endfor%}
   </dl>
 
@@ -45,20 +36,3 @@ workbook:
     width=400 
     style="margin-left: 2em; margin-bottom: 2em; float: right; border: 1px solid #555;"/>
 {% endmacro %}
-
-<h2>Workbook 5: Additional UEIs</h2>
-
-<div style="float: right">
-    {{ img(workbook.name) }}
-</div>
-<div>
-  <p>This workbook is only necessary if the single audit report covers multiple UEIs.</p>
-
-  <h3>If the report covers multiple UEIs:</h3>
-
-  <p><bold>Enter the UIEs one per row in the workbook.</bold></p>
-</div>
-  
-<div>
-  {{ instructions(workbooks.InstructionsAdditionalUEIs, workbook.name) }}
-</div>

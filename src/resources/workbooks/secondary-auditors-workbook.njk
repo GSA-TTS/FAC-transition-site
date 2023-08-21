@@ -1,11 +1,11 @@
 ---
 layout: home.njk
-title: "Workbook 7: Additional EINs"
+title: "Workbook 7: Secondary auditors"
 meta:
-  name: "Workbook 7: Additional EINs"
-  description: "Follow these step-by-step instructions for completing Workbook 7: Additional EINs."
+  name: "Workbook 7: Secondary auditors"
+  description: "Follow these step-by-step instructions for completing Workbook 7: Secondary auditors."
 workbook:
-  name: "additional-eins-workbook"
+  name: "secondary-auditors-workbook"
 ---
 
 
@@ -46,19 +46,18 @@ workbook:
     style="margin-left: 2em; margin-bottom: 2em; float: right; border: 1px solid #555;"/>
 {% endmacro %}
 
-<h2>Workbook 7: Additional UEIs</h2>
+<h2>Workbook 7: Secondary auditors</h2>
 
-<div style="float: right">
-    {{ img(workbook.name) }}
-</div>
 <div>
-  <p>This workbook is only necessary if the single audit report covers multiple EINs.</p>
+  <p>This workbook is only necessary if multiple auditors did the audit work.</p>
 
-  <h3>If the report covers multiple EINs:</h3>
+  <p><a href="{{ config.baseUrl }}assets/workbooks/secondary-auditors-workbook.xlsx">Download Workbook 7: Secondary auditors</a></p>
 
-  <p><bold>Enter the EINs one per row in the workbook.</bold></p>
+  <h3>If you have secondary auditors:</h3>
+
+  <p><bold>Enter the auditors one per row in the workbook.</bold></p>
 </div>
   
 <div>
-  {{ instructions(workbooks.InstructionsAdditionalEINs, workbook.name) }}
+  {{ instructions(workbooks.InstructionsSecondaryAuditors, workbook.name) }}
 </div>

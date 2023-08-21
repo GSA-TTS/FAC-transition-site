@@ -1,0 +1,34 @@
+---
+layout: home.njk
+title: "Workbook 4: Federal awards audit findings text"
+meta:
+  name: "Workbook 4: Federal awards audit findings text"
+  description: "Follow these step-by-step instructions for completing Workbook 4: Federal awards audit findings text."
+workbook:
+  name: "audit-findings-text-workbook"
+---
+
+{% from "../../_includes/components/instructions.njk" import instructions, img with context %}
+
+<h2>Workbook 4: Federal awards audit findings text</h2>
+
+<div>
+  <p>Workbook 4: Federal awards audit findings text must be submitted.</p>
+
+  <p><a href="{{ config.baseUrl }}assets/workbooks/federal-awards-audit-findings-text-workbook.xlsx">Download Workbook 4: Federal awards audit findings text</a></p> 
+
+  <h3>If you do not have Federal awards findings text:</h3>
+
+  <ol>
+    <li>Open the workbook.</li>
+    <li>Enter the auditee UEI.</li>
+    <li>Save and submit the workbook.</li>
+  </ol>
+
+  <h3>If you have Federal awards findings text:</h3>
+
+</div>
+  
+<div>
+  {{ instructions(workbooks.InstructionsFederalAwardsAuditFindingsText, workbook.name) }}
+</div>
