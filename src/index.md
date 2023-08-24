@@ -13,7 +13,7 @@ meta:
         grant audits.
     </h1>
     <p class="intro-text">
-        When an organization spends $750,000 or more in federal grant funds in a given year, they are required to
+        When an organization spends $750,000 or more in federal grant funds in a fiscal year, they are required to
         submit an audit.
     </p>
     <ul class="usa-card-group flex-align-center flex-justify-center">
