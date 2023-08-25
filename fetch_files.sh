@@ -44,4 +44,7 @@ for file in ${instructions[@]}; do
 	jsonnet src/_data/workbooks/${file} >"src/_data/workbooks/${base}.json"
 done
 
+# Copy in the workbook templates
+cp wbi/backend/schemas/output/excel/xlsx/*.xlsx assets/workbooks/
+
 rm -rf wbi
