@@ -22,6 +22,8 @@ navigation:
           href: 'resources/guidance'
         - text: Burden Statement
           href: 'resources/burden-statement'  
+        - text: Developer documentation
+          text: 'docs'
     - text: FAQ
       href: 'faq'
     - text: Contact
