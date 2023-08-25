@@ -23,7 +23,7 @@ To use the API, you will first [need to obtain an API key]({{ config.baseUrl }}d
 
 With an API key in hand, you can [begin exploring the API from the command-line]({{ config.baseUrl }}docs/getting-started/), to make sure things work.
 
-As you write code to access the API, you will want to review the [documentation for the endpoints and the fields those endpoints contain]({{ config.baseUrl }}docs/api/v1_0_0_beta/).
+As you write code to access the API, you will want to review the [documentation for the endpoints and the fields those endpoints contain]({{ config.baseUrl }}docs/v1_0_0_beta/).
 
 We will be changing the API over time, and have [a documented change management process]({{ config.baseUrl }}docs/api-versioning/) for those future API improvements.
 
