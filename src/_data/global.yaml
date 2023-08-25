@@ -20,6 +20,8 @@ navigation:
           href: 'resources/compliance'
         - text: Uniform Guidance
           href: 'resources/guidance'
+        - text: Burden Statement
+          href: 'resources/burden-statement'  
     - text: FAQ
       href: 'faq'
     - text: Contact
