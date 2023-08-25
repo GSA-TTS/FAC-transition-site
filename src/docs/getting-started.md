@@ -30,21 +30,6 @@ You can actually set `API_GOV_URL` to one of *four* URLs.
 3. `api-dev.fac.gov`: The development endpoint may contain a mix of live and test data. Every time we accept a pull request into `main`, this environment updates. `dev` is considered unstable.
 4. `api-preview.fac.gov`: This environment updates when desired by developers (for testing feature branches), but is sometimes frozen for exploring new features with users, or conducting user acceptance tests. You should not use `preview` unless explicitly asked to for testing specific, new API features.
 
-## Test data
-
-(*Test data is partially implemented as of 2023-08-17. This section is forward-looking.*)
-
-We generate test data on every deploy. This data is differentiated from actual data in two critical ways:
-
-1. The `data_source` attribute in the `general` endpoint is `TEST DATA`
-2. The `report_id` has the form `YYYYTEST#########`
-
-Test data is
-
-* Sometimes available in `preview`
-* Always available in `development`
-* Always available in `staging`
-* Never avaiable in `production`
 
 ## Testing things out
 
