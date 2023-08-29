@@ -14,7 +14,7 @@ The FAC API endpoints mimic the pipe-delimited CSV files historically provided b
 
 The API uses [PostgREST](https://postgrest.org), meaning it supports all [query operations](https://postgrest.org/en/stable/references/api/tables_views.html) provided by PostgREST. If you are authoring a client to talk to the FAC API, you should become familiar with the PostgREST documentation.
 
-### Getting started
+## Getting started
 
 Because the FAC API is proxied by [api.data.gov](https://api.data.gov/), you will need to get an API key from [from api.data.gov](https://api.data.gov/signup/) to access the FAC API. This is free and requires a valid email address; we recommend using a `.gov` address or other government address. Treat your API key like any other credential:
 - Do not share your key with other users
@@ -28,7 +28,7 @@ Once you have your API key, you can [begin exploring the API from the command-li
 
 We have provided [documentation for the endpoints and the fields those endpoints contain]({{ config.baseUrl }}developers/v1_0_0_beta/) to help you write your own access code.
 
-### How we work
+## How we work
 
 We will be changing the API over time, and have [a documented change management process]({{ config.baseUrl }}developers/api-versioning/) for those future API improvements.
 
