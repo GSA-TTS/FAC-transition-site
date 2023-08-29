@@ -34,7 +34,3 @@ We will be changing the API over time, and have [a documented change management 
 
 For more information on the FAC API and the information it provides, see our [terms and conditions]({{ config.baseUrl }}developers/terms/).
 
-### Questions
-
-We use [GH Discussions](https://github.com/GSA-TTS/FAC/discussions) for questions and conversation regarding the API. Information about [getting started](https://github.com/GSA-TTS/FAC/discussions/1066) and how we [version the API](https://github.com/GSA-TTS/FAC/discussions/1465) can be found there. 
-
