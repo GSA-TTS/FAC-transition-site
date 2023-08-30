@@ -12,20 +12,18 @@ navigation:
     - text: Resources & Policy
       id: resources
       links:
+        - text: How-to
+          href: 'resources/instructions'
         - text: Workbooks
           href: 'resources/workbooks'
-        - text: Instructions
-          href: 'resources/instructions'
-        - text: Compliance
-          href: 'resources/compliance'
+        - text: Developer tools
+          href: 'developers'
         - text: Uniform Guidance
           href: 'resources/guidance'
+        - text: Compliance
+          href: 'resources/compliance'
         - text: Burden Statement
           href: 'resources/burden-statement'  
-        - text: Developer documentation
-          href: 'docs'
-    - text: FAQ
-      href: 'faq'
-    - text: Contact
-      href: 'contact'
+        - text: Help
+          href: 'https://support.fac.gov/hc/en-us'
    

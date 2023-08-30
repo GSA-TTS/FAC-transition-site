@@ -29,17 +29,3 @@ meta:
     </ul>
   </div>
 </div>
-<div class="grid-container">
-  <div class="usa-alert usa-alert--info">
-  <div class="usa-alert__body">
-    <h4 class="usa-alert__heading">Testing scenarios</h4>
-    <p class="usa-alert__text">
-      We have three testing scenarios. Please do your best to complete the first scenario before submitting your feedback form. The other two scenarios are optional but encouraged.</p>
-      <ol>
-<li>Scenario One: Use the submission materials provided via email. This will let you go through the process more quickly to get a feel for it.</li>
-<li>Scenario Two (optional): Modify our provided submission materials. For example, you could insert intentional errors in a pre-filled workbook to see what happens when you try to submit it.</li>
-<li>Scenario Three (optional): Download <a href="resources/workbooks">blank workbook templates</a> and enter your own data. This scenario most resembles developing a new submission from scratch. <strong>Reminder: No data entered as part of this test will be kept.</strong></li>
-      </ol>
-  </div>
-</div>
-</div>
