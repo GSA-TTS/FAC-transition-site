@@ -1,19 +1,16 @@
 ---
 layout: home.njk
-title: FAC API limits, terms, and conditions
+title: FAC API terms and conditions
+name: FAC API terms and conditions
+  description: Read the terms and conditions of accessing single audit data via the FAC API.
 ---
 
-# {{title}}
-
+# FAC API terms and conditions
 
 The Federal Audit Clearinghouse is charged with disseminating Single Audit data to support Federal oversight of grants as well as public interest.
 
-## Limits
+The Federal Audit Clearinghouse operates on behalf of the Office of Management and Budget. We distribute single audit reporting packages to federal agencies and the public.
 
-We inherit the default limits provided by api.data.gov. The [api.data.gov developer manual](https://api.data.gov/docs/developer-manual/) speaks to these in greater depth. By default, keys are limited to 1000 requests per hour.
+All single audit reporting packages, with the possible exception of Indian Tribes and Tribal Organizations, submitted under Uniform Guidance are available to the public per 2 CFR 200.512(b)(1).
 
-If API limits become necessary to maintain operational effectiveness, we will develop those limits in consultation with our Federal partners and update this page accordingly.
-
-## Terms and conditions
-
-All Single Audit reporting packages, with the possible exception of Indian Tribes and Tribal Organizations, submitted under Uniform Guidance are available to the public per 2 CFR 200.512(b)(1). Indian Tribes and Tribal Organizations may opt not to authorize the Federal Audit Clearinghouse to make the reporting package publicly available per 2 CFR 200.512(b)(2). For these exempted auditees, the text entered in Part II, Item 2, Part III, Item 5, and Part IV, Item 2 will not be publicly displayed on the Form SF-SAC for fiscal periods ending in 2019 or later.
+Indian Tribes and Tribal Organizations may choose to keep their reporting packages unavailable to the public per 2 CFR 200.512(b)(2). For these entities, the notes to the Schedule of Expenditures of Federal Awards (SEFA), text of audit findings, and their corrective action plan will not be available to the public for fiscal periods ending in 2019 or later.

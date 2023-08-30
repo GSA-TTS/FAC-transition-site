@@ -28,6 +28,10 @@ We have provided [documentation for the endpoints and the fields those endpoints
 
 ## How we work
 
+We inherit the default limits provided by api.data.gov. The [api.data.gov developer manual](https://api.data.gov/docs/developer-manual/) speaks to these in greater depth. By default, keys are limited to 1,000 requests per hour.
+
+If we find we need more limits, we'll work with our agency partners to determine them and update this site as needed.d.
+
 We will be changing the API over time, and have a [documented change management process]({{ config.baseUrl }}developers/api-versioning/) for those future API improvements.
 
 For more information on the FAC API and the information it provides, see our [terms and conditions]({{ config.baseUrl }}developers/terms/).
