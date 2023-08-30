@@ -22,7 +22,7 @@ Because the FAC API is proxied by [api.data.gov](https://api.data.gov/), you wil
 - Do not store your key in a shared drive where other users have access
 - Do not share your key in helpdesk requests or any other communication
 
-Once you have your API key, you can [begin exploring the API from the command-line]({{ config.baseUrl }}docs/getting-started/).
+Once you have your API key, you can [begin exploring the API from the command-line]({{ config.baseUrl }}developers/getting-started/).
 
 We have provided [documentation for the endpoints and the fields those endpoints contain]({{ config.baseUrl }}developers/v1_0_0_beta/) to help you write your own access code.
 
