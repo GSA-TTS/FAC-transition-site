@@ -24,6 +24,7 @@ navigation:
           href: 'resources/compliance'
         - text: Burden Statement
           href: 'resources/burden-statement'  
-        - text: Help
-          href: 'https://support.fac.gov/hc/en-us'
+    - text: Help
+      id: help
+      href: 'https://support.fac.gov/hc/en-us'
    
