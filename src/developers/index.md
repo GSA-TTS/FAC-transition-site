@@ -22,15 +22,13 @@ Because the FAC API is proxied by [api.data.gov](https://api.data.gov/), you wil
 - Do not store your key in a shared drive where other users have access
 - Do not share your key in helpdesk requests or any other communication
 
-To use the API, you will first [need to obtain an API key]({{ config.baseUrl }}docs/getting-an-api-key/). This is free, and only requires a valid email address. 
-
 Once you have your API key, you can [begin exploring the API from the command-line]({{ config.baseUrl }}docs/getting-started/).
 
 We have provided [documentation for the endpoints and the fields those endpoints contain]({{ config.baseUrl }}developers/v1_0_0_beta/) to help you write your own access code.
 
 ## How we work
 
-We will be changing the API over time, and have [a documented change management process]({{ config.baseUrl }}developers/api-versioning/) for those future API improvements.
+We will be changing the API over time, and have a [documented change management process]({{ config.baseUrl }}developers/api-versioning/) for those future API improvements.
 
 For more information on the FAC API and the information it provides, see our [terms and conditions]({{ config.baseUrl }}developers/terms/).
 
