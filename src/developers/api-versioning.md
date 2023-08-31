@@ -1,26 +1,27 @@
 ---
 layout: home.njk
 title: FAC API versioning
+meta:
+  name: FAC API versioning
+  description: Learn how the FAC manages versions of the FAC API.
 ---
 
-# {{title}}
+# FAC API versioning
 
-*Last revised: 20230711*
-
-This will become operating procedure on October 1, 2023. Subsequent revisions will be made in consultation with our user community.
+This will become operating procedure on October 1, 2023. We will work with our user community on future revisions.
 
 ## API naming conventions
 
 * We use MAJOR, MINOR, and PATCH conventions from [SemVer](https://semver.org/) to clearly signal what we’re doing.
 * We use underscores instead of dots so that our API versions are valid Postgresql schema names.
-* We prefix our API names with `api_` so that it’s easy to distinguish them from other schemas we might work with during development.
+* We prefix our API names with `api_` so we can distinguish them from other schemas during development.
 
 ### Examples
 
-* `api_v1_0_0` - First frozen version
-* `api_v1_0_1` - Fixes a bug
-* `api_v1_1_0` - Adds a new feature
-* `api_v2_0_0` - Breaks compatibility with older clients
+* `api_v1_0_0` - Indicates first frozen version, this is the default API pushed to users
+* `api_v1_0_1` - Indicates a bug fix, these changes are automatically pushed to all users
+* `api_v1_1_0` - Indicates the addition of a new feature, users may opt into using this version
+* `api_v2_0_0` - Indicates new features have become the default version. All users will have to switch to this version and update their API access to avoid incompatability with older clients.
 
 ## Offering multiple API versions in parallel
 
@@ -32,27 +33,24 @@ db-schemas = "api_v2_0_0, api_v1_1_0, api_v1_0_0, api_v3_0_0_beta"
 
 This means:
 
-* the default is `v2.0.0`, and if you don’t specify, that’s what you get
+* the default is `v2.0.0`; if you don’t specify a different API, you'll get `v2.0.0`
 * `v1.1.0` is still available, but you have to explicitly specify it
-* `v3.0.0-beta` is also available, but you have to opt into it
-* `v1.0.0` is no longer available (because it’s not in the list, and presumably we removed that schema altogether)
+* `v3.0.0-beta` is also available, but you have to opt into it because it isn't the default yet
+* `v1.0.0` is no longer available
 
-## How clients explicitly select the API version
-
-[They use headers.](https://postgrest.org/en/stable/references/api/schemas.html#get-head)
+Use [a header](https://postgrest.org/en/stable/references/api/schemas.html#get-head) to select an API version other than the default.
 
 ## Migrating to new versions
 
-Say we’re getting ready to make `v2` available, and we want feedback from early testers. We make `api_v2_0_0_alpha`, `api_v2_0_0_beta` etc. available on an opt-in basis for volunteers as we make changes. Volunteers would opt in to using those newer API versions.
+We value feedback from our user community. Before we make new versions of the API the default, we'll ask for volunteers to opt in to testing these new versions.
 
-Once we are confident in our release, we would announce `api_v2_0_0` as a non-default, opt-in version, along with much fanfare and a date for when it will become the default (e.g. T+3 months). During that period, people can opt-in to using `v2` in order to verify that their stuff will continue to work once `v2` becomes the default.
+When we're confident in a new version of the API, we will announce the new version as a non-default, opt-in version for more users. We'll also post when the new version will become the default (e.g. T+3 months). During this period, users can opt-in to using this new version to ensure their processes will still work before it becomes the default.
 
-After the `v2` date passes, `v2` will be the default unless people explicitly "opt-out" by specifying that they still want to use `v1`. We would also explicitly announce that `v1` is deprecated, and the date after which it may be removed (eg T+12 months). This is to ensure that:
+Once a new version becomes the default, we'll announce the date that the older version will be removed from service (e.g. T+12 months). Users will still be able to use the deprecated version by request until the removal date.
 
-* We don’t rush people into migrating versions… They have 15 months end-to-end.
-* We don’t commit to supporting older APIs forever. We may need to remove one if we have to enable us to do particularly invasive surgery on the underlying tables, for instance. 
+Our goal with this process is to ensure that users aren't rushed into migrating new versions and have ample time to prepare. At the same time, we can't commit to supporting old APIs indefinitely. 
 
-The same process would apply for MINOR increments.
+This process will apply to all changes to the API, both MAJOR and MINOR.
 
 ## Fixing bugs
 
