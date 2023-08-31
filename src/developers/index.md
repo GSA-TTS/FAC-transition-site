@@ -16,7 +16,7 @@ The API uses [PostgREST](https://postgrest.org), meaning it supports all [query 
 
 ## Getting started
 
-Because the FAC API is proxied by [api.data.gov](https://api.data.gov/), you will need to get an API key from [from api.data.gov](https://api.data.gov/signup/) to access the FAC API. This is free and requires a valid email address; we recommend using a `.gov` address or other government address. Treat your API key like any other credential:
+Because the FAC API is proxied by [api.data.gov](https://api.data.gov/), you will need to [get an API key from from api.data.gov](https://api.data.gov/signup/) to access the FAC API. This is free and requires a valid email address; we recommend using a `.gov` address or other government address. Treat your API key like any other credential:
 - Do not share your key with other users
 - Do not commit your key into a repository alongside your code
 - Do not store your key in a shared drive where other users have access
@@ -30,7 +30,7 @@ We have provided [documentation for the endpoints and the fields those endpoints
 
 We inherit the default limits provided by api.data.gov. The [api.data.gov developer manual](https://api.data.gov/docs/developer-manual/) speaks to these in greater depth. By default, keys are limited to 1,000 requests per hour.
 
-If we find we need more limits, we'll work with our agency partners to determine them and update this site as needed.d.
+If we find we need more limits, we'll work with our agency partners to determine them and update this site as needed.
 
 We will be changing the API over time, and have a [documented change management process]({{ config.baseUrl }}developers/api-versioning/) for those future API improvements.
 
