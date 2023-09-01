@@ -15,5 +15,5 @@ To help make this transition smooth for our users, we've put together several re
 - [download links for the audit workbooks and instructions for completing them]({{ config.baseUrl }}resources/workbooks/)
 - [developer resources for using the new FAC API to access audit data]({{ config.baseUrl }}developers)
 - [policy information from the Office of Management and Budget (OMB)]({{ config.baseUrl }}info/announcements) and [updates from the FAC]({{ config.baseUrl }}info/updates)
-- easy access to [the Uniform Guidance]({{ config.baseUrl }}resources/guidance.md) and [Compliance supplements]({{ config.baseUrl }}resources/compliance.md)
+- easy access to [the Uniform Guidance]({{ config.baseUrl }}resources/guidance) and [Compliance supplements]({{ config.baseUrl }}resources/compliance)
 - [a help center](https://support.fac.gov/hc/en-us)
