@@ -8,7 +8,7 @@ meta:
 
 # Welcome to the FAC
 
-The Federal Audit Clearinghouse is transitioning from the U.S. Census Bureau (Census) to the U.S. General Services Administration (GSA) on October 1, 2023. At that time, you'll be able to submit all single audits using our new system. For the time being, search and download of historical audit data will remain on the Census' site.
+The Federal Audit Clearinghouse is transitioning from the U.S. Census Bureau (Census) to the U.S. General Services Administration (GSA) on October 1, 2023. At that time, you'll be able to submit all single audits using our new system. For the time being, [search and download of historical audit data](https://facdissem.census.gov/Main.aspx) will remain on the Census' site.
 
 To help make this transition smooth for our users, we've put together several resources for your use. In addition to being able to log in and complete the audit process, the new site includes:
 - [an overview of the GSA FAC process]({{ config.baseUrl }}resources/instructions/)
