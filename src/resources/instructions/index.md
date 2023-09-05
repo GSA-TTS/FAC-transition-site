@@ -1,9 +1,9 @@
 ---
 layout: home.njk
-title: The new FAC
+title: Using the new FAC
 meta:
-  name: The new FAC
-  description: Preview the new single audit submission process and instructions for completion.
+  name: Using the new FAC
+  description: Preview the new single audit submission process and follow step-by-step instructions for completion.
 terms:
   cfac: Census FAC
   cfac_url: https://facweb.census.gov/
@@ -13,11 +13,13 @@ walkthrough_date: "20230519"
 ---
 
 
-# The new FAC
+# Using the new FAC
 
-The new [fac.gov]({{terms.gfac_url}})&mdash;the GSA FAC&mdash;is designed to be accessible and consistent. It is similar to the Census FAC but follows human-centered design principles, which let your feedback guide our decisions. This will allow for continued improvements over time.
+The new fac.gov—the GSA FAC—is designed to be similar to the Census FAC the make the transition as easy as possible for our users. Entities will complete a series of simple webforms and downloadable workbooks to submit their single audit package.
 
-This overview goes through the submission process step-by-step.
+Everyone involved in the single audit process must have an account with [login.gov](https://login.gov/). This includes auditees and auditors. [Creating a login.gov account](https://login.gov/create-an-account/) is fully online and secure.
+
+This how-to guide goes through the submission process step-by-step.
 
 
 ## The {{terms.gfac}} in brief 
