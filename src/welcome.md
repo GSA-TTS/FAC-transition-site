@@ -8,14 +8,20 @@ meta:
 
 # Welcome to the FAC
 
-The Federal Audit Clearinghouse is transitioning from the U.S. Census Bureau (Census) to the U.S. General Services Administration (GSA) on October 1, 2023. At that time, you'll be able to submit all single audits using our new system. For the time being, [search and download of historical audit data](https://facdissem.census.gov/Main.aspx) will remain on the Census' site.
+The Federal Audit Clearinghouse is transitioning from the U.S. Census Bureau (Census) to the U.S. General Services Administration (GSA) on October 1, 2023. At that time, you'll be able to submit all single audits using our new system. 
 
-Everyone involved in the single audit process must have an account with [login.gov](https://login.gov/). This includes auditees and auditors. [Creating a login.gov account](https://login.gov/create-an-account/) is fully online and secure.
+For the time being, [search and download of historical audit data](https://facdissem.census.gov/Main.aspx) will remain on the Census' site.
 
-To help make this transition smooth for our users, we've put together several resources for your use. In addition to being able to log in and complete the audit process, the new site includes:
-- [an overview of the GSA FAC process]({{ config.baseUrl }}resources/instructions/)
-- [download links for the audit workbooks and instructions for completing them]({{ config.baseUrl }}resources/workbooks/)
-- [developer resources for using the new FAC API to access audit data]({{ config.baseUrl }}developers)
-- [policy information from the Office of Management and Budget (OMB)]({{ config.baseUrl }}info/announcements) and [updates from the FAC]({{ config.baseUrl }}info/updates)
-- easy access to [the Uniform Guidance]({{ config.baseUrl }}resources/guidance) and [Compliance supplements]({{ config.baseUrl }}resources/compliance)
-- [a help center](https://support.fac.gov/hc/en-us)
+Everyone involved in the single audit process must have an account with [Login.gov](https://login.gov/). This includes auditees and auditors. [Creating a Login.gov account](https://login.gov/create-an-account/) is fully online and secure.
+
+To help make this transition smooth, we've put together several resources for your use. In addition to being able to log in and complete the audit submission process, the new site includes:
+- [An overview of the GSA FAC process]({{ config.baseUrl }}resources/instructions/)
+- [Download links for the audit workbooks and instructions for completing them]({{ config.baseUrl }}resources/workbooks/)
+- [Developer resources for using the new FAC API to access audit data]({{ config.baseUrl }}developers)
+- [Policy information from the Office of Management and Budget (OMB)]({{ config.baseUrl }}info/announcements) and [updates from the FAC]({{ config.baseUrl }}info/updates)
+- Easy access to [the Uniform Guidance]({{ config.baseUrl }}resources/guidance) and [Compliance supplements]({{ config.baseUrl }}resources/compliance)
+- [Our help center](https://support.fac.gov/hc/en-us)
+
+## For Tribal and ACEE submitters
+
+At this time, the FAC is not accepting submissions for Indian tribes or tribal organizations or for Alternative Compliance Examination Engagements (ACEE). The [Office of Management and Budget (OMB)]({{ config.baseUrl }}info/announcements) has granted an automatic extension for these entities for Audit Year 2023.
