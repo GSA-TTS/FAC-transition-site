@@ -8,15 +8,16 @@ meta:
 
 # FAC API versioning
 
-This will become operating procedure on October 1, 2023. We will work with our user community on future revisions.
+This page describes how the FAC API will change over time, how those changes will be communicated, and how to understand the FAC APIs naming conventions. On October 1, 2023, these conventions will become operating procedure.
 
 ## API naming conventions
 
-* We use MAJOR, MINOR, and PATCH conventions from [SemVer](https://semver.org/) to clearly signal what we’re doing.
-* We use underscores instead of dots so that our API versions are valid Postgresql schema names.
-* We prefix our API names with `api_` so we can distinguish them from other schemas during development.
+* Each release name contains a version in modified [SemVer](https://semver.org/) format: MAJOR, MINOR.
+* Version numbers use underscores instead of dots so that our API names are valid Postgresql schema names.
+* API names start with `api_` so we can distinguish them from other schemas during development.
+* API names might end with a prerelease designation like `-beta`.
 
-### Examples
+For example:
 
 * `api_v1_0_0` - Indicates first frozen version, this is the default API pushed to users
 * `api_v1_0_1` - Indicates a bug fix, these changes are automatically pushed to all users
@@ -25,45 +26,31 @@ This will become operating procedure on October 1, 2023. We will work with our u
 
 ## Offering multiple API versions in parallel
 
-We use the [PostgREST schema](https://postgrest.org/en/stable/references/api/schemas.html) functionality to offer multiple versions of the API in parallel. The order is significant; the first in the list is the default. For example, our configuration after a while might look like:
+The FAC API can provide multiple versions of the API at the same time using [PostgREST's schema](https://postgrest.org/en/stable/references/api/schemas.html) functionality. A full list of available schemas will be documented here as they become available.
 
-```
-db-schemas = "api_v2_0_0, api_v1_1_0, api_v1_0_0, api_v3_0_0_beta"
-```
+While you can specify a particular schema when making a request, If you don't specify a particular API version in your request, the FAC API defaults to the most recent stable version. See the [PostgREST schema documenation](https://postgrest.org/en/stable/references/api/schemas.html#get-head) for guidance on specifying a version in your request.
 
-This means:
+For example, if the FAC API theoretically supported the versions `v1.1.0, v2.0.0, v3.0.0-beta`:
 
-* the default is `v2.0.0`; if you don’t specify a different API, you'll get `v2.0.0`
-* `v1.1.0` is still available, but you have to explicitly specify it
-* `v3.0.0-beta` is also available, but you have to opt into it because it isn't the default yet
-* `v1.0.0` is no longer available
+* `v2.0.0` is the most recent stable version. If you don’t specify a different API, you'll get `v2.0.0`.
+* `v1.1.0` is the most recent release for the previous stable version. It is available, but you have to request it explicitly.
+* `v1.0.0` is obsolete and is no longer available. `v1.1.0` is a more recent, MINOR update to `v1.0.0`.
+* `v3.0.0-beta` is a prerelease for the next major, unreleased version. It is available, but you have to request it explicitly.
 
-Use [a header](https://postgrest.org/en/stable/references/api/schemas.html#get-head) to select an API version other than the default.
+### Bugfixes and pre-releases
+
+There may be some instances in which the most recent SemVer release is not the default for its MAJOR release. For example, we may opt to run a short test to confirm that a bug is fixed before making a particular release the default. This should be rare and is unlikely to impact regular API users.
+
+You should not assume that a particular pre-release version will be available for any amount of time. They are intended primarily for testing and will likely rotate through the list of releases quickly.
 
 ## Migrating to new versions
 
-We value feedback from our user community. Before we make new versions of the API the default, we'll ask for volunteers to opt in to testing these new versions.
+Prior to a MAJOR release, we will publish a rough release timeline to help the community prepare for any breaking changes. Once an early prerelease version is ready, we will make an announcement and seek test volunteers from our user community.
 
 When we're confident in a new version of the API, we will announce the new version as a non-default, opt-in version for more users. We'll also post when the new version will become the default (e.g. T+3 months). During this period, users can opt-in to using this new version to ensure their processes will still work before it becomes the default.
 
 Once a new version becomes the default, we'll announce the date that the older version will be removed from service (e.g. T+12 months). Users will still be able to use the deprecated version by request until the removal date.
 
-Our goal with this process is to ensure that users aren't rushed into migrating new versions and have ample time to prepare. At the same time, we can't commit to supporting old APIs indefinitely. 
+Our goal with this process is to ensure that users aren't rushed into migrating new versions and have ample time to prepare. At the same time, we can't commit to supporting old APIs indefinitely.
 
 This process will apply to all changes to the API, both MAJOR and MINOR.
-
-## Fixing bugs
-
-When we fix a bug, we copy the entire schema (including all of its views) and increment the PATCH. We then put that version _after_ the version that it is fixing. We do this _even if the bug we’re fixing is in a view definition and not visible to clients_. The reason is so that we can explicitly select that patched version in our tests, smoke tests, etc.
-
-_Once the bug is confirmed fixed_, both via our own tests and any necessary confirmation from a user, then it’s OK to move the new version in front of the version that was fixed.
-
-We should still announce bugfix releases!
-
-# Cleaning up cruft in the codebase
-
-It’s totally reasonable to remove schemas associated with fully-deprecated MAJOR versions from our codebase.
-
-It’s totally reasonable to remove schemas associated with `-alpha` or `-beta` or `-rc` versions once the final version is available.
-
-
