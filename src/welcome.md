@@ -12,7 +12,7 @@ The Federal Audit Clearinghouse is transitioning from the U.S. Census Bureau (Ce
 
 For the time being, [search and download of historical audit data](https://facdissem.census.gov/Main.aspx) will remain on the Census' site.
 
-Everyone involved in the single audit process must have an account with [Login.gov](https://login.gov/). This includes auditees and auditors. [Creating a Login.gov account](https://login.gov/create-an-account/) is fully online and secure.
+Everyone involved in the single audit submission process must have an account with [Login.gov](https://login.gov/). [Creating a Login.gov account](https://login.gov/create-an-account/) is fully online and secure.
 
 To help make this transition smooth, we've put together several resources for your use. In addition to being able to log in and complete the audit submission process, the new site includes:
 - [An overview of the GSA FAC process]({{ config.baseUrl }}resources/instructions/)
