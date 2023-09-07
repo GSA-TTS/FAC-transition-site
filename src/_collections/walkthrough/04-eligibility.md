@@ -7,9 +7,9 @@ image: walkthrough_4.jpg
 Before starting a new audit, you'll answer a few questions to confirm your entity must submit an audit.
 
 The single audit submission process is for the following types of entities who spend $750,000 or more in Federal grant awards in a fiscal year:
-* non-profits
-* state and local governments
-* institutions of higher education
+* Non-profits
+* State and local governments
+* Institutions of higher education
 * Indian tribes or Tribal organizations
 
 ### Tribal and ACEE submission extensions for Audit Year 2023

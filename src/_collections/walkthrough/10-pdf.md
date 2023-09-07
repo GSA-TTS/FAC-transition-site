@@ -14,6 +14,6 @@ You must merge all components of the audit report package into a single PDF file
 
 ### Remove all Personally Identifiable Information (PII)
 
-PII includes but is not limited to Social Security Numbers, account numbers, vehicle identification numbers, copies of canceled checks, student names, dates of birth, personal addresses or personal phone numbers.
+PII includes but is not limited to Social Security Numbers, account numbers, vehicle identification numbers, copies of canceled checks, student names, dates of birth, personal addresses, or personal phone numbers.
 
 

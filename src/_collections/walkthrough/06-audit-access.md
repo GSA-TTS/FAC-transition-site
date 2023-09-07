@@ -4,9 +4,9 @@ title: Audit access
 image: walkthrough_6.jpg
 ---
 
-Enter the email address for everyone who will need to edit the audit submission. You should enter yourself as well.
+This is where you will list the auditee and auditor certifying officials, as well as anyone who will need to enter data or edit the single audit. Be sure to gather the names and email addresses of all individuals who will require access to the audit before proceeding with this step.
 
-This is where you will list the auditee and auditor certifying officials. Be sure to have the names and email addresses for everyone who will need access to the audit ready for this step.
+Enter the email address for everyone who will need to edit the audit submission. You should include your email address as well.
 
 
 
