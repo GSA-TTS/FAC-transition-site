@@ -14,7 +14,7 @@ For the time being, [search and download of historical audit data](https://facdi
 
 To help make this transition smooth, we've put together several resources for your use. In addition to being able to log in and complete the audit submission process, the new site includes:
 
-[//]: # (- [An overview of the GSA FAC process]({{ config.baseUrl }}resources/instructions/))
+<!-- [An overview of the GSA FAC process]({{ config.baseUrl }}resources/instructions/) --> 
 
 - [Download links for the audit workbooks and instructions for completing them]({{ config.baseUrl }}resources/workbooks/)
 - [Developer resources for using the new FAC API to access audit data]({{ config.baseUrl }}developers)
