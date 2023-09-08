@@ -8,7 +8,7 @@ meta:
 
 # The FAC API
 
-The FAC API disseminates the public content of single audit reports submitted to the FAC. The FAC API runs on [PostgREST](https://postgrest.org) and supports its built-in query operations.
+The FAC API shares public data from submitted audit reports. The FAC API runs on [PostgREST](https://postgrest.org) and supports its built-in query operations.
 
 ## Migrating from Census-provided data
 
@@ -29,7 +29,7 @@ Once you have your API key, you can begin exploring the API:
 
 ## API limits and future updates
 
-By default, each API key is limited to 1,000 requests per hour. This limit comes from Data.gov and you can read more about it in the [api.data.gov developer manual](https://api.data.gov/docs/developer-manual/).
+By default, each API key is limited to 1,000 requests per hour. This limit comes from Data.gov, and you can read more about it in the [api.data.gov developer manual](https://api.data.gov/docs/developer-manual/).
 
 As the API evolves, we will publish API updates and communicate guidance according to our change management process. You can read more on the [API versioning page]({{ config.baseUrl }}developers/api-versioning/).
 
