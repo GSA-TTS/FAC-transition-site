@@ -6,7 +6,11 @@ meta:
   description: Stay up-to-date on the FAC transition and read the latest on the single audit process.
 ---
 
-# Updates
+# Updates from the FAC
+
+The Federal Audit Clearinghouse is transitioning from the U.S. Census Bureau (Census) to the U.S. General Services Administration (GSA) on October 1, 2023. At that time, you'll be able to submit all single audits using our new system.
+
+We'll share more updates as they're available, including new features and timelines, below.
 
 #### Jump to
 
