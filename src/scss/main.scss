@@ -1,6 +1,62 @@
 @use '_header.scss';
 
+.usa-hero {
+  background-image: none;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.usa-hero > .grid-container {
+  padding: 0;
+}
+
+.usa-hero__heading {
+    font-size: 2.25rem;
+    margin-top: 0;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.usa-hero__heading, .usa-hero p {
+    color: #1b1b1b;
+    font-family: Public Sans Web,
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    Apple Color Emoji,
+    Segoe UI Emoji,
+    Segoe UI Symbol;
+}
+
+.usa-hero .usa-hero__heading, .usa-hero p, .usa-hero .usa-button-group {
+    margin-bottom: 2.2rem;
+}
+
+.usa-hero .intro-text {
+    font-size: 1.25rem;
+}
 
 .usa-date-picker__button {
   @extend %usa-date-picker__button !optional;
+}
+
+.usa-card {
+  text-align:center;
+}
+
+.usa-card .usa-card__container {
+  padding: 2rem 0;
+}
+
+.usa-card__container {
+  margin-top: 2rem;
+}
+
+.usa-card p, .usa-card__body, .usa-card__body:last-child {
+  padding-block-end: 0;
+  margin-block-end: 0;
 }

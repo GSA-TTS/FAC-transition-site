@@ -1,5 +1,8 @@
 <a class="usa-skipnav" href="#main-content">Skip to main content</a>
 {% include 'components/usa-banner.njk' %}
+{# <section class="fac-beta-banner">
+  <div class="grid-container">This application is currently under active development. Thank you for helping to improve the FAC by participating in user testing.</div>
+</section> #}
 <div class="usa-overlay"></div>
 <header class="usa-header usa-header--basic">
     <div class="usa-nav-container">
@@ -25,25 +28,33 @@
 
                         <li class="usa-nav__primary-item">
                             <button
-                                class="usa-accordion__button usa-nav__link usa-current"
+                                class="usa-accordion__button usa-nav__link"
                                 aria-expanded="false"
-                                aria-controls="basic-nav-section-one"
+                                aria-controls="basic-nav-{{ section.id }}"
                             >
                                 <span>{{ section.text }}</span>
                             </button>
 
-                            <ul id="basic-nav-section-one" class="usa-nav__submenu">
+                            <ul id="basic-nav-{{ section.id }}" class="usa-nav__submenu">
                                 {% for link in section.links %}
                                     <li class="usa-nav__submenu-item">
-                                        <a href="{{ [config.baseUrl, link.href] | join }}">{{ link.text }}</a>
+                                        {% set linkUrl = link.href %}
+                                        {% if not '://' in linkUrl %}
+                                          {% set linkUrl = [config.baseUrl, link.href] | join %}
+                                        {% endif %}
+                                        <a href="{{ linkUrl }}">{{ link.text }}</a>
                                     </li>
                                 {% endfor %}
                             </ul>
 
                         </li>
                     {% elif section.href %}
+                        {% set linkUrl = section.href %}
+                        {% if not '://' in linkUrl %}
+                          {% set linkUrl = [config.baseUrl, section.href] | join %}
+                        {% endif %}
                         <li class="usa-nav__primary-item">
-                            <a href="{{ [config.baseUrl, section.href] | join }}" class="usa-nav__link">
+                            <a href="{{ linkUrl }}" class="usa-nav__link">
                                 <span>{{ section.text }}</span>
                             </a>
                         </li>

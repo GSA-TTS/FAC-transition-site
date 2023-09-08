@@ -1,0 +1,24 @@
+---
+layout: home.njk
+title: "Workbook 1: Federal awards"
+meta:
+  name: "Workbook 1: Federal awards"
+  description: "Follow these step-by-step instructions for completing Workbook 1: Federal awards."
+workbook:
+  name: "federal-awards-workbook"
+---
+
+{% from "../../_includes/components/instructions.njk" import instructions, img with context %}
+
+<h2>Workbook 1: Federal awards</h2>
+
+<div>
+  <p>Enter the text of your Federal awards in the provided worksheet using the instructions below.</p>
+
+  <p><a href="{{ config.baseUrl }}assets/workbooks/federal-awards-workbook.xlsx">Download Workbook 1: Federal awards</a></p>
+
+</div>
+  
+<div>
+  {{ instructions(workbooks.InstructionsFederalAwards, workbook.name) }}
+</div>

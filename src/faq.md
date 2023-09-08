@@ -6,7 +6,7 @@ meta:
   description: Get the answers to your questions about the new FAC and the transition process.
 ---
 
-# {{title}}
+# Frequently asked questions
 
 ## Auditees
 

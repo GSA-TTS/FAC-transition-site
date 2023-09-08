@@ -1,0 +1,26 @@
+---
+layout: home.njk
+title: "Workbook 3: Federal awards audit findings"
+meta:
+  name: "Workbook 3: Federal awards audit findings"
+  description: "Follow these step-by-step instructions for completing Workbook 3: Federal awards audit findings."
+workbook:
+  name: "federal-awards-audit-findings-workbook"
+---
+
+{% from "../../_includes/components/instructions.njk" import instructions, img with context %}
+
+<h2>Workbook 3: Federal awards audit findings</h2>
+
+<div>
+  <p>Enter your Federal awards findings using the provided worksheet.</p>
+
+  <p>If you do not have any Federal awards findings, you must still upload this workbook. Download the workbook, enter your entity UEI, save and upload.</p>
+
+  <p><a href="{{ config.baseUrl }}assets/workbooks/federal-awards-audit-findings-workbook.xlsx">Download Workbook 3: Federal awards audit findings</a></p>
+
+</div>
+  
+<div>
+  {{ instructions(workbooks.InstructionsFederalAwardsFindings, workbook.name) }}
+</div>
