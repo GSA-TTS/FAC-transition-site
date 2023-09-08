@@ -12,8 +12,6 @@ navigation:
     - text: Resources & Policy
       id: resources
       links:
-        - text: How-to
-          href: 'resources/instructions'
         - text: Workbooks
           href: 'resources/workbooks'
         - text: Developer tools
