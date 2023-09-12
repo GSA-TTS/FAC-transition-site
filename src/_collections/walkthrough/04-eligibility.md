@@ -1,7 +1,7 @@
 ---
 tags: walkthrough
 title: Submission eligibility
-image: walkthrough_4.jpg
+image: walkthrough_04.png
 ---
 
 Before starting a new audit, you'll answer a few questions to confirm your entity must submit an audit.

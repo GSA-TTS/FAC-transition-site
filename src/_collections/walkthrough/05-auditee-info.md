@@ -1,7 +1,7 @@
 ---
 tags: walkthrough
 title: Auditee information
-image: walkthrough_5.jpg
+image: walkthrough_05.png
 
 ---
 Like the federal government, the FAC uses the Unique Entity ID (UEI) for all single audit submissions.
