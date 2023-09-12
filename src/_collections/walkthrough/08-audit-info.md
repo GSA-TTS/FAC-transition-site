@@ -1,7 +1,7 @@
 ---
 tags: walkthrough
 title: Audit information form
-image: walkthrough_6.jpg
+image: walkthrough_08.png
 ---
 
 Use this form to submit information about the auditee's financial statements and federal programs.

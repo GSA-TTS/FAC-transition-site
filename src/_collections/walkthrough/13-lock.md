@@ -1,7 +1,7 @@
 ---
 tags: walkthrough
 title: Lock for certification
-image: walkthrough_6.jpg
+image: walkthrough_13.png
 ---
 
 After you have validated your data, you will lock your single audit submission for certification. Once you have locked it, you will not be able to edit or make changes to your single audit submission.

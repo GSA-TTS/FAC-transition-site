@@ -1,7 +1,7 @@
 ---
 tags: walkthrough
 title: Upload the single audit report PDF
-image: walkthrough_8.jpg
+image: walkthrough_10.png
 ---
 
 You must merge all components of the audit report package into a single PDF file before uploading. Be sure your PDF file meets the uniform guidelines:

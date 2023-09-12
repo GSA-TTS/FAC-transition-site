@@ -1,7 +1,7 @@
 ---
 tags: walkthrough
 title: Submission checklist
-image: walkthrough_6.jpg
+image: walkthrough_09.png
 ---
 
 Next you'll see your submission checklist.
