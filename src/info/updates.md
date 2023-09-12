@@ -25,15 +25,14 @@ Updates are sorted with newest posts at the top. The "date" field in the update'
 #}
 
 <ul>
-{% for item in collections.general | unexpiredPosts | sort(true, true, "date") %}
+{% for item in collections.general | sort(true, true, "date") %}
     <li>{{item.content | safe }}</li>
 {% endfor %}
 </ul>
 
 <h3 id="grantees-and-auditors">For grantees and auditors</h3>
 <ul>
-{#% for item in collections.submitters | sort(true, true, "data.date") %#}
-{% for item in collections.submitters | unexpiredPosts | sort(true, true, "data.date") %}
+{% for item in collections.submitters | sort(true, true, "data.date") %}
     <li>{{item.content | safe }}</li>
 {% endfor %}
 </ul>

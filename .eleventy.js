@@ -1,5 +1,4 @@
 const yaml = require('js-yaml');
-const { DateTime } = require('luxon');
 
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const md = require("markdown-it")({
@@ -20,21 +19,6 @@ const hashCode = function(s) {
   return ((hash) >>> 0).toString(16);
 };
 
-const getUnexpiredPosts = function(items) {
-  return items.filter(i => {
-    const expirationDays = i.data.days_until_expiration;
-    const date = i.data.date;
-    const today = DateTime.now();
-
-    if (!expirationDays) return true;
-
-    const expirationDate = DateTime.fromJSDate(new Date(date)).plus({ days: expirationDays }).toJSDate();
-    const isExpired = expirationDate < today;
-
-    return !isExpired;
-  })
-}
-
 module.exports = function(eleventyConfig) {
   eleventyConfig.addDataExtension('yaml', (contents) => yaml.load(contents));
   eleventyConfig.addPassthroughCopy('assets/img');
@@ -48,9 +32,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("markdown", (markdownString) =>
     md.render(markdownString)
   );
-  eleventyConfig.addFilter("unexpiredPosts", function(pages) {
-    return getUnexpiredPosts(pages);
-  })
 
   return {
     markdownTemplateEngine: "njk",
