@@ -12,7 +12,7 @@ navigation:
     - text: Resources & Policy
       id: resources
       links:
-        - text: Submitting the FAC
+        - text: Overview
           href: 'resources/instructions'
         - text: Workbooks
           href: 'resources/workbooks'
