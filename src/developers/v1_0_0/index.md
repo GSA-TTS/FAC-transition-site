@@ -1,6 +1,6 @@
 ---
 layout: home.njk
-title: FAC API v1.0.0-beta
+title: FAC API v1.0.0
 ---
 
 # {{title}}
