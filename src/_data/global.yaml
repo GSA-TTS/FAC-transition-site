@@ -12,7 +12,7 @@ navigation:
     - text: Resources & Policy
       id: resources
       links:
-        - text: Overview
+        - text: How-to
           href: 'resources/instructions'
         - text: Workbooks
           href: 'resources/workbooks'
