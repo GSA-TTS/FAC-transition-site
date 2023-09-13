@@ -8,7 +8,7 @@ meta:
 
 # The FAC API
 
-The FAC API shares public data from submitted audit reports. The FAC API runs on [PostgREST](https://postgrest.org) and supports its built-in query operations.
+The FAC API shares public data from submitted audit reports. The FAC API runs on <a href="https://postgrest.org" target="_blank">PostgREST</a> and supports its built-in query operations.
 
 ## Migrating from Census-provided data
 
@@ -16,7 +16,7 @@ The FAC API endpoints mimic the pipe-delimited CSV files historically provided b
 
 ## Interacting with the API
 
-To interact with the FAC API, you will need an API key from [Data.gov](https://data.gov/). To get a Data.gov API key, fill out [the Data.gov API key signup form](https://api.data.gov/signup/). This is free and requires a valid email address. When you receive your API key, treat it like any other credential:
+To interact with the FAC API, you will need an API key from <a href="https://data.gov/" target="_blank">Data.gov</a>. To get a Data.gov API key, fill out <a href="https://api.data.gov/signup/" target="_blank">the Data.gov API key signup form</a>. This is free and requires a valid email address. When you receive your API key, treat it like any other credential:
 - Do not share your key with other users.
 - Do not commit your key into a repository alongside your code.
 - Do not store your key in a shared drive where other users have access.
@@ -25,11 +25,11 @@ To interact with the FAC API, you will need an API key from [Data.gov](https://d
 Once you have your API key, you can begin exploring the API:
 * [Get started from the command-line]({{ config.baseUrl }}developers/getting-started/).
 * Browse our [endpoint documentation]({{ config.baseUrl }}developers/v1_0_0/).
-* Browse PostgREST's [query operations documentation](https://postgrest.org/en/stable/references/api/tables_views.html).
+* Browse PostgREST's <a href="https://postgrest.org/en/stable/references/api/tables_views.html" target="_blank">query operations documentation.
 
 ## API limits and future updates
 
-By default, each API key is limited to 1,000 requests per hour. This limit comes from Data.gov, and you can read more about it in the [api.data.gov developer manual](https://api.data.gov/docs/developer-manual/).
+By default, each API key is limited to 1,000 requests per hour. This limit comes from Data.gov, and you can read more about it in the <a href="https://api.data.gov/docs/developer-manual/" target="_blank">api.data.gov developer manual</a>.
 
 As the API evolves, we will publish API updates and communicate guidance according to our change management process. You can read more on the [API versioning page]({{ config.baseUrl }}developers/api-versioning/).
 
