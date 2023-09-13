@@ -27,4 +27,5 @@ navigation:
     - text: Support
       id: support
       href: 'https://support.fac.gov/hc/en-us'
+      target: '_blank'
    
