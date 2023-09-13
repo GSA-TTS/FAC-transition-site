@@ -26,6 +26,10 @@ navigation:
           href: 'resources/burden-statement'  
     - text: Support
       id: support
-      href: 'https://support.fac.gov/hc/en-us'
-      target: '_blank'
+      links:
+        - text: Help center
+        - href: 'https://support.fac.gov/hc/en-us'
+        - target: '_blank'
+        - text: Welcome
+        - href: 'welcome'
    
