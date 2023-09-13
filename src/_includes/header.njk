@@ -42,7 +42,7 @@
                                         {% if not '://' in linkUrl %}
                                           {% set linkUrl = [config.baseUrl, link.href] | join %}
                                         {% endif %}
-                                        <a href="{{ linkUrl }}">{{ link.text }}</a>
+                                        <a href="{{ linkUrl }}" {{ ["target=", link.target] | join if link.target }}>{{ link.text }}</a>
                                     </li>
                                 {% endfor %}
                             </ul>
@@ -54,7 +54,7 @@
                           {% set linkUrl = [config.baseUrl, section.href] | join %}
                         {% endif %}
                         <li class="usa-nav__primary-item">
-                            <a href="{{ linkUrl }}" class="usa-nav__link">
+                            <a href="{{ linkUrl }}" {{ ["target=", section.target] | join if section.target }} class="usa-nav__link">
                                 <span>{{ section.text }}</span>
                             </a>
                         </li>
