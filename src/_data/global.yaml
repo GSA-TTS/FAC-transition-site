@@ -12,7 +12,7 @@ navigation:
     - text: Resources & Policy
       id: resources
       links:
-        - text: Overview
+        - text: How-to
           href: 'resources/instructions'
         - text: Workbooks
           href: 'resources/workbooks'
@@ -26,5 +26,10 @@ navigation:
           href: 'resources/burden-statement'  
     - text: Support
       id: support
-      href: 'https://support.fac.gov/hc/en-us'
+      links:
+        - text: Help center
+          href: 'https://support.fac.gov/hc/en-us'
+          target: '_blank'
+        - text: Welcome
+          href: 'welcome'
    
