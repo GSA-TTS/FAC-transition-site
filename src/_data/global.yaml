@@ -28,8 +28,8 @@ navigation:
       id: support
       links:
         - text: Help center
-        - href: 'https://support.fac.gov/hc/en-us'
-        - target: '_blank'
+          href: 'https://support.fac.gov/hc/en-us'
+          target: '_blank'
         - text: Welcome
-        - href: 'welcome'
+          href: 'welcome'
    
