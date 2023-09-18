@@ -16,5 +16,16 @@ meta:
         When an organization spends $750,000 or more in federal grant funds in a fiscal year, they are required to
         submit an audit.
     </p>
+     <ul class="usa-card-group flex-align-center flex-justify-center">
+        <li class="usa-card desktop:grid-col-6">
+            <div class="usa-card__container">
+                <div>
+                    <a class="usa-button sign-in-button"
+                        href="https://fac-staging.app.cloud.gov">Sign in</a>
+                </div>
+                <p class="usa-card__body">Sign in to submit and review your audits.</p>
+            </div>
+        </li>
+    </ul>
   </div>
 </div>
