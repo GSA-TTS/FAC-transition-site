@@ -24,7 +24,7 @@ meta:
                         aria-controls="login-modal"
                         href="https://app.fac.gov/openid/login/">Sign in</a>
                         <div class="usa-modal usa-modal--lg"
-                     id="login-modal"
+                     id="main-login-modal"
                      aria-labelledby="login-modal-heading"
                      aria-describedby="login-modal-description">
                     <div class="usa-modal__content">
