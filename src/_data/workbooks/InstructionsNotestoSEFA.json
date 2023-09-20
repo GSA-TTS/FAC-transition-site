@@ -9,6 +9,11 @@
          "Enter the auditee UEI."
       ]
    },
+   "contains_chart_or_table": {
+      "instructions": [
+         "Select \"Y\" if the full text of the Notes to SEFA includes a chart or table. Select \"N\" if it does not."
+      ]
+   },
    "is_minimis_rate_used": {
       "instructions": [
          "Select \"Y\" if the auditee used the minimis cost rate. If not, select \"N\". If the answer is both, select \"Y&N\"."
@@ -16,7 +21,7 @@
    },
    "note_content": {
       "instructions": [
-         "Enter the full text of the note. **Do not include charts, tables, or footnotes.** If there are any charts or tables within the text, enter “See the Notes to the SEFA for chart/table” instead."
+         "Enter the full text of the note. Do not include charts, tables, or footnotes. If there are any charts or tables within the text, enter “See the Notes to the SEFA for chart/table” instead."
       ]
    },
    "note_title": {
