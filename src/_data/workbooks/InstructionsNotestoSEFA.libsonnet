@@ -16,8 +16,8 @@
   },
   rate_explained: {
     instructions: [
-      'If the previous field is "Y", enter "The auditee used the de minimus cost rate.',
-      'If the previous field is "N", enter "The auditee did not use the de minimus cost rate.',
+      'If the previous field is "Y", enter "The auditee used the de minimus cost rate."',
+      'If the previous field is "N", enter "The auditee did not use the de minimus cost rate."',
       'If the previous field is "Y&N", enter an explanation for selecting both.',
     ],
   },
@@ -28,7 +28,7 @@
   },
   note_content: {
     instructions: [
-      'Enter the full text of the note. Do not include charts, tables, or footnotes.',
+      'Enter the full text of the note. **Do not include charts, tables, or footnotes.** If there are any charts or tables within the text, enter “See the Notes to the SEFA for chart/table” instead.',
     ],
   }
 }

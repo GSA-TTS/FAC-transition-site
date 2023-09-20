@@ -33,7 +33,7 @@ instructions=(
 # tag, otherwise we will get dynamic changes from main. 
 # ... when the time for that change comes, anyway.
 
-git clone --branch lh/workbook-instructions https://github.com/GSA-TTS/FAC wbi
+git clone --branch lh/workbook-instruction-updates https://github.com/GSA-TTS/FAC wbi
 
 for file in ${templates[@]}; do
 	cp wbi/backend/schemas/output/excel/json/${file} src/_data/workbooks/${file}
@@ -45,7 +45,11 @@ for file in ${instructions[@]}; do
 	jsonnet src/_data/workbooks/${file} >"src/_data/workbooks/${base}.json"
 done
 
-# Copy in the workbook templates
-cp wbi/backend/schemas/output/excel/xlsx/*.xlsx assets/workbooks/
-
 rm -rf wbi
+
+git clone https://github.com/GSA-TTS/FAC wbs-main
+
+# Copy in the workbook templates
+cp wbs-main/backend/schemas/output/excel/xlsx/*.xlsx assets/workbooks/
+
+rm -rf wbs-main
