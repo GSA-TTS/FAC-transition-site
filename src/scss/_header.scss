@@ -19,9 +19,9 @@
 }
 
 .fac-beta-banner {
-    background-color: color('gold-5v');
-    font-size: .88rem;
-    padding-block: .2rem;
+  background-color: color('gold-5v');
+  font-size: 0.88rem;
+  padding-block: 0.2rem;
 }
 
 .usa-menu-btn {
@@ -30,10 +30,10 @@
 
 .usa-nav__primary button {
   padding: 1rem;
-  padding-left: .5;
-  
+  padding-left: 0.5;
+
   span {
-    padding-right: .5rem;
+    padding-right: 0.5rem;
   }
 }
 .usa-header {
@@ -57,7 +57,7 @@
 .sign-out {
   background-color: color('primary-darker');
   padding: 1em;
-  padding-left: .5rem;
+  padding-left: 0.5rem;
 }
 
 .usa-menu-btn {
@@ -65,7 +65,7 @@
 }
 
 .search {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .sign-in-logo,
@@ -89,4 +89,3 @@
     display: block;
   }
 }
-
