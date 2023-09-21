@@ -35,10 +35,6 @@ instructions=(
 
 git clone --branch lh/workbook-instruction-updates https://github.com/GSA-TTS/FAC wbi
 
-for file in ${templates[@]}; do
-	cp wbi/backend/schemas/output/excel/json/${file} src/_data/workbooks/${file}
-done
-
 for file in ${instructions[@]}; do
 	cp wbi/backend/schemas/source/excel/libs/${file} src/_data/workbooks/${file}
 	base=$(basename "${file}" .libsonnet)
@@ -48,6 +44,11 @@ done
 rm -rf wbi
 
 git clone https://github.com/GSA-TTS/FAC wbs-main
+
+for file in ${templates[@]}; do
+	cp wbs-main/backend/schemas/output/excel/json/${file} src/_data/workbooks/${file}
+done
+
 
 # Copy in the workbook templates
 cp wbs-main/backend/schemas/output/excel/xlsx/*.xlsx assets/workbooks/
