@@ -51,6 +51,10 @@
       content: url('../img/fac-logo.svg');
     }
   }
+
+  input[type='search'] {
+    max-width: 10em;
+  }
 }
 
 .sign-in,
