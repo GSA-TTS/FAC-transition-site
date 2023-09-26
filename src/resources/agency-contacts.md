@@ -8,4 +8,4 @@ meta:
 
 # Federal agency program contacts
 
-[This PDF]({{ config.baseUrl }}assets/agency-contacts/2023-agency-liasons.pdf) provides the contact information for federal agency single audit contacts, key management liaisons, and program contacts. These individuals can answer your technical audit questions.
+[This PDF]({{ config.baseUrl }}assets/agency-contacts/2023-agency-contacts.pdf) provides the contact information for federal agency single audit contacts, key management liaisons, and program contacts. These individuals can answer your technical audit questions.
