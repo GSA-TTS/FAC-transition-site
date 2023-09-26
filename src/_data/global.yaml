@@ -22,6 +22,8 @@ navigation:
           href: 'resources/guidance'
         - text: Compliance
           href: 'resources/compliance'
+        - text: Agency contacts
+          href: 'resources/agency-contacts'
         - text: Burden Statement
           href: 'resources/burden-statement'  
     - text: Support
