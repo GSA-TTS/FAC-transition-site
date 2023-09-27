@@ -14,7 +14,7 @@ The examples in this repository assume that you have two environment variables s
 
 ```
 export API_GOV_KEY="..."
-export API_GOV_URL="https://api-staging.fac.gov/"
+export API_GOV_URL="https://api-staging.fac.gov"
 ```
 
 Those two environment variables must be present in your shell for the code provided to work "as is." 
@@ -36,7 +36,6 @@ You can set `API_GOV_URL` to one of four URLs:
 2. `api-staging.fac.gov`: This endpoint will contain a mix of submitted data as well as test data. This environment is updated daily at 5 a.m. ET.
 3. `api-dev.fac.gov`: This endpoint may contain a mix of submitted and test data. Every time we accept a pull request into `main`, this environment updates. `dev` is considered unstable.
 4. `api-preview.fac.gov`: This is a testing environment for our FAC developers. You shouldn't use `preview` unless asked to by the FAC team.
-
 
 ## Testing the API
 
