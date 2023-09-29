@@ -10,7 +10,7 @@ meta:
 
 To help you understand our work through the transition, we’ll provide regular updates that talk about the work we’re doing and what’s next. 
 
-The Federal Audit Clearinghouse team works in the open. Our day-to-day task board can be found on [Github[(https://github.com/orgs/GSA-TTS/projects/11/views/2)].
+The Federal Audit Clearinghouse team works in the open. Our day-to-day task board can be found on [Github](https://github.com/orgs/GSA-TTS/projects/11/views/2).
 
 ## Jump to
 
