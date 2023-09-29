@@ -22,7 +22,7 @@ The Federal Audit Clearinghouse team works in the open. Our day-to-day task boar
 
 We're excited to see completed audits coming in and data exporting via the FAC API. That said, we know there have been some issues. We're doing our best to provide help center support for those as fast as possible.
 
-Items of note:
+### Items of note:
 - Some auditors and auditees experienced errors when trying to validate their UEIs. We identified the cause of the issue with sam.gov and should have it remediated next week.
 - We are now collecting single audit submissions from Indian Tribes and Tribal organizations.
 - Our engineering team improved the FAC API and closed out several bug tickets.
@@ -37,7 +37,7 @@ Our next feature focus is [search](https://github.com/GSA-TTS/FAC/issues/2236). 
 
 After that, we expect to work on [user management](https://github.com/GSA-TTS/FAC/issues/1446) features so that submitters can [update the auditor/auditee certifying officials](https://github.com/GSA-TTS/FAC/issues/1446), and [audit resubmissions](https://github.com/GSA-TTS/FAC/issues/2301) and [email notifications](https://github.com/GSA-TTS/FAC/issues/1401) after that. You can follow our activity [backlog](https://github.com/orgs/GSA-TTS/projects/13/views/1) to keep track of what we expect to prioritize as needs and priorities shift.
 
-<h3 id="general" >General updates</h3>
+<h2 id="general" >General updates</h3>
 
 {#
 Updates are sorted with newest posts at the top. The "date" field in the update's front matter is what we use. The date in the filename is the date we create the file, and is never seen outside of the repo.
@@ -49,7 +49,7 @@ Updates are sorted with newest posts at the top. The "date" field in the update'
 {% endfor %}
 </ul>
 
-<h3 id="grantees-and-auditors">For grantees and auditors</h3>
+<h2 id="grantees-and-auditors">For grantees and auditors</h3>
 <ul>
 {% for item in collections.submitters | sort(true, true, "data.date") %}
     <li>{{item.content | safe }}</li>
@@ -57,7 +57,7 @@ Updates are sorted with newest posts at the top. The "date" field in the update'
 </ul>
 
 
-<h3 id="agencies">For Federal awarding agencies</h3>
+<h2 id="agencies">For Federal awarding agencies</h3>
 <ul>
 {% for item in collections.federal | sort(true, true, "time") %}
     <li>{{item.content | safe }}</li>
