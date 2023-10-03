@@ -23,19 +23,17 @@ The Federal Audit Clearinghouse team works in the open. Our day-to-day task boar
 We're excited to see completed audits coming in and data exporting via the FAC API. That said, we know there have been some issues. We're doing our best to provide help center support for those as fast as possible.
 
 ### Items of note:
-- Some auditors and auditees experienced errors when trying to validate their UEIs. We identified the cause of the issue with sam.gov and should have it remediated next week.
+- Some auditors and auditees experienced errors when trying to validate their UEIs. We identified the cause of the issue with sam.gov and believe we have implemented a fix.
 - We are now collecting single audit submissions from Indian Tribes and Tribal organizations.
-- Our engineering team improved the FAC API and closed out several bug tickets.
+- Our engineering team improved workbook validations and addressed a bug in the FAC API.
 
 ### What's next?
 
-We know there are some features from the Census FAC that aren't available from the new FAC. As a team, we focused first on data intake and integrity. We will continue to iterate with our user communities to add features and improve the FAC.
+We know that not every tool you are used to is currently available, and we are working quickly to add features in the coming months.
 
-Our goal is to be transparent and share what our areas of focus will be in the immediate- and medium-term.
+Our goal is to be transparent and share our areas of focus. You can see what features are coming up in [our backlog](https://github.com/orgs/GSA-TTS/projects/13/views/1). 
 
-Our next feature focus is [search](https://github.com/GSA-TTS/FAC/issues/2236). This will give Federal and public users the ability to find and download completed audits. 
-
-After that, we expect to work on [user management](https://github.com/GSA-TTS/FAC/issues/1446) features so that submitters can [update the auditor/auditee certifying officials](https://github.com/GSA-TTS/FAC/issues/1446), and [audit resubmissions](https://github.com/GSA-TTS/FAC/issues/2301) and [email notifications](https://github.com/GSA-TTS/FAC/issues/1401) after that. You can follow our activity [backlog](https://github.com/orgs/GSA-TTS/projects/13/views/1) to keep track of what we expect to prioritize as needs and priorities shift.
+We are currently working on [search](https://github.com/GSA-TTS/FAC/issues/2236). This will give Federal and public users the ability to find and download completed audits. We track our [day-to-day work on our task board](https://github.com/orgs/GSA-TTS/projects/11).
 
 <h2 id="general" >General updates</h3>
 
