@@ -23,9 +23,9 @@ The Federal Audit Clearinghouse team works in the open. Our day-to-day task boar
 We're excited to see completed audits coming in and data exporting via the FAC API. That said, we know there have been some issues. We're doing our best to provide help center support for those as fast as possible.
 
 ### Items of note:
-- Some auditors and auditees experienced errors when trying to validate their UEIs. We identified the cause of the issue with sam.gov and believe we have implemented a fix.
-- We are now collecting single audit submissions from Indian Tribes and Tribal organizations.
-- Our engineering team improved workbook validations and addressed a bug in the FAC API.
+- <p>Some auditors and auditees experienced errors when trying to validate their UEIs. We identified the cause of the issue with sam.gov and believe we have implemented a fix.</p>
+- <p>We are now collecting single audit submissions from Indian Tribes and Tribal organizations.</p>
+- <p>Our engineering team improved workbook validations and addressed a bug in the FAC API.</p>
 
 ### What's next?
 
