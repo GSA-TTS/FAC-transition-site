@@ -8,17 +8,34 @@ meta:
 
 # Updates from the FAC
 
-The Federal Audit Clearinghouse is transitioning from the U.S. Census Bureau (Census) to the U.S. General Services Administration (GSA) on October 1, 2023. At that time, you'll be able to submit all single audits using our new system.
+To help you understand our work through the transition, we’ll provide regular updates that talk about the work we’re doing and what’s next. 
 
-We'll share more updates as they're available, including new features and timelines, below.
+The Federal Audit Clearinghouse team works in the open. Our day-to-day task board can be found on [Github](https://github.com/orgs/GSA-TTS/projects/11/views/2).
 
-#### Jump to
+## Jump to
 
 * [General updates](#general)
 * Updates for [grantees and auditors](#grantees-and-auditors)
 * Updates for [agencies](#agencies)
 
-<h3 id="general" >General updates</h3>
+## Week of September 25, 2023
+
+We're excited to see completed audits coming in and data exporting via the FAC API. That said, we know there have been some issues. We're doing our best to provide help center support for those as fast as possible.
+
+### Items of note:
+- <p>Some auditors and auditees experienced errors when trying to validate their UEIs. We identified the cause of the issue with sam.gov and believe we have implemented a fix.</p>
+- <p>We are now collecting single audit submissions from Indian Tribes and Tribal organizations.</p>
+- <p>Our engineering team improved workbook validations and addressed a bug in the FAC API.</p>
+
+### What's next?
+
+We know that not every tool you are used to is currently available, and we are working quickly to add features in the coming months.
+
+Our goal is to be transparent and share our areas of focus. You can see what features are coming up in [our backlog](https://github.com/orgs/GSA-TTS/projects/13/views/1). 
+
+We are currently working on [search](https://github.com/GSA-TTS/FAC/issues/2236). This will give Federal and public users the ability to find and download completed audits. We track our [day-to-day work on our task board](https://github.com/orgs/GSA-TTS/projects/11).
+
+<h2 id="general" >General updates</h3>
 
 {#
 Updates are sorted with newest posts at the top. The "date" field in the update's front matter is what we use. The date in the filename is the date we create the file, and is never seen outside of the repo.
@@ -30,7 +47,7 @@ Updates are sorted with newest posts at the top. The "date" field in the update'
 {% endfor %}
 </ul>
 
-<h3 id="grantees-and-auditors">For grantees and auditors</h3>
+<h2 id="grantees-and-auditors">For grantees and auditors</h3>
 <ul>
 {% for item in collections.submitters | sort(true, true, "data.date") %}
     <li>{{item.content | safe }}</li>
@@ -38,7 +55,7 @@ Updates are sorted with newest posts at the top. The "date" field in the update'
 </ul>
 
 
-<h3 id="agencies">For Federal awarding agencies</h3>
+<h2 id="agencies">For Federal awarding agencies</h3>
 <ul>
 {% for item in collections.federal | sort(true, true, "time") %}
     <li>{{item.content | safe }}</li>
