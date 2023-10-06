@@ -16,7 +16,7 @@ The FAC API endpoints mimic the pipe-delimited CSV files historically provided b
 
 ## Interacting with the API
 
-To interact with the FAC API, you will need an API key from <a href="https://data.gov/" target="_blank">Data.gov</a>. To get a Data.gov API key, fill out <a href="https://api.data.gov/signup/" target="_blank">the Data.gov API key signup form</a>. This is free and requires a valid email address. When you receive your API key, treat it like any other credential:
+To interact with the FAC API, you will need an API key from <a href="https://api.data.gov/" target="_blank">api.data.gov</a>. To get a Data.gov API key, fill out <a href="https://api.data.gov/signup/" target="_blank">the api.data.gov API key signup form</a>. This is free and requires a valid email address. When you receive your API key, treat it like any other credential:
 - Do not share your key with other users.
 - Do not commit your key into a repository alongside your code.
 - Do not store your key in a shared drive where other users have access.
@@ -24,7 +24,7 @@ To interact with the FAC API, you will need an API key from <a href="https://dat
 
 Once you have your API key, you can begin exploring the API:
 * [Get started from the command-line]({{ config.baseUrl }}developers/getting-started/).
-* Browse our [endpoint documentation]({{ config.baseUrl }}developers/v1_0_0/).
+* Browse our [endpoint documentation]({{ config.baseUrl }}developers/v1_0_1/).
 * Browse PostgREST's <a href="https://postgrest.org/en/stable/references/api/tables_views.html" target="_blank">query operations documentation</a>.
 
 ## API limits and future updates
