@@ -13,8 +13,7 @@ meta:
         grant audits.
     </h1>
     <p class="intro-text">
-        When an organization spends $750,000 or more in federal grant funds in a fiscal year, they are required to
-        submit an audit.
+        When an organization spends $750,000 or more in federal grant funds in a fiscal year, they are required to submit an audit. For more information on the features and development of the new FAC, check out our <a href=https://www.fac.gov/info/updates>Updates page</a>.
     </p>
      <ul class="usa-card-group flex-align-center flex-justify-center">
         <li class="usa-card desktop:grid-col-6">
