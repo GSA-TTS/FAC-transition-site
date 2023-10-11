@@ -26,7 +26,7 @@ The GSA FAC team worked to minimize change between submission systems. We have w
 
 
 ### Items of note:
-- <p>We've updated (a href=https://support.fac.gov/hc/en-us/articles/20299116907149-UEI-validation)our UEI validation criteria</a> to only require that an entity's UEI exists. This should reduce the number of UEI errors users experience.</p>
+- <p>We've updated <a href=https://support.fac.gov/hc/en-us/articles/20299116907149-UEI-validation>our UEI validation criteria</a> to only require that an entity's UEI exists. This should reduce the number of UEI errors users experience.</p>
 - <p>We know some users have found the error messages for workbook validation confusing. We are working to improve these messages.</p>
 
 ### What's next?
