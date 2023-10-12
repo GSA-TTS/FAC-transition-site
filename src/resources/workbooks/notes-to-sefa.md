@@ -10,7 +10,7 @@ workbook:
 
 # Workbook 2: Notes to SEFA
 
-Enter the text of your Federal awards in the provided worksheet using the instructions below.
+Enter the text of your Notes to SEFA in the provided worksheet using the instructions below.
 
 [Download {{meta.name}}]({{ config.baseUrl }}assets/workbooks/{{workbook.name}}.xlsx)
 

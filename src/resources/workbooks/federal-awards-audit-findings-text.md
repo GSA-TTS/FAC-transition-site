@@ -8,7 +8,7 @@ workbook:
   name: "audit-findings-text-workbook"
 ---
 
-# Workbook 4: Federal awards audit findings
+# Workbook 4: Federal awards audit findings text
 
 This workbook is only necessary if you have Federal awards findings. If you do not have any Federal awards findings, you do not have to upload this workbook.
 
