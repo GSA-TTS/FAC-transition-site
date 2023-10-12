@@ -12,7 +12,7 @@ workbook:
 
 Enter the text of your Federal awards in the provided worksheet using the instructions below.
 
-[Download{{meta.name}}]({{ config.baseUrl }}assets/workbooks/{{workbook.name}}.xlsx)
+[Download {{meta.name}}]({{ config.baseUrl }}assets/workbooks/{{workbook.name}}.xlsx)
 
 ## Instructions
 
