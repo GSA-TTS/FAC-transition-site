@@ -34,7 +34,7 @@ This field cannot be left blank.
 ### Column C: ALN (formerly CFDA) Three Digit Extension**
 
 Enter the last three digits of the agency's ALN.
-- For programs with no ALN or if the ALN is Unknown, enter a "U" followed by a two-digit number (ie. U12) to identify one or more Federal award lines that form the program.
+- For programs with no ALN or if the ALN is Unknown, enter a "U" followed by a two-digit number (e.g. U12) to identify one or more Federal award lines that form the program.
   - If the ALN is Unknown, column D cannot be blank.
 - If the Federal program is part of the Research and Development (R&D) cluster and the three-digit ALN extension is unknown, enter "RD".
   - If the ALN is Unknown, column D cannot be blank.
@@ -50,7 +50,7 @@ This field is required if:
 - You entered an unknown ALN Three Digit Extension (e.g. U12) in column C.
 - You entered "RD" for the ALN Three Digit Extension in column C.
 
-This column is optional if you entered a valid ALN Three Digit Extension in column C.
+If you entered a valid ALN Three Digit Extension in column C, leave this field blank.
 
 ### Column E: Federal Program Name
 
@@ -84,9 +84,9 @@ If the program is not part of a state cluster, this must be blank.
 
 ### Column I: If Other Cluster, Enter Other Cluster Name
 
-If you selected "Other Cluster Not Listed Above" in the Cluster Name field, enter the cluster name here.
+If you selected "Other Cluster Not Listed Above" in the Cluster Name field (column G), enter the cluster name here.
 
-If the program is not part of another cluster, this field must be blank.
+If the program is not part of another cluster, leave this field blank.
 
 ### Column J: Federal Program Total
 
@@ -113,7 +113,7 @@ If the award is not a loan or loan guarantee (column L is “N”), leave this f
 
 ### Column N: Direct Award
 
-Select "Y" if the award came directly from a Federal awarding agency and complete columns O. 
+Select "Y" if the award came directly from a Federal awarding agency and complete column O. 
 
 If it did not come directly from a Federal awarding agency, select "N".
 
@@ -149,7 +149,7 @@ If Federal Award Passed Through (column Q) is “N”, leave this field blank.
 
 ### Column S: Major Program (MP)
 
-Select "Y" if the Federal program is a major program, as defined in 2 CFR 200.518, and complete column T.
+Select "Y" if the Federal program is a major program, as defined in [2 CFR 200.518](https://www.ecfr.gov/current/title-2/section-200.518), and complete column T.
 
 If the Federal program is not a major program, select "N".
 
