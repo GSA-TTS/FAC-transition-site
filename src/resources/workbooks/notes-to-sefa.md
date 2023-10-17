@@ -22,9 +22,9 @@ Complete the coversheet before completing the Additional Notes tab.
 
 Enter the auditee UEI as listed in Workbook 1: Federal awards.
 
-### Row 5: Describe the significant accounting policies used in preparing the SEFA.
+### Row 5: Describe the significant accounting policies used in preparing the SEFA. [(2 CFR 200.510(b)(6))](https://www.ecfr.gov/current/title-2/part-200/section-200.510#p-200.510(b)(6))
 
-Outline the significant accounting policies used in preparing the SEFA [(2 CFR 200.510(b)(6))](https://www.ecfr.gov/current/title-2/part-200/section-200.510#p-200.510(b)(6)). If there are multiple notes covering the significant accounting policies, enter all in this field.
+Outline the significant accounting policies used in preparing the SEFA. If there are multiple notes covering the significant accounting policies, enter all in this field.
 
 ### Row 6: Did the auditee use the de minimis cost rate? [(2 CFR 200.414(f))](https://www.ecfr.gov/current/title-2/part-200/section-200.414#p-200.414(f))
 
