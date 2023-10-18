@@ -28,6 +28,28 @@ Once you have your API key, you can begin exploring the API:
 * View the [data dictionary]({{ config.baseUrl }}developers/v1_0_2/dictionary/) that maps the FAC API to historical Census data dissemination fields.
 * Browse PostgREST's <a href="https://postgrest.org/en/stable/references/api/tables_views.html" target="_blank">query operations documentation</a>.
 
+### Tutorials and examples
+
+We will grow our body of examples over time, and welcome contributions from the community.
+
+<table class="usa-table">
+  <thead>
+    <tr>
+      <th scope="col">Tutorial</th>
+      <th scope="col">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><a href="/tutorials/rollups/">Where are the rollups?</a></th>
+      <td>
+        A look at fields that existed in the Census data dissemination, and how to compute them from the FAC API.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
 ## API limits and future updates
 
 By default, each API key is limited to 1,000 requests per hour. This limit comes from Data.gov, and you can read more about it in the <a href="https://api.data.gov/docs/developer-manual/" target="_blank">api.data.gov developer manual</a>.
