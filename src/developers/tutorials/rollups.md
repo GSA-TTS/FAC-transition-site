@@ -89,6 +89,15 @@ for rid in get_n_report_ids(3):
     print(rid, aln_from_report_id(rid))
 ```
 
+
+#### Output
+
+```
+2023-06-GSAFAC-0000000002 ['84.027', '84.027', '84.173', '84.173', '84.010', '84.367', '84.424', '84.424', '84.425', '84.425', '84.425', '84.425', '84.425', '84.425', '84.425', '10.553', '10.555', '10.575', '10.649', '10.555']
+2023-06-GSAFAC-0000000688 ['14.155', '14.195', '14.018', '14.228']
+2022-12-GSAFAC-0000001061 ['16.557', '16.524', '16.841', '16.526', '93.497', '16.575']
+```
+
 ### Example: Given a report ID, calculate COG_OVER
 
 Every audit has an agency who is either cognizant or has oversight. The FAC populates one of two fields in every record: `cognizant_agency` or `oversight_agency`. Only one of the two fields will ever be populated.
@@ -118,9 +127,9 @@ def determine_cog_over(rid):
 #### Output
 
 ```
-2023-06-GSAFAC-0000000002 ['84.027', '84.027', '84.173', '84.173', '84.010', '84.367', '84.424', '84.424', '84.425', '84.425', '84.425', '84.425', '84.425', '84.425', '84.425', '10.553', '10.555', '10.575', '10.649', '10.555']
-2023-06-GSAFAC-0000000688 ['14.155', '14.195', '14.018', '14.228']
-2022-12-GSAFAC-0000001061 ['16.557', '16.524', '16.841', '16.526', '93.497', '16.575']
+2023-06-GSAFAC-0000000002 O
+2023-06-GSAFAC-0000000688 O
+2022-12-GSAFAC-0000001061 O
 ```
 
 ### Example: Are there questioned costs?
