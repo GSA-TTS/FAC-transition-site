@@ -137,15 +137,6 @@ ELSE false
 
 There's a bit of logic to this one (as opposed to just mapping over values), but it is still straight-forward.
 
-#### Output
-
-```
-2023-06-GSAFAC-0000000002 O
-2023-06-GSAFAC-0000000688 O
-2022-12-GSAFAC-0000001061 O
-```
-
-
 ```python
 # is_questioned_costs : string -> boolean
 # Given a report ID, return whether there were questioned costs
