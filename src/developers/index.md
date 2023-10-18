@@ -41,7 +41,7 @@ We will grow our body of examples over time, and welcome contributions from the 
   </thead>
   <tbody>
     <tr>
-      <th scope="row"><a href="/tutorials/rollups/">Where are the rollups?</a></th>
+      <th scope="row"><a href="tutorials/rollups/">Where are the rollups?</a></th>
       <td>
         A look at fields that existed in the Census data dissemination, and how to compute them from the FAC API.
       </td>
