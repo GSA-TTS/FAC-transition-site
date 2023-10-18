@@ -61,3 +61,11 @@ racket main.rkt --url <url>
 is the equivalent to the dockerized commands above.
 
 Tested with Racket 8.9. Probably good back to at least Racket 8.6.
+
+A good command might be
+
+```
+racket main.rkt --template template.rkt --api-key $API_GOV_KEY --jwt-token $CYPRESS_API_GOV_JWT --url $URL
+```
+
+with URL=http://localhost:3000 if running locally.

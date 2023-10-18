@@ -74,7 +74,7 @@
 
 
 (define (render-endpoints endpoints)
-  (define column-widths '(3 2 2 5))
+  (define column-widths '(5 2 0 5))
   (define (grid-col ndx)
     (~a (format "grid-col-~a" (list-ref column-widths ndx))))
     
@@ -104,7 +104,7 @@
              (div ([class "grid-row"])
                   (div ([class ,(grid-col 0)]) "Field name")
                   (div ([class ,(grid-col 1)]) "Type")
-                  (div ([class ,(grid-col 2)]) "Format")
+                  ;; (div ([class ,(grid-col 2)]) "Format")
                   (div ([class ,(grid-col 3)]) "Description"))
              ,@(for/list ([field (fieldnames-in-order (Endpoint-fields endpoint))])
                  `(div ([class "grid-row"])
@@ -114,7 +114,7 @@
                             (br)
                             (span ([class "usa-tag"])
                                   ,(->s (Field-type field))))
-                       (div ([class ,(grid-col 2)])
+                       #;(div ([class ,(grid-col 2)])
                             ,(->s (Field-format field)))
                        (div ([class ,(grid-col 3)])
                             (p ,(->s (Field-description field)))))

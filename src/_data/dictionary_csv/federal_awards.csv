@@ -1,0 +1,23 @@
+Census,GSAFAC,Type,Column Reference
+AUDITYEAR + DBKEY,General.report_id,TEXT,"gen.report_id,"
+AUDITYEAR,General.audit_year,TEXT,"gen.audit_year,"
+EIN,General.auditee_ein,TEXT,
+CFDA,federal_agency_prefix + federal_award_extension,TEXT,"award.award_reference,"
+AWARDIDENTIFICATION,additional_award_identification,TEXT,"award.federal_agency_prefix,"
+FEDERALPROGRAMNAME,federal_program_name,TEXT,"award.federal_award_extension,"
+AMOUNT,amount_expended,BIGINT,"award.additional_award_identification,"
+CLUSTERNAME,cluster_name,TEXT,"award.federal_program_name,"
+STATECLUSTERNAME,state_cluster_name,TEXT,"award.amount_expended,"
+PROGRAMTOTAL,federal_program_total,BIGINT,"award.cluster_name,"
+CLUSTERTOTAL,cluster_total,BIGINT,"award.other_cluster_name,"
+DIRECT,is_direct,BOOLEAN,"award.state_cluster_name,"
+PASSTHROUGHAWARD,is_passthrough_award,BOOLEAN,"award.cluster_total,"
+PASSTHROUGHAMOUNT,passthrough_amount,BIGINT,"award.federal_program_total,"
+MAJORPROGRAM,is_major,BOOLEAN,"award.is_major,"
+TYPEREPORT_MP,audit_report_type,TEXT,"award.is_loan,"
+FINDINGREFNUMS,audit_findings.finding_ref_number,TEXT,"award.loan_balance,"
+LOANS,is_loan,BOOLEAN,"award.is_direct,"
+LOANBALANCE,loan_balance,TEXT,"award.audit_report_type,"
+FINDINGSCOUNT,findings_count,INT,"award.findings_count,"
+ELECAUDITSID,award_reference,TEXT,"award.is_passthrough_award,"
+OTHERCLUSTERNAME,other_cluster_name,TEXT,award.passthrough_amount

@@ -13,6 +13,8 @@
 ;;
 ;; Returns a list of Endpoint structures.
 (define (json->tree json)
+  ;; (printf "~nTREE:~n-----~n~a~n-----~n" json)
+  
   (for/list ([(endpoint properties) (hash-ref json 'definitions)])
     (Endpoint (symbol->string endpoint)
               (hash-ref properties 'description (empty-string))
@@ -52,14 +54,17 @@
        (hash-set! headers 'Authorization (format "Bearer ~a" jwt-token)))
      (when api-key
        (hash-set! headers 'X-API-Key api-key))
+
+     ;; (printf "Headers: ~a" headers)
      
      (define res (get url #:headers (hash->immutable-hash headers)))
-       
+     
      (cond
        [(= 200 (response-status-code res))
         'continue]
        [(= 400 (response-status-code res))
         (printf "Bad response: 400~n")
+        (printf (response-body res))
         (exit 1)])
      
      (define body (response-body res))
