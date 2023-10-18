@@ -10,6 +10,7 @@ terms:
   gfac: GSA FAC
   gfac_url: https://fac.gov/
 walkthrough_date: "20230912"
+inlcude_survey: true
 ---
 
 
@@ -54,3 +55,5 @@ This how-to guide goes through the submission process step-by-step.
   {% endif %}
 {% endfor %}
 </div>
+
+<script src="https://touchpoints.app.cloud.gov/touchpoints/ba4ae239.js" async></script>
