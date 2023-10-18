@@ -8,12 +8,24 @@ endpoints:
   - general
   - federal_awards
   - notes_to_sefa
-  - audit_findings
-  - audit_findings_text
+  - findings
+  - findings_text
+  - corrective_action_plans
   - passthrough
   - secondary_auditors
   - additional_ueis
   - additional_eins
+formerly:
+  - gen
+  - cfda
+  - notes
+  - findings
+  - findingstext
+  - captext
+  - passthrough
+  - cpas
+  - ueis
+  - eins
 ---
 
 # Data dictionary
@@ -32,7 +44,7 @@ The data dictionary provides an overview of the FAC API from the perspective of 
 
 {% for ep in endpoints %}
 
-  <h3 id="endpoint-{{ep}}">Endpoint: <code>{{ep}}</code></h3>
+  <h3 id="endpoint-{{ep}}">Endpoint: <code>{{ep}}</code> (formerly <code>{{formerly[loop.index0]}})</h3>
 
   <div class="usa-table-container--scrollable" tabindex="0">
     <table class="usa-table">

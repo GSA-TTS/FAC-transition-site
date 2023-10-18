@@ -1,6 +1,6 @@
 Census,GSAFAC,Type,Column Reference
 AUDITYEAR + DBKEY,General.report_id,TEXT,"gen.report_id,"
-AUDITYEAR,General.audit_year,,gen.audit_year
+AUDITYEAR,General.audit_year,TEXT,gen.audit_year
 FINDINGREFNUMS,finding_ref_number,TEXT,ct.finding_ref_number
 TEXT,planned_action,TEXT,ct.planned_action
 CHARTSTABLES,contains_chart_or_table,TEXT,ct.contains_chart_or_table
