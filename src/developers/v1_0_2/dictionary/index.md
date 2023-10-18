@@ -41,7 +41,7 @@ The data dictionary provides an overview of the FAC API from the perspective of 
       </caption>
       <thead>
         <tr>
-          <th scope="col">FAC</th>
+          <th scope="col">GSA</th>
           <th scope="col">Census</th>
           <th scope="col">Type</th>
         </tr>
