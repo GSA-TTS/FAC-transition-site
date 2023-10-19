@@ -14,15 +14,19 @@ This workbook is only necessary if you have Federal awards findings. If you do n
 
 [Download {{meta.name}}]({{ config.baseUrl }}assets/workbooks/{{workbook.name}}.xlsx)
 
-## Instructions
+## Coversheet instructions
 
+Enter the auditee UEI on the coversheet before completing the Form tab.
+## Form instructions
+
+For each finding, all columns must be completed.
 ### Column A: Award Reference
 
-Enter the award reference number as listed in Workbook 1: Federal Awards.
+Enter the award reference number as listed in Workbook 1: Federal Awards. Award references must be formatted “AWARD-####”.
 
 ### Column B: Audit Finding Reference Number
 
-Enter the audit finding reference number as listed in Workbook 1: Federal Awards.
+Enter the audit finding reference number as listed in Workbook 1: Federal Awards. Award finding reference numbers must be formatted “YYYY-###”.
 
 ### Column C: Type(s) of Compliance Requirement(s)
 
@@ -32,9 +36,13 @@ Select the type of compliance requirement(s) from the drop-down menu.
 
 Select "Y" if the auditor identified an audit finding as the basis for a modified opinion. If not, select "N".
 
+If this field is “Y”, column E must be “N”.
+
 ### Column E: Other Matters
 
 Select "Y" if the auditor identified an audit finding in the "Other Matters" section of the audit report PDF. If not, select "N".
+
+If column D is “Y”, this field must be “N.”
 
 ### Column F: Material Weakness
 
@@ -58,4 +66,6 @@ Select "Y" if the audit finding is a repeat from the immediate prior audit. If i
 
 ### Column K: If Repeat Finding, provide Prior Year Audit Finding Reference Number(s)
 
-If the audit finding is a repeat, enter the audit finding reference number from the most recent prior audit. If it is not a repeat finding, leave this blank.
+If the audit finding is a repeat, enter the audit finding reference number from the most recent prior audit.
+
+If the audit finding is not a repeat (column J is “N”), this field must be marked “N/A”.
