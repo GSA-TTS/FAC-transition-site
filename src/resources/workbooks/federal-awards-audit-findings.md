@@ -26,7 +26,7 @@ Enter the award reference number as listed in Workbook 1: Federal Awards. Award 
 
 ### Column B: Audit Finding Reference Number
 
-Enter the audit finding reference number as listed in Workbook 1: Federal Awards. Award finding reference numbers must be formatted “YYYY-###”.
+Enter the audit finding reference number as listed in Workbook 1: Federal Awards. Audit finding reference numbers must be formatted “YYYY-###”.
 
 ### Column C: Type(s) of Compliance Requirement(s)
 
