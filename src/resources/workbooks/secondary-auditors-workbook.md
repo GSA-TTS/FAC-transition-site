@@ -14,9 +14,13 @@ This workbook is only necessary if multiple auditors did the audit work.
 
 [Download {{meta.name}}]({{ config.baseUrl }}assets/workbooks/{{workbook.name}}.xlsx)
 
-## Instructions
+## Coversheet instructions
 
-If you have secondary auditors enter the auditors one per row in the workbook.
+Enter the auditee UEI on the coversheet before completing the Form tab.
+
+## Form instructions
+
+Enter the secondary auditors one per row.
 
 ### Column A: Audit Firm/Organization Name
 

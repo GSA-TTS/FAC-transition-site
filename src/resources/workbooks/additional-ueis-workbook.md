@@ -14,10 +14,10 @@ This workbook is only necessary if the single audit report covers multiple UEIs.
 
 [Download {{meta.name}}]({{ config.baseUrl }}assets/workbooks/{{workbook.name}}.xlsx)
 
-## Instructions
+## Coversheet instructions
 
-If the report covers multiple UEIs enter the UIEs one per row in the workbook.
+Enter the auditee UEI on the coversheet before completing the Form tab.
 
-### Column A: Additional UEIs
+## Form instructions
 
-Enter the additional UEI.
+Enter the UIEs one per row.
