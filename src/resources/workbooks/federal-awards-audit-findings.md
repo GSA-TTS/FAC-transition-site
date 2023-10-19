@@ -54,7 +54,9 @@ Select "Y" if the auditor identified an audit finding as a Significant Deficienc
 
 ### Column H: Other Findings
 
-Select "Y" if Modified Opinion, Other Matters, Material Weakness, and Significant Deficiency are all marked "N". Select "N" if any of these fields are marked "Y".
+Select "Y" if Modified Opinion (column D), Other Matters (column E), Material Weakness (column F), and Significant Deficiency (collumn G) are all marked "N". 
+
+Select "N" if any of these fields are marked "Y".
 
 ### Column I: Questioned Costs
 
