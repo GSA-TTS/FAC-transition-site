@@ -50,7 +50,9 @@ Select "Y" if the auditor identified an audit finding as a Material Weakness in 
 
 ### Column G: Significant Deficiency
 
-Select "Y" if the auditor identified an audit finding as a Significant Deficiency in the audit report PDF. If not, select "N".
+Select "Y" if the auditor identified an audit finding as a Significant Deficiency in the audit report PDF. 
+
+If not, select "N".
 
 ### Column H: Other Findings
 
@@ -66,7 +68,9 @@ If there are no questioned costs, select "N".
 
 ### Column J: Repeat Findings from Prior Year
 
-Select "Y" if the audit finding is a repeat from the immediate prior audit. If it is not a repeat, select "N".
+Select "Y" if the audit finding is a repeat from the immediate prior audit. 
+
+If it is not a repeat finding, select "N".
 
 ### Column K: If Repeat Finding, provide Prior Year Audit Finding Reference Number(s)
 
