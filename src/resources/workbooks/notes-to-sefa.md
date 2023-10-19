@@ -22,9 +22,11 @@ Complete the coversheet before completing the Additional Notes tab.
 
 Enter the auditee UEI as listed in Workbook 1: Federal awards.
 
-### Row 5: Describe the significant accounting policies used in preparing the SEFA. [(2 CFR 200.510(b)(6))](https://www.ecfr.gov/current/title-2/part-200/section-200.510#p-200.510(b)(6))
+### Row 5: Describe the significant accounting policies used in preparing the SEFA [(2 CFR 200.510(b)(6))](https://www.ecfr.gov/current/title-2/part-200/section-200.510#p-200.510(b)(6))
 
 Outline the significant accounting policies used in preparing the SEFA. If there are multiple notes covering the significant accounting policies, enter all in this field.
+
+This field cannot be left blank.
 
 ### Row 6: Did the auditee use the de minimis cost rate? [(2 CFR 200.414(f))](https://www.ecfr.gov/current/title-2/part-200/section-200.414#p-200.414(f))
 
@@ -35,11 +37,19 @@ Select "N" if the auditee did not use the de minimis rate of 10% of MTDC and com
 Select "Both" if the auditee uses a combination of the 10% de minimis rate and another cost rate and complete row 7.
 - Example: Select “Both” if a state uses a negotiated indirect cost rate of 7%, but a component included in the state’s single audit report uses a 10% de minimis cost rate.
 
+This field cannot be left blank.
+
 ### Row 7: Please explain
 
 If row 6 is "N" or "Both", describe the cost rate used by the auditee and why.
 
+If row 6 is "Y", enter "The auditee used the de minimis cost rate."
+
+This field cannot be left blank.
+
 ## Form instructions
+
+For each note, all columns must be completed.
 
 ### Column A: Note title
 
