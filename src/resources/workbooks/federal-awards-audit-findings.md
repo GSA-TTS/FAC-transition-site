@@ -60,7 +60,9 @@ Select "N" if any of these fields are marked "Y".
 
 ### Column I: Questioned Costs
 
-Select "Y" if there are questioned costs related to the audit finding, even if the amount can't be determined. If there are no questioned costs, select "N".
+Select "Y" if there are questioned costs related to the audit finding, even if the amount can't be determined. 
+
+If there are no questioned costs, select "N".
 
 ### Column J: Repeat Findings from Prior Year
 
