@@ -8,7 +8,7 @@ meta:
 
 # Welcome to the FAC
 
-The Federal Audit Clearinghouse is transitioning from the U.S. Census Bureau (Census) to the U.S. General Services Administration (GSA) on October 1, 2023. At that time, you'll be able to submit all single audits using our new system. 
+The General Services Administration (GSA) launched the new Federal Audit Clearinghouse in October, 2023. All single audit submissions should now be submitted using [our new system](https://app.fac.gov/openid/login/). 
 
 For the time being, [search and download of historical audit data](https://facdissem.census.gov/Main.aspx) will remain on the Census' site.
 
@@ -19,6 +19,6 @@ To help make this transition smooth, we've put together several resources for yo
 - [Developer resources for using the new FAC API to access audit data]({{ config.baseUrl }}developers)
 - [Our help center](https://support.fac.gov/hc/en-us)
 
-## For Tribal and ACEE submitters
+## For ACEE submitters
 
-At this time, the FAC is not accepting submissions for Indian tribes or tribal organizations or for Alternative Compliance Examination Engagements (ACEE). The [Office of Management and Budget (OMB)]({{ config.baseUrl }}info/announcements) has granted an automatic extension for these entities for Audit Year 2023.
+At this time, the FAC is not accepting submissions for Alternative Compliance Examination Engagements (ACEE). The [Office of Management and Budget (OMB)]({{ config.baseUrl }}info/announcements) has granted an automatic extension for these entities for Audit Year 2023.
