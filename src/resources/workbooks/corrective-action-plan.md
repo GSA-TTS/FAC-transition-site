@@ -14,11 +14,17 @@ This workbook is only necessary if you have Federal awards findings. If you do n
 
 [Download {{meta.name}}]({{ config.baseUrl }}assets/workbooks/{{workbook.name}}.xlsx)
 
-## Instructions
+## Coversheet instructions
+
+Enter the auditee UEI on the coversheet before completing the Form tab.
+
+## Form instructions
+
+For each finding, all columns must be completed.
 
 ### Column A: Audit Finding Reference Number
 
-Enter the audit finding reference number as listed in Workbook 3: Federal Awards Audit Findings.
+Enter the audit finding reference number as listed in Workbook 3: Federal Awards Audit Findings. Audit finding reference numbers must be formatted “YYYY-###”.
 
 ### Column B: Planned Corrective Action
 
