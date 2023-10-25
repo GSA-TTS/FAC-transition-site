@@ -17,7 +17,7 @@ meta:
 OMB is extending the 2023 submission deadline.</h4>
     <div class="usa-summary-box__text">
       <ul class="usa-list">
-      {% for announcement in collections.omb-archive %}
+      {% for announcement in collections.archive %}
           <li>{{ announcement.content | safe }}</li>
       {% endfor %}
       </ul>
