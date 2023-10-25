@@ -17,7 +17,8 @@ The Office of Management and Budget (OMB) sets the policy for single audit submi
   <div class="usa-summary-box__body">
       <div class="usa-summary-box__text">
         <ul>
-          <li>May 2023: OMB is waiving the 30-day deadline for 2023 submissions
+          <li><b>May 2023: OMB is waiving the 30-day deadline for 2023 submissions<b>
+           
            For any 2023 submissions with fiscal periods ending between January 1, 2023 and September 30, 2023, requirement 2 CFR 200.512(1) stating that single audits are due to the Federal Audit Clearinghouse 30 days after receipt of the auditor’s report(s), is waived. These audits will be considered on time if they are submitted within nine months after their fiscal period end date.</li>
       </ul>
     </div>
