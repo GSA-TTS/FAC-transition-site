@@ -1,20 +1,20 @@
 ---
 layout: home.njk
-title: OMB Announcements
+title: Archived OMB announcements
 meta:
-  name: OMB Announcements
-  description: Announcements and deadline information from the Office of Management and Budget.
+  name: OMB announcements
+  description: Historical announcements and deadline information from the Office of Management and Budget.
 ---
 
-# Announcements
+# Archived OMB announcements
+
+View archived updates on single audit submission policies and deadlines from OMB below.
 
 <div
   class="usa-summary-box"
   role="region"
   aria-labelledby="summary-box-key-information">
   <div class="usa-summary-box__body">
-    <h4 class="usa-summary-box__heading" id="summary-box-key-information">
-OMB is extending the 2023 submission deadline.</h4>
     <div class="usa-summary-box__text">
       <ul class="usa-list">
       {% for announcement in collections.archive %}
