@@ -55,9 +55,7 @@ We do not distribute the ALN. We distribute the agency prefix and the program nu
 
 We explored adding this to the API in [#2308](https://github.com/GSA-TTS/FAC/issues/2308). What does it look like as code a developer using our API might write?
 
-#### Example: Given a report ID, compute the ALN
-
-Given a report ID, there may be multiple awards. These will be in the `federal_awards` endpoint.
+So: given a report ID, there may be multiple awards. These will be in the `federal_awards` endpoint.
 
 For each of those, we'll want two fields: the `federal_agency_prefix` and `federal_award_extension`. 
 
