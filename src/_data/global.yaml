@@ -11,6 +11,9 @@ navigation:
           href: 'developers'
         - text: Resources
           href: '#' 
+    - text: Audit Submission
+      id: audits
+      href: 'audits'
     - text: News
       id: news
       links:
@@ -18,9 +21,6 @@ navigation:
           href: 'info/announcements'
         - text: FAC updates
           href: 'info/updates'
-    - text: Audit Submission
-      id: audits
-      href: 'audits'
     - text: Policy
       id: policy
       href: 'policy'
