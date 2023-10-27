@@ -2,30 +2,28 @@ site_name: Federal Audit Clearinghouse
 
 navigation:
   primary:
-    - text: News
-      id: news
-      links:
-        - text: OMB Announcements
-          href: 'info/announcements'
-        - text: FAC updates
-          href: 'info/updates'
-    - text: Resources & Policy
-      id: resources
-      links:
-        - text: How-to
-          href: 'resources/instructions'
-        - text: Workbooks
-          href: 'resources/workbooks'
-        - text: Developer tools
-          href: 'developers'
-        - text: Uniform Guidance
-          href: 'resources/guidance'
-        - text: Compliance
-          href: 'resources/compliance'
-        - text: Agency contacts
-          href: 'resources/agency-contacts'
-        - text: Burden Statement
-          href: 'resources/burden-statement'  
+    - text: Audit data
+      id: data
+      links: 
+        - text: Search audits
+          href: 
+        - text: API
+          href: 
+        - text: Resources
+          href: 'data/resources'  
+      - text: News
+        id: news
+        links:
+          - text: OMB Announcements
+            href: 'info/announcements'
+          - text: FAC updates
+            href: 'info/updates'
+    - text: Submission guides
+      id: audits
+      href: 'audits'
+    - text: Policy & Compliance
+      id: policy
+      href: 'policy'  
     - text: Support
       id: support
       links:
