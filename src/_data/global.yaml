@@ -9,8 +9,6 @@ navigation:
           href: '#'
         - text: API
           href: 'developers'
-        - text: Resources
-          href: '#' 
     - text: Audit Submission
       id: audits
       href: 'audits'
