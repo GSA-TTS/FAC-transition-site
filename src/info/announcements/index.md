@@ -6,17 +6,17 @@ meta:
   description: Announcements and deadline information from the Office of Management and Budget.
 ---
 
-# Announcements
+# OMB Announcements
+
+The Office of Management and Budget (OMB) sets the policy for single audit submissions and their deadlines. The announcements below are in effect; for historic decisions, view [our archive]({{ config.baseUrl }}/info/announcements/archive).
 
 <div
   class="usa-summary-box"
   role="region"
   aria-labelledby="summary-box-key-information">
   <div class="usa-summary-box__body">
-    <h4 class="usa-summary-box__heading" id="summary-box-key-information">
-OMB is extending the 2023 submission deadline.</h4>
     <div class="usa-summary-box__text">
-      <ul class="usa-list">
+      <ul>
       {% for announcement in collections.omb %}
           <li>{{ announcement.content | safe }}</li>
       {% endfor %}
