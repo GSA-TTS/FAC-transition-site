@@ -2,7 +2,7 @@ site_name: Federal Audit Clearinghouse
 
 navigation:
   primary:
-    - text: Audit data
+    - text: Audits
       id: data
       links: 
         - text: Search audits
@@ -18,10 +18,10 @@ navigation:
           href: 'info/announcements'
         - text: FAC updates
           href: 'info/updates'
-    - text: Submission guides
+    - text: Submission
       id: audits
       href: 'audits'
-    - text: Policy & Compliance
+    - text: Policy
       id: policy
       href: 'policy'
     - text: Support
