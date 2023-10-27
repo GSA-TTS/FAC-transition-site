@@ -6,11 +6,11 @@ navigation:
       id: data
       links: 
         - text: Search audits
-          href: 
+          href: '#'
         - text: API
-          href: 
+          href: '#'
         - text: Resources
-          href:   
+          href: '#' 
     - text: News
       id: news
       links:
@@ -20,10 +20,10 @@ navigation:
           href: 'info/updates'
     - text: Submission guides
       id: audits
-      href: 
+      href: 'audits'
     - text: Policy & Compliance
       id: policy
-      href:   
+      href: 'policy'
     - text: Support
       id: support
       links:
