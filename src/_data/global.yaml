@@ -10,7 +10,7 @@ navigation:
         - text: API
           href: 
         - text: Resources
-          href: 'data/resources'  
+          href:   
     - text: News
       id: news
       links:
@@ -20,10 +20,10 @@ navigation:
           href: 'info/updates'
     - text: Submission guides
       id: audits
-      href: 'audits'
+      href: 
     - text: Policy & Compliance
       id: policy
-      href: 'policy'  
+      href:   
     - text: Support
       id: support
       links:
