@@ -11,13 +11,13 @@ navigation:
           href: 
         - text: Resources
           href: 'data/resources'  
-      - text: News
-        id: news
-        links:
-          - text: OMB Announcements
-            href: 'info/announcements'
-          - text: FAC updates
-            href: 'info/updates'
+    - text: News
+      id: news
+      links:
+        - text: OMB Announcements
+          href: 'info/announcements'
+        - text: FAC updates
+          href: 'info/updates'
     - text: Submission guides
       id: audits
       href: 'audits'
