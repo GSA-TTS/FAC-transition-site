@@ -19,24 +19,73 @@ The Federal Audit Clearinghouse team works in the open. Our day-to-day task boar
 * Updates for [grantees and auditors](#grantees-and-auditors)
 * Updates for [agencies](#agencies)
 
-## Week of October 16, 2023
+## Week of October 23, 2023
 
-We released the GSA FAC as a minimal viable product. That means we are continuing to work and improve the FAC. [We work in an agile manner](https://asana.com/resources/agile-methodology).
+The FAC participated in the Single Audit Roundtable, providing an update on our work to date and planned next steps, and used the opportunity to discuss pressing needs for auditors, resolution officials, and IGs.
+
+We released the GSA FAC as a minimal viable product. That means we are continuing to work and improve the FAC.
+
+### What we delivered
+
+We work in [an agile manner](https://asana.com/resources/agile-methodology). That means we have a long-term strategy, medium-term features we work to deliver, and make continuous improvement and bug fixes to the existing product. We update our system through pull requests, or PRs.
+
+- Improvements take existing code or text and increase its quality
+- Features add new capabilities or documentation to the FAC
+- Validations increase the integrity of the data collected or disseminated by the FAC.
+
+During the week of October 16th, the FAC team merged the following PRs that improved, added features to, or improved the validation of data in the system.
+
+<table class="usa-table">
+  <caption>
+    FAC code releases for the week of Oct. 16, 2023.
+  </caption>
+  <thead>
+    <tr>
+      <th scope="col">PR</th>
+      <th scope="col">Type</th>
+      <th scope="col">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><a href=https://github.com/GSA-TTS/FAC/pull/2569>2569</a></th>
+      <td>
+        Feature
+      </td>
+      <td>Add system command for generating test data in production environments</td>
+    </tr>
+    <tr>
+      <th scope="row">Bill of Rights</th>
+      <td>
+        The first ten amendments of the U.S. Constitution guaranteeing rights
+        and freedoms.
+      </td>
+      <td>1791</td>
+    </tr>
+    <tr>
+      <th scope="row">Declaration of Sentiments</th>
+      <td>
+        A document written during the Seneca Falls Convention outlining the
+        rights that American women should be entitled to as citizens.
+      </td>
+      <td>1848</td>
+    </tr>
+    <tr>
+      <th scope="row">Emancipation Proclamation</th>
+      <td>
+        An executive order granting freedom to slaves in designated southern
+        states.
+      </td>
+      <td>1863</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Items of note:
-- <p>All UEIs are validating.</p>
-- <p>We made significant improvements to workbook validations and their associated instructions.</p>
 
-If you previously encountered challenges submitting your workbooks, we recommend you try again.
 ### What's next?
 
-We are currently working on [search](https://github.com/GSA-TTS/FAC/issues/2236). We hope to demonstrate a prototype to Federal partners this week for early feedback. We anticipate having the ability to search for and download audits by the end of October.
 
-Our pending feature priorities are:
-- Adding the ability to unlock audit submissions to edit and then re-lock for certification instead of starting a new submission.
-- Adding the ability to add, remove, or change auditors and certifying officials who are attached to the audit.
-- Adding the ability to resubmit a previously submitted and completed audit.
-- Adding email notifications to alert auditees and auditors that a step is ready for them to complete.
 
 <h2 id="general" >General updates</h3>
 

@@ -10,6 +10,25 @@ meta:
 
 The FAC is committed to working transparently and openly. In addition to our regular updates, you can find historical updates below.
 
+## Week of October 16, 2023
+
+We released the GSA FAC as a minimal viable product. That means we are continuing to work and improve the FAC. [We work in an agile manner](https://asana.com/resources/agile-methodology).
+
+### Items of note:
+- <p>All UEIs are validating.</p>
+- <p>We made significant improvements to workbook validations and their associated instructions.</p>
+
+If you previously encountered challenges submitting your workbooks, we recommend you try again.
+### What's next?
+
+We are currently working on [search](https://github.com/GSA-TTS/FAC/issues/2236). We hope to demonstrate a prototype to Federal partners this week for early feedback. We anticipate having the ability to search for and download audits by the end of October.
+
+Our pending feature priorities are:
+- Adding the ability to unlock audit submissions to edit and then re-lock for certification instead of starting a new submission.
+- Adding the ability to add, remove, or change auditors and certifying officials who are attached to the audit.
+- Adding the ability to resubmit a previously submitted and completed audit.
+- Adding email notifications to alert auditees and auditors that a step is ready for them to complete.
+
 ## Week of October 9, 2023
 
 We released the GSA FAC as a minimal viable product. That means we are continuing to work and improve the FAC. [We work in an agile manner](https://asana.com/resources/agile-methodology).
