@@ -29,15 +29,15 @@ We released the GSA FAC as a minimal viable product. That means we are continuin
 
 We work in [an agile manner](https://asana.com/resources/agile-methodology). That means we have a long-term strategy, medium-term features we work to deliver, and make continuous improvement and bug fixes to the existing product. We update our system through pull requests, or PRs.
 
-- Improvements take existing code or text and increase its quality
 - Features add new capabilities or documentation to the FAC
+- Improvements take existing code or text and increase its quality
 - Validations increase the integrity of the data collected or disseminated by the FAC.
 
-During the week of October 16th, the FAC team merged the following PRs that improved, added features to, or improved the validation of data in the system.
+During the week of October 16th, the FAC team merged the following PRs.
 
 <table class="usa-table">
   <caption>
-    FAC code releases for the week of Oct. 16, 2023.
+    FAC feature additions, system improvements, and data validations for the week of October 16, 2023.
   </caption>
   <thead>
     <tr>
