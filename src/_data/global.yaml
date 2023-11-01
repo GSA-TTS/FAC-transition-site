@@ -12,16 +12,15 @@ navigation:
     - text: Audit Submission
       id: audits
       href: 'audits'
-    - text: News
+    - text: Policy & News
       id: news
       links:
         - text: OMB Announcements
           href: 'info/announcements'
         - text: FAC updates
           href: 'info/updates'
-    - text: Policy
-      id: policy
-      href: 'policy'
+        - text: Policy
+          href: 'policy'
     - text: Support
       id: support
       links:
