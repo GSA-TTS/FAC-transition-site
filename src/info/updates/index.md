@@ -33,8 +33,6 @@ We work in [an agile manner](https://asana.com/resources/agile-methodology). Tha
 - Improvements take existing code or text and increase its quality
 - Validations increase the integrity of the data collected or disseminated by the FAC.
 
-During the week of October 16th, the FAC team merged the following PRs.
-
 <table class="usa-table">
   <caption>
     FAC feature additions, system improvements, and data validations for the week of October 16, 2023.
