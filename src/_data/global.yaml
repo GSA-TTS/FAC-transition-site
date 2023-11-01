@@ -15,12 +15,12 @@ navigation:
     - text: Policy & News
       id: news
       links:
+        - text: Policy
+          href: 'policy'
         - text: OMB Announcements
           href: 'info/announcements'
         - text: FAC updates
-          href: 'info/updates'
-        - text: Policy
-          href: 'policy'
+          href: 'info/updates' 
     - text: Support
       id: support
       links:
