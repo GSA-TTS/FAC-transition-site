@@ -86,8 +86,7 @@ include_survey: true
                         </div>
                     </div>
                 </div>
-                <p class="usa-card__body">Search 2023 audits. Older reports are availbe <a href=https://facdissem.census.gov/>from the Census Bureau</a> through December 31, 2023.
-                </p>
+                <p class="usa-card__body">Search 2023 audits. Older reports are available <a href=https://facdissem.census.gov/>from the Census Bureau</a> through December 31, 2023.</p>
             </div>
         </li>
     </ul>
