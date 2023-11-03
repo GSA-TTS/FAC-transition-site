@@ -75,7 +75,7 @@ include_survey: true
         <li class="usa-card desktop:grid-col-6">
             <div class="usa-card__container">
                 <div>
-                    <a class="usa-button usa-button--outline usa-button--active"
+                    <a class=""usa-button usa-button--outline">Default"
                         aria-controls="search-audits"
                         href="https://app.fac.gov/dissemination/search/">Search audit reports</a>
                         <div class="usa-modal__footer">
