@@ -57,24 +57,7 @@ include_survey: true
                                     </ul>
                                 </div>
                             </div>
-                            <button class="usa-button usa-modal__close"
-                                    aria-label="Close this window"
-                                    data-close-modal>
-                                <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-                                  <img src="{{ config.baseUrl }}assets/img/usa-icons/close.svg" role="img" alt="Close" />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <p class="usa-card__body">Sign in to submit and review your audits.</p>
-            </div>
-        </li>
-    </ul>
-         <ul class="usa-card-group flex-align-center flex-justify-right">
-        <li class="usa-card desktop:grid-col-6">
-            <div class="usa-card__container">
-                <div>
+                            <div>
                     <a class="usa-button sign-in-button"
                         aria-controls="login-modal"
                         href="https://app.fac.gov/openid/login/">Sign in</a>
