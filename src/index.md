@@ -16,7 +16,7 @@ include_survey: true
     <p class="intro-text">
         When an organization spends $750,000 or more in federal grant funds in a fiscal year, they are required to submit an audit. For more information on the features and development of the new FAC, check out our <a href=https://www.fac.gov/info/updates>Updates page</a>.
     </p>
-     <ul class="usa-card-group flex-align-center flex-justify-center">
+     <ul class="usa-card-group flex-align-center flex-justify-left">
         <li class="usa-card desktop:grid-col-6">
             <div class="usa-card__container">
                 <div>
@@ -71,7 +71,7 @@ include_survey: true
             </div>
         </li>
     </ul>
-         <ul class="usa-card-group flex-align-center flex-justify-center">
+         <ul class="usa-card-group flex-align-center flex-justify-right">
         <li class="usa-card desktop:grid-col-6">
             <div class="usa-card__container">
                 <div>
