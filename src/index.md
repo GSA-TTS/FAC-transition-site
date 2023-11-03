@@ -71,5 +71,60 @@ include_survey: true
             </div>
         </li>
     </ul>
+         <ul class="usa-card-group flex-align-center flex-justify-center">
+        <li class="usa-card desktop:grid-col-6">
+            <div class="usa-card__container">
+                <div>
+                    <a class="usa-button sign-in-button"
+                        aria-controls="login-modal"
+                        href="https://app.fac.gov/openid/login/">Sign in</a>
+                        <div class="usa-modal usa-modal--lg"
+                     id="main-login-modal"
+                     aria-labelledby="login-modal-heading"
+                     aria-describedby="login-modal-description">
+                    <div class="usa-modal__content">
+                        <div class="usa-modal__main">
+                            <h2 class="usa-modal__heading" id="login-modal-heading">You must log in to continue</h2>
+                            <div id="login-modal-description">
+                                <p>
+                                    Submitting information to the Federal Audit Clearinghouse requires authentication
+                                    which will now be handled by <a href="http://login.gov">Login.gov</a>.
+                                    <strong>You cannot use your old Census FAC credentials to access the new GSA
+                                        system.</strong> On the next screen you can use an existing Login.gov
+                                        account or create a new one to securely sign in.
+                                    </p>
+                                </div>
+                                <div class="usa-modal__footer">
+                                    <ul class="usa-button-group">
+                                        <li class="usa-button-group__item">
+                                            <a href="https://app.fac.gov/openid/login/">
+                                                <button type="button"
+                                                        class="usa-button sign-in-button"
+                                                        id="sign-in"
+                                                        data-close-modal>Authenticate with Login.gov</button>
+                                            </a>
+                                        </li>
+                                        <li class="usa-button-group__item">
+                                            <button type="button"
+                                                    class="usa-button usa-button--unstyled padding-105 text-center"
+                                                    data-close-modal>Cancel</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="usa-button usa-modal__close"
+                                    aria-label="Close this window"
+                                    data-close-modal>
+                                <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                                  <img src="{{ config.baseUrl }}assets/img/usa-icons/close.svg" role="img" alt="Close" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <p class="usa-card__body">Sign in to submit and review your audits.</p>
+            </div>
+        </li>
+    </ul>
   </div>
 </div>
