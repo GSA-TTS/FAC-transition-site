@@ -12,7 +12,7 @@ Our goal is to make the single audit submission process as easy as possible.
 
 ## How-to
 
-Our [how-to guide]({{ config.baseUrl }}/resources/instructions) will take you through submitting a single audit, from creating a Login.gov account to certification and submission.
+Our [how-to guide]({{ config.baseUrl }}resources/instructions) will take you through submitting a single audit, from creating a Login.gov account to certification and submission.
 
 ## Single audit workbooks
 
