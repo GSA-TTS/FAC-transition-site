@@ -31,7 +31,7 @@ Enter the first two digits of the agency's ALN (formerly CFDA number).
 
 This field cannot be left blank.
 
-### Column C: ALN (formerly CFDA) Three Digit Extension**
+### Column C: ALN (formerly CFDA) Three Digit Extension
 
 Enter the last three digits of the agency's ALN.
 - For programs with no ALN or if the ALN is Unknown, enter a "U" followed by a two-digit number (e.g. U12) to identify one or more Federal award lines that form the program.
