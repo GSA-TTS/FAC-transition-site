@@ -11,7 +11,7 @@ include_survey: true
 
 The General Services Administration (GSA) launched the new Federal Audit Clearinghouse in October, 2023. All single audit submissions should now be submitted using [our new system](https://app.fac.gov/openid/login/). 
 
-For the time being, [search and download of historical audit data](https://facdissem.census.gov/Main.aspx) will remain on the Census' site.
+Users can also [search single audit reports](https://app.fac.gov/dissemination/search/) submitted to the FAC since October 1, 2023. For the time being, [search and download of historical audit data](https://facdissem.census.gov/Main.aspx) will remain on the Census' site.
 
 To help make this transition smooth, we've put together several resources for your use. In addition to being able to log in and complete the audit submission process, the new site includes:
 
@@ -22,4 +22,4 @@ To help make this transition smooth, we've put together several resources for yo
 
 ## For ACEE submitters
 
-At this time, the FAC is not accepting submissions for Alternative Compliance Examination Engagements (ACEE). The [Office of Management and Budget (OMB)]({{ config.baseUrl }}info/announcements) has granted an automatic extension for these entities for Audit Year 2023.
+At this time, the FAC is not accepting submissions for Alternative Compliance Examination Engagements (ACEE).
