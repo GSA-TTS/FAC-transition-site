@@ -10,6 +10,145 @@ meta:
 
 The FAC is committed to working transparently and openly. In addition to our regular updates, you can find historical updates below.
 
+## Week of October 23, 2023
+
+The FAC participated in the Single Audit Roundtable, providing an update on our work to date and planned next steps, and used the opportunity to discuss pressing needs for auditors, resolution officials, and IGs.
+
+We released the GSA FAC as a minimal viable product. That means we are continuing to work and improve the FAC.
+
+### What we delivered
+
+We work in [an agile manner](https://asana.com/resources/agile-methodology). That means we have a long-term strategy, medium-term features we work to deliver, and make continuous improvement and bug fixes to the existing product. We update our system through pull requests, or PRs.
+
+- Features add new capabilities or documentation to the FAC
+- Improvements take existing code or text and increase its quality
+- Validations increase the integrity of the data collected or disseminated by the FAC.
+
+<table class="usa-table">
+  <caption>
+    FAC feature additions, system improvements, and data validations for the week of October 16, 2023.
+  </caption>
+  <thead>
+    <tr>
+      <th scope="col">PR</th>
+      <th scope="col">Type</th>
+      <th scope="col">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><a href=https://github.com/GSA-TTS/FAC/pull/2569>2569</a></th>
+      <td>
+        Feature
+      </td>
+      <td>Add system command for generating test data in production environments</td>
+    </tr>
+    <tr>
+      <th scope="row"><a href=https://github.com/GSA-TTS/FAC/pull/2572>2572</a></th>
+      <td>
+        Feature
+      </td>
+      <td>Allow users to unlock submissions once locked</td>
+    </tr>
+    <tr>
+      <th scope="row"><a href=https://github.com/GSA-TTS/FAC/pull/2610>2610</a></th>
+      <td>
+        Feature
+      </td>
+      <td>Create backup of media files</td>
+    </tr>
+    <tr>
+      <th scope="row"><a href=https://github.com/GSA-TTS/FAC/pull/2617>2617</a></th>
+      <td>
+        Feature
+      </td>
+      <td>Test data for historical data migration</td>
+    </tr>
+    <tr>
+      <th scope="row"><a href=https://github.com/GSA-TTS/FAC/pull/2627>2627</a></th>
+      <td>
+        Feature
+      </td>
+      <td>Prepare workbook generator for use in historical migration</td>
+    </tr>
+    <tr>
+      <th scope="row"><a href=https://github.com/GSA-TTS/FAC/pull/2563>2563</a></th>
+      <td>
+        Improvement
+      </td>
+      <td>Test data generator improvements to align with data intake checks</td>
+    </tr>
+    <tr>
+      <th scope="row"><a href=https://github.com/GSA-TTS/FAC/pull/2568>2568</a></th>
+      <td>
+        Improvement
+      </td>
+      <td>Code simplification in end-to-end test environment</td>
+    </tr>
+    <tr>
+      <th scope="row"><a href=https://github.com/GSA-TTS/FAC/pull/2571>2571</a></th>
+      <td>
+        Improvement
+      </td>
+      <td>Improve data generation command for reuse across environments</td>
+    </tr>
+    <tr>
+      <th scope="row"><a href=https://github.com/GSA-TTS/FAC/pull/2595>2595</a></th>
+      <td>
+        Improvement
+      </td>
+      <td>Copy improvements and styling for submission unlock</td>
+    </tr>
+    <tr>
+      <th scope="row"><a href=https://github.com/GSA-TTS/FAC/pull/2596>2596</a></th>
+      <td>
+        Improvement
+      </td>
+      <td>Remove unused application code</td>
+    </tr>
+    <tr>
+      <th scope="row"><a href=https://github.com/GSA-TTS/FAC/pull/2613>2613</a></th>
+      <td>
+        Improvement
+      </td>
+      <td>Fix PDF download infrastructure</td>
+    </tr>
+    <tr>
+      <th scope="row"><a href=https://github.com/GSA-TTS/FAC/pull/2624>2624</a></th>
+      <td>
+        Improvement
+      </td>
+      <td>Update software versions for deployment automations</td>
+    </tr>
+    <tr>
+      <th scope="row"><a href=https://github.com/GSA-TTS/FAC/pull/2586>2586</a></th>
+      <td>
+        Validation
+      </td>
+      <td>Assert all data ranges expected are present in workbooks</td>
+    </tr>
+  </tbody>
+</table>
+
+### Challenges
+
+We encountered a bug on Friday, October 27th. This is not a bug in our software, but in one of our support systems. We are working with our systems providers to understand this bug and resolve it. Until it is resolved, we have to slow releases into our production environment. **This bug does not impact data quality or the current operation of the FAC.**
+
+### What's next?
+
+We are currently working on [search](https://github.com/GSA-TTS/FAC/issues/2236). We have a version ready for release, but are unable to promote it to production due to underlying system issues. Search includes the ability to download PDFs, both via the website and API.
+
+After releasing search, our priorities are:
+- Adding the ability to add, remove, or change auditors and certifying officials who are attached to the audit.
+- Adding the ability to search for and download Tribal audits.
+- Adding the ability to resubmit a previously submitted and completed audit.
+- Adding email notifications to alert auditees and auditors that a step is ready for them to complete.
+- Adding the ability to bulk download search results.
+
+### Opportunities
+
+Do you have an idea that could transform and improve grants management and oversight? 10x, a federal idea accelerator, is [accepting proposals for new investment opportunities](https://10x.gsa.gov/posts/2023-submission-period/). All Federal employees are invited to submit ideas by November 30th.
+
 ## Week of October 16, 2023
 
 We released the GSA FAC as a minimal viable product. That means we are continuing to work and improve the FAC. [We work in an agile manner](https://asana.com/resources/agile-methodology).
