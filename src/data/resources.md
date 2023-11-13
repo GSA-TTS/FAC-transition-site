@@ -16,7 +16,7 @@ The FAC is coordinating access to Tribal data with agencies. That access will be
 
 The FAC search currently has six search filters that combine with each other to narrow down search results. It’s possible to combine filters and get no results.
 
-> **Example**: If you search a range of 8/1/2023 to 8/15/2023 for “FAC Release Date,”  plus a specific UEI, you won’t get any results because we didn’t collect or release any audits between August 1st and August 15th. Even if the UEI exists, this combination of filters won’t return any results.
+> **Example**: If you search a range of 8/1/2023 to 8/15/2023 for “FAC Release Date,”  plus a specific UEI, the system won’t return any results because we didn’t collect or release any audits between August 1st and August 15th. Even if the UEI exists, this combination of filters won’t return any results.
 
 The six filters currently available are:
 
