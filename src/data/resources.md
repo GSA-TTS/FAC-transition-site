@@ -34,7 +34,7 @@ Enter one UEI or EIN per line.
 
 > **Example**: If you enter only `RHVRCYWNTFX3`, the system will return a single audit for Clinton County. If you add a second line, and enter `UVLVR8CN2FM4`, the system will return two results, one for Clinton County and one for Santa Cruz County.
 
-### Assistance Listing Number (ALN/CFDA)
+### <a name=assistance-listing-number-alncfda></a>Assistance Listing Number (ALN/CFDA)
 
 The system supports search for both ALNs and for program numbers. Your list can contain a mix of both, or you can search for just one or the other.
 
@@ -46,7 +46,7 @@ Enter one number per line.
 
 > **Example**: If you enter `93` on one line, and `20.600` on another, the system will return all submissions that contained an award for HHS, and all awards that included funding on ALN 20.600. 
 
-### Name (entity, auditee, or auditor)
+### <a name=name-entity-auditee-or-auditor></a>Name (entity, auditee, or auditor)
 The name search looks at multiple fields in the single audit submission. At this time, the FAC matches whole words, not parts of words. The terms “school” and “schools” are not the same.
 
 The system ignores the capitalization of words. The terms “school,” “School,” and “SCHOOL” are all the same.
@@ -55,11 +55,11 @@ Enter one word per line.
 
 > **Example**: If  you are looking for a school, you might use the word “SCHOOL” as a part of your search. This will return “Ripley School District of Oklahoma,” but it will not return “Sand Creek Community Schools.” To get both, you would enter “SCHOOL” on one line, and “SCHOOLS” on the next. 
 
-### [Audit year](#audit-year)
+### <a name=audit-year></a>Audit year
 
 This filters on the submission’s audit year. If you leave it blank, the system will return results from all audit years; if you check one, it limits your results to the selected year(s) only. The migration of historical audits from Census to our system won’t happen until early 2024.
 
-### FAC acceptance date
+### <a name=fac-acceptance-date></a>FAC acceptance date
 
 Historically, this used to be FAC Release Date.  The current FAC system accepts and releases the single audit data immediately upon final submission by the auditee.
 
@@ -69,7 +69,7 @@ If you enter only a start date, the system wil lreturn all audits accepted after
 
 If you enter only an end date, the system will return all audits accepted before that date.
 
-### Cognizant or oversight
+### <a name=cognizant-or-oversight></a>Cognizant or oversight
 
 To filter by cognizant or oversight agency, you must select which you are looking for as well as enter the federal agency number. 
 
