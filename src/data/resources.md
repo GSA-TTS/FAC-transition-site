@@ -26,7 +26,7 @@ The six filters currently available are:
 - [FAC acceptance date](#fac-acceptance-date)
 - [Cognizant or oversight](#cognizant-or-oversight)
 
-### UEI or EIN(#uei)
+### [UEI or EIN](#uei)
 
 The FAC searches for all of the UEIs or EINS you enter; the system will ignore any that are incorrect.
 
