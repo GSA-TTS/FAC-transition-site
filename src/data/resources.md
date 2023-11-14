@@ -19,6 +19,12 @@ The FAC search currently has six search filters that combine with each other to 
 > **Example**: If you search a range of 8/1/2023 to 8/15/2023 for “FAC Release Date,”  plus a specific UEI, the system won’t return any results because we didn’t collect or release any audits between August 1st and August 15th. Even if the UEI exists, this combination of filters won’t return any results.
 
 The six filters currently available are:
+- [UEI or EIN](#uei-or-einuei)
+- [Assistance Listing Number (ALN/CFDA)](#assistance-listing-number-alncfda)
+- [Name (entity, auditee, or auditor)](#name-entity-auditee-or-auditor)
+- [Audit year](#audit-year)
+- [FAC acceptance date](#fac-acceptance-date)
+- [Cognizant or oversight](#cognizant-or-oversight)
 
 ### UEI or EIN
 
@@ -40,7 +46,7 @@ Enter one number per line.
 
 > **Example**: If you enter `93` on one line, and `20.600` on another, the system will return all submissions that contained an award for HHS, and all awards that included funding on ALN 20.600. 
 
-### Name (Entity, Auditee, or Auditor)
+### Name (entity, auditee, or auditor)
 The name search looks at multiple fields in the single audit submission. At this time, the FAC matches whole words, not parts of words. The terms “school” and “schools” are not the same.
 
 The system ignores the capitalization of words. The terms “school,” “School,” and “SCHOOL” are all the same.
