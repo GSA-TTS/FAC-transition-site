@@ -55,7 +55,7 @@ Enter one word per line.
 
 > **Example**: If  you are looking for a school, you might use the word “SCHOOL” as a part of your search. This will return “Ripley School District of Oklahoma,” but it will not return “Sand Creek Community Schools.” To get both, you would enter “SCHOOL” on one line, and “SCHOOLS” on the next. 
 
-### Audit year
+### [Audit year](#audit-year)
 
 This filters on the submission’s audit year. If you leave it blank, the system will return results from all audit years; if you check one, it limits your results to the selected year(s) only. The migration of historical audits from Census to our system won’t happen until early 2024.
 
