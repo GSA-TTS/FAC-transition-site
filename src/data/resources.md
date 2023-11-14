@@ -19,14 +19,14 @@ The FAC search currently has six search filters that combine with each other to 
 > **Example**: If you search a range of 8/1/2023 to 8/15/2023 for “FAC Release Date,”  plus a specific UEI, the system won’t return any results because we didn’t collect or release any audits between August 1st and August 15th. Even if the UEI exists, this combination of filters won’t return any results.
 
 The six filters currently available are:
-- [UEI or EIN](#uei-or-einuei)
+- [UEI or EIN](#uei)
 - [Assistance Listing Number (ALN/CFDA)](#assistance-listing-number-alncfda)
 - [Name (entity, auditee, or auditor)](#name-entity-auditee-or-auditor)
 - [Audit year](#audit-year)
 - [FAC acceptance date](#fac-acceptance-date)
 - [Cognizant or oversight](#cognizant-or-oversight)
 
-### UEI or EIN
+### UEI or EIN(#uei)
 
 The FAC searches for all of the UEIs or EINS you enter; the system will ignore any that are incorrect.
 
