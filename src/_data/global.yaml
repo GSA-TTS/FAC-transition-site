@@ -7,6 +7,8 @@ navigation:
       links: 
         - text: Search audits
           href: 'https://app.fac.gov/dissemination/search/'
+        - text: Resources
+          href: 'data/resources'
         - text: API
           href: 'developers'
     - text: Audit Submission
