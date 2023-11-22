@@ -19,9 +19,12 @@ The Federal Audit Clearinghouse team works in the open. Our day-to-day task boar
 * Updates for [grantees and auditors](#grantees-and-auditors)
 * Updates for [agencies](#agencies)
 
-## Week of October 30, 2023
+## Week of November 20, 2023
 
-We launched search and are ready for users to begin searching single audit reports. This initial iteration of search leverages six different filters for sorting data.
+*This update is a bit richer given the cancellation of the November office hour for Federal partners.*
+
+We completed the development work necessary to make it possible to unlock audits that had been locked for certification. Auditors and auditees are now able to unlock these audits to make further edits before re-locking for certification.
+
 
 ### What we delivered
 
@@ -162,18 +165,53 @@ We work in [an agile manner](https://asana.com/resources/agile-methodology). Tha
 
 ### What's next?
 
-We’ve released search, and will be continuing to make improvements. We’ll also be focusing on the migration of historical data, and doing some preparatory work to make future work easier.
+#### Tribal data access controls
 
-Our priorities are:
+We have implemented the data access controls that are required to provide data access to Federal users who have a need-to-know for audits from tribes and tribal organizations. We are now loading users into the system, and we will notify NSACs and KSMLs when that is complete.
+
+#### Historic data migration
+
+We're charged with improving the quality of the data the FAC collects and disseminates. This is challenging but critical work that is necessary if we want the SF-SAC data to be meaningful for oversight. Because of this, we're approaching the migration of historical data from Census as an exercise in data improvement.
+
+We believe it is important for users of FAC data to understand how we're carrying out this work. For today, this is the summary of our process.
+
+1. **Copy.** We have to transfer terabytes of databases and more than 650,000 files from Census to GSA. 
+
+1. **Analyze.** The data is not perfect. The GSA team needs to understand all the ways that the data does, and doesn’t, meet our new validation standards.
+
+1. **Migrate.** We’ll begin by migrating 2022 data. Our team will use the Census data to construct “virtual submissions” to the FAC. Doing this will apply all of our integrity checks, confirming the data coming in is of the highest quality. 
+
+1. **Record Changes.** As we migrate the data, some things might have to be changed. For example, date formats might change. Anything that changes as part of the migration will be recorded.
+
+1. **Record Failures.** Many of these “virtual submissions” will fail to pass our new integrity checks. We'll keep track of them, and set them aside.
+
+1. **Adjust.** We'll go back to step 2, looking at only the records that failed to migrate. We'll then adjust how we are migrating the data so that we can transfer more historical submissions.
+
+1. **Repeat.** We'll repeat steps 2-6 until we have migrated the submissions from 2022.
+
+Our initial goal is to migrate the last 5 years of data with the highest possible integrity. This will improve the quality of the FAC data and create a public record of the migration. 
+
+We're highlighting this process for two reasons:
+
+1. **The data migration is about data integrity.** This work is about improving the integrity of historical FAC data.
+
+1. **The data migration is iterative.** This is not a singular, massive migration of data. It's a sequence of small migrations. 
+
+We'll write more about the migration in the future, and documentation about the migration as a whole is part of what we'll deliver with this work.
+
+#### Other priorities
+
+The historical data migration occupies a lot of our team’s time. However, we are also working on bug fixes, infrastructure, and a few features that we know are important to public and Federal users. Our current feature priorities as we close out 2023 are:
+
 - Adding the ability to add, remove, or change auditors and certifying officials who are attached to the audit.
-- Adding the ability to search for and download Tribal audits.
-- Adding the ability to bulk download search results.
-- Adding the ability to resubmit a previously submitted and completed audit.
-- Adding email notifications to alert auditees and auditors that a step is ready for them to complete.
 
-### Opportunities
+- Adding the ability to search for single audits by auditee state.
 
-Do you have an idea that could transform and improve grants management and oversight? 10x, a federal idea accelerator, is [accepting proposals for new investment opportunities](https://10x.gsa.gov/posts/2023-submission-period/). All Federal employees are invited to submit ideas by November 30th.
+- Improving the visibility of findings on audits.
+
+- Providing summary reports for both single audit submissions and for all results of a search.
+
+
 
 <h2 id="general" >General updates</h3>
 
