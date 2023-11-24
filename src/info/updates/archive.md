@@ -10,9 +10,22 @@ meta:
 
 The FAC is committed to working transparently and openly. In addition to our regular updates, you can find historical updates below.
 
-## Week of October 30, 2023
+<h3 class="site-preview-heading">Bordered</h3>
 
-We launched search and are ready for users to begin searching single audit reports. This initial iteration of search leverages six different filters for sorting data.
+<div class="usa-accordion usa-accordion--bordered">
+  <h4 class="usa-accordion__heading">
+    <button
+      type="button"
+      class="usa-accordion__button"
+      aria-expanded="true"
+      aria-controls="b-a1"
+    >
+      Week of October 30, 2023
+    </button>
+  </h4>
+  <div id="b-a1" class="usa-accordion__content usa-prose">
+    <p>
+      We launched search and are ready for users to begin searching single audit reports. This initial iteration of search leverages six different filters for sorting data.
 
 ### What we delivered
 
@@ -165,10 +178,21 @@ Our priorities are:
 ### Opportunities
 
 Do you have an idea that could transform and improve grants management and oversight? 10x, a federal idea accelerator, is [accepting proposals for new investment opportunities](https://10x.gsa.gov/posts/2023-submission-period/). All Federal employees are invited to submit ideas by November 30th.
-
-## Week of October 23, 2023
-
-The FAC participated in the Single Audit Roundtable, providing an update on our work to date and planned next steps, and used the opportunity to discuss pressing needs for auditors, resolution officials, and IGs.
+    </p>
+  </div>
+  <h4 class="usa-accordion__heading">
+    <button
+      type="button"
+      class="usa-accordion__button"
+      aria-expanded="false"
+      aria-controls="b-a2"
+    >
+      Week of October 23, 2023
+    </button>
+  </h4>
+  <div id="b-a2" class="usa-accordion__content usa-prose">
+    <p>
+      The FAC participated in the Single Audit Roundtable, providing an update on our work to date and planned next steps, and used the opportunity to discuss pressing needs for auditors, resolution officials, and IGs.
 
 We released the GSA FAC as a minimal viable product. That means we are continuing to work and improve the FAC.
 
@@ -304,10 +328,25 @@ After releasing search, our priorities are:
 ### Opportunities
 
 Do you have an idea that could transform and improve grants management and oversight? 10x, a federal idea accelerator, is [accepting proposals for new investment opportunities](https://10x.gsa.gov/posts/2023-submission-period/). All Federal employees are invited to submit ideas by November 30th.
-
-## Week of October 16, 2023
-
-We released the GSA FAC as a minimal viable product. That means we are continuing to work and improve the FAC. [We work in an agile manner](https://asana.com/resources/agile-methodology).
+    </p>
+    <ul>
+      <li>This is a list item</li>
+      <li>Another list item</li>
+    </ul>
+  </div>
+  <h4 class="usa-accordion__heading">
+    <button
+      type="button"
+      class="usa-accordion__button"
+      aria-expanded="false"
+      aria-controls="b-a3"
+    >
+      Week of October 16, 2023
+    </button>
+  </h4>
+  <div id="b-a3" class="usa-accordion__content usa-prose">
+    <p>
+      We released the GSA FAC as a minimal viable product. That means we are continuing to work and improve the FAC. [We work in an agile manner](https://asana.com/resources/agile-methodology).
 
 ### Items of note:
 - <p>All UEIs are validating.</p>
@@ -323,10 +362,21 @@ Our pending feature priorities are:
 - Adding the ability to add, remove, or change auditors and certifying officials who are attached to the audit.
 - Adding the ability to resubmit a previously submitted and completed audit.
 - Adding email notifications to alert auditees and auditors that a step is ready for them to complete.
-
-## Week of October 9, 2023
-
-We released the GSA FAC as a minimal viable product. That means we are continuing to work and improve the FAC. [We work in an agile manner](https://asana.com/resources/agile-methodology).
+    </p>
+  </div>
+  <h4 class="usa-accordion__heading">
+    <button
+      type="button"
+      class="usa-accordion__button"
+      aria-expanded="false"
+      aria-controls="b-a4"
+    >
+      Week of October 9, 2023
+    </button>
+  </h4>
+  <div id="b-a4" class="usa-accordion__content usa-prose">
+    <p>
+      We released the GSA FAC as a minimal viable product. That means we are continuing to work and improve the FAC. [We work in an agile manner](https://asana.com/resources/agile-methodology).
 
 The GSA FAC team worked to minimize change between submission systems. We have worked closely with auditors, auditees, and Federal users to achieve this.
 
@@ -347,10 +397,21 @@ Our other feature priorities are:
 - Adding the ability to add, remove, or change auditors and certifying officials who are attached to the audit.
 - Adding the ability to resubmit a previously submitted and completed audit.
 - Adding email notifications to alert auditees and auditors that a step is ready for them to complete.
-
-## Week of September 25, 2023
-
-We're excited to see completed audits coming in and data exporting via the FAC API. That said, we know there have been some issues. We're doing our best to provide help center support for those as fast as possible.
+    </p>
+  </div>
+  <h4 class="usa-accordion__heading">
+    <button
+      type="button"
+      class="usa-accordion__button"
+      aria-expanded="false"
+      aria-controls="b-a5"
+    >
+      Week of September 25, 2023
+    </button>
+  </h4>
+  <div id="b-a5" class="usa-accordion__content usa-prose">
+    <p>
+      We're excited to see completed audits coming in and data exporting via the FAC API. That said, we know there have been some issues. We're doing our best to provide help center support for those as fast as possible.
 
 ### Items of note:
 - <p>Some auditors and auditees experienced errors when trying to validate their UEIs. We identified the cause of the issue with sam.gov and believe we have implemented a fix.</p>
@@ -364,3 +425,6 @@ We know that not every tool you are used to is currently available, and we are w
 Our goal is to be transparent and share our areas of focus. You can see what features are coming up in [our backlog](https://github.com/orgs/GSA-TTS/projects/13/views/1). 
 
 We are currently working on [search](https://github.com/GSA-TTS/FAC/issues/2236). This will give Federal and public users the ability to find and download completed audits. We track our [day-to-day work on our task board](https://github.com/orgs/GSA-TTS/projects/11).
+    </p>
+  </div>
+</div>
