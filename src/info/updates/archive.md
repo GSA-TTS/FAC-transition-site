@@ -375,7 +375,7 @@ Our pending feature priorities are:
   </h4>
   <div id="b-a4" class="usa-accordion__content usa-prose">
     <p>
-      We released the GSA FAC as a minimal viable product. That means we are continuing to work and improve the FAC. We work in [an agile manner](https://asana.com/resources/agile-methodology).
+      We released the GSA FAC as a minimal viable product. That means we are continuing to work and improve the FAC. We work in <a href=https://asana.com/resources/agile-methodology>an agile manner</a>.
 
 The GSA FAC team worked to minimize change between submission systems. We have worked closely with auditors, auditees, and Federal users to achieve this.
 
