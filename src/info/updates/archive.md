@@ -344,7 +344,7 @@ Do you have an idea that could transform and improve grants management and overs
   </h4>
   <div id="b-a3" class="usa-accordion__content usa-prose">
     <p>
-      We released the GSA FAC as a minimal viable product. That means we are continuing to work and improve the FAC. We work in [an agile manner](https://asana.com/resources/agile-methodology).
+      We released the GSA FAC as a minimal viable product. That means we are continuing to work and improve the FAC. We work in <a href=https://asana.com/resources/agile-methodology>an agile manner</a>.
 
 ### Items of note:
 - <p>All UEIs are validating.</p>
