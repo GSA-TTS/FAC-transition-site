@@ -10,8 +10,6 @@ meta:
 
 The FAC is committed to working transparently and openly. In addition to our regular updates, you can find historical updates below.
 
-<h3 class="site-preview-heading">Bordered</h3>
-
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button
