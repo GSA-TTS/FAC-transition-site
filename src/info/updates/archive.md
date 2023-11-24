@@ -344,13 +344,14 @@ Do you have an idea that could transform and improve grants management and overs
   </h4>
   <div id="b-a3" class="usa-accordion__content usa-prose">
     <p>
-      We released the GSA FAC as a minimal viable product. That means we are continuing to work and improve the FAC. [We work in an agile manner](https://asana.com/resources/agile-methodology).
+      We released the GSA FAC as a minimal viable product. That means we are continuing to work and improve the FAC. We work in [an agile manner](https://asana.com/resources/agile-methodology).
 
 ### Items of note:
 - <p>All UEIs are validating.</p>
 - <p>We made significant improvements to workbook validations and their associated instructions.</p>
 
 If you previously encountered challenges submitting your workbooks, we recommend you try again.
+
 ### What's next?
 
 We are currently working on [search](https://github.com/GSA-TTS/FAC/issues/2236). We hope to demonstrate a prototype to Federal partners this week for early feedback. We anticipate having the ability to search for and download audits by the end of October.
@@ -374,7 +375,7 @@ Our pending feature priorities are:
   </h4>
   <div id="b-a4" class="usa-accordion__content usa-prose">
     <p>
-      We released the GSA FAC as a minimal viable product. That means we are continuing to work and improve the FAC. [We work in an agile manner](https://asana.com/resources/agile-methodology).
+      We released the GSA FAC as a minimal viable product. That means we are continuing to work and improve the FAC. We work in [an agile manner](https://asana.com/resources/agile-methodology).
 
 The GSA FAC team worked to minimize change between submission systems. We have worked closely with auditors, auditees, and Federal users to achieve this.
 
