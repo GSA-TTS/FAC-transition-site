@@ -8,7 +8,7 @@ meta:
 
 # Archived updates from the FAC
 
-The FAC is committed to working transparently and openly. In addition to [our regular updates](({{ config.baseUrl }}info/updates), you can find historical updates below.
+The FAC is committed to working transparently and openly. In addition to <a href=https://www.fac.gov/info/updates/>our regular updates</a>.
 
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
