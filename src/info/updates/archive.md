@@ -88,10 +88,10 @@ The historical data migration occupies a lot of our team’s time. However, we a
       aria-expanded="false"
       aria-controls="b-a3"
     >
-      Week of October 30, 2023
+      Week of October 20, 2023
     </button>
   </h4>
-  <div id="b-a1" class="usa-accordion__content usa-prose">
+  <div id="b-a3" class="usa-accordion__content usa-prose">
 
 We launched search and are ready for users to begin searching single audit reports. This initial iteration of search leverages six different filters for sorting data.
 
