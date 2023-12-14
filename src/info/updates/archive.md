@@ -81,13 +81,12 @@ The historical data migration occupies a lot of our team’s time. However, we a
 - Providing summary reports for both single audit submissions and for all results of a search.
 </div>
 
-<div class="usa-accordion usa-accordion--bordered">
-  <h4 class="usa-accordion__heading">
+<h4 class="usa-accordion__heading">
     <button
       type="button"
       class="usa-accordion__button"
       aria-expanded="false"
-      aria-controls="b-a1"
+      aria-controls="b-a3"
     >
       Week of October 30, 2023
     </button>
