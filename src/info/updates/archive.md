@@ -86,7 +86,7 @@ The historical data migration occupies a lot of our team’s time. However, we a
       type="button"
       class="usa-accordion__button"
       aria-expanded="false"
-      aria-controls="b-a3"
+      aria-controls="b-a2"
     >
       Week of October 20, 2023
     </button>
@@ -253,7 +253,7 @@ Do you have an idea that could transform and improve grants management and overs
       type="button"
       class="usa-accordion__button"
       aria-expanded="false"
-      aria-controls="b-a2"
+      aria-controls="b-a3"
     >
       Week of October 23, 2023
     </button>
@@ -403,7 +403,7 @@ Do you have an idea that could transform and improve grants management and overs
       type="button"
       class="usa-accordion__button"
       aria-expanded="false"
-      aria-controls="b-a3"
+      aria-controls="b-a4"
     >
       Week of October 16, 2023
     </button>
@@ -435,7 +435,7 @@ Our pending feature priorities are:
       type="button"
       class="usa-accordion__button"
       aria-expanded="false"
-      aria-controls="b-a4"
+      aria-controls="b-a5"
     >
       Week of October 9, 2023
     </button>
@@ -471,7 +471,7 @@ Our other feature priorities are:
       type="button"
       class="usa-accordion__button"
       aria-expanded="false"
-      aria-controls="b-a5"
+      aria-controls="b-a6"
     >
       Week of September 25, 2023
     </button>
