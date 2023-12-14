@@ -86,7 +86,7 @@ The historical data migration occupies a lot of our team’s time. However, we a
     <button
       type="button"
       class="usa-accordion__button"
-      aria-expanded="true"
+      aria-expanded="false"
       aria-controls="b-a1"
     >
       Week of October 30, 2023
