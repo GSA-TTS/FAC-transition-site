@@ -14,17 +14,18 @@ The FAC is coordinating access to Tribal data with agencies. That access will be
 
 ## Search filters
 
-The FAC search currently has six search filters that combine with each other to narrow down search results. It’s possible to combine filters and not return any results.
+The FAC search currently has seven search filters that combine with each other to narrow down search results. It’s possible to combine filters and not return any results.
 
 > **Example**: If you search a range of 8/1/2023 to 8/15/2023 for “FAC Release Date,”  plus a specific UEI, the system won’t return any results because we didn’t collect or release any audits between August 1st and August 15th. Even if the UEI exists, this combination of filters won’t return any results.
 
-The six filters currently available are:
+The seven filters currently available are:
 - [UEI or EIN](#uei-or-ein)
 - [Assistance Listing Number (ALN/CFDA)](#assistance-listing-number-alncfda)
 - [Name (entity, auditee, or auditor)](#name-entity-auditee-or-auditor)
 - [Audit year](#audit-year)
 - [FAC acceptance date](#fac-acceptance-date)
 - [Cognizant or oversight](#cognizant-or-oversight)
+- [State](#state)
 
 ### <a name=uei-or-ein></a>UEI or EIN
 
@@ -77,3 +78,7 @@ To filter by cognizant or oversight agency, you must select which you are lookin
 If you select cognizant or oversight but don’t enter an agency number, the system won’t return any results. 
 
 If you enter an agency number but don’t select cognizant or oversight, the system won’t return any results.
+
+### <a name=state></a>State
+
+Use the dropdown menu to select the state whose audits you'd like to see.
