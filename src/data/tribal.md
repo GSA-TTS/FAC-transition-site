@@ -22,8 +22,6 @@ If you believe you should have access to these audits, [contact the FAC](https:/
 
 The instructions below walk you through searching for Tribal audits.
 
-## Searching in brief 
-
 <ol>
 {% for item in collections.tribal %}
   {% if item.data.title | length %}
