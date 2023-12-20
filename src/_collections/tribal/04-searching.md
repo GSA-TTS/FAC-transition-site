@@ -1,7 +1,7 @@
 ---
 tags: tribal
 title: Searching the FAC
-image: walkthrough_01.png
+image: tribal_04.png
 ---
 
 Use the parameters along the left-hand side of the page to search single audit submissions. If you are signed in and have the proper access to view Tribal audits, these will appear in the results along with non-Tribal audits.
