@@ -22,7 +22,7 @@ If you believe you should have access to these audits, [contact the FAC](https:/
 
 The instructions below walk you through searching for Tribal audits.
 
-## The {{terms.gfac}} in brief 
+## Searching in brief 
 
 <ol>
 {% for item in collections.tribal %}
@@ -35,7 +35,7 @@ The instructions below walk you through searching for Tribal audits.
 
 <div class="grid-container">
 
-{% for item in collections.walkthrough %}
+{% for item in collections.tribal %}
 
   {% if item.data.title | length %}
 
