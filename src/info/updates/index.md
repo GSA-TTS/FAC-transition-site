@@ -19,7 +19,7 @@ The Federal Audit Clearinghouse team works in the open. Our day-to-day task boar
 * Updates for [grantees and auditors](#grantees-and-auditors)
 * Updates for [agencies](#agencies)
 
-## Week of December 11, 2023
+## Week of December 18, 2023
 
 This week we've made improvements to user access roles, search results, and Tribal data access.
 
@@ -30,31 +30,30 @@ We work in [an agile manner](https://asana.com/resources/agile-methodology). Tha
 #### Audit access management
 
 We improved the user access experience for single audits. Users can now change both the auditor and auditee certifying official for a submission. 
+
 Future improvements will allow for the addition, removal, and update of other contributors to a submission.
 
 #### Search improvements
 
 We added the ability to filter search results by auditee state. We also enhanced the results returned by the ALN filter, making it possible to see if a submission includes audit findings.
-At this time, seeing these results requires side scrolling but we are planning future work to improve this experience.
 
 #### Tribal data access controls
 
 We have implemented access controls for Tribal audit data, and notified NSACs and KMSALs. This data will now appear in searches for logged in Federal users who have access.
 
+#### Summary reports 
+
+We added the ability to download a summary report for an individual single audit submission. This combines all data from a single SF-SAC into one Excel document.
+
+#### Pre-certification review
+
+Auditors and auditees can now review a submission after it is validated and locked, but before it is certified.
 
 ### What's next?
 
 #### Historic data migration
 
 We continue to work with Census on the migration of historic data.
-
-#### Summary reports and pre-certification review
-
-We are actively working on two features to be delivered shortly.
-
-1. Summary reports. These will combine all data from a single SF-SAC into one Excel document. These will appear on search result pages for individual single audits.
-
-1. Pre-certification review. This will allow auditors and auditees to review a submission after it is validated and locked, but before it is certified.
 
 <h2 id="general" >General updates</h3>
 
