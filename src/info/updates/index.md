@@ -39,7 +39,7 @@ We added the ability to filter search results by auditee state. We also enhanced
 
 #### Tribal data access controls
 
-We have implemented access controls for Tribal audit data, and notified NSACs and KMSALs. This data will now appear in searches for logged in Federal users who have access.
+We have implemented [access controls for Tribal audit data]({{ config.baseUrl }}data/tribal), and notified NSACs and KMSALs. This data will now appear in searches for logged in Federal users who have access.
 
 #### Summary reports 
 
