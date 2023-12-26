@@ -9,7 +9,7 @@ terms:
   cfac_url: https://facweb.census.gov/
   gfac: GSA FAC
   gfac_url: https://fac.gov/
-tribal_date: "20231226"
+user-access_date: "20231226"
 inlcude_survey: true
 ---
 
