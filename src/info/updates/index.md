@@ -29,9 +29,9 @@ We work in [an agile manner](https://asana.com/resources/agile-methodology). Tha
 
 #### Audit access management
 
-We improved the user access experience for single audits. Users can now change both the auditor and auditee certifying official for a submission. 
+We improved [the user access experience]({{ config.baseUrl }}resources/instructions/user-access) for single audits. Users can now change both the auditor and auditee certifying official for a submission and add new audit editors. 
 
-Future improvements will allow for the addition, removal, and update of other contributors to a submission.
+Future improvements will allow for the removal of other contributors to a submission.
 
 #### Search improvements
 
