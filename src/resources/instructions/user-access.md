@@ -9,7 +9,7 @@ terms:
   cfac_url: https://facweb.census.gov/
   gfac: GSA FAC
   gfac_url: https://fac.gov/
-user-access_date: "20231226"
+access_date: "20231226"
 inlcude_survey: true
 ---
 
@@ -24,7 +24,7 @@ Keep in mind that you may only have one Auditee Certifying Official and Auditor 
 The instructions below walk you through making changes to user roles.
 
 <ol>
-{% for item in collections.user-access %}
+{% for item in collections.access %}
   {% if item.data.title | length %}
   <li>
     <a href="#{{item.data.title | slugify }}">{{item.data.title}}</a>
@@ -34,7 +34,7 @@ The instructions below walk you through making changes to user roles.
 
 <div class="grid-container">
 
-{% for item in collections.user-access %}
+{% for item in collections.access %}
 
   {% if item.data.title | length %}
 

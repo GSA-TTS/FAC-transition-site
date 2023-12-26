@@ -1,5 +1,5 @@
 ---
-tags: user-access
+tags: access
 title: Adding new Audit Editor
 image: user-access_08.png
 ---

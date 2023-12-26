@@ -1,5 +1,5 @@
 ---
-tags: user-access
+tags: access
 title: Updating Certifying Official
 image: user-access_06.png
 ---

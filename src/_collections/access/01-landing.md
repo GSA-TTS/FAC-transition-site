@@ -1,5 +1,5 @@
 ---
-tags: user-access
+tags: access
 title: The fac.gov landing page
 image: walkthrough_01.png
 ---

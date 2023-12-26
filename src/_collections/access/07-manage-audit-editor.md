@@ -1,5 +1,5 @@
 ---
-tags: user-access
+tags: access
 title: 'Manage user roles: adding new Audit Editor'
 image: user-access_07.png
 ---

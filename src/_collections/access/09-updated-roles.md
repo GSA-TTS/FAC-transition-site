@@ -1,5 +1,5 @@
 ---
-tags: user-access
+tags: access
 title: Updated user roles
 image: user-access_09.png
 ---

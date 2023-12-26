@@ -1,5 +1,5 @@
 ---
-tags: user-access
+tags: access
 title: Your audit submissions
 image: user-access_03.png
 ---

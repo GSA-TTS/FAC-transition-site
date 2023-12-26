@@ -1,5 +1,5 @@
 ---
-tags: user-access
+tags: access
 title: Logging in with Login.gov
 image: walkthrough_02.png
 ---

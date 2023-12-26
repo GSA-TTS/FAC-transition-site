@@ -1,5 +1,5 @@
 ---
-tags: user-access
+tags: access
 title: 'Manage user roles: Certifying Official'
 image: user-access_05.png
 ---

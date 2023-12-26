@@ -1,5 +1,5 @@
 ---
-tags: user-access
+tags: access
 title: Submission checklist
 image: user-access_04.png
 ---
