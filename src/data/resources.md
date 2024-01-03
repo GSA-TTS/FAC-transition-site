@@ -10,7 +10,7 @@ meta:
 
 Single audit submissions accepted by the FAC are available for [search](https://app.fac.gov/dissemination/search/). This data is also available via the [FAC API]({{ config.baseUrl }}developers). 
 
-The FAC is coordinating access to Tribal data with agencies. That access will be available soon, and will be announced through [our updates page]({{ config.baseUrl }}info/updates).
+Approved agency users can now access Tribal data. To view these audits, follow [these instructions]({{ config.baseUrl }}data/tribal).
 
 ## Search filters
 
