@@ -30,7 +30,23 @@ Enter the audit finding reference number as listed in Workbook 1: Federal Awards
 
 ### Column C: Type(s) of Compliance Requirement(s)
 
-Select the type of compliance requirement(s) from the drop-down menu.
+Select the type of compliance requirement(s) from the drop-down menu. The types of Compliance Requirements are:
+
+- A. Activities allowed or unallowed
+- B. Allowable costs/cost principles
+- C. Cash management
+- D. Reserved
+- E. Eligibility
+- F. Equipment and real property management
+- G. Matching, level of effort, earmarking
+- H. Period of performance (or availability) of Federal funds
+- I. Procurement and suspension and debarment
+- J. Program income
+- K. Reserved
+- L. Reporting
+- M. Subrecipient monitoring
+- N. Special tests and provisions
+- O. Other
 
 ### Column D: Modified Opinion
 
