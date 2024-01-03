@@ -14,7 +14,13 @@ Our goal is to make the single audit submission process as easy as possible.
 
 Our [how-to guide]({{ config.baseUrl }}resources/instructions) will take you through submitting a single audit, from creating a Login.gov account to certification and submission.
 
+## Managing user access
+
+These [instructions]({{ config.baseUrl }}resources/instructions/user-access) will walk you through making changes to your certifying officials and adding new audit editors.
+
 ## Single audit workbooks
+
+Download the workbooks needed to complete your single audit submission and find instructions for completing them below.
 
 - [Workbook 1: Federal awards]({{ config.baseUrl }}resources/workbooks/federal-awards)
 - [Workbook 2: Notes to SEFA]({{ config.baseUrl }}resources/workbooks/notes-to-sefa)
