@@ -16,7 +16,7 @@ inlcude_survey: true
 
 # Managing user access
 
-The Audit Editor can make changes to the Auditee and Auditor Certifying Officials, as well as add additional Audit Editors, to a single audit submission. At this time, it’s not possible to remove Audit Editors.
+Anyone with access to the audit submission can make changes to the Auditee and Auditor Certifying Officials, as well as add additional Audit Editors. At this time, it’s not possible to remove Audit Editors.
 
 Keep in mind that you may only have one Auditee Certifying Official and Auditor Certifying Official per single audit submission. These may not be the same individuals.
 
