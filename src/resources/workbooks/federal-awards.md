@@ -113,9 +113,9 @@ If the award is not a loan or loan guarantee (column L is “N”), leave this f
 
 ### Column N: Direct Award
 
-Select "Y" if the award came directly from a Federal awarding agency and complete column O. 
+Select "Y" if the award came directly from a Federal awarding agency.  
 
-If it did not come directly from a Federal awarding agency, select "N".
+If it did not come directly from a Federal awarding agency, select "N" and complete column O.
 
 This field cannot be left blank.
 
@@ -123,7 +123,7 @@ This field cannot be left blank.
 
 If the award did not come directly from a Federal awarding agency, enter the name of the pass-through entity.
 
-This field cannot be left blank if Direct Award (column N) is “Y”.
+This field cannot be left blank if Direct Award (column N) is “N”.
 
 ### Column P: If no (Direct Award), Identifying Number Assigned by the Pass-through Entity, if assigned
 
@@ -131,7 +131,7 @@ If the award did not come directly from a Federal awarding agency, enter the ide
 
 If there is not an identifying number assigned by the pass-through entity, leave this field blank.
 
-This field cannot be blank if Direct Award (column N) is “Y”.
+This field cannot be blank if Direct Award (column N) is “N”.
 
 ### Column Q: Federal Award Passed Through to Subrecipients
 
