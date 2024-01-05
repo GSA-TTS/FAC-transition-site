@@ -8,7 +8,7 @@ meta:
 
 # OMB Announcements
 
-The Office of Management and Budget (OMB) sets the policy for single audit submissions and their deadlines. The announcements below are in effect; for historic decisions, view [our archive]({{ config.baseUrl }}/info/announcements/archive).
+The Office of Management and Budget (OMB) sets the policy for single audit submissions and their deadlines. The announcements below are in effect; for historic decisions, view [our archive]({{ config.baseUrl }}info/announcements/archive).
 
 <div
   class="usa-summary-box"
