@@ -24,8 +24,7 @@ To interact with the FAC API, you will need an API key from <a href="https://dat
 
 Once you have your API key, you can begin exploring the API:
 * [Get started from the command-line]({{ config.baseUrl }}developers/getting-started/).
-* Browse our [endpoint documentation]({{ config.baseUrl }}developers/v1_0_2/).
-* View the [data dictionary]({{ config.baseUrl }}developers/v1_0_2/dictionary/) that maps the FAC API to historical Census data dissemination fields.
+* View the [data dictionary]({{ config.baseUrl }}developers/dictionary/) that maps the FAC API to historical Census data dissemination fields.
 * Browse PostgREST's <a href="https://postgrest.org/en/stable/references/api/tables_views.html" target="_blank">query operations documentation</a>.
 
 ### Tutorials and examples
