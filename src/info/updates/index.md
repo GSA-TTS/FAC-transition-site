@@ -4,6 +4,7 @@ title: Updates from the FAC
 meta:
   name: Updates from the Federal Audit Clearinghouse
   description: Stay up-to-date on the FAC transition and read the latest on the single audit process.
+include_survey: true
 ---
 
 # Updates from the FAC
@@ -18,24 +19,41 @@ The Federal Audit Clearinghouse team works in the open. Our day-to-day task boar
 * Updates for [grantees and auditors](#grantees-and-auditors)
 * Updates for [agencies](#agencies)
 
-## Week of October 16, 2023
+## Week of December 18, 2023
 
-We released the GSA FAC as a minimal viable product. That means we are continuing to work and improve the FAC. [We work in an agile manner](https://asana.com/resources/agile-methodology).
+This week we've made improvements to user access roles, search results, and Tribal data access.
 
-### Items of note:
-- <p>All UEIs are validating.</p>
-- <p>We made significant improvements to workbook validations and their associated instructions.</p>
+### What we delivered
 
-If you previously encountered challenges submitting your workbooks, we recommend you try again.
+We work in [an agile manner](https://asana.com/resources/agile-methodology). That means we have a long-term strategy, medium-term features we work to deliver, and make continuous improvement and bug fixes to the existing product. 
+
+#### Audit access management
+
+We improved [the user access experience]({{ config.baseUrl }}resources/instructions/user-access) for single audits. Users can now change both the auditor and auditee certifying official for a submission and add new audit editors. 
+
+Future improvements will allow for the removal of other contributors to a submission.
+
+#### Search improvements
+
+We added the ability to filter search results by auditee state. We also enhanced the results returned by the ALN filter, making it possible to see if a submission includes audit findings.
+
+#### Tribal data access controls
+
+We have implemented [access controls for Tribal audit data]({{ config.baseUrl }}data/tribal), and notified NSACs and KMSALs. This data will now appear in searches for logged in Federal users who have access.
+
+#### Summary reports 
+
+We added the ability to download a summary report for an individual single audit submission. This combines all data from a single SF-SAC into one Excel document.
+
+#### Pre-certification review
+
+Auditors and auditees can now review a submission after it is validated and locked, but before it is certified.
+
 ### What's next?
 
-We are currently working on [search](https://github.com/GSA-TTS/FAC/issues/2236). We hope to demonstrate a prototype to Federal partners this week for early feedback. We anticipate having the ability to search for and download audits by the end of October.
+#### Historic data migration
 
-Our pending feature priorities are:
-- Adding the ability to unlock audit submissions to edit and then re-lock for certification instead of starting a new submission.
-- Adding the ability to add, remove, or change auditors and certifying officials who are attached to the audit.
-- Adding the ability to resubmit a previously submitted and completed audit.
-- Adding email notifications to alert auditees and auditors that a step is ready for them to complete.
+We continue to work with Census on the migration of historic data.
 
 <h2 id="general" >General updates</h3>
 

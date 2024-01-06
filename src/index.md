@@ -4,6 +4,7 @@ title: The Federal Audit Clearinghouse
 meta:
   name: The Federal Audit Clearinghouse
   description: The Federal Audit Clearinghouse is the home of the single audit process for the federal government awards system.
+include_survey: true
 ---
 
 <div class="usa-hero">
@@ -15,17 +16,17 @@ meta:
     <p class="intro-text">
         When an organization spends $750,000 or more in federal grant funds in a fiscal year, they are required to submit an audit. For more information on the features and development of the new FAC, check out our <a href=https://www.fac.gov/info/updates>Updates page</a>.
     </p>
-     <ul class="usa-card-group flex-align-center flex-justify-center">
-        <li class="usa-card desktop:grid-col-6">
+     <ul class="usa-card-group flex-justify-left">
+        <li class="usa-card desktop:grid-col-6 ">
             <div class="usa-card__container">
                 <div>
                     <a class="usa-button sign-in-button"
                         aria-controls="login-modal"
                         href="https://app.fac.gov/openid/login/">Sign in</a>
-                        <div class="usa-modal usa-modal--lg"
-                     id="main-login-modal"
-                     aria-labelledby="login-modal-heading"
-                     aria-describedby="login-modal-description">
+                    <div class="usa-modal usa-modal--lg"
+                        id="main-login-modal"
+                        aria-labelledby="login-modal-heading"
+                        aria-describedby="login-modal-description">
                     <div class="usa-modal__content">
                         <div class="usa-modal__main">
                             <h2 class="usa-modal__heading" id="login-modal-heading">You must log in to continue</h2>
@@ -60,13 +61,26 @@ meta:
                                     aria-label="Close this window"
                                     data-close-modal>
                                 <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-                                  <img src="{{ config.baseUrl }}assets/img/usa-icons/close.svg" role="img" alt="Close" />
+                                    <img src="{{ config.baseUrl }}assets/img/usa-icons/close.svg" role="img" alt="Close" />
                                 </svg>
                             </button>
                         </div>
                     </div>
                 </div>
                 <p class="usa-card__body">Sign in to submit and review your audits.</p>
+            </div>
+        </li>
+        <li class="usa-card desktop:grid-col-6">
+            <div class="usa-card__container">
+                <div>
+                    <a class="usa-button usa-button--outline"
+                        aria-controls="search-audits"
+                        href="https://app.fac.gov/dissemination/search/">
+                        Search audit reports
+                    </a>
+                </div>
+                <p class="usa-card__body">Search audits accepted since October 1, 2023. 
+                    Older reports are available <a href=https://facdissem.census.gov/>from the Census Bureau</a>.</p>
             </div>
         </li>
     </ul>

@@ -14,6 +14,10 @@ This workbook is only necessary if the single audit report covers multiple EINs.
 
 [Download {{meta.name}}]({{ config.baseUrl }}assets/workbooks/{{workbook.name}}.xlsx)
 
-## Instructions
+## Coversheet instructions
 
-If the report covers multiple EINs, enter the EINs one per row in the workbook.
+Enter the auditee UEI on the coversheet before completing the Form tab.
+
+## Form instructions
+
+Enter the EINs one per row.

@@ -1,7 +1,7 @@
 ---
 tags: walkthrough
 title: Confirming submission
-image: walkthrough_15.png
+image: walkthrough_16.png
 ---
 
 The submission process is complete.

@@ -14,11 +14,17 @@ This workbook is only necessary if you have Federal awards findings. If you do n
 
 [Download {{meta.name}}]({{ config.baseUrl }}assets/workbooks/{{workbook.name}}.xlsx)
 
-## Instructions
+## Coversheet instructions
+
+Enter the auditee UEI on the coversheet before completing the Form tab.
+
+## Form instructions
+
+For each finding, all columns must be completed.
 
 ### Column A: Audit Finding Reference Number
 
-Enter the audit finding reference number as listed in Workbook 2: Federal Awards Findings.
+Enter the audit finding reference number as listed in Workbook 2: Federal Awards Findings. Audit finding reference numbers must be formatted “YYYY-###”.
 
 ### Column B: Text of the Audit Finding
 
@@ -26,4 +32,6 @@ Enter the full text of the audit finding as it appears in the Schedule of Findin
 
 ### Column C: Did Text Contain a Chart or Table?
 
-Select "Y" if the full text in the Schedule of Findings and Questioned Costs includes a chart or table. Select "N" if it does not.
+Select "Y" if the full text in the Schedule of Findings and Questioned Costs includes a chart or table. 
+
+Select "N" if it does not.
