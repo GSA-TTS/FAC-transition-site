@@ -22,27 +22,56 @@ To interact with the FAC API, you will need an API key from <a href="https://dat
 - Do not store your key in a shared drive where other users have access.
 - Do not share your key in helpdesk requests or any other communication.
 
-Once you have your API key, you can begin exploring the API:
-* [Get started from the command-line]({{ config.baseUrl }}developers/getting-started/).
-* View the [data dictionary]({{ config.baseUrl }}developers/dictionary/) that maps the FAC API to historical Census data dissemination fields.
-* Browse PostgREST's <a href="https://postgrest.org/en/stable/references/api/tables_views.html" target="_blank">query operations documentation</a>.
+Once you have your API key, you can begin exploring the API. We welcome contributions from the community.
 
-### Tutorials and examples
-
-We will grow our body of examples over time, and welcome contributions from the community.
+## Resources
 
 <table class="usa-table">
   <thead>
     <tr>
-      <th scope="col">Tutorial</th>
+      <th scope="col">Link</th>
       <th scope="col">Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row"><a href="tutorials/rollups/">Rollup fields</a></th>
+      <th scope="row">
+        <a href="getting-started/">Getting started</a>
+      </th>
+      <td>
+        Get started from the command-line.
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">
+        <a href="[getting-started/](https://postgrest.org/en/stable/references/api/tables_views.html)">Postgrest</a>
+      </th>
+      <td>
+        We use Postgrest as our API server. That means that you will use their documentation to guide you in formulating queries and interacting with our API server.
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">
+        <a href="dictionary/">Data dictionary</a>
+      </th>
+      <td>
+        A mapping from the Census FAC to the GSA FAC API.
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">
+        <a href="rollups/">Rollup fields</a>
+      </th>
       <td>
         A look at fields that existed in the Census data dissemination, and how to compute them from the FAC API.
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">
+        <a href="differences/">Differences</a>
+      </th>
+      <td>
+        A list of fields you might be looking for, and where you might find them in the GSA FAC API.
       </td>
     </tr>
   </tbody>
