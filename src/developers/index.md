@@ -36,7 +36,7 @@ Once you have your API key, you can begin exploring the API. We welcome contribu
   <tbody>
     <tr>
       <th scope="row">
-        <a href="getting-started/">Getting started</a>
+        <a href="{{ config.baseUrl }}getting-started/">Getting started</a>
       </th>
       <td>
         Get started from the command-line.
@@ -52,7 +52,7 @@ Once you have your API key, you can begin exploring the API. We welcome contribu
     </tr>
     <tr>
       <th scope="row">
-        <a href="dictionary/">Data dictionary</a>
+        <a href="{{ config.baseUrl }}dictionary/">Data dictionary</a>
       </th>
       <td>
         A mapping from the Census FAC to the GSA FAC API.
@@ -60,7 +60,7 @@ Once you have your API key, you can begin exploring the API. We welcome contribu
     </tr>
     <tr>
       <th scope="row">
-        <a href="rollups/">Rollup fields</a>
+        <a href="{{ config.baseUrl }}rollups/">Rollup fields</a>
       </th>
       <td>
         A look at fields that existed in the Census data dissemination, and how to compute them from the FAC API.
@@ -68,7 +68,7 @@ Once you have your API key, you can begin exploring the API. We welcome contribu
     </tr>
     <tr>
       <th scope="row">
-        <a href="differences/">Differences</a>
+        <a href="{{ config.baseUrl }}differences/">Differences</a>
       </th>
       <td>
         A list of fields you might be looking for, and where you might find them in the GSA FAC API.
