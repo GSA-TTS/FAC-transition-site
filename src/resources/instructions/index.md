@@ -50,7 +50,7 @@ This how-to guide goes through the submission process step-by-step.
   {% if item.data.title | length %}
 
     <div class="grid-row">
-      <div class="grid-col-25 margin-top-8">
+      <div class="grid-col-12 margin-top-8">
 
   {% if item.data.image %}
       <img src="{{config.baseUrl}}assets/img/walkthrough/{{walkthrough_date}}/{{item.data.image}}" width=400 style="margin-left: 2em; margin-bottom: 2em; float: right; border: 1px solid #555;"/>
