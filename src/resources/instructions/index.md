@@ -12,7 +12,16 @@ terms:
 walkthrough_date: "20231220"
 inlcude_survey: true
 ---
-
+<div class="usa-in-page-nav-container">
+  <aside
+    class="usa-in-page-nav"
+    data-title-text="On this page"
+    data-title-heading-level="h4"
+    data-scroll-offset="0"
+    data-root-margin="0px 0px 0px 0px"
+    data-threshold="1"
+  ></aside>
+  <main id="main-content" class="main-content usa-prose">
 
 # Submitting single audit reports using the new FAC
 
@@ -54,6 +63,8 @@ This how-to guide goes through the submission process step-by-step.
 </div>
   {% endif %}
 {% endfor %}
+</div>
+ </main>
 </div>
 
 <script src="https://touchpoints.app.cloud.gov/touchpoints/ba4ae239.js" async></script>
