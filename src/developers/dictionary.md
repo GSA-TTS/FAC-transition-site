@@ -53,16 +53,16 @@ The data dictionary provides an overview of the FAC API from the perspective of 
       </caption>
       <thead>
         <tr>
-          <th scope="col">GSA</th>
           <th scope="col">Census</th>
-          <th scope="col">Type</th>
+          <th scope="col">GSA</th>
+          <th scope="col">Data type</th>
         </tr>
       </thead>
       <tbody>
   {% for line in dictionary_json[ep] %}
     <tr>
-          <th scope="row">{{line.GSAFAC}}</th>
           <td>{{line.Census}}</td>
+          <th scope="row">{{line.GSAFAC}}</th>
           <td>{{line.Type}}</td>
     </tr>
   {% endfor %}

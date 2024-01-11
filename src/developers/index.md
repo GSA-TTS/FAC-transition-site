@@ -26,57 +26,28 @@ Once you have your API key, you can begin exploring the API. We welcome contribu
 
 ## Resources
 
-<table class="usa-table">
-  <thead>
-    <tr>
-      <th scope="col">Link</th>
-      <th scope="col">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">
-        <a href="{{ config.baseUrl }}developers/getting-started/">Getting started</a>
-      </th>
-      <td>
-        Get started from the command-line.
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">
-        <a href="[getting-started/](https://postgrest.org/en/stable/references/api/tables_views.html)">Postgrest</a>
-      </th>
-      <td>
-        We use Postgrest as our API server. That means that you will use their documentation to guide you in formulating queries and interacting with our API server.
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">
-        <a href="{{ config.baseUrl }}developers/dictionary/">Data dictionary</a>
-      </th>
-      <td>
-        A mapping from the Census FAC to the GSA FAC API.
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">
-        <a href="{{ config.baseUrl }}developers/rollups/">Rollup fields</a>
-      </th>
-      <td>
-        A look at fields that existed in the Census data dissemination, and how to compute them from the FAC API.
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">
-        <a href="{{ config.baseUrl }}developers/differences/">Differences</a>
-      </th>
-      <td>
-        A list of fields you might be looking for, and where you might find them in the GSA FAC API.
-      </td>
-    </tr>
-  </tbody>
-</table>
-
+<ul>
+  <li>
+    <a href="{{ config.baseUrl }}developers/getting-started/">Getting started</a><br/>
+    <p>What you need to get started, with some examples using `curl` on the command line.</p>
+  </li>
+  <li>
+    <a href="https://postgrest.org">PostgREST</a>, our API server<br/>
+    <p>We use PostgREST as our API server. That means that you will use their documentation to guide you in formulating queries and interacting with our API server.</p>
+  </li>
+  <li>
+    <a href="{{ config.baseUrl }}developers/dictionary/">GSA data dictionary</a><br/>
+    <p>A mapping from the Census FAC to the GSA FAC API.</p>
+  </li>
+  <li>
+    <a href="{{ config.baseUrl }}developers/rollups/">Rollup fields</a> in Census data<br/>
+    <p>A look at fields that existed in the Census data dissemination, and how to compute them from the FAC API.</p>
+  </li>
+  <li>
+    <a href="{{ config.baseUrl }}developers/differences/">Differences</a> between Census data fields and GSA data fields<br/>
+    <p>A list of fields you might be looking for, and where you might find them in the GSA FAC API.</p>
+  </li>
+</ul>
 
 ## API limits and future updates
 
