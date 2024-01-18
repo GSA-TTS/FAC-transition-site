@@ -17,7 +17,7 @@ inlcude_survey: true
     <aside
         class="usa-in-page-nav"
         data-title-text="On this page"
-        data-title-heading-level="h4"
+        data-title-heading-level="h2"
         data-scroll-offset="0"
         data-root-margin="0px 0px 0px 0px"
         data-threshold="1"
@@ -51,13 +51,6 @@ inlcude_survey: true
                 {% if item.data.title | length %}
                     {# <div class="grid-row"> #}
                         <div class="grid-row margin-top-8">
-
-                            {# Option B:
-                            <div class="grid-col-6">
-                                <h2 class="margin-top-0" id="{{ item.data.title | slugify }}">{{item.data.title}}</h2>
-                                <p class="">{{item.content | safe }}</p>
-                            </div>
-                            #}
 
                             <div class="grid-col-12">
                                 <h2 class="" id="{{ item.data.title | slugify }}">{{item.data.title}}</h2>
