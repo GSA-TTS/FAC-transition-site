@@ -25,15 +25,13 @@ inlcude_survey: true
 
     <main id="main-content" class="main-content usa-prose">
 
-        # Submitting single audit reports using the new FAC
+# Submitting single audit reports using the new FAC
 
         Our goal is to make the single audit submission process as easy as possible for the grants community. With that in mind, we designed the new FAC to be similar to the Census FAC. Entities will now complete a a series of simple webforms and XLSX workbooks to submit their single audit package.
 
         Everyone involved in the single audit submission process must have an account with [Login.gov](https://login.gov/). This includes auditees and auditors. [Creating a Login.gov account](https://login.gov/create-an-account/) is fully online and secure.
 
         This how-to guide goes through the submission process step-by-step.
-
-        {# <div class="grid-container"> #}
 
             {% for item in collections.walkthrough %}
                 {% if item.data.title | length %}
