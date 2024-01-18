@@ -35,7 +35,6 @@ inlcude_survey: true
 
             {% for item in collections.walkthrough %}
                 {% if item.data.title | length %}
-                    {# <div class="grid-row"> #}
                         <div class="grid-row margin-top-8">
 
                             <div class="grid-col-12">
@@ -48,7 +47,6 @@ inlcude_survey: true
                             {% endif %}
                         
                         </div>
-                    {# </div> #}
                 {% endif %}
             {% endfor %}
 
