@@ -65,7 +65,7 @@ inlcude_survey: true
                             </div>
 
                             {% if item.data.image %}
-                                <img src="{{config.baseUrl}}assets/img/walkthrough/{{walkthrough_date}}/{{item.data.image}}" width=300 style="margin-left: 2em; margin-bottom: 2em; float: right; border: 1px solid #555;"/>
+                                <img src="{{config.baseUrl}}assets/img/walkthrough/{{walkthrough_date}}/{{item.data.image}}" width=500 style="margin-left: 2em; margin-bottom: 2em; float: right; border: 1px solid #555;"/>
                             {% endif %}
                         
                         </div>
