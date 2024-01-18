@@ -54,8 +54,9 @@ If you entered a valid ALN Three Digit Extension in column C, leave this field b
 
 ### Column E: Federal Program Name
 
-Select the name of the Federal program from the drop-down list provided. 
+Select the name of the Federal program from the drop-down list provided.
 
+- If the drop-down list is empty, you may need to enter a Federal Agency Prefix and ALN in columns B and C.
 - If the program is not present in the list, look up your ALN on [SAM.gov](https://sam.gov/content/assistance-listings) and attempt to find the authoritative program name for your award.
 - If you cannot find an authoritative program name, enter a name recognizable by the Federal awarding agency or pass-through entity.
 
