@@ -171,8 +171,10 @@ If the program is not a major program (column S is “N”), leave this field bl
 
 ### Column U: Number of Audit Findings
 
-Enter the number of audit findings for each Federal program. If there are no audit findings, enter "0" (zero).
+Enter the number of audit findings for each Federal program. If there are no audit findings, enter "0" (zero). 
 
 If the type of audit report is "Adverse opinion" (column T is “A”) or "Qualified opinion" (column T is “Q”), this field cannot be 0 (zero).
+
+If a finding applies to a single award in a cluster but not to all awards, only list the finding on the single award line. Don't list the finding on other awards in the cluster if it's not applicable.
 
 This field cannot be left blank.
