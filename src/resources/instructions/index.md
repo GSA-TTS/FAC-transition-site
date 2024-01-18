@@ -33,18 +33,6 @@ inlcude_survey: true
 
         This how-to guide goes through the submission process step-by-step.
 
-        ## The {{terms.gfac}} in brief
-
-        {# <ol> #}
-
-        {% for item in collections.walkthrough %}
-            {% if item.data.title | length %}
-                <li>
-                    <a href="#{{item.data.title | slugify }}">{{item.data.title}}</a>
-                </li>
-            {% endif %}
-        {% endfor %}
-
         {# <div class="grid-container"> #}
 
             {% for item in collections.walkthrough %}
