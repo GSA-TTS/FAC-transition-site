@@ -1,7 +1,7 @@
 ---
 tags: walkthrough
 title: Confirming submission
-image: walkthrough_16.png
+image: walkthrough_17.png
 ---
 The Auditee Certifying Official must complete this step.
 
