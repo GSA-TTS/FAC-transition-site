@@ -46,7 +46,9 @@ Select the type of compliance requirement(s) from the drop-down menu. The types 
 - L. Reporting
 - M. Subrecipient monitoring
 - N. Special tests and provisions
-- O. Other
+- P. Other
+
+**Note: There is no "O" option. Entering "O" will invalidate your workbook.**
 
 ### Column D: Modified Opinion
 
