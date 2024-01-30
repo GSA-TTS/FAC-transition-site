@@ -1,14 +1,14 @@
 ---
 layout: home.njk
-title: "Workbook 6: Additional UEIs"
+title: "SF-SAC Section 6: Additional UEIs"
 meta:
-  name: "Workbook 6: Additional UEIs"
-  description: "Follow these step-by-step instructions for completing Workbook 6: Additional UEIs."
+  name: "SF-SAC Section 6: Additional UEIs"
+  description: "Follow these step-by-step instructions for completing SF-SAC Section 6: Additional UEIs."
 workbook:
   name: "additional-ueis-workbook"
 ---
 
-# Workbook 6: Additional UEIs
+# SF-SAC Section 6: Additional UEIs
 
 This workbook is only necessary if the single audit report covers multiple UEIs.
 
@@ -16,7 +16,7 @@ This workbook is only necessary if the single audit report covers multiple UEIs.
 
 ## Coversheet instructions
 
-Enter the auditee UEI on the coversheet before completing the Form tab.
+Enter the auditee UEI on the coversheet before completing the Form tab. Make sure the UEI matches the one entered on the Auditee Information step and the other sections of the SF-SAC.
 
 ## Form instructions
 

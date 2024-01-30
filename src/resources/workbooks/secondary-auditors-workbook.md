@@ -1,14 +1,14 @@
 ---
 layout: home.njk
-title: "Workbook 7: Secondary auditors"
+title: "SF-SAC Section 7: Secondary auditors"
 meta:
-  name: "Workbook 7: Secondary auditors"
-  description: "Follow these step-by-step instructions for completing Workbook 7: Secondary auditors."
+  name: "SF-SAC Section 7: Secondary auditors"
+  description: "Follow these step-by-step instructions for completing SF-SAC Section 7: Secondary auditors."
 workbook:
   name: "secondary-auditors-workbook"
 ---
 
-# Workbook 7: Secondary auditors
+# SF-SAC Section 7: Secondary auditors
 
 This workbook is only necessary if multiple auditors did the audit work.
 
@@ -16,7 +16,7 @@ This workbook is only necessary if multiple auditors did the audit work.
 
 ## Coversheet instructions
 
-Enter the auditee UEI on the coversheet before completing the Form tab.
+Enter the auditee UEI on the coversheet before completing the Form tab. Make sure the UEI matches the one entered on the Auditee Information step and the other sections of the SF-SAC.
 
 ## Form instructions
 
@@ -58,7 +58,7 @@ Enter the title of the secondary auditor.
 
 Enter the phone number of the secondary auditor.
 
-### Column J: Contact E-mail
+### Column J: Contact Email
 
 Enter the email address of the secondary auditor.
 
