@@ -47,6 +47,9 @@ Once you have your API key, you can begin exploring the API. We welcome contribu
     <a href="{{ config.baseUrl }}developers/differences/">Differences</a> between Census data fields and GSA data fields<br/>
     <p>A list of fields you might be looking for, and where you might find them in the GSA FAC API.</p>
   </li>
+  <li>
+    <a href="{{ config.baseUrl }}developers/retrieve-many/">Retrieiving many results</a><br/>
+    <p>An example of how to use pagination in PostgREST to retrieve many results from the API.</p>
 </ul>
 
 ## API limits and future updates

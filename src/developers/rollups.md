@@ -14,7 +14,7 @@ rollups:
         code: https://github.com/GSA-TTS/fac-api-examples/tree/main/rollups/01-aln
     COGOVER:
         rolled: FIXME
-        orig:  FIXME
+        orig: FIXME
         criteria: FIXME
         output: FIXME
         censusdesc: FIXME
@@ -70,37 +70,17 @@ rollups:
 
 {% macro rollup(tag) %}
 <a name="{{tag}}" />
-<table class="usa-table">
-  <caption>
-    Rolling up the Census {{tag}} column.
-  </caption>
-  <tbody>
-    <tr>
-      <th scope="col">Rolled Up Census Field and Table</th>
-      <td> {{ rollups[tag].rolled }} </td>
-    </tr>
-    <tr>
-      <th scope="col">Originating Census Field and Table</th>
-      <td> {{ rollups[tag].orig }} </td>
-    </tr>
-    <tr>
-      <th scope="col">Criteria</th>
-      <td> {{ rollups[tag].criteria }} </td>
-    </tr>
-    <tr>
-      <th scope="col">Output</th>
-      <td> {{ rollups[tag].output }} </td>
-    </tr>
-    <tr>
-      <th scope="col">Census Data Dictionary description</th>
-      <td> {{ rollups[tag].censusdesc }} </td>
-    </tr>
-    <tr>
-      <th scope="col">FAC API example code</th>
-      <td> <a href="{{ rollups[tag].code }}">{{ rollups[tag].code }}</a> </td>
-    </tr>
-  </tbody>
-</table>
+<ul>
+  {% if not "FIXME".includes(rollups[tag].rolled) %}<li><strong>Rolled Up Census Field and Table</strong>: {{ rollups[tag].rolled }}</li>{% endif %}
+
+  {% if not "FIXME".includes(rollups[tag].criteria) %}<li><strong>Criteria</strong>: {{ rollups[tag].criteria }}</li>{% endif %}
+
+  {% if not "FIXME".includes(rollups[tag].output) %}<li><strong>Output</strong>: {{ rollups[tag].output }}</li>{% endif %}
+
+  {% if not "FIXME".includes(rollups[tag].censusdesc) %}<li><strong>Census Data Dictionary description</strong>: {{ rollups[tag].censusdesc }}</li>{% endif %}
+
+  {% if not "FIXME".includes(rollups[tag].code) %}<li><strong>FAC API example code</strong>: <a href="{{ rollups[tag].code }}">{{ rollups[tag].code }}</a></li>{% endif %}
+</ul>
 {% endmacro %}
 
 # FAC API rollup tutorial

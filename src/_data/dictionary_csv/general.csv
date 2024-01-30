@@ -53,3 +53,6 @@ Question 3.d - Audit Info,agencies_with_prior_findings,ARRAY,gen.agencies_with_p
 INTIALDATE,date_created,DATE,gen.date_created
 TYPE_AUDITCODE,type_audit_code,TEXT,gen.type_audit_code
 SUPPRESSION_CODE,is_public,BOOLEAN,gen.is_public
+____,ready_for_certification_date,DATE,Date auditor/auditee marked audit as ready for certification
+____,data_source,TEXT,"GSAFAC" or "CENSUS"
+____,is_secondary_auditors,TEXT,If secondary auditors data included
