@@ -8,7 +8,7 @@ After you've completed the pre-certification validation, you can begin the certi
 
 The Auditor Certifying Official **must certify first**.
 
-Auditee Certifying Officials are responsible for the contents of the single audit. **They must certify last**.
+Auditee Certifying Officials are responsible for the contents of the single audit. **They must certify last and confirm the final submission.**
 
-Any changes made after the auditor certification will have to be re-certified by the Auditor Certifying Official. This could include re-uploads of the audit package or workbooks.
+Any changes made after certification by either party will have to be re-certified by all. This could include re-uploads of the audit package or workbooks.
 

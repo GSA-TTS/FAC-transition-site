@@ -1,9 +1,9 @@
 ---
 tags: walkthrough
-title: Upload audit workbooks
+title: Upload the SF-SAC
 image: walkthrough_11.png
 ---
 
-Once you've entered the general information, you'll upload a series of XLSX workbooks. These workbooks collect the data on any audit findings, corrective action plans, etc.
+Next you'll upload the SF-SAC. This is a series of XLSX workbooks that collects the data on any audit findings, corrective action plans, etc.
 
-We've provided [download links and instructions]({{ config.baseUrl }}resources/workbooks) for each of these workbooks.
+We've provided [download links and instructions]({{ config.baseUrl }}resources/workbooks) for each of these workbooks. We recommend reading the instructions carefully as you complete the SF-SAC.
