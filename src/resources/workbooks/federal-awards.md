@@ -1,14 +1,14 @@
 ---
 layout: home.njk
-title: "Workbook 1: Federal awards"
+title: "SF-SAC Section 1: Federal awards"
 meta:
-  name: "Workbook 1: Federal awards"
-  description: "Follow these step-by-step instructions for completing Workbook 1: Federal awards."
+  name: "SF-SAC Section 1: Federal awards"
+  description: "Follow these step-by-step instructions for completing the first section of the SF-SAC, the Federal awards workbook."
 workbook:
   name: "federal-awards-workbook"
 ---
 
-# Workbook 1: Federal awards
+# SF-SAC Section 1: Federal awards
 
 Enter the text of your Federal awards in the provided worksheet using the instructions below.
 
@@ -16,31 +16,32 @@ Enter the text of your Federal awards in the provided worksheet using the instru
 
 ## Coversheet instructions
 
-Enter the auditee UEI on the coversheet before completing the Form tab.
+Enter the auditee UEI on the coversheet before completing the Form tab. Make sure the UEI matches the one entered on the Auditee Information step.
 
 ## Form instructions
 
-Complete each field following the guidelines below.
+Complete each field in order following the guidelines below. Skipping columns may result in error messages.
 
 ### Column A: Award Reference (Read only)
 
-This field is auto-generated for you and cannot be edited.
+This field is auto-generated for you as you complete the workbook and can’t be edited.
+
 ### Column B: Federal Agency Prefix
 
-Enter the first two digits of the agency's ALN (formerly CFDA number).
+Enter the first two digits of the agency's ALN (formerly CFDA).
 
-This field cannot be left blank.
+This field can't be left blank.
 
 ### Column C: ALN (formerly CFDA) Three Digit Extension
 
 Enter the last three digits of the agency's ALN.
 - For programs with no ALN or if the ALN is Unknown, enter a "U" followed by a two-digit number (e.g. U12) to identify one or more Federal award lines that form the program.
-  - If the ALN is Unknown, column D cannot be blank.
+  - If the ALN is Unknown, column D can't be blank.
 - If the Federal program is part of the Research and Development (R&D) cluster and the three-digit ALN extension is unknown, enter "RD".
-  - If the ALN is Unknown, column D cannot be blank.
+  - If the ALN is Unknown, column D can't be blank.
 - If the Federal program is part of the R&D cluster and the ALN Three-Digit Extension is known, enter the ALN extension.
 
-This field cannot be left blank.
+This field can't be left blank.
 
 ### Column D: Additional Award Identification
 
@@ -50,43 +51,45 @@ This field is required if:
 - You entered an unknown ALN Three Digit Extension (e.g. U12) in column C.
 - You entered "RD" for the ALN Three Digit Extension in column C.
 
-If you entered a valid ALN Three Digit Extension in column C, leave this field blank.
+This column is optional if you entered a valid ALN Three Digit Extension in column C.
 
 ### Column E: Federal Program Name
 
-Select the name of the Federal program from the drop-down list provided. 
+Select the name of the Federal program from the drop-down list provided. If you don't see a drop-down list, make sure you've completed column B: Federal agency prefix and column C: ALN Three Digit Extension.
 
-- If the program is not present in the list, look up your ALN on [SAM.gov](https://sam.gov/content/assistance-listings) and attempt to find the authoritative program name for your award.
-- If you cannot find an authoritative program name, enter a name recognizable by the Federal awarding agency or pass-through entity.
+- If the program isn't present in the list, look up your ALN on [SAM.gov](https://sam.gov/content/assistance-listings) and attempt to find the authoritative program name for your award.
+- If your program name isn't on the drop-down list, enter a name recognizable by your awarding agency or pass-through entity. You'll see a pop-up message asking to confirm your program name isn't on the drop-down list.
 
-This field cannot be left blank.
+This field can't be left blank.
 
 ### Column F: Amount Expended
 
 Enter the amount of expenditures for each Federal award, rounding to the nearest whole dollar.
 
-This field cannot be left blank.
+If you have a negative expenditure, enter it as “-123.45”.
+
+This field can't be left blank.
 
 ### Column G: Cluster Name
 
 Select the name of the cluster of programs using the drop-down list.
-- If the program is not part of a cluster, select "N/A" for no cluster.
+- If the program isn't part of a cluster, select "N/A" for no cluster.
 - If the program is part of a state cluster, select “State Cluster” and complete column H.
-- If the cluster name is not on the drop-down list, select "Other Cluster Not Listed Above" and complete column I.
+- If the cluster name isn't on the drop-down list, select "Other Cluster Not Listed Above" and complete column I.
 
-This field cannot be left blank.
+This field can't be left blank.
 
 ### Column H: If State Cluster, Enter State Cluster Name
 
 If the program is part of a state cluster, enter the State Cluster name.
 
-If the program is not part of a state cluster, this must be blank.
+If the program isn't part of a state cluster, this must be blank.
 
 ### Column I: If Other Cluster, Enter Other Cluster Name
 
-If you selected "Other Cluster Not Listed Above" in the Cluster Name field (column G), enter the cluster name here.
+If you selected "Other Cluster Not Listed Above" in column G: Cluster Name field, enter the cluster name here.
 
-If the program is not part of another cluster, leave this field blank.
+If the program isn’t part of another cluster, this field must be blank.
 
 ### Column J: Federal Program Total
 
@@ -99,47 +102,49 @@ This field is auto-completed based on previous field responses.
 
 Select "Y" if the program is a Federal loan or a Federal loan guarantee and complete column M. 
 
-If it is not a Federal loan or Federal loan guarantee, select "N".
+If isn't not a Federal loan or Federal loan guarantee, select "N" and leave column M blank.
 
-This field cannot be left blank.
+This field can't be left blank.
 
 ### Column M: If yes (Loan/Loan Guarantee), End of Audit Period Outstanding Loan Balance
 
 If the program is a Federal loan or a Federal loan guarantee, enter the loan or loan guarantee balance outstanding at the end of the audit period, rounding to the nearest whole dollar.
 
-If the outstanding loan balance is not applicable, enter "N/A". For example, some loans made to students of a college or university where the college or university does not make the loans would be considered N/A.
+If the outstanding loan balance is not applicable, enter "N/A". For example, some loans made to students of a college or university where the college or university doesn't make the loans would be considered N/A.
 
-If the award is not a loan or loan guarantee (column L is “N”), leave this field blank.
+If the award isn't a loan or loan guarantee (column L is “N”), leave this field blank.
 
 ### Column N: Direct Award
 
 Select "Y" if the award came directly from a Federal awarding agency.  
 
-If it did not come directly from a Federal awarding agency, select "N" and complete column O.
+If it didn't come directly from a Federal awarding agency, select "N" and complete column O.
 
-This field cannot be left blank.
+This field can't be left blank.
 
 ### Column O: If no (Direct Award), Name of Passthrough Entity
 
-If the award did not come directly from a Federal awarding agency, enter the name of the pass-through entity.
+If column N is "Y". this field can't be left blank. You must enter the name of your pass-through entity.
 
-This field cannot be left blank if Direct Award (column N) is “N”.
+If column N is "N", you must leave this field blank.
 
 ### Column P: If no (Direct Award), Identifying Number Assigned by the Pass-through Entity, if assigned
 
-If the award did not come directly from a Federal awarding agency, enter the identifying number assigned by the pass-through entity.
+If the award didn't come directly from a Federal awarding agency, enter the identifying number assigned by the pass-through entity.
 
-If there is not an identifying number assigned by the pass-through entity, leave this field blank.
+If there isn't an identifying number assigned by the pass-through entity, leave this field blank.
 
-This field cannot be blank if Direct Award (column N) is “N”.
+This field can't be blank if Direct Award (column N) is “N”.
 
 ### Column Q: Federal Award Passed Through to Subrecipients
 
-Select "Y" if the auditee entity passed on the Federal award to a subrecpient. If not, select "N".
+Select "Y" if the auditee entity passed on the Federal award to a subrecpient and complete column R.
+
+If the auditee entity didn’t pass on the Federal award to a subrecpient, select "N".
 
 Direct awards transferred within departments of the auditee entity are not considered passthrough funds.
 
-This field cannot be left blank.
+This field can’t be left blank.
 
 ### Column R: If yes (Passed Through), Amount Passed Through to Subrecipients
 
@@ -151,9 +156,9 @@ If Federal Award Passed Through (column Q) is “N”, leave this field blank.
 
 Select "Y" if the Federal program is a major program, as defined in [2 CFR 200.518](https://www.ecfr.gov/current/title-2/section-200.518), and complete column T.
 
-If the Federal program is not a major program, select "N".
+If the Federal program isn't a major program, select "N".
 
-This field cannot be left blank.
+This field can't be left blank.
 
 ### Column T: If yes (MP), Type of Audit Report
 
@@ -173,8 +178,8 @@ If the program is not a major program (column S is “N”), leave this field bl
 
 Enter the number of audit findings for each Federal program. If there are no audit findings, enter "0" (zero). 
 
-If the type of audit report is "Adverse opinion" (column T is “A”) or "Qualified opinion" (column T is “Q”), this field cannot be 0 (zero).
+If the type of audit report is "Adverse opinion" (column T is “A”) or "Qualified opinion" (column T is “Q”), this field can't be 0 (zero).
 
 If a finding applies to a single award in a cluster but not to all awards, only list the finding on the single award line. Don't list the finding on other awards in the cluster if it's not applicable.
 
-This field cannot be left blank.
+This field can't be left blank.

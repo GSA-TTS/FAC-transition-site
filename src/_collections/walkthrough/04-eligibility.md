@@ -12,6 +12,6 @@ The single audit submission process is for the following types of entities who s
 * Institutions of higher education
 * Indian tribes or Tribal organizations
 
-### ACEE submission extensions for Audit Year 2023
+### ACEE submissions
 
-At this time, the FAC is not accepting submissions for Alternative Compliance Examination Engagements (ACEE). The [Office of Management and Budget (OMB) has granted an automatic extension]({{ config.baseUrl }}info/announcements) for these entities for Audit Year 2023.
+At this time, the FAC is not accepting submissions for Alternative Compliance Examination Engagements (ACEE).

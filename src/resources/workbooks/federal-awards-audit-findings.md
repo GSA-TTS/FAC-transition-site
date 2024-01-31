@@ -1,32 +1,33 @@
 ---
 layout: home.njk
-title: "Workbook 3: Federal awards audit findings"
+title: "SF-SAC Section 3: Federal awards audit findings"
 meta:
-  name: "Workbook 3: Federal awards audit findings"
-  description: "Follow these step-by-step instructions for completing Workbook 3: Federal awards audit findings."
+  name: "SF-SAC Section 3: Federal awards audit findings"
+  description: "Follow these step-by-step instructions for completing SF-SAC Section 3: Federal awards audit findings."
 workbook:
   name: "federal-awards-audit-findings-workbook"
 ---
 
-# Workbook 3: Federal awards audit findings
+# SF-SAC Section 3: Federal awards audit findings
 
-This workbook is only necessary if you have Federal awards findings. If you do not have any Federal awards findings, you do not have to upload this workbook.
+This workbook is only necessary if you have Federal awards findings. If you don't have any Federal awards findings, you don't need to upload this workbook.
 
 [Download {{meta.name}}]({{ config.baseUrl }}assets/workbooks/{{workbook.name}}.xlsx)
 
 ## Coversheet instructions
 
-Enter the auditee UEI on the coversheet before completing the Form tab.
+Enter the auditee UEI on the coversheet before completing the Form tab. Make sure the UEI matches the one entered on the Auditee Information step and the other sections of the SF-SAC.
+
 ## Form instructions
 
 For each finding, all columns must be completed.
 ### Column A: Award Reference
 
-Enter the award reference number as listed in Workbook 1: Federal Awards. Award references must be formatted “AWARD-####”.
+Enter the award reference number as listed in SF-SAC Section 1: Federal Awards. Award references must be formatted “AWARD-####”.
 
 ### Column B: Audit Finding Reference Number
 
-Enter the audit finding reference number as listed in Workbook 1: Federal Awards. Audit finding reference numbers must be formatted “YYYY-###”.
+Enter the audit finding reference number as listed in F-SAC Section 1: Federal Awards. Audit finding reference numbers must be formatted “YYYY-###”.
 
 ### Column C: Type(s) of Compliance Requirement(s)
 
@@ -64,7 +65,9 @@ If column D is “Y”, this field must be “N.”
 
 ### Column F: Material Weakness
 
-Select "Y" if the auditor identified an audit finding as a Material Weakness in the audit report PDF. If not, select "N".
+Select "Y" if the auditor identified an audit finding as a Material Weakness in the audit report PDF. 
+
+If not, select "N".
 
 ### Column G: Significant Deficiency
 
@@ -88,10 +91,10 @@ If there are no questioned costs, select "N".
 
 Select "Y" if the audit finding is a repeat from the immediate prior audit. 
 
-If it is not a repeat finding, select "N".
+If it isn't a repeat finding, select "N".
 
 ### Column K: If Repeat Finding, provide Prior Year Audit Finding Reference Number(s)
 
 If the audit finding is a repeat, enter the audit finding reference number from the most recent prior audit.
 
-If the audit finding is not a repeat (column J is “N”), this field must be marked “N/A”.
+If the audit finding isn't a repeat (column J is “N”), this field must be marked “N/A”.
