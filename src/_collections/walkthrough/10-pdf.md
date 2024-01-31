@@ -18,7 +18,7 @@ The reporting package must include the:
 - Auditor's report(s) discussed in [§200.515](https://www.ecfr.gov/current/title-2/section-200.515); and
 - Corrective action plan discussed in [§200.511(c)](https://www.ecfr.gov/current/title-2/section-200.511#p-200.511(c)).
 
-### Remove all Personally Identifiable Information (PII)
+**Make sure to remove all Personally Identifiable Information (PII) before uploading your PDF.**
 
 PII includes but is not limited to Social Security Numbers, account numbers, vehicle identification numbers, copies of canceled checks, student names, dates of birth, personal addresses, or personal phone numbers.
 
