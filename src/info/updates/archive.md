@@ -63,7 +63,7 @@ We continue to work with Census on the migration of historic data.
     <button
       type="button"
       class="usa-accordion__button"
-      aria-expanded="true"
+      aria-expanded="false"
       aria-controls="b-a1"
     >
       Week of November 20, 2023
