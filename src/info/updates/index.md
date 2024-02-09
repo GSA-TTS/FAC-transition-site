@@ -41,7 +41,7 @@ The team currently replies to a ticket within 1.5 hours of receipt, and closes 7
 
 #### UX/Design
 
-We completed user testing on navigation changes for [FAC.gov]({{ config.baseUrl }}index). This validated a new site structure that will be easier for users to navigate.
+We completed user testing on navigation changes for [FAC.gov]({{ config.baseUrl }}). This validated a new site structure that will be easier for users to navigate.
 
 The team finalized a research plan around audit resolution work. We began interviews with audit resolution officials, IG offices, and other users.
 
@@ -49,7 +49,7 @@ The team finalized a research plan around audit resolution work. We began interv
 
 We made multiple improvements to the submission experience. We use research and interviews with our users, as well as issues reported in the helpdesk, to guide this work.
 
-- Added an SF-SAC summary report, allowing users to review the form data for in-progress and completed audits ([PR 3025](https://github.com/GSA-TTS/FAC/pull/3025)).
+- Added an SF-SAC summary report, allowing users to review the form data for in-progress and completed audits (PR [3025](https://github.com/GSA-TTS/FAC/pull/3025)).
 
 - Significantly sped up PDF validation (PR [3057](https://github.com/GSA-TTS/FAC/pull/3057)).
 
@@ -78,6 +78,7 @@ We made multiple improvements to the submission experience. We use research and 
 We also made multiple improvements to the audit search experience.
 
 - A small update to SF-SAC summary exports (PR [3296](https://github.com/GSA-TTS/FAC/pull/3296)) that adds ALNs to the Federal Awards sheet.
+
 - Fixed a performance bug within the FAC API (PR [3355](https://github.com/GSA-TTS/FAC/pull/3355)).
 
 ### What's next?
