@@ -180,26 +180,21 @@ differences:
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">This is a living document</h4>
     <p class="usa-alert__text">
-        As of this writing (January '24), the historical data migration is underway. How to best map historical data that does not fit the 2023 collection is still under discussion. Federal API users are encouraged to engage the FAC in dialogue as to how historical data is exposed for future use.
+        As of this writing (February '24), the historical data migration is underway. We're still discussing how best to map historical data that does not fit the 2023 collection data model. Federal API users are encouraged to engage the FAC in dialogue as to how historical data is exposed for future use.
     </p>
   </div>
 </div>
 
+We are in the process of migrating historical data (2018-2023) so that it maps into the 2023 collection's PRA. Fields that do not fit (e.g. `DBKEY`) will be mapped in via a seperate (e.g. `historical`) endpoint. As part of this process, some historical fields have been omitted. For example:
 
-Every field that could be found in Census database (as previously exported for consumption via CSV files) is not necessarily present in the FAC API. For example:
-
-1. **Short-lived fields.** Census would add fields, but never remove them from their tables. Therefore, some fields existed for only a handful of years.
-2. **Duplicative data.** Census would "roll up" one or more fields into a secondary field, effectively duplicating data.
-
-The FAC API only exposes data that is in the 2023 collection. Historical data (2018--2023) is being migrated so that it maps into the 2023 collection's PRA. Fields that do not fit (e.g. `DBKEY`) will be mapped in via a seperate (e.g. `historical`) endpoint.
+1. **Short-lived fields.** The historical data includes some fields that only existed for a handful of years and do not have an apparent correlate when compared to other years.
+2. **Duplicative data.** The historical data includes some fields that "roll up" one or more fields into a secondary field. Where practical, we have omitted these fields in favor of their constituent parts.
 
 When trying to understand how GSA maps historical data into the API, three parts of the codebase are useful references:
 
-1. **Historical migration code**. GSA implemented the historical migration by (1) loading historical data, (2) creating "virtual submissions" from it (e.g. constructing actual XLSX workbook submission), (3) running them through the entire submission process, and (4) disseminating those "virtual audits." This code is in [census_historical_migration](https://github.com/GSA-TTS/FAC/tree/main/backend/census_historical_migration).
+1. **Historical migration code**. GSA implemented the historical migration by (1) loading historical data, (2) creating "virtual submissions" from it (e.g. constructing submission workbooks and form data), (3) running them through the entire submission process, including validation, and (4) disseminating those "virtual audits." This code is in [census_historical_migration](https://github.com/GSA-TTS/FAC/tree/main/backend/census_historical_migration).
 2. **`IntakeToDissemination`**. [This code](https://github.com/GSA-TTS/FAC/blob/main/backend/audit/intake_to_dissemination.py) maps the internal data structures of the GSA FAC through to the dissemination tables (which feed the API). 
-3. **The API itself**. The API ([v1.0.3](https://github.com/GSA-TTS/FAC/tree/a83c0f06a7bf3737f48f5061db95488a34305ba4/backend/dissemination/api/api_v1_0_3)) provides the mapping from the internal dissemination tables through to Postgrest, which is then consumed by clients.
-
-
+3. **The API itself**. The API ([v1.0.3](https://github.com/GSA-TTS/FAC/tree/a83c0f06a7bf3737f48f5061db95488a34305ba4/backend/dissemination/api/api_v1_0_3)) provides the mapping from the internal dissemination tables through to PostgREST, which is then consumed by clients.
 
 This document is organized by FAC endpoint.
 
@@ -240,15 +235,8 @@ This was previously the <code>CFDAs</code> table.
 
 ## Other tables
 
-Census had three more tables that are not represented (at this time) in the GSA FAC API.
+Census had three more tables that are not represented (at this time) in the GSA FAC API:
 
-* REVISIONS
-* AGENCY
-* DUNS
-
-`REVISIONS` (or similar) will be implemented in Q2/Q3 after further research with agencies.
-
-`AGENCY` can be brought back if needed. It is unclear whether the FAC *should* provide this table. Is it redundant with SAM.gov?
-
-`DUNS` will be investigated as part of historical data migration and mapping to new-style reports. There are no DUNS numbers in the 2023 collection, and therefore it is not present as part of the 2023 data.
-
+* `REVISIONS` (or similar) will be implemented in Q2/Q3 after further research with agencies.
+* `AGENCY` It is unclear whether the FAC *should* provide this table. In Q2/Q3, we will determine whether it is redundant with offerings from SAM.gov or elsewhere.
+* `DUNS` will be investigated as part of historical data migration and mapping to new-style reports. There are no DUNS numbers in the 2023 collection, and therefore it is not present as part of the 2023 data.

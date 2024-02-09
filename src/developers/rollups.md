@@ -22,7 +22,7 @@ rollups:
     QCOSTS:
         rolled: QCOSTS
         orig: QCOSTS from Findings table
-        criteria: "If any of the auditees findings have QCOSTS = Y (QCOSTS from Findings Table)"
+        criteria: "If any of the auditee's findings have QCOSTS = Y (QCOSTS from Findings Table)"
         output: Then QCOSTS in General table = Y otherwise QCOSTS = N
         censusdesc: Indicate whether or not the audit disclosed any known questioned costs.
         code: https://github.com/GSA-TTS/fac-api-examples/tree/main/rollups/03-qcosts
@@ -40,7 +40,7 @@ rollups:
         criteria: Combines all values (U, D, A, S) entered in the TYPEREPORT_MP field from CFDA
         output: >
             "U" if all TYPEREPORT_MP = U or the non-"U" values listed once
-        censusdesc: Type of Report Issued on the Major Program Compliance
+        censusdesc: Type of report issued on the major program compliance
         code: https://github.com/GSA-TTS/fac-api-examples/tree/main/rollups/050-typereportmp
     MATERIALWEAKNESS_MP:
         rolled: MATERIALWEAKNESS_MP
@@ -69,15 +69,14 @@ rollups:
 ---
 
 {% macro rollup(tag) %}
-<a name="{{tag}}" />
 <ul>
-  {% if not "FIXME".includes(rollups[tag].rolled) %}<li><strong>Rolled Up Census Field and Table</strong>: {{ rollups[tag].rolled }}</li>{% endif %}
+  {% if not "FIXME".includes(rollups[tag].rolled) %}<li><strong>Rolled up Census field and table</strong>: {{ rollups[tag].rolled }}</li>{% endif %}
 
   {% if not "FIXME".includes(rollups[tag].criteria) %}<li><strong>Criteria</strong>: {{ rollups[tag].criteria }}</li>{% endif %}
 
   {% if not "FIXME".includes(rollups[tag].output) %}<li><strong>Output</strong>: {{ rollups[tag].output }}</li>{% endif %}
 
-  {% if not "FIXME".includes(rollups[tag].censusdesc) %}<li><strong>Census Data Dictionary description</strong>: {{ rollups[tag].censusdesc }}</li>{% endif %}
+  {% if not "FIXME".includes(rollups[tag].censusdesc) %}<li><strong>Census data dictionary description</strong>: {{ rollups[tag].censusdesc }}</li>{% endif %}
 
   {% if not "FIXME".includes(rollups[tag].code) %}<li><strong>FAC API example code</strong>: <a href="{{ rollups[tag].code }}">{{ rollups[tag].code }}</a></li>{% endif %}
 </ul>
@@ -85,15 +84,11 @@ rollups:
 
 # FAC API rollup tutorial
 
-The FAC API follows the historical data format distributed by Census. This reflects a design choice to provide *some* consistency in the migration of systems and data from Census to GSA.
-
-This tutorial will look at some of the fields "left behind" in the transition, and how those fields can easily be computed using the data already in the FAC's API.
+The FAC API follows the historical data format distributed by Census with a few exceptions. During the transition, we attempted to provide consistency for our partners as they migrate between system while streamlining the data wherever possible. This tutorial will look at some of the fields we no longer provide and how those fields can be recreated using the data already in the FAC API.
 
 ## About this code
 
-The code for this tutorial can be found in the [fac-api-examples](https://github.com/GSA-TTS/fac-api-examples) repository.
-
-Sincere thanks are due HHS for providing documentation regarding many of these rollup fields. If you see space for improvement, please reach out via our [help desk](https://support.fac.gov/hc/en-us).
+The code for this tutorial can be found in the [fac-api-examples](https://github.com/GSA-TTS/fac-api-examples) repository. These resources would not be possible without help from HHS, who provided feedback and documentation regarding many of these rollup fields. If you see space for improvement, please reach out via our [help desk](https://support.fac.gov/hc/en-us).
 
 ### Rollups covered
 
@@ -110,17 +105,15 @@ Sincere thanks are due HHS for providing documentation regarding many of these r
 
 {{ rollup("ALN") }}
 
-The ALN is a number with the shape `12.345`. Sometimes it is `12.RD`, or `12.U01`. Historically, it is sometimes even messier. 
+The ALN, or Agency Listing number, is a two-part identifier with the shape `12.345`. Sometimes it includes letters (`12.RD`), or even letters _and_ numbers (`12.U01`). Historically, it is sometimes even messier. The FAC does not distribute the ALN. It distributes the agency prefix (the first part of the code) and the program number (the second part of the code).
 
-The FAC does not distribute the ALN. It distributes the agency prefix and the program number. The agency prefix is the number to the left of the dot, and the program number is the value to the right of the dot. 
+The FAC collects two fields related to the ALN: the `federal_agency_prefix` and `federal_award_extension`. Both of these fields are required as part of the federal awards workbook and are distributed via the `federal_awards` endpoint.
 
-Given a report ID, there may be multiple awards. These will be in the `federal_awards` endpoint.
+To generate a single ALN, combine `federal_agency_prefix` and `federal_award_extension` with a `.` in the middle. 
 
-For each of those, a programmer will want two fields: the `federal_agency_prefix` and `federal_award_extension`. 
+### Code example output
 
-To get from those two to a single ALN, they should be combined as a string with a `.` in the middle. 
-
-### Output
+If you run the sample code provided above, you should get:
 
 ```
 2023-06-GSAFAC-0000000002 ['84.027', '84.027', '84.173', '84.173', '84.010', '84.367', '84.424', '84.424', '84.425', '84.425', '84.425', '84.425', '84.425', '84.425', '84.425', '10.553', '10.555', '10.575', '10.649', '10.555']
@@ -136,7 +129,9 @@ Every audit has an agency who is either cognizant or has oversight. The FAC popu
 
 Census included a field called `cog_over` that would be set to `C` if the audit had an agency that was cognizant, and `O` if the audit had an agency who had oversight. 
 
-#### Output
+### Code example output
+
+If you run the sample code provided above, you should get:
 
 ```
 2023-06-GSAFAC-0000000002 O
@@ -148,7 +143,7 @@ Census included a field called `cog_over` that would be set to `C` if the audit 
 
 {{ rollup("QCOSTS") }}
 
-The `QCOSTS` rollup did a bit more work. In the original table, this field looked at all questioned costs fields, and if any of them were "yes," then this field was "yes."
+The `QCOSTS` rollup did a bit more work. In the original table, this field looked at all questioned costs fields and if any of them were `yes`, then this field was `yes`.
 
 ```
 IF the audit has any findings AND one of the questioned cost fields are `true`
@@ -156,11 +151,11 @@ THEN this is true
 ELSE false
 ```
 
-To compute this using the new FAC data, we need to pull those questioned costs fields and do the check.
+To compute this using the new FAC data, you need to check each of those questioned costs fields.
 
-### Output
+### Code example output
 
-From the first 30 audits that come back, three of them have findings. 
+If you run the sample code provided above, you should get the following output. From the first 30 audits that come back, three of them have findings. 
 
 ```
 2023-01-GSAFAC-0000000854 N
@@ -187,12 +182,12 @@ From the first 30 audits that come back, three of them have findings.
 
 {{ rollup("CYFINDINGS") }}
 
-The `CYFINDINGS` looks at the `/findings` endpoint for a given report ID. If there are findings, it is `True`. If there are no findings, it is `False`.
+The `CYFINDINGS` field rolled up an audit's findings and, if any were found, reported `True`. To recreate the `CYFINDINGS` field, query the `/findings` endpoint for a given report ID. If there are findings, it is `True`. If there are no findings, it is `False`.
 
 
-### Output
+### Code example output
 
-From the first 5 audits that come back, none have findings. 
+If you run the sample code provided above, you should get the following output. From the first 5 audits that come back, none have findings. 
 
 ```
 2023-01-GSAFAC-0000000854 N
@@ -203,6 +198,7 @@ From the first 5 audits that come back, none have findings.
 ```
 
 ## Example: Major program report type?
+<!-- TODO: this example needs a more complete description before going into the code example. -->
 
 {{ rollup("TYPEREPORT_MP") }}
 
@@ -214,7 +210,7 @@ The logic for this rollup is set-based.
 
 In Python, we've unpacked this in the example code as follows:
 
-```
+```python
     types = set()
     for art in json:
         if art["audit_report_type"] != "":
@@ -227,9 +223,11 @@ In Python, we've unpacked this in the example code as follows:
         return "ERR"    
 ```
 
-For each row in `federal_awards`, we look at the report type, and add it to a `set`. If the end result is that the entirety of the set is `{"U"}`, we return `"U"`. Otherwise, we collapse the set to a single string (e.g. `"AD"`). We include the "ERR" case, but do not expect it to be possible to reach. 
+For each row in `federal_awards`, look at the report type and add it to a `set`. If the end result is that the entirety of the set is `{"U"}`, return `"U"`. Otherwise, collapse the set to a single string (e.g. `"AD"`). Include the "ERR" case, but do not expect it to be possible to reach. 
 
-### Output
+### Code example output
+
+If you run the sample code provided above, you should get:
 
 ```
 2023-06-GSAFAC-0000000198 U
@@ -243,16 +241,18 @@ For each row in `federal_awards`, we look at the report type, and add it to a `s
 
 {{ rollup("MATERIALWEAKNESS_MP") }}
 
-This rollup is straight-forward:
+If any of the auditee’s findings' `MATERIALWEAKNESS` fields equal a certain value (`Y`, for example), then `MATERIAL WEAKNESS_MP` equals that value.
 
 ```
-If any of the auditee’s findings have MATERIALWEAKNESS = Y	
-Then MATERIAL WEAKNESS_MP = Y
+If any findings have MATERIALWEAKNESS = Y
+Then MATERIALWEAKNESS_MP = Y
 ```
 
 The FAC stores this value in the `general` table under the key `is_internal_control_material_weakness_disclosed`. Note that the FAC stores *yes* values as `"Yes"`, and *no* values as `"No"`. The example code maps these back to `Y/N` to demonstrate mapping values to the old-style. 
 
-### Output
+### Code example output
+
+If you run the sample code provided above, you should get:
 
 ```
 2023-01-GSAFAC-0000000854 N
@@ -283,7 +283,9 @@ The FAC stores this value in the `general` table under the key `is_internal_cont
 
 This is almost identical in construction to the previous example.
 
-### Output
+### Code example output
+
+If you run the sample code provided above, you should get:
 
 ```
 2023-01-GSAFAC-0000000854 N
@@ -314,10 +316,10 @@ This is almost identical in construction to the previous example.
 
 This involves looking at the array of values in `agencies_with_prior_findings` in `general`, splitting on the string (and stripping any spaces for good measure) and asking whether or not any agencies had findings. 
 
-In Python, we'll do this by converting the list to a set, and deciding if the set is non-empty.
+In the Python example provided, you can do this by converting the list to a set, then deciding if the set is non-empty.
 
-```
-    # If there is any number other than 00 listed	
+```python
+    # If there is any number other than 00 listed
     # Then PYSCHEDULE=Y
     set_of_agencies = set()
     for find in json:
@@ -329,7 +331,9 @@ In Python, we'll do this by converting the list to a set, and deciding if the se
     return bool(set_of_agencies)
 ```
 
-### Output
+### Code example output
+
+If you run the sample code provided above, you should get:
 
 ```
 2023-01-GSAFAC-0000000854 N
@@ -346,18 +350,3 @@ In Python, we'll do this by converting the list to a set, and deciding if the se
 2023-04-GSAFAC-0000000495 N
 ...
 ```
-
-<!-- 
-
-<a name="" />
-
-## Example: 
-
-{{ rollup("") }}
-
-### Output
-
-```
-```
-
--->
