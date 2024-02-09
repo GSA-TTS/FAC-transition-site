@@ -69,7 +69,7 @@ We continue to work with Census on the migration of historic data.
       Week of November 20, 2023
     </button>
   </h4>
-  <div id="b-a1" class="usa-accordion__content usa-prose">
+  <div id="b-a2" class="usa-accordion__content usa-prose">
 
   *This update is a bit richer given the cancellation of the November office hour for Federal partners.*
 
@@ -139,7 +139,7 @@ The historical data migration occupies a lot of our team’s time. However, we a
       Week of October 20, 2023
     </button>
   </h4>
-  <div id="b-a2" class="usa-accordion__content usa-prose">
+  <div id="b-a3" class="usa-accordion__content usa-prose">
 
 We launched search and are ready for users to begin searching single audit reports. This initial iteration of search leverages six different filters for sorting data.
 
@@ -306,7 +306,7 @@ Do you have an idea that could transform and improve grants management and overs
       Week of October 23, 2023
     </button>
   </h4>
-  <div id="b-a3" class="usa-accordion__content usa-prose">
+  <div id="b-a4" class="usa-accordion__content usa-prose">
 
 The FAC participated in the Single Audit Roundtable, providing an update on our work to date and planned next steps, and used the opportunity to discuss pressing needs for auditors, resolution officials, and IGs.
 
@@ -456,7 +456,7 @@ Do you have an idea that could transform and improve grants management and overs
       Week of October 16, 2023
     </button>
   </h4>
-  <div id="b-a4" class="usa-accordion__content usa-prose">
+  <div id="b-a5" class="usa-accordion__content usa-prose">
 
 We released the GSA FAC as a minimal viable product. That means we are continuing to work and improve the FAC. We work in [an agile manner](https://asana.com/resources/agile-methodology).
 
@@ -488,7 +488,7 @@ Our pending feature priorities are:
       Week of October 9, 2023
     </button>
   </h4>
-  <div id="b-a5" class="usa-accordion__content usa-prose">
+  <div id="b-a6" class="usa-accordion__content usa-prose">
 
 We released the GSA FAC as a minimal viable product. That means we are continuing to work and improve the FAC. We work in [an agile manner](https://asana.com/resources/agile-methodology).
 
@@ -524,7 +524,7 @@ Our other feature priorities are:
       Week of September 25, 2023
     </button>
   </h4>
-  <div id="b-a6" class="usa-accordion__content usa-prose">
+  <div id="b-a7" class="usa-accordion__content usa-prose">
 
 We're excited to see completed audits coming in and data exporting via the FAC API. That said, we know there have been some issues. We're doing our best to provide help center support for those as fast as possible.
 
