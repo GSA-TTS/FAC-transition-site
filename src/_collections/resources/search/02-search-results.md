@@ -1,6 +1,6 @@
 ---
-tags: resources, search
-header: Search results
-description: Smiley was monstrous proud of his frog, and well he might be, for fellers that had traveled and been everywheres, all said he laid over any frog that ever they see.
+tags: 
+header: Results tables definitions
+description: This guide explains the table headers and data definitions for FAC search results.
 link: ''
 ---
