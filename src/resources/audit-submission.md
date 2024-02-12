@@ -1,10 +1,10 @@
 ---
 layout: resources_page.njk
-title: FAC Audit submission resources
+title: Audit submission resources
 header: Audit submission resources
-description: We will put some copy here saying what this page is and how to use it. We will put some copy here saying what this page is and how to use it.  We will put some copy here saying what this page is and how to use it.
+description: We’re here to help make your audit submission as easy as possible. Use our submission resources to complete the process.
 collectionName: resources, submission
 meta:
-  name: FAC Audit submission resources
-  description: Some content for describing this page.
+  name: Audit submission resources
+  description: Tools and resources for successfully submiting your single audit package to the Federal Audit Clearinghouse.
 ---
