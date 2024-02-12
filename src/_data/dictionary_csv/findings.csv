@@ -1,0 +1,14 @@
+Census,GSAFAC,Type,Column Reference
+AUDITYEAR + DBKEY,General.report_id,TEXT,"gen.report_id,"
+AUDITYEAR,General.audit_year,TEXT,gen.audit_year
+ELECAUDITSID,FederalAward.award_reference,TEXT,finding.award_reference
+FINDINGSREFNUMS,reference_number,TEXT,finding.reference_number
+TYPEREQUIREMENT,type_requirement,TEXT,finding.type_requirement
+MODIFIEDOPINION,is_modified_opinion,BOOLEAN,finding.is_modified_opinion
+OTHERNONCOMPLIANCE,is_other_matters,BOOLEAN,finding.is_other_matters
+MATERIALWEAKNESS,is_material_weakness,BOOLEAN,finding.is_material_weakness
+SIGNIFICANTDEFICIENCY,is_significant_deficiency,BOOLEAN,finding.is_significant_deficiency
+OTHERFINDINGS,is_other_findings,BOOLEAN,finding.is_other_findings
+QCOSTS,is_questioned_costs,BOOLEAN,finding.is_questioned_costs
+REPEATFINDING,is_repeat_finding,BOOLEAN,finding.is_repeat_finding
+PRIORFINDINGREFNUMS,prior_finding_ref_numbers,TEXT,finding.prior_finding_ref_numbers

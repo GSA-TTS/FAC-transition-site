@@ -1,0 +1,6 @@
+Census,GSAFAC,Type,Column Reference
+AUDITYEAR + DBKEY,General.report_id,TEXT,"gen.report_id,"
+AUDITYEAR,General.audit_year,TEXT,gen.audit_year
+ELECAUDITSID,award_reference,TEXT,pass.award_reference
+PASSTHROUGHNAME,passthrough_name,TEXT,pass.passthrough_name
+PASSTHROUGHID,passthrough_id,TEXT,pass.passthrough_id
