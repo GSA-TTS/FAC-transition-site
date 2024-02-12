@@ -1,6 +1,6 @@
 ---
 tags: resources, submission
 header: Submission guide
-description: Smiley was monstrous proud of his frog, and well he might be, for fellers that had traveled and been everywheres, all said he laid over any frog that ever they see.
-link: '/'
+description: An illustrated guide of the single audit process, from login to final submission.
+link: 'resources/instructions'
 ---
