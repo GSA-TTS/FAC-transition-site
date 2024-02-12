@@ -1,11 +1,11 @@
 ---
 layout: resources_page.njk
-title: FAC Audit search resources
+title: Audit search resources
 header: Audit search resources
-description: We will put some copy here saying what this page is and how to use it. We will put some copy here saying what this page is and how to use it.  We will put some copy here saying what this page is and how to use it.
+description: The Federal Audit Clearinghouse is the place to search for single audit submissions. You can search for audits for the current fiscal year or going back to 2016. The resources below will help you make the most of your search.
 collectionName: resources, search
 faqLink: https://example.com
 meta:
-  name: FAC Audit search resources
-  description: Some content for describing this page.
+  name: Audit search resources
+  description: Find resources and tools for making the most of your search for single audit submissions stored by the Federal Audit Clearinghouse.
 ---

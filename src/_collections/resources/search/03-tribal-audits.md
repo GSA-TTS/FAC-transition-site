@@ -1,6 +1,6 @@
 ---
 tags: resources, search
 header: Tribal audits
-description: Smiley was monstrous proud of his frog, and well he might be, for fellers that had traveled and been everywheres, all said he laid over any frog that ever they see.
-link: ''
+description: Accessing some audit data belonging to Tribes and Tribal entities requires special permissions. These instructions guide you through how to access these audits.
+link: 'data/tribal/'
 ---
