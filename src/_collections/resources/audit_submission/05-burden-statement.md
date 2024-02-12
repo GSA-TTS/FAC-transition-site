@@ -1,6 +1,6 @@
 ---
 tags: resources, submission
 header: Burden statement
-description: Smiley was monstrous proud of his frog, and well he might be, for fellers that had traveled and been everywheres, all said he laid over any frog that ever they see.
+description: The FAC follows the Paperwork Reduction Act. See the estimated burden of completing the single audit submission process.
 link: '/'
 ---
