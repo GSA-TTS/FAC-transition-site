@@ -2,5 +2,5 @@
 tags: resources, submission
 header: SF-SAC & instructions
 description: Download the SF-SAC workbooks and find instructions for completing them.
-link: 'resources/instructions/workbooks/'
+link: 'resources/workbooks/'
 ---
