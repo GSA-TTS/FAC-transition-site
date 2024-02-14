@@ -6,16 +6,16 @@ layout: layout.njk
     {# Title and description, separated by a horizontal rule. #}
     <h1 class="font-sans-2xl">{{header}}</h1>
     <hr>
-    <p class="font-sans-lg">{{description}}</p>
+    <div class="font-sans-lg">{{content | safe}}</div>
 
     {# Cards are generated from the current pages 'collectionName'. To add more cards, navigate to collections and ensure the  #}
-    <ul class="resources usa-card-group margin-top-4 margin-y-8">
+    <ul class="resources usa-card-group margin-top-8 margin-bottom-4">
         {% set indexList = collections[collectionName] %}
         {% for item in indexList %}
             <li class="usa-card tablet:grid-col-6 desktop:grid-col-4 padding-x-2">
                 <div class="usa-card__container shadow-1">
                     <div class="usa-card__header bg-success-lighter">
-                        <h2 class="usa-card__heading">{{item.data.header}}</h2>
+                        <h2 class="usa-card__heading font-sans-lg">{{item.data.header}}</h2>
                     </div>
                     <div class="usa-card__body minh-card-lg">
                         <p>
@@ -31,7 +31,7 @@ layout: layout.njk
     </ul>
 
     {# Full-width FAQ page button, common to resource pages. #}
-    <a class="usa-button radius-lg width-full margin-0 padding-y-4 display-flex flex-column flex-align-center" href="{{faqLink}}">
+    <a class="usa-button radius-lg width-full margin-0 margin-bottom-15 padding-y-4 display-flex flex-column flex-align-center" href="{{faqLink}}">
         <p class="font-sans-lg text-normal margin-0 display-flex flex-row flex-wrap flex-align-center">
             <span class="tablet:margin-right-1 margin-y-1 tablet:margin-y-0">Still have questions?</span>
             <strong class="">Visit our FAQ page</strong>
