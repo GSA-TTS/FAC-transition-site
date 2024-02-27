@@ -1,5 +1,7 @@
 @use "uswds-core" with (
     $theme-show-notifications: false,
+    $theme-font-weight-semibold: 600,
+    $theme-font-weight-heavy: 800,
 );
 
 @forward "uswds-theme";
