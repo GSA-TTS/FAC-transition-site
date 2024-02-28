@@ -2,33 +2,38 @@ site_name: Federal Audit Clearinghouse
 
 navigation:
   primary:
-    - text: Data
-      id: data
+    - text: Audit search
+      id: search
       links: 
-        - text: Search audits
+        - text: Search
           href: 'https://app.fac.gov/dissemination/search/'
-        - text: Resources
+        - text: Search resources
           href: 'data/resources'
-        - text: API
+        - text: Developer resources
           href: 'developers'
-    - text: Audit Submission
+        - text: Tribal audits
+          href: #
+    - text: Audit submission
       id: audits
-      href: 'audits'
-    - text: Policy & News
+      links:
+        - text: Submission resources
+          href: #
+    - text: Updates & News
       id: news
       links:
-        - text: Policy
+        - text: FAC updates
           href: 'policy'
-        - text: OMB Announcements
+        - text: OMB announcements
           href: 'info/announcements'
         - text: FAC updates
           href: 'info/updates' 
-    - text: Support
-      id: support
+    - text: Policy & Compliance
+      id: policy
       links:
-        - text: Help center
+        - text: Compliance
           href: 'https://support.fac.gov/hc/en-us'
-          target: '_blank'
-        - text: Welcome
+        - text: Uniform guidance
           href: 'welcome'
+        - text: Burden statement
+          href: #
    
