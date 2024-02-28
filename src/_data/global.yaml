@@ -8,32 +8,30 @@ navigation:
         - text: Search
           href: 'https://app.fac.gov/dissemination/search/'
         - text: Search resources
-          href: 'data/resources'
+          href: 'search-resources'
         - text: Developer resources
-          href: 'developers'
+          href: 'api'
         - text: Tribal audits
-          href: #
+          href: 'search-resources/tribal'
     - text: Audit submission
       id: audits
       links:
         - text: Submission resources
-          href: #
+          href: 'audit-resources'
     - text: Updates & News
       id: news
       links:
         - text: FAC updates
-          href: 'policy'
+          href: 'updates'
         - text: OMB announcements
-          href: 'info/announcements'
-        - text: FAC updates
-          href: 'info/updates' 
+          href: 'omb'
     - text: Policy & Compliance
       id: policy
       links:
         - text: Compliance
-          href: 'https://support.fac.gov/hc/en-us'
+          href: 'compliance'
         - text: Uniform guidance
-          href: 'welcome'
+          href: 'uniform-guidance'
         - text: Burden statement
-          href: #
+          href: 'audit-resources/burden-statement'
    
