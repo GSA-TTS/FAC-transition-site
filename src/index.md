@@ -11,7 +11,7 @@ include_survey: true
   <div class="grid-container">
     {# Title #}
     <h1 class="font-sans-3xl text-primary-darker">
-
+        <span class="text-heavy">
             The Federal Audit Clearinghouse (FAC)
         </span>
         <span class="text-semibold">
