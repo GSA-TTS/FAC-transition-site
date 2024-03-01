@@ -1,0 +1,9 @@
+Census,GSAFAC,Type,Column Reference
+AUDITYEAR + DBKEY,General.report_id,TEXT,"gen.report_id,"
+AUDITYEAR,General.audit_year,TEXT,gen.report_year
+TITLE,title,TEXT,note.note_title
+CONTENT,content,TEXT,note.content
+____,accounting_policies,TEXT,note.accounting_policies,
+____,is_minimis_rate_used,TEXT,note.is_minimis_rate_used
+____,rate_explained,TEXT,note.rate_explained,
+____,contains_chart_or_table,TEXT,note.contains_chart_or_table
