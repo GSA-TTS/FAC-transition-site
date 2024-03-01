@@ -22,10 +22,16 @@ To interact with the FAC API, you will need an API key from <a href="https://dat
 - Do not store your key in a shared drive where other users have access.
 - Do not share your key in helpdesk requests or any other communication.
 
-Once you have your API key, you can begin exploring the API:
-* [Get started from the command-line]({{ config.baseUrl }}developers/getting-started/).
-* Browse our [endpoint documentation]({{ config.baseUrl }}developers/v1_0_0/).
-* Browse PostgREST's <a href="https://postgrest.org/en/stable/references/api/tables_views.html" target="_blank">query operations documentation</a>.
+Once you have your API key, you can begin exploring the API.
+
+## Resources
+
+* [Getting started]({{ config.baseUrl }}developers/getting-started/). What you need to get started, with some examples using `curl` on the command line.
+* [PostgREST](https://postgrest.org), our API server. We use PostgREST as our API server. That means that you will use their documentation to guide you in formulating queries and interacting with our API server.
+* [GSA data dictionary]({{ config.baseUrl }}developers/dictionary/). A mapping from the Census FAC to the GSA FAC API
+* [Rollup fields]({{ config.baseUrl }}developers/rollups/) in Census data. A look at fields that existed in the Census data dissemination, and how to compute them from the FAC API.
+* [Differences]({{ config.baseUrl }}developers/differences/) between Census data fields and GSA data fields. A list of fields you might be looking for, and where you might find them in the GSA FAC API.
+* [Retrieiving many results]({{ config.baseUrl }}developers/retrieve-many/). An example of how to use pagination in PostgREST to retrieve many results from the API.
 
 ## API limits and future updates
 
