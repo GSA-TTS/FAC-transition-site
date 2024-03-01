@@ -29,23 +29,23 @@ Our work through the end of February and into March is focused in three areas:
 
 ### Improving search
 
-We added three new search filters, closed via ticket [#3407](https://github.com/GSA-TTS/FAC/issues/3407):
+We added new search filters, covered in ticket [#3407](https://github.com/GSA-TTS/FAC/issues/3407). These new filters allow for:
 
-1. A set of filters for finding audits by *finding type*. 
-2. A direct/passthrough funding selector.
-3. A Y/N filter for whether an audit is on a major program.
+1. Searching audits by finding type. 
+2. Filtering by direct or passthrough funding.
+3. Filtering by whether an audit is on a major program or not.
 
-There is more to come on search, and this is tracked in story [#3388](https://github.com/GSA-TTS/FAC/issues/3388). 
+We're continuing to improve search performance and are tracking our plans in story [#3388](https://github.com/GSA-TTS/FAC/issues/3388). 
 
-We have more work to do on search performance. In a perfect world, we would have had more time to work with the volume of historic data, optimizing code and features *before* making it available. We are doing the opposite: optimizing our code *after* the data was made available. If you encounter severe performance issues with any of these new features, please let us know via the support center. We are aware, and continue to iterate and improve in this area.
+ If you encounter issues with any of these new features, please let us know [via the FAC helpdesk](https://support.fac.gov/hc/en-us/requests/new).
 
 ### Improving access to Tribal data
 
-We are in final review of [#2298](https://github.com/GSA-TTS/FAC/issues/2290), which will make Tribal data available to Federal partners via API, and coming close to completion on [#3331](https://github.com/GSA-TTS/FAC/issues/3331), which will make the public portion of all Tribal audits appropriately visible in search.
+We're reviewing ticket [#2298](https://github.com/GSA-TTS/FAC/issues/2298). This will make Tribal data available to Federal partners via the FAC API. The team is also close to completing ticket [#3331](https://github.com/GSA-TTS/FAC/issues/3331), which will make the public portion of Tribal audits appropriately visible in search.
 
 ### March submission deadline
 
-It is possible to use the FAC API to predict what is coming in the month of March. Here are plots of the submissions-per-day to the FAC from March of 2016 through 2022.
+It's possible to use the FAC API to predict what is coming in March. Here are plots of the submissions-per-day to the FAC from March of 2016 through 2022.
 
 <div class="grid-container">
     <div class="grid-row">
@@ -62,21 +62,21 @@ It is possible to use the FAC API to predict what is coming in the month of Marc
     </div>
 </div>
 
-The Clearinghouse typically sees between 700 and 900 audit submissions on March 30th; in 2022, Census saw close to 2000 audits submitted in one day.
+The Clearinghouse typically sees between 700 and 900 audit submissions on March 30th. In 2022, the Census Bureau saw close to 2000 audits submitted in one day.
 
-We are doing a number of things that are largely invisible to users to prepare for this submission volume. Normally, we run two "copies" of the FAC to handle submissions. This means that, if two people are uploading audits to the FAC, one might get "FAC 1," and the other "FAC 2," so that they both get a performant experience. As we go into March, we are increasing that number to 10, and are prepared to double that to 20 if necessary. This way, if 10 people are uploading data at the same time, they will each experience the same level of performance. 
+We're doing many things to prepare for this submission volume. Since our launch, we've run two "copies" of the FAC to handle submissions. This means that, if two people are uploading audits to the FAC, one might get "FAC 1," and the other "FAC 2," so they both experience good web performance. As we go into March, we are increasing that number to 10, and can double that to 20 if necessary. This way, if 10 people are uploading data at the same time, they will each experience the same level of performance.
 
-This is made possible because the FAC is built on top of technologies like [cloud.gov](https://cloud.gov) and [login.gov](https://login.gov), which are designed for exactly this kind of scenario.
+This is possible because the FAC is built on top of technologies like [cloud.gov](https://cloud.gov) and [Login.gov](https://login.gov).
 
 ### What's next?
 
-We're keeping our eyes firmly on March. Looking over the next few months, we are:
+We're keeping our focus on March. Looking ahead to the next few months, we'll be:
 
-- **Focusing on performance improvements** and growing our team’s capacity for user support so that the auditors and auditees are well-supported during this time.
+- Focusing on performance improvements and growing our team’s capacity for user support.
 
-- **Providing documentation** regarding the migration of Census data to GSA and how to use it effectively.
+- Providing documentation on the migration of historical and how to use it.
 
-- **Improving search**, both to support Federal oversight work as well as the public’s experience with FAC data.
+- Improving search to support Federal oversight work and the public’s use of FAC data.
 
 <h2 id="general" >General updates</h3>
 
