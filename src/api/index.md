@@ -11,7 +11,7 @@ meta:
 
 The FAC API shares public data from submitted audit reports.
 
-To interact with the API, you will need an API key from Data.gov. To get a Data.gov API key, fill out the Data.gov API key signup form. This is free and requires a valid email address. When you receive your API key, treat it like any other credential:
+To interact with the API, you will need an API key from Data.gov. To get a Data.gov API key, [fill out the Data.gov API key signup form](https://api.data.gov/signup/). This is free and requires a valid email address. When you receive your API key, treat it like any other credential:
 
 - Don't share your key with other users.
 - Don't commit your key into a repository alongside your code.
