@@ -20,7 +20,7 @@ Your Tribal access API key will let you request a one-time access token. You'll 
 
 Once you have your token, use the instructions below to complete your API set-up: 
 
-### Step 1: Fetch Data About a Submission
+### Step 1: Fetch data about a submission
 
 This step retrieves data about a submission based on the provided report ID.
 
@@ -58,7 +58,7 @@ def fetch_submission_data(report_id):
         return submission_data
 ```
 
-### Step 2: Fetch Data About a Submission
+### Step 2: Request file access
 
 After fetching submission data, you can request access to download the associated file.
 
