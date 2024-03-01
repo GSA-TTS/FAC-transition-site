@@ -3,7 +3,7 @@ layout: resources_page.njk
 title: FAC API resources
 header: API resources
 collectionName: resources, api
-faqLink: https://example.com
+faqLink: https://support.fac.gov/hc/en-us
 meta:
   name: FAC API resources
   description: Find resources for making the most of the FAC API to download single audit data.
