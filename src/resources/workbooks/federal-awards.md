@@ -124,9 +124,9 @@ This field can't be left blank.
 
 ### Column O: If no (Direct Award), Name of Passthrough Entity
 
-If column N is "Y". this field can't be left blank. You must enter the name of your pass-through entity.
+If column N is "N". this field can't be left blank. You must enter the name of your pass-through entity.
 
-If column N is "N", you must leave this field blank.
+If column N is "Y", you must leave this field blank.
 
 ### Column P: If no (Direct Award), Identifying Number Assigned by the Pass-through Entity, if assigned
 

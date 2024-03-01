@@ -27,7 +27,7 @@ Enter the award reference number as listed in SF-SAC Section 1: Federal Awards. 
 
 ### Column B: Audit Finding Reference Number
 
-Enter the audit finding reference number as listed in F-SAC Section 1: Federal Awards. Audit finding reference numbers must be formatted “YYYY-###”.
+Enter the audit finding reference number as listed in SF-SAC Section 1: Federal Awards. Audit finding reference numbers must be formatted “YYYY-###”.
 
 ### Column C: Type(s) of Compliance Requirement(s)
 
