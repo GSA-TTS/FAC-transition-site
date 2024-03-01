@@ -57,6 +57,5 @@ include_survey: true
             </div>
         </li>
     </ul>
-    <p class="font-sans-xl text-light margin-bottom-8">For more information on the features and development of the new <strong class="text-semibold">FAC.gov</strong>, check out our <a class="usa-link" href="{{ config.baseUrl}}info/updates">Updates page</a>.</p>
   </div>
 </div>
