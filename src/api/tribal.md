@@ -3,57 +3,49 @@ layout: home.njk
 title: Accessing suppressed Tribal data via the API
 meta:
   name: Accessing Tribal data via the API
-  description: How to access suppressed SF-SAC/SAR data.
+  description: How to access suppressed SF-SAC data.
 ---
 
 # Accessing suppressed Tribal data via the API
 
-Tribes and Tribal Organizations have the option, per [2 CFR 200.512(b)(2)](https://www.ecfr.gov/current/title-2/part-200/subpart-F#p-200.512(b)(2)), to suppress their Single Audit data.
+Tribes and Tribal organizations have the option, per [2 CFR 200.512(b)(2)](https://www.ecfr.gov/current/title-2/part-200/subpart-F#p-200.512(b)(2)), to suppress their Single Audit data.
 
->  Exception for Indian Tribes and Tribal Organizations.  An auditee that is an Indian tribe or a tribal organization (as defined in the Indian Self-Determination, Education and Assistance Act (ISDEAA), 25 U.S.C. 450b(l)) may opt not to authorize the FAC to make the reporting package publicly available on a Web site, by excluding the authorization for the FAC publication in the statement described in paragraph (b)(1) of this section. If this option is exercised, the auditee becomes responsible for submitting the reporting package directly to any pass-through entities through which it has received a Federal award and to pass-through entities for which the summary schedule of prior audit findings reported the status of any findings related to Federal awards that the pass-through entity provided. Unless restricted by Federal statute or regulation, if the auditee opts not to authorize publication, it must make copies of the reporting package available for public inspection.
+For Tribes and Tribal organizations who choose to protect their data, the API will show is_public in the /general endpoint set to False.
 
-For users of the API, this means that some Tribal records will have the field `is_public` in the `/general` endpoint set to `False`. This means the Tribe or Tribal Organization has opted to exercise its rights under the ISDEAA and UG to suppress some parts of the SF-SAC as well as the Single Audit Report.
-
-Federal agencies engaged in oversight, who are using the API, can still access the suppressed portions of the audit. In order to do so, they will need to:
-
-1. Request a copy of the Tribal API Access Agreement via the [helpdesk](https://support.fac.gov/hc/en-us).
-2. Complete the agreement and return it to the FAC as described in the agreement.
+If you believe you should have access to these audits, you will need to request a copy of the Tribal API Access Agreement via the [helpdesk](https://support.fac.gov/hc/en-us).
 
 ## Working with the data
 
-The SF-SAC data contained in the API is not "different" when using a "Tribal API key" vs. a key that grants public access. However, there are extensions to the API that are necessary to access the Single Audit Reports (SARs). It is always the case that public reports can be accessed directly, because they are public data. To access a Tribal SAR that has been suppressed, you must:
+Your Tribal access API key will let you request a one-time access token. You'll use this token to download suppressed reports.
 
-1. Make an authenticated request for a one-time access token.
-2. Use the one-time token to download the PDF.
+Once you have your token, use the instructions below to complete your API set-up: 
 
-What follows are instructions for Federal developers working with Tribal data via the FAC API to access the SARs. 
-
-## Step 1: Fetch Data About a Submission
+### Step 1: Fetch Data About a Submission
 
 This step retrieves data about a submission based on the provided report ID.
 
-### Endpoint
+#### Endpoint
 
 `GET /general?report_id=eq.{report_id}`
 
-### Parameters
+#### Parameters
 
 * `report_id` (required): The ID of the report you want to fetch data for.
 
-### Headers
+#### Headers
 
 * `content-profile`: Set to `api_v1_1_0`.
 * `x-api-key`: Your Tribal API key.
 * `content-type`: Set to `application/json`.
 
-### Response
+#### Response
 
 * `200 OK`: Returns JSON data containing information about the submission.
 * Error Responses:
     * `404 Not Found`: If the report ID does not exist.
     * `401 Unauthorized`: If the request lacks proper authentication.
 
-### Code
+#### Code
 
 ```
 import requests
@@ -66,32 +58,32 @@ def fetch_submission_data(report_id):
         return submission_data
 ```
 
-## Step 2: Fetch Data About a Submission
+### Step 2: Fetch Data About a Submission
 
 After fetching submission data, you can request access to download the associated file.
 
-### Endpoint
+#### Endpoint
 
 `POST /api.fac.gov/rpc/request_file_access`
 
-### Parameters
+#### Parameters
 
 * `report_id (required)`: The ID of the report for which you're requesting file access.
 
-### Headers
+#### Headers
 
 * `content-profile`: Set to `api_v1_1_0`.
 * `x-api-key`: Your Tribal API key.
 * `content-type`: Set to `application/json`.
 
-### Response
+#### Response
 
 * `200 OK`: Returns access information, including an access UUID.
 * Error Responses:
     * `401 Unauthorized`: If the request lacks proper authentication.
     * `404 Not Found`: If the report ID does not exist.
 
-### Code
+#### Code
 
 ```
 import json
@@ -115,22 +107,22 @@ def request_file_access(report_id):
         return access_info
 ```
 
-## Step 3: Download the file
+### Step 3: Download the file
 
 Once you have the access information, you can use it to download the associated file. Use the access UUID that was retrieved in the last step to get the file.
 
-### Endpoint:
+#### Endpoint:
 `GET /app.fac.gov/dissemination/report/pdf/ota/{access_uuid}`
 
-### Parameters
+#### Parameters
 
 `access_uuid (required)`: The access UUID obtained from the request_file_access endpoint.
 
-### Headers
+#### Headers
 
 None required; this is a straight `GET` request to download a file.
 
-### Response
+#### Response
 
 * `200 OK`: Downloads the file successfully.
 * Error Responses:
@@ -139,7 +131,7 @@ None required; this is a straight `GET` request to download a file.
 
 Other HTTP status codes indicate various error scenarios.
 
-### Code
+#### Code
 
 ```
 import requests
@@ -165,9 +157,9 @@ def download_file(access_info):
         print("Error occurred while downloading file:", e)
 ```
 
-## Notes
+### Notes
 
-1. The access token is only good for 1 minute. 
-2. When you access the URL at `pdf/ota/{access_uuid}`, you will be redirected to a temporary Amazon AWS URL. It, too, has a lifetime of a minute or less.
+- The access token is only good for 1 minute. 
+- When you access the URL at `pdf/ota/{access_uuid}`, you'll be redirected to a temporary Amazon AWS URL. This is also only good for 1 minute or less.
 
-Do not bother attempting to store or cache either of these temporary URLs. Every time you want to access a PDF via the API, you will need to go through the three steps outlined above.
+**These temporary URLs can't be stored or cached.** Every time you want to access a suppressed report via the API, you'll need to go through the steps outlined above.
