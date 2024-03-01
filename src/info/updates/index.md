@@ -45,7 +45,7 @@ We're reviewing ticket [#2298](https://github.com/GSA-TTS/FAC/issues/2298). This
 
 ### March submission deadline
 
-It's possible to use the FAC API to predict what is coming in March. Here are plots of the submissions-per-day to the FAC from March of 2016 through 2022.
+It's possible to [use the FAC API](https://github.com/GSA-TTS/fac-api-examples/tree/main/count-march-submissions) to predict what is coming in March. Here are plots of the submissions-per-day to the FAC from March of 2016 through 2022.
 
 <div class="grid-container">
     <div class="grid-row">
