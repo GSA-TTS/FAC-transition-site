@@ -62,7 +62,7 @@ It's possible to [use the FAC API](https://github.com/GSA-TTS/fac-api-examples/t
     </div>
 </div>
 
-The Clearinghouse typically sees between 700 and 900 audit submissions on March 30th. In 2022, the Census Bureau saw close to 2000 audits submitted in one day.
+The Clearinghouse typically sees between 700 and 900 audit submissions per day at the end of March. In 2022, the Census Bureau saw close to 2000 audits submitted in one day.
 
 We're doing many things to prepare for this submission volume. Since our launch, we've run two "copies" of the FAC to handle submissions. This means that, if two people are uploading audits to the FAC, one might get "FAC 1," and the other "FAC 2," so they both experience good web performance. As we go into March, we are increasing that number to 10, and can double that to 20 if necessary. This way, if 10 people are uploading data at the same time, they will each experience the same level of performance.
 
