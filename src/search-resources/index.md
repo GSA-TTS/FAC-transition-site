@@ -9,4 +9,4 @@ meta:
   description: Find resources and tools for making the most of your search for single audit submissions stored by the Federal Audit Clearinghouse.
 ---
 
-The Federal Audit Clearinghouse is the place to search for single audit submissions. You can search for audits for the current fiscal year or going back to 2016. The resources below will help you make the most of your search.
+The Federal Audit Clearinghouse is the place to search for single audit submissions. You can search audits for the current fiscal year or back to 2016. The resources below will help you make the most of your search.
