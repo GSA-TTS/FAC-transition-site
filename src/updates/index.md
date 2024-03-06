@@ -19,41 +19,64 @@ The Federal Audit Clearinghouse team works in the open. Our day-to-day task boar
 * Updates for [grantees and auditors](#grantees-and-auditors)
 * Updates for [agencies](#agencies)
 
-## Week of December 18, 2023
+## Week of February 26, 2024
 
-This week we've made improvements to user access roles, search results, and Tribal data access.
+Our work through the end of February and into March is focused in three areas:
 
-### What we delivered
+1. Improving search.
+2. Improving access to Tribal data.
+3. Preparing for the March submission deadline.
 
-We work in [an agile manner](https://asana.com/resources/agile-methodology). That means we have a long-term strategy, medium-term features we work to deliver, and make continuous improvement and bug fixes to the existing product. 
+### Improving search
 
-#### Audit access management
+We added new search filters, covered in ticket [#3407](https://github.com/GSA-TTS/FAC/issues/3407). These new filters allow for:
 
-We improved [the user access experience]({{ config.baseUrl }}resources/instructions/user-access) for single audits. Users can now change both the auditor and auditee certifying official for a submission and add new audit editors. 
+1. Searching audits by finding type. 
+2. Filtering by direct or passthrough funding.
+3. Filtering by whether an audit is on a major program or not.
 
-Future improvements will allow for the removal of other contributors to a submission.
+We're continuing to improve search performance and are tracking our plans in story [#3388](https://github.com/GSA-TTS/FAC/issues/3388). 
 
-#### Search improvements
+ If you encounter issues with any of these new features, please let us know [via the FAC helpdesk](https://support.fac.gov/hc/en-us/requests/new).
 
-We added the ability to filter search results by auditee state. We also enhanced the results returned by the ALN filter, making it possible to see if a submission includes audit findings.
+### Improving access to Tribal data
 
-#### Tribal data access controls
+We're reviewing ticket [#2298](https://github.com/GSA-TTS/FAC/issues/2298). This will make Tribal data available to Federal partners via the FAC API. The team is also close to completing ticket [#3331](https://github.com/GSA-TTS/FAC/issues/3331), which will make the public portion of Tribal audits appropriately visible in search.
 
-We have implemented [access controls for Tribal audit data]({{ config.baseUrl }}data/tribal), and notified NSACs and KMSALs. This data will now appear in searches for logged in Federal users who have access.
+### March submission deadline
 
-#### Summary reports 
+It's possible to [use the FAC API](https://github.com/GSA-TTS/fac-api-examples/tree/main/count-march-submissions) to predict what is coming in March. Here are plots of the submissions-per-day to the FAC from March of 2016 through 2022.
 
-We added the ability to download a summary report for an individual single audit submission. This combines all data from a single SF-SAC into one Excel document.
+<div class="grid-container">
+    <div class="grid-row">
+        <div class="tablet:grid-col"><img src="{{ config.baseUrl }}assets/img/updates/submissions-in-2016.png" alt="Histogram of submissions in 2016" /></div>
+        <div class="tablet:grid-col"><img src="{{ config.baseUrl }}assets/img/updates/submissions-in-2017.png" alt="Histogram of submissions in 2017" /></div>
+        <div class="tablet:grid-col"><img src="{{ config.baseUrl }}assets/img/updates/submissions-in-2018.png" alt="Histogram of submissions in 2018" /></div>
+        <div class="tablet:grid-col"><img src="{{ config.baseUrl }}assets/img/updates/submissions-in-2019.png" alt="Histogram of submissions in 2019" /></div>
+    </div>
+    <div class="grid-row">
+        <div class="tablet:grid-col"><img src="{{ config.baseUrl }}assets/img/updates/submissions-in-2020.png" alt="Histogram of submissions in 2020" /></div>
+        <div class="tablet:grid-col"><img src="{{ config.baseUrl }}assets/img/updates/submissions-in-2021.png" alt="Histogram of submissions in 2021" /></div>
+        <div class="tablet:grid-col"><img src="{{ config.baseUrl }}assets/img/updates/submissions-in-2022.png" alt="Histogram of submissions in 2022" /></div>
+        <div class="tablet:grid-col"></div>
+    </div>
+</div>
 
-#### Pre-certification review
+The Clearinghouse typically sees between 700 and 900 audit submissions per day at the end of March. In 2022, the Census Bureau saw close to 2000 audits submitted in one day.
 
-Auditors and auditees can now review a submission after it is validated and locked, but before it is certified.
+We're doing many things to prepare for this submission volume. Since our launch, we've run two "copies" of the FAC to handle submissions. This means that, if two people are uploading audits to the FAC, one might get "FAC 1," and the other "FAC 2," so they both experience good web performance. As we go into March, we are increasing that number to 10, and can double that to 20 if necessary. This way, if 10 people are uploading data at the same time, they will each experience the same level of performance.
+
+This is possible because the FAC is built on top of technologies like [cloud.gov](https://cloud.gov) and [Login.gov](https://login.gov).
 
 ### What's next?
 
-#### Historic data migration
+We're keeping our focus on March. Looking ahead to the next few months, we'll be:
 
-We continue to work with Census on the migration of historic data.
+- Focusing on performance improvements and growing our team’s capacity for user support.
+
+- Providing documentation on the migration of historical and how to use it.
+
+- Improving search to support Federal oversight work and the public’s use of FAC data.
 
 <h2 id="general" >General updates</h3>
 

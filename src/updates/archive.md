@@ -10,18 +10,154 @@ meta:
 
 The FAC is committed to working transparently and openly. In addition to [our regular updates](https://www.fac.gov/info/updates/), you can find historical updates below.
 
+
+<div class="usa-accordion usa-accordion--bordered">
+<h4 class="usa-accordion__heading">
+  <button
+    type="button"
+    class="usa-accordion__button"
+    aria-expanded="true"
+    aria-controls="b-feb5"
+  >
+    Week of February 5, 2024
+  </button>
+</h4>
+<div id="b-feb5" class="usa-accordion__content usa-prose">
+
+The team has been focused on completing a migration of data from Census to GSA. This update covers mid-December to the current week.
+
+### Historic data transfer
+
+**Single Audit submissions from 2016–present are now available from the GSA FAC, and the Census Bureau is shutting down their data distribution.** Single Audits from prior years will appear in our search results. This is a major milestone, and future work will involve documenting the data migration, our continued curation of this data, and improvements to how this data is queried and used.
+
+The migration caused some disruptions to service. With 10 times more data, our system has struggled to keep up with volume for some of our search filters. The most affected filter is the ALN search. Results for this filter show whether an audit contains findings (“Findings My ALN/Findings Other ALN”). Before the migration, this filter applied to small amounts of data, but after adding prior years, this began crashing the system. We've removed this feature to resolve the system strain. Our team is working on a replacement feature to handle the larger amount of data.
+
+
+### What we delivered
+
+We work in [an agile manner](https://asana.com/resources/agile-methodology). That means we have a long-term strategy, medium-term features we work to deliver, and make continuous improvement and bug fixes to the existing product. 
+
+#### Customer experience
+We achieved “helpdesk zero” in the last week of January. We had no questions come in on a workday, and we emptied our queue so we had no support questions left to answer. We have continued to empty our question queue on a near-daily basis.
+
+The team currently replies to a ticket within 1.5 hours of receipt, and closes 75% of tickets within 8 hours. The helpdesk remains an excellent place to get timely support.
+
+#### UX/Design
+
+We completed user testing on navigation changes for [FAC.gov]({{ config.baseUrl }}). This validated a new site structure that will be easier for users to navigate.
+
+The team finalized a research plan around audit resolution work. We began interviews with audit resolution officials, IG offices, and other users.
+
+#### Submission improvements
+
+We made multiple improvements to the submission experience. We use research and interviews with our users, as well as issues reported in the helpdesk, to guide this work.
+
+- Added an SF-SAC summary report, allowing users to review the form data for in-progress and completed audits (PR [3025](https://github.com/GSA-TTS/FAC/pull/3025)).
+
+- Significantly sped up PDF validation (PR [3057](https://github.com/GSA-TTS/FAC/pull/3057)).
+
+- Submitters can now unlock an in-progress audit anytime up to the time of final submission (PR [3136](https://github.com/GSA-TTS/FAC/pull/3136)).
+
+- Synchronization fixes between the audit state and submission checklist (PR [3144](https://github.com/GSA-TTS/FAC/pull/3144)).
+
+- Users no longer have to log out and back in for changes to user access (e.g. changing the Auditee Certifying Official email address) to take effect. (PR [3194](https://github.com/GSA-TTS/FAC/pull/3194)). 
+
+- Simplified the submission checklist after an audit is validated and locked for certification. (PR [3197](https://github.com/GSA-TTS/FAC/pull/3197)).
+
+- Improved validations regarding reference numbers (PR [3221](https://github.com/GSA-TTS/FAC/pull/3221)).
+
+- Added the ability to download Audit Report Packages and the SF-SAC for in-progress review (PR [3212](https://github.com/GSA-TTS/FAC/pull/3212)).
+
+- Many search performance improvements (PR [3283](https://github.com/GSA-TTS/FAC/pull/3283)).
+
+- Fixes around our new “testing” banner and pre-certification report generation (PRs [3261](https://github.com/GSA-TTS/FAC/pull/3261), [3326](https://github.com/GSA-TTS/FAC/pull/3326), [3333](https://github.com/GSA-TTS/FAC/pull/3333)).
+
+- Improved validation error reporting around ALNs (PR [3230](https://github.com/GSA-TTS/FAC/pull/3230)). 
+
+- Improved validation and error reporting around empty/zero loan balances (PR [3335](https://github.com/GSA-TTS/FAC/pull/3335)).
+
+#### Intake, Search, and API
+
+We also made multiple improvements to the audit search experience.
+
+- A small update to SF-SAC summary exports (PR [3296](https://github.com/GSA-TTS/FAC/pull/3296)) that adds ALNs to the Federal Awards sheet.
+
+- Fixed a performance bug within the FAC API (PR [3355](https://github.com/GSA-TTS/FAC/pull/3355)).
+
+### What's next?
+
+We're anticipating March to be a busy month. To support this, we'll be:
+
+- **Focusing on performance improvements** and growing our team’s capacity for user support so that the auditors and auditees are well-supported during this time.
+
+- **Providing documentation** regarding the migration of Census data to GSA and how to use it effectively.
+
+- **Improving search**, both to support Federal oversight work as well as the public’s experience with FAC data.
+
+- **Adding Tribal data access to the API** (PR [3359](https://github.com/GSA-TTS/FAC/pull/3359)) and writing documentation and legal agreements to accompany it.
+
+</div>
+
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button
       type="button"
       class="usa-accordion__button"
-      aria-expanded="true"
+      aria-expanded="false"
       aria-controls="b-a1"
+    >
+      Week of December 18, 2023
+    </button>
+  </h4>
+  <div id="b-a1" class="usa-accordion__content usa-prose">
+
+This week we've made improvements to user access roles, search results, and Tribal data access.
+
+### What we delivered
+
+We work in [an agile manner](https://asana.com/resources/agile-methodology). That means we have a long-term strategy, medium-term features we work to deliver, and make continuous improvement and bug fixes to the existing product. 
+
+#### Audit access management
+
+We improved [the user access experience]({{ config.baseUrl }}resources/instructions/user-access) for single audits. Users can now change both the auditor and auditee certifying official for a submission and add new audit editors. 
+
+Future improvements will allow for the removal of other contributors to a submission.
+
+#### Search improvements
+
+We added the ability to filter search results by auditee state. We also enhanced the results returned by the ALN filter, making it possible to see if a submission includes audit findings.
+
+#### Tribal data access controls
+
+We have implemented [access controls for Tribal audit data]({{ config.baseUrl }}data/tribal), and notified NSACs and KMSALs. This data will now appear in searches for logged in Federal users who have access.
+
+#### Summary reports 
+
+We added the ability to download a summary report for an individual single audit submission. This combines all data from a single SF-SAC into one Excel document.
+
+#### Pre-certification review
+
+Auditors and auditees can now review a submission after it is validated and locked, but before it is certified.
+
+### What's next?
+
+#### Historic data migration
+
+We continue to work with Census on the migration of historic data.
+</div>
+
+<div class="usa-accordion usa-accordion--bordered">
+  <h4 class="usa-accordion__heading">
+    <button
+      type="button"
+      class="usa-accordion__button"
+      aria-expanded="false"
+      aria-controls="b-a2"
     >
       Week of November 20, 2023
     </button>
   </h4>
-  <div id="b-a1" class="usa-accordion__content usa-prose">
+  <div id="b-a2" class="usa-accordion__content usa-prose">
 
   *This update is a bit richer given the cancellation of the November office hour for Federal partners.*
 
@@ -86,12 +222,12 @@ The historical data migration occupies a lot of our team’s time. However, we a
       type="button"
       class="usa-accordion__button"
       aria-expanded="false"
-      aria-controls="b-a2"
+      aria-controls="b-a3"
     >
       Week of October 20, 2023
     </button>
   </h4>
-  <div id="b-a2" class="usa-accordion__content usa-prose">
+  <div id="b-a3" class="usa-accordion__content usa-prose">
 
 We launched search and are ready for users to begin searching single audit reports. This initial iteration of search leverages six different filters for sorting data.
 
@@ -253,12 +389,12 @@ Do you have an idea that could transform and improve grants management and overs
       type="button"
       class="usa-accordion__button"
       aria-expanded="false"
-      aria-controls="b-a3"
+      aria-controls="b-a4"
     >
       Week of October 23, 2023
     </button>
   </h4>
-  <div id="b-a3" class="usa-accordion__content usa-prose">
+  <div id="b-a4" class="usa-accordion__content usa-prose">
 
 The FAC participated in the Single Audit Roundtable, providing an update on our work to date and planned next steps, and used the opportunity to discuss pressing needs for auditors, resolution officials, and IGs.
 
@@ -403,12 +539,12 @@ Do you have an idea that could transform and improve grants management and overs
       type="button"
       class="usa-accordion__button"
       aria-expanded="false"
-      aria-controls="b-a4"
+      aria-controls="b-a5"
     >
       Week of October 16, 2023
     </button>
   </h4>
-  <div id="b-a4" class="usa-accordion__content usa-prose">
+  <div id="b-a5" class="usa-accordion__content usa-prose">
 
 We released the GSA FAC as a minimal viable product. That means we are continuing to work and improve the FAC. We work in [an agile manner](https://asana.com/resources/agile-methodology).
 
@@ -435,12 +571,12 @@ Our pending feature priorities are:
       type="button"
       class="usa-accordion__button"
       aria-expanded="false"
-      aria-controls="b-a5"
+      aria-controls="b-a6"
     >
       Week of October 9, 2023
     </button>
   </h4>
-  <div id="b-a5" class="usa-accordion__content usa-prose">
+  <div id="b-a6" class="usa-accordion__content usa-prose">
 
 We released the GSA FAC as a minimal viable product. That means we are continuing to work and improve the FAC. We work in [an agile manner](https://asana.com/resources/agile-methodology).
 
@@ -471,12 +607,12 @@ Our other feature priorities are:
       type="button"
       class="usa-accordion__button"
       aria-expanded="false"
-      aria-controls="b-a6"
+      aria-controls="b-a7"
     >
       Week of September 25, 2023
     </button>
   </h4>
-  <div id="b-a6" class="usa-accordion__content usa-prose">
+  <div id="b-a7" class="usa-accordion__content usa-prose">
 
 We're excited to see completed audits coming in and data exporting via the FAC API. That said, we know there have been some issues. We're doing our best to provide help center support for those as fast as possible.
 
