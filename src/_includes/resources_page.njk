@@ -8,7 +8,8 @@ layout: layout.njk
     <hr>
     <div class="font-sans-lg">{{content | safe}}</div>
 
-    {# Cards are generated from the current pages 'collectionName'. To add more cards, navigate to collections and ensure the  #}
+    {# Cards are generated from the current pages 'collectionName'. 
+    To add more cards, navigate to collections and ensure the tags match up with the pages collectionName. #}
     <ul class="resources usa-card-group margin-top-8 margin-bottom-4">
         {% set indexList = collections[collectionName] %}
         {% for item in indexList %}
