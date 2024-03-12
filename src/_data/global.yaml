@@ -10,9 +10,6 @@ navigation:
         - text: Search resources
           href: 'search-resources'
         - text: Developer resources
-          href: 'api'
-        - text: Tribal audits
-          href: 'search-resources/tribal'
     - text: Audit submission
       id: audits
       links:
