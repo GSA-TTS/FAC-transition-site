@@ -20,7 +20,7 @@ The Federal Audit Clearinghouse team works in the open. Our day-to-day task boar
     The U.S. Census Bureau will be shutting down <a href="https://facdissem.census.gov">their site</a> that distributes Single Audit data on March 31, 2024.
     </p>
     <p class="usa-alert__text">
-    The GSA FAC team wants to thank our colleagues at the Census Bureau. They have been incredible partners as we transitioned the FAC, and their support and partnership has been a marvelous example of what it means to serve the public with excellence.
+    The GSA FAC team wants to thank our colleagues at the Census Bureau. They've been incredible partners during this transition and their support and partnership has been a marvelous example of what it means to serve the public with excellence.
     </p>
   </div>
 </div>
