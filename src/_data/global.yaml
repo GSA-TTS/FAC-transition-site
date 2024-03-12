@@ -10,6 +10,7 @@ navigation:
         - text: Search resources
           href: 'search-resources'
         - text: Developer resources
+          href: 'api'
     - text: Audit submission
       id: audits
       links:
