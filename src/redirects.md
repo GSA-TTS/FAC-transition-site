@@ -18,7 +18,7 @@ redirects:
   - {"from": "/data/resources/", "to": "/search-resources/"}
   - {"from": "/data/tribal/", "to": "/search-resources/tribal/"}
 #   API pages
-  - {"from": "/developers/", "to": "/api/"}
+  - {"from": "/developers/", "to": "api/"}
   - {"from": "/developers/dictionary/", "to": "/api/dictionary/"}
   - {"from": "/developers/getting-started/", "to": "/api/getting-started/"}
   - {"from": "/developers/rollups/", "to": "/api/rollup/"}
