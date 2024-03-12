@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="refresh" content="0; url='{{ redirect.to }}'" />
+	{% if "https" in redirect.to %}
+		<meta http-equiv="refresh" content="0; url='{{ config.baseUrl }}{{ redirect.to }}'" />
+	{% else %}
+		<meta http-equiv="refresh" content="0; url='{{ redirect.to }}'" />
+	{% endif %}
 </head>
 <body>
 	You are being redirected to <a href="{{ redirect.to }}">{{ redirect.to }}</a>
