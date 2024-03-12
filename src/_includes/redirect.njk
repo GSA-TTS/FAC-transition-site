@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	{% if "https" in redirect.to %}
+	{% if "https" in config.baseUrl %}
 		<meta http-equiv="refresh" content="0; url='{{ config.baseUrl }}{{ redirect.to }}'" />
 	{% else %}
 		<meta http-equiv="refresh" content="0; url='{{ redirect.to }}'" />
