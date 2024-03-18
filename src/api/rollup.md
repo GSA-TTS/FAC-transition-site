@@ -23,14 +23,14 @@ rollups:
         rolled: QCOSTS
         orig: QCOSTS from Findings table
         criteria: "If any of the auditee's findings have QCOSTS = Y (QCOSTS from Findings Table)"
-        output: Then QCOSTS in General table = Y otherwise QCOSTS = N
+        output: Then QCOSTS in General table = Y, otherwise QCOSTS = N
         censusdesc: Indicate whether or not the audit disclosed any known questioned costs.
         code: https://github.com/GSA-TTS/fac-api-examples/tree/main/rollups/03-qcosts
     CYFINDINGS:
         rolled: CYFINDINGS
         orig:  Findings Table
         criteria: If any records in the Findings table
-        output: "CYFINDINGS=Y"
+        output: "CYFINDINGS = Y"
         censusdesc: >
             Indicate whether or not current year findings affecting direct funds were reported
         code: https://github.com/GSA-TTS/fac-api-examples/tree/main/rollups/04-cyfindings
@@ -39,7 +39,7 @@ rollups:
         orig: TYPEREPORT_MP from CFDA (now `federal_awards`) table
         criteria: Combines all values (U, D, A, S) entered in the TYPEREPORT_MP field from CFDA
         output: >
-            "U" if all TYPEREPORT_MP = U or the non-"U" values listed once
+            "U" if all TYPEREPORT_MP = U, overwise all non-U values listed once
         censusdesc: Type of report issued on the major program compliance
         code: https://github.com/GSA-TTS/fac-api-examples/tree/main/rollups/050-typereportmp
     MATERIALWEAKNESS_MP:
@@ -62,7 +62,7 @@ rollups:
         rolled: PYSCHEDULE
         orig: Question 3.d. on the Audit Info tab
         criteria: If there is any number other than 00 listed
-        output: PYSCHEDULE=Y
+        output: PYSCHEDULE = Y
         censusdesc: >
             Indicate whether or not the report includes a Summary Schedule of Prior Year Audit Findings
         code: https://github.com/GSA-TTS/fac-api-examples/tree/main/rollups/08-pysched
@@ -101,7 +101,7 @@ The code for this tutorial can be found in the [fac-api-examples](https://github
 * [REPORTABLECONDITION_MP](#REPORTABLECONDITION_MP)
 * [PYSCHEDULE](#PYSCHEDULE)
 
-## Example: ALN (previously CFDA)
+<h2 id="ALN">Example: ALN (previously CFDA)</h2>
 
 {{ rollup("ALN") }}
 
@@ -121,7 +121,7 @@ If you run the sample code provided above, you should get:
 2022-12-GSAFAC-0000001061 ['16.557', '16.524', '16.841', '16.526', '93.497', '16.575']
 ```
 
-## Example: Given a report ID, calculate COGOVER
+<h2 id="COGOVER">Example: Given a report ID, calculate COGOVER</h2>
 
 {{ rollup("COGOVER") }}
 
@@ -139,7 +139,7 @@ If you run the sample code provided above, you should get:
 2022-12-GSAFAC-0000001061 O
 ```
 
-## Example: Are there questioned costs?
+<h2 id="QCOSTS">Example: Are there questioned costs?</h2>
 
 {{ rollup("QCOSTS") }}
 
@@ -178,7 +178,7 @@ If you run the sample code provided above, you should get the following output. 
 ...
 ```
 
-## Example: Are there current year findings?
+<h2 id="CYFINDINGS">Example: Are there current year findings?</h2>
 
 {{ rollup("CYFINDINGS") }}
 
@@ -197,7 +197,7 @@ If you run the sample code provided above, you should get the following output. 
 2023-06-GSAFAC-0000001206 N
 ```
 
-## Example: Major program report type?
+<h2 id="TYPEREPORT_MP">Example: Major program report type?</h2>
 <!-- TODO: this example needs a more complete description before going into the code example. -->
 
 {{ rollup("TYPEREPORT_MP") }}
@@ -237,7 +237,7 @@ If you run the sample code provided above, you should get:
 2023-06-GSAFAC-0000000967 U
 ```
 
-## Example: 
+<h2 id="MATERIALWEAKNESS_MP">Example: Material weakness</h2>
 
 {{ rollup("MATERIALWEAKNESS_MP") }}
 
@@ -277,7 +277,7 @@ If you run the sample code provided above, you should get:
 2023-06-GSAFAC-0000001644 N
 ```
 
-## Example: 
+<h2 id="REPORTABLECONDITION_MP">Example: Reportable condition</h2>
 
 {{ rollup("REPORTABLECONDITION_MP") }}
 
@@ -310,7 +310,7 @@ If you run the sample code provided above, you should get:
 2023-06-GSAFAC-0000001644 N
 ```
 
-## Example: Previous year findings?
+<h2 id="PYSCHEDULE">Example: Previous year findings?</h2>
 
 {{ rollup("PYSCHEDULE") }}
 
@@ -320,14 +320,14 @@ In the Python example provided, you can do this by converting the list to a set,
 
 ```python
     # If there is any number other than 00 listed
-    # Then PYSCHEDULE=Y
+    # Then PYSCHEDULE = Y
     set_of_agencies = set()
     for find in json:
         numbers = list(filter(lambda n: n != "00", 
                          [n.strip() for n in find[AWPF].split(',')]
                          ))
         set_of_agencies.update(numbers)
-    # An empty set is "false" in python
+    # An empty set is "false" in Python
     return bool(set_of_agencies)
 ```
 
