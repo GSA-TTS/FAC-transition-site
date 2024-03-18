@@ -29,7 +29,7 @@ rollups:
     CYFINDINGS:
         rolled: CYFINDINGS
         orig:  Findings Table
-        criteria: If any records in the Findings table
+        criteria: If any records exist in the Findings table
         output: "CYFINDINGS = Y"
         censusdesc: >
             Indicate whether or not current year findings affecting direct funds were reported
