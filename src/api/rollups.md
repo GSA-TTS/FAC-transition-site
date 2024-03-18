@@ -23,14 +23,14 @@ rollups:
         rolled: QCOSTS
         orig: QCOSTS from Findings table
         criteria: "If any of the auditee's findings have QCOSTS = Y (QCOSTS from Findings Table)"
-        output: Then QCOSTS in General table = Y otherwise QCOSTS = N
-        censusdesc: Indicate whether or not the audit disclosed any known questioned costs.
+        output: Then QCOSTS in General table = Y, otherwise QCOSTS = N
+        censusdesc: Indicate whether or not the audit disclosed any known questioned costs
         code: https://github.com/GSA-TTS/fac-api-examples/tree/main/rollups/03-qcosts
     CYFINDINGS:
         rolled: CYFINDINGS
         orig:  Findings Table
         criteria: If any records in the Findings table
-        output: "CYFINDINGS=Y"
+        output: "CYFINDINGS = Y"
         censusdesc: >
             Indicate whether or not current year findings affecting direct funds were reported
         code: https://github.com/GSA-TTS/fac-api-examples/tree/main/rollups/04-cyfindings
@@ -39,7 +39,7 @@ rollups:
         orig: TYPEREPORT_MP from CFDA (now `federal_awards`) table
         criteria: Combines all values (U, D, A, S) entered in the TYPEREPORT_MP field from CFDA
         output: >
-            "U" if all TYPEREPORT_MP = U or the non-"U" values listed once
+            "U" if all TYPEREPORT_MP = U, otherwise all non-U values listed once
         censusdesc: Type of report issued on the major program compliance
         code: https://github.com/GSA-TTS/fac-api-examples/tree/main/rollups/050-typereportmp
     MATERIALWEAKNESS_MP:
@@ -62,7 +62,7 @@ rollups:
         rolled: PYSCHEDULE
         orig: Question 3.d. on the Audit Info tab
         criteria: If there is any number other than 00 listed
-        output: PYSCHEDULE=Y
+        output: PYSCHEDULE = Y
         censusdesc: >
             Indicate whether or not the report includes a Summary Schedule of Prior Year Audit Findings
         code: https://github.com/GSA-TTS/fac-api-examples/tree/main/rollups/08-pysched
@@ -320,14 +320,14 @@ In the Python example provided, you can do this by converting the list to a set,
 
 ```python
     # If there is any number other than 00 listed
-    # Then PYSCHEDULE=Y
+    # Then PYSCHEDULE = Y
     set_of_agencies = set()
     for find in json:
         numbers = list(filter(lambda n: n != "00", 
                          [n.strip() for n in find[AWPF].split(',')]
                          ))
         set_of_agencies.update(numbers)
-    # An empty set is "false" in python
+    # An empty set is "false" in Python
     return bool(set_of_agencies)
 ```
 
