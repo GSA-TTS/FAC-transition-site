@@ -23,6 +23,8 @@ navigation:
           href: 'updates'
         - text: OMB announcements
           href: 'omb'
+        - text: System status
+          href: 'status'
     - text: Policy & Compliance
       id: policy
       links:
