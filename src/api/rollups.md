@@ -101,7 +101,7 @@ The code for this tutorial can be found in the [fac-api-examples](https://github
 * [REPORTABLECONDITION_MP](#REPORTABLECONDITION_MP)
 * [PYSCHEDULE](#PYSCHEDULE)
 
-## Example: ALN (previously CFDA)
+<h2 id="ALN">Example: ALN (previously CFDA)</h2>
 
 {{ rollup("ALN") }}
 
@@ -121,7 +121,7 @@ If you run the sample code provided above, you should get:
 2022-12-GSAFAC-0000001061 ['16.557', '16.524', '16.841', '16.526', '93.497', '16.575']
 ```
 
-## Example: Given a report ID, calculate COGOVER
+<h2 id="COGOVER">Example: Given a report ID, calculate COGOVER</h2>
 
 {{ rollup("COGOVER") }}
 
@@ -139,7 +139,7 @@ If you run the sample code provided above, you should get:
 2022-12-GSAFAC-0000001061 O
 ```
 
-## Example: Are there questioned costs?
+<h2 id="QCOSTS">Example: Are there questioned costs?</h2>
 
 {{ rollup("QCOSTS") }}
 
@@ -178,7 +178,7 @@ If you run the sample code provided above, you should get the following output. 
 ...
 ```
 
-## Example: Are there current year findings?
+<h2 id="CYFINDINGS">Example: Are there current year findings?</h2>
 
 {{ rollup("CYFINDINGS") }}
 
@@ -197,7 +197,7 @@ If you run the sample code provided above, you should get the following output. 
 2023-06-GSAFAC-0000001206 N
 ```
 
-## Example: Major program report type?
+<h2 id="TYPEREPORT_MP">Example: Major program report type?</h2>
 <!-- TODO: this example needs a more complete description before going into the code example. -->
 
 {{ rollup("TYPEREPORT_MP") }}
@@ -237,7 +237,7 @@ If you run the sample code provided above, you should get:
 2023-06-GSAFAC-0000000967 U
 ```
 
-## Example: 
+<h2 id="MATERIALWEAKNESS_MP">Example: Material weakness</h2>
 
 {{ rollup("MATERIALWEAKNESS_MP") }}
 
@@ -277,7 +277,7 @@ If you run the sample code provided above, you should get:
 2023-06-GSAFAC-0000001644 N
 ```
 
-## Example: 
+<h2 id="REPORTABLECONDITION_MP">Example: Reportable condition</h2>
 
 {{ rollup("REPORTABLECONDITION_MP") }}
 
@@ -310,7 +310,7 @@ If you run the sample code provided above, you should get:
 2023-06-GSAFAC-0000001644 N
 ```
 
-## Example: Previous year findings?
+<h2 id="PYSCHEDULE">Example: Previous year findings?</h2>
 
 {{ rollup("PYSCHEDULE") }}
 
