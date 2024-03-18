@@ -6,6 +6,11 @@ meta:
   description: The Federal Audit Clearinghouse is the home of the single audit process for the federal government awards system.
 include_survey: true
 ---
+<section class="usa-banner" aria-label="Test site">
+        <div class="font-sans-lg padding-y-3 bg-secondary-darker text-white text-center">
+            TEST SITE: This is a test site. Do not begin audit submissions.
+        </div>
+    </section>
 
 <div class="home">
   <div class="grid-container">
