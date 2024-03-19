@@ -16,7 +16,7 @@ On February 7th, GSA completed the migration of historical data from the Census 
 
 Our team has taken incremental, iterative steps to improve search performance since then but has been unable to quickly address the multiple challenges at hand. For this reason, we've decided to reduce search to UEI-only while we focus on building the infrastructure necessary to support a more sustainable search experience. A UEI-only search allows auditors and auditees to verify that their submissions are complete.
 
-We're working as quickly as possible to return full search functionality as soon as we can. We recognize the significant disruption this represents to users with oversight responsibilities, and will provide daily updates here until this issue is resolved.
+We're working hard to return full search functionality as soon as possible. We recognize the significant disruption this represents to users with oversight responsibilities, and will provide daily updates here until this issue is resolved.
 
 A brief history of our efforts:
 
