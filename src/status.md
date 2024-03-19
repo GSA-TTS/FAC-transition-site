@@ -15,6 +15,8 @@ We're aware that search performance, even reduced to UEI-only, continues to be s
 
 We are also exploring options for using the API to generate a static list of submitted reports for use by audit resolution officials. We'll post more on this page if this becomes available.
 
+For specific questions or issues, please contact the FAC via [our helpdesk](https://support.fac.gov/hc/en-us/requests/new).
+
 ## March 18, 2024
 
 **Audit search is currently limited to UEI-only.** You can search your UEI to confirm your audit submission is complete. The PDF report is still be available for download but summary report workbooks aren't.
