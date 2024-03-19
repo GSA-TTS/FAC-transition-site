@@ -6,13 +6,7 @@ meta:
   description: Find resources and instructions for searching single audit data.
 ---
 
-# Search resources
-
-Single audit submissions accepted by the FAC are available for [search](https://app.fac.gov/dissemination/search/). This data is also available via the [FAC API]({{ config.baseUrl }}developers). 
-
-Approved agency users can now access Tribal data. To view these audits, follow [these instructions]({{ config.baseUrl }}data/tribal).
-
-## Search filters
+# Search filters
 
 The FAC search currently has seven search filters that combine with each other to narrow down search results. It’s possible to combine filters and not return any results.
 
