@@ -15,6 +15,8 @@ Our engineering team has made progress on improving search stability and perform
 
 If you experience a system error message, please [contact the FAC helpdesk](https://support.fac.gov/hc/en-us/requests/new) with the details of your search.
 
+We're also continuing to work on a static list of submitted reports for use by audit resolution officials.
+
 ## March 19
 
 We're aware that search performance, even reduced to UEI-only, continues to be slow. Our engineers are investigating the root cause of the issue and continue to work on a solution. 
