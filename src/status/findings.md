@@ -29,7 +29,7 @@ The data in the first set of tabs and the second set of tabs is the same. It's t
 Each tab in the workbook has the following columns:
 
 * `report_id`: links to the Single Audit Report for that submission.
-* `auditee_name`: links to the summary page for the audit on [fac.gov](https://fac.gov/), which includes the auditor and auditee General Information.
+* `auditee_name`: links to the summary page for the audit on [fac.gov]({{ config.baseUrl }}index), which includes the auditor and auditee General Information.
 * `award_reference`: award reference from the Federal awards submission workbook.
 * `reference_number`: finding reference number for that award and finding.
 * `aln`: ALN for that award and finding.
