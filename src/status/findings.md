@@ -8,24 +8,25 @@ meta:
 
 # FAC findings updates
 
-Because the FAC search is currently limited to UEI-only, we'll be providing a daily export of new submissions with findings. These workbooks will provide a summary of audits with findings submitted each day. Audits without findings aren't included.
+Because the FAC search is currently limited to UEI-only, we'll be providing a daily export of new submissions with findings. These workbooks will provide a summary of audits with findings submitted each day. **Audits without findings aren't included.**
 
 If you need additional fields, please [contact the FAC helpdesk](https://support.fac.gov/hc/en-us/requests/new).
 
 ## About the workbooks
 
-The workbooks below provide a summary of audits that had findings. 
+The workbooks below provide a summary of audits that had findings. Each workbook represents one day of submissions.
 
-The workbook `2024-03-17-findings.xlsx` gathers all audits accepted by the FAC on March 17th that had findings. It does not list *all* audits accepted that day; only audits that had findings.
+For example, workbook `2024-03-17-findings.xlsx` includes all audits with findings accepted by the FAC on March 17th. It doesn't include audits that didn't have findings.
 
-Each workbook has multiple sheets.
+Each workbook has multiple tabs.
 
-* The first set of sheets are numbered; these are by-agency. A tab named "84" will contain all awards/findings for ALNs beginning with the number `84`. 
-* The second set of sheets are arranged by cognizance and oversight. The tab `COG-93` will contain all audits (with findings) for which HHS is cognizant; the tab `OVER-84` will contain all audits for which Education has oversight.
+The first set of tabs are numbered by agency. A tab named "84" will contain all audits with findings for awards with ALNs beginning with the number `84`.
 
-The data in the first set of tabs (by-agency) and the second set of tabs (by-cog/over) is the same. It is just two different ways of looking at the same information.
+The second set of tabs represent cognizance and oversight. The tab `COG-93` will contain all audits with findings that have HHS for their cognizant agency. The tab `OVER-84` will contain all audits with findings that have Education for their oversight agency.
 
-Each sheet in the workbook has the following columns:
+The data in the first set of tabs and the second set of tabs is the same. It's two different ways of looking at the same information.
+
+Each tab in the workbook has the following columns:
 
 * `report_id`, which is hyperlinked to the Single Audit Report for that submission.
 * `auditee_name`, which is hyperlinked to the summary page for the audit on [fac.gov](https://fac.gov/)
