@@ -8,7 +8,9 @@ meta:
 
 # FAC findings updates
 
-Top text
+Because the FAC search is currently limited to UEI-only, we'll be providing a daily export of new submissions with findings. These workbooks will provide a summary of audits with findings submitted each day. Audits without findings aren't included.
+
+If you need additional fields, please [contact the FAC helpdesk](https://support.fac.gov/hc/en-us/requests/new).
 
 ## About the workbooks
 
