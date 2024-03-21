@@ -1,58 +1,53 @@
 ---
 layout: home.njk
-title: FAC system status
+title: FAC findings updates
 meta:
-  name: FAC system status
-  description: Track the operating status of the FAC, both for audit submission and search.
+  name: FAC findings updates
+  description: A short-term landing page for findings while search is underperforming.
 ---
-# FAC system status
 
-This page tracks the operating status of the FAC, both for audit submission and search.
+# FAC findings updates
 
-## March 20
+Top text
 
-Our engineering team has made progress on improving search stability and performance. We'll be turning back on all search filters for testing soon. During this testing period, we want to caution users that **you will experience slow load times**. We expect searches using multiple filters to take several minutes. 
+## About the workbooks
 
-If you experience a system error message, please [contact the FAC helpdesk](https://support.fac.gov/hc/en-us/requests/new) with the details of your search.
+The workbooks below provide a summary of audits that had findings. 
 
-We're also continuing to work on a static list of submitted reports for use by audit resolution officials.
+The workbook `2024-03-17-findings.xlsx` gathers all audits accepted by the FAC on March 17th that had findings. It does not list *all* audits accepted that day; only audits that had findings.
 
-## March 19
+Each workbook has multiple sheets.
 
-We're aware that search performance, even reduced to UEI-only, continues to be slow. Our engineers are investigating the root cause of the issue and continue to work on a solution. 
+* The first set of sheets are numbered; these are by-agency. A tab named "84" will contain all awards/findings for ALNs beginning with the number `84`. 
+* The second set of sheets are arranged by cognizance and oversight. The tab `COG-93` will contain all audits (with findings) for which HHS is cognizant; the tab `OVER-84` will contain all audits for which Education has oversight.
 
-We are also exploring options for using the API to generate a static list of submitted reports for use by audit resolution officials. We'll post more on this page if this becomes available.
+The data in the first set of tabs (by-agency) and the second set of tabs (by-cog/over) is the same. It is just two different ways of looking at the same information.
 
-For specific questions or issues, please contact the FAC via [our helpdesk](https://support.fac.gov/hc/en-us/requests/new).
+Each sheet in the workbook has the following columns:
 
-## March 18, 2024
+* `report_id`, which is hyperlinked to the Single Audit Report for that submission.
+* `auditee_name`, which is hyperlinked to the summary page for the audit on [fac.gov](https://fac.gov/)
+* `award_reference`, which is the award reference from the Federal awards submission workbook.
+* `reference_number`, which is the finding reference number for that award/finding.
+* `aln`
+* `cog_over`, which contains both whether `COG`nizance or `OVER`sight is assigned, and for which agency.
+* `federal_program_name`
+* `amount_expended`
+* `is_direct`, if it was a direct award
+* `is_major`, if it is a major program
+* `is_passthrough_award`, if it is a passthrough award
+* `passthrough_amount`
+* `is_modified_opinion`, `is_other_matters`, ..., should be self-explanatory.
+* `prior_ref_finding_numbers`
 
-**Audit search is currently limited to UEI-only.** You can search your UEI to confirm your audit submission is complete. The PDF report is still be available for download but summary report workbooks aren't.
+If additional fields are required/desired, please contact the [help desk](https://support.fac.gov/hc/en-us). 
 
-### Issue background
+## Findings workbooks
 
-In mid-February, GSA completed the migration of historical data from the Census Bureau. This increased the amount of data in the GSA system exponentially, hindering search performance. 
+Workbooks are listed with the most recent at the top.
 
-Over the last month, our team has released multiple patches to stabilize search with limited success. Because of this, we've reduced search to UEI-only while we focus on building a more sustainable search function.
-
-We're working hard to return full search functionality as soon as we can. We know this is a significant disruption for many users. Thank you for your patience.
-
-**A timeline of the issues:**
-
-- February 7: We completed the data migration. This increased the number of audits from 10K to more than 250K, and the number of awards tracked from 100K to nearly 4.5M.
-
-- February 8: We [increased resources in our production environment](https://github.com/GSA-TTS/FAC/pull/3376) to address the increased load.
-
-- February 9: The team removed the [My ALN filter](https://github.com/GSA-TTS/FAC/pull/3378) in an attempt to stop system crashes caused by this feature.
-
-- February 14: We worked with more than a dozen NSACs to [prioritize search needs](https://github.com/GSA-TTS/FAC/issues/3388).
-
-- February 16: The team [increased search capacity in the production environment](https://github.com/GSA-TTS/FAC/pull/3424).
-
-- February 28: We [added prioritized search needs](https://github.com/GSA-TTS/FAC/pull/3440), re-introducing performance challenges.
-
-- March 11:  Heavy use of the system prevented system updates for nearly a week. The team completed [an after-hours update to the production environment](https://github.com/GSA-TTS/FAC/pull/3496), partially addressing new search performance issues.
-
-- March 14: Performance issues and system crashes persisted in search. The team released [new search tables and queries](https://github.com/GSA-TTS/FAC/pull/3511). These required significant engineering and testing work.
-
-- March 18: The team decided to take down search to focus on long-term solutions vs. short-term patches.
+<ul>
+{% for wb in findings %}
+  <li><a href="{{ config.baseUrl }}assets/findings/{{wb}}-findings.xlsx">{{ wb }}</a></li>
+{% endfor %}
+</ul>
