@@ -28,22 +28,26 @@ The data in the first set of tabs and the second set of tabs is the same. It's t
 
 Each tab in the workbook has the following columns:
 
-* `report_id`, which is hyperlinked to the Single Audit Report for that submission.
-* `auditee_name`, which is hyperlinked to the summary page for the audit on [fac.gov](https://fac.gov/)
-* `award_reference`, which is the award reference from the Federal awards submission workbook.
-* `reference_number`, which is the finding reference number for that award/finding.
-* `aln`
-* `cog_over`, which contains both whether `COG`nizance or `OVER`sight is assigned, and for which agency.
-* `federal_program_name`
-* `amount_expended`
-* `is_direct`, if it was a direct award
-* `is_major`, if it is a major program
-* `is_passthrough_award`, if it is a passthrough award
-* `passthrough_amount`
-* `is_modified_opinion`, `is_other_matters`, ..., should be self-explanatory.
-* `prior_ref_finding_numbers`
-
-If additional fields are required/desired, please contact the [help desk](https://support.fac.gov/hc/en-us). 
+* `report_id`: links to the Single Audit Report for that submission.
+* `auditee_name`: links to the summary page for the audit on [fac.gov](https://fac.gov/), which includes the auditor and auditee General Information.
+* `award_reference`: award reference from the Federal awards submission workbook.
+* `reference_number`: finding reference number for that award and finding.
+* `aln`: ALN for that award and finding.
+* `cog_over`: if an award has a `COG`nizance or `OVER`sight and for which agency.
+* `federal_program_name`: name of the awarding program.
+* `amount_expended`: dollar amount of each Federal award.
+* `is_direct`: is it a direct award?
+* `is_major`: is it a major program?
+* `is_passthrough_award`: is it a passthrough award?
+* `passthrough_amount`: dollar amount of the passthrough award.
+* `is_modified_opinion`: does the award have a modified opinion?
+* `is_other_matters`: does the award have other matters?
+* `is_material_weakness`: does the award have a material weakness?
+* `is_significant_deficiency`: does the award have a significant deficiency?
+* `is_other_findings`: does the award have other findings?
+* `is_questioned_costs`: does the award have questioned costs?
+* `is_repeat_findings`: is the award finding a repeat finding?
+* `prior_ref_finding_numbers`: if applicable, the prior finding reference number.
 
 ## Findings workbooks
 
