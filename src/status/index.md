@@ -9,6 +9,14 @@ meta:
 
 This page tracks the operating status of the FAC, both for audit submission and search.
 
+## March 25, 2024
+
+During testing for the improved search, our engineering team found a bug in the audit submission process. We're a small team and had to divert resources from search to fixing this issue. Once that bug is resolved, we'll return our attention to search.
+
+We are continuing to upload [static lists of submitted reports]({{ config.baseUrl }}status/findings) daily for audit resoluiton officials.
+
+If you have questions about search or the audit resolution lists, please [contact the FAC helpdesk](https://support.fac.gov/hc/en-us/requests/new)
+
 ## March 22, 2024
 
 Our engineering team continues to test the new infrastructure supporting search. 
