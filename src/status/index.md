@@ -11,7 +11,7 @@ This page tracks the operating status of the FAC, both for audit submission and 
 
 ## March 25, 2024
 
-Search is now fully functional and available for users. 
+[Search](https://app.fac.gov/dissemination/search/) is now fully functional and available for users. 
 
 If you have questions about search, please [contact the FAC helpdesk.](https://support.fac.gov/hc/en-us/requests/new)
 
