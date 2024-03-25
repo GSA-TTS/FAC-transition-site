@@ -11,7 +11,10 @@ This page tracks the operating status of the FAC, both for audit submission and 
 
 ## March 25, 2024
 
-[Search](https://app.fac.gov/dissemination/search/) is now fully functional and available for users. 
+[Search](https://app.fac.gov/dissemination/search/) is now fully restored and available for users. We split search functionality into two pages:
+
+* [Basic search](https://app.fac.gov/dissemination/search/): supports real-time search. We recommend this page for auditors and auditees who would like to confirm their submissions are complete.
+* [Advanced search](https://app.fac.gov/dissemination/search/advanced/): supports search features typically required by federal users. Updated nightly.
 
 If you have questions about search, please [contact the FAC helpdesk.](https://support.fac.gov/hc/en-us/requests/new)
 
