@@ -9,13 +9,22 @@ meta:
 
 This page tracks the operating status of the FAC, both for audit submission and search.
 
+## March 25, 2024
+
+[Search](https://app.fac.gov/dissemination/search/) is now fully restored and available for users. We split search functionality into two pages:
+
+* [Basic search](https://app.fac.gov/dissemination/search/): supports real-time search. We recommend this page for auditors and auditees who would like to confirm their submissions are complete.
+* [Advanced search](https://app.fac.gov/dissemination/search/advanced/): supports search features typically required by federal users. Updated nightly.
+
+If you have questions about search, please [contact the FAC helpdesk.](https://support.fac.gov/hc/en-us/requests/new)
+
 ## March 22, 2024
 
 Our engineering team continues to test the new infrastructure supporting search. 
 
 We are continuing to upload [static lists of submitted reports]({{ config.baseUrl }}status/findings) daily for audit resoluiton officials.
 
-If you have questions about search or the audit resolution lists, please [contact the FAC helpdesk](https://support.fac.gov/hc/en-us/requests/new)
+If you have questions about search or the audit resolution lists, please [contact the FAC helpdesk](https://support.fac.gov/hc/en-us/requests/new).
 
 ## March 21, 2024
 
@@ -25,7 +34,7 @@ Again, we want to caution users that you will experience slow load times. We exp
 
 We now have [static lists of submitted reports available]({{ config.baseUrl }}status/findings). These exports list all audits with awards findings submitted by date.
 
-If you have questions about search or the audit resolution lists, please [contact the FAC helpdesk](https://support.fac.gov/hc/en-us/requests/new)
+If you have questions about search or the audit resolution lists, please [contact the FAC helpdesk](https://support.fac.gov/hc/en-us/requests/new).
 
 ## March 20, 2024
 
