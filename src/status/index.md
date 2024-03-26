@@ -9,6 +9,23 @@ meta:
 
 This page tracks the operating status of the FAC, both for audit submission and search.
 
+The FAC is operating normally.
+
+We'll continue to upload [static lists of submitted reports]({{ config.baseUrl }}status/findings) daily for audit resolution officials until April 16, 2024.
+
+<div class="usa-accordion usa-accordion--bordered">
+<h4 class="usa-accordion__heading">
+  <button
+    type="button"
+    class="usa-accordion__button"
+    aria-expanded="true"
+    aria-controls="b-feb5"
+  >
+    FAC Search Disruption March 2024
+  </button>
+</h4>
+<div id="b-feb5" class="usa-accordion__content usa-prose">
+
 ## March 25, 2024
 
 [Search](https://app.fac.gov/dissemination/search/) is now fully restored and available for users. We split search functionality into two pages:
@@ -83,3 +100,5 @@ We're working hard to return full search functionality as soon as we can. We kno
 - March 14: Performance issues and system crashes persisted in search. The team released [new search tables and queries](https://github.com/GSA-TTS/FAC/pull/3511). These required significant engineering and testing work.
 
 - March 18: The team decided to take down search to focus on long-term solutions vs. short-term patches.
+
+</div>
