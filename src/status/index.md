@@ -14,7 +14,7 @@ The FAC is operating normally.
 We'll continue to upload [static lists of submitted reports]({{ config.baseUrl }}status/findings) daily for audit resolution officials until April 16, 2024.
 
 <div class="usa-accordion usa-accordion--bordered">
-<h4 class="usa-accordion__heading">
+<h2 class="usa-accordion__heading">
   <button
     type="button"
     class="usa-accordion__button"
@@ -23,10 +23,10 @@ We'll continue to upload [static lists of submitted reports]({{ config.baseUrl }
   >
     FAC Search Disruption March 2024
   </button>
-</h4>
+</h2>
 <div id="b-feb5" class="usa-accordion__content usa-prose">
 
-## March 25, 2024
+### March 25, 2024
 
 [Search](https://app.fac.gov/dissemination/search/) is now fully restored and available for users. We split search functionality into two pages:
 
@@ -35,7 +35,7 @@ We'll continue to upload [static lists of submitted reports]({{ config.baseUrl }
 
 If you have questions about search, please [contact the FAC helpdesk.](https://support.fac.gov/hc/en-us/requests/new)
 
-## March 22, 2024
+### March 22, 2024
 
 Our engineering team continues to test the new infrastructure supporting search. 
 
@@ -43,7 +43,7 @@ We are continuing to upload [static lists of submitted reports]({{ config.baseUr
 
 If you have questions about search or the audit resolution lists, please [contact the FAC helpdesk](https://support.fac.gov/hc/en-us/requests/new).
 
-## March 21, 2024
+### March 21, 2024
 
 Testing of the new search infrastructure is still underway but our engineering team is making progress. We expect to turn search back on by early next week.
 
@@ -53,7 +53,7 @@ We now have [static lists of submitted reports available]({{ config.baseUrl }}st
 
 If you have questions about search or the audit resolution lists, please [contact the FAC helpdesk](https://support.fac.gov/hc/en-us/requests/new).
 
-## March 20, 2024
+### March 20, 2024
 
 Our engineering team has made progress on improving search stability and performance. We'll be turning back on all search filters for testing soon. During this testing period, we want to caution users that **you will experience slow load times**. We expect searches using multiple filters to take several minutes. 
 
@@ -61,7 +61,7 @@ If you experience a system error message, please [contact the FAC helpdesk](http
 
 We're also continuing to work on a static list of submitted reports for use by audit resolution officials.
 
-## March 19, 2024
+### March 19, 2024
 
 We're aware that search performance, even reduced to UEI-only, continues to be slow. Our engineers are investigating the root cause of the issue and continue to work on a solution. 
 
@@ -69,11 +69,11 @@ We are also exploring options for using the API to generate a static list of sub
 
 For specific questions or issues, please contact the FAC via [our helpdesk](https://support.fac.gov/hc/en-us/requests/new).
 
-## March 18, 2024
+### March 18, 2024
 
 **Audit search is currently limited to UEI-only.** You can search your UEI to confirm your audit submission is complete. The PDF report is still be available for download but summary report workbooks aren't.
 
-### Issue background
+#### Issue background
 
 In mid-February, GSA completed the migration of historical data from the Census Bureau. This increased the amount of data in the GSA system exponentially, hindering search performance. 
 
