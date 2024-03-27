@@ -8,9 +8,9 @@ meta:
 
 # FAC findings updates
 
-While users transition to our updated Search interface, we'll be providing a daily export of new submissions with findings. These workbooks will provide a summary of audits with findings submitted each day. **Audits without findings aren't included.**
+While Federal users transition to our [advanced search interface]({{config.baseUrl}}/dissemination/search/advanced/), we'll be providing a daily export of new submissions with findings. These workbooks will provide a summary of audits with findings submitted each day. **Audits without findings aren't included.**
 
-We'll continue to upload these exports daily until April 16, 2024.
+We will explore the utility of these exports with partners, and collect community input regarding these exports at our April office hours.
 
 ## About the workbooks
 
