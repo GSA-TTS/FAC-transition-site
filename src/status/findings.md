@@ -10,8 +10,6 @@ meta:
 
 While Federal users transition to our [advanced search interface]({{config.baseUrl}}/dissemination/search/advanced/), we'll be providing a daily export of new submissions with findings. These workbooks will provide a summary of audits with findings submitted each day. **Audits without findings aren't included.**
 
-We will explore the utility of these exports with partners, and collect community input regarding these exports at our April office hours.
-
 ## About the workbooks
 
 The workbooks below provide a summary of audits that had findings. Each workbook represents one day of submissions.
