@@ -11,7 +11,7 @@ This page tracks the operating status of the FAC, both for audit submission and 
 
 The FAC is operating normally.
 
-We'll continue to upload [static lists of submitted reports]({{ config.baseUrl }}status/findings) daily for audit resolution officials until April 16, 2024.
+We'll continue to upload [static lists of submitted reports]({{ config.baseUrl }}status/findings) daily for audit resolution officials at least through April 16, 2024.
 
 <div class="usa-accordion usa-accordion--bordered">
 <h2 class="usa-accordion__heading">
