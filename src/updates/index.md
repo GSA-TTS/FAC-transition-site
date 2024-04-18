@@ -13,19 +13,6 @@ To help you understand our work through the transition, we’ll provide regular 
 
 The Federal Audit Clearinghouse team works in the open. Our day-to-day task board can be found on [Github](https://github.com/orgs/GSA-TTS/projects/11/views/2) and prior updates are available in [our archive]({{ config.baseUrl }}updates/archive).
 
-<div class="usa-alert usa-alert--info">
-  <div class="usa-alert__body">
-    <h4 class="usa-alert__heading">Census shutdown timing</h4>
-    <p class="usa-alert__text padding-bottom-2">
-    The U.S. Census Bureau will be shutting down <a href="https://facdissem.census.gov">their site</a> that distributes Single Audit data on March 31, 2024.
-    </p>
-    <p class="usa-alert__text">
-    The GSA FAC team wants to thank our colleagues at the Census Bureau. They've been incredible partners during this transition and their support and partnership has been a marvelous example of what it means to serve the public with excellence.
-    </p>
-  </div>
-</div>
-
-
 ## Jump to
 
 * [General updates](#general)
@@ -34,23 +21,16 @@ The Federal Audit Clearinghouse team works in the open. Our day-to-day task boar
 
 ## Week of February 26, 2024
 
-Our work through the end of February and into March is focused in three areas:
+### March peak season
 
-1. Improving search.
-2. Improving access to Tribal data.
-3. Preparing for the March submission deadline.
+The FAC received 5,403 single audit submissions in the last week of March. During this time, [our helpdesk](https://support.fac.gov/hc/en-us/requests/new) resolved more than 400 tickets, most via one-touch and in less than 24 hours.
 
-### Improving search
+<div class="grid-container">
+    <div class="grid-row">
+        <div class="tablet:grid-col"><img src="{{ config.baseUrl }}assets/img/helpdesk_tickets_march.png" alt="bar chart of helpdesk tickets for the last week of March 2024" /></div>
+        <div class="tablet:grid-col"><img src="{{ config.baseUrl }}assets/img/helpdesk_tickets_march.png" alt="bar chart of response times to helpdesk tickets for the last week of March 2024" /></div>
 
-We added new search filters, covered in ticket [#3407](https://github.com/GSA-TTS/FAC/issues/3407). These new filters allow for:
-
-1. Searching audits by finding type. 
-2. Filtering by direct or passthrough funding.
-3. Filtering by whether an audit is on a major program or not.
-
-We're continuing to improve search performance and are tracking our plans in story [#3388](https://github.com/GSA-TTS/FAC/issues/3388). 
-
- If you encounter issues with any of these new features, please let us know [via the FAC helpdesk](https://support.fac.gov/hc/en-us/requests/new).
+As the rate of submissions tapers off, the team is returning its focus to feature delivery and site maintenance.
 
 ### Improving access to Tribal data
 
