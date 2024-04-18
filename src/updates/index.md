@@ -35,7 +35,7 @@ As the rate of submissions tapers off, the team is returning its focus to featur
 
 ### Tribal API
 
-Earlier this month we completed the work to make protected Tribal audits available to authorized users via the API. Documentation on this process has been shared with interested agencies. If you would like to learn more about access to the API, please contact the FAC helpdesk.
+Tribal audits are now available to authorized users [via the API]({{ config.baseUrl }}api/tribal). Documentation on this process has been shared with interested agencies. If you would like to learn more about access to the API, please contact the FAC helpdesk.
 
 ### Advanced search
 
