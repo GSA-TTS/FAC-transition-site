@@ -27,8 +27,9 @@ The FAC received 5,403 single audit submissions in the last week of March. Durin
 
 <div class="grid-container">
     <div class="grid-row">
-        <div class="tablet:grid-col"><img src="{{ config.baseUrl }}assets/img/helpdesk_tickets_march.png" alt="bar chart of helpdesk tickets for the last week of March 2024" /></div>
-        <div class="tablet:grid-col"><img src="{{ config.baseUrl }}assets/img/helpdesk_tickets_march.png" alt="bar chart of response times to helpdesk tickets for the last week of March 2024" /></div>
+        <div class="tablet:grid-col"><img src="{{ config.baseUrl }}assets/img/helpdesk/helpdesk_tickets_march.png" alt="bar chart of helpdesk tickets for the last week of March 2024" /></div>
+        <div class="tablet:grid-col"><img src="{{ config.baseUrl }}assets/img/helpdesk/helpdesk_tickets_march.png" alt="bar chart of response times to helpdesk tickets for the last week of March 2024" /></div>
+    </div>
 
 As the rate of submissions tapers off, the team is returning its focus to feature delivery and site maintenance.
 
