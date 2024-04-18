@@ -19,7 +19,7 @@ The Federal Audit Clearinghouse team works in the open. Our day-to-day task boar
 * Updates for [grantees and auditors](#grantees-and-auditors)
 * Updates for [agencies](#agencies)
 
-## Week of February 26, 2024
+## Week of April 15, 2024
 
 ### March peak season
 
