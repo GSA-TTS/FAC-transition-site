@@ -13,83 +13,45 @@ To help you understand our work through the transition, we’ll provide regular 
 
 The Federal Audit Clearinghouse team works in the open. Our day-to-day task board can be found on [Github](https://github.com/orgs/GSA-TTS/projects/11/views/2) and prior updates are available in [our archive]({{ config.baseUrl }}updates/archive).
 
-<div class="usa-alert usa-alert--info">
-  <div class="usa-alert__body">
-    <h4 class="usa-alert__heading">Census shutdown timing</h4>
-    <p class="usa-alert__text padding-bottom-2">
-    The U.S. Census Bureau will be shutting down <a href="https://facdissem.census.gov">their site</a> that distributes Single Audit data on March 31, 2024.
-    </p>
-    <p class="usa-alert__text">
-    The GSA FAC team wants to thank our colleagues at the Census Bureau. They've been incredible partners during this transition and their support and partnership has been a marvelous example of what it means to serve the public with excellence.
-    </p>
-  </div>
-</div>
-
-
 ## Jump to
 
 * [General updates](#general)
 * Updates for [grantees and auditors](#grantees-and-auditors)
 * Updates for [agencies](#agencies)
 
-## Week of February 26, 2024
+## Week of April 15, 2024
 
-Our work through the end of February and into March is focused in three areas:
+### March peak season
 
-1. Improving search.
-2. Improving access to Tribal data.
-3. Preparing for the March submission deadline.
-
-### Improving search
-
-We added new search filters, covered in ticket [#3407](https://github.com/GSA-TTS/FAC/issues/3407). These new filters allow for:
-
-1. Searching audits by finding type. 
-2. Filtering by direct or passthrough funding.
-3. Filtering by whether an audit is on a major program or not.
-
-We're continuing to improve search performance and are tracking our plans in story [#3388](https://github.com/GSA-TTS/FAC/issues/3388). 
-
- If you encounter issues with any of these new features, please let us know [via the FAC helpdesk](https://support.fac.gov/hc/en-us/requests/new).
-
-### Improving access to Tribal data
-
-We're reviewing ticket [#2298](https://github.com/GSA-TTS/FAC/issues/2298). This will make Tribal data available to Federal partners via the FAC API. The team is also close to completing ticket [#3331](https://github.com/GSA-TTS/FAC/issues/3331), which will make the public portion of Tribal audits appropriately visible in search.
-
-### March submission deadline
-
-It's possible to [use the FAC API](https://github.com/GSA-TTS/fac-api-examples/tree/main/count-march-submissions) to predict what is coming in March. Here are plots of the submissions-per-day to the FAC from March of 2016 through 2022.
+The FAC received 5,403 single audit submissions between March 25 and April 1. During this time, [our helpdesk](https://support.fac.gov/hc/en-us/requests/new) resolved more than 400 tickets, most via one-touch and in less than 24 hours.
 
 <div class="grid-container">
     <div class="grid-row">
-        <div class="tablet:grid-col"><img src="{{ config.baseUrl }}assets/img/updates/submissions-in-2016.png" alt="Histogram of submissions in 2016" /></div>
-        <div class="tablet:grid-col"><img src="{{ config.baseUrl }}assets/img/updates/submissions-in-2017.png" alt="Histogram of submissions in 2017" /></div>
-        <div class="tablet:grid-col"><img src="{{ config.baseUrl }}assets/img/updates/submissions-in-2018.png" alt="Histogram of submissions in 2018" /></div>
-        <div class="tablet:grid-col"><img src="{{ config.baseUrl }}assets/img/updates/submissions-in-2019.png" alt="Histogram of submissions in 2019" /></div>
+        <div class="tablet:grid-col"><img src="{{ config.baseUrl }}assets/img/helpdesk/helpdesk_tickets_march.png" alt="bar chart of helpdesk tickets for the last week of March 2024" /></div>
+        <div class="tablet:grid-col"><img src="{{ config.baseUrl }}assets/img/helpdesk/helpdesk_response_march.png" alt="bar chart of response times to helpdesk tickets for the last week of March 2024" /></div>
     </div>
-    <div class="grid-row">
-        <div class="tablet:grid-col"><img src="{{ config.baseUrl }}assets/img/updates/submissions-in-2020.png" alt="Histogram of submissions in 2020" /></div>
-        <div class="tablet:grid-col"><img src="{{ config.baseUrl }}assets/img/updates/submissions-in-2021.png" alt="Histogram of submissions in 2021" /></div>
-        <div class="tablet:grid-col"><img src="{{ config.baseUrl }}assets/img/updates/submissions-in-2022.png" alt="Histogram of submissions in 2022" /></div>
-        <div class="tablet:grid-col"></div>
-    </div>
-</div>
 
-The Clearinghouse typically sees between 700 and 900 audit submissions per day at the end of March. In 2022, the Census Bureau saw close to 2000 audits submitted in one day.
+As the rate of submissions tapers off, the team is returning its focus to feature delivery and site maintenance.
 
-We're doing many things to prepare for this submission volume. Since our launch, we've run two "copies" of the FAC to handle submissions. This means that, if two people are uploading audits to the FAC, one might get "FAC 1," and the other "FAC 2," so they both experience good web performance. As we go into March, we are increasing that number to 10, and can double that to 20 if necessary. This way, if 10 people are uploading data at the same time, they will each experience the same level of performance.
+### Tribal API
 
-This is possible because the FAC is built on top of technologies like [cloud.gov](https://cloud.gov) and [Login.gov](https://login.gov).
+Tribal audits are now available to authorized users [via the API]({{ config.baseUrl }}api/tribal). Documentation on this process has been shared with interested agencies. If you would like to learn more about access to the API, please contact the FAC helpdesk.
+
+### Advanced search
+
+At the end of March, we experienced a performance outage for the FAC search. To resolve this, the team created [an advanced search option](https://app.fac.gov/dissemination/search/advanced/) to better serve audit resolution officials. A more [basic search option](https://app.fac.gov/dissemination/search/) is also still available for quicker confirmation of submitted reports.
+
+During the outage, we uploaded [daily findings workbooks]({{ config.baseUrl }}status/findings) to support resolution work. This page will remain available until May.
 
 ### What's next?
 
-We're keeping our focus on March. Looking ahead to the next few months, we'll be:
+#### Resubmission
 
-- Focusing on performance improvements and growing our team’s capacity for user support.
+The team is beginning the work on single audit resubmission. We're in the early stages of user interviews to determine the feature requirements. We're also talking with our agency partners about the resubmission process and how its triggered.
 
-- Providing documentation on the migration of historical and how to use it.
+#### May code freeze
 
-- Improving search to support Federal oversight work and the public’s use of FAC data.
+The FAC will undergo a code freeze from 5/17 - 5/31 to allow for security penetration testing. This testing is a required part of our authority to operate. During this time, we won't be making any updates to the FAC.
 
 <h2 id="general" >General updates</h3>
 
