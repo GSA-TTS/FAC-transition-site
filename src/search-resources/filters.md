@@ -1,25 +1,30 @@
 ---
 layout: home.njk
-title: FAC search resources
+title: FAC basic search resources
 meta:
-  name: FAC search resources
+  name: FAC basic search resources
   description: Find resources and instructions for searching single audit data.
 ---
 
-# Search filters
+# Basic search filters
 
-The FAC search currently has seven search filters that combine with each other to narrow down search results. It’s possible to combine filters and not return any results.
+The FAC has two search modes: [basic](https://app.fac.gov/dissemination/search/) and [advanced](https://app.fac.gov/dissemination/search/advanced/). Basic search has eight search filters and is best for users wanting to confirm their submissions are complete. These filters combine with each other to narrow down search results. It’s possible to combine filters and get no results.
 
-> **Example**: If you search a range of 8/1/2023 to 8/15/2023 for “FAC Release Date,”  plus a specific UEI, the system won’t return any results because we didn’t collect or release any audits between August 1st and August 15th. Even if the UEI exists, this combination of filters won’t return any results.
+> **Example**: If you search a range of 8/1/2023 to 8/15/2023 for “FAC acceptance date,”  plus a specific UEI, you may not get any results because that entity didn’t submit in that specific date range.
 
-The seven filters currently available are:
-- [UEI or EIN](#uei-or-ein)
-- [Assistance Listing Number (ALN/CFDA)](#assistance-listing-number-alncfda)
-- [Name (entity, auditee, or auditor)](#name-entity-auditee-or-auditor)
+The eight filters currently available are:
 - [Audit year](#audit-year)
+- [UEI or EIN](#uei-or-ein)
+- [Name (entity, auditee, or auditor)](#name-entity-auditee-or-auditor)
 - [FAC acceptance date](#fac-acceptance-date)
-- [Cognizant or oversight](#cognizant-or-oversight)
 - [State](#state)
+- [Fiscal year end month](#fiscal-year-end-month)
+- [Entity type](#entity-type)
+- [Report ID](#report-id)
+
+### <a name=audit-year></a>Audit year
+
+This filters on the submission’s audit year. If you leave it blank, the system will return results from all audit years; if you check one, it limits your results to the selected year(s) only. FAC data goes back to 2016.
 
 ### <a name=uei-or-ein></a>UEI or EIN
 
@@ -28,18 +33,6 @@ Enter one UEI or EIN per line.
 The FAC searches for all of the UEIs or EINS you enter; the system will ignore any that are incorrect.
 
 > **Example**: If you enter only `RHVRCYWNTFX3`, the system will return a single audit for Clinton County. If you add a second line, and enter `UVLVR8CN2FM4`, the system will return two results, one for Clinton County and one for Santa Cruz County.
-
-### <a name=assistance-listing-number-alncfda></a>Assistance Listing Number (ALN/CFDA)
-
-Enter one number per line.
-
-The system supports search for both ALNs and for program numbers. Your list can contain a mix of both, or you can search for just one or the other.
-
-> **Example**: If you enter the full ALN `93.778`, the system will return all audits that contained a federal award issued from agency number 93 (HHS), program 778 (Medical Assistance Program).
-
-> **Example**: If you enter `93`, the system will return all submissions that contained a federal award from agency number 93 (HHS).
-
-> **Example**: If you enter `93` on one line, and `20.600` on another, the system will return all submissions that contained an award for HHS, and all awards that included funding on ALN 20.600. 
 
 ### <a name=name-entity-auditee-or-auditor></a>Name (entity, auditee, or auditor)
 
@@ -51,10 +44,6 @@ The system ignores the capitalization of words. The terms “school,” “Schoo
 
 > **Example**: If  you are looking for a school, you might use the word “SCHOOL” as a part of your search. This will return “Ripley School District of Oklahoma,” but it will not return “Sand Creek Community Schools.” To get both, you would enter “SCHOOL” on one line, and “SCHOOLS” on the next. 
 
-### <a name=audit-year></a>Audit year
-
-This filters on the submission’s audit year. If you leave it blank, the system will return results from all audit years; if you check one, it limits your results to the selected year(s) only. Historical audits from Census will be available in early 2024.
-
 ### <a name=fac-acceptance-date></a>FAC acceptance date
 
 Historically, this used to be FAC Release Date.  The current FAC system accepts and releases the single audit data immediately upon final submission by the auditee.
@@ -65,14 +54,18 @@ If you enter only a start date, the system will return all audits accepted after
 
 If you enter only an end date, the system will return all audits accepted before that date.
 
-### <a name=cognizant-or-oversight></a>Cognizant or oversight
-
-To filter by cognizant or oversight agency, you must select which you are looking for as well as enter the federal agency number. 
-
-If you select cognizant or oversight but don’t enter an agency number, the system won’t return any results. 
-
-If you enter an agency number but don’t select cognizant or oversight, the system won’t return any results.
-
 ### <a name=state></a>State
 
 Use the dropdown menu to select the state whose audits you'd like to see.
+
+### <a name=fiscal-year-end-month></a>Fiscal year end month
+
+Use the dropdown menu to select the end month of the auditee’s fiscal year.
+
+### <a name=entity-type></a>Entity type
+
+Select the type of entity you would like to return. You can select as many options as you’d like, or leave this filter blank.
+
+### <a name=report-id></a>Report ID
+
+If you know your report ID, you can enter it here to search the system. FAC report IDs generally look like `2022-06-GSAFAC-0000012345` for audits submitted directly to the new GSA FAC or `2022-06-CENSUS-0000123456` for historical records migrated from the Census FAC.
