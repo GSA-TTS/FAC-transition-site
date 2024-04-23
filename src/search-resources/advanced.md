@@ -12,7 +12,7 @@ The FAC has two search modes: [basic](https://app.fac.gov/dissemination/search/)
 
 **Example:** If you search a range of 8/1/2023 to 8/15/2023 for “FAC acceptance date,”  plus a specific UEI, you may not get any results because that entity didn’t submit in that specific date range.
 
-Many of the filters available via advanced search are the same as the basic filters. The filters unique to advance search are:
+Many of the filters available via advanced search are the same as [the basic filters]({{config.baseUrl}}search-resources/filters). The filters unique to advance search are:
 
 - [Assistance Listing Number (ALN/CFDA)](#assistance-listing-number-alncfda)
 - [Cognizant or oversight](#cognizant-or-oversight)
