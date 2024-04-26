@@ -39,24 +39,38 @@ This filter looks at which agency is the cognizant or oversight agency for an en
 
 To see all audits with a specific reporting agency, leave the dropdown menu set to "Either" and enter a specific agency number in the text field. To narrow down the results, select "cognizant" or "oversight" from the dropdown.
 
-You can also use the dropdown menu while leaving the text field blank. If you select "cognizant" without entering an agency number, the results will only include audits with a cognizant agency and not those with an oversight agency. There will be a mix of agencies represented as the cognizant
+You can also use the dropdown menu while leaving the text field blank. If you select "cognizant" without entering an agency number, the results will only include audits with a cognizant agency and not those with an oversight agency. There will be a mix of agencies represented as the cognizant.
+
+> **Example**: If you leave the dropdown on “Either” and enter `93`, you will get back all submissions that have agency number 93 (HHS) as their cognizant or oversight agency.
+
+> **Example**: If you select “Cognizant” from the dropdown and enter `93`, you will only get submissions that have agency number 93 (HHS) as their cognizant agency.
 
 ### <a name=audit-findings></a>Audit findings
-Select which type of findings you want to see. If you select any option from this list, audits without findings won’t appear in your results.
+Select which type of findings you want to see. If you select any option from this list, only audits with findings will appear in your results.
+
+Checking “Any findings” will return submissions with findings of any type.. 
+
+The more types of findings you select, the narrower your results will be. However, if you keep “Any findings” checked and check another type, the “Any findings” will overrule the more specific types.
 
 ### <a name=direct-funding></a>Direct funding
-Using this filter narrows results to only those audits with direct or passthrough funding. To find audits that received one type of funding or the other from a specific agency, use this filter in combination with the ALN filter
+Using this filter narrows results to only those audits with direct or passthrough funding. To find audits that received one type of funding or the other from a specific agency, use this filter in combination with the ALN filter.
+
+> **Example**: If you select “Direct funding” and enter `93` in the ALN filter, you will get back all submissions that received direct funding from agency number 93 (HHS).
 
 ### <a name=major-program></a>Major program
-This filter narrows results to only those audits that received money from a major program or not. To find only audits that received major program funding from a specific agency, use this filter in combination with the ALN filter
+This filter narrows results to those audits that did or didn’t receive money from a qualifying major program. To find only audits that received major program funding from a specific agency, use this filter in combination with the ALN filter.
+
+> **Example**: If you select “Y” and enter `93` in the ALN filter, you will get back all submissions that received major program funding from agency number 93 (HHS).
 
 ### <a name=passthrough-name></a>Passthrough name
 Enter one word per line.
 
-This filter looks at awards listed as passed through to a subrecpient and the recipient of those awards. 
+This filter looks at awards listed as passed through to a subrecpient and the recipient of those awards.
 
 At this time, the FAC matches whole words, not parts of words. The terms “school” and “schools” are not the same.
 
 The search ignores the capitalization of words. The terms “school,” “School,” and “SCHOOL” are all the same.
+
+Enter one word per line.
 
 **Example:** If  you are looking for a school, you might use the word “SCHOOL” as a part of your search. This will find “Ripley School District of Oklahoma,” but it will not find “Sand Creek Community Schools.” To find both, you would enter “SCHOOL” on one line, and “SCHOOLS” on the next.
