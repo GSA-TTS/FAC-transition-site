@@ -34,7 +34,7 @@ This step retrieves data about a submission based on the provided report ID.
 
 #### Headers
 
-* `content-profile`: Set to `api_v1_1_0`.
+* `accept-profile`: Set to `api_v1_1_0`.
 * `x-api-key`: Your Tribal API key.
 * `content-type`: Set to `application/json`.
 
