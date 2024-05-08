@@ -11,17 +11,17 @@ meta:
 The FAC is committed to working transparently and openly. In addition to [our regular updates](https://www.fac.gov/info/updates/), you can find historical updates below.
 
 <div class="usa-accordion usa-accordion--bordered">
-<h4 class="usa-accordion__heading">
-  <button
-    type="button"
-    class="usa-accordion__button"
-    aria-expanded="true"
-    aria-controls="b-apr15"
-  >
+  <h4 class="usa-accordion__heading">
+    <button
+      type="button"
+      class="usa-accordion__button"
+      aria-expanded="true"
+      aria-controls="b-apr15"
+    >
     Week of April 15, 2024
-  </button>
-</h4>
-<div id="b-apr15" class="usa-accordion__content usa-prose">
+    </button>
+  </h4>
+  <div id="b-apr15" class="usa-accordion__content usa-prose">
 
 ## Week of April 15, 2024
 
@@ -749,4 +749,5 @@ Our goal is to be transparent and share our areas of focus. You can see what fea
 
 We are currently working on [search](https://github.com/GSA-TTS/FAC/issues/2236). This will give Federal and public users the ability to find and download completed audits. We track our [day-to-day work on our task board](https://github.com/orgs/GSA-TTS/projects/11).
   </div>
-</div>
+
+
