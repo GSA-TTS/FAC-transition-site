@@ -57,6 +57,8 @@ The team is beginning the work on single audit resubmission. We're in the early 
 
 The FAC will undergo a code freeze from 5/17 - 5/31 to allow for security penetration testing. This testing is a required part of our authority to operate. During this time, we won't be making any updates to the FAC.
 
+</div>
+
 <div class="usa-accordion usa-accordion--bordered">
 <h4 class="usa-accordion__heading">
   <button
@@ -66,8 +68,6 @@ The FAC will undergo a code freeze from 5/17 - 5/31 to allow for security penetr
     aria-controls="b-feb26"
   >
 
-  </div>
-  
     Week of February 26, 2024
   </button>
 </h4>
