@@ -282,7 +282,6 @@ We continue to work with Census on the migration of historic data.
 
 We completed the development work necessary to make it possible to unlock audits that had been locked for certification. Auditors and auditees are now able to unlock these audits to make further edits before re-locking for certification.
 
-
 ### What we delivered
 
 We work in [an agile manner](https://asana.com/resources/agile-methodology). That means we have a long-term strategy, medium-term features we work to deliver, and make continuous improvement and bug fixes to the existing product. We update our system through pull requests, or PRs.
@@ -334,6 +333,7 @@ The historical data migration occupies a lot of our team’s time. However, we a
 - Improving the visibility of findings on audits.
 
 - Providing summary reports for both single audit submissions and for all results of a search.
+
 </div>
 
 <h4 class="usa-accordion__heading">
@@ -501,6 +501,7 @@ Our priorities are:
 ### Opportunities
 
 Do you have an idea that could transform and improve grants management and oversight? 10x, a federal idea accelerator, is [accepting proposals for new investment opportunities](https://10x.gsa.gov/posts/2023-submission-period/). All Federal employees are invited to submit ideas by November 30th.
+  
   </div>
 
   <h4 class="usa-accordion__heading">
@@ -651,6 +652,7 @@ After releasing search, our priorities are:
 ### Opportunities
 
 Do you have an idea that could transform and improve grants management and oversight? 10x, a federal idea accelerator, is [accepting proposals for new investment opportunities](https://10x.gsa.gov/posts/2023-submission-period/). All Federal employees are invited to submit ideas by November 30th.
+  
   </div>
   
   <h4 class="usa-accordion__heading">
@@ -683,6 +685,7 @@ Our pending feature priorities are:
 - Adding the ability to add, remove, or change auditors and certifying officials who are attached to the audit.
 - Adding the ability to resubmit a previously submitted and completed audit.
 - Adding email notifications to alert auditees and auditors that a step is ready for them to complete.
+  
   </div>
 
   <h4 class="usa-accordion__heading">
@@ -719,6 +722,7 @@ Our other feature priorities are:
 - Adding the ability to add, remove, or change auditors and certifying officials who are attached to the audit.
 - Adding the ability to resubmit a previously submitted and completed audit.
 - Adding email notifications to alert auditees and auditors that a step is ready for them to complete.
+  
   </div>
 
   <h4 class="usa-accordion__heading">
@@ -748,6 +752,7 @@ We know that not every tool you are used to is currently available, and we are w
 Our goal is to be transparent and share our areas of focus. You can see what features are coming up in [our backlog](https://github.com/orgs/GSA-TTS/projects/13/views/1). 
 
 We are currently working on [search](https://github.com/GSA-TTS/FAC/issues/2236). This will give Federal and public users the ability to find and download completed audits. We track our [day-to-day work on our task board](https://github.com/orgs/GSA-TTS/projects/11).
+ 
   </div>
 
 
