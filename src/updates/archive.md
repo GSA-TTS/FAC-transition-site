@@ -16,7 +16,7 @@ The FAC is committed to working transparently and openly. In addition to [our re
     type="button"
     class="usa-accordion__button"
     aria-expanded="true"
-    aria-controls="b-feb26"
+    aria-controls="b-apr15"
   >
     Week of April 15, 2024
   </button>
@@ -341,6 +341,7 @@ The historical data migration occupies a lot of our team’s time. However, we a
 - Providing summary reports for both single audit submissions and for all results of a search.
 </div>
 
+<div class="usa-accordion usa-accordion--bordered">
 <h4 class="usa-accordion__heading">
     <button
       type="button"
@@ -508,6 +509,7 @@ Our priorities are:
 Do you have an idea that could transform and improve grants management and oversight? 10x, a federal idea accelerator, is [accepting proposals for new investment opportunities](https://10x.gsa.gov/posts/2023-submission-period/). All Federal employees are invited to submit ideas by November 30th.
   </div>
 
+  <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button
       type="button"
@@ -658,6 +660,7 @@ After releasing search, our priorities are:
 Do you have an idea that could transform and improve grants management and oversight? 10x, a federal idea accelerator, is [accepting proposals for new investment opportunities](https://10x.gsa.gov/posts/2023-submission-period/). All Federal employees are invited to submit ideas by November 30th.
   </div>
   
+  <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button
       type="button"
@@ -690,6 +693,7 @@ Our pending feature priorities are:
 - Adding email notifications to alert auditees and auditors that a step is ready for them to complete.
   </div>
 
+  <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button
       type="button"
@@ -726,6 +730,7 @@ Our other feature priorities are:
 - Adding email notifications to alert auditees and auditors that a step is ready for them to complete.
   </div>
 
+  <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button
       type="button"
