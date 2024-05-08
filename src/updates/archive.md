@@ -59,7 +59,6 @@ The FAC will undergo a code freeze from 5/17 - 5/31 to allow for security penetr
 
 </div>
 
-<div class="usa-accordion usa-accordion--bordered">
 <h4 class="usa-accordion__heading">
   <button
     type="button"
@@ -134,8 +133,6 @@ We're keeping our focus on March. Looking ahead to the next few months, we'll be
 
 </div>
 
-
-<div class="usa-accordion usa-accordion--bordered">
 <h4 class="usa-accordion__heading">
   <button
     type="button"
@@ -155,7 +152,6 @@ The team has been focused on completing a migration of data from Census to GSA. 
 **Single Audit submissions from 2016–present are now available from the GSA FAC, and the Census Bureau is shutting down their data distribution.** Single Audits from prior years will appear in our search results. This is a major milestone, and future work will involve documenting the data migration, our continued curation of this data, and improvements to how this data is queried and used.
 
 The migration caused some disruptions to service. With 10 times more data, our system has struggled to keep up with volume for some of our search filters. The most affected filter is the ALN search. Results for this filter show whether an audit contains findings (“Findings My ALN/Findings Other ALN”). Before the migration, this filter applied to small amounts of data, but after adding prior years, this began crashing the system. We've removed this feature to resolve the system strain. Our team is working on a replacement feature to handle the larger amount of data.
-
 
 ### What we delivered
 
@@ -222,7 +218,6 @@ We're anticipating March to be a busy month. To support this, we'll be:
 
 </div>
 
-<div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button
       type="button"
@@ -268,9 +263,9 @@ Auditors and auditees can now review a submission after it is validated and lock
 #### Historic data migration
 
 We continue to work with Census on the migration of historic data.
+
 </div>
 
-<div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button
       type="button"
@@ -341,7 +336,6 @@ The historical data migration occupies a lot of our team’s time. However, we a
 - Providing summary reports for both single audit submissions and for all results of a search.
 </div>
 
-<div class="usa-accordion usa-accordion--bordered">
 <h4 class="usa-accordion__heading">
     <button
       type="button"
@@ -509,7 +503,6 @@ Our priorities are:
 Do you have an idea that could transform and improve grants management and oversight? 10x, a federal idea accelerator, is [accepting proposals for new investment opportunities](https://10x.gsa.gov/posts/2023-submission-period/). All Federal employees are invited to submit ideas by November 30th.
   </div>
 
-  <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button
       type="button"
@@ -660,7 +653,6 @@ After releasing search, our priorities are:
 Do you have an idea that could transform and improve grants management and oversight? 10x, a federal idea accelerator, is [accepting proposals for new investment opportunities](https://10x.gsa.gov/posts/2023-submission-period/). All Federal employees are invited to submit ideas by November 30th.
   </div>
   
-  <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button
       type="button"
@@ -693,7 +685,6 @@ Our pending feature priorities are:
 - Adding email notifications to alert auditees and auditors that a step is ready for them to complete.
   </div>
 
-  <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button
       type="button"
@@ -730,7 +721,6 @@ Our other feature priorities are:
 - Adding email notifications to alert auditees and auditors that a step is ready for them to complete.
   </div>
 
-  <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button
       type="button"
