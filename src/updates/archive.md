@@ -66,7 +66,6 @@ The FAC will undergo a code freeze from 5/17 - 5/31 to allow for security penetr
     aria-expanded="false"
     aria-controls="b-feb26"
   >
-
     Week of February 26, 2024
   </button>
 </h4>
