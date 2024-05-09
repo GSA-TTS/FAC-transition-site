@@ -753,5 +753,5 @@ Our goal is to be transparent and share our areas of focus. You can see what fea
 We are currently working on [search](https://github.com/GSA-TTS/FAC/issues/2236). This will give Federal and public users the ability to find and download completed audits. We track our [day-to-day work on our task board](https://github.com/orgs/GSA-TTS/projects/11).
  
   </div>
-
+</div>
 
