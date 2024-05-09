@@ -64,7 +64,7 @@ This field can't be left blank.
 
 ### Column F: Amount Expended
 
-Enter the amount of expenditures for each Federal award, rounding to the nearest whole dollar.
+Enter the amount of expenditures for each Federal award, as defined in [2 CFR 200.502](https://www.ecfr.gov/current/title-2/section-200.502). Round the amount to the nearest whole dollar.
 
 If you have a negative expenditure, enter it as “-123.45”.
 
@@ -112,7 +112,7 @@ If the program is a Federal loan or a Federal loan guarantee, enter the loan or 
 
 If the outstanding loan balance is not applicable, enter "N/A". For example, some loans made to students of a college or university where the college or university doesn't make the loans would be considered N/A.
 
-If the award isn't a loan or loan guarantee (column L is “N”), leave this field blank.
+If the award isn't a loan or loan guarantee (column L is “N”), leave this field blank. For more information on loan and loan guarantees, refer to [2 CFR 200.502(b)](https://www.ecfr.gov/current/title-2/part-200/section-200.502#p-200.502(b)).
 
 ### Column N: Direct Award
 
@@ -124,7 +124,7 @@ This field can't be left blank.
 
 ### Column O: If no (Direct Award), Name of Passthrough Entity
 
-If column N is "N". this field can't be left blank. You must enter the name of your pass-through entity.
+If column N is "N". this field can't be left blank. You must enter the name of your pass-through entity per [2 CFR 200.510(b)(2)](https://www.ecfr.gov/current/title-2/part-200/section-200.510#p-200.510(b)(2)).
 
 If column N is "Y", you must leave this field blank.
 
@@ -148,7 +148,7 @@ This field can’t be left blank.
 
 ### Column R: If yes (Passed Through), Amount Passed Through to Subrecipients
 
-Enter the amount passed through to the subrecipient, rounding to the nearest whole dollar.
+Enter the amount passed through to the subrecipient, rounding to the nearest whole dollar, as required by [2 CFR 200.510(b)(4)](https://www.ecfr.gov/current/title-2/part-200/section-200.510#p-200.510(b)(4)).
 
 If Federal Award Passed Through (column Q) is “N”, leave this field blank.
 
