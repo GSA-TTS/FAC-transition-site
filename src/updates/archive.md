@@ -58,6 +58,7 @@ The team is beginning the work on single audit resubmission. We're in the early 
 The FAC will undergo a code freeze from 5/17 - 5/31 to allow for security penetration testing. This testing is a required part of our authority to operate. During this time, we won't be making any updates to the FAC.
 
 </div>
+</div>
 
 <h4 class="usa-accordion__heading">
   <button
@@ -753,5 +754,5 @@ Our goal is to be transparent and share our areas of focus. You can see what fea
 We are currently working on [search](https://github.com/GSA-TTS/FAC/issues/2236). This will give Federal and public users the ability to find and download completed audits. We track our [day-to-day work on our task board](https://github.com/orgs/GSA-TTS/projects/11).
  
   </div>
-</div>
+
 
