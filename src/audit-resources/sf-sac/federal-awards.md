@@ -28,7 +28,7 @@ This field is auto-generated for you as you complete the workbook and can’t be
 
 ### Column B: Federal Agency Prefix
 
-Enter the first two digits of the agency's ALN (formerly CFDA).
+Enter the first two digits of the agency's Assistance Listing Number (ALN). This was formerly called the CFDA. To find an agency's ALN, search [SAM.gov](https://sam.gov/content/assistance-listings).
 
 This field can't be left blank.
 
@@ -37,8 +37,10 @@ This field can't be left blank.
 Enter the last three digits of the agency's ALN.
 - For programs with no ALN or if the ALN is Unknown, enter a "U" followed by a two-digit number (e.g. U12) to identify one or more Federal award lines that form the program.
   - If the ALN is Unknown, column D can't be blank.
+
 - If the Federal program is part of the Research and Development (R&D) cluster and the three-digit ALN extension is unknown, enter "RD".
   - If the ALN is Unknown, column D can't be blank.
+  
 - If the Federal program is part of the R&D cluster and the ALN Three-Digit Extension is known, enter the ALN extension.
 
 This field can't be left blank.
