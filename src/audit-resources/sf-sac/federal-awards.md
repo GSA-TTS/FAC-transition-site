@@ -40,7 +40,7 @@ Enter the last three digits of the agency's ALN.
 
 - If the Federal program is part of the Research and Development (R&D) cluster and the three-digit ALN extension is unknown, enter "RD".
   - If the ALN is Unknown, column D can't be blank.
-  
+
 - If the Federal program is part of the R&D cluster and the ALN Three-Digit Extension is known, enter the ALN extension.
 
 This field can't be left blank.
@@ -51,6 +51,7 @@ Enter non-ALN identifying data for the award (e.g., program year, contract numbe
 
 This field is required if:
 - You entered an unknown ALN Three Digit Extension (e.g. U12) in column C.
+
 - You entered "RD" for the ALN Three Digit Extension in column C.
 
 This column is optional if you entered a valid ALN Three Digit Extension in column C.
@@ -60,6 +61,7 @@ This column is optional if you entered a valid ALN Three Digit Extension in colu
 Select the name of the Federal program from the drop-down list provided. If you don't see a drop-down list, make sure you've completed column B: Federal agency prefix and column C: ALN Three Digit Extension.
 
 - If the program isn't present in the list, look up your ALN on [SAM.gov](https://sam.gov/content/assistance-listings) and attempt to find the authoritative program name for your award.
+
 - If your program name isn't on the drop-down list, enter a name recognizable by your awarding agency or pass-through entity. You'll see a pop-up message asking to confirm your program name isn't on the drop-down list.
 
 This field can't be left blank.
@@ -76,7 +78,9 @@ This field can't be left blank.
 
 Select the name of the cluster of programs using the drop-down list.
 - If the program isn't part of a cluster, select "N/A" for no cluster.
+
 - If the program is part of a state cluster, select “State Cluster” and complete column H.
+
 - If the cluster name isn't on the drop-down list, select "Other Cluster Not Listed Above" and complete column I.
 
 This field can't be left blank.
@@ -166,8 +170,11 @@ This field can't be left blank.
 
 If the Federal program is a major program, enter the letter (U, Q, A, or D) for the type of audit report on the major program.
 - "U" for Unmodified opinion
+
 - "Q" for Qualified opinion
+
 - "A" for Adverse opinion
+
 - "D" for Disclaimer of opinion
 
 The type of audit report applies to all programs in a cluster. For clusters, enter the same letter for all programs in each.
