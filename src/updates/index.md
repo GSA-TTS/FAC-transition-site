@@ -19,9 +19,9 @@ The Federal Audit Clearinghouse team works in the open. Our day-to-day task boar
 * Updates for [grantees and auditors](#grantees-and-auditors)
 * Updates for [agencies](#agencies)
 
-## Week of May 6, 2024
+## Week of May 13, 2024
 
-### Resubmision
+### Resubmission
 
 We're continuing to work with our agency partners and OMB on single audit resubmission. We're conducting user interviews with inspectors general and audit resolution officials and consulting with OMB on policy.
 
