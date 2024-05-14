@@ -28,7 +28,7 @@ This field is auto-generated for you as you complete the workbook and can’t be
 
 ### Column B: Federal Agency Prefix
 
-Enter the first two digits of the agency's ALN (formerly CFDA).
+Enter the first two digits of the agency's Assistance Listing Number (ALN). This was formerly called the CFDA. To find an agency's ALN, search [SAM.gov](https://sam.gov/content/assistance-listings).
 
 This field can't be left blank.
 
@@ -37,8 +37,10 @@ This field can't be left blank.
 Enter the last three digits of the agency's ALN.
 - For programs with no ALN or if the ALN is Unknown, enter a "U" followed by a two-digit number (e.g. U12) to identify one or more Federal award lines that form the program.
   - If the ALN is Unknown, column D can't be blank.
+
 - If the Federal program is part of the Research and Development (R&D) cluster and the three-digit ALN extension is unknown, enter "RD".
   - If the ALN is Unknown, column D can't be blank.
+
 - If the Federal program is part of the R&D cluster and the ALN Three-Digit Extension is known, enter the ALN extension.
 
 This field can't be left blank.
@@ -49,6 +51,7 @@ Enter non-ALN identifying data for the award (e.g., program year, contract numbe
 
 This field is required if:
 - You entered an unknown ALN Three Digit Extension (e.g. U12) in column C.
+
 - You entered "RD" for the ALN Three Digit Extension in column C.
 
 This column is optional if you entered a valid ALN Three Digit Extension in column C.
@@ -58,13 +61,14 @@ This column is optional if you entered a valid ALN Three Digit Extension in colu
 Select the name of the Federal program from the drop-down list provided. If you don't see a drop-down list, make sure you've completed column B: Federal agency prefix and column C: ALN Three Digit Extension.
 
 - If the program isn't present in the list, look up your ALN on [SAM.gov](https://sam.gov/content/assistance-listings) and attempt to find the authoritative program name for your award.
+
 - If your program name isn't on the drop-down list, enter a name recognizable by your awarding agency or pass-through entity. You'll see a pop-up message asking to confirm your program name isn't on the drop-down list.
 
 This field can't be left blank.
 
 ### Column F: Amount Expended
 
-Enter the amount of expenditures for each Federal award, rounding to the nearest whole dollar.
+Enter the amount of expenditures for each Federal award, as defined in [2 CFR 200.502](https://www.ecfr.gov/current/title-2/section-200.502). Round the amount to the nearest whole dollar.
 
 If you have a negative expenditure, enter it as “-123.45”.
 
@@ -74,7 +78,9 @@ This field can't be left blank.
 
 Select the name of the cluster of programs using the drop-down list.
 - If the program isn't part of a cluster, select "N/A" for no cluster.
+
 - If the program is part of a state cluster, select “State Cluster” and complete column H.
+
 - If the cluster name isn't on the drop-down list, select "Other Cluster Not Listed Above" and complete column I.
 
 This field can't be left blank.
@@ -112,7 +118,7 @@ If the program is a Federal loan or a Federal loan guarantee, enter the loan or 
 
 If the outstanding loan balance is not applicable, enter "N/A". For example, some loans made to students of a college or university where the college or university doesn't make the loans would be considered N/A.
 
-If the award isn't a loan or loan guarantee (column L is “N”), leave this field blank.
+If the award isn't a loan or loan guarantee (column L is “N”), leave this field blank. For more information on loan and loan guarantees, refer to [2 CFR 200.502(b)](https://www.ecfr.gov/current/title-2/part-200/section-200.502#p-200.502(b)).
 
 ### Column N: Direct Award
 
@@ -124,7 +130,7 @@ This field can't be left blank.
 
 ### Column O: If no (Direct Award), Name of Passthrough Entity
 
-If column N is "N". this field can't be left blank. You must enter the name of your pass-through entity.
+If column N is "N". this field can't be left blank. You must enter the name of your pass-through entity per [2 CFR 200.510(b)(2)](https://www.ecfr.gov/current/title-2/part-200/section-200.510#p-200.510(b)(2)).
 
 If column N is "Y", you must leave this field blank.
 
@@ -148,7 +154,7 @@ This field can’t be left blank.
 
 ### Column R: If yes (Passed Through), Amount Passed Through to Subrecipients
 
-Enter the amount passed through to the subrecipient, rounding to the nearest whole dollar.
+Enter the amount passed through to the subrecipient, rounding to the nearest whole dollar, as required by [2 CFR 200.510(b)(4)](https://www.ecfr.gov/current/title-2/part-200/section-200.510#p-200.510(b)(4)).
 
 If Federal Award Passed Through (column Q) is “N”, leave this field blank.
 
@@ -164,8 +170,11 @@ This field can't be left blank.
 
 If the Federal program is a major program, enter the letter (U, Q, A, or D) for the type of audit report on the major program.
 - "U" for Unmodified opinion
+
 - "Q" for Qualified opinion
+
 - "A" for Adverse opinion
+
 - "D" for Disclaimer of opinion
 
 The type of audit report applies to all programs in a cluster. For clusters, enter the same letter for all programs in each.
