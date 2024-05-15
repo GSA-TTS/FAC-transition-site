@@ -10,7 +10,9 @@ workbook:
 
 # SF-SAC Section 2: Notes to the Schedule of Expenditures of Federal Awards (SEFA)
 
-Enter the text of your Notes to SEFA in the provided worksheet using the instructions below. Under [2 CFR 200.512(b)(2)](https://www.ecfr.gov/current/title-2/part-200/section-200.512#p-200.512(b)(2)), Tribes and Tribal Organizations can choose to prevent the FAC from sharing their Notes to SEFA. These auditees are still responsible for sharing their reporting package with their passthrough entity.
+Enter the text of your Notes to SEFA in the provided worksheet using the instructions below. 
+
+Under [2 CFR 200.512(b)(2)](https://www.ecfr.gov/current/title-2/part-200/section-200.512#p-200.512(b)(2)), Tribes and Tribal Organizations can choose to prevent the FAC from sharing their Notes to SEFA. These auditees are still responsible for sharing their reporting package with their passthrough entity.
 
 [Download {{meta.name}}]({{ config.baseUrl }}assets/workbooks/{{workbook.name}}.xlsx)
 
