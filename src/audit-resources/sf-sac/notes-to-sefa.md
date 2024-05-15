@@ -24,13 +24,13 @@ Enter the auditee UEI as listed in Workbook 1: Federal awards.  Make sure the UE
 
 ### Row 5: Describe the significant accounting policies used in preparing the SEFA
 
-Outline the significant accounting policies used in preparing the SEFA as described in [(2 CFR 200.510(b)(6))](https://www.ecfr.gov/current/title-2/part-200/section-200.510#p-200.510(b)(6)). If there are multiple notes covering the significant accounting policies, enter all in this field.
+Outline the significant accounting policies used in preparing the SEFA as described in [2 CFR 200.510(b)(6)](https://www.ecfr.gov/current/title-2/part-200/section-200.510#p-200.510(b)(6)). If there are multiple notes covering the significant accounting policies, enter all in this field.
 
 This field can't be left blank.
 
 ### Row 6: Did the auditee use the de minimis cost rate?
 
-Select "Y" if the auditee used the de minimis rate of 10% of modified total direct costs (MTDC) as described in [(2 CFR 200.414(f))](https://www.ecfr.gov/current/title-2/part-200/section-200.414#p-200.414(f)).
+Select "Y" if the auditee used the de minimis rate of 10% of modified total direct costs (MTDC) as described in [2 CFR 200.414(f)](https://www.ecfr.gov/current/title-2/part-200/section-200.414#p-200.414(f)).
 
 Select "N" if the auditee didn't use the de minimis rate of 10% of MTDC and complete row 7.
 
