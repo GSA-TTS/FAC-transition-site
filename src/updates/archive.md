@@ -11,11 +11,60 @@ meta:
 The FAC is committed to working transparently and openly. In addition to [our regular updates](https://www.fac.gov/info/updates/), you can find historical updates below.
 
 <div class="usa-accordion usa-accordion--bordered">
+  <h4 class="usa-accordion__heading">
+    <button
+      type="button"
+      class="usa-accordion__button"
+      aria-expanded="true"
+      aria-controls="b-apr15"
+    >
+    Week of April 15, 2024
+    </button>
+  </h4>
+  <div id="b-apr15" class="usa-accordion__content usa-prose">
+
+## Week of April 15, 2024
+
+### March peak season
+
+The FAC received 5,403 single audit submissions between March 25 and April 1. During this time, [our helpdesk](https://support.fac.gov/hc/en-us/requests/new) resolved more than 400 tickets, most via one-touch and in less than 24 hours.
+
+<div class="grid-container">
+    <div class="grid-row">
+        <div class="tablet:grid-col"><img src="{{ config.baseUrl }}assets/img/helpdesk/helpdesk_tickets_march.png" alt="bar chart of helpdesk tickets for the last week of March 2024" /></div>
+        <div class="tablet:grid-col"><img src="{{ config.baseUrl }}assets/img/helpdesk/helpdesk_response_march.png" alt="bar chart of response times to helpdesk tickets for the last week of March 2024" /></div>
+    </div>
+
+As the rate of submissions tapers off, the team is returning its focus to feature delivery and site maintenance.
+
+### Tribal API
+
+Tribal audits are now available to authorized users [via the API]({{ config.baseUrl }}api/tribal). Documentation on this process has been shared with interested agencies. If you would like to learn more about access to the API, please contact the FAC helpdesk.
+
+### Advanced search
+
+At the end of March, we experienced a performance outage for the FAC search. To resolve this, the team created [an advanced search option](https://app.fac.gov/dissemination/search/advanced/) to better serve audit resolution officials. A more [basic search option](https://app.fac.gov/dissemination/search/) is also still available for quicker confirmation of submitted reports.
+
+During the outage, we uploaded [daily findings workbooks]({{ config.baseUrl }}status/findings) to support resolution work. This page will remain available until May.
+
+### What's next?
+
+#### Resubmission
+
+The team is beginning the work on single audit resubmission. We're in the early stages of user interviews to determine the feature requirements. We're also talking with our agency partners about the resubmission process and how its triggered.
+
+#### May code freeze
+
+The FAC will undergo a code freeze from 5/17 - 5/31 to allow for security penetration testing. This testing is a required part of our authority to operate. During this time, we won't be making any updates to the FAC.
+
+</div>
+</div>
+
 <h4 class="usa-accordion__heading">
   <button
     type="button"
     class="usa-accordion__button"
-    aria-expanded="true"
+    aria-expanded="false"
     aria-controls="b-feb26"
   >
     Week of February 26, 2024
@@ -84,8 +133,6 @@ We're keeping our focus on March. Looking ahead to the next few months, we'll be
 
 </div>
 
-
-<div class="usa-accordion usa-accordion--bordered">
 <h4 class="usa-accordion__heading">
   <button
     type="button"
@@ -105,7 +152,6 @@ The team has been focused on completing a migration of data from Census to GSA. 
 **Single Audit submissions from 2016–present are now available from the GSA FAC, and the Census Bureau is shutting down their data distribution.** Single Audits from prior years will appear in our search results. This is a major milestone, and future work will involve documenting the data migration, our continued curation of this data, and improvements to how this data is queried and used.
 
 The migration caused some disruptions to service. With 10 times more data, our system has struggled to keep up with volume for some of our search filters. The most affected filter is the ALN search. Results for this filter show whether an audit contains findings (“Findings My ALN/Findings Other ALN”). Before the migration, this filter applied to small amounts of data, but after adding prior years, this began crashing the system. We've removed this feature to resolve the system strain. Our team is working on a replacement feature to handle the larger amount of data.
-
 
 ### What we delivered
 
@@ -172,7 +218,6 @@ We're anticipating March to be a busy month. To support this, we'll be:
 
 </div>
 
-<div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button
       type="button"
@@ -218,9 +263,9 @@ Auditors and auditees can now review a submission after it is validated and lock
 #### Historic data migration
 
 We continue to work with Census on the migration of historic data.
+
 </div>
 
-<div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button
       type="button"
@@ -236,7 +281,6 @@ We continue to work with Census on the migration of historic data.
   *This update is a bit richer given the cancellation of the November office hour for Federal partners.*
 
 We completed the development work necessary to make it possible to unlock audits that had been locked for certification. Auditors and auditees are now able to unlock these audits to make further edits before re-locking for certification.
-
 
 ### What we delivered
 
@@ -289,6 +333,7 @@ The historical data migration occupies a lot of our team’s time. However, we a
 - Improving the visibility of findings on audits.
 
 - Providing summary reports for both single audit submissions and for all results of a search.
+
 </div>
 
 <h4 class="usa-accordion__heading">
@@ -456,6 +501,7 @@ Our priorities are:
 ### Opportunities
 
 Do you have an idea that could transform and improve grants management and oversight? 10x, a federal idea accelerator, is [accepting proposals for new investment opportunities](https://10x.gsa.gov/posts/2023-submission-period/). All Federal employees are invited to submit ideas by November 30th.
+  
   </div>
 
   <h4 class="usa-accordion__heading">
@@ -606,6 +652,7 @@ After releasing search, our priorities are:
 ### Opportunities
 
 Do you have an idea that could transform and improve grants management and oversight? 10x, a federal idea accelerator, is [accepting proposals for new investment opportunities](https://10x.gsa.gov/posts/2023-submission-period/). All Federal employees are invited to submit ideas by November 30th.
+  
   </div>
   
   <h4 class="usa-accordion__heading">
@@ -638,6 +685,7 @@ Our pending feature priorities are:
 - Adding the ability to add, remove, or change auditors and certifying officials who are attached to the audit.
 - Adding the ability to resubmit a previously submitted and completed audit.
 - Adding email notifications to alert auditees and auditors that a step is ready for them to complete.
+  
   </div>
 
   <h4 class="usa-accordion__heading">
@@ -674,6 +722,7 @@ Our other feature priorities are:
 - Adding the ability to add, remove, or change auditors and certifying officials who are attached to the audit.
 - Adding the ability to resubmit a previously submitted and completed audit.
 - Adding email notifications to alert auditees and auditors that a step is ready for them to complete.
+  
   </div>
 
   <h4 class="usa-accordion__heading">
@@ -703,5 +752,7 @@ We know that not every tool you are used to is currently available, and we are w
 Our goal is to be transparent and share our areas of focus. You can see what features are coming up in [our backlog](https://github.com/orgs/GSA-TTS/projects/13/views/1). 
 
 We are currently working on [search](https://github.com/GSA-TTS/FAC/issues/2236). This will give Federal and public users the ability to find and download completed audits. We track our [day-to-day work on our task board](https://github.com/orgs/GSA-TTS/projects/11).
+ 
   </div>
-</div>
+
+
