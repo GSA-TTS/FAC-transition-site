@@ -10,7 +10,7 @@ workbook:
 
 # SF-SAC Section 1: Federal awards
 
-Enter the text of your Federal awards in the provided worksheet using the instructions below.
+Enter the text of your Federal awards in the provided worksheet using the instructions below. If you have 10,000 or more individual awards, please [contact the FAC helpdesk](https://support.fac.gov/hc/en-us/requests/new) for a special worksheet. The helpdesk is staffed 8 a.m.-6 p.m. Eastern, Monday-Friday, except for Federal holidays.
 
 [Download {{meta.name}}]({{ config.baseUrl }}assets/workbooks/{{workbook.name}}.xlsx)
 
