@@ -51,6 +51,8 @@ Select the type of compliance requirement(s) from the drop-down menu. The types 
 
 **Note: There is no "O" option. Entering "O" will invalidate your workbook.**
 
+For more on the Compliance Requirements, review section three of the [compliance supplements]({{ config.baseUrl }}compliance) provided by the Office of Management and Budget.
+
 ### Column D: Modified Opinion
 
 Select "Y" if the auditor identified an audit finding as the basis for a modified opinion. If not, select "N".
@@ -69,11 +71,15 @@ Select "Y" if the auditor identified an audit finding as a Material Weakness in 
 
 If not, select "N".
 
+For more on material weaknesses, review the Internal Control section of the [compliance supplements]({{ config.baseUrl }}compliance) provided by the Office of Management and Budget.
+
 ### Column G: Significant Deficiency
 
 Select "Y" if the auditor identified an audit finding as a Significant Deficiency in the audit report PDF. 
 
 If not, select "N".
+
+For more on significant deficiencies, review the Internal Control section of the [compliance supplements]({{ config.baseUrl }}compliance) provided by the Office of Management and Budget.
 
 ### Column H: Other Findings
 
