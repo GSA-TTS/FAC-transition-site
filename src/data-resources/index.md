@@ -3,7 +3,7 @@ layout: resources_page.njk
 title: Data resources
 header: Data resources
 collectionName: resources, data
-faqLink: https://support.fac.gov/hc/en-us/categories/18291221922829-Audit-Submission
+faqLink: https://support.fac.gov/hc/en-us
 meta:
   name: Data resources
   description: Tools and resources for effectively using data from the Federal Audit Clearinghouse.
