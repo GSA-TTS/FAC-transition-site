@@ -11,6 +11,8 @@ navigation:
           href: 'search-resources'
         - text: Developer resources
           href: 'api'
+        - text: Data resources
+          href: 'data'
     - text: Audit submission
       id: audits
       links:
