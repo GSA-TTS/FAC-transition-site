@@ -12,7 +12,7 @@ navigation:
         - text: Developer resources
           href: 'api'
         - text: Data resources
-          href: 'data'
+          href: 'data-resources'
     - text: Audit submission
       id: audits
       links:
