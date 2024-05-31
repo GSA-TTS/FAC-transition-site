@@ -39,7 +39,7 @@ In February of 2024, we discovered a race hazard in the submission process. This
       aria-expanded="false"
       aria-controls="historical-accepted-date"
     >
-    Submitted (accepted) date in migrated data off-by-one
+    Historical record submitted (accepted) date off-by-one
     </button>
   </h4>
   <div id="historical-accepted-date" class="usa-accordion__content usa-prose">
@@ -51,5 +51,24 @@ While using the API to verify and validate the existence of historical PDFs, our
 Our investigation found the error to be in the code that converts historical records to the same time code as new submissions. This code works as expected for new submissions, but for historical submissions, it subtracted a day from every submitted date. 
 
 This means all migrated audit records have an incorrect submission date.
+
+</div>
+
+<div class="usa-accordion usa-accordion--bordered">
+  <h4 class="usa-accordion__heading">
+    <button
+      type="button"
+      class="usa-accordion__button"
+      aria-expanded="false"
+      aria-controls="historical-fiscal-end"
+    >
+    Historical record fiscal year end-date off-by-one
+    </button>
+  </h4>
+  <div id="historical-accepted-date" class="usa-accordion__content usa-prose">
+
+## Data scenario
+
+Due to an error in our codebase, all fiscal year end-dates for historical records migrated from the Census FAC are off by one day. These dates are all displayed as one day earlier than they should be.
 
 </div>
