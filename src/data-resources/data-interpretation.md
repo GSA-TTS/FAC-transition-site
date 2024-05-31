@@ -29,6 +29,8 @@ As with any large collection of data, there are some known inconsistencies and i
 
 In February of 2024, we discovered a race hazard in the submission process. This allowed some data to be copied more than once from the intake tables to the dissemination tables. Users may see this appear as duplicate award reference lines both when using the API and when downloading indivudal SF-SAC summary reports from the search interface.
 
+</div>
+
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button
