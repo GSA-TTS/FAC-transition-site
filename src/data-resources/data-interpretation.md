@@ -65,7 +65,7 @@ This means all migrated audit records have an incorrect submission date.
     Historical record fiscal year end-date off-by-one
     </button>
   </h4>
-  <div id="historical-accepted-date" class="usa-accordion__content usa-prose">
+  <div id="historical-fiscal-end" class="usa-accordion__content usa-prose">
 
 ## Data scenario
 
