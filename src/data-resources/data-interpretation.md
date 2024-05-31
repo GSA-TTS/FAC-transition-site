@@ -12,6 +12,8 @@ The FAC houses single audit submission data dating back to 2016. In addition to 
 
 As with any large collection of data, there are some known inconsistencies and input/output issues. The accordions below describe these known scenarios.
 
+</div>
+
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button
@@ -49,3 +51,5 @@ While using the API to verify and validate the existence of historical PDFs, our
 Our investigation found the error to be in the code that converts historical records to the same time code as new submissions. This code works as expected for new submissions, but for historical submissions, it subtracted a day from every submitted date. 
 
 This means all migrated audit records have an incorrect submission date.
+
+</div>
