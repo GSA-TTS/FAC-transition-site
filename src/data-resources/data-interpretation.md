@@ -12,8 +12,6 @@ The FAC houses single audit submission data dating back to 2016. In addition to 
 
 As with any large collection of data, there are some known inconsistencies and input/output issues. The accordions below describe these known scenarios.
 
-</div>
-
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button
