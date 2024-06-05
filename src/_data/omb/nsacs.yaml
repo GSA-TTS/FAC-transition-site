@@ -1,0 +1,111 @@
+- agency: United States Department of Agriculture
+  office: US Department of Agriculture 
+  attention: Andy Kmetz, Office of Audit, USDA OIG
+  street: 1400 Independence Ave SW, Ste 419 
+  city: Washington, DC 20250 
+  phone: (404) 594-9789 
+  email: OIG-USDAsingleaudit@oig.usda.gov
+- agency: Department of Commerce
+  office: Regional Inspector General 
+  poc: 
+  attention: 
+  street: 401 West Peachtree Street NW, Suite 2742  
+  city:  Atlanta, GA 30308 
+  phone:
+    - 404-730-2780 
+    - 404-730-2067 
+  fax: 404-730-2788 
+  email: NonFederalAudits@oig.doc.gov
+- agency: Department of Defense
+  office: Office of the Assistant Inspector General for Audit Policy and Oversight 
+  attention: Office of Inspector General, US Department of Defense 
+  street:  4800 Mark Center Drive, Suite 11H25 
+  city: Alexandria, VA 22350-1500   
+  phone: 703-604-8760
+  email: aponet@dodig.mil
+- agency: Department of Education
+  office: Office of Inspector General 
+  attention: Mark Priebe, Director of the Non-Federal Audit Team 
+  street:  400 Maryland Ave SW 
+  city:  Washington, DC 20202 
+  phone: 202-245-8255 
+  email: OIGNon-FederalAudit@ed.gov 
+  www: https://www2.ed.gov/about/offices/list/oig/nonfed/index.html
+- agency: US Department of Energy 
+  office:  Office of Inspector General 
+  attention: Single Audit Contact  
+  street:  1000 Independence Ave. SW, IG-33, Room 5A-193 
+  city:  Washington, DC 20585 
+  phone: 202-586-1969
+  fax: 202-586-0099 
+  www: https://www.energy.gov/ig/office-inspector-general/
+- agency: Department of Health and Human Services
+  office: DHHS/OIG/OAS/NEAR 
+  attention: Tammie Brown,  National Single Audit Coordinator
+  building:  Richard Bolling Federal Building 
+  street:  601 East 12th Street, Room 0429 
+  city: Kansas City, MO 64106
+  phone: 
+    - 816-426-3204
+    - 800-732-0679 
+  fax: 816-426-7745 
+  email: Tammie.Brown@oig.hhs.gov
+  www: http://www.oig.hhs.gov 
+- agency: Department of Homeland Security
+  office: OCFO/Financial Assistance Policy and Oversight
+  attention: 
+  building: Building 410 
+  street:  245 Murray Lane, SW 
+  city:  Washington, DC 20528
+  phone: 202-447-5146 
+  fax: 202-447-0374
+- agency: Department of Housing and Urban Development
+  office: Office of Inspector General 
+  attention: Karen Cookson, National Single Audit Coordinator
+  street:  1301 Fannin Street, Room 2200 
+  city:  Houston, TX 77002 
+  phone: 866-492-1740 
+  email: HUDOIGSingleAuditCoordinator@hudoig.gov
+  www: https://hudoig.gov
+- agency: 
+  office: 
+  attention: 
+  street:  
+  city:  
+  phone:
+  email:
+- agency: 
+  office: 
+  attention: 
+  street:  
+  city:  
+  phone:
+  email:
+- agency: 
+  office: 
+  attention: 
+  street:  
+  city:  
+  phone:
+  email:
+- agency: 
+  office: 
+  attention: 
+  street:  
+  city:  
+  phone:
+  email:
+- agency: 
+  office: 
+  attention: 
+  street:  
+  city:  
+  phone:
+  email:
+- agency: 
+  office: 
+  attention: 
+  street:  
+  city:  
+  phone:
+  email:
