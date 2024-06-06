@@ -18,6 +18,38 @@ The FAC is committed to working transparently and openly. In addition to [our re
       aria-expanded="true"
       aria-controls="b-apr15"
     >
+    Week of May 13, 2024
+    </button>
+  </h4>
+  <div id="b-may13" class="usa-accordion__content usa-prose">
+
+## Week of May 13, 2024
+
+## Week of May 13, 2024
+
+### Resubmission
+
+We're continuing to work with our agency partners and OMB on single audit resubmission. We're conducting user interviews with inspectors general and audit resolution officials and consulting with OMB on policy.
+
+### Historical data migration
+
+The team continues to work on a remediation plan for the roughly 1,600 historical audits that failed the initial migration. These audits have a variety of data quality issues that we hope to resolve over the next few sprints
+
+### May code freeze
+
+The FAC will undergo a code freeze from 5/17 - 5/31 to allow for security penetration testing. This testing is a required part of our authority to operate. During this time, we won't be making any updates to the FAC.
+
+</div>
+</div>
+
+<div class="usa-accordion usa-accordion--bordered">
+  <h4 class="usa-accordion__heading">
+    <button
+      type="button"
+      class="usa-accordion__button"
+      aria-expanded="false"
+      aria-controls="b-apr15"
+    >
     Week of April 15, 2024
     </button>
   </h4>
