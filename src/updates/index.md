@@ -19,19 +19,15 @@ The Federal Audit Clearinghouse team works in the open. Our day-to-day task boar
 * Updates for [grantees and auditors](#grantees-and-auditors)
 * Updates for [agencies](#agencies)
 
-## Week of May 13, 2024
+## Week of June 3
 
-### Resubmission
+### Security testing
 
-We're continuing to work with our agency partners and OMB on single audit resubmission. We're conducting user interviews with inspectors general and audit resolution officials and consulting with OMB on policy.
+The FAC completed its compliance-required security testing earlier this month. We received a positive report from our oversight body.
 
 ### Historical data migration
 
-The team continues to work on a remediation plan for the roughly 1,600 historical audits that failed the initial migration. These audits have a variety of data quality issues that we hope to resolve over the next few sprints
-
-### May code freeze
-
-The FAC will undergo a code freeze from 5/17 - 5/31 to allow for security penetration testing. This testing is a required part of our authority to operate. During this time, we won't be making any updates to the FAC.
+The team is closing in on final remediation for the historical audits that failed initial migration. These should be available on the site within the next few sprints.
 
 <h2 id="general" >General updates</h3>
 
