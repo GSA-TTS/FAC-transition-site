@@ -16,14 +16,12 @@ The FAC is committed to working transparently and openly. In addition to [our re
       type="button"
       class="usa-accordion__button"
       aria-expanded="true"
-      aria-controls="b-apr15"
+      aria-controls="b-may13"
     >
     Week of May 13, 2024
     </button>
   </h4>
   <div id="b-may13" class="usa-accordion__content usa-prose">
-
-## Week of May 13, 2024
 
 ## Week of May 13, 2024
 
