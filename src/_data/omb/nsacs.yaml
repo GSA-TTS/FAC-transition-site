@@ -10,7 +10,9 @@
   poc: 
   attention: 
   street: 401 West Peachtree Street NW, Suite 2742  
-  city:  Atlanta, GA 30308 
+  city:  Atlanta
+  state: GA 
+  zip: "30308" 
   phone:
     - 404-730-2780 
     - 404-730-2067 
@@ -27,7 +29,9 @@
   office: Office of Inspector General 
   attention: Mark Priebe, Director of the Non-Federal Audit Team 
   street:  400 Maryland Ave SW 
-  city:  Washington, DC 20202 
+  city:  Washington
+  state: DC 
+  zip: "20202" 
   phone: 202-245-8255 
   email: OIGNon-FederalAudit@ed.gov 
   www: https://www2.ed.gov/about/offices/list/oig/nonfed/index.html
@@ -35,16 +39,20 @@
   office:  Office of Inspector General 
   attention: Single Audit Contact  
   street:  1000 Independence Ave. SW, IG-33, Room 5A-193 
-  city:  Washington, DC 20585 
+  city:  Washington
+  state: DC 
+  zip: "20585"
   phone: 202-586-1969
   fax: 202-586-0099 
   www: https://www.energy.gov/ig/office-inspector-general/
 - agency: Department of Health and Human Services
   office: DHHS/OIG/OAS/NEAR 
-  attention: Tammie Brown,  National Single Audit Coordinator
+  attention: Tammie Brown, National Single Audit Coordinator
   building:  Richard Bolling Federal Building 
   street:  601 East 12th Street, Room 0429 
-  city: Kansas City, MO 64106
+  city: Kansas City
+  state:  MO 
+  zip: "64106"
   phone: 
     - 816-426-3204
     - 800-732-0679 
@@ -63,16 +71,70 @@
   office: Office of Inspector General 
   attention: Karen Cookson, National Single Audit Coordinator
   street:  1301 Fannin Street, Room 2200 
-  city:  Houston, TX 77002 
+  city:  Houston, TX 
+  zip: "77002" 
   phone: 866-492-1740 
   email: HUDOIGSingleAuditCoordinator@hudoig.gov
   www: https://hudoig.gov
-- agency: 
-  office: 
+- agency: Department of the Interior
+  office: Office of Inspector General 
+  attention: Director, Financial Audits 
+  street:  1849 C Street, NW, Mail Stop 4428, Washington, DC 
+  city:  Washington
+  state: DC
+  zip: "20240" 
+  phone: 202-208-5724
+  email: morgan_aronson@doioig.gov
+- agency: US Department of Justice 
+  office: Chicago Regional Audit Office 
   attention: 
-  street:  
-  city:  
-  phone:
+  street:  CitiCorp Center, 500 West Madison, Suite 1121 
+  city:  Chicago
+  state: IL  
+  zip: "60661"
+  phone: 312-353-1203 
+  fax: 312-886-0513
+  email:
+- agency: Department of Labor 
+  office: Office of Inspector General 
+  attention: Grover Fowler, National Single Audit Coordinator 
+  building: Francis Perkins Building, Room N-4633 
+  street:  200 Constitution Avenue, N.W. 
+  city:  Washington
+  state: DC
+  zip: "20210"
+  phone: 202-693-5254 
+  email: fowler.grover@oig.dol.gov 
+  www: https://www.oig.dol.gov
+- agency: Department of State
+  office: Office of Inspector General, OIG/AUD/CG 
+  attention: 
+  street:  1700 North Moore Street 
+  city:  Arlington
+  state: VA  
+  zip: "22209"
+  phone: 571-348-5491
+  fax:   703-284-2622
+  email: DOSOIGSingleAuditCoordinator@stateoig.gov
+  www:  https://www.stateoig.gov
+- agency: Department of Transportation
+  office: Matthew Straw, Office of Inspector General 
+  attention: National Single Audit Coordinator 
+  street:  101 W. Lombard Street, Suite 2516 
+  city:  Baltimore
+  state: MD
+  zip: "21201" 
+  phone: 443-825-1510 
+  email: singleauditrequest@oig.dot.gov
+- agency: Department of the Treasury 
+  office: Office of Inspector General 
+  attention: Deputy Assistant Inspector General for Audit 
+  street:  875 15th Street NW, Suite 300 
+  city:  Washington
+  state: DC 
+  zip: "20050"
+  phone: 202-927-5784
+  fax: 202-927-5379
   email:
 - agency: 
   office: 
@@ -92,20 +154,80 @@
   office: 
   attention: 
   street:  
-  city:  
+  city: 
+  state: 
+  zip:  
   phone:
   email:
 - agency: 
   office: 
   attention: 
   street:  
-  city:  
+  city: 
+  state: 
+  zip:  
   phone:
   email:
 - agency: 
   office: 
   attention: 
   street:  
-  city:  
+  city: 
+  state: 
+  zip:  
+  phone:
+  email:
+- agency: 
+  office: 
+  attention: 
+  street:  
+  city: 
+  state: 
+  zip:  
+  phone:
+  email:
+- agency: 
+  office: 
+  attention: 
+  street:  
+  city: 
+  state: 
+  zip:  
+  phone:
+  email:
+- agency: 
+  office: 
+  attention: 
+  street:  
+  city: 
+  state: 
+  zip:  
+  phone:
+  email:
+- agency: 
+  office: 
+  attention: 
+  street:  
+  city: 
+  state: 
+  zip:  
+  phone:
+  email:
+- agency: 
+  office: 
+  attention: 
+  street:  
+  city: 
+  state: 
+  zip:  
+  phone:
+  email:
+- agency: 
+  office: 
+  attention: 
+  street:  
+  city: 
+  state: 
+  zip:  
   phone:
   email:
