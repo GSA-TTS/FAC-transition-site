@@ -4,42 +4,322 @@
     - alns:
         - "10.000"
       contacts:
-        - name: Amanda Musgrove
-          title: Director
-          office: Office of Internal Controls, Audits, and Investigations
-          email: sm.fn.fm-singleaudits@usda.gov
-      phone: 404-538-7064
+        # This is how to tag a block for reuse. The '&' lets us specify a variable name
+        # that we can use later with the '*'. Becuase this shows up many times in the table,
+        # it makes sense to define it the first time, and reuse it over-and-over.
+        - contact: &amandamusgrove
+            name: Amanda Musgrove
+            title: Director
+            office: Office of Internal Controls, Audits, and Investigations
+            email: sm.fn.fm-singleaudits@usda.gov
+            phone: 404-538-7064
     - alns:
         - 10.176 
         - 10.177  
         - 10.179 
         - 10.181
       contacts: 
-        - name: Dewell Paez-Delgado
-          email:  Dewell.paez-delgado@usda.gov
-          title: Branch Chief
-          office: Agricultural Marketing Service 
-        - name: Mark Abbott 
-          email: Mark.abbott@usda.gov 
-        - name: Sean Boshard
-          email: Sean.boshard@usda.gov
-      phone: 202-260-8636
+        - contact:
+            name: Dewell Paez-Delgado
+            email:  Dewell.paez-delgado@usda.gov
+            title: Branch Chief
+            office: Agricultural Marketing Service 
+        - contact:
+            name: Mark Abbott 
+            email: Mark.abbott@usda.gov 
+        - contact:
+            name: Sean Boshard
+            email: Sean.boshard@usda.gov
+      program_phone: 202-260-8636
     - alns: 
         - "10.500"
-        - 10.511 
-        - 10.512 
-        - 10.514 
-        - 10.515 
-        - 10.516 
-        - 10.517 
+        - "10.511" 
+        - "10.512" 
+        - "10.514" 
+        - "10.515" 
+        - "10.516" 
+        - "10.517" 
         - "10.520" 
-        - 10.521
+        - "10.521"
       contacts:
-        - name: Matthew Faulkner
-          title: "Deputy Director, National Institute of Food and Agriculture"
-          office: Office of Grants & Financial Management
-          email: matthew.faulkner@usda.gov
-      phone: 202-430-0782
-- agency: Another Agency
+        - contact:
+            name: Matthew Faulkner
+            title: "Deputy Director, National Institute of Food and Agriculture"
+            office: Office of Grants & Financial Management
+            email: matthew.faulkner@usda.gov
+      program_phone: 202-430-0782
+    - alns:
+        - "10.542"
+      contacts:
+        - contact: *amandamusgrove
+    - alns:
+        - "10.551"
+        - "10.561"
+      contacts:
+        - contact: *amandamusgrove
+    - alns:
+        - "10.553"
+        - "10.555"
+        - "10.556"
+        - "10.559"
+      contacts:
+        - contact: *amandamusgrove
+    - alns:
+        - "10.557"
+      contacts:
+        - contact: *amandamusgrove
+    - alns:
+        - "10.558"
+      contacts:
+        - contact: *amandamusgrove
+    - alns:
+        - "10.565"
+        - "10.568"
+        - "10.569"
+      contacts:
+        - contact: *amandamusgrove
+    - alns:
+        - "10.566"
+      contacts:
+        - contact: *amandamusgrove
+    - alns:
+        - "10.582"
+      contacts:
+        - contact: *amandamusgrove
+    - alns:
+        - "10.606"
+        - "10.607"
+      contacts:
+        - contact:
+            name: James Gartner
+            title: Control Officer and Audit Liason
+            email: james.gartner@usda.gov
+    - alns:
+        - "10.649"
+      contacts:
+        - contact: *amandamusgrove
+    - alns:
+        - "10.665"
+        - "10.666"
+      contacts:
+        - contact:
+            name: Dan Stackonis
+            office: Forest Service
+            email: daniel.stackonis@usda.gov
+        - contact:
+            name: Cynthia McArthur
+            title: National Program Coordinator
+            email: cynthia.mcarthur@usda.gov
+    - alns:
+        - "10.760"
+      contacts:
+        - contact:
+            name: Jennifer Engel
+            title: Community Program Specialist
+            office: Rural Utilities Service Portfolio Management Branch
+            email: jennifer.engel@usda.gov
+            phone: 715-295-4068
+    - alns:
+        - "10.766"
+        - "10.780"
+      contacts:
+        - contact:
+            name: Nathan A. Chitwood
+            title: Regional Coordinator, Community Facilities Programs
+            office: Rural Housing Service, USDA Rural Development
+            email: nathan.chitwood@usda.gov
+            phone: 202-619-8567
+
+
+- agency: Department of Commerce
   agency_number: 11
-  contact: Someone
+  programs:
+    - alns:
+        -
+      contacts:
+        - name:
+          title:
+          office: 
+          email:
+          phone:
+      phone:
+- agency: 
+  agency_number: 11
+  programs:
+    - alns:
+        -
+      contacts:
+        - name:
+          title:
+          office: 
+          email:
+          phone:
+      phone:
+- agency: 
+  agency_number: 11
+  programs:
+    - alns:
+        -
+      contacts:
+        - name:
+          title:
+          office: 
+          email:
+          phone:
+      phone:
+- agency: 
+  agency_number: 11
+  programs:
+    - alns:
+        -
+      contacts:
+        - name:
+          title:
+          office: 
+          email:
+          phone:
+      phone:
+- agency: 
+  agency_number: 11
+  programs:
+    - alns:
+        -
+      contacts:
+        - name:
+          title:
+          office: 
+          email:
+          phone:
+      phone:
+- agency: 
+  agency_number: 11
+  programs:
+    - alns:
+        -
+      contacts:
+        - name:
+          title:
+          office: 
+          email:
+          phone:
+      phone:
+- agency: 
+  agency_number: 11
+  programs:
+    - alns:
+        -
+      contacts:
+        - name:
+          title:
+          office: 
+          email:
+          phone:
+      phone:
+- agency: 
+  agency_number: 11
+  programs:
+    - alns:
+        -
+      contacts:
+        - name:
+          title:
+          office: 
+          email:
+          phone:
+      phone:
+- agency: 
+  agency_number: 11
+  programs:
+    - alns:
+        -
+      contacts:
+        - name:
+          title:
+          office: 
+          email:
+          phone:
+      phone:
+- agency: 
+  agency_number: 11
+  programs:
+    - alns:
+        -
+      contacts:
+        - name:
+          title:
+          office: 
+          email:
+          phone:
+      phone:
+- agency: 
+  agency_number: 11
+  programs:
+    - alns:
+        -
+      contacts:
+        - name:
+          title:
+          office: 
+          email:
+          phone:
+      phone:
+- agency: 
+  agency_number: 11
+  programs:
+    - alns:
+        -
+      contacts:
+        - name:
+          title:
+          office: 
+          email:
+          phone:
+      phone:
+- agency: 
+  agency_number: 11
+  programs:
+    - alns:
+        -
+      contacts:
+        - name:
+          title:
+          office: 
+          email:
+          phone:
+      phone:
+- agency: 
+  agency_number: 11
+  programs:
+    - alns:
+        -
+      contacts:
+        - name:
+          title:
+          office: 
+          email:
+          phone:
+      phone:
+- agency: 
+  agency_number: 11
+  programs:
+    - alns:
+        -
+      contacts:
+        - name:
+          title:
+          office: 
+          email:
+          phone:
+      phone:
+- agency: 
+  agency_number: 11
+  programs:
+    - alns:
+        -
+      contacts:
+        - name:
+          title:
+          office: 
+          email:
+          phone:
+      phone:

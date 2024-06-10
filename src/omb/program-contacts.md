@@ -31,24 +31,41 @@ If you have questions about...
                             {{aln}}<br/>  
                         {%- endfor -%}
                     </th>
-                    <td>
-                        <ul>
+                    <td class="text-top">
+                        {%- if program["contacts"] | length > 1 -%}<ul>{%- endif -%}
                             {%- for contact in program["contacts"] -%}
-                                <li> {{contact["name"]}}<br/>
-                                    {%- if contact["title"] -%}{{contact["title"]}}<br/>{%- endif -%}
-                                    {%- if contact["office"] -%}{{contact["office"]}}<br/>{%- endif -%}
-                                </li>
+                                {% set con = contact["contact"] %}
+                                {%- if program["contacts"] | length > 1 -%}<li>{%- endif -%} {{con["name"]}}<br/>
+                                    {%- if con["title"] -%}{{con["title"]}}<br/>{%- endif -%}
+                                    {%- if con["office"] -%}{{con["office"]}}<br/>{%- endif -%}
+                                {%- if program["contacts"] | length > 1 -%}</li>{%- endif -%}
                             {%- endfor -%}
-                        </ul>
+                        {%- if program["contacts"] | length > 1 -%}</ul>{%- endif -%}
                     </td>
-                    <td>
-                        <ul>
+                    <td class="text-top">
+                        {%- if program["contacts"] | length > 1 -%}<ul>{%- endif -%}
                         {%- for contact in program["contacts"] -%}
-                            <li>{{contact["email"] | lower}}</li>
+                            {% set con = contact["contact"] %}
+                            {%- if program["contacts"] | length > 1 -%}<li>{%- endif -%}{{con["email"] | lower}}{%- if program["contacts"] | length > 1 -%}</li>{%- endif -%}
                         {%- endfor -%}
-                        </ul>
+                        {%- if program["contacts"] | length > 1 -%}</ul>{%- endif -%}
                     </td>
-                    <td>{{program["phone"]}}</td>                
+                    <td class="text-top">
+                        {%- if program["program_phone"] -%}
+                            {{ program["program_phone"] }}
+                        {%- else -%}
+                            {%- if program["contacts"] | length == 1 -%}
+                                {{ program["contacts"][0]["contact"]["phone"] }}
+                            {%- else -%}
+                                <ul>
+                                    {%- for contact in program["contacts"] -%}
+                                        {% set con = contact["contact"] %}
+                                        {%- if con["phone"] -%} <li> {{ con["phone"] }} </li>{%- endif -%} 
+                                    {%- endfor -%}
+                                </ul>
+                            {%- endif -%}
+                        {%- endif -%}
+                    </td>
                 </tr>
         {%- endfor -%}
         </tbody>
