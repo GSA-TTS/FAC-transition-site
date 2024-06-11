@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx gulp copyAssets && npx gulp watch & npx @11ty/eleventy --serve",
     "build": "npx gulp copyAssets && npx gulp compile && npx @11ty/eleventy",
-    "federalist": "npx gulp copyAssets && npx gulp compile && npx @11ty/eleventy --config=federalist-eleventy.js" 
+    "federalist": "npx gulp copyAssets && npx gulp compile && npx @11ty/eleventy --config=federalist-eleventy.js"
   },
   "keywords": [],
   "author": "",
@@ -15,14 +15,15 @@
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
-    "eleventy-plugin-toc": "^1.1.5",
-    "markdown-it-anchor": "^8.6.7",
     "@uswds/compile": "^1.0.0",
     "@uswds/uswds": "^3.4.1",
     "concurrently": "^7.1.0",
     "cypress": "^9.5.4",
+    "d3-dsv": "^3.0.1",
     "dotenv": "^16.0.0",
+    "eleventy-plugin-toc": "^1.1.5",
     "js-yaml": "^4.1.0",
+    "markdown-it-anchor": "^8.6.7",
     "start-server-and-test": "^1.14.0"
   },
   "dependencies": {
