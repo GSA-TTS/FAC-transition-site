@@ -12,11 +12,11 @@ something something different contacts for different use cases
 
 ## For grantees and recipients
 
-If you have received federal funds and have questions about how to report on those funds, you should reach out to your Key Single Audit Management Liason (KSAML). Please see our [KSAML contact page](/omb/ksaml/) for a list of contacts. If you need to reach out to your program contact, please see our [program contacts page](/omb/program-contacts/) for a list of contacts.
+If you have received federal funds and have questions about how to report on those funds, you should reach out to your Key Single Audit Management Liason (KSAML). Please see our [KSAML contact page]({{ config.baseUrl }}omb/ksaml/) for a list of contacts. If you need to reach out to your program contact, please see our [program contacts page]({{ config.baseUrl }}omb/program-contacts/) for a list of contacts.
 
 ## For auditors
 
-If you have questions regarding the specifics of conducting a Single Audit, you should reach out to your National Single Audit Coordinator (NSAC) for the agency with the preponderance of funding for the audit. Please see our [NSAC contact page](/omb/nsac/) for a list of contacts.
+If you have questions regarding the specifics of conducting a Single Audit, you should reach out to your National Single Audit Coordinator (NSAC) for the agency with the preponderance of funding for the audit. Please see our [NSAC contact page]({{ config.baseUrl }}omb/nsac/) for a list of contacts.
 
 ## For others, including federal FAC users
 
