@@ -29,6 +29,10 @@ As with any large collection of data, there are some known inconsistencies and i
 
 In February of 2024, we discovered a race hazard in the submission process. This allowed some data to be copied more than once from the intake tables to the dissemination tables. Users may see this appear as duplicate award reference lines both when using the API and when downloading indivudal SF-SAC summary reports from the search interface.
 
+For example, in the photo below, first three rows (green) are correct. The second three rows (purple) are  duplicates of the first three rows.
+
+<img src="{{ config.baseUrl }}assets/img/data/duplicatedatarows.png" alt="spreadsheet table showing duplicated rows of data, distinguished in purple and green"/>
+
 </div>
 
 <div class="usa-accordion usa-accordion--bordered">
