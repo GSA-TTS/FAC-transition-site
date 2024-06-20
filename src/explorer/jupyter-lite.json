@@ -1,11 +1,11 @@
 {
   "jupyter-config-data": {
     "appName": "JupyterLite",
-    "appUrl": "./lab",
+    "appUrl": "./explorer",
     "appVersion": "0.3.0",
     "baseUrl": "./",
     "defaultKernelName": "python",
-    "faviconUrl": "./lab/favicon.ico",
+    "faviconUrl": "./explorer/favicon.ico",
     "federated_extensions": [
       {
         "extension": "./extension",
