@@ -1,0 +1,3 @@
+FAC_API_BASE = "https://api.fac.gov"
+MAX_RESULTS = 4_000_000
+STEP_SIZE = 20000

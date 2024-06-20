@@ -1,0 +1,29 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2024-06-20T12:56:28.762915Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2024-06-20T11:22:33.496624Z",
+      "mimetype": null,
+      "name": "treasury.alns",
+      "path": "files/treasury.alns",
+      "size": 160,
+      "type": "file",
+      "writable": true
+    }
+  ],
+  "created": "2024-06-20T12:56:28.762915Z",
+  "format": "json",
+  "hash": null,
+  "hash_algorithm": null,
+  "last_modified": "2024-06-20T12:56:28.762915Z",
+  "mimetype": null,
+  "name": "files",
+  "path": "files",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}
