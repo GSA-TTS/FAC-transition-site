@@ -43,7 +43,7 @@ def fetch_from_api(table, payload):
                         params=payload,)
     jres = res.json()
     if len(jres) == 0:
-        print(f"No results found for {table}")
+        pass
     return jres
 
 

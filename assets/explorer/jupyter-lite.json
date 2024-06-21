@@ -1,12 +1,10 @@
 {
   "jupyter-config-data": {
-    "appName": "FAC Labs",
+    "appName": "JupyterLite",
     "appUrl": "./lab",
     "appVersion": "0.3.0",
     "baseUrl": "./",
-    "collaborative": false,
     "defaultKernelName": "python",
-    "exposeAppInBrowser": true,
     "faviconUrl": "./lab/favicon.ico",
     "federated_extensions": [
       {

@@ -144,7 +144,7 @@ class FAC():
     # Now, populate with the findings. This tells us which we need, and
     # which to remove.
     def findings(self, report_id=None):
-        print("FINDINGS")
+        print("FINDINGS: ", end="")
         # console = Console()
         # We should only do things where we have not fetched.
         if report_id:
@@ -152,7 +152,7 @@ class FAC():
         else:
             gq = DailyGenerals.select().where(DailyGenerals.findings_count.is_null())
         for dg in gq:
-            print(f"\tfindings {dg.report_id}")
+            # print(f"\tfindings {dg.report_id}")
             jres = fetch_from_api("findings", {
                 "report_id": op("eq", dg.report_id)
             })
@@ -176,8 +176,7 @@ class FAC():
                               & (DailyFindings.reference_number == res["reference_number"])))
                 if dfq.exists():
                     for df in dfq:
-                        print(
-                            f"\tUpdating {dg.report_id} {res['award_reference']} {res['reference_number']}")
+                        # print(f"\tUpdating {dg.report_id} {res['award_reference']} {res['reference_number']}")
                         (df
                          .update(**res)
                          .where((DailyFindings.report_id == dg.report_id)
@@ -185,15 +184,15 @@ class FAC():
                                 & (DailyFindings.reference_number == res["reference_number"]))
                          .execute())
                 else:
-                    print(
-                        f"\tCreating {dg.report_id} {res['award_reference']} {res['reference_number']}")
+                    #print(f"\tCreating {dg.report_id} {res['award_reference']} {res['reference_number']}")
+                    print(".", end="")
                     DailyFindings.create(**res)
             dg.date_retrieved = today()
             dg.findings_count = len(jres)
             dg.save()
 
     def awards(self, report_id=None):
-        print("AWARDS")
+        print("AWARDS: ", end="")
         # console = Console()
 
         if report_id:
@@ -230,7 +229,8 @@ class FAC():
                         del res[k]
                     res = convert_bools(res)
                     # Update the row in question
-                    print(f"\tUpdating awards for {df.report_id} {df.award_reference} {df.reference_number}")
+                    #print(f"\tUpdating awards for {df.report_id} {df.award_reference} {df.reference_number}")
+                    print(".", end="")
                     (df
                      .update(**res)
                      .where((DailyFindings.report_id == dg.report_id)
