@@ -190,7 +190,6 @@ class FAC():
             dg.date_retrieved = today()
             dg.findings_count = len(jres)
             dg.save()
-            print()
 
     def awards(self, report_id=None):
         print("AWARDS: ", end="")
@@ -240,7 +239,6 @@ class FAC():
                      .execute())
         dg.awards_count = awards_count
         dg.save()
-        print()
 
     def _add_sheets(self, wb, iter, query):
         # get_unique_agency_numbers()
@@ -371,6 +369,7 @@ def findings_by_aln(acceptance_date,
         f0 = time.time()
         fac.findings(report_id=report_id)
         f1 = time.time()
+        print()
 
     if omit_awards:
         print("Skipping award generation")
@@ -378,6 +377,7 @@ def findings_by_aln(acceptance_date,
         a0 = time.time()
         fac.awards(report_id=report_id)
         a1 = time.time()
+        print()
     t1 = time.time()
 
     try:
@@ -392,5 +392,9 @@ def findings_by_aln(acceptance_date,
             time_findings=f1-f0,
             time_awards=a1-a0,
         )
+        print(f"Queries used: {get_query_count()}")
+        print(f"Time elapsed: {t1-t0}")
+        print(f"Findings search time: {f1-f0}")
+        print(f"Awards search time: {a1-a0}")
     except:
         print(f"{acceptance_date} NO FINDINGS, NO WORKBOOK")
