@@ -1,10 +1,12 @@
 {
   "jupyter-config-data": {
-    "appName": "JupyterLite",
+    "appName": "FAC Labs",
     "appUrl": "./lab",
     "appVersion": "0.3.0",
     "baseUrl": "./",
+    "collaborative": false,
     "defaultKernelName": "python",
+    "exposeAppInBrowser": true,
     "faviconUrl": "./lab/favicon.ico",
     "federated_extensions": [
       {
@@ -130,6 +132,16 @@
           "text/csv"
         ],
         "name": "csv"
+      },
+      "docx": {
+        "extensions": [
+          ".docx"
+        ],
+        "fileFormat": "application",
+        "mimeTypes": [
+          "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        ],
+        "name": "docx"
       },
       "fasta": {
         "extensions": [
@@ -273,7 +285,7 @@
         "extensions": [
           ".pdf"
         ],
-        "fileFormat": "base64",
+        "fileFormat": "application",
         "mimeTypes": [
           "application/pdf"
         ],
@@ -360,6 +372,16 @@
           "application/x-wheel+zip"
         ],
         "name": "wheel"
+      },
+      "xlsx": {
+        "extensions": [
+          ".xlsx"
+        ],
+        "fileFormat": "application",
+        "mimeTypes": [
+          "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        ],
+        "name": "xlsx"
       },
       "xml": {
         "extensions": [
