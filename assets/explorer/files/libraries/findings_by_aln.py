@@ -190,6 +190,7 @@ class FAC():
             dg.date_retrieved = today()
             dg.findings_count = len(jres)
             dg.save()
+            print()
 
     def awards(self, report_id=None):
         print("AWARDS: ", end="")
@@ -239,6 +240,7 @@ class FAC():
                      .execute())
         dg.awards_count = awards_count
         dg.save()
+        print()
 
     def _add_sheets(self, wb, iter, query):
         # get_unique_agency_numbers()
