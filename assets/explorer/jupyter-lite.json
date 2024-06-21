@@ -10,7 +10,7 @@
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.a1a4e0e795dca61023d3.js",
+        "load": "static/remoteEntry.d04be841d48ffe2a9bdd.js",
         "name": "@jupyter-notebook/lab-extension",
         "style": "./style"
       },
@@ -43,7 +43,7 @@
       {
         "extension": "./extension",
         "liteExtension": true,
-        "load": "static/remoteEntry.9117113815033289c4d5.js",
+        "load": "static/remoteEntry.cdbf97db0179334e7548.js",
         "name": "@jupyterlite/p5-kernel-extension",
         "style": "./style"
       },
