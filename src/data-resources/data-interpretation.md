@@ -27,11 +27,13 @@ As with any large collection of data, there are some known inconsistencies and i
 
 ## Data scenario
 
-In February of 2024, we discovered a race hazard in the submission process. This allowed some data to be copied more than once from the intake tables to the dissemination tables. Users may see this appear as duplicate award reference lines both when using the API and when downloading indivudal SF-SAC summary reports from the search interface.
+In February of 2024, we discovered a data issue that allowed some data to be copied more than once from the submitted data to the data made available from the FAC. Users may see this appear as duplicate award reference lines both when using the API and when downloading indivudal SF-SAC summary reports from the search interface.
 
 For example, in the photo below, first three rows (green) are correct. The second three rows (purple) are  duplicates of the first three rows.
 
 <img src="{{ config.baseUrl }}assets/img/data/duplicatedatarows.png" alt="spreadsheet table showing duplicated rows of data, distinguished in purple and green"/>
+
+At this time, the team doesn't have a solution to this data problem. If you see duplicate award rows in your downloaded data, please disregard them.
 
 </div>
 
@@ -50,11 +52,13 @@ For example, in the photo below, first three rows (green) are correct. The secon
 
 ## Data scenario
 
-While using the API to verify and validate the existence of historical PDFs, our team issued a query to obtain records by acceptance date. This didn't produce the expected results, because all acceptance dates are one day earlier than they should be.
+All historical records have an incorrect FAC acceptance date. When our team migrated these records from the Census, we ran a bit of code to make the historical time codes match the one used by our new system. As a result, this subtracted one day from every submitted date, giving them an acceptance date one day early.
 
-Our investigation found the error to be in the code that converts historical records to the same time code as new submissions. This code works as expected for new submissions, but for historical submissions, it subtracted a day from every submitted date. 
+In the photos below, you can see examples of where these incorrect dates display in search results.
 
-This means all migrated audit records have an incorrect submission date.
+<img src="{{ config.baseUrl }}assets/img/data/acceptancedate_01.png" alt="a view of FAC search results with a historical record acceptance date circled in red"/>
+
+<img src="{{ config.baseUrl }}assets/img/data/acceptancedate_02.png" alt="a view of a historical FAC record summary result page with the acceptance date circled in red"/>
 
 </div>
 
