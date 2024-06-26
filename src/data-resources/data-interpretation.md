@@ -81,8 +81,8 @@ All historical records have an incorrect fiscal year. When we migrated these rec
 
 In the photos below, you can see examples of where these incorrect dates display on the summary results pages for individual records.
 
-<img src="{{ config.baseUrl }}assets/img/data/fiscalstart_01.png" alt="a view of FAC search results with a historical record acceptance date circled in red"/>
+<img src="{{ config.baseUrl }}assets/img/data/fiscalstart_01.png" alt="a view of FAC search results with a historical record incorrect fiscal start date circled in red"/>
 
-<img src="{{ config.baseUrl }}assets/img/data/fiscalstart_02.png" alt="a view of a historical FAC record summary result page with the acceptance date circled in red"/>
+<img src="{{ config.baseUrl }}assets/img/data/fiscalstart_02.png" alt="a view of FAC search results with a historical record incorrect fiscal start date circled in red"/>
 
 </div>
