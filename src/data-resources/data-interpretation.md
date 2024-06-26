@@ -77,6 +77,12 @@ In the photos below, you can see examples of where these incorrect dates display
 
 ## Data scenario
 
-Due to an error in our codebase, all fiscal year end-dates for historical records migrated from the Census FAC are off by one day. These dates are all displayed as one day earlier than they should be.
+All historical records have an incorrect fiscal year. When we migrated these records from the Census, the code we ran to convert the dates to the time codes used by the GSA FAC added an extra day. As a result, the search summary results pages show a start date one day earlier than what it should be.
+
+In the photos below, you can see examples of where these incorrect dates display on the summary results pages for individual records.
+
+<img src="{{ config.baseUrl }}assets/img/data/fiscalstart_01.png" alt="a view of FAC search results with a historical record acceptance date circled in red"/>
+
+<img src="{{ config.baseUrl }}assets/img/data/fiscalstart_02.png" alt="a view of a historical FAC record summary result page with the acceptance date circled in red"/>
 
 </div>
