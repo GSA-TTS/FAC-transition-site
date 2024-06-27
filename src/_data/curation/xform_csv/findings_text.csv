@@ -1,0 +1,4 @@
+Census,GSA,Transformations
+FINDINGREFNUMS,finding_ref_number,No transformation
+TEXT,planned_action,Uses “GSA_MIGRATION” when TEXT is empty
+CHARTSTABLES,contains_chart_or_table,Uses “GSA_MIGRATION” when TEXT is empty

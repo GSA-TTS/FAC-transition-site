@@ -1,0 +1,6 @@
+Census,GSA,Transformations
+TITLE,title,No transformation
+CONTENT+TYPE_ID,content,No transformation (TYPE_ID=”3”)
+CONTENT+TYPE_ID+NOTE_INDEX,is_minimis_rate_used,Transformation recorded
+CONTENT+TYPE_ID,accounting_policies,Uses “GSA_MIGRATION” when CONTENT is empty and TYPE_ID=”1”
+CONTENT+TYPE_ID,rate_explained,Uses “GSA_MIGRATION” when CONTENT is empty and TYPE_ID=”2”

@@ -1,0 +1,11 @@
+Census,GSA,Transformations
+FINDINGSREFNUMS,reference_number,No transformation
+TYPEREQUIREMENT,type_requirement,Sorts and uppercases the string
+MODIFIEDOPINION,is_modified_opinion,No transformation
+OTHERNONCOMPLIANCE,is_other_matters,No transformation
+MATERIALWEAKNESS,is_material_weakness,No transformation
+SIGNIFICANTDEFICIENCY,is_significant_deficiency,No transformation
+OTHERFINDINGS,is_other_findings,No transformation
+QCOSTS,is_questioned_costs,No transformation
+REPEATFINDING,is_repeat_finding,No transformation
+PRIORFINDINGREFNUMS,prior_finding_ref_numbers,Uses “N/A” when PRIORFINDINGREFNUMS is empty
