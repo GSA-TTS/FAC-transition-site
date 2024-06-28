@@ -10,7 +10,7 @@ workbook:
 
 # SF-SAC Section 5: Corrective Action Plan
 
-This workbook is only necessary if you have Federal awards findings. If you don't have any Federal awards findings, you don't need to upload this workbook.
+This workbook is only necessary if you have Federal awards findings. If you have Federal awards findings, you must submit a corrective action plan, as outlined in [2 CFR 200.511(c)](https://www.ecfr.gov/current/title-2/part-200/subpart-F#p-200.511(c)). If you don't have any Federal awards findings, you don't need to upload this workbook.
 
 [Download {{meta.name}}]({{ config.baseUrl }}assets/workbooks/{{workbook.name}}.xlsx)
 
