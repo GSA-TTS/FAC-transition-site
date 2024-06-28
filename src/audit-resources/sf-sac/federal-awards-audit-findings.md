@@ -10,7 +10,7 @@ workbook:
 
 # SF-SAC Section 3: Federal awards audit findings
 
-This workbook is only necessary if you have Federal awards findings. If you don't have any Federal awards findings, you don't need to upload this workbook.
+This workbook is only necessary if you have Federal awards findings, as outlined in [2 CFR 200.516](https://www.ecfr.gov/current/title-2/section-200.516). If you don't have any Federal awards findings, you don't need to upload this workbook.
 
 [Download {{meta.name}}]({{ config.baseUrl }}assets/workbooks/{{workbook.name}}.xlsx)
 
