@@ -22,9 +22,9 @@ As part of the move from Census to GSA, we migrated the SF-SAC records from 2016
 2. There was a `DATEACCEPTED`, which is when the audit was deemed to be acceptable for submission.
 3. There was a `DATEFIREWALL`, which is when the audit was published to agencies and the public.
 
-The GSA Clearinghouse only records one acceptance date, which we call `fac_accepted_date`. When bringing historical records forward, we used the Census field `FACACCEPTED`, believing it was equivalent to our `fac_accepted_date`. It is not; we should have, instead, used `DATEFIREWALL`. To further complicate the issue, we applied the [same transformation to this date as all other dates](migrated-acceptance-dates-incorrect), which means that we not only chose the wrong date, but we subtracted one from it.
+The GSA Clearinghouse only records one acceptance date, which we call `fac_accepted_date`. When bringing historical records forward, we used the Census field `FACACCEPTED`, believing it was equivalent to our `fac_accepted_date`. It is not; we should have, instead, used `DATEFIREWALL`. To further complicate the issue, we applied the [same transformation to this date as all other dates](migrated-acceptance-dates-incorrect), which means that we not only chose the wrong date, but we subtracted one from it. 
 
-This impacts all records migrated from Census.
+The error is in [end_to_end_core.py on line 69](https://github.com/GSA-TTS/FAC/blob/dda11bdfd31a000601e427379a3fac6ee9e7f1f8/backend/census_historical_migration/end_to_end_core.py#L69). This impacts all records migrated from Census.
 
 ### Example
 

@@ -35,7 +35,7 @@ We include a brief, one-line sumamry of each error here, and full explanations c
                 <div>
                     <h3 href="{{ item.data.title | slugify }}">{{item.data.title}}</h3>
                     <p>{{item.data.slug}}</p>
-                    <p><b>Details</b>: <a href="{{item.url}}">{{item.data.title}}</a></p>
+                    <p><b>Details</b>: <a href="{{config.baseUrl}}{{item.url}}">{{item.data.title}}</a></p>
                     <p><b>Discovered</b>: {{item.data.discovered_date}}</p>
                     <p><b>Timeline to repair</b>: {% if item.data.timeline_to_repair %}{{item.data.timeline_to_repair}}{% else %}TBD{%endif%}</p>
                     <p><b>Github issue</b>: {% if item.data.github %}{{item.data.github}}{% else %}TBD{%endif%}</p>
