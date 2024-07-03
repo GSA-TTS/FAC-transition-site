@@ -72,8 +72,9 @@ In (Federal) Fiscal Year 2024, we migrated data from 2016-2022 from Census to GS
 
 You can read more about:
 
-* The migration of FAC data from Census to GSA
-* The curation process
-* Known errors and inconsistencies in the data
-* The log of changes made
+* [Validation](): How we validate the data we collect
+* [Migration](): The migration of FAC data from Census to GSA
+* [Curation](): The curation process
+* [Concerns](): Known concerns and inconsistencies in the data
+* [Changelog](): The log of changes made
 
