@@ -33,8 +33,8 @@ OVERSIGHTAGENCY,oversight_agency,No transformation
 TYPEREPORT_FS,gaap_results,Transformation recorded
 SP_FRAMEWORK,sp_framework_basis,Transformation recorded
 TYPEREPORT_SP_FRAMEWORK,sp_framework_opinions,Transformation recorded
-GOINGCONCERN,is_going_concern_included,No transformation*
-MATERIALWEAKNESS,is_internal_control_material_weakness_disclosed,No transformation*
+GOINGCONCERN,is_going_concern_included,No transformation[^1]
+MATERIALWEAKNESS,is_internal_control_material_weakness_disclosed,No transformation&dagger;
 DUP_REPORTS,is_aicpa_audit_guide_included,No transformation*
 DOLLARTHRESHOLD,dollar_threshold,Uses “-999999999” when DOLLARTHRESHOLD is empty
 LOWRISK,is_low_risk_auditee,No transformation*
@@ -52,5 +52,3 @@ SIGNIFICANTDEFICIENCY,is_internal_control_deficiency_disclosed,No transformation
 MATERIALNONCOMPLIANCE,is_material_noncompliance_disclosed,No transformation*
 PYSCHEDULE,agencies_with_prior_findings,No transformation
 SUPPRESSION_CODE,is_public,"Uses false when entity type is “tribal” and SUPPRESSION_CODE is ""IT"" and true otherwise"
-"* The dissemination logic converts booleans to a “yes” or “no” text instead, this change is unrelated to the migration logic.",,
-** The dissemination logic converts this date from utc time zone to american samoa zone. This is transformation is unrelated to the migration logic,,

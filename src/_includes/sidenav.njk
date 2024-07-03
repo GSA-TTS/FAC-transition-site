@@ -22,57 +22,22 @@
             <a href="javascript:void(0);" class="usa-current">Current page</a>
             </li>
             -->
-        <div class="usa-section">
-            <div class="grid-container">
-                <div class="grid-row grid-gap">
-                    <div
-                    class="usa-layout-docs__sidenav display-none desktop:display-block desktop:grid-col-3">
-                        <nav aria-label="Secondary navigation">
-                            <ul class="usa-sidenav">
-                            <li class="usa-sidenav__item">
-                                <a href="javascript:void(0);">Parent link</a>
-                            </li>
-                            <li class="usa-sidenav__item">
-                                <a href="javascript:void(0);" class="usa-current"
-                                >Current page</a
-                                >
-                                <ul class="usa-sidenav__sublist">
-                                <li class="usa-sidenav__item">
-                                    <a href="javascript:void(0);">Child link</a>
-                                </li>
-                                <li class="usa-sidenav__item">
-                                    <a href="javascript:void(0);" class="usa-current"
-                                    >Child link</a
-                                    >
-                                    <ul class="usa-sidenav__sublist">
-                                    <li class="usa-sidenav__item">
-                                        <a href="javascript:void(0);">Grandchild link</a>
-                                    </li>
-                                    <li class="usa-sidenav__item">
-                                        <a href="javascript:void(0);" class="usa-current"
-                                        >Grandchild link</a
-                                        >
-                                    </li>
-                                    <li class="usa-sidenav__item">
-                                        <a href="javascript:void(0);">Grandchild link</a>
-                                    </li>
-                                    </ul>
-                                </li>
-                                <li class="usa-sidenav__item">
-                                    <a href="javascript:void(0);">Child link</a>
-                                </li>
-                                </ul>
-                            </li>
-                            <li class="usa-sidenav__item">
-                                <a href="javascript:void(0);">Parent link</a>
-                            </li>
-                            </ul>
-                        </nav>
+            
+        <div class="usa-section">                                    
+                <div class="usa-in-page-nav-container">
+                    <aside
+                        class="usa-in-page-nav"
+                        data-title-text="On this page"
+                        data-title-heading-level="h2"
+                        data-scroll-offset="25"
+                        data-root-margin="0px 0px 0px 0px"
+                        data-threshold="1"
+                    ></aside>
+                    <div class="grid-container">
+                        <main id="main-content" class="main-content usa-prose">
+                            {{ content | safe }}
+                        </main>
                     </div>
-                    <main class="desktop:grid-col-9 usa-prose" id="main-content">
-                        {{ content | safe }}
-                    </main>
-                </div>
             </div>
         </div>
         {% include 'footer.njk' %}

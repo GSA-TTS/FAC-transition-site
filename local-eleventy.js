@@ -32,6 +32,17 @@ module.exports = function (eleventyConfig) {
     md.render(markdownString)
   );
 
+  eleventyConfig.addGlobalData("baseUrl", "http://localhost:8080");
+
+  eleventyConfig.addFilter("absoluteUrl", function (url, base = eleventyConfig.globalData.baseUrl) {
+    try {
+      return new URL(url, base).href;
+    } catch (err) {
+      console.error(err);
+      return url;
+    }
+  });
+
   return {
     markdownTemplateEngine: 'njk',
     dir: {

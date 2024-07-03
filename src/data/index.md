@@ -4,10 +4,6 @@ title: Using FAC data
 meta:
   name: Historic data curation
   description: Documentation about the data migration from Census to GSA.
-toc:
-  - Who uses this data?
-  - How do I access the data?
-  - How is the data curated?
 ---
 
 # About our data
@@ -18,18 +14,7 @@ There are two pieces to a Single Audit submission to the FAC: the **form** and t
 
 The data collected by the FAC is **free to use and in the public domain**.
 
-<b>Contents</b>
-
-<ul>
-{% for heading in toc %}
-  <li><a href="#{{heading}}">{{heading}}</a></li>
-{% endfor %}
-</ul>
-
-
-<a name="{{toc[0]}}"></a>
-
-## {{toc[0]}}
+## Who uses this data?
 
 Many people use this data in many ways. For example: 
 
@@ -39,9 +24,7 @@ Many people use this data in many ways. For example:
 4. **Resolution officials** provide oversight of Federal spending from a programmatic and agency perspective
 5. **Inspectors General** oversee the quality of Single Audits
 
-<a name="{{toc[1]}}"></a>
-
-## {{toc[1]}}
+## How do I access the data?
 
 
 There are many audiences for the data provided by the FAC. If you're exploring the data for the first time, we recommend you start with our web search. If you're a programmer or data scientist looking to dive deep, we recommend our API. If you rely on this data, you will also want to look at how we care for, or **curate**, the data year-over-year.
@@ -62,9 +45,7 @@ API stands for **Application Programming Interface**. APIs make it easy for comp
 * Examples
 * ...
    
-<a name="{{toc[2]}}"></a>
-
-## {{toc[2]}}
+## How is the data curated?
 
 Caring for a data collection of this size requires ongoing care. We, or our users, discover errors (and, sometimes, introduce them). When this happens, we follow a process to document, schedule, and repair those inconsistencies or errors in the data. Museums curate arts and antiquities; at the FAC, we curate the record of the Single Audit. 
 
@@ -72,9 +53,9 @@ In (Federal) Fiscal Year 2024, we migrated data from 2016-2022 from Census to GS
 
 You can read more about:
 
-* [Validation](): How we validate the data we collect
-* [Migration](): The migration of FAC data from Census to GSA
-* [Curation](): The curation process
-* [Concerns](): Known concerns and inconsistencies in the data
-* [Changelog](): The log of changes made
+* [Validation](validation/): How we validate the data we collect
+* [Migration](migration/): The migration of FAC data from Census to GSA
+* [Curation](curation/): The curation process
+* [Concerns](concerns/): Known concerns and inconsistencies in the data
+* [Changelog](changelog/): The log of changes made
 

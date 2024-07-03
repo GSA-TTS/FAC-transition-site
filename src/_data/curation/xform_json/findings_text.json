@@ -1,17 +1,1 @@
-[
-    {
-        "Census": "FINDINGREFNUMS",
-        "GSA": "finding_ref_number",
-        "Transformations": "No transformation"
-    },
-    {
-        "Census": "TEXT",
-        "GSA": "planned_action",
-        "Transformations": "Uses \u201cGSA_MIGRATION\u201d when TEXT is empty"
-    },
-    {
-        "Census": "CHARTSTABLES",
-        "GSA": "contains_chart_or_table",
-        "Transformations": "Uses \u201cGSA_MIGRATION\u201d when TEXT is empty"
-    }
-]
+[{"Census": "FINDINGREFNUMS", "GSA": "finding_ref_number", "Transformations": "No transformation"}, {"Census": "TEXT", "GSA": "planned_action", "Transformations": "Uses \u201cGSA_MIGRATION\u201d when TEXT is empty"}, {"Census": "CHARTSTABLES", "GSA": "contains_chart_or_table", "Transformations": "Uses \u201cGSA_MIGRATION\u201d when TEXT is empty"}]
