@@ -1,7 +1,104 @@
----
-layout: sidenav-layout.njk
----
+<!DOCTYPE html>
 
-<div class="grid-container margin-y-4">
-    {{ content | safe }}
-</div>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://dap.digitalgov.gov https://www.google-analytics.com https://www.googletagmanager.com https://search.usa.gov https://touchpoints.app.cloud.gov; img-src 'self' https://touchpoints.app.cloud.gov; style-src 'self' 'unsafe-inline'; object-src 'none'; worker-src 'none'; connect-src https://www.google-analytics.com;">
+        <meta name="{{meta.name}}" description="{{meta.description}}">
+        <link rel="icon" type="image/x-icon" href="{{ config.baseUrl }}assets/img/favicons/icon_logo.svg" />
+        <link rel="stylesheet" href="{{ config.baseUrl }}assets/css/styles.css" media="all" type="text/css">
+
+        <title>{{ title }}</title>
+    </head>
+
+    <body>
+        {% include './components/usa-banner.njk' %}
+        {% include 'header.njk' %}
+        <!-- https://github.com/11ty/eleventy/issues/338 -->
+        <!--
+                    <li class="usa-sidenav__item">
+            <a href="javascript:void(0);" class="usa-current">Current page</a>
+            </li>
+            -->
+        <div class="usa-section">
+            <div class="grid-container">
+                <div class="grid-row grid-gap">
+                    <div
+                    class="usa-layout-docs__sidenav display-none desktop:display-block desktop:grid-col-3">
+                        <nav aria-label="Secondary navigation">
+                            <ul class="usa-sidenav">
+                            <li class="usa-sidenav__item">
+                                <a href="javascript:void(0);">Parent link</a>
+                            </li>
+                            <li class="usa-sidenav__item">
+                                <a href="javascript:void(0);" class="usa-current"
+                                >Current page</a
+                                >
+                                <ul class="usa-sidenav__sublist">
+                                <li class="usa-sidenav__item">
+                                    <a href="javascript:void(0);">Child link</a>
+                                </li>
+                                <li class="usa-sidenav__item">
+                                    <a href="javascript:void(0);" class="usa-current"
+                                    >Child link</a
+                                    >
+                                    <ul class="usa-sidenav__sublist">
+                                    <li class="usa-sidenav__item">
+                                        <a href="javascript:void(0);">Grandchild link</a>
+                                    </li>
+                                    <li class="usa-sidenav__item">
+                                        <a href="javascript:void(0);" class="usa-current"
+                                        >Grandchild link</a
+                                        >
+                                    </li>
+                                    <li class="usa-sidenav__item">
+                                        <a href="javascript:void(0);">Grandchild link</a>
+                                    </li>
+                                    </ul>
+                                </li>
+                                <li class="usa-sidenav__item">
+                                    <a href="javascript:void(0);">Child link</a>
+                                </li>
+                                </ul>
+                            </li>
+                            <li class="usa-sidenav__item">
+                                <a href="javascript:void(0);">Parent link</a>
+                            </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <main class="desktop:grid-col-9 usa-prose" id="main-content">
+                        {{ content | safe }}
+                    </main>
+                </div>
+            </div>
+        </div>
+        {% include 'footer.njk' %}
+        <script src="{{ config.baseUrl }}assets/js/uswds.min.js" type="text/javascript"></script>
+
+        <!-- We participate in the US government's analytics program. See the data at analytics.usa.gov. -->
+        <script async type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=GSA&subagency=TTS" id="_fed_an_ua_tag"></script>
+
+        <!-- Add Touchpoints intercept -->
+        <!--
+            <script src="https://touchpoints.app.cloud.gov/touchpoints/9412c559.js" async></script>
+        -->
+        
+        <script>
+        //<![CDATA[
+            var usasearch_config = { siteHandle:"fac-transition-site" };
+
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "//search.usa.gov/javascripts/remote.loader.js";
+            document.getElementsByTagName("head")[0].appendChild(script);
+
+        //]]>
+        </script>
+    </body>
+    {% if include_survey %}
+      <script src="https://touchpoints.app.cloud.gov/touchpoints/ba4ae239.js" async></script>
+    {% endif %}
+</html>
