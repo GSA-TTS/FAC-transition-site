@@ -33,14 +33,14 @@ OVERSIGHTAGENCY,oversight_agency,No transformation
 TYPEREPORT_FS,gaap_results,Transformation recorded
 SP_FRAMEWORK,sp_framework_basis,Transformation recorded
 TYPEREPORT_SP_FRAMEWORK,sp_framework_opinions,Transformation recorded
-GOINGCONCERN,is_going_concern_included,No transformation[^1]
-MATERIALWEAKNESS,is_internal_control_material_weakness_disclosed,No transformation&dagger;
-DUP_REPORTS,is_aicpa_audit_guide_included,No transformation*
+GOINGCONCERN,is_going_concern_included,No transformation<sup>&dagger;</sup>
+MATERIALWEAKNESS,is_internal_control_material_weakness_disclosed,No transformation<sup>&dagger;</sup>
+DUP_REPORTS,is_aicpa_audit_guide_included,No transformation<sup>&dagger;</sup>
 DOLLARTHRESHOLD,dollar_threshold,Uses “-999999999” when DOLLARTHRESHOLD is empty
-LOWRISK,is_low_risk_auditee,No transformation*
+LOWRISK,is_low_risk_auditee,No transformation<sup>&dagger;</sup>
 TOTFEDEXPEND,total_amount_expended,Uses sum of AMOUNT instead of TOTFEDEXPEND
 AUDITOR_EIN,auditor_ein,No transformation
-FACACCEPTEDDATE,fac_accepted_date,No transformation**
+FACACCEPTEDDATE,fac_accepted_date,No transformation<sup>&dagger;&dagger;</sup>
 CPAFOREIGN,auditor_foreign_address,No transformation
 CPACOUNTRY,auditor_country,Uses “USA” when “US” is provided. Uses “USA” or when CPACOUNTRY is empty and CPASTATE is a valid US state.
 UEI,auditee_uei,Uses “GSA_MIGRATION” when empty
@@ -48,7 +48,7 @@ MULTIPLEUEIS,is_additional_ueis,No transformation
 AUDITEECERTIFYNAME,auditee_certify_name,Uses “AUDITEENAME” instead of “AUDITEECERTIFYNAME”. This is a bug that will be addressed.
 AUDITEECERTIFYTITLE,auditee_certify_title,Uses “AUDITEETITLE” instead of “AUDITEECERTIFYTITLE”. This is a bug that will be addressed.
 SP_FRAMEWORK_REQUIRED,is_sp_framework_required,Transformation recorded
-SIGNIFICANTDEFICIENCY,is_internal_control_deficiency_disclosed,No transformation*
-MATERIALNONCOMPLIANCE,is_material_noncompliance_disclosed,No transformation*
+SIGNIFICANTDEFICIENCY,is_internal_control_deficiency_disclosed,No transformation<sup>&dagger;</sup>
+MATERIALNONCOMPLIANCE,is_material_noncompliance_disclosed,No transformation<sup>&dagger;</sup>
 PYSCHEDULE,agencies_with_prior_findings,No transformation
 SUPPRESSION_CODE,is_public,"Uses false when entity type is “tribal” and SUPPRESSION_CODE is ""IT"" and true otherwise"

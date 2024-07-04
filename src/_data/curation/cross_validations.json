@@ -1,0 +1,72 @@
+[
+    {
+        "form": "Cross validations",
+        "checks": [
+            {
+                "check": "auditee_ueis_match",
+                "description": "Makes sure the UEI used to create the audit is indicated on all forms",
+                "url": "BASEURL/check_auditee_ueis_match.py"
+            },
+            {
+                "check": "additional_ueis",
+                "description": "Asserts that additional UEIs are present when indicated on the general form",
+                "url": "BASEURL/check_additional_ueis.py"
+            },
+            {
+                "check": "check_award_reference_uniqueness",
+                "description": "Checks the uniqueness of reference numbers",
+                "url": "BASEURL/check_check_award_reference_uniqueness.py"
+            },
+            {
+                "check": "check_award_ref_existence",
+                "description": "Makes sure all awards have a reference number",
+                "url": "BASEURL/check_check_award_ref_existence.py"
+            },
+            {
+                "check": "check_award_ref_declaration",
+                "description": "Checks that all award references in the federal awards form are distinct",
+                "url": "BASEURL/check_check_award_ref_declaration.py"
+            },
+            {
+                "check": "check_certifying_contacts",
+                "description": "Makes sure the certifiers are not the same",
+                "url": "BASEURL/check_check_certifying_contacts.py"
+            },
+            {
+                "check": "check_finding_reference_uniqueness",
+                "description": "Checks that award reference numbers are unique for each award reference number",
+                "url": "BASEURL/check_check_finding_reference_uniqueness.py"
+            },
+            {
+                "check": "check_findings_count_consistency",
+                "description": "Checks if the number of findings indicated in the federal awards form matches the number of findings described",
+                "url": "BASEURL/check_check_findings_count_consistency.py"
+            },
+            {
+                "check": "check_ref_number_in_cap",
+                "description": "Makes sure all reference numbers in the audit findings workbook are in the CAP text form",
+                "url": "BASEURL/check_check_ref_number_in_cap.py"
+            },
+            {
+                "check": "check_ref_number_in_findings_text",
+                "description": "Makes sure all reference numbers in the audit findings workbook are present in the accompanying text form",
+                "url": "BASEURL/check_check_ref_number_in_findings_text.py"
+            },
+            {
+                "check": "submission_progress_check",
+                "description": "Checks whether a submission is complete",
+                "url": "BASEURL/check_submission_progress_check.py"
+            },
+            {
+                "check": "tribal_data_sharing_consent",
+                "description": "Asserts that the tribal consent is complete when an audit is of type `tribal`",
+                "url": "BASEURL/check_tribal_data_sharing_consent.py"
+            },
+            {
+                "check": "validate_general_information",
+                "description": "Runs the general information schema against the form-submitted data",
+                "url": "BASEURL/check_validate_general_information.py"
+            }
+        ]
+    }
+]

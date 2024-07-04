@@ -1,0 +1,197 @@
+[
+    {
+        "form": "ALL",
+        "checks": [
+            {
+                "check": "uei_exists",
+                "description": "Checks that the UEI is present",
+                "url": "BASEURL/check_uei_exists.py"
+            },
+            {
+                "check": "look_for_empty_rows",
+                "description": "Alerts to empty rows in the middle of a form",
+                "url": "BASEURL/check_look_for_empty_rows.py"
+            },
+            {
+                "check": "start_and_end_rows_of_all_columns_are_same",
+                "description": "Makes sure all columns are the same length",
+                "url": "BASEURL/check_start_and_end_rows_of_all_columns_are_same.py"
+            },
+            {
+                "check": "is_right_workbook",
+                "description": "Checks that the workbook matches the section being submitted to",
+                "url": "BASEURL/check_is_right_workbook.py"
+            },
+            {
+                "check": "has_all_the_named_ranges",
+                "description": "Asserts all input ranges for a section are present",
+                "url": "BASEURL/check_has_all_the_named_ranges.py"
+            },
+            {
+                "check": "has_all_required_fields",
+                "description": "Checks that all required fields are present in a given workbook",
+                "url": "BASEURL/check_has_all_required_fields.py"
+            },
+            {
+                "check": "check_for_gsa_migration_keyword",
+                "description": "Makes sure GSA_MIGRATION only appears in the context of the data migration",
+                "url": "BASEURL/check_check_for_gsa_migration_keyword.py"
+            }
+        ]
+    },
+    {
+        "form": "Federal Awards",
+        "checks": [
+            {
+                "check": "y_or_n__fields",
+                "description": "Checks all Y/N fields are correct",
+                "url": "BASEURL/check_y_or_n__fields.py"
+            },
+            {
+                "check": "federal_award_amount_passed_through_optional",
+                "description": "Checks there is a subrecipient amount present if \"Y\" selected for \"Passed Through\"",
+                "url": "BASEURL/check_federal_award_amount_passed_through_optional.py"
+            },
+            {
+                "check": "check_cluster_names",
+                "description": "Checks the correctness of cluster names",
+                "url": "BASEURL/check_check_cluster_names.py"
+            },
+            {
+                "check": "state_cluster_names",
+                "description": "If STATE_CLUSTER is indicated, asserts they provided a state cluster name",
+                "url": "BASEURL/check_state_cluster_names.py"
+            },
+            {
+                "check": "other_cluster_names",
+                "description": "If OTHER_CLUSTER is indicated, asserts they provided some other cluster name",
+                "url": "BASEURL/check_other_cluster_names.py"
+            },
+            {
+                "check": "passthrough_name_when_no_direct",
+                "description": "Asserts correct behavior of passthrough name/ID when funding is direct/nidirect",
+                "url": "BASEURL/check_passthrough_name_when_no_direct.py"
+            },
+            {
+                "check": "loan_balance_present",
+                "description": "If a loan is guaranteed, checks that a balance is provided",
+                "url": "BASEURL/check_loan_balance_present.py"
+            },
+            {
+                "check": "loan_balance_entry_is_valid",
+                "description": "Checks that a loan balance is a number, empty string, or N/A",
+                "url": "BASEURL/check_loan_balance_entry_is_valid.py"
+            },
+            {
+                "check": "no_major_program_no_type",
+                "description": "Checks presence of report type depending on major/minor declaration",
+                "url": "BASEURL/check_no_major_program_no_type.py"
+            },
+            {
+                "check": "all_unique_award_numbers",
+                "description": "Checks that no award numbers are duplicated in a submission",
+                "url": "BASEURL/check_all_unique_award_numbers.py"
+            },
+            {
+                "check": "sequential_award_numbers",
+                "description": "Asserts AWARD-#### numbers are present and sequential",
+                "url": "BASEURL/check_sequential_award_numbers.py"
+            },
+            {
+                "check": "aln_agency_prefix",
+                "description": "Checks for valid ALN prefixes",
+                "url": "BASEURL/check_aln_agency_prefix.py"
+            },
+            {
+                "check": "aln_three_digit_extension",
+                "description": "Checks for valid ALN extensions",
+                "url": "BASEURL/check_aln_three_digit_extension.py"
+            },
+            {
+                "check": "additional_award_identification",
+                "description": "If RD or U is indicated in the ALN, enforces additional award information",
+                "url": "BASEURL/check_additional_award_identification.py"
+            },
+            {
+                "check": "federal_program_total_is_correct",
+                "description": "Checks sums of federal programs against values submitted",
+                "url": "BASEURL/check_federal_program_total_is_correct.py"
+            },
+            {
+                "check": "cluster_total_is_correct",
+                "description": "Checks sums of cluster totals",
+                "url": "BASEURL/check_cluster_total_is_correct.py"
+            },
+            {
+                "check": "total_amount_expended_is_correct",
+                "description": "Asserts that the total amount expended on the coversheet matches the sum of the values reported",
+                "url": "BASEURL/check_total_amount_expended_is_correct.py"
+            },
+            {
+                "check": "cardinality_of_passthrough_names_and_ids",
+                "description": "Checks that passthrough names and IDs are of the same cardinality",
+                "url": "BASEURL/check_cardinality_of_passthrough_names_and_ids.py"
+            }
+        ]
+    },
+    {
+        "form": "Notes to SEFA",
+        "checks": [
+            {
+                "check": "y_or_n__fields",
+                "description": "Checks all Y/N fields are correct",
+                "url": "BASEURL/check_y_or_n__fields.py"
+            },
+            {
+                "check": "y_or_n__fields",
+                "description": "Checks all Y/N fields are correct",
+                "url": "BASEURL/check_y_or_n__fields.py"
+            },
+            {
+                "check": "award_references_pattern",
+                "description": "Asserts award reference numbers are correctly formatted",
+                "url": "BASEURL/check_award_references_pattern.py"
+            },
+            {
+                "check": "prior_references_pattern",
+                "description": "Asserts prior award numbers are correctly formatted",
+                "url": "BASEURL/check_prior_references_pattern.py"
+            },
+            {
+                "check": "finding_reference_pattern",
+                "description": "Asserts the finding reference numbers are correctly formatted",
+                "url": "BASEURL/check_finding_reference_pattern.py"
+            },
+            {
+                "check": "no_repeat_findings",
+                "description": "Checks for prior references if they are indicated",
+                "url": "BASEURL/check_no_repeat_findings.py"
+            },
+            {
+                "check": "findings_grid_validation",
+                "description": "Enforces correct possible values for findings Y/N grid",
+                "url": "BASEURL/check_findings_grid_validation.py"
+            }
+        ]
+    },
+    {
+        "form": "Findings Text",
+        "checks": [
+            {
+                "check": "y_or_n__fields",
+                "description": "Checks all Y/N fields are correct",
+                "url": "BASEURL/check_y_or_n__fields.py"
+            }
+        ]
+    },
+    {
+        "form": "Corrective Action Plan Text",
+        "checks": [
+            {
+                "check": "y_or_n__fields",
+                "description": "Checks all Y/N fields are correct",
+                "url": "BASEURL/check_y_or_n__fields.py"
+            }
+        ]
+    }
+]

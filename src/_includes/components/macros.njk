@@ -30,3 +30,13 @@
     <p><b>Log</b>: {% if log %}{{ log }}{% else %}TBD{%endif%}</p>
 {%- endmacro -%}
 
+
+{%- macro getKnownErrorTitle(known_errors, concern) -%}
+  {%- set title = "NONE" -%}
+  {%- for item in known_errors -%}
+    {%- if concern in item.url -%}
+      {%- set title = item.data.title -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {{- title | safe}}
+{%- endmacro -%}

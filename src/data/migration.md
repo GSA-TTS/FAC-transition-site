@@ -46,6 +46,6 @@ It is possible to see the annotation `GSA_MIGRATION` in some records at this tim
 
 
 
-* [Data transforms]({{ "/data/transforms/" | absoluteUrl }}) applied during migration
-* Data transformations applied to specific fields.
+* [General data transformations]({{ "/data/general-transforms/" | absoluteUrl }})<br>These are transformations that were applied wholesale to files as data was migrated from Census to GSA.
+* [Specific field transformations]({{"/data/specific-transforms/" | absoluteUrl }})<br>These are transformations applied to specific portions of the data. For example, a Census record that is missing an entire portion of the form required specialized handling.
 
