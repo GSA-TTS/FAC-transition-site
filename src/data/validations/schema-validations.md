@@ -8,11 +8,31 @@ meta:
 
 # {{title}}
 
+Once we are done with our [intake validations]({{"../intake-validations/" | absoluteUrl}}), we convert our spreadsheet-oriented data representation into something that better reflects the meaning of the data we're collecting. But, before we store that data, we apply a *schema validation* to that data.
+
 Schema validations involve validating the overall shape of the data, from the big picture all the way down to the details.
 
-## The big picture: the shape of data
+## Data has a shape?
 
-Once the intake validations have passed, we convert our spreadsheet-shaped data into something that reflects the meaning of the data. For example, here is how the FAC represents part of a Federal Awards sheet:
+All data has a shape. Simple data has simple shapes.
+
+* We could say that counting numbers are just digits. `3`, `5`, and `8` are all counting numbers.
+* We might say that currency has a currency indicator, some number of digits, a decimal point, and two digits after the decimal point. For example, `$3.14` and <code>&pound;1.37</code> would then both be examples of numbers that represent currency.
+* A zip code might be described as five digits, and sometimes it is allowed to have a hyphen and another four digits. When we describe zip codes as having this shape, both `40404` and `02492-1200` are zip codes.
+
+More complex data has more complex shapes. In some parts of the world, people think names have three parts: a first name, a middle name, and a surname. 
+
+```
+{
+  "first_name": "Alexander",
+  "middle_name": "",
+  "surname": "Hamilton"
+}
+```
+
+Oh no! We found someone without a middle name! Should we... leave it blank? Do we validate that name as... correct? (This is the kind of question the FAC team has to ask *all the time*.) The point is that a *name* is something that has *parts*, in a way that numbers usually do not.
+
+In the same spirit, the FAC converts the data collected via spreadsheet into a structure that gives meaningful names to each part of the data, and groups parts of the data where it makes sense to. Below is an example of part of one submission's Federal award data.
 
 ```
 "FederalAwards": {
@@ -54,7 +74,7 @@ This representation, again using the [Javascript Object Notation](https://www.js
 
 ## Validating the shape
 
-The FAC uses a technology called [JSON Schemas](https://json-schema.org/) to validate the data at this point. JSON Schemas give us a way of saying (for example) "We expect a UEI to be twelve characters long, and to follow a specific set of rules... otherwise, it is not a UEI." Below is a portion of the schema for the Federal Awards form section.
+The FAC uses a technology called [JSON Schemas](https://json-schema.org/) to validate this complex data shape. JSON Schemas give us a way of saying "we expect a Federal awards sheet to have a UEI, a list of awards, and a total expended." The schema below does exactly that.
 
 ```
 local FederalAwards = Types.object {
@@ -78,7 +98,7 @@ This tiny bit of the schema tells us that a valid JSON document representing Fed
 2. A list of `federal_awards`, where each element of the list will look like a `FederalAwardEntry`
 3. A `total_amount_expended`, which should be a number.
 
-To give a sense of how this becomes turtles all the way down, we break apart things like UEIs into their component pieces, making sure they're correct in shape:
+The total expended has a simple shape; it is a number. The `FederalAwardEntry` is yet another complex shape that has to be validated; if any one award entry does not validate, the entire thing fails. Similarly, we have to break the UEI down, because UEIs are actually pretty complex, even though they are only 12 characters long. Here are all of the rules that have to be applied to validate a UEI:
 
 ```
 local REGEX_UEI_ALPHA = 'A-HJ-NP-Z';
@@ -120,6 +140,8 @@ That UEI validation makes sure that UEIs entered into our system follow the rule
 
 The [complete schema for the Federal Awards](https://github.com/GSA-TTS/FAC/blob/826167b1e4142f6723177a161e60858053a99c16/backend/schemas/source/sections/FederalAwards.schema.jsonnet) section is several hundred lines long. It specifies everything we expect to see in this section of the form. We have a schema for every part of the data that comes into the FAC.
 
+Every section of the SF-SAC has a schema just like this, making sure that the shape of the data in every section is validated all the way down.
+
 ## "You shall not pass"
 
 When the GSA FAC first opened its doors, we relied heavily on our JSON Schemas. They performed *marvelously*. We blocked all kinds of submissions.
@@ -133,4 +155,4 @@ These expectations have served the team well. Users get good support from the me
 
 ## Cross-validations
 
-Once we have a complete submission, we check for correctness across the entire submission. We call these [cross-validations]({{ "../cross-validations/" | absoluteUrl }})
+Once we have a complete submission, we check for correctness across the entire submission. We call these [cross-validations]({{ "../cross-validations/" | absoluteUrl }}).

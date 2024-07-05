@@ -5,6 +5,20 @@ sites:
     url: https://login.gov/what-is-login/
   gh_discussions:
     url: https://github.com/GSA-TTS/FAC/discussions
+  hhs_oig_sa:
+    url: https://oig.hhs.gov/reports-and-publications/featured-topics/ihs/training/understanding-single-audits/content/#/
+  basic_search:
+    url: https://app.fac.gov/dissemination/search/
+  advanced_search:
+    url: https://app.fac.gov/dissemination/search/advanced/
+  api:
+    url: https://fac.gov/api/
+  json:
+    url: https://www.json.org/json-en.html
+  libreoffice:
+    url: https://www.libreoffice.org/
 terms:
   gfac: GSA FAC
   cfac: Census FAC
+variables:
+  threshold: 750,000

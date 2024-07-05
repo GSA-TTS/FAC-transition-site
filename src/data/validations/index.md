@@ -8,34 +8,36 @@ meta:
 
 # {{title}}
 
-The data coming into the FAC is validated through five distinct layers.
+The data coming into the FAC is validated in five distinct ways.
 
 ## In-form validations
 
-The SF-SAC collection is made up of a collection of web forms and spreadsheets that are filled out and uploaded to fac.gov. Within both the web forms and spreadsheets, we have some input restrictions (e.g. making sure `Y` and `N` fields only contain `Y/N`) and validations that help grantees and auditors complete the forms correctly. It is difficult to add validations to spreadsheets in a way that works everywhere, so this layer is the simplest of our validation layers.
+The SF-SAC is made up of a collection of web forms and spreadsheets that are filled out by grantees and auditors. Within both the web forms and spreadsheets, we have input restrictions and validations that help people complete the forms correctly. 
+
+Because it is difficult to add validations to spreadsheets in a way that works everywhere, this is one of the simplest validation layers in the FAC.
 
 ## Intake validations
 
-The first layer of data validation is made up of many [intake validations]({{"intake-validations/" | absoluteUrl }}). This layer a sandwich of data transformation, validation, and then one more transformation to a form that will ultimately be used to store a user's submission. Each intake validation is a piece of code that does just one kind of validation. This lets us keep track of what each validation within the FAC does, and know exactly where those validations are applied.
+The second layer of data validation is made up of many [intake validations]({{"intake-validations/" | absoluteUrl }}). Here, we transform the spreadsheet or form a user submits into a shape that is more manageable for valiation. We then apply many validations, one after another, to help ensure data quality. Where we find errors, we do our best to provide error messages that guide people to a correct submission.
 
 Read more about our [intake validations]({{"intake-validations/" | absoluteUrl }}).
 
 ## Schema validations
 
-A *schema* for a given piece of data is its form or shape. For example, we might say a zip code has the schema of five digits, and optionally, a hyphen followed by four more digits. A schema validation is where we look at a piece of data, and ask if everything about it has the right shape. 
+A *schema* describes something's *form* or *shape*. For example, we might say the schema for a zip code is five digits followed by an optional hyphen and four more digits. A *schema validation* is where we look at a piece of data, and ask if everything about it has the right shape. 
 
-Every form section in the SF-SAC has a shape. That shape is made up of the fields (names, zip codes, email addresses), and the data in those fields has a shape as well (zip codes and email addresses each have their own shape). The SF-SAC schema validations make sure that a submission, after going through our intake validations, ends up in the right shape for storage.
+Every form section in the SF-SAC has a shape. That shape is made up of the fields (names, zip codes, email addresses), and each piece of data in each field has a shape of its own. The SF-SAC schema validations make sure that a submission, after going through our intake validations, ends up in the right shape for storage.
 
 Read more about our [schema validations]({{"schema-validations/" | absoluteUrl }}).
 
 ## Cross-validations
 
-Cross-validations look at the submission as a whole, and make sure everything is consistent *between* the SF-SAC sections. 
+Because the SF-SAC is made up of multiple sections, we have to make sure the sections make sense with respect to each-other. Cross-validations look at the submission as a whole, and make sure everything is consistent *between* the SF-SAC sections. 
 
 Read more about our [cross-validations]({{"cross-validations/" | absoluteUrl }}).
 
 ## Dissemination validations
 
-The final step is to make sure that everything is where we expect it to be, before we consider a submission complete.
+The final step is to make sure that everything is ready for sharing with agencies and the public. This means we make sure every piece of data we're expecting as part of an SF-SAC submission is present and accounted for. Our goal is to block as many errors as possible; if we don't, then we'll have to [document the errors that get past us and fix them]({{"../curation/" | absoluteUrl}}).
 
 Read more about our [dissemination validations]({{"dissemination-validations/" | absoluteUrl }}).
