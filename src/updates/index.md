@@ -13,12 +13,25 @@ To help you understand our work, we’ll provide regular updates on the work we�
 
 The Federal Audit Clearinghouse team works in the open. Our day-to-day task board can be found on [Github](https://github.com/orgs/GSA-TTS/projects/11/views/2) and prior updates are available in [our archive]({{ config.baseUrl }}updates/archive).
 
-## Jump to
 
-* [General updates](#general)
-* Updates for [grantees and auditors](#grantees-and-auditors)
-* Updates for [agencies](#agencies)
+{% set count = 2 %}
+{% for item in collections.updates | reverse %}
+    {% if loop.index0 <= count %}
+        {{ item.content | safe }}
+    {% endif %}
+{% endfor %}
 
+<h2>Previous updates</h2>
+
+<ul>
+{% for item in collections.updates | reverse %}
+    {% if loop.index0 > count %}
+        <li> <a href="{{item.url}}">{{ item.data.title }}</a></li>
+    {% endif %}
+{% endfor %}
+</ul>
+
+<!-- 
 ## Week of June 10
 
 ### Security testing
@@ -37,6 +50,7 @@ While the ATO team conducted the security testing, our engineering team continue
 - fixed a bug related to sorting search results by cog/over
 
 For more information on these fixes and more, see [the FAC's June 6th release](https://github.com/GSA-TTS/FAC/releases/tag/v1.20240606).
+
 
 <h2 id="general" >General updates</h3>
 
@@ -64,3 +78,4 @@ Updates are sorted with newest posts at the top. The "date" field in the update'
     <li>{{item.content | safe }}</li>
 {% endfor %}
 </ul>
+-->

@@ -1,11 +1,16 @@
-const yaml = require('js-yaml');
+/* CONSTANTS */
+const baseUrl = "http://localhost:8080";
 
+/* MODULES */
+const yaml = require('js-yaml');
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 const md = require('markdown-it')({
   html: false,
   breaks: true,
   linkify: true,
 });
 
+/* FILTERS */
 const hashCode = function (s) {
   var hash = 0,
     i,
@@ -20,19 +25,21 @@ const hashCode = function (s) {
 };
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addDataExtension('yaml', (contents) => yaml.load(contents));
+  /* GLOBAL DATA */
+  eleventyConfig.addGlobalData("baseUrl", baseUrl);
+  /* PASSTHROUGH COPIES */
   eleventyConfig.addPassthroughCopy('assets');
   eleventyConfig.addPassthroughCopy('favicon.ico');
   eleventyConfig.addPassthroughCopy('robots.txt');
-
+  /* DATA EXTENSIONS */
+  eleventyConfig.addDataExtension('yaml', (contents) => yaml.load(contents));
+  /* PLUGINS */
   eleventyConfig.addPlugin(pluginRss);
+  /* FILTERS */
   eleventyConfig.addFilter('hashcode', (s) => hashCode(s));
   eleventyConfig.addFilter('markdown', (markdownString) =>
     md.render(markdownString)
   );
-
-  eleventyConfig.addGlobalData("baseUrl", "http://localhost:8080");
-
   eleventyConfig.addFilter("absoluteUrl", function (url, base = eleventyConfig.globalData.baseUrl) {
     try {
       return new URL(url, base).href;
@@ -41,10 +48,13 @@ module.exports = function (eleventyConfig) {
       return url;
     }
   });
+	eleventyConfig.addLiquidFilter("dateToRfc3339", pluginRss.dateToRfc3339);
+	eleventyConfig.addLiquidFilter("dateToRfc822", pluginRss.dateToRfc822);
 
   return {
     markdownTemplateEngine: 'njk',
     dir: {
+      pathPrefix: baseUrl,
       input: 'src',
       includes: '_includes',
       data: '_data',
