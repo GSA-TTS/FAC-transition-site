@@ -1,6 +1,5 @@
 const yaml = require('js-yaml');
 
-const pluginRss = require('@11ty/eleventy-plugin-rss');
 const md = require('markdown-it')({
   html: false,
   breaks: true,
