@@ -45,7 +45,8 @@ include_survey: true
                             <div class="usa-card__container home-image searching shadow-1">
                                 <a class="usa-link text-white font-sans-2xl margin-0 text-semibold display-flex flex-column flex-align-center"
                                     href="https://app.fac.gov/dissemination/search/"
-                                    target="_blank">
+                                    target="_blank"
+                                    rel="noopener noreferrer">
                                     <p class="font-sans-2xl margin-0 display-block">Search</p>
                                     <p class="font-sans-xl margin-0">for audits</p>
                                 </a>
