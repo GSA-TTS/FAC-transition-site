@@ -10,9 +10,19 @@ meta:
 
 This page will show you how to interpret the various columns that make up the search results table for the FAC.
 
+The search results table consists of the following columns:
+
+- [Name](#name)
+- UEI or EIN
+- Acc Date
+- AY
+- Cog or Over
+- View
+- PDF
+
 <img src="{{ config.baseUrl }}assets/img/search/searchresults.png"  alt="A screenshot of an example search results table from the FAC. The column headers, from left to right, read: 'Name', 'UEI or EIN', 'Acc Date', 'AY', 'Cog or Over', 'View', and 'PDF'."/>
 
-## Name column
+## <a name=name></a>Name column
 
 This column displays the entity name for each result.
 
