@@ -28,7 +28,7 @@ You can subscribe to an [RSS]({{"/feeds/rss/updates.xml" | htmlBaseUrl(baseUrl)}
 <ul>
 {% for item in collections.updates | reverse %}
     {% if loop.index0 > count %}
-        <li> <a href="{{item.url}}">{{ item.data.title }}</a></li>
+        <li> <a href="{{item.url | htmlBaseUrl(baseUrl)}}">{{ item.data.title }}</a></li>
     {% endif %}
 {% endfor %}
 </ul>
