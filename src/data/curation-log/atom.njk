@@ -1,5 +1,5 @@
 ---
-permalink: "/data/curation-log/atom.xml"
+permalink: "/feeds/atom/curation-log.xml"
 eleventyExcludeFromCollections: true
 metadata:
   title: "Log of Federal Audit Clearinghouse curation actions"
@@ -13,21 +13,21 @@ metadata:
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ metadata.language or page.lang }}">
   <title>{{ metadata.title }}</title>
   <subtitle>{{ metadata.description }}</subtitle>
-  <link href="{{ permalink | htmlBaseUrl(metadata.base) }}" rel="self" />
-  <link href="{{ metadata.base | addPathPrefixToFullUrl }}" />
+  <link href="{{ permalink | htmlBaseUrl(baseUrl) }}" rel="self" />
+  <link href="{{ baseUrl | addPathPrefixToFullUrl }}" />
   <updated>{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
-  <id>{{ metadata.base | addPathPrefixToFullUrl }}</id>
+  <id>{{ baseUrl | addPathPrefixToFullUrl }}</id>
   <author>
     <name>{{ metadata.author.name }}</name>
   </author>
   {%- for post in collections.curation-log | reverse %}
-    {%- set absolutePostUrl %}{{ post.url | htmlBaseUrl(metadata.base) }}{% endset %}
+    {%- set absolutePostUrl %}{{ post.url | htmlBaseUrl(baseUrl) }}{% endset %}
     <entry>
       <title>{{ post.data.title }}</title>
       <link href="{{ absolutePostUrl }}" />
       <updated>{{ post.date | dateToRfc3339 }}</updated>
       <id>{{ absolutePostUrl }}</id>
-      <content type="html">{{ post.content | renderTransforms(post.data.page, metadata.base) }}</content>
+      <content type="html">{{ post.content | renderTransforms(post.data.page, baseUrl) }}</content>
     </entry>
   {%- endfor %}
 </feed>
