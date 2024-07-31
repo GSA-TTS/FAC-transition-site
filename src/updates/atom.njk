@@ -14,9 +14,9 @@ metadata:
   <title>{{ metadata.title }}</title>
   <subtitle>{{ metadata.description }}</subtitle>
   <link href="{{ permalink | htmlBaseUrl(baseUrl) }}" rel="self" />
-  <link href="{{ baseUrl | addPathPrefixToFullUrl }}" />
+  <link href="{{ baseUrl | htmlBaseUrl(baseUrl) }}" />
   <updated>{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
-  <id>{{ baseUrl | addPathPrefixToFullUrl }}</id>
+  <id>{{ baseUrl | htmlBaseUrl(baseUrl) }}</id>
   <author>
     <name>{{ metadata.author.name }}</name>
   </author>
