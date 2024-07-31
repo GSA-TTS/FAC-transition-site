@@ -14,7 +14,7 @@ Here, we document the errors we know about in the FAC data. We follow our [curat
 
 This page summarizes the known issues, and links to our strategies, timelines, and outcomes.
 
-You can subscribe to an [RSS](/feeds/rss/concerns.xml) or [Atom](/feeds/atom/concerns.xml) feed to learn about new concerns as they are discovered. See [Microsoft's documentation for subscribing to feeds](https://support.microsoft.com/en-us/office/what-are-rss-feeds-e8aaebc3-a0a7-40cd-9e10-88f9c1e74b97) as a starting point.
+You can subscribe to an [RSS]({{"/feeds/rss/concerns.xml" | htmlBaseUrl(baseUrl)}}) or [Atom]({{"/feeds/atom/concerns.xml" | htmlBaseUrl(baseUrl)}}) feed to learn about new concerns as they are discovered. See [Microsoft's documentation for subscribing to feeds](https://support.microsoft.com/en-us/office/what-are-rss-feeds-e8aaebc3-a0a7-40cd-9e10-88f9c1e74b97) as a starting point.
 
 ## Known concerns
 
