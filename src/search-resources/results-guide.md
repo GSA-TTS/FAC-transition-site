@@ -10,7 +10,7 @@ meta:
 
 This page will show you how to interpret the various columns that make up the search results table for the FAC.
 
-<img src="{{ config.baseUrl }}assets/img/search/searchresults.png"/>
+<img src="{{ config.baseUrl }}assets/img/search/searchresults.png"  alt="A screenshot of an example search results table from the FAC. The column headers, from left to right, read: 'Name', 'UEI or EIN', 'Acc Date', 'AY', 'Cog or Over', 'View', and 'PDF'."/>
 
 **Example:** If you search a range of 8/1/2023 to 8/15/2023 for “FAC acceptance date,”  plus a specific UEI, you may not get any results because that entity didn’t submit in that specific date range.
 
