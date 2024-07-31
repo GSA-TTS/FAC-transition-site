@@ -1,14 +1,16 @@
 ---
 layout: home.njk
-title: FAC advanced search resources
+title: FAC search results guide
 meta:
-  name: FAC advanced search resources
-  description: Find resources and instructions for using the advanced search tool from the FAC.
+  name: FAC search results guide
+  description: Learn how to read and interpret the search results tables from the FAC.
 ---
 
-# Advanced search filters
+# Interpreting the search results table
 
-The FAC has two search modes: [basic](https://app.fac.gov/dissemination/search/) and [advanced](https://app.fac.gov/dissemination/search/advanced/). Advanced search currently has more than a dozen search filters and is best for audit resolution officials in need of specific data sets.  These filters combine with each other to narrow down search results. It’s possible to combine filters and get no results.
+This page will show you how to interpret the various columns that make up the search results table for the FAC.
+
+<img src="{{ config.baseUrl }}assets/img/search/searchresults.png" alt="A screenshot of an example search results table from the FAC. The column headers, from left to right, read: "Name", "UEI or EIN", "Acc Date", "AY", "Cog or Over", "View", and "PDF".  />
 
 **Example:** If you search a range of 8/1/2023 to 8/15/2023 for “FAC acceptance date,”  plus a specific UEI, you may not get any results because that entity didn’t submit in that specific date range.
 
@@ -21,7 +23,7 @@ Many of the filters available via advanced search are the same as [the basic fil
 - [Major program](#major-program)
 - [Passthrough name](#passthrough-name)
 
-## <a name=assistance-listing-number-alncfda></a>Assistance Listing Number (ALN/CFDA)
+### <a name=assistance-listing-number-alncfda></a>Assistance Listing Number (ALN/CFDA)
 
 We support search of both agency ALNs and ALNs plus program numbers. Your list can contain a mix of both, or you can search for just one or the other.
 
@@ -33,7 +35,7 @@ Enter one number per line.
 
 > **Example**: If you enter `93` on one line, and `20.600` on another, the system will return all submissions that contained an award for HHS, and all awards that included funding from ALN 20.600. 
 
-## <a name=cognizant-or-oversight></a>Cognizant or oversight
+### <a name=cognizant-or-oversight></a>Cognizant or oversight
 
 This filter looks at which agency is the cognizant or oversight agency for an entity and can be used in multiple ways.
 
@@ -45,24 +47,24 @@ You can also use the dropdown menu while leaving the text field blank. If you se
 
 > **Example**: If you select “Cognizant” from the dropdown and enter `93`, you will only get submissions that have agency number 93 (HHS) as their cognizant agency.
 
-## <a name=audit-findings></a>Audit findings
+### <a name=audit-findings></a>Audit findings
 Select which type of findings you want to see. If you select any option from this list, only audits with findings will appear in your results.
 
 Checking “Any findings” will return submissions with findings of any type.. 
 
 The more types of findings you select, the narrower your results will be. However, if you keep “Any findings” checked and check another type, the “Any findings” will overrule the more specific types.
 
-## <a name=direct-funding></a>Direct funding
+### <a name=direct-funding></a>Direct funding
 Using this filter narrows results to only those audits with direct or passthrough funding. To find audits that received one type of funding or the other from a specific agency, use this filter in combination with the ALN filter.
 
 > **Example**: If you select “Direct funding” and enter `93` in the ALN filter, you will get back all submissions that received direct funding from agency number 93 (HHS).
 
-## <a name=major-program></a>Major program
+### <a name=major-program></a>Major program
 This filter narrows results to those audits that did or didn’t receive money from a qualifying major program. To find only audits that received major program funding from a specific agency, use this filter in combination with the ALN filter.
 
 > **Example**: If you select “Y” and enter `93` in the ALN filter, you will get back all submissions that received major program funding from agency number 93 (HHS).
 
-## <a name=passthrough-name></a>Passthrough name
+### <a name=passthrough-name></a>Passthrough name
 Enter one word per line.
 
 This filter looks at awards listed as passed through to a subrecpient and the recipient of those awards.
