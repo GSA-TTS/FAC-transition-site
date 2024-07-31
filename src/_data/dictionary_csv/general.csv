@@ -1,4 +1,5 @@
 Census,GSAFAC,Type,Column Reference
+AUDITYEAR + DBKEY,report_id,TEXT,gen.report_id
 AUDITYEAR,audit_year,TEXT,gen.audit_year
 TYPEOFENTITY,entity_type,TEXT,gen.entity_type
 FYSTARTDATE,fy_start_date,DATE,gen.fy_start_date
