@@ -17,7 +17,7 @@ The GSA team treated this work as an act of [data curation](https://en.wikipedia
 In the simplest possible terms: we re-submitted all prior audits collected at Census to the GSA Clearinghouse.
 
 1. We began with the data from an old SF-SAC record from the Census data.
-2. We constructed a new, virtual SF-SAC submission, using the [workbook templates]({{config.baseUrl}}audits/) that auditors and auditees use for their data entry at GSA.
+2. We constructed a new, virtual SF-SAC submission, using the [workbook templates]({{config.baseUrl}}audit-resources/sf-sac/) that auditors and auditees use for their data entry at GSA.
 3. We submitted this virtual data collection form to the FAC.
 4. Where the data fell short of our validations in manageable/measurable ways, we annotated the data and migrated it into the FAC.
 5. Where an SF-SAC was too incomplete to consider usable, we set it aside for further processing.
@@ -44,8 +44,7 @@ In constructing new-style identifiers for `CENSUS` records, we used the `AUDITYE
 
 It is possible to see the annotation `GSA_MIGRATION` in some records at this time (last updated February 2024). The GSA team is working, as part of this curatorial work, to make the original records available for reference where this annotation was applied.
 
-
-
+{# 
 * [General data transformations]({{ "/data/general-transforms/" | absoluteUrl }})<br>These are transformations that were applied wholesale to files as data was migrated from Census to GSA.
 * [Specific field transformations]({{"/data/specific-transforms/" | absoluteUrl }})<br>These are transformations applied to specific portions of the data. For example, a Census record that is missing an entire portion of the form required specialized handling.
-
+#}

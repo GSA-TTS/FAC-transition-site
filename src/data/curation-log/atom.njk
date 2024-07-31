@@ -20,7 +20,7 @@ metadata:
   <author>
     <name>{{ metadata.author.name }}</name>
   </author>
-  {%- for post in collections.curation-log | reverse %}
+  {%- for post in collections.curation_log | reverse %}
     {%- set absolutePostUrl %}{{ post.url | htmlBaseUrl(baseUrl) }}{% endset %}
     <entry>
       <title>{{ post.data.title }}</title>

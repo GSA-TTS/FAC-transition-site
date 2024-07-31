@@ -14,9 +14,11 @@ meta:
 
 ## Curation actions
 
-We are currently tracking {{ collections.known_errors | length }} concerns in the data.
+This page documents the actions we have taken to curate the data contained within the FAC. We include a brief, one-line sumamry of each curation action here, and full explanations can be found on the linked pages.
 
-We include a brief, one-line sumamry of each error here, and full explanations can be found on the linked pages.
+Curation actions are often in response to concerns that are identified by the FAC team or members of the community. We are currently tracking {{ collections.known_errors | length }} concerns in the data. Data concerns are [documented separately](../concerns/).
+
+You can subscribe to an [RSS](/feeds/rss/curation-log.xml) or [Atom](/feeds/atom/curation-log.xml) feed of our data curation actions. See [Microsoft's documentation for subscribing to feeds](https://support.microsoft.com/en-us/office/what-are-rss-feeds-e8aaebc3-a0a7-40cd-9e10-88f9c1e74b97) as a starting point.
 
 {% for item in collections.curation_log | sort(false, false, 'data.repair_date') %}
     {% if item.data.concern | length %}

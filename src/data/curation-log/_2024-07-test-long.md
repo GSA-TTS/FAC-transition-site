@@ -1,6 +1,6 @@
 ---
 layout: sidenav.njk
-tags: curation_log
+tags: _curation_log
 concern: 2024-03-fy-off-by-one
 slug: Repair of FY end dates in migrated data
 adr: https://asdfasdf.com/asdfasdf.html

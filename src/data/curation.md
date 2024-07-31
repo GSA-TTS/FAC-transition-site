@@ -39,5 +39,5 @@ The solution will be implemented and executed on the timeline communicated.
 
 ## 6. Log the change
 
-The curation process generates an internal audit log; we will also publish, publicly, the results of the action to our [curation log]({{"curation-log/" | absoluteUrl }}). This provides a public record of the completion of the curatoral act and the results of our work.
+The curation process generates an internal audit log; we will also publish, publicly, the results of the action to our [curation log]({{"../curation-log/" | absoluteUrl }}). This provides a public record of the completion of the curatoral act and the results of our work.
 
