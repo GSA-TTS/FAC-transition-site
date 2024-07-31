@@ -13,7 +13,7 @@ To help you understand our work, weâ€™ll provide regular updates on the work weâ
 
 The Federal Audit Clearinghouse team works in the open. Our day-to-day task board can be found on [Github](https://github.com/orgs/GSA-TTS/projects/11/views/2) and prior updates are available in [our archive]({{ config.baseUrl }}updates/archive).
 
-You can subscribe to an [RSS]({{htmlBaseUrl(/feeds/rss/updates.xml)}}) or [Atom]({{htmlBaseUrl(/feeds/atom/updates.xml)}}) feed of our updates. See [Microsoft's documentation for subscribing to feeds](https://support.microsoft.com/en-us/office/what-are-rss-feeds-e8aaebc3-a0a7-40cd-9e10-88f9c1e74b97) as a starting point.
+You can subscribe to an [RSS]({{"/feeds/rss/updates.xml" | htmlBaseUrl(baseUrl)}}) or [Atom]({{"/feeds/atom/updates.xml" | htmlBaseUrl(baseUrl)}}) feed of our updates. See [Microsoft's documentation for subscribing to feeds](https://support.microsoft.com/en-us/office/what-are-rss-feeds-e8aaebc3-a0a7-40cd-9e10-88f9c1e74b97) as a starting point.
 
 
 {% set count = 2 %}
