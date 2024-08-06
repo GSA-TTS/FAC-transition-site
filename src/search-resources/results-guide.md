@@ -36,7 +36,7 @@ This column displays the date the FAC accepted the audit. [include note about hi
 
 ## <a name=AY>AY column
 
-AY stands for audit year. The FAC uses this term rather than “fiscal year” as different entities have different fiscal year start and end dates but the audit year is consistent across entities.
+AY stands for audit year. The FAC uses this term rather than “fiscal year” as different entities have different fiscal year start and end dates, but the audit year is consistent across entities.
 
 ## <a name=cog-over>Cog or Over column
 
