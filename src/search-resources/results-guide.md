@@ -28,7 +28,7 @@ This column displays the entity name for each result.
 
 ## <a name=uei>UEI or EIN column
 
-This column displays either the UEI or the EIN for each result. UEIs are 12-digit alpha numeric identifiers and EINs are nine-digit numeric identifiers. UEIs replaced EINS across the federal government in 2022. Audits submitted before April of 2022 will use an EIN and audits submitted after this date will use a UEI.
+This column displays either the UEI or the EIN for each result. UEIs are 12-digit alpha numeric identifiers, and EINs are nine-digit numeric identifiers. UEIs replaced EINS across the federal government in 2022. Audits submitted before April of 2022 will use an EIN, and audits submitted after this date will use a UEI.
 
 ## <a name=acc-date>Acc date column
 
