@@ -22,7 +22,7 @@ The search results table consists of the following columns:
 
 Each column can also be sorted, using the up or down arrows at the top of the column. Sorting a column sorts all results, not just those on the page disiplayed. If you sort a column and then advance to the next page of results, the sorting will still be applied.
 
-The "Download all" button above the table will combine the SF-SAC summary results for every audit in the search results into a single download file.
+The "Download all" button above the table will combine the SF-SAC summary results for every audit in the search results, up to 1,000 results, into a single download file.
 
 <img src="{{ config.baseUrl }}assets/img/search/searchresults.png"  alt="A screenshot of an example search results table from the FAC. The column headers, from left to right, read: 'Name', 'UEI or EIN', 'Acc Date', 'AY', 'Cog or Over', 'View', and 'PDF'."/>
 
