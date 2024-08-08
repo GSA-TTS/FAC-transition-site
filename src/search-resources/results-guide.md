@@ -8,7 +8,7 @@ meta:
 
 # Interpreting the search results table
 
-This page will show you how to interpret the various columns that make up the search results table for the FAC.
+This page will show you how to interpret the various columns that make up the search results table for the FAC. All search results display in the same table, regardless of whether you're using the [basic](https://app.fac.gov/dissemination/search/) or [advanced](https://app.fac.gov/dissemination/search/advanced/) search.
 
 The search results table consists of the following columns:
 
@@ -19,6 +19,10 @@ The search results table consists of the following columns:
 - [Cog or Over](#cog-over)
 - [View](#view)
 - [PDF](#PDF)
+
+Each column can also be sorted, using the up or down arrows at the top of the column. Sorting a column sorts all results, not just those on the page disiplayed. If you sort a column and then advance to the next page of results, the sorting will still be applied.
+
+The "Download all" button above the table will combine the SF-SAC summary results for every audit in the search results into a single download file.
 
 <img src="{{ config.baseUrl }}assets/img/search/searchresults.png"  alt="A screenshot of an example search results table from the FAC. The column headers, from left to right, read: 'Name', 'UEI or EIN', 'Acc Date', 'AY', 'Cog or Over', 'View', and 'PDF'."/>
 
@@ -32,11 +36,11 @@ This column displays either the UEI or the EIN for each result. UEIs are 12-digi
 
 ## <a name=acc-date>Acc date column
 
-This column displays the date the FAC accepted the audit. [include note about historical data inaccuracies]
+"Acc date" stands for Acceptance date. This column displays the date the FAC accepted the audit. For records from September 2023 and before, the acceptance date listed is one day earlier than they were submitted due to a migration error from the Census to the GSA FAC.
 
 ## <a name=AY>AY column
 
-AY stands for audit year. The FAC uses this term rather than “fiscal year” as different entities have different fiscal year start and end dates, but the audit year is consistent across entities.
+"AY" stands for audit year. The FAC uses this term rather than “fiscal year” as different entities have different fiscal year start and end dates, but the audit year is consistent across entities.
 
 ## <a name=cog-over>Cog or Over column
 
