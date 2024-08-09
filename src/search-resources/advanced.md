@@ -21,7 +21,7 @@ Many of the filters available via advanced search are the same as [the basic fil
 - [Major program](#major-program)
 - [Passthrough name](#passthrough-name)
 
-### <a name=assistance-listing-number-alncfda></a>Assistance Listing Number (ALN/CFDA)
+## <a name=assistance-listing-number-alncfda></a>Assistance Listing Number (ALN/CFDA)
 
 We support search of both agency ALNs and ALNs plus program numbers. Your list can contain a mix of both, or you can search for just one or the other.
 
@@ -33,7 +33,7 @@ Enter one number per line.
 
 > **Example**: If you enter `93` on one line, and `20.600` on another, the system will return all submissions that contained an award for HHS, and all awards that included funding from ALN 20.600. 
 
-### <a name=cognizant-or-oversight></a>Cognizant or oversight
+## <a name=cognizant-or-oversight></a>Cognizant or oversight
 
 This filter looks at which agency is the cognizant or oversight agency for an entity and can be used in multiple ways.
 
@@ -45,24 +45,24 @@ You can also use the dropdown menu while leaving the text field blank. If you se
 
 > **Example**: If you select “Cognizant” from the dropdown and enter `93`, you will only get submissions that have agency number 93 (HHS) as their cognizant agency.
 
-### <a name=audit-findings></a>Audit findings
+## <a name=audit-findings></a>Audit findings
 Select which type of findings you want to see. If you select any option from this list, only audits with findings will appear in your results.
 
 Checking “Any findings” will return submissions with findings of any type.. 
 
 The more types of findings you select, the narrower your results will be. However, if you keep “Any findings” checked and check another type, the “Any findings” will overrule the more specific types.
 
-### <a name=direct-funding></a>Direct funding
+## <a name=direct-funding></a>Direct funding
 Using this filter narrows results to only those audits with direct or passthrough funding. To find audits that received one type of funding or the other from a specific agency, use this filter in combination with the ALN filter.
 
 > **Example**: If you select “Direct funding” and enter `93` in the ALN filter, you will get back all submissions that received direct funding from agency number 93 (HHS).
 
-### <a name=major-program></a>Major program
+## <a name=major-program></a>Major program
 This filter narrows results to those audits that did or didn’t receive money from a qualifying major program. To find only audits that received major program funding from a specific agency, use this filter in combination with the ALN filter.
 
 > **Example**: If you select “Y” and enter `93` in the ALN filter, you will get back all submissions that received major program funding from agency number 93 (HHS).
 
-### <a name=passthrough-name></a>Passthrough name
+## <a name=passthrough-name></a>Passthrough name
 Enter one word per line.
 
 This filter looks at awards listed as passed through to a subrecpient and the recipient of those awards.
