@@ -11,6 +11,8 @@ navigation:
           href: 'search-resources'
         - text: Developer resources
           href: 'api'
+        - text: Tribal audits
+          href: 'tribal'
     - text: Audit submission
       id: audits
       links:

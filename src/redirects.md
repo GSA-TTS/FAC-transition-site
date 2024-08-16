@@ -18,7 +18,8 @@ redirects:
 #   "to" - The place we want the redirect to go. No leading slashes, so it can play nice with different baseUrl's (local, prod, federalist).
 #   Search resources
   - {"from": "/data/resources/", "to": "search-resources/"}
-  - {"from": "/data/tribal/", "to": "search-resources/tribal/"}
+  - {"from": "/data/tribal/", "to": "tribal/"}
+  - {"from": "/search-resources/tribal/", "to": "tribal/"}
 #   API pages
   - {"from": "/developers/", "to": "api/"}
   - {"from": "/developers/dictionary/", "to": "api/dictionary/"}
