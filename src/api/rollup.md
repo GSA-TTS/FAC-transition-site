@@ -105,7 +105,7 @@ The code for this tutorial can be found in the [fac-api-examples](https://github
 
 {{ rollup("ALN") }}
 
-The ALN, or Agency Listing number, is a two-part identifier with the shape `12.345`. Sometimes it includes letters (`12.RD`), or even letters _and_ numbers (`12.U01`). Historically, it is sometimes even messier. The FAC does not distribute the ALN. It distributes the agency prefix (the first part of the code) and the program number (the second part of the code).
+The ALN, or Assistance Listing number, is a two-part identifier with the shape `12.345`. Sometimes it includes letters (`12.RD`), or even letters _and_ numbers (`12.U01`). Historically, it is sometimes even messier. The FAC does not distribute the ALN. It distributes the agency prefix (the first part of the code) and the program number (the second part of the code).
 
 The FAC collects two fields related to the ALN: the `federal_agency_prefix` and `federal_award_extension`. Both of these fields are required as part of the federal awards workbook and are distributed via the `federal_awards` endpoint.
 
