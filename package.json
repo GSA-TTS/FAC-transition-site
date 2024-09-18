@@ -15,7 +15,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
-    "@uswds/compile": "^1.0.0",
+    "@uswds/compile": "^1.2.0",
     "@uswds/uswds": "^3.4.1",
     "concurrently": "^7.1.0",
     "cypress": "^9.5.4",
@@ -27,7 +27,7 @@
     "start-server-and-test": "^1.14.0"
   },
   "dependencies": {
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.0",
     "sass-embedded": "^1.77.2"
   }
 }
