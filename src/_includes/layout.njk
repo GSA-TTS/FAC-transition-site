@@ -18,8 +18,6 @@
         <link rel="icon" type="image/x-icon" href="{{ config.baseUrl }}assets/img/favicons/icon_logo.svg" />
         <link rel="stylesheet" href="{{ config.baseUrl }}assets/css/styles.css" media="all" type="text/css">
         
-        {% include './components/qualtrics.njk' %}
-        
         <title>{{ title }}</title>
     </head>
 
@@ -34,11 +32,6 @@
 
         <!-- We participate in the US government's analytics program. See the data at analytics.usa.gov. -->
         <script async type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=GSA&subagency=TTS" id="_fed_an_ua_tag"></script>
-
-        <!-- Add Touchpoints intercept -->
-        <!--
-            <script src="https://touchpoints.app.cloud.gov/touchpoints/9412c559.js" async></script>
-        -->
         
         <script>
         //<![CDATA[
@@ -53,6 +46,10 @@
         </script>
     </body>
     {% if include_survey %}
-      <script src="https://touchpoints.app.cloud.gov/touchpoints/ba4ae239.js" async></script>
+        {# LEGACY - Add Touchpoints intercept #}
+        {# <script src="https://touchpoints.app.cloud.gov/touchpoints/9412c559.js" async></script> #}
+
+        {# Add Qualtrics feedback form #}
+        {% include './components/qualtrics.njk' %}
     {% endif %}
 </html>
