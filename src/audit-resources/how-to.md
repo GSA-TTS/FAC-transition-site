@@ -50,5 +50,3 @@ inlcude_survey: true
         {% endfor %}
     </main>
 </div>
-
-<script src="https://touchpoints.app.cloud.gov/touchpoints/ba4ae239.js" async></script>
