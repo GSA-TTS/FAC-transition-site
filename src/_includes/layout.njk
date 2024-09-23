@@ -12,7 +12,8 @@
                     style-src 'self' 'unsafe-inline';
                     object-src 'none';
                     worker-src 'none';
-                    connect-src https://www.google-analytics.com https://gov1.siteintercept.qualtrics.com ws://localhost:8080/;">
+                    connect-src https://www.google-analytics.com https://gov1.siteintercept.qualtrics.com ws://localhost:8080/;
+                    frame-src https://feedback.gsa.gov/;">
         <meta name="{{meta.name}}" description="{{meta.description}}">
         <link rel="icon" type="image/x-icon" href="{{ config.baseUrl }}assets/img/favicons/icon_logo.svg" />
         <link rel="stylesheet" href="{{ config.baseUrl }}assets/css/styles.css" media="all" type="text/css">
