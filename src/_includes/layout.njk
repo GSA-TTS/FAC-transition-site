@@ -7,13 +7,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Content-Security-Policy" 
               content="default-src 'self';
-                    script-src 'self' 'unsafe-inline' https://gov1.siteintercept.qualtrics.com https://*.gov1.siteintercept.qualtrics.com https://dap.digitalgov.gov https://www.google-analytics.com https://www.googletagmanager.com http://search.usa.gov https://touchpoints.app.cloud.gov;
-                    img-src 'self' https://touchpoints.app.cloud.gov https://*.amazonaws.com/uploads/form/logo/3110/logo_square_Vector80w(2).jpg;
-                    style-src 'self' 'unsafe-inline';
-                    object-src 'none';
-                    worker-src 'none';
                     connect-src https://www.google-analytics.com https://gov1.siteintercept.qualtrics.com ws://localhost:8080/;
-                    frame-src https://feedback.gsa.gov/;">
+                    frame-src https://feedback.gsa.gov/;
+                    img-src 'self' https://touchpoints.app.cloud.gov https://*.amazonaws.com/uploads/form/logo/3110/logo_square_Vector80w(2).jpg;
+                    object-src 'none';
+                    script-src 'self' 'unsafe-inline' https://gov1.siteintercept.qualtrics.com https://*.gov1.siteintercept.qualtrics.com https://dap.digitalgov.gov https://www.google-analytics.com https://www.googletagmanager.com http://search.usa.gov https://touchpoints.app.cloud.gov;
+                    style-src 'self' 'unsafe-inline';
+                    worker-src 'none';">
         <meta name="{{meta.name}}" description="{{meta.description}}">
         <link rel="icon" type="image/x-icon" href="{{ config.baseUrl }}assets/img/favicons/icon_logo.svg" />
         <link rel="stylesheet" href="{{ config.baseUrl }}assets/css/styles.css" media="all" type="text/css">
