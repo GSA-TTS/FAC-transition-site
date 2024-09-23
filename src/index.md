@@ -4,7 +4,6 @@ title: The Federal Audit Clearinghouse
 meta:
   name: The Federal Audit Clearinghouse
   description: The Federal Audit Clearinghouse is the home of the single audit process for the federal government awards system.
-include_survey: true
 ---
 <div class="home">
   <div class="grid-container">

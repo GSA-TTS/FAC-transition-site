@@ -52,5 +52,3 @@ The instructions below walk you through searching for Tribal audits.
   {% endif %}
 {% endfor %}
 </div>
-
-<script src="https://touchpoints.app.cloud.gov/touchpoints/ba4ae239.js" async></script>

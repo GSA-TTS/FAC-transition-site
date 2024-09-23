@@ -9,14 +9,17 @@
               content="default-src 'self';
                     connect-src https://www.google-analytics.com https://gov1.siteintercept.qualtrics.com ws://localhost:8080/;
                     frame-src https://feedback.gsa.gov/;
-                    img-src 'self' https://touchpoints.app.cloud.gov https://gov1.siteintercept.qualtrics.com https://*.amazonaws.com/uploads/form/logo/3110/logo_square_Vector80w(2).jpg;
+                    img-src 'self' https://gov1.siteintercept.qualtrics.com https://*.amazonaws.com/uploads/form/logo/3110/logo_square_Vector80w(2).jpg;
                     object-src 'none';
-                    script-src 'self' 'unsafe-inline' https://gov1.siteintercept.qualtrics.com https://*.gov1.siteintercept.qualtrics.com https://dap.digitalgov.gov https://www.google-analytics.com https://www.googletagmanager.com http://search.usa.gov https://touchpoints.app.cloud.gov;
+                    script-src 'self' 'unsafe-inline' https://gov1.siteintercept.qualtrics.com https://*.gov1.siteintercept.qualtrics.com https://dap.digitalgov.gov https://www.google-analytics.com https://www.googletagmanager.com http://search.usa.gov;
                     style-src 'self' 'unsafe-inline';
                     worker-src 'none';">
         <meta name="{{meta.name}}" description="{{meta.description}}">
         <link rel="icon" type="image/x-icon" href="{{ config.baseUrl }}assets/img/favicons/icon_logo.svg" />
         <link rel="stylesheet" href="{{ config.baseUrl }}assets/css/styles.css" media="all" type="text/css">
+
+        {# Add Qualtrics feedback form to every page #}
+        {% include './components/qualtrics.njk' %}
         
         <title>{{ title }}</title>
     </head>
@@ -45,11 +48,4 @@
         //]]>
         </script>
     </body>
-    {% if include_survey %}
-        {# LEGACY - Add Touchpoints intercept #}
-        {# <script src="https://touchpoints.app.cloud.gov/touchpoints/9412c559.js" async></script> #}
-
-        {# Add Qualtrics feedback form #}
-        {% include './components/qualtrics.njk' %}
-    {% endif %}
 </html>

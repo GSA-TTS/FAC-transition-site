@@ -4,7 +4,6 @@ title: Welcome to the Federal Audit Clearinghouse
 meta:
   name: Welcome to the Federal Audit Clearinghouse
   description: The Federal Audit Clearinghouse is the home of the single audit process for the federal government awards system.
-include_survey: true
 ---
 
 # Welcome to the FAC
