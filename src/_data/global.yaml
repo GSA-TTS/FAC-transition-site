@@ -11,6 +11,8 @@ navigation:
           href: 'search-resources'
         - text: Developer resources
           href: 'api'
+        - text: Data reliability
+          href: 'data-reliability'
         - text: Tribal audits
           href: 'tribal'
     - text: Audit submission
