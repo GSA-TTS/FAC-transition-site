@@ -7,13 +7,22 @@ meta:
 pagination:
   data: collections.post
   size: 1
-  alias: posts
-permalink: "updates/{{ posts.fileSlug | slugify }}/"
+  alias: post
+permalink: "updates/{{ post.fileSlug | slugify }}/"
 ---
 
 <div class="grid-row">
-  <div class="tablet:grid-col-9 padding-right-3">
-    {{ posts.content | safe }}
+  <div class="tablet:grid-col-9 padding-right-6">
+    <h1>
+      {% if post.data.title %}
+        {{ post.data.title }}
+      {% else %}
+        {{ post.data.date | friendlydate }}
+      {% endif %}
+    </h1>
+    <div class="font-sans-lg text-bold">{{ post.data.description }}</div>
+    <p>{{ post.data.date | friendlydate }}</p>
+    <div class="margin-y-6">{{ post.content | safe }}</div>
     {% include 'components/updates/collection_recent_updates.njk' %}
   </div>
   <div class="tablet:grid-col-3">
