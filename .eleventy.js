@@ -48,6 +48,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("limit", function(array, limit) {
     return array.slice(0, limit);
   });
+  // Remove the first character from a string
+  // Usage: {{ string | remove_leading_char }}
+  // Ex. "/href/" -> "href/"
+  eleventyConfig.addFilter("remove_leading_char", function(contents) {
+    return contents.slice(1, contents.length);
+  });
 
   const md = new markdownIt({
     html: true,

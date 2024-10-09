@@ -57,10 +57,10 @@ pagination:
           {% if pagination.href.previous %}
             <li class="usa-pagination__item usa-pagination__arrow">
               <a class="usa-pagination__link usa-pagination__previous-page"
-                 href="{{ pagination.href.previous }}"
+                 href="{{ config.baseUrl }}{{ pagination.href.previous | remove_leading_char }}"
                  aria-label="Previous page">
                 <svg class="usa-icon" aria-hidden="true" role="img">
-                  <use xlink:href="/assets/img/sprite.svg#navigate_before"></use>
+                  <use xlink:href="{{ config.baseUrl }}assets/img/sprite.svg#navigate_before"></use>
                 </svg>
                 <span class="usa-pagination__link-text">Previous</span>
               </a>
@@ -70,11 +70,11 @@ pagination:
             <li class="usa-pagination__item usa-pagination__page-no">
               {% if page.url === href %}
                 <a class="usa-pagination__button usa-current"
-                  href="{{ href }}"
+                  href="{{ config.baseUrl }}{{ href | remove_leading_char }}"
                   aria-label="Page {{ loop.index }}">{{ loop.index}}</a>
               {% else %}
                 <a class="usa-pagination__button"
-                  href="{{ href }}"
+                  href="{{ config.baseUrl }}{{ href | remove_leading_char }}"
                   aria-label="Page {{ loop.index }}">{{ loop.index}}</a>
               {% endif %}
             </li>
@@ -82,11 +82,11 @@ pagination:
           {% if pagination.href.next %}
             <li class="usa-pagination__item usa-pagination__arrow">
               <a class="usa-pagination__link usa-pagination__next-page"
-                 href="{{ pagination.href.next }}"
+                 href="{{ config.baseUrl }}{{ pagination.href.next | remove_leading_char }}"
                  aria-label="Next page">
                 <span class="usa-pagination__link-text">Next</span>
                 <svg class="usa-icon" aria-hidden="true" role="img">
-                  <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
+                  <use xlink:href="{{ config.baseUrl }}assets/img/sprite.svg#navigate_next"></use>
                 </svg>
               </a>
             </li>
