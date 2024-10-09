@@ -1,11 +1,17 @@
 @use "uswds-core" with (
     $theme-show-notifications: false,
+    // Are not defined by default
     $theme-font-weight-semibold: 600,
     $theme-font-weight-heavy: 800,
+    // A little lighter to be complimentary to the darker values
+    $theme-color-accent-cool-dark: #4F97D1,
+    $theme-color-accent-warm: #E17141,
+    // 12 point, rather than the default 13
+    $theme-type-scale-3xs: 1,
 );
 
-@forward "uswds-theme";
 @forward "uswds";
+@forward "uswds-theme";
 @forward "uswds-theme-custom-styles";
 @forward "usa-icon";
 
