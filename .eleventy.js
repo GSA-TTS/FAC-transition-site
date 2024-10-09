@@ -1,4 +1,5 @@
 const yaml = require('js-yaml');
+const markdownIt = require("markdown-it");
 
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const md = require('markdown-it')({
@@ -21,24 +22,47 @@ const hashCode = function (s) {
 };
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addDataExtension('yaml', (contents) => yaml.load(contents));
-  eleventyConfig.addPassthroughCopy('assets');
-  eleventyConfig.addPassthroughCopy('favicon.ico');
-  eleventyConfig.addPassthroughCopy('robots.txt');
+  eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
+  
+  eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy("favicon.ico");
+  eleventyConfig.addPassthroughCopy("robots.txt");
 
   eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addFilter('hashcode', (s) => hashCode(s));
-  eleventyConfig.addFilter('markdown', (markdownString) =>
+
+  eleventyConfig.addFilter("hashcode", (s) => hashCode(s));
+  eleventyConfig.addFilter("markdown", (markdownString) =>
     md.render(markdownString)
   );
+  // Take Eleventy's default "YY-MM-DD" to "Month DD, YYYY"
+  // Usage: {{ dateString | friendlydate }}
+  eleventyConfig.addFilter("friendlydate", (dateString) =>
+    new Date(dateString).toLocaleDateString("en-us", {
+      month: "long",
+      day: "numeric",
+      year: "numeric",
+    })
+  );
+  // Limit a collection to the first N items
+  // Usage: {{ collection | limit(N) }}
+  eleventyConfig.addFilter("limit", function(array, limit) {
+    return array.slice(0, limit);
+  });
+
+  const md = new markdownIt({
+    html: true,
+  });
+  eleventyConfig.addPairedShortcode("markdown", (content) => {
+    return md.render(content);
+  });
 
   return {
-    markdownTemplateEngine: 'njk',
+    markdownTemplateEngine: "njk",
     dir: {
-      input: 'src',
-      includes: '_includes',
-      data: '_data',
-      output: '_site',
+      input: "src",
+      includes: "_includes",
+      data: "_data",
+      output: "_site",
     },
   };
 };

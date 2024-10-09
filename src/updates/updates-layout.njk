@@ -1,0 +1,23 @@
+---
+layout: home.njk
+title: Updates from the FAC
+meta:
+  name: Updates from the Federal Audit Clearinghouse
+  description: Stay up-to-date on the FAC transition and read the latest on the single audit process.
+pagination:
+  data: collections.post
+  size: 1
+  alias: posts
+permalink: "updates/{{ posts.fileSlug | slugify }}/"
+---
+
+<div class="grid-row">
+  <div class="tablet:grid-col-9 padding-right-3">
+    {{ posts.content | safe }}
+    {% include 'components/updates/collection_recent_updates.njk' %}
+  </div>
+  <div class="tablet:grid-col-3">
+    {% include 'components/updates/card_subscribe.njk' %}
+    {% include 'components/updates/card_how_we_work.njk' %}
+  </div>
+</div>

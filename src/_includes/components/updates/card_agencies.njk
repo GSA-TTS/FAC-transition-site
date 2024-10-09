@@ -1,0 +1,24 @@
+{# From Figma, simplified via USWDS classes #}
+<div class="width-card-lg bg-accent-warm-dark padding-top-3 margin-top-3
+            display-inline-flex flex-column flex-justify-center flex-align-start 
+            border border-base-lighter radius-md">
+  <div class="padding-x-3 display-inline-flex flex-justify flex-align-self-stretch flex-align-end">
+    <div class="font-sans-2 text-bold text-base-lightest">NOTIFICATIONS</div>
+    {% include 'components/updates/icon_agencies.njk' %}
+  </div>
+  <div class="display-flex flex-column flex-justify-start flex-align-self-stretch flex-align-start">
+    <div class="padding-top-3 padding-bottom-1 padding-x-3
+                display-inline-flex flex-justify-start flex-align-start">
+      <div class="font-sans-lg text-bold text-base-lightest">
+        Federal awarding agencies
+      </div>
+    </div>
+    <div class="minh-9 padding-x-3 padding-y-1
+                display-inline-flex flex-justify-start flex-align-start flex-align-self-stretch">
+      <div class="font-sans-xs text-base-lightest">
+        {% set snippet %}{% include 'components/updates/notifications-agencies.md' %}{% endset %}
+        {{ snippet | markdown | safe }}
+      </div>
+    </div>
+  </div>
+</div>

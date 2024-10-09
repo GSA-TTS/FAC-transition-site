@@ -1,0 +1,98 @@
+---
+layout: home.njk
+title: Updates from the FAC
+meta:
+  name: Updates from the Federal Audit Clearinghouse
+  description: Stay up-to-date on the FAC transition and read the latest on the single audit process.
+pagination:
+  data: collections.post
+  size: 11
+  reverse: true
+  alias: posts
+  generatePageOnEmptyData: true
+---
+
+<h1>Updates from the FAC</h1>
+
+<p class="font-sans-md padding-bottom-2">To help you understand our work, we provide regular updates on the work we're doing and what's next.</p>
+
+<div class="grid-row">
+  <div class="tablet:grid-col-3">
+    {% include 'components/updates/card_grantees_auditors.njk' %}
+    {% include 'components/updates/card_agencies.njk' %}
+    {% include 'components/updates/card_subscribe.njk' %}
+    {% include 'components/updates/card_how_we_work.njk' %}
+  </div>
+
+  <div class="tablet:grid-col-9 padding-left-3">
+    <div class="display-flex flex-column flex-align-stretch
+                border-base-lighter radius-md bg-base-lightest padding-3">
+      <div class="margin-bottom-4 font-sans-lg text-bold">
+        The Round Up
+      </div>
+
+      <div class="display-inline-flex flex-column flex-align-start flex-justify-start">
+        {% for post in posts %}
+          <div class="padding-bottom-4 flex-align-self-stretch">
+            <a class="usa-link font-sans-md text-bold" href="{{ config.baseUrl }}updates/{{ post.fileSlug | slugify }}/">
+              {% if post.data.title %}
+                {{ post.data.title }}
+              {% else %}
+                {{ post.data.date | friendlydate}}
+              {% endif %}
+            </a>
+            {% if post.data.description %}
+              <div class="font-sans-sm margin-top-2">{{ post.data.description }}</div>
+            {% endif %}
+            {% if post.data.date %}
+              <div class="font-sans-2xs margin-top-2">{{ post.data.date | friendlydate }}</div>
+            {% endif %}
+            <div class="margin-top-2 flex-align-self-stretch height-0 border border-black"></div>
+          </div>
+        {% endfor %}
+      </div>
+      
+      <nav aria-label="Pagination" class="usa-pagination bg-base-lightest">
+        <ul class="usa-pagination__list">
+          {% if pagination.href.previous %}
+            <li class="usa-pagination__item usa-pagination__arrow">
+              <a class="usa-pagination__link usa-pagination__previous-page"
+                 href="{{ pagination.href.previous }}"
+                 aria-label="Previous page">
+                <svg class="usa-icon" aria-hidden="true" role="img">
+                  <use xlink:href="/assets/img/sprite.svg#navigate_before"></use>
+                </svg>
+                <span class="usa-pagination__link-text">Previous</span>
+              </a>
+            </li>
+          {% endif %}
+          {% for href in pagination.hrefs %}
+            <li class="usa-pagination__item usa-pagination__page-no">
+              {% if page.url === href %}
+                <a class="usa-pagination__button usa-current"
+                  href="{{ href }}"
+                  aria-label="Page {{ loop.index }}">{{ loop.index}}</a>
+              {% else %}
+                <a class="usa-pagination__button"
+                  href="{{ href }}"
+                  aria-label="Page {{ loop.index }}">{{ loop.index}}</a>
+              {% endif %}
+            </li>
+          {% endfor %}
+          {% if pagination.href.next %}
+            <li class="usa-pagination__item usa-pagination__arrow">
+              <a class="usa-pagination__link usa-pagination__next-page"
+                 href="{{ pagination.href.next }}"
+                 aria-label="Next page">
+                <span class="usa-pagination__link-text">Next</span>
+                <svg class="usa-icon" aria-hidden="true" role="img">
+                  <use xlink:href="/assets/img/sprite.svg#navigate_next"></use>
+                </svg>
+              </a>
+            </li>
+          {% endif %}
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
