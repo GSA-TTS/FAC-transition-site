@@ -1,5 +1,6 @@
 const yaml = require('js-yaml');
 const markdownIt = require("markdown-it");
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const md = require('markdown-it')({
@@ -29,6 +30,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("robots.txt");
 
   eleventyConfig.addPlugin(pluginRss);
+	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   eleventyConfig.addFilter("hashcode", (s) => hashCode(s));
   eleventyConfig.addFilter("markdown", (markdownString) =>
