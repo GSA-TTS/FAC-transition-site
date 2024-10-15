@@ -8,7 +8,12 @@ pagination:
   data: collections.post
   size: 1
   alias: post
+  addAllPagesToCollections: true
 permalink: "updates/{{ post.fileSlug | slugify }}/"
+eleventyComputed:
+  eleventyNavigation:
+    key: "{{ post.data.title }}"
+    parent: "FAC Updates"
 ---
 
 <div class="grid-row">
