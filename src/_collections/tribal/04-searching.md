@@ -4,7 +4,6 @@ title: Searching the FAC
 image: tribal_04.png
 ---
 
-Use the parameters along the left-hand side of the page to search single audit submissions. If you are signed in and have the proper access to view Tribal audits, these will appear in the results along with non-Tribal audits.
+Use the filters on the left-hand side of the page to customize your search for single audit submissions. If you are signed in and have permission to access Tribal audits, they will appear as normal alongside non-Tribal audits in your search results.
 
-If you are signed in and don’t see the Tribal audits you expect, [contact the FAC](https://support.fac.gov/hc/en-us/requests/new) via our help desk.
-
+If you are signed in and don’t see the suppressed Tribal audits you expected in your search results, please [contact the FAC](https://support.fac.gov/hc/en-us/requests/new) via our Helpdesk to confirm your access.
