@@ -1,1 +1,1 @@
-The Federal Audit Clearinghouse team works in the open. Our day-to-day task board can be found on **[Github](https://github.com/orgs/GSA-TTS/projects/11/views/2)** and prior updates are available in our **[archive](/updates/archive)**.
+The Federal Audit Clearinghouse team works in the open. Our day-to-day task board can be found on **[Github](https://github.com/orgs/GSA-TTS/projects/11/views/2)** and prior updates are available in our **[archive]({{config.baseUrl}}updates/archive)**.
