@@ -20,7 +20,7 @@ Anyone with access to the audit submission can modify the Auditee and Auditor Ce
 
 Keep in mind that each audit submission can have only one Auditee Certifying Official and one Auditor Certifying Official, and these must be different individuals.
 
-The following instructions guide you through the process of changing user roles. **After completing these steps, users must log out and log back in for the changes to take effect.**
+The following instructions guide you through the process of changing user roles. **After completing these steps, you must log out and log back in for your changes to take effect.**
 
 <ol>
 {% for item in collections.access %}
