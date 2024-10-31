@@ -29,7 +29,7 @@ pagination:
 
   <div class="tablet:grid-col-9 tablet:padding-left-3 padding-top-3 tablet:padding-top-0">
     <div class="display-flex flex-column flex-align-stretch
-                border-base-lighter radius-md bg-base-lightest padding-3">
+                border-base-lighter radius-md bg-base-lightest padding-2 tabet:padding-3">
       <div class="margin-bottom-4 font-sans-lg text-bold">
         The Round Up
       </div>
@@ -37,19 +37,28 @@ pagination:
       <div class="display-inline-flex flex-column flex-align-start flex-justify-start">
         {% for post in posts %}
           <div class="padding-bottom-4 flex-align-self-stretch">
-            <a class="usa-link font-sans-md text-bold" href="{{ config.baseUrl }}updates/{{ post.fileSlug | slugify }}/">
-              {% if post.data.title %}
-                {{ post.data.title }}
-              {% else %}
-                {{ post.data.date | friendlydate}}
+            <div class="grid-row ">
+              {% if post.data.image_path %}
+                <img class="" src="{{config.baseUrl}}{{post.data.image_path}}" width=80 height=60 style="border: 1px solid #555;" alt="{{post.data.image_caption}}"/>
               {% endif %}
-            </a>
-            {% if post.data.description %}
-              <div class="font-sans-sm margin-top-2">{{ post.data.description }}</div>
-            {% endif %}
-            {% if post.data.date %}
-              <div class="font-sans-2xs margin-top-2">{{ post.data.date | friendlydate }}</div>
-            {% endif %}
+              
+              <div class="grid-col-9 tablet:grid-col-10 padding-left-2">
+                <a class="usa-link font-sans-md text-bold" href="{{ config.baseUrl }}updates/{{ post.fileSlug | slugify }}/">
+                  {% if post.data.title %}
+                    {{ post.data.title }}
+                  {% else %}
+                    {{ post.data.date | friendlydate}}
+                  {% endif %}
+                </a>
+                {% if post.data.description %}
+                  <div class="font-sans-sm margin-top-2">{{ post.data.description }}</div>
+                {% endif %}
+                {% if post.data.date %}
+                  <div class="font-sans-2xs margin-top-2">{{ post.data.date | friendlydate }}</div>
+                {% endif %}
+              </div>
+            </div>
+            
             <div class="margin-top-2 flex-align-self-stretch height-0 border border-black"></div>
           </div>
         {% endfor %}
