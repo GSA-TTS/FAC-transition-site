@@ -39,7 +39,7 @@ pagination:
           <div class="padding-bottom-4 flex-align-self-stretch">
             <div class="grid-row ">
               {% if post.data.image_path %}
-                <img class="" src="{{config.baseUrl}}{{post.data.image_path}}" width=80 height=60 style="border: 1px solid #555;" alt="{{post.data.image_caption}}"/>
+                <img src="{{config.baseUrl}}{{post.data.image_path}}" width=80 height=60 style="border: 1px solid #555;" alt="{{post.data.image_caption}}"/>
               {% endif %}
               
               <div class="grid-col-9 tablet:grid-col-10 padding-left-2">

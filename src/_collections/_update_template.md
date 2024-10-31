@@ -33,3 +33,13 @@ HOW TO USE THIS DOCUMENT:
     a. Remember, the title, short description, and date will already be included. No need to add another title.
     b. Follow a markdown guide like [this one](https://www.markdownguide.org/basic-syntax/) to get the basics down.
     c. You can add HTML directly to markdown, but be careful with spacing when doing so. 
+
+Image specifications: 
+
+Images have enforced sizes. If they are too far off the enforced sizes, they will stretch/shrink to fit.
+
+The thumbnail displayed in the main collection has an enforced size of 80px by 60px. So a width-height ratio of 4:3 is recommended.
+
+The image in the individual update page has a width of 320px. _The height is not enforced._ 
+
+With these constraints in mind, the best image size is 320px by 240px. It is fine if the image is larger. It will likely shrink just fine on the main updates page, but be sure to check over the thumbnail on the collections page. 
