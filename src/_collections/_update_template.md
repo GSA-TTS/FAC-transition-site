@@ -43,3 +43,5 @@ The thumbnail displayed in the main collection has an enforced size of 80px by 6
 The image in the individual update page has a width of 320px. _The height is not enforced._ 
 
 With these constraints in mind, the best image size is 320px by 240px. It is fine if the image is larger. It will likely shrink just fine on the main updates page, but be sure to check over the thumbnail on the collections page. 
+
+For an example, see `"assets/img/updates/roadmap-08-2024.png"`. It's much larger than the recommended size, and it's not of the right shape, but it displays well enough. 
