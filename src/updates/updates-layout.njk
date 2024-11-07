@@ -31,7 +31,7 @@ eleventyComputed:
 
     {# Image and caption, if they exist. #}
     {% if post.data.image_path and post.data.image_alt %}
-      <div class="float-right width-mobile margin-left-3 margin-bottom-3">
+      <div class="float-right width-full tablet:width-mobile margin-left-3 margin-bottom-3">
         <img class="cursor-pointer" src="{{config.baseUrl}}{{post.data.image_path}}" style="border: 1px solid #555;" alt="{{post.data.image_alt}}" aria-controls="image-modal" data-open-modal/>
         {% if post.data.image_caption%}
           <p class="text-italic text-primary font-sans-sm margin-bottom-0 margin-top-1">{{post.data.image_caption | safe}}</p>

@@ -42,7 +42,9 @@ pagination:
                 <img src="{{config.baseUrl}}{{post.data.image_path}}" width=80 height=60 style="border: 1px solid #555;" alt="{{post.data.image_caption}}"/>
               {% endif %}
               
-              <div class="grid-col-9 tablet:grid-col-10 padding-left-2">
+              {# If there's an image, we want this div slightly smaller. #}
+              <div class="{% if post.data.image_path %} grid-col-9 {% endif %}
+                          tablet:grid-col-10 padding-left-2">
                 <a class="usa-link font-sans-md text-bold" href="{{ config.baseUrl }}updates/{{ post.fileSlug | slugify }}/">
                   {% if post.data.title %}
                     {{ post.data.title }}
