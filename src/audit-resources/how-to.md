@@ -28,7 +28,10 @@ inlcude_survey: true
 {# This has to be left aligned, or it won't convert to the h1 element. #}
 # Submitting single audit reports using the Federal Audit Clearinghouse
 
-        The Federal Audit Clearinghouse (FAC) is the place to submit federal grant audits. All entities that spend $750,000 or more in federal grant funds in a fiscal year must submit an audit.
+        The Federal Audit Clearinghouse (FAC) is the place to submit federal grant audits. Entities that spend federal grant funds are required to submit an audit if they meet the following spending thresholds:
+* $750,000 or more for Fiscal Years starting before October 1, 2024  
+* $1,000,000 or more for Fiscal Years starting on or after October 1, 2024
+
         
         Our goal is to make the single audit submission process as easy as possible. To complete your audit, you'll fill out a series of webforms and upload a PDF of your audit reporting package. You'll also submit the SF-SAC as a series of XLSX workbooks.
 
