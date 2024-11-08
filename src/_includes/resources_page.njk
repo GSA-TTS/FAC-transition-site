@@ -36,7 +36,8 @@ layout: layout.njk
     </ul>
 
     {# Full-width FAQ page button, common to resource pages. #}
-    <a class="usa-button radius-lg width-full margin-0 margin-bottom-15 padding-y-4 display-flex flex-column flex-align-center" href="{{faqLink}}">
+    {% if faqLink %}
+    <a class="usa-button radius-lg width-full margin-0 margin-bottom-15 padding-y-4 display-flex flex-column flex-align-center" href="{{ faqLink }}">
         <p class="font-sans-lg text-normal margin-0 display-flex flex-row flex-wrap flex-align-center">
             <span class="tablet:margin-right-1 margin-y-1 tablet:margin-y-0">Still have questions?</span>
             <strong class="">Visit our FAQ page</strong>
@@ -45,4 +46,5 @@ layout: layout.njk
             </svg>
         </p>
     </a>
+    {% endif %}
 </div>
