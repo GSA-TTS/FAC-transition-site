@@ -24,7 +24,15 @@ layout: layout.njk
                         </p>
                     </div>
                     <div class="usa-card__footer padding-top-4">
-                        <a class="usa-button" href="{% if not 'https' in item.data.link %}{{ config.baseUrl}}{% endif %}{{item.data.link}}">
+                        {# If the reference link is local, go right to it with the proper baseUrl. If not, open in a new tab. #}
+                        <a class="usa-button"
+                            {% if not 'https' in item.data.link %}
+                                href="{{ config.baseUrl}}{{item.data.link}}"
+                            {% else %}
+                                href="{{item.data.link}}"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            {% endif %} >
                             {% if item.data.link_text %}
                                 {{ item.data.link_text }}
                             {% else %}
