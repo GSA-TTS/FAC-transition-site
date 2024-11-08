@@ -15,7 +15,7 @@ layout: layout.njk
         {% for item in indexList %}
             <li class="usa-card tablet:grid-col-6 desktop:grid-col-4 padding-x-2">
                 <div class="usa-card__container shadow-1">
-                    <div class="usa-card__header bg-success-lighter">
+                    <div class="usa-card__header bg-success-lighter padding-bottom-3">
                         <h2 class="usa-card__heading font-sans-lg">{{item.data.header}}</h2>
                     </div>
                     <div class="usa-card__body minh-card-lg">
@@ -24,11 +24,21 @@ layout: layout.njk
                         </p>
                     </div>
                     <div class="usa-card__footer padding-top-4">
-                        {% if "https" in item.data.link %}
-                            <a class="usa-button" href="{{item.data.link}}">View</a>
-                        {% else %}
-                            <a class="usa-button" href="{{ config.baseUrl}}{{item.data.link}}">View</a>
-                        {% endif %}
+                        {# If the reference link is local, go right to it with the proper baseUrl. If not, open in a new tab. #}
+                        <a class="usa-button"
+                            {% if not 'https' in item.data.link %}
+                                href="{{ config.baseUrl}}{{item.data.link}}"
+                            {% else %}
+                                href="{{item.data.link}}"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            {% endif %} >
+                            {% if item.data.link_text %}
+                                {{ item.data.link_text }}
+                            {% else %}
+                                View
+                            {% endif %}
+                        </a>
                     </div>
                 </div>
             </li>
@@ -36,7 +46,8 @@ layout: layout.njk
     </ul>
 
     {# Full-width FAQ page button, common to resource pages. #}
-    <a class="usa-button radius-lg width-full margin-0 margin-bottom-15 padding-y-4 display-flex flex-column flex-align-center" href="{{faqLink}}">
+    {% if faqLink %}
+    <a class="usa-button radius-lg width-full margin-0 margin-bottom-15 padding-y-4 display-flex flex-column flex-align-center" href="{{ faqLink }}">
         <p class="font-sans-lg text-normal margin-0 display-flex flex-row flex-wrap flex-align-center">
             <span class="tablet:margin-right-1 margin-y-1 tablet:margin-y-0">Still have questions?</span>
             <strong class="">Visit our FAQ page</strong>
@@ -45,4 +56,5 @@ layout: layout.njk
             </svg>
         </p>
     </a>
+    {% endif %}
 </div>
