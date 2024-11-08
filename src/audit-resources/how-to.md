@@ -10,7 +10,6 @@ terms:
   gfac: GSA FAC
   gfac_url: https://fac.gov/
 walkthrough_date: "20231220"
-inlcude_survey: true
 ---
 
 <div class="usa-in-page-nav-container">
