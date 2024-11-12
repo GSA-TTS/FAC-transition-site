@@ -16,11 +16,11 @@ inlcude_survey: true
 
 # Managing user access
 
-Anyone with access to the audit submission can make changes to the Auditee and Auditor Certifying Officials, as well as add additional Audit Editors. At this time, it’s not possible to remove Audit Editors.
+Anyone with access to the audit submission can modify the Auditee and Auditor Certifying Officials and add additional Audit Editors.
 
-Keep in mind that you may only have one Auditee Certifying Official and Auditor Certifying Official per single audit submission. These may not be the same individuals.
+Keep in mind that each audit submission can have only one Auditee Certifying Official and one Auditor Certifying Official, and these must be different individuals.
 
-The instructions below walk you through making changes to user roles. Once you have completed these steps, **users must log out and log back in to their account for the changes to take effect**.
+The following instructions guide you through the process of changing user roles. **After completing these steps, you must log out and log back in for your changes to take effect.**
 
 <ol>
 {% for item in collections.access %}

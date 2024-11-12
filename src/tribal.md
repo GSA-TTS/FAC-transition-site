@@ -16,11 +16,13 @@ inlcude_survey: true
 
 # Searching Tribal audit submissions
 
-Because Tribal entities have the right to protect their single audit data, only Federal employees with approved access can search and download these audit submissions. 
+Tribal entities have the option to suppress parts of their single audit report data from our public search results. When a Tribal entity exercises this option, only Federal employees with approved access can search and download this protected information.
 
-If you believe you should have access to these audits, [contact the FAC](https://support.fac.gov/hc/en-us/requests/new) via our help desk.
+If you are a Federal employee who needs access to Tribal data via our [web search](https://app.fac.gov/dissemination/search/), please contact your agency's National Single Audit Coordinator (NSAC) or Key Single Audit Management Liaison (KSAML) and ask them to email their written approval to [*support@fac-gov.zendesk.com*](mailto:support@fac-gov.zendesk.com). Once we’ve received their confirmation we will add you to the list of approved users.
 
-The instructions below walk you through searching for Tribal audits.
+To access this suppressed data via our API your agency must request and submit a copy of the Tribal Data API Access Attestation form via the [FAC Helpdesk](https://support.fac.gov/hc/en-us/requests/new). Please visit our [Tribal API page](https://www.fac.gov/api/tribal/) for more information.  
+
+Once you’ve gained access, here is how to search for suppressed Tribal audits via our [web search](https://app.fac.gov/dissemination/search/):
 
 <ol>
 {% for item in collections.tribal %}
