@@ -1,0 +1,23 @@
+{# 
+    Breadcrumbs are determined by a set of nodes.
+    Each node is generated when "eleventyNavigation" is included in the frontmatter of a page.
+    Each node has a key. Each node can, but does not always, have a parent.
+    eleventyNavigationBreadcrumb generates a list of nodes with the relevant URLs. We then display them in order with our styling.
+#}
+
+{# If 'eleventyNavigation' is present, excluding parentless nodes (ie. "Home") #}
+{% if eleventyNavigation and not collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) | length == 0 %}
+    <div>
+        {% for node in collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key, {includeSelf: true}) %}
+            {% if not loop.last %}
+                <a class="usa-link" href="{{ config.baseUrl }}{{ node.url | remove_leading_char }}">{{ node.key }}</a>
+                <svg style="width: 20; height: 20; left: 0px; top: 5px; position: relative"
+                 class="usa-icon text-base" aria-hidden="true" focusable="false" role="img">
+                    <use xlink:href="{{ config.baseUrl }}assets/img/sprite.svg#navigate_next"></use>
+                </svg>
+            {% else %}
+                <span>{{ node.key }}</span>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endif %}

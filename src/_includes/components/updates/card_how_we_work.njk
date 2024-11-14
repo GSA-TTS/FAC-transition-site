@@ -1,0 +1,20 @@
+{# From Figma, simplified via USWDS classes #}
+<div class="width-full tablet:width-card-lg bg-accent-cool-lighter padding-3 margin-top-3
+            display-inline-flex flex-column flex-justify-start flex-align-start
+            border border-base-lighter radius-md">
+    <div class="font-sans-lg text-bold">
+        How we work
+    </div>
+    <img class="padding-top-1"
+         src="{{config.baseUrl}}assets/img/updates/roadmap-08-2024.png"
+         alt="Thumbnail for the FAC roadmap"/>
+    <div class="display-inline-flex flex-justify-start">
+        <span class="font-sans-sm">
+            {% set snippet %}{% include 'components/updates/notifications-how-we-work.md' %}{% endset %}
+            {{ snippet | markdown | safe }}
+        </span>
+    </div>
+    <a class="usa-link padding-top-2" href="https://github.com/orgs/GSA-TTS/projects/11/views/2">
+        <button class="usa-button" type="button">View our progress</button>
+    </a>
+</div>
