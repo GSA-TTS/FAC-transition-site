@@ -1,7 +1,7 @@
 Census,GSAFAC,Type,Column Reference
 AUDITYEAR + DBKEY,report_id,TEXT,gen.report_id
 AUDITYEAR,audit_year,TEXT,gen.audit_year
-DATEFIREWALL,fac_accepted_date,DATE,gen.fac_accepted_date
+FACACCEPTEDDATE,fac_accepted_date,DATE,gen.fac_accepted_date
 TYPEOFENTITY,entity_type,TEXT,gen.entity_type
 FYSTARTDATE,fy_start_date,DATE,gen.fy_start_date
 FYENDDATE,fy_end_date,DATE,gen.fy_end_date
