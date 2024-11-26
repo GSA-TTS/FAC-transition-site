@@ -40,14 +40,14 @@ eleventyComputed:
 
         This guide goes through the submission process step-by-step.
 
-        {% for item in collections.walkthrough %}
+        {% for item in collections.walkthrough | sortAscendingByName %}
             {% if item.data.title | length %}
                     <div class="margin-top-8">
                         <h2 id="{{ item.data.title | slugify }}">{{item.data.title}}</h2>
                         <p>{{item.content | safe }}</p>
                         {% if item.data.image %}
                                 <img class="cursor-pointer" src="{{config.baseUrl}}assets/img/walkthrough/{{walkthrough_date}}/{{item.data.image}}" width=500 style="margin: 1em; border: 1px solid #555;" aria-controls="image-modal-{{item.data.image}}" data-open-modal />
-                                {{ image_modal.modal(item.data.image, 'assets/img/walkthrough/' + walkthrough_date + '/' + item.data.image) }}
+                                {{ image_modal.modal(item.data.image, 'assets/img/walkthrough/' + walkthrough_date + '/' + item.data.image, item.data.alt_text) }}
                         {% endif %}
                     </div>
             {% endif %}

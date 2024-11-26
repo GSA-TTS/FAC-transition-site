@@ -16,13 +16,13 @@ Use like so:
                 style="border: 1px solid #555;"
                 alt="{{ image_alt }}"/>
             <div class="usa-prose">
-            <p id="image-modal-description">
-                {% if image_alt %}
-                    {{ image_alt }}
-                {% else %}
-                    {{ image_name }}
-                {% endif %}
-            </p>
+                <span id="image-modal-description">
+                    {% if image_alt %}
+                        {{ image_alt }}
+                    {% else %}
+                        {{ image_name }}
+                    {% endif %}
+                </span>
             </div>
             <div class="usa-modal__footer">
             <ul class="usa-button-group">
