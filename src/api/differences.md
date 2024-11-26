@@ -128,6 +128,10 @@ differences:
         - census: NOTE_INDEX
           gsa: <em>implicit</em>
           comment: Notes are ordered.
+eleventyComputed:
+  eleventyNavigation:
+    key: Data differences
+    parent: API resources
 ---
 
 

@@ -4,6 +4,10 @@ title: Accessing suppressed Tribal data via the API
 meta:
   name: Accessing Tribal data via the API
   description: How to access suppressed SF-SAC data.
+eleventyComputed:
+  eleventyNavigation:
+    key: Tribal data access
+    parent: API resources
 ---
 
 # Accessing suppressed Tribal data via the API

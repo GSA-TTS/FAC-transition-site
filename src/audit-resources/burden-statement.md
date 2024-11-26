@@ -4,6 +4,10 @@ title: FAC Burden Statement
 meta:
   name: FAC Burden Statement
   description: Review the Burden Statement for the FAC.
+eleventyComputed:
+  eleventyNavigation:
+    key: Burden statement
+    parent: Audit submission resources
 ---
 
 # FAC Burden Statement

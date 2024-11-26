@@ -10,9 +10,13 @@ terms:
   gfac: GSA FAC
   gfac_url: https://fac.gov/
 access_date: "20231226"
-inlcude_survey: true
+include_survey: true
+eleventyComputed:
+  eleventyNavigation:
+    key: Managing user access
+    parent: Audit submission resources
 ---
-
+{% import "components/image_modal.njk" as image_modal with context %}
 
 # Managing user access
 
@@ -41,7 +45,8 @@ The following instructions guide you through the process of changing user roles.
       <div class="grid-col-12 margin-top-8">
 
   {% if item.data.image %}
-      <img src="{{config.baseUrl}}assets/img/access/{{access_date}}/{{item.data.image}}" width=400 style="margin-left: 2em; margin-bottom: 2em; float: right; border: 1px solid #555;"/>
+      <img class="cursor-pointer" src="{{config.baseUrl}}assets/img/access/{{access_date}}/{{item.data.image}}" width=400 style="margin-left: 2em; margin-bottom: 2em; float: right; border: 1px solid #555;" aria-controls="image-modal-{{item.data.image}}" data-open-modal />
+      {{ image_modal.modal(item.data.image, 'assets/img/access/' + access_date + '/' + item.data.image) }}
   {% endif %}
         <h2 id="{{ item.data.title | slugify }}">{{item.data.title}}</h2>
 

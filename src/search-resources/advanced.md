@@ -4,6 +4,10 @@ title: FAC advanced search resources
 meta:
   name: FAC advanced search resources
   description: Find resources and instructions for using the advanced search tool from the FAC.
+eleventyComputed:
+  eleventyNavigation:
+    key: Advanced search filters
+    parent: Search resources
 ---
 
 # Advanced search filters

@@ -7,6 +7,10 @@ faqLink: https://support.fac.gov/hc/en-us
 meta:
   name: FAC API resources
   description: Find resources for making the most of the FAC API to download single audit data.
+eleventyComputed:
+  eleventyNavigation:
+    key: API resources
+    parent: Home
 ---
 
 The FAC API shares public data from submitted audit reports.

@@ -4,6 +4,10 @@ title: Retrieving many results from the FAC API
 meta:
   name: Retrieving many results from the FAC API
   description: How to use pagination
+eleventyComputed:
+  eleventyNavigation:
+    key: Results management
+    parent: API resources
 ---
 
 # Retriving many results from the FAC API

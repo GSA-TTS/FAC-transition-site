@@ -1,0 +1,57 @@
+{# Image modal content - Macro to be imported elsewhere
+Use like so:
+{% import "components/image_modal.njk" as image_modal with context %}
+{{ image_modal.modal(image_path, image_alt) }} #}
+{% macro modal(image_name, image_path, image_alt='') %}
+<div class="usa-modal usa-modal--lg"
+        id="image-modal-{{image_name}}"
+        aria-labelledby="image-modal-heading"
+        aria-describedby="image-modal-description">
+    <div class="usa-modal__content">
+        <div class="padding-x-4 padding-bottom-4">
+            <h2 class="usa-modal__heading" id="image-modal-heading">
+            Image
+            </h2>
+            <img src="{{config.baseUrl}}{{image_path}}"
+                style="border: 1px solid #555;"
+                alt="{{ image_alt }}"/>
+            <div class="usa-prose">
+            <p id="image-modal-description">
+                {% if image_alt %}
+                    {{ image_alt }}
+                {% else %}
+                    {{ image_name }}
+                {% endif %}
+            </p>
+            </div>
+            <div class="usa-modal__footer">
+            <ul class="usa-button-group">
+                <li class="usa-button-group__item">
+                <button type="button"
+                        class="usa-button"
+                        data-close-modal >
+                    Go back
+                </button>
+                </li>
+                <li class="usa-button-group__item">
+                <a class="usa-button usa-button--unstyled padding-105 text-center"
+                    href="{{ config.baseUrl }}{{ image_path }}"
+                    target=_blank
+                    rel="noopener noreferrer">
+                    Open image in a new tab
+                </a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <button type="button"
+            class="usa-button usa-modal__close"
+            aria-label="Close this window"
+            data-close-modal>
+            <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+            <use xlink:href="{{ config.baseUrl }}assets/img/sprite.svg#close"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+{% endmacro %}
