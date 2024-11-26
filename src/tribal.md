@@ -29,7 +29,7 @@ To access this suppressed data via our API your agency must request and submit a
 Once you’ve gained access, here is how to search for suppressed Tribal audits via our [web search](https://app.fac.gov/dissemination/search/):
 
 <ol>
-{% for item in collections.tribal %}
+{% for item in collections.tribal | sortAscendingByName %}
   {% if item.data.title | length %}
   <li>
     <a href="#{{item.data.title | slugify }}">{{item.data.title}}</a>
@@ -39,7 +39,7 @@ Once you’ve gained access, here is how to search for suppressed Tribal audits 
 
 <div class="grid-container">
 
-{% for item in collections.tribal %}
+{% for item in collections.tribal | sortAscendingByName %}
 
   {% if item.data.title | length %}
 

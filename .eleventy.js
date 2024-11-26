@@ -57,6 +57,13 @@ module.exports = function (eleventyConfig) {
     return contents.slice(1, contents.length);
   });
 
+  // Sort an array by path name. Used to ensure collections are sorted by 01, 02, ... Rather than by creation date.
+	eleventyConfig.addFilter("sortAscendingByName", function (array) {
+		return array.sort(function (a, b) {
+			return a.inputPath.localeCompare(b.inputPath);
+		});
+	});
+
   const md = new markdownIt({
     html: true,
   });
