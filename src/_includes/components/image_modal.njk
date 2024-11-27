@@ -9,9 +9,10 @@ Use like so:
         aria-describedby="image-modal-description">
     <div class="usa-modal__content">
         <div class="padding-x-4 padding-bottom-4">
-            <h2 class="usa-modal__heading" id="image-modal-heading">
+            {# This is <p>, instead of <h2>. This is so it doesn't break certain components like the in-page nav, or mess with ordering on alternate viewing options #}
+            <p class="usa-modal__heading" id="image-modal-heading">
             Image
-            </h2>
+            </p>
             <img src="{{config.baseUrl}}{{image_path}}"
                 style="border: 1px solid #555;"
                 alt="{{ image_alt }}"/>
