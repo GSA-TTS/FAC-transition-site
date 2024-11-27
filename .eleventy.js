@@ -24,13 +24,13 @@ const hashCode = function (s) {
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
-  
+
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("robots.txt");
 
   eleventyConfig.addPlugin(pluginRss);
-	eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   eleventyConfig.addFilter("hashcode", (s) => hashCode(s));
   eleventyConfig.addFilter("markdown", (markdownString) =>
@@ -47,22 +47,22 @@ module.exports = function (eleventyConfig) {
   );
   // Limit a collection to the first N items
   // Usage: {{ collection | limit(N) }}
-  eleventyConfig.addFilter("limit", function(array, limit) {
+  eleventyConfig.addFilter("limit", function (array, limit) {
     return array.slice(0, limit);
   });
   // Remove the first character from a string
   // Usage: {{ string | remove_leading_char }}
   // Ex. "/href/" -> "href/"
-  eleventyConfig.addFilter("remove_leading_char", function(contents) {
+  eleventyConfig.addFilter("remove_leading_char", function (contents) {
     return contents.slice(1, contents.length);
   });
 
   // Sort an array by path name. Used to ensure collections are sorted by 01, 02, ... Rather than by creation date.
-	eleventyConfig.addFilter("sortAscendingByName", function (array) {
-		return array.sort(function (a, b) {
-			return a.inputPath.localeCompare(b.inputPath);
-		});
-	});
+  eleventyConfig.addFilter("sortAscendingByName", function (array) {
+    return array.sort(function (a, b) {
+      return a.inputPath.localeCompare(b.inputPath);
+    });
+  });
 
   const md = new markdownIt({
     html: true,
