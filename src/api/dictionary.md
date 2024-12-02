@@ -26,6 +26,10 @@ formerly:
   - cpas
   - ueis
   - eins
+eleventyComputed:
+  eleventyNavigation:
+    key: Data dictionary
+    parent: API resources
 ---
 
 # Data dictionary

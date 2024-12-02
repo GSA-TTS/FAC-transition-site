@@ -4,6 +4,10 @@ title: SF-SAC workbooks
 meta:
   name: SF-SAC workbooks
   description: Download the workbooks necessary to complete the SF-SAC.
+eleventyComputed:
+  eleventyNavigation:
+    key: SF-SAC workbooks
+    parent: Audit submission resources
 ---
 
 # SF-SAC workbooks

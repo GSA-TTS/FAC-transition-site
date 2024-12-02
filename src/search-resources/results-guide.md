@@ -4,6 +4,10 @@ title: FAC search results guide
 meta:
   name: FAC search results guide
   description: Learn how to read and interpret the search results tables from the FAC.
+eleventyComputed:
+  eleventyNavigation:
+    key: Results guide
+    parent: Search resources
 ---
 
 # Interpreting the search results table

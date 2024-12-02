@@ -4,6 +4,10 @@ title: FAC API versioning
 meta:
   name: FAC API versioning
   description: Learn how the FAC manages versions of the FAC API.
+eleventyComputed:
+  eleventyNavigation:
+    key: API versioning
+    parent: API resources
 ---
 
 # FAC API versioning

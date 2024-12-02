@@ -4,6 +4,10 @@ title: Uniform Guidance
 meta:
   name: FAC Uniform Guidance
   description: Review the Uniform Guidance for the FAC.
+eleventyComputed:
+  eleventyNavigation:
+    key: Uniform guidance
+    parent: Home
 ---
 
 # Uniform Guidance

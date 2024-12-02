@@ -4,6 +4,10 @@ title: Using the FAC API
 meta:
   name: Using the FAC API
   description: Begin using the FAC API by learning more about our endpoints and test scenarios.
+eleventyComputed:
+  eleventyNavigation:
+    key: Getting started
+    parent: API resources
 ---
 
 # Using the FAC API

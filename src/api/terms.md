@@ -3,6 +3,10 @@ layout: home.njk
 title: FAC API terms and conditions
 name: FAC API terms and conditions
 description: Read the terms and conditions of accessing single audit data via the FAC API.
+eleventyComputed:
+  eleventyNavigation:
+    key: Terms & conditions
+    parent: API resources
 ---
 
 # FAC API terms and conditions

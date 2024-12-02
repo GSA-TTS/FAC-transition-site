@@ -3,16 +3,17 @@ layout: layout.njk
 ---
 
 <div class="grid-container margin-y-4">
+    {% include 'components/breadcrumbs.njk' %}
     {# Title and description, separated by a horizontal rule. #}
     <h1 class="font-sans-2xl">{{header}}</h1>
     <hr>
     <div class="font-sans-lg">{{content | safe}}</div>
 
-    {# Cards are generated from the current pages 'collectionName'. 
+    {# Cards are generated from the current pages 'collectionName'.
     To add more cards, navigate to collections and ensure the tags match up with the pages collectionName. #}
     <ul class="resources usa-card-group margin-top-8 margin-bottom-4">
         {% set indexList = collections[collectionName] %}
-        {% for item in indexList %}
+        {% for item in indexList | sortAscendingByName %}
             <li class="usa-card tablet:grid-col-6 desktop:grid-col-4 padding-x-2">
                 <div class="usa-card__container shadow-1">
                     <div class="usa-card__header bg-success-lighter padding-bottom-3">

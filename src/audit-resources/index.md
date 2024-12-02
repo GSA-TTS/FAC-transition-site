@@ -7,6 +7,10 @@ faqLink: https://support.fac.gov/hc/en-us/categories/18291221922829-Audit-Submis
 meta:
   name: Audit submission resources
   description: Tools and resources for successfully submiting your single audit package to the Federal Audit Clearinghouse.
+eleventyComputed:
+  eleventyNavigation:
+    key: Audit submission resources
+    parent: Home
 ---
 
 We’re here to help make your audit submission as easy as possible. Use our submission resources to complete the process.

@@ -4,6 +4,10 @@ title: Compliance supplements
 meta:
   name: FAC Compliance supplements
   description: Download compliance information relating to the single audit submission process for the FAC.
+eleventyComputed:
+  eleventyNavigation:
+    key: Compliance supplements
+    parent: Home
 ---
 
 # Compliance supplements

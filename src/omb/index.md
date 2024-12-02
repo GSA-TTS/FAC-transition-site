@@ -4,6 +4,10 @@ title: OMB Announcements
 meta:
   name: OMB Announcements
   description: Announcements and deadline information from the Office of Management and Budget.
+eleventyComputed:
+  eleventyNavigation:
+    key: OMB announcements
+    parent: Home
 ---
 
 # OMB Announcements

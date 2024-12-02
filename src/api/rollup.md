@@ -66,6 +66,10 @@ rollups:
         censusdesc: >
             Indicate whether or not the report includes a Summary Schedule of Prior Year Audit Findings
         code: https://github.com/GSA-TTS/fac-api-examples/tree/main/rollups/08-pysched
+eleventyComputed:
+  eleventyNavigation:
+    key: Rollup fields
+    parent: API resources
 ---
 
 {% macro rollup(tag) %}

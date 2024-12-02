@@ -4,6 +4,10 @@ title: FAC basic search resources
 meta:
   name: FAC basic search resources
   description: Find resources and instructions for searching single audit data.
+eleventyComputed:
+  eleventyNavigation:
+    key: Basic search filters
+    parent: Search resources
 ---
 
 # Basic search filters

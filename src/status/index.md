@@ -4,6 +4,10 @@ title: FAC system status
 meta:
   name: FAC system status
   description: Track the operating status of the FAC, both for audit submission and search.
+eleventyComputed:
+  eleventyNavigation:
+    key: System status
+    parent: Home
 ---
 # FAC system status
 
