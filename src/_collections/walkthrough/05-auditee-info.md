@@ -1,7 +1,7 @@
 ---
 tags: walkthrough
 title: Auditee information
-image: walkthrough_05.png
+image: walkthrough/walkthrough_05.png
 alt_text: "A screenshot of the FAC auditee information page. On the center left, there are three text input fields. From top to bottom: Entity UEI, Fiscal period start date, and Fiscal period end date."
 ---
 

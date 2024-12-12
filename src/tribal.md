@@ -46,8 +46,8 @@ Once you’ve gained access, here is how to search for suppressed Tribal audits 
       <div class="grid-col-12 margin-top-8">
 
   {% if item.data.image %}
-      <img class="cursor-pointer" src="{{config.baseUrl}}assets/img/tribal/{{item.data.image}}" width=400 style="margin-left: 2em; margin-bottom: 2em; float: right; border: 1px solid #555;" aria-controls="image-modal-{{item.data.image}}" data-open-modal />
-      {{ image_modal.modal(item.data.image, 'assets/img/tribal/' + item.data.image) }}
+      <img class="cursor-pointer" src="{{config.baseUrl}}assets/img/{{item.data.image}}" width=400 style="margin-left: 2em; margin-bottom: 2em; float: right; border: 1px solid #555;" aria-controls="image-modal-{{item.data.image}}" data-open-modal />
+      {{ image_modal.modal(item.data.image, 'assets/img/' + item.data.image) }}
   {% endif %}
         <h2 id="{{ item.data.title | slugify }}">{{item.data.title}}</h2>
 

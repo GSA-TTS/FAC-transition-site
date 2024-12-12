@@ -1,7 +1,7 @@
 ---
 tags: walkthrough
 title: Getting started
-image: walkthrough_01.png
+image: walkthrough/walkthrough_01.png
 alt_text: A screenshot of the FAC home page. In the top right, the "sign in" button.
 ---
 

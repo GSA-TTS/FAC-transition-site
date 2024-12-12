@@ -1,7 +1,7 @@
 ---
 tags: walkthrough
 title: Audit access
-image: walkthrough_06.png
+image: walkthrough/walkthrough_06.png
 alt_text: "A screenshot of the FAC audit submission access page. There are four sets of text input fields. Each set requests an email address, and a confirmation of the same address. From top to bottom, the sets are titled: Auditee certifying official, Auditor certifying official, Auditee contacts, Auditor contacts."
 ---
 
@@ -12,7 +12,3 @@ Enter the email address for everyone who will need to edit the audit submission.
 If you need to make changes to users after creating the audit submission, you can find instructions on [our manage user access page]({{ config.baseUrl }}audit-resources/user-access).
 
 The FAC doesn't notify users when they've been added to a submission. We recommend notifying them yourself.
-
-
-
-
