@@ -1,7 +1,7 @@
 ---
 tags: walkthrough
 title: Logging in with Login.gov
-image: walkthrough/walkthrough_02.png
+image: shared/login.png
 alt_text: "A screenshot of the Login.gov login page. From top to bottom: an email address input, a password input, a 'Sign in' button, and a 'Create an Account' button."
 ---
 
