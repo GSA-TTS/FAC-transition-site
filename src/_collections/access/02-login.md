@@ -1,7 +1,7 @@
 ---
 tags: access
 title: Logging in with Login.gov
-image: walkthrough_02.png
+image: shared/login.png
 ---
 
 To make changes to your single audit, you **must** have an account with [Login.gov](http://login.gov) and have pre-approved access to these audits.

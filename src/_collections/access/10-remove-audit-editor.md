@@ -1,7 +1,7 @@
 ---
 tags: access
-title: "Manage user roles: adding new Audit Editor"
-image: user-access_remove-editor.png
+title: "Manage user roles: removing an Audit Editor"
+image: access/user-access-10-remove-editor.png
 ---
 
 To remove an Audit Editor, click "Remove" next to their name in the table. 

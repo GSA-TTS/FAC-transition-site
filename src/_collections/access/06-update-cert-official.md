@@ -1,7 +1,7 @@
 ---
 tags: access
 title: Updating Certifying Official
-image: user-access_update-certifying-official.png
+image: access/user-access-06-update-certifying-official.png
 ---
 
 Each audit submission can have only one Auditor Certifying Official and one Auditee Certifying Official. Submitting a new official will replace the current one.

@@ -1,7 +1,7 @@
 ---
 tags: walkthrough
 title: Upload the audit reporting package PDF
-image: walkthrough_10.png
+image: walkthrough/walkthrough-10-pdf.png
 alt_text: "A screenshot of the FAC single audit upload page. At the top of the image, formatting requirements are listed for a FAC-compliant PDF. Below the instructions, eleven text inputs ask for the page numbers of certain elements. Below the text inputs is a file input element."
 ---
 
@@ -22,5 +22,3 @@ The reporting package must include the:
 **Make sure to remove all Personally Identifiable Information (PII) before uploading your PDF.**
 
 PII includes but is not limited to Social Security Numbers, account numbers, vehicle identification numbers, copies of canceled checks, student names, dates of birth, personal addresses, or personal phone numbers.
-
-
