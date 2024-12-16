@@ -17,11 +17,10 @@
         <meta name="{{meta.name}}" description="{{meta.description}}">
         <link rel="icon" type="image/x-icon" href="{{ config.baseUrl }}assets/img/favicons/icon_logo.svg" />
         <link rel="stylesheet" href="{{ config.baseUrl }}assets/css/styles.css" media="all" type="text/css">
-
-        {# Add Qualtrics feedback form to every page #}
-        {% include './components/qualtrics.njk' %}
-        
         <title>{{ title }}</title>
+
+        {# Add Qualtrics feedback form to every page. Leave the snippet at the bottom of the head, as it adds to the top of the body and moves things around. #}
+        {% include './components/qualtrics.njk' %}
     </head>
 
     <body>
