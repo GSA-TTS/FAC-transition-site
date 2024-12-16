@@ -1,7 +1,7 @@
 ---
 tags: walkthrough
 title: Audit certification process
-image: walkthrough/walkthrough_16.png
+image: walkthrough/walkthrough-16-certification.png
 ---
 
 After you've completed the pre-certification validation, you can begin the certification process.

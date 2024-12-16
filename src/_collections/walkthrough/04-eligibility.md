@@ -1,7 +1,7 @@
 ---
 tags: walkthrough
 title: Submission eligibility
-image: walkthrough/walkthrough_04.png
+image: walkthrough/walkthrough-04-eligibility.png
 alt_text: "A screenshot of the FAC submission eligibilty page. One multiple choice question and three true or false questions ask if an entity meets the single audit criteria."
 ---
 

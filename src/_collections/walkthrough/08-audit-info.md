@@ -1,7 +1,7 @@
 ---
 tags: walkthrough
 title: Audit information form
-image: walkthrough/walkthrough_08.png
+image: walkthrough/walkthrough-08-audit-info.png
 alt_text: "A screenshot of the FAC audit information page. A series of questions determines details on the audit. The two sections are labeled 'Financial statements' and 'Federal programs'."
 ---
 

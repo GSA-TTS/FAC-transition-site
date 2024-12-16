@@ -1,7 +1,7 @@
 ---
 tags: walkthrough
 title: Lock for certification
-image: walkthrough/walkthrough_14.png
+image: walkthrough/walkthrough-14-lock.png
 ---
 
 After validation, you'll lock your single audit submission for certification. 

@@ -28,7 +28,7 @@ Each column can also be sorted, using the up or down arrows at the top of the co
 
 The "Download all" button above the table will combine the SF-SAC summary results for every audit in the search results, up to 1,000 results, into a single download file.
 
-<img src="{{ config.baseUrl }}assets/img/search/searchresults.png"  alt="A screenshot of an example search results table from the FAC. The column headers, from left to right, read: 'Name', 'UEI or EIN', 'Acc Date', 'AY', 'Cog or Over', 'View', and 'PDF'."/>
+<img src="{{ config.baseUrl }}assets/img/search/search-results.png"  alt="A screenshot of an example search results table from the FAC. The column headers, from left to right, read: 'Name', 'UEI or EIN', 'Acc Date', 'AY', 'Cog or Over', 'View', and 'PDF'."/>
 
 ## <a name=name></a>Name column
 

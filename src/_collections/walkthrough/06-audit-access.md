@@ -1,7 +1,7 @@
 ---
 tags: walkthrough
 title: Audit access
-image: walkthrough/walkthrough_06.png
+image: walkthrough/walkthrough-06-audit-access.png
 alt_text: "A screenshot of the FAC audit submission access page. There are four sets of text input fields. Each set requests an email address, and a confirmation of the same address. From top to bottom, the sets are titled: Auditee certifying official, Auditor certifying official, Auditee contacts, Auditor contacts."
 ---
 

@@ -1,7 +1,7 @@
 ---
 tags: walkthrough
 title: General information form
-image: walkthrough/walkthrough_07.png
+image: walkthrough/walkthrough-07-general-info.png
 alt_text: "A screenshot of the FAC general information page. The first three sections are visible. From top to bottom, they read: Fiscal Period, Type of audit, Audit period."
 ---
 
