@@ -23,7 +23,6 @@ pagination:
   <div class="tablet:grid-col-3">
     {% include 'components/updates/card_grantees_auditors.njk' %}
     {% include 'components/updates/card_agencies.njk' %}
-    {% include 'components/updates/card_subscribe.njk' %}
     {% include 'components/updates/card_how_we_work.njk' %}
   </div>
 
@@ -41,7 +40,7 @@ pagination:
               {% if post.data.image_path %}
                 <img src="{{config.baseUrl}}{{post.data.image_path}}" width=80 height=60 style="border: 1px solid #555;" alt="{{post.data.image_caption}}"/>
               {% endif %}
-              
+
               {# If there's an image, we want this div slightly smaller. #}
               <div class="{% if post.data.image_path %} grid-col-9 {% endif %}
                           tablet:grid-col-10 padding-left-2">
@@ -60,12 +59,12 @@ pagination:
                 {% endif %}
               </div>
             </div>
-            
+
             <div class="margin-top-2 flex-align-self-stretch height-0 border border-black"></div>
           </div>
         {% endfor %}
       </div>
-      
+
       <nav aria-label="Pagination" class="usa-pagination bg-base-lightest">
         <ul class="usa-pagination__list">
           {% if pagination.href.previous %}
