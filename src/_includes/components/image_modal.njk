@@ -1,7 +1,7 @@
 {# Image modal content - Macro to be imported elsewhere
 Use like so:
 {% import "components/image_modal.njk" as image_modal with context %}
-{{ image_modal.modal(image_path, image_alt) }} #}
+{{ image_modal.modal(image_name, image_path, image_alt) }} #}
 {% macro modal(image_name, image_path, image_alt='') %}
 <div class="usa-modal usa-modal--lg"
      id="image-modal-{{image_name}}"
