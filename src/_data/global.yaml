@@ -45,8 +45,8 @@ navigation:
       links:
         - text: FAC Helpdesk
           href: 'https://support.fac.gov/hc/en-us'
-        - text: FAQ
-          href: 'faq'
+        - text: Contact resources
+          href: 'contact-resources'
         - text: Cognizant agency contacts
           href: 'contact-resources/cognizant-agency-contacts'
         - text: NSAC and KMSAL contacts
