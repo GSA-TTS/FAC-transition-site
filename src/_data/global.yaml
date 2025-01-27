@@ -5,18 +5,16 @@ navigation:
     - text: Audit search
       id: search
       links:
-        - text: Basic search
+        - text: Search
           href: 'https://app.fac.gov/dissemination/search/'
-        - text: Advanced search
-          href: 'https://app.fac.gov/dissemination/search/advanced'
-        - text: Searching Tribal Audits
-          href: 'tribal'
-        - text: Search filters
-          href: 'search-resources/filters'
+        - text: Search resources
+          href: 'search-resources'
+        - text: Developer resources
+          href: 'api'
         - text: Data reliability
           href: 'data-reliability'
-        - text: Developer API resources
-          href: 'api'
+        - text: Tribal audits
+          href: 'tribal'
     - text: Audit submission
       id: audits
       links:
@@ -24,10 +22,6 @@ navigation:
           href: 'audit-resources'
         - text: Submission home
           href: https://app.fac.gov/openid/login/
-        - text: Submission guide
-          href: 'audit-resources/how-to'
-        - text: SF-SAC workbooks
-          href: 'audit-resources/sf-sac'
     - text: Updates & News
       id: news
       links:
@@ -44,7 +38,7 @@ navigation:
           href: 'compliance'
         - text: Uniform guidance
           href: 'uniform-guidance'
-        - text: FAC Burden statement
+        - text: Burden statement
           href: 'audit-resources/burden-statement'
     - text: Contacts
       id: contact
