@@ -21,8 +21,12 @@
                                             <span class="usa-footer__primary-link">{{ category.text }}</span>
                                             <ul class="usa-list usa-list--unstyled">
                                                 {% for link in category.links %}
+                                                {% set linkUrl = link.href %}
+                                                {% if not '://' in linkUrl %}
+                                                    {% set linkUrl = [config.baseUrl, link.href] | join %}
+                                                {% endif %}
                                                 <li class="usa-footer__secondary-link">
-                                                    <a href="{{ link.href }}"
+                                                    <a href="{{ linkUrl }}"
                                                     rel="noopener noreferrer">{{ link.text }}</a>
                                                 </li>
                                                 {% endfor %}

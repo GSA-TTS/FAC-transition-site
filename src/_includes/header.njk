@@ -35,6 +35,9 @@
                                     {% for link in section.links %}
                                         <li class="usa-nav__submenu-item">
                                             {% set linkUrl = link.href %}
+                                            {% if not '://' in linkUrl %}
+                                                {% set linkUrl = [config.baseUrl, link.href] | join %}
+                                            {% endif %}
                                             <a href="{{ linkUrl }}" {{ ["target=", link.target] | join if link.target }}>{{ link.text }}</a>
                                         </li>
                                     {% endfor %}

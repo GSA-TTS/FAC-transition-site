@@ -10,50 +10,50 @@ navigation:
         - text: Advanced search
           href: 'https://app.fac.gov/dissemination/search/advanced'
         - text: Tribal audit search
-          href: '/tribal'
+          href: 'tribal'
         - text: Search resources
-          href: '/search-resources'
+          href: 'search-resources'
         - text: Developer API resources
-          href: '/api'
+          href: 'api'
         - text: Data reliability
-          href: '/data-reliability'
+          href: 'data-reliability'
     - text: Audit submission
       id: audits
       links:
         - text: Submission resources
-          href: '/audit-resources'
+          href: 'audit-resources'
         - text: Submission home
           href: https://app.fac.gov/openid/login/
         - text: Submission guide
-          href: '/audit-resources/how-to'
+          href: 'audit-resources/how-to'
         - text: SF-SAC workbooks
-          href: '/audit-resources/sf-sac'
+          href: 'audit-resources/sf-sac'
     - text: Updates & News
       id: news
       links:
         - text: FAC updates
-          href: '/updates'
+          href: 'updates'
         - text: OMB announcements
-          href: '/omb'
+          href: 'omb'
         - text: System status
-          href: '/status'
+          href: 'status'
     - text: Policy & Compliance
       id: policy
       links:
         - text: Compliance
-          href: '/compliance'
+          href: 'compliance'
         - text: Uniform guidance
-          href: '/uniform-guidance'
+          href: 'uniform-guidance'
         - text: FAC Burden statement
-          href: '/audit-resources/burden-statement'
+          href: 'audit-resources/burden-statement'
     - text: Contacts
       id: contact
       links:
         - text: Contact resources
-          href: '/contact-resources'
+          href: 'contact-resources'
         - text: FAC Helpdesk
           href: 'https://support.fac.gov/hc/en-us'
         - text: Cognizant agency contacts
-          href: '/contact-resources/cognizant-agency-contacts'
+          href: 'contact-resources/cognizant-agency-contacts'
         - text: NSAC and KMSAL contacts
-          href: '/assets/agency-contacts/2024-agency-contacts.pdf'
+          href: 'assets/agency-contacts/2024-agency-contacts.pdf'
