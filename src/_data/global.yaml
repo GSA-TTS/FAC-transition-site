@@ -4,17 +4,19 @@ navigation:
   primary:
     - text: Audit search
       id: search
-      links: 
-        - text: Search
+      links:
+        - text: Basic search
           href: 'https://app.fac.gov/dissemination/search/'
+        - text: Advanced search
+          href: 'https://app.fac.gov/dissemination/search/advanced'
+        - text: Tribal audit search
+          href: 'tribal'
         - text: Search resources
           href: 'search-resources'
-        - text: Developer resources
+        - text: Developer API resources
           href: 'api'
         - text: Data reliability
           href: 'data-reliability'
-        - text: Tribal audits
-          href: 'tribal'
     - text: Audit submission
       id: audits
       links:
@@ -22,6 +24,10 @@ navigation:
           href: 'audit-resources'
         - text: Submission home
           href: https://app.fac.gov/openid/login/
+        - text: Submission guide
+          href: 'audit-resources/how-to'
+        - text: SF-SAC workbooks
+          href: 'audit-resources/sf-sac'
     - text: Updates & News
       id: news
       links:
@@ -38,5 +44,16 @@ navigation:
           href: 'compliance'
         - text: Uniform guidance
           href: 'uniform-guidance'
-        - text: Burden statement
+        - text: FAC Burden statement
           href: 'audit-resources/burden-statement'
+    - text: Contacts
+      id: contact
+      links:
+        - text: Contact resources
+          href: 'contact-resources'
+        - text: FAC Helpdesk
+          href: 'https://support.fac.gov/hc/en-us'
+        - text: Cognizant agency contacts
+          href: 'contact-resources/cognizant-agency-contacts'
+        - text: NSAC and KMSAL contacts
+          href: 'assets/agency-contacts/2024-agency-contacts.pdf'

@@ -1,4 +1,46 @@
-<footer class="usa-footer">
+<footer class="usa-footer usa-footer--big">
+    <div class="usa-footer__primary-section">
+        <div class="grid-container">
+            <div class="grid-row grid-gap">
+                <div class="tablet:grid-col-12">
+                    <nav class="usa-footer__nav" aria-label="Footer navigation">
+                        <div class="grid-row grid-gap">
+                            <div class="usa-logo__footer mobile-lg:grid-col desktop:grid-col">
+                                <div class="usa-logo-link">
+                                    <em class="usa-logo__text grid-row">
+                                    </em>
+                                </div>
+                                <p>The Federal Audit Clearinghouse (FAC) is the place to submit and review federal grant audits.</p>
+                            </div>
+                            {% for category in global.navigation.primary %}
+                                {% if category.links %}
+                                    <div class="mobile-lg:grid-col desktop:grid-col">
+                                        <section
+                                        class="usa-footer__primary-content usa-footer__primary-content--collapsible"
+                                        >
+                                            <span class="usa-footer__primary-link">{{ category.text }}</span>
+                                            <ul class="usa-list usa-list--unstyled">
+                                                {% for link in category.links %}
+                                                {% set linkUrl = link.href %}
+                                                {% if not '://' in linkUrl %}
+                                                    {% set linkUrl = [config.baseUrl, link.href] | join %}
+                                                {% endif %}
+                                                <li class="usa-footer__secondary-link">
+                                                    <a href="{{ linkUrl }}"
+                                                    rel="noopener noreferrer">{{ link.text }}</a>
+                                                </li>
+                                                {% endfor %}
+                                            </ul>
+                                        </section>
+                                    </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="usa-identifier">
         <section class="usa-identifier__section usa-identifier__section--masthead">
             <div class="usa-identifier__container">
