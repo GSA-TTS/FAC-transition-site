@@ -1,0 +1,46 @@
+---
+layout: layout.njk
+---
+
+<div class="grid-container margin-y-4">
+    {% include 'components/breadcrumbs.njk' %}
+    {# Title and description, separated by a horizontal rule. #}
+    <h1 class="font-sans-2xl">{{header}}</h1>
+    <hr>
+    <div class="font-sans-lg">{{content | safe}}</div>
+
+    {# Cards are generated from the current pages 'collectionName'.
+    To add more cards, navigate to collections and ensure the tags match up with the pages collectionName. #}
+    <ul class="resources usa-card-group margin-top-8 margin-bottom-4">
+        {% set indexList = collections[collectionName] %}
+        {% for item in indexList | sortAscendingByName %}
+            <li class="usa-card">
+                <div class="usa-card__header">
+                    <h2 class="usa-card__heading font-sans-lg">{{item.data.header}}</h2>
+                </div>
+                <div class="usa-card__body">
+                    <p>
+                        {{item.data.description}}
+                    </p>
+                </div>
+                <div class="usa-card__footer">
+                    {# If the reference link is local, go right to it with the proper baseUrl. If not, open in a new tab. #}
+                    <a class="usa-button"
+                        {% if not 'https' in item.data.link %}
+                            href="{{ config.baseUrl}}{{item.data.link}}"
+                        {% else %}
+                            href="{{item.data.link}}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        {% endif %} >
+                        {% if item.data.link_text %}
+                            {{ item.data.link_text }}
+                        {% else %}
+                            View
+                        {% endif %}
+                    </a>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
