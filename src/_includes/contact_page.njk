@@ -8,60 +8,60 @@ layout: home.njk
 <div class="font-sans-lg">{{content | safe}}</div>
 
 <div class="grid-row">
-    <div class="tablet:grid-col-8 padding-right-4">
-        <div class="display-flex flex-column flex-align-stretch border-base-lighter radius-md">
-            {# Cards are generated from the current pages 'collectionName'.
-            To add more cards, navigate to collections and ensure the tags match up with the pages collectionName. #}
-            <div class="display-inline-flex flex-column flex-align-start flex-justify-start">
-                {% set indexList = collections[collectionName] %}
-                {% for item in indexList | sortAscendingByName %}
-                    <div class="padding-bottom-4 flex-align-self-stretch">
-                        <div class="grid-row">
-                            {% if item.data.image_path %}
-                                <img src="{{config.baseUrl}}{{item.data.image_path}}"/>
-                            {% endif %}
+  <div class="tablet:grid-col-8 padding-right-4">
+    <div class="display-flex flex-column flex-align-stretch border-base-lighter radius-md">
+      {# Cards are generated from the current pages 'collectionName'.
+      To add more cards, navigate to collections and ensure the tags match up with the pages collectionName. #}
+      <div class="display-inline-flex flex-column flex-align-start flex-justify-start">
+        {% set indexList = collections[collectionName] %}
+        {% for item in indexList | sortAscendingByName %}
+          <div class="padding-bottom-4 flex-align-self-stretch">
+            <div class="grid-row">
+              {% if item.data.image_path %}
+                <img src="{{config.baseUrl}}{{item.data.image_path}}"/>
+              {% endif %}
 
-                            <div class="grid-col-9 tablet:grid-col-10 padding-left-2">
-                                {% if item.data.header %}
-                                    <h2 class="margin-top-0">{{item.data.header}}</h2>
-                                {% endif %}
+              <div class="grid-col-9 tablet:grid-col-10 padding-left-2">
+                {% if item.data.header %}
+                  <h2 class="margin-top-0">{{item.data.header}}</h2>
+                {% endif %}
 
-                                {% if item.content %}
-                                    <div class="font-sans-sm margin-y-2">
-                                        {{item.content | safe}}
-                                    </div>
-                                {% endif %}
+                {% if item.content %}
+                  <div class="font-sans-sm margin-y-2">
+                    {{item.content | safe}}
+                  </div>
+                {% endif %}
 
-                                {% if item.data.link and item.data.link_text %}
-                                    <div>
-                                        {# If the reference link is local, go right to it with the proper baseUrl. If not, open in a new tab. #}
-                                        <a class="usa-button"
-                                            {% if not 'https' in item.data.link %}
-                                                href="{{ config.baseUrl}}{{item.data.link}}"
-                                            {% else %}
-                                                href="{{item.data.link}}"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                            {% endif %} >
-                                            {% if item.data.link_text %}
-                                                {{ item.data.link_text }}
-                                            {% else %}
-                                                View
-                                            {% endif %}
-                                        </a>
-                                    </div>
-                                {% endif %}
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="margin-bottom-3 flex-align-self-stretch height-0 border border-black"></div>
-                {% endfor %}
+                {% if item.data.link and item.data.link_text %}
+                  <div>
+                    {# If the reference link is local, go right to it with the proper baseUrl. If not, open in a new tab. #}
+                    <a class="usa-button"
+                      {% if not 'https' in item.data.link %}
+                        href="{{ config.baseUrl}}{{item.data.link}}"
+                      {% else %}
+                        href="{{item.data.link}}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      {% endif %} >
+                      {% if item.data.link_text %}
+                        {{ item.data.link_text }}
+                      {% else %}
+                        View
+                      {% endif %}
+                    </a>
+                  </div>
+                {% endif %}
+              </div>
             </div>
-        </div>
-    </div>
+          </div>
 
-    <div class="tablet:grid-col-4">
-        {% include 'components/updates/step_by_step_guides.njk' %}
+          <div class="margin-bottom-3 flex-align-self-stretch height-0 border border-black"></div>
+        {% endfor %}
+      </div>
     </div>
+  </div>
+
+  <div class="tablet:grid-col-4">
+      {% include 'components/updates/step_by_step_guides.njk' %}
+  </div>
 </div>
