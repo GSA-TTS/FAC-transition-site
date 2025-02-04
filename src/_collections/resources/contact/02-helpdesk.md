@@ -1,7 +1,9 @@
 ---
 tags: resources, contact
-header: Using the FAC website
-description: The FAC Helpdesk is able to assist with audit submission, certification, and audit search.
-link: https://support.fac.gov/hc
-link_text: Visit FAC Helpdesk
+header: Helpdesk
+link: https://support.fac.gov/hc/en-us/requests/new
+link_text: Contact FAC Helpdesk
+image_path: "assets/img/contact/icon-helpdesk.svg"
 ---
+
+The FAC Helpdesk is able to assist with using our website, including **audit submission**, **audit certification**, and **audit search**.

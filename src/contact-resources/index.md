@@ -1,7 +1,7 @@
 ---
-layout: resources_page.njk
+layout: contact_page.njk
 title: Contact
-header: Contact
+header: Have questions? Start here.
 collectionName: resources, contact
 meta:
   name: Contact
@@ -12,4 +12,4 @@ eleventyComputed:
     parent: Home
 ---
 
-Have audit questions? Find out who to contact below.
+Whether you have questions about using our website to submit an audit or general technical support, start here. We’ll point you in the right direction.

@@ -83,12 +83,26 @@
 }
 
 .home-image {
-  .usa-link:link, .usa-link:hover, .usa-link:active { 
-    text-decoration: none; 
+  .usa-link:link, .usa-link:hover, .usa-link:active {
+    text-decoration: none;
   }
 
-  .usa-link:visited { 
-    text-decoration: none; 
+  .usa-link:visited {
+    text-decoration: none;
     color: white;
-  } 
+  }
+}
+
+/* Default (smaller screens) */
+.fac-icon--contacts {
+  width: 60px;
+  height: 60px;
+}
+
+/* Large devices get larger icons */
+@media(min-width:1080px) {
+  .fac-icon--contacts{
+    width: 100px;
+    height: 100px;
+  }
 }
