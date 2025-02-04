@@ -2,6 +2,7 @@
 tags: walkthrough
 title: Lock for certification
 image: walkthrough/walkthrough-14-lock.png
+alt_text:  A screenshot of the FAC lock for certification page. At the top of the image is the page title.  Below the title is the instructions. A button below the section reads, 'Lock for certification'. To the right of this button a link reads, 'Cancel'.
 ---
 
 After validation, you'll lock your single audit submission for certification. 
