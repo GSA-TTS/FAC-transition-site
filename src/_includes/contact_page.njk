@@ -26,9 +26,9 @@ layout: home.njk
                                     <h2 class="margin-top-0">{{item.data.header}}</h2>
                                 {% endif %}
 
-                                {% if item.data.description %}
+                                {% if item.content %}
                                     <div class="font-sans-sm margin-y-2">
-                                        {{item.data.description}}
+                                        {{item.content | safe}}
                                     </div>
                                 {% endif %}
 
