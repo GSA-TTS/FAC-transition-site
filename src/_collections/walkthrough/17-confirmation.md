@@ -2,7 +2,7 @@
 tags: walkthrough
 title: Confirming submission
 image: walkthrough/walkthrough-17-confirmation.png
-alt_text: 'A screenshot of a FAC confirmation page followed by instructions. The button below reads, 'Submit single audit package'. To the right of this button a link reads, 'Cancel'.
+image_alt: "A screenshot of a FAC confirmation page followed by instructions. The button below reads, 'Submit single audit package'. To the right of this button a link reads, 'Cancel'."
 ---
 The Auditee Certifying Official must complete this step.
 

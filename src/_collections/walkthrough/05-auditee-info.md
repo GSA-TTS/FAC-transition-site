@@ -2,7 +2,7 @@
 tags: walkthrough
 title: Auditee information
 image: walkthrough/walkthrough-05-auditee-info.png
-alt_text: "A screenshot of the FAC auditee information page. On the center left, there are three text input fields. From top to bottom: Entity UEI, Fiscal period start date, and Fiscal period end date."
+image_alt: "A screenshot of the FAC auditee information page. On the center left, there are three text input fields. From top to bottom: Entity UEI, Fiscal period start date, and Fiscal period end date."
 ---
 
 Like the federal government, the FAC uses the Unique Entity ID (UEI) for all single audit submissions.

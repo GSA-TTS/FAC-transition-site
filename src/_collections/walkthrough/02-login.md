@@ -2,7 +2,7 @@
 tags: walkthrough
 title: Logging in with Login.gov
 image: shared/login.png
-alt_text: "A screenshot of the Login.gov login page. From top to bottom: an email address input, a password input, a 'Sign in' button, and a 'Create an Account' button."
+image_alt: "A screenshot of the Login.gov login page. From top to bottom: an email address input, a password input, a 'Sign in' button, and a 'Create an Account' button."
 ---
 
 Everyone involved in the single audit process **must** have an account with [Login.gov](http://login.gov). This includes auditees and auditors.
