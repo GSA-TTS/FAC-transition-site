@@ -49,7 +49,7 @@ eleventyComputed:
                         <p>{{item.content | safe }}</p>
                         {% if item.data.image %}
                                 <img class="cursor-pointer" src="{{config.baseUrl}}assets/img/{{item.data.image}}" width=500 style="margin: 1em; border: 1px solid #555;" aria-controls="image-modal-{{item.data.image}}" data-open-modal />
-                                {{ image_modal.modal(item.data.image, 'assets/img/' + item.data.image, item.data.alt_text) }}
+                                {{ image_modal.modal(item.data.image, 'assets/img/' + item.data.image, item.data.image_alt) }}
                         {% endif %}
                     </div>
             {% endif %}

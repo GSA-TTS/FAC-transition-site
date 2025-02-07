@@ -2,7 +2,7 @@
 tags: walkthrough
 title: Upload the audit reporting package PDF
 image: walkthrough/walkthrough-10-pdf.png
-alt_text: "A screenshot of the FAC single audit upload page. At the top of the image, formatting requirements are listed for a FAC-compliant PDF. Below the instructions, eleven text inputs ask for the page numbers of certain elements. Below the text inputs is a file input element."
+image_alt: "A screenshot of the FAC single audit upload page. At the top of the image, formatting requirements are listed for a FAC-compliant PDF. Below the instructions, eleven text inputs ask for the page numbers of certain elements. Below the text inputs is a file input element."
 ---
 
 You must merge all components of the audit report package into a single PDF file before uploading. Be sure your PDF file meets the uniform guidelines:
