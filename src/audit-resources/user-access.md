@@ -44,7 +44,7 @@ The following instructions guide you through the process of changing user roles.
       <div class="grid-col-12 margin-top-8">
 
   {% if item.data.image %}
-      <img class="cursor-pointer" src="{{config.baseUrl}}assets/img/{{item.data.image}}" alt="{{item.data.image_alt}} width=400 style="margin-left: 2em; margin-bottom: 2em; float: right; border: 1px solid #555;" aria-controls="image-modal-{{item.data.image}}" data-open-modal />
+      <img class="cursor-pointer" src="{{config.baseUrl}}assets/img/{{item.data.image}}" alt="{{item.data.image_alt}}" width=400 style="margin-left: 2em; margin-bottom: 2em; float: right; border: 1px solid #555;" aria-controls="image-modal-{{item.data.image}}" data-open-modal />
       {{ image_modal.modal(item.data.image, 'assets/img/' + item.data.image, item.data.image_alt) }}
   {% endif %}
         <h2 id="{{ item.data.title | slugify }}">{{item.data.title}}</h2>
