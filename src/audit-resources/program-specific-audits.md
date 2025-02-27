@@ -3,7 +3,7 @@ layout: home.njk
 title: Program-specific audits
 meta:
   name: Program-specific audits
-  description: "Follow these instructions for completing the Audit information form for program-specific audits.
+  description: Follow these instructions for completing the Audit information form for program-specific audits.
 ---
 
 # Program-specific audits
