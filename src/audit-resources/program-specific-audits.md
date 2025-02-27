@@ -30,7 +30,7 @@ A: Because this question is not relevant to program-specific audits, answer “N
 
 A: Because this question isn't relevant to program-specific audits, enter $750,000 as a placeholder amount so you can continue your submission.
 
-**Q: Did the auditee qualify as a low-risk auditee? (2 CFR 200.520) **
+**Q: Did the auditee qualify as a low-risk auditee? (2 CFR 200.520)**
 
 A: Review 2 CFR 200.520 and answer accordingly.
 
