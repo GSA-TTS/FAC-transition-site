@@ -4,6 +4,10 @@ title: Program-specific audits
 meta:
   name: Program-specific audits
   description: Follow these instructions for completing the Audit information form for program-specific audits.
+eleventyComputed:
+  eleventyNavigation:
+    key: Program-specific audits
+    parent: Audit submission resources
 ---
 
 # Program-specific audits
