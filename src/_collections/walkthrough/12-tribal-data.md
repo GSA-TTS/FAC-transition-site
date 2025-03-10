@@ -1,5 +1,6 @@
 ---
 tags: walkthrough
+id: tribal-data-release
 title: Tribal data release
 image: walkthrough/walkthrough-12-tribal-data.png
 image_alt:  A screenshot of the FAC "Tribal data release" page. At the top of the image is the page title.  Below the title is a brief to the citation for this section, which is followed by the certification section. In the certification section, are two fields for name and title of the auditee certifying official to agree and sign to the citation. A button below the section reads, 'Agree to Tribal data release'. To the right of this button a link reads, 'Cancel'.

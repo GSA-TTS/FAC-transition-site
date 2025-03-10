@@ -1,5 +1,6 @@
 ---
 tags: walkthrough
+id: upload-the-audit-reporting-package-pdf
 title: Upload the audit reporting package PDF
 image: walkthrough/walkthrough-10-pdf.png
 image_alt: "A screenshot of the FAC single audit upload page. At the top of the image, formatting requirements are listed for a FAC-compliant PDF. Below the instructions, eleven text inputs ask for the page numbers of certain elements. Below the text inputs is a file input element."

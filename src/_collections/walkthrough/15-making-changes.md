@@ -1,5 +1,6 @@
 ---
 tags: walkthrough
+id: making-changes-to-your-audit-package
 title: Making changes to your audit package
 image: walkthrough/walkthrough-15-making-changes.png
 image_alt: A screenshot of the FAC submission checklist page. Two requirements are listed with links to their respective web forms. A button below the list reads, 'Lock for certification'. To the right of this button a link reads, 'Cancel'.
