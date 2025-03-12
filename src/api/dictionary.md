@@ -34,7 +34,7 @@ eleventyComputed:
 
 # Data dictionary
 
-[Download the Data Dictionary (Excel)](../assets/api/FAC%20API%20Data%20Dictionary.xlsx) for definitions, descriptions, and details of the data fields for each endpoint of the FAC API. 
+[Download the Data Dictionary (Excel)](/assets/api/FAC%20API%20Data%20Dictionary.xlsx) for definitions, descriptions, and details of the data fields for each endpoint of the FAC API. 
 
 # Legacy Field Mapping
 
