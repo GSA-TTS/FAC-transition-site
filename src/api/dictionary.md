@@ -34,7 +34,11 @@ eleventyComputed:
 
 # Data dictionary
 
-The data dictionary provides an overview of the FAC API from the perspective of historical Census data. Many users are familiar with the pipe-delimited CSV files distributed by Census. These documents help developers navigate from what-was to what-is.
+[Download the Data Dictionary (Excel)](assets/api/FAC%20API%20Data%20Dictionary.xlsx) for definitions, descriptions, and details of the data fields for each endpoint of the FAC API. 
+
+# Legacy Field Mapping
+
+The following table maps fields from the Census Bureau’s previous data structure to the new FAC API fields.
 
 
 ## Dictionary by endpoint
