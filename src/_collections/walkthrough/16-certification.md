@@ -1,5 +1,6 @@
 ---
 tags: walkthrough
+id: audit-certification-process
 title: Audit certification process
 image: walkthrough/walkthrough-16-certification.png
 image_alt: A screenshot of the FAC auditor certification checklist page. A list of checkboxes are listed with text requirements. A button below the list reads, 'Save and continue to next section'. To the right of this button a link reads, 'Cancel'.

@@ -1,5 +1,6 @@
 ---
 tags: walkthrough
+id: getting-started
 title: Getting started
 image: shared/home-annotated.png
 image_alt: A screenshot of the FAC home page. In the top right, the "sign in" button.
