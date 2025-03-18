@@ -1,0 +1,38 @@
+{# The sidenav is not loaded by default on the main pages. To include this navigation you can either use the
+_layouts/page.html layout template, or you can add "sidenav: true" in the front-matter of your pages #}
+
+<aside class="usa-layout-docs-sidenav desktop:grid-col-3 padding-bottom-4 padding-right-4">
+    <nav class="{% if sticky_sidenav %} sticky-nav {% endif%} padding-top-2">
+        <ul class="usa-sidenav">
+            {# Get links from associated page files. Files are associated by navigation parent node. #}
+            {% if sidenav and sidenav_group %}
+                {% set links = collections.all | sidenavGroupFilter(sidenav_group) %}
+            {% else %}
+                {% set links = collections[eleventyNavigation.key] | eleventyNavigation %}
+            {% endif %}
+
+            {% for link in links %}
+                {% set _current = false %}
+                {% if link.url == page.url %}
+                    {% set _current = true %}
+                {% endif %}
+
+                <li class="usa-sidenav__item">
+                    <a href="{{ link.url | url }}"{% if _current %} class="usa-current" {% endif %}>
+                        {{ link.title }}
+                    </a>
+                    
+                    {% if subnav and _current %}
+                        {% for heading in subnav %}
+                            <ul class="usa-sidenav__sublist">
+                                <li class="usa-sidenav__item border-0">
+                                    <a href="{{ heading.href }}"> {{ heading.text }} </a>
+                                </li>
+                            </ul>
+                        {% endfor %}
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</aside>
