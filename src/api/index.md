@@ -26,3 +26,14 @@ Once you have your API key, you can begin exploring the API. Use the resources b
 
 For more information on the FAC API and the information it provides, see our [terms and conditions]({{ config.baseUrl }}api/terms/).
 
+---
+
+## **📖 FAC API Resources**
+Here are some guides to help you use the FAC API:
+
+- [Getting Started]({{ config.baseUrl }}api/getting-started/)
+- [Example Queries]({{ config.baseUrl }}api/examples/)
+- [Versioning]({{ config.baseUrl }}api/versioning/)
+- [Data Dictionary]({{ config.baseUrl }}api/dictionary/)
+- [Retrieving Many Results]({{ config.baseUrl }}api/retrieve-many/)
+
