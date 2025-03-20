@@ -13,7 +13,7 @@ eleventyComputed:
     eleventyNavigation:
         key: Starting a new audit
         parent: Audit submission resources
-        order: 4
+        order: 2
         title: Starting a new audit
 ---
 {% import "components/image_modal.njk" as image_modal with context %}
