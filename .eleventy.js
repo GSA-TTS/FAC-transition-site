@@ -1,13 +1,10 @@
-const yaml = require('js-yaml');
+const markdownItAnchor = require('markdown-it-anchor')
 const markdownIt = require("markdown-it");
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const slugify = require('@sindresorhus/slugify')
+const yaml = require('js-yaml');
 
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const pluginRss = require('@11ty/eleventy-plugin-rss');
-const md = require('markdown-it')({
-  html: false,
-  breaks: true,
-  linkify: true,
-});
 
 const hashCode = function (s) {
   var hash = 0,
@@ -64,9 +61,29 @@ module.exports = function (eleventyConfig) {
     });
   });
 
+  // The eleventyNavigation plugin doesn't like using filtered down collections.
+  // So, filter a collection by the contents of `sidenav_group`.
+  // Return the eleventyNavigation assignments with the current URL, to act as though the eleventyNavigation plugin created it.
+  eleventyConfig.addFilter("sidenavGroupFilter", function (collection, group) {
+    if (!group) return collection;
+    const filtered = collection
+      .filter((item) => item.data.sidenav_group == group)
+      .map((a) => Object.assign(a.data.eleventyNavigation, { url: a.url }));
+    return filtered;
+  });
+
+  eleventyConfig.addFilter("debugger", (...args) => {
+    console.log(...args)
+    debugger;
+  })
+
   const md = new markdownIt({
     html: true,
+  }).use(markdownItAnchor, {
+    slugify: s => slugify(s),
   });
+  eleventyConfig.setLibrary('md', md);
+  
   eleventyConfig.addPairedShortcode("markdown", (content) => {
     return md.render(content);
   });
