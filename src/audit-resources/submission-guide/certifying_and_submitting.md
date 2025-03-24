@@ -1,6 +1,6 @@
 ---
 layout: home.njk
-title: Certifying and submitting an audit
+title: Submitting an audit
 sidenav: true
 sidenav_group: submission-guide
 sticky_sidenav: true
@@ -15,10 +15,10 @@ subnav:
     href: '#submission-completed-successfully'
 eleventyComputed:
     eleventyNavigation:
-        key: Certifying and submitting an audit
+        key: Submitting an audit
         parent: Audit submission resources
         order: 4
-        title: Completing and submitting
+        title: Submitting an audit
 ---
 {% import "components/image_modal.njk" as image_modal with context %}
 

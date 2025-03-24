@@ -68,7 +68,8 @@ module.exports = function (eleventyConfig) {
     if (!group) return collection;
     const filtered = collection
       .filter((item) => item.data.sidenav_group == group)
-      .map((a) => Object.assign(a.data.eleventyNavigation, { url: a.url }));
+      .map((a) => Object.assign(a.data.eleventyNavigation, { url: a.url }))
+      .sort((a, b) => a.order - b.order);
     return filtered;
   });
 

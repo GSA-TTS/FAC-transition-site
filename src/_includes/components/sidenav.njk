@@ -1,5 +1,5 @@
-{# The sidenav is not loaded by default on the main pages. To include this navigation you can either use the
-_layouts/page.html layout template, or you can add "sidenav: true" in the front-matter of your pages #}
+{# The sidenav is not loaded by default on the main pages.
+To include this navigation you must add "sidenav: true" in the front-matter of your pages, and include an appropriate sidenav_group #}
 
 <aside class="usa-layout-docs-sidenav desktop:grid-col-3 padding-bottom-4 padding-right-4">
     <nav class="{% if sticky_sidenav %} sticky-nav {% endif%} padding-top-2">

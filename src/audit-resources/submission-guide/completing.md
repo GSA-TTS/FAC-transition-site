@@ -1,6 +1,6 @@
 ---
 layout: home.njk
-title: Completing your audit
+title: Completing an audit
 sidenav: true
 sidenav_group: submission-guide
 sticky_sidenav: true
@@ -23,10 +23,10 @@ subnav:
     href: '#downloading-an-in-progress-audit'
 eleventyComputed:
     eleventyNavigation:
-        key: Completing your audit
+        key: Completing an audit
         parent: Audit submission resources
         order: 3
-        title: Completing your audit
+        title: Completing an audit
 ---
 {% import "components/image_modal.njk" as image_modal with context %}
 

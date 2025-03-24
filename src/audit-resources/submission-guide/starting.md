@@ -1,6 +1,6 @@
 ---
 layout: home.njk
-title: Starting a new audit
+title: Starting an audit
 sidenav: true
 sidenav_group: submission-guide
 sticky_sidenav: true
@@ -11,10 +11,10 @@ subnav:
     href: '#audit-access'
 eleventyComputed:
     eleventyNavigation:
-        key: Starting a new audit
+        key: Starting an audit
         parent: Audit submission resources
         order: 2
-        title: Starting a new audit
+        title: Starting an audit
 ---
 {% import "components/image_modal.njk" as image_modal with context %}
 
