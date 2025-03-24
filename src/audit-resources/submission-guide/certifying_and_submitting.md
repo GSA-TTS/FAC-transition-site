@@ -18,7 +18,7 @@ eleventyComputed:
         key: Certifying and submitting an audit
         parent: Audit submission resources
         order: 4
-        title: Submitting
+        title: Completing and submitting
 ---
 {% import "components/image_modal.njk" as image_modal with context %}
 
