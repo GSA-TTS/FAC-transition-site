@@ -1,5 +1,5 @@
 ---
-tags: ["omb", "post"]
+tags: archive
 date: "2023-05-18"
 title: May 18th, 2023
 description: OMB updates and extensions
