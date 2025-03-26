@@ -57,11 +57,11 @@ Edit the form configuration here, and the API key in `config.js`. #}
 
     // OPTIONAL: Provide an extra checkbox asking the user to agree to terms
     // and conditions before signing up. Defaults to false.
-    // showTermsInput: true,
+    showTermsInput: true,
 
     // OPTIONAL: If the terms & conditions checkbox is enabled, link to this
     // URL for your API's terms & conditions. Defaults to "".
-    // termsUrl: "https://agency.gov/api-terms/",
+    termsUrl: "{{ config.baseUrl }}api/terms/",
   };
 
   /* * * DON'T EDIT BELOW THIS LINE * * */
