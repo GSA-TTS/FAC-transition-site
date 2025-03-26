@@ -12,9 +12,9 @@ eleventyComputed:
 
 # OMB Announcements
 
-The Office of Management and Budget (OMB) sets the policy for single audit submissions and their deadlines. The announcements below are in effect; for historic decisions, view [our archive]({{ config.baseUrl }}omb/archive).
+The Office of Management and Budget (OMB) sets the policy for single audit submissions and their deadlines. There are no current announcements;<!-- The announcements below are in effect; --> for historic decisions, view [our archive]({{ config.baseUrl }}omb/archive).
 
-<div
+<!-- <div
   class="usa-summary-box"
   role="region"
   aria-labelledby="summary-box-key-information">
@@ -27,4 +27,4 @@ The Office of Management and Budget (OMB) sets the policy for single audit submi
       </ul>
     </div>
   </div>
-</div>
+</div> -->
