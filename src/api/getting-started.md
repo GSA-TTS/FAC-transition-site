@@ -12,7 +12,7 @@ eleventyComputed:
 
 # Using the FAC API
 
-Once you have a key from [api.data.gov](https://api.data.gov/), you're ready to begin using the FAC API. 
+Once you have [signed up]({{ config.baseUrl }}api/signup/) and received a key from [api.data.gov](https://api.data.gov/), you're ready to begin using the FAC API. 
 
 The examples in this repository assume that you have two environment variables set. In a Bash shell, you would:
 
