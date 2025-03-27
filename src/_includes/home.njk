@@ -4,5 +4,15 @@ layout: layout.njk
 
 <div class="grid-container margin-y-4">
     {% include 'components/breadcrumbs.njk' %}
-    {{ content | safe }}
+    
+    {% if sidenav %}
+        <div class="grid-row">
+            {% include 'components/sidenav.njk' %}
+            <div class="desktop:grid-col-9">
+                {{ content | safe }}
+                </div>
+        </div>
+    {% else %}
+        {{ content | safe }}
+    {% endif %}
 </div>
