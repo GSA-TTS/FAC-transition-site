@@ -26,14 +26,17 @@ Once you have your API key, you can begin exploring the API. Use the resources b
 
 For more information on the FAC API and the information it provides, see our [terms and conditions]({{ config.baseUrl }}api/terms/).
 
----
-
-## **📖 FAC API Resources**
+## API Guides, Tutorials, and Dictionaries
 Here are some guides to help you use the FAC API:
 
-- [Getting Started]({{ config.baseUrl }}api/getting-started/)
-- [Example Queries]({{ config.baseUrl }}api/examples/)
-- [Versioning]({{ config.baseUrl }}api/versioning/)
-- [Data Dictionary]({{ config.baseUrl }}api/dictionary/)
-- [Retrieving Many Results]({{ config.baseUrl }}api/retrieve-many/)
-
+- **[Getting started](https://www.fac.gov/api/getting-started/):** Begin using the FAC API and test your endpoints.
+- **[Examples](https://www.fac.gov/api/examples/):** Example API queries using cURL, PowerShell, and Python.
+- **[PostgREST server tools](https://postgrest.org/en/v12/):** The FAC uses PostgREST for our API server. Use their documentation for more help.
+- **[Data dictionary](https://www.fac.gov/api/dictionary/):** Get details about the API data fields and a map of how the FAC API data compares to the historical Census data.
+- **[Rollup fields](https://www.fac.gov/api/rollup/):** The FAC API combines some data fields that were standalone with the Census Bureau. This guide outlines these fields and shows how to use the FAC API to get the same data.
+- **[Data differences](https://www.fac.gov/api/differences/):** Data submitted to the old Census FAC had different field names compared to the GSA FAC. This list outlines the differences between the historical data and new FAC data.
+- **[Results management](https://www.fac.gov/api/results-management/):** Tips for working within the API's request limit to retrieve more than 20,000 results at a time.
+- **[API versioning](https://www.fac.gov/api/versioning/):** Read our change management policy for updating the API.
+- **[Terms & conditions](https://www.fac.gov/api/terms/):** Read the terms and conditions of using the FAC API.
+- **[Tribal data access](https://www.fac.gov/api/tribal/):** Use the API to access data and Single Audit Reports that Tribes and Tribal Organizations have chosen to suppress.
+- **[Questions](https://support.fac.gov/hc/en-us):** Visit our FAQ page.
