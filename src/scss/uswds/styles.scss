@@ -1,13 +1,20 @@
 @use "uswds-core" with (
+    // Meta:
     $theme-show-notifications: false,
-    // Are not defined by default
+
+    // Typography:
     $theme-font-weight-semibold: 600,
     $theme-font-weight-heavy: 800,
-    // A little lighter to be complimentary to the darker values
+    $theme-type-scale-3xs: 1,
+
+    // Colors:
     $theme-color-accent-cool-dark: #4F97D1,
     $theme-color-accent-warm: #E17141,
-    // 12 point, rather than the default 13
-    $theme-type-scale-3xs: 1,
+
+    // Utilities:
+    $theme-utility-breakpoints: (
+        'tablet-lg': true,
+    ),
 );
 
 @forward "uswds";

@@ -1,0 +1,29 @@
+---
+layout: home.njk
+title: FAC API signup
+meta:
+  name: FAC API signup
+  description: Sign up to access a FAC API key to download single audit data.
+eleventyComputed:
+  eleventyNavigation:
+    key: API signup
+    parent: API resources
+---
+<div class="grid-row padding-y-4">
+  <p>The FAC API shares public data from submitted audit reports.</p>
+
+  <p>To interact with the API, you will need an API key from Data.gov. To get a Data.gov API key, fill out the Data.gov API key signup form below. This is free and requires a valid email address. When you receive your API key, treat it like any other credential:</p>
+
+  <ul>
+    <li>Don't share your key with other users.</li>
+    <li>Don't commit your key into a repository alongside your code.</li>
+    <li>Don't store your key in a shared drive where other users have access.</li>
+    <li>Don't share your key in helpdesk requests or any other communication.</li>
+  </ul>
+
+  <p>Once you have your API key, you can begin exploring the API. Use the resources below to learn more about the API's capabilities.</p>
+
+  <p>For more information on the FAC API and the information it provides, see our <a href="{{ config.baseUrl }}api/terms/">terms and conditions</a>.</p>
+</div>
+
+{% include 'components/api_data_gov_signup.njk' %}

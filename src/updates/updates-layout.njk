@@ -18,7 +18,7 @@ eleventyComputed:
 {% import "components/image_modal.njk" as image_modal with context %}
 
 <div class="grid-row">
-  <div class="tablet:grid-col-9 tablet:padding-right-6">
+  <div class="tablet-lg:grid-col-9 tablet-lg:padding-right-6">
     {# Title, description, date #}
     <h1>
       {% if post.data.title %}
@@ -45,7 +45,7 @@ eleventyComputed:
     <div class="margin-top-3 margin-bottom-6">{{ post.content | safe }}</div>
     {% include 'components/updates/collection_recent_updates.njk' %}
   </div>
-  <div class="tablet:grid-col-3">
+  <div class="tablet-lg:grid-col-3">
     {% include 'components/updates/card_how_we_work.njk' %}
   </div>
 </div>
