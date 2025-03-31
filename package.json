@@ -22,7 +22,7 @@
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-navigation": "^1.0.2",
     "@11ty/eleventy-plugin-rss": "^2.0.3",
-    "@uswds/compile": "^1.0.0",
+    "@uswds/compile": "^1.2.1",
     "@uswds/uswds": "^3.8.2",
     "concurrently": "^7.1.0",
     "cypress": "^9.5.4",
