@@ -1,8 +1,7 @@
 ---
-layout: resources_page.njk
+layout: home.njk
 title: FAC API resources
 header: API resources
-collectionName: resources, api
 faqLink: https://support.fac.gov/hc/en-us
 meta:
   name: FAC API resources

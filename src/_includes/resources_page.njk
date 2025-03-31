@@ -11,7 +11,6 @@ layout: layout.njk
 
     {# Cards are generated from the current pages 'collectionName'.
     To add more cards, navigate to collections and ensure the tags match up with the pages collectionName. #}
-    {% if title != "FAC API resources" %}
     <ul class="resources usa-card-group margin-top-8 margin-bottom-4">
         {% set indexList = collections[collectionName] %}
         {% for item in indexList | sortAscendingByName %}
@@ -26,6 +25,7 @@ layout: layout.njk
                         </p>
                     </div>
                     <div class="usa-card__footer padding-top-4">
+                        {# If the reference link is local, go right to it with the proper baseUrl. If not, open in a new tab. #}
                         <a class="usa-button"
                             {% if not 'https' in item.data.link %}
                                 href="{{ config.baseUrl}}{{item.data.link}}"
@@ -45,7 +45,6 @@ layout: layout.njk
             </li>
         {% endfor %}
     </ul>
-{% endif %}
 
     {# Full-width FAQ page button, common to resource pages. #}
     {% if faqLink %}
