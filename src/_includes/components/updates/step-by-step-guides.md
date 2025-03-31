@@ -1,4 +1,4 @@
 **Need support with a  process on the website? Follow our guides**:
-* [Submitting an audit](https://www.fac.gov/audit-resources/how-to/)
-* [Managing submission access](https://www.fac.gov/audit-resources/user-access/)
-* [SF-SAC and Workbooks](https://www.fac.gov/audit-resources/sf-sac/)
+* [Submitting an audit]({{ config.baseUrl }}audit-resources/submission-guide/about/)
+* [Managing submission access]({{ config.baseUrl }}audit-resources/user-access/)
+* [SF-SAC and Workbooks]({{ config.baseUrl }}audit-resources/sf-sac/)
