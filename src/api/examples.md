@@ -4,6 +4,10 @@ title: FAC API Example Queries
 meta:
   name: FAC API Example Queries
   description: Learn how to interact with the FAC API using cURL, PowerShell, SQL, and Python.
+eleventyComputed:
+  eleventyNavigation:
+    key: Examples
+    parent: API resources
 ---
 
 # FAC API Example Queries
