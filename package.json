@@ -15,8 +15,8 @@
     "eleventyFederalist": "npx @11ty/eleventy --config=federalist-eleventy.js",
     "eleventyServe": "npx @11ty/eleventy --serve",
     "start": "npm-run-all -p gulpCopy gulpWatch eleventyServe",
-    "build": "npm-run-all -p gulpCopy gulpCompile eleventy",
-    "federalist": "npm-run-all -p gulpCopy gulpCompile eleventyFederalist"
+    "build": "npm-run-all -s gulpCopy gulpCompile eleventy",
+    "federalist": "npm-run-all -s gulpCopy gulpCompile eleventyFederalist"
   },
   "keywords": [],
   "author": "",
