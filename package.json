@@ -8,12 +8,15 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "copy": "npx gulp copyAssets",
-    "watch": "npx gulp watch",
-    "serve": "npx @11ty/eleventy --serve",
-    "start": "npm-run-all -p copy watch serve",
-    "build": "npx gulp copyAssets && npx gulp compile && npx @11ty/eleventy",
-    "federalist": "npx gulp copyAssets && npx gulp compile && npx @11ty/eleventy --config=federalist-eleventy.js"
+    "gulpCompile": "npx gulp compile",
+    "gulpCopy": "npx gulp copyAssets",
+    "gulpWatch": "npx gulp watch",
+    "eleventy": "npx @11ty/eleventy",
+    "eleventyFederalist": "npx @11ty/eleventy --config=federalist-eleventy.js",
+    "eleventyServe": "npx @11ty/eleventy --serve",
+    "start": "npm-run-all -p gulpCopy gulpWatch eleventyServe",
+    "build": "npm-run-all -p gulpCopy gulpCompile eleventy",
+    "federalist": "npm-run-all -p gulpCopy gulpCompile eleventyFederalist"
   },
   "keywords": [],
   "author": "",
