@@ -1,6 +1,6 @@
 # Federal Audit Clearinghouse Transition Site
 
-This repo contains a transition site for the Federal Audit Clearinghouse.
+This repo contains the static site for the Federal Audit Clearinghouse.
 
 ## Running locally
 
@@ -15,6 +15,8 @@ to install the required dependencies. Then to run the site locally in developmen
 ```
 npm run start
 ```
+
+Access the site by visiting http://localhost:8080/. 
 
 Finally, if you need to create a production build locally (perhaps for troubleshooting purposes), you can run
 
@@ -90,3 +92,18 @@ FAC-transition-site
  ┃ ┗ top-level-single-page.md
  ┗ project-level-files
 ```
+
+### Package management
+
+Required Node packages are defined in `package.json`. To update a package:
+
+1. Check the recent releases for a package and determine the desired version
+2. Verify the desired version does not include breaking changes or conficts with other packages
+    * If there are breaking changes, resolve the errors after updating
+    * If there are conflicts with other packages, consider updating them at the same time to maintain functionality
+3. Update the version number in `package.json`.
+4. Install the new version with `npm install package-name@version.number`. This will update `package-lock.json`
+    * For example, `npm install @11ty/eleventy@3.0.0`
+5. Resolve any expected errors from the update, such as Eleventy behavior or USWDS styling changes
+6. Verify the site builds and serves correctly with `npm run start`
+7. Commit _both_ `package.json` and `package-lock.json`
