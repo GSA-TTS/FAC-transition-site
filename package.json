@@ -22,9 +22,9 @@
   "author": "",
   "license": "CC0",
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-navigation": "^1.0.2",
-    "@11ty/eleventy-plugin-rss": "^2.0.3",
+    "@11ty/eleventy-plugin-rss": "^1.0.5",
     "@uswds/compile": "^1.0.0",
     "@uswds/uswds": "^3.8.2",
     "concurrently": "^9.1.2",
