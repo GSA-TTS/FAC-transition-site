@@ -5,7 +5,6 @@ const uswds = require('@uswds/compile');
  */
 
 uswds.settings.version = 3;
-uswds.settings.compile.sassSourcemaps = false;
 
 /**
  * Path settings
