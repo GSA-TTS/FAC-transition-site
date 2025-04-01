@@ -25,7 +25,7 @@ navigation:
         - text: Submission home
           href: https://app.fac.gov/openid/login/
         - text: Submission guide
-          href: 'audit-resources/how-to'
+          href: 'audit-resources/submission-guide/about'
         - text: SF-SAC workbooks
           href: 'audit-resources/sf-sac'
     - text: Updates & News

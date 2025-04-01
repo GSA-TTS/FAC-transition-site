@@ -39,6 +39,7 @@ redirects:
   - {"from": "/resources/workbooks/additional-ueis-workbook/", "to": "audit-resources/sf-sac/additional-ueis-workbook/"}
   - {"from": "/resources/workbooks/secondary-auditors-workbook/", "to": "audit-resources/sf-sac/secondary-auditors-workbook/"}
   - {"from": "/resources/workbooks/additional-eins-workbook/", "to": "audit-resources/sf-sac/additional-eins-workbook/"}
+  - {"from": "/audit-resources/how-to/", "to": "audit-resources/submission-guide/about/"}
 #   Info
   - {"from": "/resources/instructions/user-access/", "to": "audit-resources/user-access/"}
   - {"from": "/info/updates/", "to": "updates/"}
