@@ -38,7 +38,7 @@
     "start-server-and-test": "^2.0.11"
   },
   "dependencies": {
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.0",
     "sass-embedded": "^1.86.1"
   }
 }
