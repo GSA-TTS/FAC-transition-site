@@ -41,5 +41,5 @@ In constructing new-style identifiers for `CENSUS` records, we used the `AUDITYE
 It is possible to see the annotation `GSA_MIGRATION` in some records at this time (last updated February 2024). The record of these annotations can be [downloaded as a CSV for offline analysis]({{'/data/download/migration/' | htmlBaseUrl(baseUrl)}}).
 
 
-* [General data transformations]({{ "/data/migration/general-transforms/" | absoluteUrl }})<br>These are transformations that were applied wholesale to files as data was migrated from Census to GSA.
-* [Specific field transformations]({{"/data/migration/specific-transforms/" | absoluteUrl }})<br>These are transformations applied to specific portions of the data. For example, a Census record that is missing an entire portion of the form required specialized handling.
+* [General data transformations]({{ "/data/migration/general-transforms/" | htmlBaseUrl(baseUrl) }})<br>These are transformations that were applied wholesale to files as data was migrated from Census to GSA.
+* [Specific field transformations]({{"/data/migration/specific-transforms/" | htmlBaseUrl(baseUrl) }})<br>These are transformations applied to specific portions of the data. For example, a Census record that is missing an entire portion of the form required specialized handling.
