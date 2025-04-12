@@ -1,5 +1,5 @@
 ---
-layout: home.njk
+layout: sidenav.njk
 title: FAC API rollup tutorial
 meta:
   name: FAC API rollup tutorial
@@ -120,9 +120,14 @@ To generate a single ALN, combine `federal_agency_prefix` and `federal_award_ext
 If you run the sample code provided above, you should get:
 
 ```
-2023-06-GSAFAC-0000000002 ['84.027', '84.027', '84.173', '84.173', '84.010', '84.367', '84.424', '84.424', '84.425', '84.425', '84.425', '84.425', '84.425', '84.425', '84.425', '10.553', '10.555', '10.575', '10.649', '10.555']
+2023-06-GSAFAC-0000000002 ['84.027', '84.027', '84.173', 
+    '84.173', '84.010', '84.367', '84.424', '84.424', 
+    '84.425', '84.425', '84.425', '84.425', '84.425', 
+    '84.425', '84.425', '10.553', '10.555', '10.575', 
+    '10.649', '10.555']
 2023-06-GSAFAC-0000000688 ['14.155', '14.195', '14.018', '14.228']
-2022-12-GSAFAC-0000001061 ['16.557', '16.524', '16.841', '16.526', '93.497', '16.575']
+2022-12-GSAFAC-0000001061 ['16.557', '16.524', '16.841', '16.526', 
+    '93.497', '16.575']
 ```
 
 <h2 id="COGOVER">Example: Given a report ID, calculate COGOVER</h2>
@@ -150,7 +155,8 @@ If you run the sample code provided above, you should get:
 The `QCOSTS` rollup did a bit more work. In the original table, this field looked at all questioned costs fields and if any of them were `yes`, then this field was `yes`.
 
 ```
-IF the audit has any findings AND one of the questioned cost fields are `true`
+IF the audit has any findings 
+    AND one of the questioned cost fields are `true`
 THEN this is true
 ELSE false
 ```

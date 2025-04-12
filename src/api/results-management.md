@@ -1,5 +1,5 @@
 ---
-layout: home.njk
+layout: sidenav.njk
 title: Retrieving many results from the FAC API
 meta:
   name: Retrieving many results from the FAC API

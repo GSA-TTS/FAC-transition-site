@@ -19,3 +19,24 @@
 {%- macro linkify(text, url) -%}
   <a class="usa-link" href="{{url}}">{{text}}</a>
 {%- endmacro -%}
+
+
+{%- macro curationSummary(slug, discovered_date, timeline_to_repair, github, log) -%}
+    <h2>Summary</h2>
+    <p>{{ slug }}</p>
+    <p><b>Discovered</b>: {{discovered_date}}</p>
+    <p><b>Timeline to repair</b>: {% if timeline_to_repair %}{{ timeline_to_repair }}{% else %}TBD{%endif%}</p>
+    <p><b>Github issue</b>: {% if github %}{{ github }}{% else %}TBD{%endif%}</p>
+    <p><b>Log</b>: {% if log %}{{ log }}{% else %}TBD{%endif%}</p>
+{%- endmacro -%}
+
+
+{%- macro getKnownErrorTitle(known_errors, concern) -%}
+  {%- set title = "NONE" -%}
+  {%- for item in known_errors -%}
+    {%- if concern in item.url -%}
+      {%- set title = item.data.title -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {{- title | safe}}
+{%- endmacro -%}

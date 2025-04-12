@@ -1,0 +1,29 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2024-06-20T19:08:07.225868Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2024-06-20T11:29:40.465178Z",
+      "mimetype": null,
+      "name": "clear_local_storage.ipynb",
+      "path": "util/clear_local_storage.ipynb",
+      "size": 1821,
+      "type": "notebook",
+      "writable": true
+    }
+  ],
+  "created": "2024-06-20T19:08:07.225868Z",
+  "format": "json",
+  "hash": null,
+  "hash_algorithm": null,
+  "last_modified": "2024-06-20T19:08:07.225868Z",
+  "mimetype": null,
+  "name": "util",
+  "path": "util",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}

@@ -1,0 +1,20 @@
+Census,GSA,Transformations
+CFDA_PREFIX,federal_agency_prefix,No transformation
+CFDA_EXT,federal_award_extension,Transformation recorded
+AWARDIDENTIFICATION,additional_award_identification,"Uses “GSA_MIGRATION” when CFDA contains ""U"" or ""RD"" (case insensitive) and AWARDIDENTIFICATION is empty"
+FEDERALPROGRAMNAME,federal_program_name,No transformation
+AMOUNT,amount_expended,Transformation recorded
+CLUSTERNAME,cluster_name,Uses “GSA_MIGRATION” when CLUSTERNAME is empty
+STATECLUSTERNAME,state_cluster_name,"Uses “GSA_MIGRATION” when STATECLUSTERNAME is empty and CLUSTERNAME matches ""STATE CLUSTER"""
+PROGRAMTOTAL,federal_program_total,Transformation recorded
+CLUSTERTOTAL,cluster_total,Transformation recorded
+DIRECT,is_direct,No transformation
+PASSTHROUGHAWARD,is_passthrough_award,No transformation
+PASSTHROUGHAMOUNT,passthrough_amount,"Uses -999999999 when PASSTHROUGHAMOUNT is empty and PASSTHROUGHAWARD is ""Y"". Uses an empty string when PASSTHROUGHAMOUNT is empty or zero and PASSTHROUGHAWARD is ""N""."
+MAJORPROGRAM,is_major,No transformation
+TYPEREPORT_MP,audit_report_type,No transformation
+LOANS,is_loan,No transformation
+LOANBALANCE,loan_balance,Uses “GSA_MIGRATION” when LOANBALANCE is empty and LOANS is “Y”. Uses an empty string when LOANBALANCE is empty or zero and LOANS is “N”.
+FINDINGSCOUNT,findings_count,Uses 0 when FINDINGSCOUNT is empty
+ELECAUDITSID,award_reference,Transformation recorded
+OTHERCLUSTERNAME,other_cluster_name,"Uses “GSA_MIGRATION” when OTHERCLUSTERNAME is empty and CLUSTERNAME matches ""OTHER CLUSTER NOT LISTED ABOVE"""

@@ -1,5 +1,5 @@
 ---
-layout: home.njk
+layout: sidenav.njk
 title: Using the FAC API
 meta:
   name: Using the FAC API
@@ -29,8 +29,6 @@ If you are on Windows, you can either use the Windows Subshell for Linux (WSL) t
 set API_GOV_KEY="as above..."
 set API_GOV_URL="as above..."
 ```
-
-*We have not tested this code under Windows. If you do, please share your experience in our [Git discussions](https://github.com/GSA-TTS/FAC/discussions).*
 
 ## API endpoints
 

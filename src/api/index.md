@@ -1,5 +1,5 @@
 ---
-layout: home.njk
+layout: sidenav.njk
 title: FAC API resources
 header: API resources
 faqLink: https://support.fac.gov/hc/en-us
@@ -11,6 +11,7 @@ eleventyComputed:
     key: API resources
     parent: Home
 ---
+# {{title}}
 
 The FAC API shares public data from submitted audit reports.
 
@@ -33,4 +34,4 @@ Here are some guides to help you use the FAC API:
 - **[API versioning]({{ config.baseUrl }}api/versioning/):** Read our change management policy for updating the API.
 - **[Terms & conditions]({{ config.baseUrl }}api/terms/):** Read the terms and conditions of using the FAC API.
 - **[Tribal data access]({{ config.baseUrl }}api/tribal/):** Use the API to access data and Single Audit Reports that Tribes and Tribal Organizations have chosen to suppress.
-- **[Questions](https://support.fac.gov/hc/en-us):** Visit our FAQ page.
+- **[Questions](https://support.fac.gov/hc/en-us):** Visit our helpdesk.

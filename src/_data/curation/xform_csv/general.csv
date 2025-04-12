@@ -1,0 +1,54 @@
+Census,GSA,Transformations
+AUDITYEAR,audit_year,No transformation
+TYPEOFENTITY,entity_type,Transformation recorded
+FYENDDATE,fy_start_date,Subtracts 365 days from FYENDDATE and converts the result to the 'YYYY-MM-DD' format
+FYENDDATE,fy_end_date,Converts FYENDDATE to the 'YYYY-MM-DD' format
+AUDITTYPE,audit_type,Transformation recorded
+PERIODCOVERED,audit_period_covered,Transformation recorded
+EIN,auditee_ein,No transformation
+AUDITEENAME,auditee_name,No transformation
+STREET1,auditee_address_line_1,No transformation
+CITY,auditee_city,No transformation
+STATE,auditee_state,No transformation
+ZIPCODE,auditee_zip,"Removes hyphens.
+Pads with a leading zero when zipcode only contains 4 or 8 digits."
+AUDITEECONTACT,auditee_contact_name,No transformation
+AUDITEETITLE,auditee_contact_title,No transformation
+AUDITEEPHONE,auditee_phone,No transformation
+AUDITEEEMAIL,auditee_email,Uses “GSA_MIGRATION” when AUDITEEEMAIL is empty
+AUDITEEDATESIGNED,auditee_certified_date,Converts AUDITEEDATESIGNED to UTC 'YYYY-MM-DD HH:MM:SS.ffffff±HH' format.
+CPAFIRMNAME,auditor_firm_name,No transformation
+CPASTREET1,auditor_address_line_1,No transformation
+CPACITY,auditor_city,No transformation
+CPASTATE,auditor_state,No transformation
+CPAZIPCODE,auditor_zip,"Removes hyphens.
+Pads with a leading zero when zipcode only contains 4 or 8 digits."
+CPACONTACT,auditor_contact_name,No transformation
+CPATITLE,auditor_contact_title,No transformation
+CPAPHONE,auditor_phone,No transformation
+CPAEMAIL,auditor_email,Uses “GSA_MIGRATION” when CPAEMAIL is empty
+CPADATESIGNED,auditor_certified_date,Converts CPADATESIGNED to UTC 'YYYY-MM-DD HH:MM:SS.ffffff±HH' format.
+COGAGENCY,cognizant_agency,No transformation
+OVERSIGHTAGENCY,oversight_agency,No transformation
+TYPEREPORT_FS,gaap_results,Transformation recorded
+SP_FRAMEWORK,sp_framework_basis,Transformation recorded
+TYPEREPORT_SP_FRAMEWORK,sp_framework_opinions,Transformation recorded
+GOINGCONCERN,is_going_concern_included,No transformation<sup>&dagger;</sup>
+MATERIALWEAKNESS,is_internal_control_material_weakness_disclosed,No transformation<sup>&dagger;</sup>
+DUP_REPORTS,is_aicpa_audit_guide_included,No transformation<sup>&dagger;</sup>
+DOLLARTHRESHOLD,dollar_threshold,Uses “-999999999” when DOLLARTHRESHOLD is empty
+LOWRISK,is_low_risk_auditee,No transformation<sup>&dagger;</sup>
+TOTFEDEXPEND,total_amount_expended,Uses sum of AMOUNT instead of TOTFEDEXPEND
+AUDITOR_EIN,auditor_ein,No transformation
+FACACCEPTEDDATE,fac_accepted_date,No transformation<sup>&dagger;&dagger;</sup>
+CPAFOREIGN,auditor_foreign_address,No transformation
+CPACOUNTRY,auditor_country,Uses “USA” when “US” is provided. Uses “USA” or when CPACOUNTRY is empty and CPASTATE is a valid US state.
+UEI,auditee_uei,Uses “GSA_MIGRATION” when empty
+MULTIPLEUEIS,is_additional_ueis,No transformation
+AUDITEECERTIFYNAME,auditee_certify_name,Uses “AUDITEENAME” instead of “AUDITEECERTIFYNAME”. This is a bug that will be addressed.
+AUDITEECERTIFYTITLE,auditee_certify_title,Uses “AUDITEETITLE” instead of “AUDITEECERTIFYTITLE”. This is a bug that will be addressed.
+SP_FRAMEWORK_REQUIRED,is_sp_framework_required,Transformation recorded
+SIGNIFICANTDEFICIENCY,is_internal_control_deficiency_disclosed,No transformation<sup>&dagger;</sup>
+MATERIALNONCOMPLIANCE,is_material_noncompliance_disclosed,No transformation<sup>&dagger;</sup>
+PYSCHEDULE,agencies_with_prior_findings,No transformation
+SUPPRESSION_CODE,is_public,"Uses false when entity type is “tribal” and SUPPRESSION_CODE is ""IT"" and true otherwise"

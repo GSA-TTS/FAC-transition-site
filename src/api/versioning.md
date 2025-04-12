@@ -1,5 +1,5 @@
 ---
-layout: home.njk
+layout: sidenav.njk
 title: FAC API versioning
 meta:
   name: FAC API versioning

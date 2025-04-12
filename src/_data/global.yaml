@@ -13,10 +13,6 @@ navigation:
           href: 'tribal'
         - text: Search resources
           href: 'search-resources'
-        - text: Developer API resources
-          href: 'api'
-        - text: Data reliability
-          href: 'data-reliability'
     - text: Audit submission
       id: audits
       links:
@@ -28,6 +24,17 @@ navigation:
           href: 'audit-resources/submission-guide/about'
         - text: SF-SAC workbooks
           href: 'audit-resources/sf-sac'
+    - text: Data
+      id: data
+      links:
+        - text: Data access
+          href: 'data'
+        - text: Data reliability
+          href: 'data/reliability'
+        - text: Data curation
+          href: 'data/reliability/curation'
+        - text: Data migration
+          href: 'data/migration/'
     - text: Updates & News
       id: news
       links:

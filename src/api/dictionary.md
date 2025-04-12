@@ -1,5 +1,5 @@
 ---
-layout: home.njk
+layout: sidenav.njk
 title: FAC data dictionary
 meta:
   name: FAC data dictionary

@@ -1,0 +1,18 @@
+nav:
+    - section:
+        name: Search
+        links:
+            - Basic search
+            - Advanced search
+    - section:
+        name: Documentation
+        links:
+            - Getting started
+            - Data dictionary
+    - section:
+        name: Curation
+        links:
+            - Overview
+            - Process
+            - Known errors
+            - Change log
