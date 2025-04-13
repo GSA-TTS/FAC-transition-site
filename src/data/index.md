@@ -12,7 +12,7 @@ The data collected by the FAC is **free to use and in the public domain**.
 
 The Federal Audit Clearinghouse (The FAC) collects Single Audit report packages, as required by the [Single Audit Act](https://www.congress.gov/bill/98th-congress/senate-bill/1510). This act mandates an annual audit of all non-Federal entities that spend $1,000,000 or more of Federal Financial Assistance (Federal grant dollars) in a fiscal year. A Single Audit report package comprises two parts: The audit report PDF and Form SF-SAC. The audit report PDF is prepared by an independent auditor, and it presents both an organization's financial statements and compliance with Federal award requirements. Form SF-SAC collects data about the awards made and, in some cases, audit findings.
 
-There are two pieces to a Single Audit submission to the FAC: the **form** and the **report**. We provide a way for you to [search the data on the WWW]({{glossary.sites.basic_search.url}}), and you can also [write code to download and analyze the data using our API]({{glossary.sites.api.url}}).
+There are two pieces to a Single Audit submission to the FAC: the **form** and the **report**. The data can be searched via our [web-based interface]({{glossary.sites.basic_search.url}}), and reports downloaded from those results. It is also possible to download our data as CSVs, or access our data via API.
 
 ## Where does our data come from?
 
@@ -20,8 +20,7 @@ Single Audit report packages must be uploaded to fac.gov by the recipient of the
 
 ## How do I access the data?
 
-
-There are many audiences for the data provided by the FAC. If you're exploring the data for the first time, we recommend you start with our web search. If you're a programmer or data scientist looking to dive deep, we recommend our API. If you rely on this data, you will also want to look at how we care for, or **curate**, the data year-over-year.
+There are many audiences for the data provided by the FAC. If you're exploring the data for the first time, we recommend you start with our web search. If you're a programmer or data scientist looking to dive deep, we recommend our CSVs or the API.
 
 ### Access via the WWW
 

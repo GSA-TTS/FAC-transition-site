@@ -26,7 +26,7 @@ Quality assurance is built into each step of the FAC data pipeline, from collect
 
 To ensure the data we collect is reliable and consistent, we’ve built [multiple levels of validation](/data/reliability/validations/) into the FAC intake system. For more information on how data is submitted to the FAC, visit our [audit resources page](https://www.fac.gov/audit-resources/). 
 
-## Curation and auditable edit checks
+## Maintenance and curation
 
 The Federal Audit Clearinghouse holds the record of Single Audit submissions from 2016-present. It is easy to think that data collected in the past "never changes," but as systems evolve, so must the data and the tools that access it. And, sometimes, the data itself must change or be cared for. 
 
@@ -34,22 +34,9 @@ The Federal Audit Clearinghouse holds the record of Single Audit submissions fro
 
 [Read more about the ongoing curation]({{'/data/reliability/curation/' | htmlBaseUrl(baseUrl)}}) of data in the FAC and known errors in that data. 
 
+## Continuous improvement
 
-## Monitoring
-
-The FAC has implemented a still-evolving schedule (we’re always improving!) for ongoing manual and automated analysis of our data collection. Our testing is designed to monitor these five essential quality metrics:
-
-* Accuracy
-* Completeness
-* Consistency
-* Validity
-* Data Usage
-
-Test frequency varies based upon individual metrics and procedures, with our most frequent tests running on an automated once-weekly basis.
-
-## Continuous Improvement
-
-We ticket known issues or bugs in our [product backlog](https://github.com/orgs/GSA-TTS/projects/11/views/6?filterQuery=is%3Aopen+status%3ABacklog) on GitHub as they are discovered. Because these are updated often, visiting GitHub is the best way to review our current issues. To learn what work we have planned next please see the fac.gov product roadmap at the top of our [Updates page](https://www.fac.gov/updates/).
+We ticket known issues or bugs in our [product backlog](https://github.com/orgs/GSA-TTS/projects/11/views/6?filterQuery=is%3Aopen+status%3ABacklog) on GitHub as they are discovered. Because these are updated often, visiting GitHub is the best way to review our current issues. To learn what work we have planned next please see the FAC product roadmap at the top of our [updates page](https://www.fac.gov/updates/).
 
 ## Working with data from The FAC
 
