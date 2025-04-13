@@ -26,20 +26,25 @@ This work was completely automated, from the analysis through to the annotation.
 
 We did our initial migration of data in February of 2024, and 98% of the data (approximately 277K records) were migrated successfully. The remaining 2% (roughly 3200 records) required further  processing, and those were integrated into the Clearinghouse in July of 2024. 
 
+Two audits were sufficiently incomplete as to not be migrated. We have made provisions for those audit reports to still be found via search, but there is no SF-SAC associated with them.
+
+No part of the historical record was lost in this process.
+
 ### Identifiers, old and new
 
-Census had a system by which a `DBKEY` was assigned to each audit as it came in. The `AUDITYEAR` and `DBKEY` effectively formed a unique identifier. This identifier was **manually assigned** as each audit came in.
+Census had a system by which a `DBKEY` was assigned to each audit as it came in. The `AUDITYEAR` and `DBKEY` effectively formed a unique identifier. This identifier was manually assigned as each audit came in.
 
 GSA's intent is that an audit's report identifier should be automatically assigned. Once assigned, will never change.
 
-When migrating historical records, all audit report packages from Census were given a new-style report ID. For example, Berea College submitted an audit in 2023, and their audit had the record identifier [2023-06-GSAFAC-0000020471](https://app.fac.gov/dissemination/summary/2023-06-GSAFAC-0000020471); this clearly denotes the record as being collected by GSA. Their submission in 2022 was given the identifier [2022-06-CENSUS-0000091651](https://app.fac.gov/dissemination/summary/2022-06-CENSUS-0000091651), which clearly denotes it as a record that originated with Census. 
+When migrating historical records, all audit report packages from Census were given a new-style report ID. For example, Berea College submitted an audit in 2023, and their audit had the record identifier [2023-06-GSAFAC-0000020471](https://app.fac.gov/dissemination/summary/2023-06-GSAFAC-0000020471); this clearly denotes the record as being collected by `GSAFAC`. For their submission in 2022 was given the identifier [2022-06-CENSUS-0000091651](https://app.fac.gov/dissemination/summary/2022-06-CENSUS-0000091651), which clearly denotes it as a record that originated with Census. 
 
 In constructing new-style identifiers for `CENSUS` records, we used the `AUDITYEAR` for the first portion of the id (e.g. `2022`), and the `DBKEY` for the last portion of the report id (e.g. `0000091651`). 
 
 ### Transforms and annotations
 
-It is possible to see the annotation `GSA_MIGRATION` in some records at this time (last updated February 2024). The record of these annotations can be [downloaded as a CSV for offline analysis]({{'/data/download/migration/' | htmlBaseUrl(baseUrl)}}).
+It is possible to see the annotation `GSA_MIGRATION` in some records at this time (last updated February 2024). The GSA team is working, as part of this curatorial work, to make the original records available for reference where this annotation was applied.
 
-
-* [General data transformations]({{ "/data/migration/general-transforms/" | htmlBaseUrl(baseUrl) }})<br>These are transformations that were applied wholesale to files as data was migrated from Census to GSA.
-* [Specific field transformations]({{"/data/migration/table-transforms/" | htmlBaseUrl(baseUrl) }})<br>These are transformations applied to specific portions of the data. Each table in the Census data required unique, field-by-field handling.
+{# 
+* [General data transformations]({{ "/data/general-transforms/" | absoluteUrl }})<br>These are transformations that were applied wholesale to files as data was migrated from Census to GSA.
+* [Specific field transformations]({{"/data/specific-transforms/" | absoluteUrl }})<br>These are transformations applied to specific portions of the data. For example, a Census record that is missing an entire portion of the form required specialized handling.
+#}
