@@ -148,9 +148,9 @@
                 "url": "BASEURL/check_finding_reference_pattern.py"
             },
             {
-                "check": "prior_references_pattern",
+                "check": "finding_prior_references_pattern",
                 "description": "Asserts prior award numbers are correctly formatted",
-                "url": "BASEURL/check_prior_references_pattern.py"
+                "url": "BASEURL/check_finding_prior_references_pattern.py"
             },
             {
                 "check": "finding_reference_pattern",

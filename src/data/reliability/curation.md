@@ -14,7 +14,6 @@ The Federal Audit Clearinghouse holds the record of Single Audit submissions fro
 
 **Curation** is the act of looking after a collection. We use this word intentionally to describe how we manage the data contained within the FAC, as it implies that we do not simply *collect* and *store* data, but we must also *monitor* and *improve* the quality of that data over time, where possible. Sometimes we engage in curatorial acts because of errors discovered by users (or ourselves), and sometimes because of changes to the data collection or system itself.
 
-
 Our curation process follows 6 high-level steps.
 
 ## 1. Identify an issue in the data 

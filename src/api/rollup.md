@@ -41,7 +41,7 @@ rollups:
         output: >
             "U" if all TYPEREPORT_MP = U, overwise all non-U values listed once
         censusdesc: Type of report issued on the major program compliance
-        code: https://github.com/GSA-TTS/fac-api-examples/tree/main/rollups/050-typereportmp
+        code: https://github.com/GSA-TTS/fac-api-examples/tree/main/rollups/05-typereportmp
     MATERIALWEAKNESS_MP:
         rolled: MATERIALWEAKNESS_MP
         orig: MATERIALWEAKNESS from Findings table

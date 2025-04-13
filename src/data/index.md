@@ -59,9 +59,9 @@ In (Federal) Fiscal Year 2024, we migrated data from 2016-2022 from Census to GS
 
 You can read more about:
 
-* [Reliability](reliability/): How we validate the data we collect
-* [Curation](curation/): The curation process
-* [Curation Log](curation-log/): The log of changes made
-* [Concerns](concerns/): Known concerns and inconsistencies in the data
-* [Migration](migration/): The migration of FAC data from Census to GSA
+* [Reliability]({{'/data/reliability/' | htmlBaseUrl(baseUrl)}}): How we validate the data we collect
+* [Curation]({{'/data/reliability/curation/' | htmlBaseUrl(baseUrl)}}): The curation process
+* [Curation Log]({{'/data/reliability/curation-log/' | htmlBaseUrl(baseUrl)}}): The log of changes made
+* [Concerns]({{'/data/reliability/concerns/' | htmlBaseUrl(baseUrl)}}): Known concerns and inconsistencies in the data
+* [Migration]({{'/data/migration/' | htmlBaseUrl(baseUrl)}}): The migration of FAC data from Census to GSA
 

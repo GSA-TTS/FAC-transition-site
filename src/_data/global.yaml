@@ -16,10 +16,10 @@ navigation:
     - text: Audit submission
       id: audits
       links:
+        - text: Submit an audit
+          href: https://app.fac.gov/openid/login/
         - text: Submission resources
           href: 'audit-resources'
-        - text: Submission home
-          href: https://app.fac.gov/openid/login/
         - text: Submission guide
           href: 'audit-resources/submission-guide/about'
         - text: SF-SAC workbooks

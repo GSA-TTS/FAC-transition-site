@@ -107,3 +107,27 @@ Required Node packages are defined in `package.json`. To update a package:
 5. Resolve any expected errors from the update, such as Eleventy behavior or USWDS styling changes
 6. Verify the site builds and serves correctly with `npm run start`
 7. Commit _both_ `package.json` and `package-lock.json`
+
+# Link checking
+
+BLC seems to be a reasonable link checker. Install via
+
+`npm install blc`
+
+and run
+
+```
+blc --exclude "support.fac.gov" --exclude "close.svg" --recursive --follow <TARGET_URL>
+```
+
+This can be used against localhost as well as Federalist preview sites or the live site.
+
+```
+blc --exclude "support.fac.gov" --exclude "close.svg" --recursive --follow http://localhost:8080/
+```
+
+```
+blc --exclude "support.fac.gov" --exclude "close.svg" --recursive --follow https://www.fac.gov/
+```
+
+The ZenDesk support link does not resolve well, and can be ignored. The `close.svg` icon is broken, and until it is fixed, it is good to ignore it in the link walk.

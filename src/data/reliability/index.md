@@ -24,7 +24,7 @@ Data reliability is the measure of how accurate and complete a set of data is. R
 
 Quality assurance is built into each step of the FAC data pipeline, from collection to publication as well as periodic checks and monitoring.
 
-To ensure the data we collect is reliable and consistent, we’ve built [multiple levels of validation](/data/reliability/validations/) into the FAC intake system. For more information on how data is submitted to the FAC, visit our [audit resources page](https://www.fac.gov/audit-resources/). 
+To ensure the data we collect is reliable and consistent, we’ve built [multiple levels of validation]({{'/data/reliability/validations/' | htmlBaseUrl(baseUrl)}}) into the FAC intake system. For more information on how data is submitted to the FAC, visit our [audit resources page]({{'/audit-resources/' | htmlBaseUrl(baseUrl)}}). 
 
 ## Maintenance and curation
 
@@ -36,7 +36,7 @@ The Federal Audit Clearinghouse holds the record of Single Audit submissions fro
 
 ## Continuous improvement
 
-We ticket known issues or bugs in our [product backlog](https://github.com/orgs/GSA-TTS/projects/11/views/6?filterQuery=is%3Aopen+status%3ABacklog) on GitHub as they are discovered. Because these are updated often, visiting GitHub is the best way to review our current issues. To learn what work we have planned next please see the FAC product roadmap at the top of our [updates page](https://www.fac.gov/updates/).
+We ticket known issues or bugs in our [product backlog](https://github.com/orgs/GSA-TTS/projects/11/views/6?filterQuery=is%3Aopen+status%3ABacklog) on GitHub as they are discovered. Because these are updated often, visiting GitHub is the best way to review our current issues. To learn what work we have planned next please see the FAC product roadmap at the top of our [updates page]({{'/updates/' | htmlBaseUrl(baseUrl)}}).
 
 ## Working with data from The FAC
 
