@@ -20,9 +20,8 @@ Because it is difficult to add validations to spreadsheets in a way that works e
 
 The second layer of data validation is made up of many {# [intake validations]({{"intake-validations/" | absoluteUrl }}) #} intake validations. Here, we transform the spreadsheet or form a user submits into a shape that is more manageable for valiation. We then apply many validations, one after another, to help ensure data quality. Where we find errors, we do our best to provide error messages that guide people to a correct submission.
 
-{# 
+
 Read more about our [intake validations]({{"intake-validations/" | absoluteUrl }}).
-#}
 
 ## Schema validations
 
