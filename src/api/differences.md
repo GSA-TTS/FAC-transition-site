@@ -163,7 +163,7 @@ eleventyComputed:
                     {% elif row.gsa == "Unknown" %}
                         No information available at this time.
                     {% elif row.gsa == "Rollup" %}
-                        See [rollups]({{'/api/rollups/' | htmlBaseUrl(baseUrl)}}).
+                        See [rollups]({{'/api/rollup/' | htmlBaseUrl(baseUrl)}}).
                     {% else %}
                         {{ row.comment | safe }}
                     {% endif %}
