@@ -39,6 +39,7 @@ API stands for **Application Programming Interface**. APIs make it easy for comp
 [Get started]({{glossary.sites.api.url}}) with our API.
 
 
+{#
 
 ## Where does our data come from?
 
@@ -54,6 +55,7 @@ Many people use this data in many ways. For example:
 4. **Resolution officials** provide oversight of Federal spending from a programmatic and agency perspective
 5. **Inspectors General** oversee the quality of Single Audits
 
+#}
    
 ## How do we care for the data?
 
