@@ -14,9 +14,6 @@ The Federal Audit Clearinghouse (The FAC) collects Single Audit report packages,
 
 There are two pieces to a Single Audit submission to the FAC: the **form** and the **report**. The data can be searched via our [web-based interface]({{glossary.sites.basic_search.url}}), and reports downloaded from those results. It is also possible to download our data as CSVs, or access our data via API.
 
-## Where does our data come from?
-
-Single Audit report packages must be uploaded to fac.gov by the recipient of the Federal grant funding (the entity), and are independently certified as accurate by both the entity and conducting auditor before being published to our searchable database. These parties are required to use a Login.gov account in order to upload reporting packages. Login.gov is free to use, and has the [highest standards of security](https://login.gov/policy/) to keep our information safe.
 
 ## How do I access the data?
 
@@ -31,7 +28,9 @@ There are two search interfaces:
 
 ### Download the data
 
-You can also [download all of our data as CSVs]({{'/data/download/' | htmlBaseUrl(baseUrl)}}). A CSV, or comma-separated-value file can be explored using spreadsheets like Excel and LibreOffice. If you are trying to analyze a lot of the data, you can use programming languages like SAS, SPSS, Python, and R to explore the files.
+A CSV, or comma-separated-value file, can be explored using spreadsheets and code alike. If you are trying to analyze a lot of the data, you can use programming languages like SAS, SPSS, Python, and R to explore the files.
+
+[Download all of our data as CSVs]({{'/data/download/' | htmlBaseUrl(baseUrl)}}). 
 
 ### Access via code (API)
 
@@ -39,6 +38,11 @@ API stands for **Application Programming Interface**. APIs make it easy for comp
 
 [Get started]({{glossary.sites.api.url}}) with our API.
 
+
+
+## Where does our data come from?
+
+Single Audit report packages must be uploaded to fac.gov by the recipient of the Federal grant funding (the entity), and are independently certified as accurate by both the entity and conducting auditor before being published to our searchable database. These parties are required to use a Login.gov account in order to upload reporting packages. Login.gov is free to use, and has the [highest standards of security](https://login.gov/policy/) to keep our information safe.
 
 ## Who uses this data?
 

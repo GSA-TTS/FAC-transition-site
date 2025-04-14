@@ -1,0 +1,165 @@
+endpoint,field,description,data_type,notes
+general,report_id,Unique identifier for the audit report. ,TEXT,"Has the form YYYY-MM-(CENSUS|GSAFAC)-##########. For CENSUS records, the ### is the historic DBKEY."
+general,auditee_uei,Unique Entity Identifier (UEI) of the auditee,TEXT,All UEIs validated against the [SAM.gov schema](https://github.com/GSA-TTS/FAC/blob/ce7cbfed1b4ce48635f54b8155b49fbd1c0efa49/backend/schemas/source/base/Base.libsonnet#L270)
+general,audit_year,Year in which the audit was conducted,NUMBER,
+general,auditee_certify_name,Name of auditee certifying official,TEXT,
+general,auditee_certify_title,Title of auditee certifying official,TEXT,
+general,auditee_contact_name,Name of auditee's primary contact,TEXT,
+general,auditee_email,Email address of the auditee's primary contact,TEXT,All emails match the [FAC email schema](https://github.com/GSA-TTS/FAC/blob/ce7cbfed1b4ce48635f54b8155b49fbd1c0efa49/backend/schemas/source/base/Base.libsonnet#L247)
+general,auditee_name,Full name of the auditee organization,TEXT,
+general,auditee_phone,Phone number of the auditee,TEXT,All phone numbers match the the [FAC phone number schema](https://github.com/GSA-TTS/FAC/blob/ce7cbfed1b4ce48635f54b8155b49fbd1c0efa49/backend/schemas/source/base/Base.libsonnet#L244)
+general,auditee_contact_title,Job title of the auditee's primary contact,TEXT,
+general,auditee_address_line_1,Street address of the auditee,TEXT,
+general,auditee_city,City where the auditee is based,TEXT,
+general,auditee_state,State where the auditee is based,TEXT,All sets in the [FAC list of states](https://github.com/GSA-TTS/FAC/blob/ce7cbfed1b4ce48635f54b8155b49fbd1c0efa49/backend/schemas/source/base/States.json)
+general,auditee_ein,Employer Identification Number (EIN) of the auditee,TEXT,
+general,auditee_zip,Auditee's zip code,TEXT,All zip codes match the regular expression `^[0-9]{5}(?:[0-9]{4})?$`
+general,auditor_phone,Phone number of the auditor,TEXT,
+general,auditor_state,State where the auditor is based,TEXT,
+general,auditor_city,City where the auditor is based,TEXT,
+general,auditor_contact_title,Job title of the auditor,TEXT,
+general,auditor_address_line_1,Street address of the auditor,TEXT,
+general,auditor_zip,Auditor's zip code,TEXT,
+general,auditor_country,Country where the auditor is based,TEXT,
+general,auditor_contact_name,Name of the auditor,TEXT,
+general,auditor_email,Email address of the auditor,TEXT,
+general,auditor_firm_name,Name of the auditing firm,TEXT,
+general,auditor_foreign_address,Address of the auditor (if international),TEXT,
+general,auditor_ein,Employer Identification Number (EIN) of the auditing firm,TEXT,
+general,cognizant_agency,Two digit federal agency prefix of the cognizant agency,TEXT,"Presented as text, because some numbers begin with 0"
+general,oversight_agency,Two digit federal agency prefix of the oversight agency,TEXT,"Presented as text, because some numbers begin with 0"
+general,date_created,The first date an audit component or Form SF-SAC was received by the Federal audit Clearinghouse,DATE,YYYY-MM-DD
+general,ready_for_certification_date,Date when the report was marked as ready for certification,DATE,YYYY-MM-DD
+general,auditor_certified_date,Date when the auditor certified the report,DATE,YYYY-MM-DD
+general,auditee_certified_date,Date when the auditee certified the report,DATE,YYYY-MM-DD
+general,submitted_date,Date when the auditee submitted the report to the FAC,DATE,YYYY-MM-DD
+general,fac_accepted_date,Date when the FAC accpeted an audit,DATE,YYYY-MM-DD
+general,fy_end_date,End date of the fiscal year covered by the audit,DATE,YYYY-MM-DD
+general,fy_start_date,Start date of the fiscal year covered by the audit,DATE,YYYY-MM-DD
+general,audit_type,Type of audit conducted,TEXT,"Will be one of `single-audit`, `program-specific`, or `GSA_MIGRATION`"
+general,gaap_results,General Accepted Accounting Principles (GAAP) - Type of report issued on the financial statements,TEXT,"Comma-separated string, where the list may include any of `not_gaap`, `unmodified_opinion`, `qualified_opinion`, `adverse_opinion`, or `disclaimer_of_opinion`. The field may also have the value `GSA_MIGRATION`"
+general,sp_framework_basis,Special purpose framework that was used as the basis of accounting,TEXT,"One of `other_basis`, `cash_basis`, `tax_basis`,`regulatory_basis`, `contractual_basis`"
+general,is_sp_framework_required,Indicates whether a special purpose framework was required,TEXT,"`Yes`, `No`, or `GSA_MIGRATION`"
+general,sp_framework_opinions,The auditor's opinion on the special purpose framework,,"Comma-separated string, where the list may include any of `not_gaap`, `unmodified_opinion`, `qualified_opinion`, `adverse_opinion`, or `disclaimer_of_opinion`. The field may also have the value `GSA_MIGRATION`"
+general,is_going_concern_included,"Indicates if auditor included a ""going concern"" disclosure",TEXT,"`Yes`, `No`, or `GSA_MIGRATION`"
+general,is_internal_control_deficiency_disclosed,Indicates if auditor disclosed internal control deficiencies,TEXT,"`Yes`, `No`, or `GSA_MIGRATION`"
+general,is_internal_control_material_weakness_disclosed,Indicates if auditor disclosed material weaknesses in internal controls,TEXT,"`Yes`, `No`, or `GSA_MIGRATION`"
+general,is_material_noncompliance_disclosed,Indicates if auditor disclosed material noncompliance,TEXT,"`Yes`, `No`, or `GSA_MIGRATION`"
+general,dollar_threshold,Dollar threshold to distinguish between type A and type B programs,NUMBER,
+general,is_low_risk_auditee,Indicates if the auditee qualifies as low risk,,"`Yes`, `No`, or `GSA_MIGRATION`"
+general,agencies_with_prior_findings,Indicates whether or not the report includes a Summary Schedule of Prior Year Audit Findings,TEXT,A string containing a comma-separated list of agency numbers
+general,entity_type,Self-reported type of entity,TEXT,"One of `non-profit`, `state`, `local`, `higher-ed`, `tribal`, or `unknown`"
+general,number_months,Number of months covered in the audit period,NUMBER,
+general,audit_period_covered,Audit period covered by audit,TEXT,"One of `annual`, `biennial`, or `other`"
+general,total_amount_expended,Total amount of federal funds expended by the auditee,NUMBER,
+general,type_audit_code,Code indicating the type of audit conducted,TEXT,"All audits captured by GSA are type_audit_code ""UG"""
+general,is_public,Indicates if the audit report is publicly available,TEXT,True or False
+general,data_source,"Source of the audit data; CENSUS if the data was collected by Census, and GSAFAC if collected by GSA.",TEXT,`CENSUS` or `GSAFAC`
+general,is_aicpa_audit_guide_included,Indicates if the audit follows AICPA guidance,TEXT,"`Yes`, `No`, or `GSA_MIGRATION`"
+general,is_additional_ueis,Indicates if the audit coveres multiple UEIs,TEXT,`Yes` or `No`
+general,is_multiple_eins,Indicates if the audit covers multiple EINs,TEXT,`Yes` or `No`
+general,is_secondary_auditors,Indicates if secondary auditors were involved,TEXT,`Yes` or `No`
+federal_awards,report_id,Identifier for the audit report,TEXT,
+federal_awards,auditee_uei,Unique Entity Identifier (UEI) of the auditee,TEXT,
+federal_awards,audit_year,Year the audit was conducted,NUMBER,
+federal_awards,award_reference,The award reference number as listed in SF-SAC Section 1: Federal Awards. Award references will be formatted “AWARD-####”.,TEXT,FAC system generated sequence number used to link to Findings data between CFDA/ALN Info and Findings
+federal_awards,federal_agency_prefix,Two-digit prefix identifying the agency,TEXT,See the [FAC list of agencies](https://github.com/GSA-TTS/FAC/blob/ce7cbfed1b4ce48635f54b8155b49fbd1c0efa49/backend/schemas/source/data/cfda-agencies.csv)
+federal_awards,federal_award_extension,"Three-digit prefix identifying the federal awarding agency (the last 3 digits of their Assistance Listing Number, formerly known as the CFDA)",TEXT,"The extensions are generally three-digit numbers. Agencies sometimes apply a letter to the end of this extension to designate programs: `123A`, for example. For research and development, the value may be `RD` or `RD#`. In the case of an unknown program, `U##` is possible. `GSA_MIGRATION` is sometimes found for historic records where the ALN could not be decomposed into anything meaningful.  "
+federal_awards,additional_award_identification,Other data used to identify the award which is not a CFDA/ALN number,TEXT,A free-form field used by auditees and auditors to further identify an award or passthrough information.
+federal_awards,federal_program_name,Name of the federal program that provided the funding,TEXT,See the FAC [list of ALNs](https://github.com/GSA-TTS/FAC/blob/ce7cbfed1b4ce48635f54b8155b49fbd1c0efa49/backend/schemas/source/data/cfda-lookup.csv)
+federal_awards,amount_expended,Total amount of federal funds expended for an award,NUMBER,Rounded to the nearest whole dollar
+federal_awards,cluster_name,Name of the cluster to which this federal award belongs,TEXT,Controlled field; `GSA_MIGRATION` or see the [FAC list of cluster names](https://github.com/GSA-TTS/FAC/blob/ce7cbfed1b4ce48635f54b8155b49fbd1c0efa49/backend/schemas/source/data/cluster-names.csv)
+federal_awards,other_cluster_name,The name of the cluster (if not listed in the compliance supplement),TEXT,Free-form text
+federal_awards,state_cluster_name,State-designated cluster name if applicable,TEXT,Free-form text
+federal_awards,cluster_total,Total federal awards expended for each cluster in the audit,NUMBER,Auto-completed based on previous field responses
+federal_awards,federal_program_total,Total amount of federal funding for the specific program,NUMBER,Auto-completed based on previous field responses
+federal_awards,is_major,Indicates if the award is classified as a major program,TEXT,"If the Federal program is a major program, ""Y"" wil appear, then either letter ""U, Q, A, or D"" will appear for the type of audit report on the major program: U=Unqualifed, Q=Qualified, A=Adverse, D=Disclaimer. This field will be blank or ""N"" if not a major program."
+federal_awards,is_loan,Indicates if the award is a loan,TEXT,`Y` or `N`
+federal_awards,loan_balance,Outstanding loan balance if applicable,NUMBER,Can be NULL
+federal_awards,is_direct,Indicates if the funding was received directly from a federal agency,TEXT,"`Y`, `N`, or `GSA_MIGRATION`"
+federal_awards,audit_report_type,"Type of report issued on the major program compliance. U=Unqualifed, Q=Qualified, A=Adverse, D=Disclaimer. ",TEXT,"`U`, `Q`, `A`, `D`, or NULL"
+federal_awards,findings_count,Number of findings for the federal program,NUMBER,Only available for audit years 2013 and beyond
+federal_awards,is_passthrough_award,Indicates if the award was passed through another entity before reaching the auditee,TEXT,"`Y`, `N`, or `GSA_MIGRATION`"
+federal_awards,passthrough_amount,Amount of federal funding passed through to subrecipient,NUMBER,
+findings,report_id,Identifier for the audit report,TEXT,
+findings,auditee_uei,Unique Entity Identifier (UEI) of the auditee,TEXT,
+findings,audit_year,Year in which the audit was conducted,NUMBER,
+findings,award_reference,The award reference number as listed in SF-SAC Section 1: Federal Awards. Award references will be formatted “AWARD-####”.,TEXT,Has the shape AWARD-#### or AWARD-#####
+findings,reference_number,Findings reference numbers,TEXT,Has the shape YYYY-### or `GSA_MIGRATION`
+findings,is_material_weakness,Indicates if the finding is classified as a material weakness,TEXT,"`Y`, `N`, or `GSA_MIGRATION`"
+findings,is_modified_opinion,Indicates if the finding resulted in a modified audit opinion,TEXT,"`Y`, `N`, or `GSA_MIGRATION`"
+findings,is_other_findings,"Indicates if the finding falls under ""other findings""",TEXT,"`Y`, `N`, or `GSA_MIGRATION`"
+findings,is_other_matters,"Indicates if the finding involves ""other matters""",TEXT,"`Y`, `N`, or `GSA_MIGRATION`"
+findings,prior_finding_ref_numbers,Audit finding reference numbers from the immediate prior audit,TEXT,"`Y`, `N`, or `GSA_MIGRATION`"
+findings,is_questioned_costs,Indicates if the finding includes questioned costs,TEXT,"`GSA_MIGRATION` or a comma-separated list of reference numbers (e.g. `2022-001,2021-003`). Spaces may be present in the list."
+findings,is_repeat_finding,Indicates if the finding was reported in a prior year,TEXT,`Y` or `N`
+findings,is_significant_deficiency,Indicates if the finding is classified as a significant deficiency,TEXT,"`Y`, `N`, or `GSA_MIGRATION`"
+findings,type_requirement,"Code indicating the type of compliance requirement affected by the finding. 
+
+
+A. Activities allowed or unallowed
+B. Allowable costs/cost principles
+C. Cash management
+D. Reserved
+E. Eligibility
+F. Equipment and real property management
+G. Matching, level of effort, earmarking
+H. Period of performance (or availability) of Federal funds
+I. Procurement and suspension and debarment
+J. Program income
+K. Reserved
+L. Reporting
+M. Subrecipient monitoring
+N. Special tests and provisions
+P. Other
+
+Note: There is no ""O"" option. ",TEXT,"This field is either `GSA_MIGRATION` or a string of characters in the set [A,B,C,D,E,F,G,H,I,J,K,L,M,N,P].
+"
+findings_text,report_id,Identifier for the audit report,TEXT,
+findings_text,auditee_uei,Unique Entity Identifier (UEI) of the auditee,TEXT,
+findings_text,audit_year,Year in which the audit was conducted,NUMBER,
+findings_text,finding_ref_number,Reference number assigned to the specific finding,TEXT,Of the shape YYYY-###
+findings_text,contains_chart_or_table,Indicates if the finding text contains a chart or table,TEXT,"`Y`, `N`, or `GSA_MIGRATION`"
+findings_text,finding_text,"Full textual description of the finding, detailing the issue identified during the audit.",TEXT,"Freeform text, up to ~20K characters"
+corrective_action_plans,report_id,Identifier for the audit report,TEXT,
+corrective_action_plans,auditee_uei,Unique Entity Identifier (UEI) of the auditee,TEXT,
+corrective_action_plans,audit_year,Year in which the audit was conducted,NUMBER,
+corrective_action_plans,finding_ref_number,Reference number assigned to the specific finding,TEXT,Of the shape YYYY-###
+corrective_action_plans,contains_chart_or_table,Indicates if the corrective action plan contains a chart or table,TEXT,"`Y`, `N`, or `GSA_MIGRATION`"
+corrective_action_plans,planned_action,Content of the Corrective Action Plan (CAP),TEXT,"Freeform text, up to ~20K characters"
+passthrough,report_id,Identifier for the audit report,TEXT,
+passthrough,auditee_uei,Unique Entity Identifier (UEI) of the auditee,TEXT,
+passthrough,audit_year,Year in which the audit was conducted,NUMBER,
+passthrough,award_reference,The award reference number as listed in SF-SAC Section 1: Federal Awards. Award references will be formatted “AWARD-####”.,TEXT,Has the shape AWARD-#### or AWARD-#####
+passthrough,passthrough_id,Identifying number assigned by the pass-through entity,TEXT,Freeform text
+passthrough,passthrough_name,Name of passthrough entity,TEXT,Freeform text
+notes_to_sefa,report_id,Unique identifier for the audit report,TEXT,
+notes_to_sefa,auditee_uei,Unique Entity Identifier (UEI) of the auditee,TEXT,
+notes_to_sefa,audit_year,Year in which the audit was conducted,NUMBER,
+notes_to_sefa,title,Title of the note related to the Schedule of Expenditures of Federal Awards (SEFA),TEXT,Freeform text
+notes_to_sefa,accounting_policies,Description of the accounting policies applied to the SEFA,TEXT,Freeform text
+notes_to_sefa,is_minimis_rate_used,Indicates whether the 10% de minimis indirect cost rate is used,TEXT,"`Y`, `N`, `Both`, or `GSA_MIGRATION`"
+notes_to_sefa,rate_explained,"Explanation of the indirect cost rate used, if applicable",TEXT,Freeform text
+notes_to_sefa,content,Content of the note,TEXT,Freeform text
+notes_to_sefa,contains_chart_or_table,Indicates whether the note contains a chart or table,TEXT,"`Y`, `N`, or `GSA_MIGRATION`, or NULL"
+secondary_auditors,report_id,Identifier for the audit report,TEXT,
+secondary_auditors,auditee_uei,Unique Entity Identifier (UEI) of the auditee,TEXT,
+secondary_auditors,audit_year,Year in which the audit was conducted,NUMBER,
+secondary_auditors,auditor_ein,Employer Identification Number (EIN) of the secondary auditor,TEXT,
+secondary_auditors,auditor_name,Name of the auditor,TEXT,
+secondary_auditors,contact_name,Name of the contact person,TEXT,
+secondary_auditors,contact_title,Title of the contact person,TEXT,
+secondary_auditors,contact_email,Email address of the contact person,TEXT,
+secondary_auditors,contact_phone,Phone number of the contact person,TEXT,
+secondary_auditors,address_street,Street address of the contact person,TEXT,
+secondary_auditors,address_city,City where the contact person is located,TEXT,
+secondary_auditors,address_state,State where the contact is located,TEXT,
+secondary_auditors,address_zipcode,ZIP code of the contact person,TEXT,
+additional_ueis,report_id,Identifier for the audit report.,TEXT,
+additional_ueis,auditee_uei,Unique Entity Identifier (UEI) of the auditee.,TEXT,
+additional_ueis,audit_year,Year in which the audit was conducted.,NUMBER,
+additional_ueis,additional_uei,Additional Unique Entity Identifier (UEI) associated with the auditee.,TEXT,
+additional_eins,report_id,Identifier for the audit report,TEXT,
+additional_eins,auditee_uei,Unique Entity Identifier (UEI) of the auditee,TEXT,
+additional_eins,audit_year,Year in which the audit was conducted,NUMBER,
+additional_eins,additional_ein,Additional Employer Identification Number (EIN) associated with the auditee,TEXT,

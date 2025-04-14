@@ -20,9 +20,9 @@ Our CSVs (comma-separated-value files) collect the data currently contained with
 
 These files will be of most interest to users exploring audits of Federal grants made in the past several years. This is the same as the data currently [available in our search](https://app.fac.gov/dissemination/search/).
 
-* [Data files](https://docs.google.com/document/d/1-ir4a5U6-NHX6RoU0sy2KsEFOJ7gZ9nlme8Ox4cBfcI/edit?tab=t.0)  
-* Data dictionary  
-* How to work with the current data
+* [Data files]({{'/data/download/current/' | htmlBaseUrl(baseUrl)}})  
+* [Data dictionary]({{'/data/download/current-dictionary/' | htmlBaseUrl(baseUrl)}})
+* [How to work with the current data]({{'/data/download/current/' | htmlBaseUrl(baseUrl)}})
 
 ## Historic data: 1998-2015
 
