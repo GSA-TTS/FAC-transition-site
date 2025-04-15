@@ -14,6 +14,8 @@ eleventyComputed:
 
 # Current data dictionary (2016-present)
 
+{# FIXME WRONG TEXT #}
+
 The historic data is all SF-SAC data collected by Census from 1998&ndash;2015. The SF-SAC form changed over the years, with different values coming into existence at different times. We have attempted to capture that in this data dictionary.
 
 The quality of data validations were limited in the beginning, and improved over the years. The current Clearinghouse is unable to answer any questions about the historic data at this time; it is provided as part of the public record.

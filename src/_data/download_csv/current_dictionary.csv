@@ -14,6 +14,8 @@ general,auditee_city,City where the auditee is based,TEXT,
 general,auditee_state,State where the auditee is based,TEXT,All sets in the [FAC list of states](https://github.com/GSA-TTS/FAC/blob/ce7cbfed1b4ce48635f54b8155b49fbd1c0efa49/backend/schemas/source/base/States.json)
 general,auditee_ein,Employer Identification Number (EIN) of the auditee,TEXT,
 general,auditee_zip,Auditee's zip code,TEXT,All zip codes match the regular expression `^[0-9]{5}(?:[0-9]{4})?$`
+general,auditor_certify_title,Title of auditor certifying official,TEXT,
+general,auditor_contact_name,Name of auditor's certifying official,TEXT,
 general,auditor_phone,Phone number of the auditor,TEXT,
 general,auditor_state,State where the auditor is based,TEXT,
 general,auditor_city,City where the auditor is based,TEXT,

@@ -108,6 +108,10 @@ These files will be of most interest to users exploring audits of Federal grants
 
 We've split the data in three different ways for different use cases.
 
+{#
+FIXME: Mini TOC here
+#}
+
 ## Full data files
 
 The full data files are complete exports of data from the FAC. These files are too large to load into Excel and will require programs like Python notebooks, SAS, SPSS, and other code-oriented tools to manage.
