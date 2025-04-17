@@ -28,7 +28,7 @@ To ensure the data we collect is reliable and consistent, we’ve built [multipl
 
 ## Maintenance and curation
 
-The Federal Audit Clearinghouse holds the record of Single Audit submissions from 2016-present. It is easy to think that data collected in the past "never changes," but as systems evolve, so must the data and the tools that access it. And, sometimes, the data itself must change or be cared for. 
+The Federal Audit Clearinghouse maintains the audit records of Single Audit submissions from 2016-present. It is easy to think that data collected in the past "never changes," but as systems evolve, so must the data and the tools that access it. And, sometimes, the data itself must change or be cared for. 
 
 **Curation** is the act of looking after a collection. We use this word intentionally to describe how we manage the data contained within the FAC, as it implies that we do not simply *collect* and *store* data, but we must also *monitor* and *improve* the quality of that data over time, where possible. Sometimes we engage in curatorial acts because of errors discovered, and sometimes because of changes to the data collection or system itself.
 

@@ -10,7 +10,7 @@ baseurl: https://github.com/GSA-TTS/FAC/blob/414f9932b3797de68c7271ba0b471c9b834
 
 # {{title}}
 
-Intake validations are the first layer of validation that the SF-SAC undergoes as it is uploaded to the FAC. In order to validate SF-SAC form sections, we do three things:
+Intake validations are run as an audit is submitted piece-by-piece. In order to validate SF-SAC form sections, we do three things:
 
 1. Convert the spreadsheet into JSON
 2. Validate the data in this intermediate JSON form
@@ -23,7 +23,7 @@ Each of these steps helps ensure a better submission to the FAC.
 
 Intake validations are critical for several reasons.
 
-1. **They are user-centered**. <br>Each validation produces errors that are human-friendly. They are what help auditors and grantees fix errors they may have made. Our messages specify errors down to the specific cell, and are refined for usability based on user feedback.
+1. **They are user-centered**. <br>When a validation finds a mistake in the data, we try and produce error messages that are human-friendly. They are what help auditors and grantees fix errors they may have made. Our messages specify errors down to the specific cell, and are refined for usability based on user feedback.
 2. **They are self-contained**.<br>Each validation does only one thing. This helps the GSA team with maintaining the validations.
 3. **They are comprehensive**.<br>The intake validations are intended to cover all possible error conditions we might encounter. In the event that an auditor or grantee finds a new, surprising way to enter data into our forms... we add a new intake validation.
 
@@ -37,7 +37,7 @@ This conversion is a validation of its own kind; if we cannot convert the input 
 
 ## Step 2: Validate the data
 
-The intermediate form makes the data validation easier. Every section of the SF-SAC has a common set of validations applied. For example, we make sure every form section has a UEI defined. Then, we apply section-specific validations. Federal Awards is the most complex form section, and therefore many of our data validations are applied to that portion of the submission. 
+The intermediate form makes the data validation easier. Every section of the SF-SAC has a common set of validations applied. For example, we make sure every form section has a UEI defined. Then, we apply section-specific validations.
 
 <div class="usa-table-container" tabindex="0">
 <table class="usa-table">

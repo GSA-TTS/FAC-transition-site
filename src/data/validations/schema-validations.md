@@ -70,7 +70,7 @@ In the same spirit, the FAC converts the data collected via spreadsheet into a s
             ...
 ```
 
-This representation, again using the [Javascript Object Notation](https://www.json.org/json-en.html), connects part of the data in meaningful ways. For example, we cluster information about the cluster and total cluster expenditures separate from information about the specific Federal program that the funding was issued under. Every form section has its own JSON representation, which reflects the SF-SAC and the meaningful connections between the data in that specific section.
+This representation, again using the [Javascript Object Notation](https://www.json.org/json-en.html), connects part of the data in meaningful ways. For example, we cluster information about the cluster and total cluster expenditures separately from information about the specific Federal program that provided the funding. Every form section has its own JSON representation, which reflects the SF-SAC and the meaningful connections between the data in that specific section.
 
 ## Validating the shape
 
