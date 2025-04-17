@@ -48,7 +48,7 @@ function tableCreate(root, caption_text, tag, baseUrl) {
   var tbl = document.createElement('table');
   setAttrs(tbl, {"role": "table", "class": "usa-table"});
 
-var caption = document.createElement("caption");
+  var caption = document.createElement("caption");
   var txt = document.createTextNode(caption_text);
   caption.appendChild(txt);
   tbl.appendChild(caption);
@@ -155,7 +155,7 @@ If you are using Excel or similar tools to explore this data, we recommend the f
 
 These files are split based on the federal fiscal year in which the auditee submitted their audit.
 
-This means that the file named `general-ffy-2106.csv` is the record of audits collected from October 1st, 2015, through September 30, 2016\. 
+This means that the file named `general-ffy-2106.csv` is the record of audits collected from October 1st, 2015, through September 30, 2016. 
 
 <div class="usa-table-container" tabindex="0">
   <div id="fy-table"></div>

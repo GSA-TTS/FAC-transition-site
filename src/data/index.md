@@ -10,10 +10,7 @@ meta:
 
 The data collected by the FAC is **free to use and in the public domain**.
 
-The Federal Audit Clearinghouse (The FAC) collects Single Audit report packages, as required by the [Single Audit Act](https://www.congress.gov/bill/98th-congress/senate-bill/1510). This act mandates an annual audit of all non-Federal entities that spend $1,000,000 or more of Federal Financial Assistance (Federal grant dollars) in a fiscal year. A Single Audit report package comprises two parts: The audit report PDF and Form SF-SAC. The audit report PDF is prepared by an independent auditor, and it presents both an organization's financial statements and compliance with Federal award requirements. Form SF-SAC collects data about the awards made and, in some cases, audit findings.
-
-There are two pieces to a Single Audit submission to the FAC: the **form** and the **report**. The data can be searched via our [web-based interface]({{glossary.sites.basic_search.url}}), and reports downloaded from those results. It is also possible to download our data as CSVs, or access our data via API.
-
+The Federal Audit Clearinghouse (The FAC) collects Single Audit report packages, as required by the [Single Audit Act](https://www.congress.gov/bill/98th-congress/senate-bill/1510). This act mandates an annual audit of all non-Federal entities that spend ${{glossary.variables.threshold_post}}) or more of Federal Financial Assistance (Federal grant dollars) in a fiscal year. A Single Audit report package comprises two parts: The audit report PDF and Form SF-SAC. The audit report PDF is prepared by an independent auditor, and it presents both an organization's financial statements and compliance with Federal award requirements. Form SF-SAC collects data about the awards made and, in some cases, audit findings.
 
 ## How do I access the data?
 
@@ -36,26 +33,7 @@ A CSV, or comma-separated-value file, can be explored using spreadsheets and cod
 
 API stands for **Application Programming Interface**. APIs make it easy for computer programs to request and receive information in a useable format. The FAC provides data that is easily computer-readable so that you can search and incorporate SF-SAC data directly into your own analyses.
 
-[Get started]({{glossary.sites.api.url}}) with our API.
-
-
-{#
-
-## Where does our data come from?
-
-Single Audit report packages must be uploaded to fac.gov by the recipient of the Federal grant funding (the entity), and are independently certified as accurate by both the entity and conducting auditor before being published to our searchable database. These parties are required to use a Login.gov account in order to upload reporting packages. Login.gov is free to use, and has the [highest standards of security](https://login.gov/policy/) to keep our information safe.
-
-## Who uses this data?
-
-Many people use this data in many ways. For example: 
-
-1. **Members of the public** explore how Federal dollars are spent locally and nationally
-2. **Reporters** report on Federal spending to local, national, and global audiences
-3. **Grants officers** review grantee performance as part of the allocation of funds
-4. **Resolution officials** provide oversight of Federal spending from a programmatic and agency perspective
-5. **Inspectors General** oversee the quality of Single Audits
-
-#}
+[Get started]({{'/api/' | htmlBaseUrl(baseUrl)}}) with our API.
    
 ## How do we care for the data?
 
