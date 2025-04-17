@@ -1,40 +1,10 @@
 ---
 layout: sidenav.njk
-title: Data from 2016–Present
+title: Data from 1998-2015
 meta:
-  name: Data from 2016–Present
-  description: Documentation about the data migration from Census to GSA.
+  name: Data from 1998-2015
+  description: Historic Census data from the SF-SAC.
 tables:
-  - name: general
-    abbrev: g
-    desc: Metadata about the submission
-  - name: federal_awards
-    abbrev: fa
-    desc: Financial award data associated with submissions
-  - name: notes_to_sefa
-    abbrev: nts
-    desc: Metadata about the SEFA
-  - name: findings
-    abbrev: f
-    desc: Findings associated with the audit
-  - name: findings_text
-    abbrev: ft
-    desc: Text of the findings
-  - name: corrective_action_plans
-    abbrev: cap
-    desc: Text of corrective action plans associated with findings
-  - name: passthrough
-    abbrev: p
-    desc: Awards passed through to subentities
-  - name: secondary_auditors
-    abbrev: sa
-    desc: Additional auditors on the report
-  - name: additional_ueis
-    abbrev: au
-    desc: UEIs of entities included in the report
-  - name: additional_eins
-    abbrev: ae
-    desc: EINs of entities included in the report
 csv_base: https://app.fac.gov/dissemination/public-data/census/csv
 sizes: [15,16,16,20,22,23,22,23,24,24,24,27,32,32,30,30,28,29]
 ---
@@ -60,7 +30,6 @@ This is the same data as above, broken out by audit year.
 <ul>
 {%- for year in range(1998, 2016) -%}
   <li><a href="{{csv_base}}/census-{{year}}.zip">census-{{year}}.zip</a> ({{sizes[loop.index-1]}}MB, <a href="{{csv_base}}/census-{{year}}.sha1">SHA1</a>)</li>
-  
 {%- endfor -%}
 </ul>
 
