@@ -158,8 +158,8 @@ These files are split based on the federal fiscal year in which the auditee subm
 This means that the file named `general-ffy-2106.csv` is the record of audits collected from October 1st, 2015, through September 30, 2016. 
 
 <div class="usa-table-container" tabindex="0">
-  <div id="fy-table"></div>
-  <script>tableCreate(document.getElementById("fy-table"), "CSVs by federal fiscal year", "ffy", "http://localhost:8080/blah")</script>
+  <div id="ffy-table"></div>
+  <script>tableCreate(document.getElementById("ffy-table"), "CSVs by federal fiscal year", "ffy", "http://localhost:8080/blah")</script>
 </div>
 
 
