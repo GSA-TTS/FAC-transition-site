@@ -27,8 +27,7 @@
                                 <button
                                     class="usa-accordion__button usa-nav__link"
                                     aria-expanded="false"
-                                    aria-controls="basic-nav-{{ section.id }}"
-                                >
+                                    aria-controls="basic-nav-{{ section.id }}" >
                                     <span>{{ section.text }}</span>
                                 </button>
                                 <ul id="basic-nav-{{ section.id }}" class="usa-nav__submenu">
@@ -42,7 +41,6 @@
                                         </li>
                                     {% endfor %}
                                 </ul>
-
                             </li>
                         {% elif section.href %}
                             {% set linkUrl = section.href %}
