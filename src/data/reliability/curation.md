@@ -30,11 +30,11 @@ A regression test is a test that *fails* because of a known problem. Once the pr
 
 ## 4. Communicate a solution 
 
-The Clearinghouse, in consultation with appropriate agencies and advisory boards, will propose a solution via our [Decision Record process](https://github.com/GSA-TTS/FAC/blob/main/docs/architecture/decisions/0001-record-architecture-decisions.md). We will then announce that proposed solution, and a timeline to resolution, via our [updates page]({{"/updates/" | htmlBaseUrl(baseUrl)}}).
+The Clearinghouse, in consultation with appropriate agencies and advisory boards, will propose a solution via our [Decision Record process](https://github.com/GSA-TTS/FAC/blob/main/docs/architecture/decisions/0001-record-architecture-decisions.md).
 
 ## 5. Implement the solution 
 
-The solution will be implemented and executed on the timeline communicated.
+The solution will be implemented and executed, acknowleging our ongoing feature roadmap.
 
 ## 6. Log the change
 

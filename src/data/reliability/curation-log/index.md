@@ -24,8 +24,9 @@ You can subscribe to an [RSS]({{"/feeds/rss/curation-log.xml" | htmlBaseUrl(base
     {% if item.data.concern | length %}
                 <h3 href="{{ item.data.slug | slugify }}">{{item.data.slug}}</h3>
                 <p><b>Related curation issue</b>: <a href='{{ ["../concerns/", item.data.concern] | join }}'>{{- getKnownErrorTitle(collections.known_errors, item.data.concern) }}</a></p>
-                <p><b>Decision record</b>: {% if item.data.github %}{{item.data.github}}{% else %}TBD{%endif%}</p>
+                {% if item.data.github %}<p><b>Decision record</b>: {{item.data.github}}</p>{%endif%}
                 <p><b>Repair date</b>: {{item.data.repair_date}}</p>
+                <p><b>Summary:</b> {{item.data.short}} (<a href="{{item.url | htmlBaseUrl(baseUrl) }}">full description</a>)</p>
     {% endif %}
 {% endfor %}
 

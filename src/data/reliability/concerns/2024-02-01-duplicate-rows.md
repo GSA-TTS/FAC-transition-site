@@ -7,7 +7,7 @@ slug: Some rows in some tables from the 2023 data collection are duplicated.
 discovered_date: 2024-02
 timeline_to_repair:
 github:
-log: 
+log: 2025-01-remove-duplicates
 ---
 
 {% from "components/macros.njk" import curationSummary %}

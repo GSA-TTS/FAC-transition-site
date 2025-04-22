@@ -18,19 +18,25 @@ You can subscribe to an [RSS]({{"/feeds/rss/concerns.xml" | htmlBaseUrl(baseUrl)
 
 ## Known concerns
 
-We are currently tracking {{ collections.known_errors | length }} concerns in the data.
+{% set counter = 0 %}
+{% for item in collections.known_errors | sort(false, false, 'data.discovered_date') %}
+  {% if (item.data.title | length) and (item.data.log | length) < 1 %}
+    {% set counter = counter + 1 %}
+  {% endif %}
+{% endfor %}
+
+We are currently tracking {{ counter }} concerns in the data.
 
 We include a brief, one-line sumamry of each error here, and full explanations can be found on the linked pages.
 
 {% for item in collections.known_errors | sort(false, false, 'data.discovered_date') %}
-    {% if item.data.title | length %}
-                <h3 href="{{ item.data.title | slugify }}">{{loop.index}}. {{item.data.title}}</h3>
+    {% if (item.data.title | length) and (item.data.log | length) < 1 %}
+                <h3 id="{{ item.data.title | slugify }}">{{item.data.title}}</h3>
                 <p>{{item.data.slug}}</p>
                 <p><b>Details</b>: <a href="{{ item.url | htmlBaseUrl(baseUrl) }}">{{item.data.title}}</a></p>
                 <p><b>Discovered</b>: {{item.data.discovered_date}}</p>
-                <p><b>Timeline to repair</b>: {% if item.data.timeline_to_repair %}{{item.data.timeline_to_repair}}{% else %}TBD{%endif%}</p>
-                <p><b>Github issue</b>: {% if item.data.github %}{{item.data.github}}{% else %}TBD{%endif%}</p>
-                <p><b>Log</b>: {% if item.data.log %}{{item.data.log}}{% else %}TBD{%endif%}</p>
+                {% if item.data.github %}<p><b>Github issue</b>: {{item.data.github}}</p>{%endif%}
+                {% if item.data.log %}<p><b>Log</b>: <a href="{{ ["/data/reliability/curation-log/", item.data.log] | join | htmlBaseUrl(baseUrl) }}">{{item.data.log}}</a></p>{%endif%}
     {% endif %}
 {% endfor %}
 
