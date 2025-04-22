@@ -27,7 +27,7 @@
     <p><b>Discovered</b>: {{discovered_date}}</p>
     <p><b>Timeline to repair</b>: {% if timeline_to_repair %}{{ timeline_to_repair }}{% else %}TBD{%endif%}</p>
     <p><b>Github issue</b>: {% if github %}{{ github }}{% else %}TBD{%endif%}</p>
-    <p><b>Log</b>: {% if log %}{{ log }}{% else %}TBD{%endif%}</p>
+    {% if log %}<p><b>Log</b>: <a href="{{ ["/data/reliability/curation-log/", log ] | join | htmlBaseUrl(baseUrl) }}">{{log}}</a></p>{%endif%}
 {%- endmacro -%}
 
 

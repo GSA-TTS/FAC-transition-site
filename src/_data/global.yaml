@@ -1,4 +1,5 @@
 site_name: Federal Audit Clearinghouse
+csv_base: https://app.fac.gov/dissemination/public-data
 
 navigation:
   primary:
@@ -27,14 +28,18 @@ navigation:
     - text: Data
       id: data
       links:
-        - text: Data access
+        - text: About the data
           href: 'data'
+        - text: Download CSV data
+          href: 'data/download'
+        - text: Developer API resources
+          href: 'api'
         - text: Data reliability
           href: 'data/reliability'
         - text: Data curation
           href: 'data/reliability/curation'
         - text: Data migration
-          href: 'data/migration/'
+          href: 'data/migration'
     - text: Updates & News
       id: news
       links:
