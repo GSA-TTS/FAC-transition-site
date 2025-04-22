@@ -28,7 +28,8 @@
 
     <body>
         {% include './components/usa-banner.njk' %}
-        {% include './components/maintenance-banner.njk' %}
+        {# To enable the maintenance banner, uncomment below. Be sure to change the messaging in the component. #}
+        {# {% include './components/maintenance-banner.njk' %} #}
         {% include 'header.njk' %}
         <main id="main-content">
             {{ content | safe }}
