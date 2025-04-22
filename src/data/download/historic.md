@@ -5,7 +5,6 @@ meta:
   name: Data from 1998-2015
   description: Historic Census data from the SF-SAC.
 tables:
-csv_base: https://app.fac.gov/dissemination/public-data/census/csv
 sizes: [15,16,16,20,22,23,22,23,24,24,24,27,32,32,30,30,28,29]
 ---
 
@@ -21,7 +20,7 @@ FIXME: Mini TOC here
 
 This is a single zip file containing all the Census data from 1998–2015. When decompressed, there is a separate folder for each year.
 
-* [census-1998-2015.zip]({{csv_base}}/census-1998-2015.zip)  (413MB, [SHA1]({{csv_base}}/census-1998-2015.sha1))
+* [census-1998-2015.zip]({{global.csv_base}}/census/csv/census-1998-2015.zip)  (413MB, [SHA1]({{global.csv_base}}/census/csv/census-1998-2015.sha1))
 
 ## By audit year
 
@@ -29,7 +28,7 @@ This is the same data as above, broken out by audit year.
 
 <ul>
 {%- for year in range(1998, 2016) -%}
-  <li><a href="{{csv_base}}/census-{{year}}.zip">census-{{year}}.zip</a> ({{sizes[loop.index-1]}}MB, <a href="{{csv_base}}/census-{{year}}.sha1">SHA1</a>)</li>
+  <li><a href="{{global.csv_base}}/census/csv/census-{{year}}.zip">census-{{year}}.zip</a> ({{sizes[loop.index-1]}}MB, <a href="{{global.csv_base}}/census/csv/census-{{year}}.sha1">SHA1</a>)</li>
 {%- endfor -%}
 </ul>
 

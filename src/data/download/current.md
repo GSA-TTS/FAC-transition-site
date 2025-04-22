@@ -91,8 +91,8 @@ function tableCreate(root, caption_text, tag, baseUrl) {
       td = tr.insertCell();
       setAttrs(td, {"role": "cell"});
       a = document.createElement("a");
-      setAttrs(a, {"href": `${baseUrl}/{{table['abbrev']}}-${tag}-${year}.csv`});
-      a.appendChild(document.createTextNode(`{{table['abbrev']}}-${tag}-${year}`));
+      setAttrs(a, {"href": `${baseUrl}/${year}-${tag}-{{table['name']}}.csv`});
+      a.appendChild(document.createTextNode(`${year}-${tag}-{{table['abbrev']}}`));
       td.appendChild(a);
     }
     tbl.appendChild(tr);
@@ -132,7 +132,7 @@ The full data files are complete exports of data from the FAC. These files are t
 {%- for table in tables -%}
   <tr role="row">
     <td role="cell">{{table['name']}}</td>
-    <td role="cell"><a href="">CSV</a>
+    <td role="cell"><a href="{{global.csv_base}}/gsa/full/{{table['name']}}.csv">CSV</a>
     <td role="cell">{{table['desc']}}</td>
   </tr>
 {%- endfor -%}
@@ -148,7 +148,7 @@ If you are using Excel or similar tools to explore this data, we recommend the f
 
 <div class="usa-table-container" tabindex="0">
   <div id="ay-table"></div>
-  <script>tableCreate(document.getElementById("ay-table"), "CSVs by audit year", "ay", "http://localhost:8080/blah")</script>
+  <script>tableCreate(document.getElementById("ay-table"), "CSVs by audit year", "ay", "{{global.csv_base}}/gsa/audit-year")</script>
 </div>
 
 ## Data by federal fiscal year
@@ -159,7 +159,7 @@ This means that the file named `general-ffy-2106.csv` is the record of audits co
 
 <div class="usa-table-container" tabindex="0">
   <div id="ffy-table"></div>
-  <script>tableCreate(document.getElementById("ffy-table"), "CSVs by federal fiscal year", "ffy", "http://localhost:8080/blah")</script>
+  <script>tableCreate(document.getElementById("ffy-table"), "CSVs by federal fiscal year", "ffy", "{{global.csv_base}}/gsa/federal-fiscal-year")</script>
 </div>
 
 

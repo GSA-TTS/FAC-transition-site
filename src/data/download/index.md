@@ -38,6 +38,5 @@ These files will be of most interest to researchers, IGs, and oversight official
 
 When data was migrated from Census to GSA, it was modified to meet the validation requirements imposed by GSA. These files record the changes made during that process.
 
-* Data files  
-* Data dictionary  
-* Examples
+* [Data files]({{'/data/download/migration/' | htmlBaseUrl(baseUrl)}})
+* [How to work with the migration data]({{'/data/download/migration/#how-to-work-with-this-data' | htmlBaseUrl(baseUrl)}})
