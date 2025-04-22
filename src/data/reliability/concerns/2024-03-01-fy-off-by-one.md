@@ -25,8 +25,8 @@ log:
 
 ## Curation challenge
 
-4. Our server records time in GMT.
-5. We treat all submissions as if they were in [SST](https://www.timeanddate.com/time/zones/sst) (Samoa Standard Time)
+1. Our server records time in GMT.
+2. We treat all submissions as if they were in [SST](https://www.timeanddate.com/time/zones/sst) (Samoa Standard Time)
 
 What this means is that when someone submits data to the FAC, we look at the timestamp (in GMT), and subtract 11 hours (because we pretend the submission is coming from American Samoa). We do this to make sure that submissions from *everywhere* that might submit a Single Audit is considered "on time" as long as the grantee completes the submission on or before the day it is due.
 
