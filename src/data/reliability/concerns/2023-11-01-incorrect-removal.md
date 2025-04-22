@@ -1,8 +1,16 @@
 ---
-layout: sidenav.njk
+# Metadata
+layout: home.njk
+title: Removal of incorrect audits
 tags: known_errors
 order: 4
-title: Removal of incorrect audits
+# Layout
+eleventyComputed:
+  eleventyNavigation:
+    key: Incorrect removal
+    parent: Concerns
+in_page_nav: true
+# Page data
 slug: Some audits were submitted with completely incorrect information.
 discovered_date: 2023-11
 timeline_to_repair:

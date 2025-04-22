@@ -1,15 +1,17 @@
 ---
-layout: sidenav.njk
+# Metadata
+layout: home.njk
 title: Migration metadata 2016-2022
 header: Migration metadata 2016-2022
-faqLink: https://support.fac.gov/hc/en-us
 meta:
   name: Migration metadata 2016-2022
   description: Find resources for downloading single audit data.
+# Layout
 eleventyComputed:
   eleventyNavigation:
-    key: Data download
-    parent: Home
+    key: Migration metadata
+    parent: Download
+in_page_nav: true
 ---
 
 # Migration metadata: 2016-2022

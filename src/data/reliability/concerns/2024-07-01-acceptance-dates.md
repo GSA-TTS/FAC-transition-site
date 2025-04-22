@@ -1,8 +1,16 @@
 ---
-layout: sidenav.njk
+# Metadata
+layout: home.njk
+title: Migrated accepted dates are incorrect
 tags: known_errors
 order: 2
-title: Migrated accepted dates are incorrect
+# Layout
+eleventyComputed:
+  eleventyNavigation:
+    key: Acceptance dates
+    parent: Concerns
+in_page_nav: true
+# Page data
 slug: The accepted date in migrated records used the wrong historical date field.
 discovered_date: 2024-07
 timeline_to_repair:

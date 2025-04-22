@@ -1,9 +1,17 @@
 ---
-layout: sidenav.njk
+# Metadata
+layout: home.njk
 title: SF-SAC cross-validations
 meta:
   name: SF-SAC cross-validations
   description: Documentation about the data migration from Census to GSA.
+# Layout
+eleventyComputed:
+  eleventyNavigation:
+    key: Cross-validations
+    parent: Validation
+in_page_nav: true
+# Page data
 baseurl: https://github.com/GSA-TTS/FAC/tree/414f9932b3797de68c7271ba0b471c9b834062ce/backend/audit/cross_validation
 ---
 

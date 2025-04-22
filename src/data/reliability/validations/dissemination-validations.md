@@ -1,9 +1,16 @@
 ---
-layout: sidenav.njk
+# Metadata
+layout: home.njk
 title: FAC dissemination validations
 meta:
   name: FAC dissemination validations
   description: Documentation about the data migration from Census to GSA.
+# Layout
+eleventyComputed:
+  eleventyNavigation:
+    key: Dissemination validations
+    parent: Validations
+in_page_nav: true
 ---
 
 # {{title}}

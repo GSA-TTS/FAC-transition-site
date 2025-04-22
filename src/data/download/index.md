@@ -1,15 +1,15 @@
 ---
-layout: sidenav.njk
+layout: home.njk
 title: Download FAC data
 header: Download FAC data
-faqLink: https://support.fac.gov/hc/en-us
+in_page_nav: true
 meta:
   name: Download FAC data
   description: Find resources for downloading single audit data.
 eleventyComputed:
   eleventyNavigation:
-    key: Data download
-    parent: Home
+    key: Download
+    parent: Data
 ---
 
 # Download FAC data

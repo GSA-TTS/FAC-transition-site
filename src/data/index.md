@@ -1,9 +1,16 @@
 ---
-layout: sidenav.njk
+# Metadata
+layout: home.njk
 title: Using FAC data
 meta:
   name: Historic data curation
   description: Documentation about the data migration from Census to GSA.
+# Layout
+eleventyComputed:
+  eleventyNavigation:
+    key: Data
+    parent: Home
+in_page_nav: true
 ---
 
 # About our data

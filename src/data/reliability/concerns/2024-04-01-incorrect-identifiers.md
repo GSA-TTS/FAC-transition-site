@@ -1,8 +1,16 @@
 ---
-layout: sidenav.njk
+# Metadata
+layout: home.njk
+title: Incorrect report identifiers
 tags: known_errors
 order: 5
-title: Incorrect report identifiers
+# Layout
+eleventyComputed:
+  eleventyNavigation:
+    key: Incorrect identifier
+    parent: Concerns
+in_page_nav: true
+# Page data
 slug: Report IDs are based in part on (possibly incorrect) user-entered data.
 discovered_date: 2024-04
 timeline_to_repair:

@@ -1,8 +1,16 @@
 ---
-layout: sidenav.njk
+# Metadata
+layout: home.njk
+title: Migrated fiscal year dates off-by-one
 tags: known_errors
 order: 3
-title: Migrated fiscal year dates off-by-one
+# Layout
+eleventyComputed:
+  eleventyNavigation:
+    key: FY off by one
+    parent: Concerns
+in_page_nav: true
+# Page data
 slug: The fiscal year start and end date in migrated records are one day early.
 discovered_date: 2024-03
 timeline_to_repair:

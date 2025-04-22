@@ -1,15 +1,17 @@
 ---
-layout: sidenav.njk
+# Metadata
+layout: home.njk
 title: Historic data dictionary
 header: Historic data dictionary
-faqLink: https://support.fac.gov/hc/en-us
 meta:
   name: Historic data dictionary
   description: Find resources for downloading single audit data.
+# Layout
 eleventyComputed:
   eleventyNavigation:
-    key: Data download
-    parent: Home
+    key: Historic dictionary
+    parent: Download
+in_page_nav: true
 ---
 
 # Historic data dictionary (1998-2015)

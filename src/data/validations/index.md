@@ -1,9 +1,17 @@
 ---
-layout: sidenav.njk
+# Folder is a possible duplicate of src/data/reliability/validations
+# Metadata
+layout: home.njk
 title: FAC data validations
 meta:
   name: FAC data validations
   description: Documentation about the data migration from Census to GSA.
+# Layout
+eleventyComputed:
+  eleventyNavigation:
+    key: Validation
+    parent: Data
+in_page_nav: true
 ---
 
 # {{title}}

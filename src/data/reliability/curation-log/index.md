@@ -1,9 +1,16 @@
 ---
-layout: sidenav.njk
+# Metadata
+layout: home.njk
 title: Log of curation actions
 meta:
   name: Historic data curation
   description: Documentation about the data migration from Census to GSA.
+# Layout
+eleventyComputed:
+  eleventyNavigation:
+    key: Curation log
+    parent: Curation
+in_page_nav: true
 ---
 
 

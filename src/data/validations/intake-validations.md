@@ -1,10 +1,17 @@
 ---
-layout: sidenav.njk
+# Metadata
+layout: home.njk
 title: SF-SAC intake validations
 meta:
   name: SF-SAC intake validations
   description: Documentation about the data migration from Census to GSA.
-# baseurl: https://github.com/GSA-TTS/FAC/tree/44ae639f70c4552fa584f7042e0c116b0cd93d29/backend/audit/intakelib/checks
+# Layout
+eleventyComputed:
+  eleventyNavigation:
+    key: Intake validations
+    parent: Validation
+in_page_nav: true
+# Page data
 baseurl: https://github.com/GSA-TTS/FAC/blob/414f9932b3797de68c7271ba0b471c9b834062ce/backend/audit/intakelib/checks/
 ---
 

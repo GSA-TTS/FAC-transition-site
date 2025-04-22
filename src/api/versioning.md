@@ -1,5 +1,5 @@
 ---
-layout: sidenav.njk
+layout: home.njk
 title: FAC API versioning
 meta:
   name: FAC API versioning
@@ -8,6 +8,7 @@ eleventyComputed:
   eleventyNavigation:
     key: API versioning
     parent: API resources
+in_page_nav: true
 ---
 
 # FAC API versioning

@@ -1,75 +1,79 @@
 ---
-layout: sidenav.njk
+# Metadata
+layout: home.njk
 title: FAC API rollup tutorial
 meta:
   name: FAC API rollup tutorial
   description: A tutorial focused on the rollup fields in the API
-rollups:
-    ALN:
-        rolled: CFDA
-        orig:  CFDA table
-        criteria: A combination of agency and program number
-        output: A CFDA/ALN number
-        censusdesc: FIXME
-        code: https://github.com/GSA-TTS/fac-api-examples/tree/main/rollups/01-aln
-    COGOVER:
-        rolled: FIXME
-        orig: FIXME
-        criteria: FIXME
-        output: FIXME
-        censusdesc: FIXME
-        code: https://github.com/GSA-TTS/fac-api-examples/tree/main/rollups/02-cogover
-    QCOSTS:
-        rolled: QCOSTS
-        orig: QCOSTS from Findings table
-        criteria: "If any of the auditee's findings have QCOSTS = Y (QCOSTS from Findings Table)"
-        output: Then QCOSTS in General table = Y, otherwise QCOSTS = N
-        censusdesc: Indicate whether or not the audit disclosed any known questioned costs.
-        code: https://github.com/GSA-TTS/fac-api-examples/tree/main/rollups/03-qcosts
-    CYFINDINGS:
-        rolled: CYFINDINGS
-        orig:  Findings Table
-        criteria: If any records in the Findings table
-        output: "CYFINDINGS = Y"
-        censusdesc: >
-            Indicate whether or not current year findings affecting direct funds were reported
-        code: https://github.com/GSA-TTS/fac-api-examples/tree/main/rollups/04-cyfindings
-    TYPEREPORT_MP:
-        rolled: TYPEREPORT_MP
-        orig: TYPEREPORT_MP from CFDA (now `federal_awards`) table
-        criteria: Combines all values (U, D, A, S) entered in the TYPEREPORT_MP field from CFDA
-        output: >
-            "U" if all TYPEREPORT_MP = U, overwise all non-U values listed once
-        censusdesc: Type of report issued on the major program compliance
-        code: https://github.com/GSA-TTS/fac-api-examples/tree/main/rollups/05-typereportmp
-    MATERIALWEAKNESS_MP:
-        rolled: MATERIALWEAKNESS_MP
-        orig: MATERIALWEAKNESS from Findings table
-        criteria: If any of the auditee’s findings have MATERIALWEAKNESS = Y
-        output: Then MATERIAL WEAKNESS_MP = Y
-        censusdesc: >
-            Indicate whether any reportable condition/signficant deficiency was disclosed as a material weakness for a major program in the Schedule of Findings and Questioned Costs
-        code: https://github.com/GSA-TTS/fac-api-examples/tree/main/rollups/06-materialweakness
-    REPORTABLECONDITION_MP:
-        rolled: REPORTABLECONDITION_MP
-        orig: SIGNIFICANTDEFICIENCY from Findings Table
-        criteria: If any of the auditee’s findings have SIGNIFICANTDEFICIENCY = Y
-        output: Then the REPORTABLE CONDITION_MP = Y
-        censusdesc: >
-            Whether or not the audit disclosed a reportable condition/significant deficiency for any major program in the Schedule of Findings and Questioned Costs
-        code: https://github.com/GSA-TTS/fac-api-examples/tree/main/rollups/07-reportable
-    PYSCHEDULE:
-        rolled: PYSCHEDULE
-        orig: Question 3.d. on the Audit Info tab
-        criteria: If there is any number other than 00 listed
-        output: PYSCHEDULE = Y
-        censusdesc: >
-            Indicate whether or not the report includes a Summary Schedule of Prior Year Audit Findings
-        code: https://github.com/GSA-TTS/fac-api-examples/tree/main/rollups/08-pysched
+# Layout
 eleventyComputed:
   eleventyNavigation:
     key: Rollup fields
     parent: API resources
+in_page_nav: true
+# Page data
+rollups:
+  ALN:
+    rolled: CFDA
+    orig:  CFDA table
+    criteria: A combination of agency and program number
+    output: A CFDA/ALN number
+    censusdesc: FIXME
+    code: https://github.com/GSA-TTS/fac-api-examples/tree/main/rollups/01-aln
+  COGOVER:
+    rolled: FIXME
+    orig: FIXME
+    criteria: FIXME
+    output: FIXME
+    censusdesc: FIXME
+    code: https://github.com/GSA-TTS/fac-api-examples/tree/main/rollups/02-cogover
+  QCOSTS:
+    rolled: QCOSTS
+    orig: QCOSTS from Findings table
+    criteria: "If any of the auditee's findings have QCOSTS = Y (QCOSTS from Findings Table)"
+    output: Then QCOSTS in General table = Y, otherwise QCOSTS = N
+    censusdesc: Indicate whether or not the audit disclosed any known questioned costs.
+    code: https://github.com/GSA-TTS/fac-api-examples/tree/main/rollups/03-qcosts
+  CYFINDINGS:
+    rolled: CYFINDINGS
+    orig:  Findings Table
+    criteria: If any records in the Findings table
+    output: "CYFINDINGS = Y"
+    censusdesc: >
+      Indicate whether or not current year findings affecting direct funds were reported
+    code: https://github.com/GSA-TTS/fac-api-examples/tree/main/rollups/04-cyfindings
+  TYPEREPORT_MP:
+    rolled: TYPEREPORT_MP
+    orig: TYPEREPORT_MP from CFDA (now `federal_awards`) table
+    criteria: Combines all values (U, D, A, S) entered in the TYPEREPORT_MP field from CFDA
+    output: >
+      "U" if all TYPEREPORT_MP = U, overwise all non-U values listed once
+    censusdesc: Type of report issued on the major program compliance
+    code: https://github.com/GSA-TTS/fac-api-examples/tree/main/rollups/05-typereportmp
+  MATERIALWEAKNESS_MP:
+    rolled: MATERIALWEAKNESS_MP
+    orig: MATERIALWEAKNESS from Findings table
+    criteria: If any of the auditee’s findings have MATERIALWEAKNESS = Y
+    output: Then MATERIAL WEAKNESS_MP = Y
+    censusdesc: >
+      Indicate whether any reportable condition/signficant deficiency was disclosed as a material weakness for a major program in the Schedule of Findings and Questioned Costs
+    code: https://github.com/GSA-TTS/fac-api-examples/tree/main/rollups/06-materialweakness
+  REPORTABLECONDITION_MP:
+    rolled: REPORTABLECONDITION_MP
+    orig: SIGNIFICANTDEFICIENCY from Findings Table
+    criteria: If any of the auditee’s findings have SIGNIFICANTDEFICIENCY = Y
+    output: Then the REPORTABLE CONDITION_MP = Y
+    censusdesc: >
+      Whether or not the audit disclosed a reportable condition/significant deficiency for any major program in the Schedule of Findings and Questioned Costs
+    code: https://github.com/GSA-TTS/fac-api-examples/tree/main/rollups/07-reportable
+  PYSCHEDULE:
+    rolled: PYSCHEDULE
+    orig: Question 3.d. on the Audit Info tab
+    criteria: If there is any number other than 00 listed
+    output: PYSCHEDULE = Y
+    censusdesc: >
+      Indicate whether or not the report includes a Summary Schedule of Prior Year Audit Findings
+    code: https://github.com/GSA-TTS/fac-api-examples/tree/main/rollups/08-pysched
 ---
 
 {% macro rollup(tag) %}

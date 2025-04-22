@@ -1,9 +1,17 @@
 ---
-layout: sidenav.njk
+# Metadata
+layout: home.njk
 title: Table migration transforms
 meta:
   name: Table migration transforms
   description: Documentation about the data migration from Census to GSA.
+# Layout
+eleventyComputed:
+  eleventyNavigation:
+    key: Table transforms
+    parent: Historic migration
+in_page_nav: true
+# Page data
 tables:
   - general
   - federal_awards

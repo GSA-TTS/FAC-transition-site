@@ -1,9 +1,17 @@
 ---
-layout: sidenav.njk
+# Metadata
+layout: home.njk
 title: FAC data dictionary
 meta:
   name: FAC data dictionary
   description: A description of fields in the API.
+# Layout
+eleventyComputed:
+  eleventyNavigation:
+    key: Data dictionary
+    parent: API resources
+in_page_nav: true
+# Page data
 endpoints:
   - general
   - federal_awards
@@ -26,10 +34,6 @@ formerly:
   - cpas
   - ueis
   - eins
-eleventyComputed:
-  eleventyNavigation:
-    key: Data dictionary
-    parent: API resources
 ---
 
 # Data dictionary

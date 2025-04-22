@@ -1,8 +1,16 @@
 ---
-layout: sidenav.njk
+# Metadata
+layout: home.njk
+title: Duplicated data rows
 tags: known_errors
 order: 1
-title: Duplicated data rows
+# Layout
+eleventyComputed:
+  eleventyNavigation:
+    key: Duplicate rows
+    parent: Concerns
+in_page_nav: true
+# Page data
 slug: Some rows in some tables from the 2023 data collection are duplicated.
 discovered_date: 2024-02
 timeline_to_repair:

@@ -1,9 +1,14 @@
 ---
-layout: sidenav.njk
+layout: home.njk
 title: SF-SAC schema validations
 meta:
   name: SF-SAC schema validations
   description: Documentation about the data migration from Census to GSA.
+eleventyComputed:
+  eleventyNavigation:
+    key: Schema validations
+    parent: Validation
+in_page_nav: true
 ---
 
 # {{title}}

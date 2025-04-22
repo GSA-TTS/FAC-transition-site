@@ -1,5 +1,5 @@
 ---
-layout: sidenav.njk
+layout: home.njk
 title: Using the FAC API
 meta:
   name: Using the FAC API
@@ -8,6 +8,7 @@ eleventyComputed:
   eleventyNavigation:
     key: Getting started
     parent: API resources
+in_page_nav: true
 ---
 
 # Using the FAC API

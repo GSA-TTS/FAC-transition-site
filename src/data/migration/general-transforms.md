@@ -1,9 +1,16 @@
 ---
-layout: sidenav.njk
+# Metadata
+layout: home.njk
 title: General migration transforms
 meta:
   name: General migration transforms
   description: Documentation about the data migration from Census to GSA.
+# Layout
+eleventyComputed:
+  eleventyNavigation:
+    key: General transforms
+    parent: Historic migration
+in_page_nav: true
 ---
 
 # {{title}} 

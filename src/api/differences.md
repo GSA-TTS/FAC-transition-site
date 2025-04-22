@@ -3,7 +3,7 @@
 layout: home.njk
 title: FAC API differences
 meta:
-  name: FAC api differences
+  name: FAC API differences
   description: Some of the differeces from the Census FAC
 # Layout
 eleventyComputed:

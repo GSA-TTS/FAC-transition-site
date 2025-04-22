@@ -1,5 +1,5 @@
 ---
-layout: sidenav.njk
+layout: home.njk
 title: Retrieving many results from the FAC API
 meta:
   name: Retrieving many results from the FAC API
@@ -8,6 +8,7 @@ eleventyComputed:
   eleventyNavigation:
     key: Results management
     parent: API resources
+in_page_nav: true
 ---
 
 # Retriving many results from the FAC API

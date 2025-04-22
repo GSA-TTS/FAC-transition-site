@@ -1,9 +1,16 @@
 ---
-layout: sidenav.njk
+# Metadata
+layout: home.njk
 title: Known errors in FAC data
 meta:
   name: Historic data curation
   description: Documentation about the data migration from Census to GSA.
+# Layout
+eleventyComputed:
+  eleventyNavigation:
+    key: Concerns
+    parent: Data
+in_page_nav: true
 ---
 
 # {{title}}
@@ -27,7 +34,7 @@ You can subscribe to an [RSS]({{"/feeds/rss/concerns.xml" | htmlBaseUrl(baseUrl)
 
 We are currently tracking {{ counter }} concerns in the data.
 
-We include a brief, one-line sumamry of each error here, and full explanations can be found on the linked pages.
+We include a brief, one-line summary of each error here, and full explanations can be found on the linked pages.
 
 {% for item in collections.known_errors | sort(false, false, 'data.discovered_date') %}
     {% if (item.data.title | length) and (item.data.log | length) < 1 %}
@@ -36,7 +43,7 @@ We include a brief, one-line sumamry of each error here, and full explanations c
                 <p><b>Details</b>: <a href="{{ item.url | htmlBaseUrl(baseUrl) }}">{{item.data.title}}</a></p>
                 <p><b>Discovered</b>: {{item.data.discovered_date}}</p>
                 {% if item.data.github %}<p><b>Github issue</b>: {{item.data.github}}</p>{%endif%}
-                {% if item.data.log %}<p><b>Log</b>: <a href="{{ ["/data/reliability/curation-log/", item.data.log] | join | htmlBaseUrl(baseUrl) }}">{{item.data.log}}</a></p>{%endif%}
+                {% if item.data.log %}<p><b>Log</b>: <a href="{{ ['/data/reliability/curation-log/', item.data.log] | join | htmlBaseUrl(baseUrl) }}">{{item.data.log}}</a></p>{%endif%}
     {% endif %}
 {% endfor %}
 

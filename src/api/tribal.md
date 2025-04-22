@@ -1,5 +1,5 @@
 ---
-layout: sidenav.njk
+layout: home.njk
 title: Accessing suppressed suppressed data via the API
 meta:
   name: Accessing suppressed data via the API
@@ -8,6 +8,7 @@ eleventyComputed:
   eleventyNavigation:
     key: Suppressed data access
     parent: API resources
+in_page_nav: true
 ---
 
 # Accessing suppressed data via API

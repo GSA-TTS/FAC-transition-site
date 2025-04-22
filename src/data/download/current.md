@@ -1,9 +1,17 @@
 ---
-layout: sidenav.njk
+# Metadata
+layout: home.njk
 title: Data from 2016–Present
 meta:
   name: Data from 2016–Present
   description: Documentation about the data migration from Census to GSA.
+# Layout
+eleventyComputed:
+  eleventyNavigation:
+    key: Current
+    parent: Download
+in_page_nav: true
+# Page data
 tables:
   - name: general
     abbrev: g

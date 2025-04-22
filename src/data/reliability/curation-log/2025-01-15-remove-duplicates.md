@@ -1,6 +1,13 @@
 ---
-layout: sidenav.njk
+# Metadata
+layout: home.njk
 tags: curation_log
+# Layout
+eleventyComputed:
+  eleventyNavigation:
+    key: Repair duplicate rows
+    parent: Curation log
+# Page data
 concern: 2024-02-duplicate-rows
 slug: Repair of duplicated data rows
 adr: None

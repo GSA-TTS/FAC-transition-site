@@ -1,9 +1,16 @@
 ---
-layout: sidenav.njk
+# Metadata
+layout: home.njk
 title: Historic data migration
 meta:
   name: Historic data migration
   description: Documentation about the data migration from Census to GSA.
+# Layout
+eleventyComputed:
+  eleventyNavigation:
+    key: Historic migration
+    parent: Data
+in_page_nav: true
 ---
 
 # {{title}}

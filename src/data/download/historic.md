@@ -1,10 +1,17 @@
 ---
-layout: sidenav.njk
+# Metadata
+layout: home.njk
 title: Data from 1998-2015
 meta:
   name: Data from 1998-2015
   description: Historic Census data from the SF-SAC.
-tables:
+# Layout
+eleventyComputed:
+  eleventyNavigation:
+    key: Historic data
+    parent: Download
+in_page_nav: true
+# Page data
 sizes: [15,16,16,20,22,23,22,23,24,24,24,27,32,32,30,30,28,29]
 ---
 

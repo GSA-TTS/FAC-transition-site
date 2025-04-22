@@ -1,15 +1,17 @@
 ---
-layout: sidenav.njk
+# Metadata
+layout: home.njk
 title: Current data dictionary
 header: Current data dictionary
-faqLink: https://support.fac.gov/hc/en-us
 meta:
   name: Current data dictionary
   description: Find resources for downloading single audit data.
+# Layout
 eleventyComputed:
   eleventyNavigation:
-    key: Data download
-    parent: Home
+    key: Current dictionary
+    parent: Download
+in_page_nav: true
 ---
 
 # Current data dictionary (2016-present)

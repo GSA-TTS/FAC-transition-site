@@ -1,5 +1,5 @@
 ---
-layout: sidenav.njk
+layout: home.njk
 title: FAC API Example Queries
 meta:
   name: FAC API Example Queries
@@ -8,6 +8,7 @@ eleventyComputed:
   eleventyNavigation:
     key: Examples
     parent: API resources
+in_page_nav: true
 ---
 
 # FAC API Example Queries

@@ -1,20 +1,23 @@
 ---
-layout: sidenav.njk
+# Metadata
+layout: home.njk
 title: Data reliability
 meta:
   name: Data reliability
   description: Learn how we keep our data the Federal Audit Clearinghouse reliable.
+# Layout
+eleventyComputed:
+  eleventyNavigation:
+    key: Reliability
+    parent: Data
+in_page_nav: true
+# Page data
 terms:
   cfac: Census FAC
   cfac_url: https://facweb.census.gov/
   gfac: GSA FAC
   gfac_url: https://fac.gov/
-eleventyComputed:
-  eleventyNavigation:
-    key: Data reliability
-    parent: Home
 ---
-
 
 # {{title}}
 
