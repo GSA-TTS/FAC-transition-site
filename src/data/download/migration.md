@@ -25,6 +25,38 @@ The process of migrating data was developed in conjunction with OMB and Federal 
 * [https://github.com/GSA-TTS/FAC/blob/main/docs/architecture/decisions/0039-data-migration-iterative-approach.md](https://github.com/GSA-TTS/FAC/blob/main/docs/architecture/decisions/0039-data-migration-iterative-approach.md)   
 * [https://github.com/GSA-TTS/FAC/blob/main/docs/architecture/decisions/0040-data-migration-implementing-logging-and-transformation-tracking.md](https://github.com/GSA-TTS/FAC/blob/main/docs/architecture/decisions/0040-data-migration-implementing-logging-and-transformation-tracking.md) 
 
+## Census to GSA submission crosswalk
+
+The data collected at Census and GSA is identified in different ways.
+
+Data collected at Census had a compound identifier. It used the `AUDITYEAR` of the submission along with a `DBKEY`, which was a manually-assigned numerical value. The combination of the `AUDITYEAR` and `DBKEY` was meant to be a unique identifier for each SF-SAC and audit report submission.
+
+Data collected at GSA uses an identifier that combines:
+
+* the year and month of the fiscal year end date (e.g. `2023-09`), 
+* a six-character string indicating who collected the audit (either `CENSUS` or `GSAFAC`), and
+* A number. If the audit was collected by...
+  * `CENSUS`: the number is the `DBKEY`
+  * `GSAFAC`: the number is an auto-incrementing value with no meaning
+
+We provide a [CSV containing a crosswalk of data migrated from Census to GSA]({{global.csv_base}}/gsa/migration/census_gsa_crosswalk.csv). This CSV has 8 columns:
+
+* A row id
+* `audit_year` of the submission
+* `dbkey` of the submission
+* GSA-assigned `report_id` for the submission
+* `auditee_uei`, the SAM.gov-provided unique identifier (if it exists; only present from 2022 onward; `GSA_MIGRATION` in many cases)
+* `auditee_ein`, the auditee's tax identification number (always present)
+* `run_date`, which is when the migration was run
+* `migration_status` (always `SUCCESS` in this crosswalk)
+
+There were two audits that were unable to be migrated. These are, for all intents and purposes, [lost](https://github.com/GSA-TTS/FAC/issues/3788#issuecomment-2420020424).
+
+* AUDITYEAR: 2019, DBKEY: 243753
+* AUDITYEAR: 2022, DBKEY: 247680
+
+
+
 ## By audit year
 
 For each audit year, there are two migration metadata tables:
