@@ -41,7 +41,7 @@ For each audit year, there are two migration metadata tables:
   <li>{{year}}: 
   {% set first_comma = true%}
   {%- for table in ["invalidauditrecord", "inspectionrecord"] -%}
-    <a href="{{year}}-{{table}}.csv">{{table}}</a>{%- if first_comma -%},&nbsp;{%- endif -%} 
+    <a href="{{global.csv_base}}/gsa/migration/{{year}}-{{table}}.csv">{{table}}</a>{%- if first_comma -%},&nbsp;{%- endif -%} 
     {% set first_comma = false %}
   {%- endfor -%}
   </li>
@@ -50,7 +50,7 @@ For each audit year, there are two migration metadata tables:
 
 ## How to work with this data
 
-The `invalidauditrecord` is most useful in terms of identifying the handful of audits that contained irreconcilable migration errors. However, these errors would not have prevented oversight from happening.
+The `invalidauditrecord` is most useful in terms of identifying the handful of audits that contained irreconcilable migration errors. For example, a record may have been missing one or more sections of the SF-SAC. These tables record the audits that were, quite literally, incomplete, and brought into the new system despite this.
 
 The `inspectionrecords` are most useful in understanding what changes were enacted in order to modernize historical data. The table contains 15 columns:
 
