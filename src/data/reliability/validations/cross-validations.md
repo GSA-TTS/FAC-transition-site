@@ -23,11 +23,11 @@ These validations are the penultimate line of defense before a submission is con
 
 The SF-SAC expects grantees and auditors to report on data that is interconnected. For example:
 
-1. A grantee might have an award from an agency. They need to report on that award in the `federal_awards` workbook.
-2. If the auditor found something of concern, then there are findings that have to be described. Findings are associated with awards, and described in the `findings` workbook.
-3. A finding will have a corrective action plan. That plan is described in reference to both an award and a finding, and is described in the `corrective_action_plans` workbook.
+1. A grantee might have an award from an agency. They need to report ont that award.
+2. If the auditor found something of concern, then there are findings that have to be described. Findings are associated with awards.
+3. A finding will have a corrective action plan. That plan is described in reference to both an award and a finding.
 
-These connections between these workbooks are critical to oversight officials; for that reason, we do our best to help auditees and auditors describe these connections in the SF-SAC correctly. The cross-validations are how we support users in this kind of data entry.
+These connections are critical to oversight officials; for that reason, we do our best to help auditees and auditors describe these connections in the SF-SAC correctly. The cross-validations are how we support users in this kind of inter-form data entry.
 
 ## What are the cross-validations?
 
@@ -66,4 +66,4 @@ Below is a list of all of the cross validations applied to the SF-SAC as of July
 
 ## From intake to dissemination
 
-Once these validations pass, the auditor and auditee can certify the correctness of their submission, and the auditee can perform the final submission. This is, unto itself, a final kind of validation. At this point, the audit is complete, and is submitted to the FAC. After submission, the audit is published via search and API, and oversight can take place across government.
+Once these validations pass, the auditor and auditee can certify the correctness of their submission, and the auditee can perform the final submission. This is, unto itself, a final kind of validation. See how the [dissemination validations]({{ "../dissemination-validations/" | absoluteUrl }}) play a final role.

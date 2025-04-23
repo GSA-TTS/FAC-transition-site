@@ -21,7 +21,7 @@ Schema validations involve validating the overall shape of the data, from the bi
 
 ## Data has a shape?
 
-All data has a shape. Simple data has simple shapes. For example:
+All data has a shape. Simple data has simple shapes.
 
 * We could say that counting numbers are just digits. `3`, `5`, and `8` are all counting numbers.
 * We might say that currency has a currency indicator, some number of digits, a decimal point, and two digits after the decimal point. For example, `$3.14` and <code>&pound;1.37</code> would then both be examples of numbers that represent currency.
@@ -77,7 +77,7 @@ In the same spirit, the FAC converts the data collected via spreadsheet into a s
             ...
 ```
 
-This representation, again using the [Javascript Object Notation](https://www.json.org/json-en.html), connects part of the data in meaningful ways. For example, we group information about the cluster and total cluster expenditures separate from information about the specific Federal program that the funding was issued under. Every form section has its own JSON representation, which reflects the SF-SAC and the meaningful connections between the data in that specific section.
+This representation, again using the [Javascript Object Notation](https://www.json.org/json-en.html), connects part of the data in meaningful ways. For example, we cluster information about the cluster and total cluster expenditures separately from information about the specific Federal program that provided the funding. Every form section has its own JSON representation, which reflects the SF-SAC and the meaningful connections between the data in that specific section.
 
 ## Validating the shape
 
@@ -143,19 +143,23 @@ local type_uei = Types.string {
 };
 ```
 
-That UEI validation makes sure that UEIs entered into our system follow the rules defined for UEIs by SAM.gov. First, we make sure it is a string of length 12. Then, we make sure it starts with a valid letter. Moreso, we make sure there are not 9 digits in a row in the middle of the UEI; this is to prevent confusion with EINs and SSNs. 
+That UEI validation makes sure that UEIs entered into our system follow the rules defined for UEIs by SAM.gov. First, we make sure it is a string of length 12. Then, we make sure it starts with a valid letter. Moreso, we make sure there are not 9 digits in a row in the middle of the UEI; this is to prevent confusion with EINs and SSNs. Every piece of data coming into the FAC undergoes this level of scrutiny via our JSON Schema validations.
 
 The [complete schema for the Federal Awards](https://github.com/GSA-TTS/FAC/blob/826167b1e4142f6723177a161e60858053a99c16/backend/schemas/source/sections/FederalAwards.schema.jsonnet) section is several hundred lines long. It specifies everything we expect to see in this section of the form. We have a schema for every part of the data that comes into the FAC.
 
 Every section of the SF-SAC has a schema just like this, making sure that the shape of the data in every section is validated all the way down.
 
-## Defense in depth
+## "You shall not pass"
 
-The JSON Schemas provide a rigorous validation of the data, but do not provide errors that are friendly to users. This is why the [intake validations]({{'/data/reliability/validations/intake-validations/' | htmlBaseUrl(baseUrl)}}) came into being. At this point, the FAC team expects:
+When the GSA FAC first opened its doors, we relied heavily on our JSON Schemas. They performed *marvelously*. We blocked all kinds of submissions.
+
+However, the error messages were *horrible*. Completely incomprehensible, sometimes even to the GSA FAC team. This is why the [intake validations](intake-validations/) came into being. At this point, the GSA team expects:
 
 1. A user should never see an error from a JSON Schema. If that happens, we add a new intake validation with a user-centered, helpful error message.
 2. JSON Schemas should be our backstop; they make sure, after transforming our data, that we made no mistakes.
 
+These expectations have served the team well. Users get good support from the messages provided by our intake validations, and the schemas have prevented us from storing data that is "wrong" in shape. 
+
 ## Cross-validations
 
-Once we have a complete submission, we check for correctness across the entire submission. We call these [cross-validations]({{'/data/reliability/validations/cross-validations/' | htmlBaseUrl(baseUrl)}}).
+Once we have a complete submission, we check for correctness across the entire submission. We call these [cross-validations]({{ "../cross-validations/" | absoluteUrl }}).

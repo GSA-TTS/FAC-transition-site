@@ -16,19 +16,20 @@ in_page_nav: true
 
 # {{title}}
 
-In order to collect reliable data, we validate submissions in five distinct ways.
+The data coming into the FAC is validated in five distinct ways.
 
 ## In-form validations
 
 The SF-SAC is made up of a collection of web forms and spreadsheets that are filled out by grantees and auditors. Within both the web forms and spreadsheets, we have input restrictions and validations that help people complete the forms correctly. 
 
+Because it is difficult to add validations to spreadsheets in a way that works everywhere, this is one of the simplest validation layers in the FAC.
+
 ## Intake validations
 
-The second layer of data validation is made up of many validations applied as the audit is submitted. We transform the data submitted (often as a spreadsheet) into forms appropriate for computing and storage, and then validate that information. Where we find errors, we do our best to provide messages that guide people to a correct submission.
+When an audit is submitted, many {# [intake validations]({{"intake-validations/" | absoluteUrl }}) #} are run. Those validations are run one after another, to help ensure data quality. Where we find errors, we do our best to provide error messages that guide people to a correct submission.
 
 
 Read more about our [intake validations]({{"intake-validations/" | absoluteUrl }}).
-
 
 ## Schema validations
 
@@ -36,15 +37,17 @@ A *schema* describes something's *form* or *shape*. For example, we might say th
 
 Every form section in the SF-SAC has a shape. That shape is made up of the fields (names, zip codes, email addresses), and each piece of data in each field has a shape of its own. The SF-SAC schema validations make sure that a submission, after going through our intake validations, ends up in the right shape for storage.
 
-
+{#
 Read more about our [schema validations]({{"schema-validations/" | absoluteUrl }}).
-
+#}
 
 ## Cross-validations
 
 Because the SF-SAC is made up of multiple sections, we have to make sure the sections make sense with respect to each-other. Cross-validations look at the submission as a whole, and make sure everything is consistent *between* the SF-SAC sections. 
- 
+
+{# 
 Read more about our [cross-validations]({{"cross-validations/" | absoluteUrl }}).
+#}
 
 ## Dissemination validations
 
