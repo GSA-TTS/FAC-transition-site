@@ -36,14 +36,18 @@ We are currently tracking {{ counter }} concerns in the data.
 
 We include a brief, one-line summary of each error here, and full explanations can be found on the linked pages.
 
+<hr>
+
+{% set counter = 1 %}
 {% for item in collections.known_errors | sort(false, false, 'data.discovered_date') %}
     {% if (item.data.title | length) and (item.data.log | length) < 1 %}
-                <h3 id="{{ item.data.title | slugify }}">{{item.data.title}}</h3>
+                <h3 id="{{ item.data.title | slugify }}" >{{counter}}. {{item.data.title}}</h3>
                 <p>{{item.data.slug}}</p>
                 <p><b>Details</b>: <a href="{{ item.url | htmlBaseUrl(baseUrl) }}">{{item.data.title}}</a></p>
                 <p><b>Discovered</b>: {{item.data.discovered_date}}</p>
                 {% if item.data.github %}<p><b>Github issue</b>: {{item.data.github}}</p>{%endif%}
                 {% if item.data.log %}<p><b>Log</b>: <a href="{{ ['/data/reliability/curation-log/', item.data.log] | join | htmlBaseUrl(baseUrl) }}">{{item.data.log}}</a></p>{%endif%}
+  {% set counter = counter + 1 %}
     {% endif %}
 {% endfor %}
 
