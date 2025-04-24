@@ -1,8 +1,16 @@
 ---
-layout: sidenav.njk
+# Metadata
+layout: home.njk
+title: Missing historical audit reports
 tags: known_errors
 order: 2
-title: Missing historical audit reports
+# Layout
+eleventyComputed:
+  eleventyNavigation:
+    key: Missing reports
+    parent: Concerns
+in_page_nav: true
+# Page data
 slug: The audit report for some historical SF-SACs are not present.
 discovered_date: 2024-11-20
 timeline_to_repair:

@@ -1,8 +1,16 @@
 ---
-layout: sidenav.njk
+# Metadata
+layout: home.njk
+title: Incorrect name field used
 tags: known_errors
 order: 2
-title: Incorrect name field used
+# Layout
+eleventyComputed:
+  eleventyNavigation:
+    key: Certifying names
+    parent: Concerns
+in_page_nav: true
+# Page data
 slug: The certifying names were drawn from a similar, but incorrect, field
 discovered_date: 2024-02-13
 timeline_to_repair:

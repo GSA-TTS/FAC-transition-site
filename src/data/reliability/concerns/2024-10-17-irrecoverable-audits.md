@@ -1,8 +1,16 @@
 ---
-layout: sidenav.njk
+# Metadata
+layout: home.njk
+title: Historical submissions beyond recovery
 tags: known_errors
 order: 2
-title: Historical submissions beyond recovery
+# Layout
+eleventyComputed:
+  eleventyNavigation:
+    key: Irrecoverable audits
+    parent: Concerns
+in_page_nav: true
+# Page data
 slug: The SF-SAC for two submissions were beyond recovery in migration
 discovered_date: 2024-10-17
 timeline_to_repair:

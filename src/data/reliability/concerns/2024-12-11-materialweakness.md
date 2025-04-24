@@ -1,8 +1,16 @@
 ---
-layout: sidenav.njk
+# Metadata
+layout: home.njk
+title: Incorrectly mapped MATERIALWEAKNESS
 tags: known_errors
 order: 2
-title: Incorrectly mapped MATERIALWEAKNESS
+# Layout
+eleventyComputed:
+  eleventyNavigation:
+    key: Incorrect MATERIALWEAKNESS
+    parent: Concerns
+in_page_nav: true
+# Page data
 slug: The value for a historical field was incorrectly mapped from Census to GSA
 discovered_date: 2024-11-20
 timeline_to_repair:

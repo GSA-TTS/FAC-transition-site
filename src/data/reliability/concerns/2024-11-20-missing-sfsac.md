@@ -1,8 +1,16 @@
 ---
-layout: sidenav.njk
+# Metadata
+layout: home.njk
+title: Missing SF-SAC data
 tags: known_errors
 order: 2
-title: Missing SF-SAC data
+# Layout
+eleventyComputed:
+  eleventyNavigation:
+    key: Missing SF-SACs
+    parent: Concerns
+in_page_nav: true
+# Page data
 slug: The SF-SAC for some historical submissions are not present.
 discovered_date: 2024-11-20
 timeline_to_repair:
