@@ -1,0 +1,171 @@
+file,field_name,description,description_continued,1997_2000,2001_2003,2004_2007,2008_2009,2010_2012,2013_2015
+ELECAUDITHEADER,AUDITYEAR,Audit Year and DBKEY (database key) combined make up the primary key.,Use these fields to link tables- 4 digits,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITHEADER,DBKEY,Audit Year and DBKEY (database key) combined make up the primary key.,Use these fields to link tables- 1-6 digits,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITHEADER,TYPEOFENTITY,No information available,No information available,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITHEADER,FYSTARTDATE,Fiscal Year Start Date,mm/dd/yyyy,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITHEADER,FYENDDATE,Fiscal Year End Date,mm/dd/yyyy,"Part I, Item 1","Part I, Item 1","Part I, Item 1","Part I, Item 1","Part I, Item 1","Part I, Item 1"
+ELECAUDITHEADER,AUDITTYPE,Type of Audit,"single audit, program specific, or alternative compliance examination engagement",I/2,I/2,I/2,I/2,I/2,I/2
+ELECAUDITHEADER,PERIODCOVERED,Audit Period Covered by Audit,"annual, biennial, or other (see next)",I/3,I/3,I/3,I/3,I/3,I/3
+ELECAUDITHEADER,NUMBERMONTHS,Number of Months Covered by the 'Other' Audit Period,number of months,I/3,I/3,I/3,I/3,I/3,I/3
+ELECAUDITHEADER,EIN,Primary Employer Identification Number,9 digits,I/5/a,I/5/a,I/5/a,I/4/a,I/4/a,I/4/a
+ELECAUDITHEADER,MULTIPLEEINS,Identifies if the Submission Contains Multiple EINs,(Y)es / (N)o indicator,I/5/b,I/5/b,I/5/b,I/4/b,I/4/b,I/4/b
+ELECAUDITHEADER,EINSUBCODE,Subcode assigned to the EIN,3 digits,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITHEADER,DUNS,Primary Data Universal Numbering System Number,9 digits,n/a,n/a,I/5/d,I/4/d,I/4/d,I/4/d
+ELECAUDITHEADER,MULTIPLEDUNS,Identifies if the Submission Contains Multiple DUNS,(Y)es / (N)o indicator,n/a,n/a,I/5/e,I/4/e,I/4/e,I/4/e
+ELECAUDITHEADER,AUDITEENAME,Name of the Auditee,70 characters max,I/6/a,I/6/a,I/6/a,I/5/a,I/5/a,I/5/a
+ELECAUDITHEADER,STREET1,Auditee Street Address,45 characters max,I/6/b,I/6/b,I/6/b,I/5/b,I/5/b,I/5/b
+ELECAUDITHEADER,STREET2,Auditee Street Address,45 characters max,I/6/b,I/6/b,I/6/b,I/5/b,I/5/b,I/5/b
+ELECAUDITHEADER,CITY,Auditee City,30 characters max,I/6/b,I/6/b,I/6/b,I/5/b,I/5/b,I/5/b
+ELECAUDITHEADER,STATE,Auditee State,2 characters,I/6/b,I/6/b,I/6/b,I/5/b,I/5/b,I/5/b
+ELECAUDITHEADER,ZIPCODE,Auditee Zipcode,5 or 9 digits,I/6/b,I/6/b,I/6/b,I/5/b,I/5/b,I/5/b
+ELECAUDITHEADER,AUDITEECONTACT,Name of Auditee Contact,50 characters max,I/6/c,I/6/c,I/6/c,I/5/c,I/5/c,I/5/c
+ELECAUDITHEADER,AUDITEETITLE,Title of Auditee Contact,40 characters max,I/6/c,I/6/c,I/6/c,I/5/c,I/5/c,I/5/c
+ELECAUDITHEADER,AUDITEEPHONE,Auditee Phone Number,10 digits,I/6/d,I/6/d,I/6/d,I/5/d,I/5/d,I/5/d
+ELECAUDITHEADER,AUDITEEFAX,Auditee Fax Number (optional),10 digits,I/6/e,I/6/e,I/6/e,I/5/e,I/5/e,I/5/e
+ELECAUDITHEADER,AUDITEEEMAIL,Auditee Email address,60 characters max,I/6/f,I/6/f,I/6/f,I/5/f,I/5/f,I/5/f
+ELECAUDITHEADER,AUDITEEDATESIGNED,Date of auditee signature,mm/dd/yyyy,I/6/g,I/6/g,I/6/g,I/5/g,I/5/g,certifications
+ELECAUDITHEADER,AUDITEENAMETITLE,Title of Auditee Certifying Official,70 characters max,I/6/g,I/6/g,I/6/g,I/5/g,I/5/g,certifications
+ELECAUDITHEADER,AUDITEECERTIFYNAME,Name of Auditee Certifying Official,50 characters max,I/6/g,I/6/g,I/6/g,I/5/g,I/5/g,certifications
+ELECAUDITHEADER,AUDITEECERTIFYTITLE,Title of Auditee Certifying Official,50 characters max,I/6/g,I/6/g,I/6/g,I/5/g,I/5/g,certifications
+ELECAUDITHEADER,CPAFIRMNAME,CPA Firm Name,64 characters max,I/7/a,I/7/a,I/7/a,I/6/a,I/6/a,I/6/a
+ELECAUDITHEADER,AUDITOR_EIN,CPA Firm EIN (only available for audit years 2013 and beyond),9 digits,n/a,n/a,n/a,n/a,n/a,I/6/b
+ELECAUDITHEADER,CPASTREET1,CPA Street Address,45 characters max,I/7/b,I/7/b,I/7/b,I/6/b,I/6/b,I/6/c
+ELECAUDITHEADER,CPASTREET2,CPA Street Address,45 characters max,I/7/b,I/7/b,I/7/b,I/6/b,I/6/b,I/6/c
+ELECAUDITHEADER,CPACITY,CPA City,30 characters max,I/7/b,I/7/b,I/7/b,I/6/b,I/6/b,I/6/c
+ELECAUDITHEADER,CPASTATE,CPA State,2 characters,I/7/b,I/7/b,I/7/b,I/6/b,I/6/b,I/6/c
+ELECAUDITHEADER,CPAZIPCODE,CPA Zip Code,5 or 9 digits,I/7/b,I/7/b,I/7/b,I/6/b,I/6/b,I/6/c
+ELECAUDITHEADER,CPACONTACT,Name of CPA Contact,50 characters max,I/7/c,I/7/c,I/7/c,I/6/c,I/6/c,I/6/d
+ELECAUDITHEADER,CPATITLE,Title of CPA Contact,40 characters max,I/7/c,I/7/c,I/7/c,I/6/c,I/6/c,I/6/d
+ELECAUDITHEADER,CPAPHONE,CPA phone number,10 digits,I/7/d,I/7/d,I/7/d,I/6/d,I/6/d,I/6/e
+ELECAUDITHEADER,CPAFAX,CPA fax number (optional),10 digits,I/7/e,I/7/e,I/7/e,I/6/e,I/6/e,I/6/f
+ELECAUDITHEADER,CPAEMAIL,CPA email address,60 characters max,I/7/f,I/7/f,I/7/f,I/6/f,I/6/f,I/6/g
+ELECAUDITHEADER,CPADATESIGNED,Date of CPA signature,mm/dd/yyyy,I/7/g,I/7/g,I/7/g,I/6/g,I/6/g,certifications
+ELECAUDITHEADER,MULTIPLE_CPAS,Identifies if the Submission Contains Multiple CPAs,(Y)es / (N)o indicator,n/a,n/a,n/a,I/7/a,I/7/a,I/7
+ELECAUDITHEADER,COGAGENCY,Two digit Federal agency prefix of the cognizant agency,2 Digit Federal Agency prefix,I/9,I/9,n/a,n/a,n/a,n/a
+ELECAUDITHEADER,OVERSIGHTAGENCY,Two digit Federal agency prefix of the oversight agency,2 Digit Federal Agency prefix,I/9,I/9,n/a,n/a,n/a,n/a
+ELECAUDITHEADER,TYPEREPORT_FS,Type of Report Issued on the Financial Statements,"U=Unqualifed, Q=Qualified, A=Adverse, D=Disclaimer",II/1,II/1,II/1,II/1,II/1,II/1
+ELECAUDITHEADER,SP_FRAMEWORK,Special Purpose Framework that was used as the basis of accounting,"Cash basis, Tax basis, Regulatory basis, Contractual basis, or Other basis",n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITHEADER,SP_FRAMEWORK_REQUIRED,Indicate whether or not the special purpose framework used as basis of accounting by state law or tribal law,(Y)es / (N)o indicator,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITHEADER,TYPEREPORT_SP_FRAMEWORK,The auditor's opinion on the special purpose framework ,"U=Unqualifed, Q=Qualified, A=Adverse, D=Disclaimer",n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITHEADER,GOINGCONCERN,Whether or not the audit contained a going concern paragraph  on financial statements,(Y)es / (N)o indicator,II/2,II/2,II/2,II/2,II/2,II/2
+ELECAUDITHEADER,REPORTABLECONDITION/SIGNIFICANTDEFICIENCY,Whether or not the audit disclosed a reportable condition/significant deficiency on financial statements,(Y)es / (N)o indicator,II/3,II/3,II/3,II/3,II/3,II/3
+ELECAUDITHEADER,MATERIALWEAKNESS,Whether or not the audit disclosed any reportable condition/significant deficiency as a material weakness on financial statements,(Y)es / (N)o indicator,II/4,II/4,II/4,II/4,II/4,II/4
+ELECAUDITHEADER,MATERIALNONCOMPLIANCE,Whether or not the audit disclosed a material noncompliance on financial statements,(Y)es / (N)o indicator,II/5,II/5,II/5,II/5,II/5,II/5
+ELECAUDITHEADER,TYPEREPORT_MP,Type of Report Issued on the Major Program Compliance,"U=Unqualifed, Q=Qualified, A=Adverse, D=Disclaimer",III/1,III/1,n/a,n/a,n/a,n/a
+ELECAUDITHEADER,DUP_REPORTS,Whether or not the financial statements include departments that have separate expenditures not included in this audit,(Y)es / (N)o indicator,n/a,III/2,III/1,III/1,III/1,III/1
+ELECAUDITHEADER,DOLLARTHRESHOLD,Dollar Threshold to distinguish between Type A and Type B programs.,($) 12 digits max,III/2,III/3,III/2,III/2,III/2,III/2
+ELECAUDITHEADER,LOWRISK,Indicate whether or not the auditee qualified as a low-risk auditee,(Y)es / (N)o indicator,III/3,III/4,III/3,III/3,III/3,III/3
+ELECAUDITHEADER,REPORTABLECONDITION/SIGNIFICANTDEFICIENCY_MP,Whether or not the audit disclosed a reportable condition/significant deficiency for any major program in the Schedule of Findings and Questioned Costs,(Y)es / (N)o indicator,n/a,III/5,III/4,III/4,III/4,n/a
+ELECAUDITHEADER,MATERIALWEAKNESS_MP,Indicate whether any reportable condition/signficant deficiency was disclosed as a material weakness for a major program in the Schedule of Findings and Questioned Costs,(Y)es / (N)o indicator,n/a,III/6,III/5,III/5,III/5,n/a
+ELECAUDITHEADER,QCOSTS,Indicate whether or not the audit disclosed any known questioned costs.,(Y)es / (N)o indicator,n/a,III/7,III/6,III/6,III/6,n/a
+ELECAUDITHEADER,CYFINDINGS,Indicate whether or not current year findings or prior year findings affecting direct funds were reported,(Y)es / (N)o indicator,n/a,III/9,III/8,III/8,III/8,III/5
+ELECAUDITHEADER,PYSCHEDULE,Indicate whether or not the report includes a Summary Schedule of Prior Year Audit Findings,(Y)es / (N)o indicator,n/a,III/8,III/7,III/7,III/7,III/4
+ELECAUDITHEADER,TOTFEDEXPEND,Total Federal Expenditures,12 digits max,III/6/c- Total,III/10/d -Total,III/9/e -Total,III/9/e -Total,III/9/f -Total,III/6/d -Total
+ELECAUDITHEADER,INITIAL DATE RECEIVED,The first date an audit component or Form SF-SAC was received by the Federal audit Clearinghouse (FAC).,mm/dd/yyyy,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITHEADER,FORM DATE RECEIVED,The most Recent Date the Form SF-SAC was received by the FAC. This field was not populated before 2001.,mm/dd/yyyy,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITHEADER,COMPONENT DATE RECEIVED,The most recent date an audit component was received by the FAC. This field was not populated before 2004. Receipt of Financial statements only are not processed until the rest of the audit or a Form SF-SAC is also received.,mm/dd/yyyy,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITHEADER,COMPLETED_ON,Date the Audit was Posted to the Internet as Complete,mm/dd/yyyy,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITHEADER,PREVIOUS_COMPLETED_ON,Date the Audit was Previously Posted to the Internet as Complete,mm/dd/yyyy,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITHEADER,REPORTREQUIRED,Distribution to Federal Agency required?,(Y)es / (N)o indicator,III/5,III/9,III/8,n/a,n/a,n/a
+ELECAUDITHEADER,FAC ACCEPTED DATE,The most recent date an audit report was submitted to the FAC that passed FAC screening and was accepted as a valid OMB Circular A-133 report submission.,mm/dd/yyyy,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITHEADER,CPAFOREIGN,CPA Address (if international),200 characters max ,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITHEADER,CPACOUNTRY,CPA Country,6 characters max ,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITHEADER,ENTITY_TYPE,"Self reported type of entity (i.e., States, Local Governments, Indian Tribes, Institutions of Higher Education, NonProfit)",50 characters max,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITHEADER,UEI,Unique Entity ID,12 alpha-numeric,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITHEADER,MULTIPLEUEIS,Identifies if the Submission Contains Multiple UEIs,(Y)es / (N)o indicator,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITS,AUDITYEAR,Audit Year and DBKEY (database key) combined make up the primary key.,Use these fields to link tables- 4 digits,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITS,DBKEY,Audit Year and DBKEY (database key) combined make up the primary key.,Use these fields to link tables- 1-6 digits,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITS,CFDA,Federal Agency Prefix and Extension,52 digit max,III/6/a,III/10/a,III/9/a & III/9/b combined,III/9/a & III/9/b combined,III/9/a & III/9/b combined,III/6/a & III/6/b combined
+ELECAUDITS,AWARDIDENTIFICATION,"Other data used to identify the award which is not a CFDA number (e.g., program year, contract number)",50 character max,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITS,R&D,Indicate whether or not the program is a Research and Development program,(Y)es / (N)o indicator,n/a,III/10/b,III/9/c,III/9/c,III/9/c,III/6/e
+ELECAUDITS,LOANS,Indicate whether or not the program is a Loan or Loan Guarantee (only available for audit years 2013 and beyond),(Y)es / (N)o indicator,n/a,n/a,n/a,n/a,n/a,III/6/f
+ELECAUDITS,LOANBALANCE,The loan or loan guarantee (loan) balance outstanding at the end of the audit period.  A response of ‘N/A’ is acceptable.,12 digit max OR ‘N/A’ ,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITS,ARRA,American Recovery and Reinvestment Act Funded Program,(Y)es / (N)o indicator,n/a,n/a,n/a,n/a,III/9/d,III/6/g
+ELECAUDITS,FEDERALPROGRAMNAME,Name of Federal Program,300 character max,III/6/b,III/10/c,III/9/d,III/9/d,III/9/e,III/6/c
+ELECAUDITS,AMOUNT,Amount Expended for the Federal Program,12 digit max,III/6/c,III/10/d,III/9/e,III/9/e,III/9/f,III/6/d
+ELECAUDITS,CLUSTERNAME,The name of the cluster,75 character max,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITS,STATECLUSTERNAME,The name of the state cluster,75 character max,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITS,PROGRAMTOTAL,Total Federal awards expended for each individual Federal program is auto-generated by summing the amount expended for all line items with the same CFDA Prefix and Extension,12 digit max,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITS,CLUSTERTOTAL,Total Federal awards expended for each individual Federal program is auto-generated by summing the amount expended for all line items with the same Cluster Name,12 digit max,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITS,DIRECT,Indicate whether or not the award was received directly from a Federal awarding agency,(Y)es / (N)o indicator,n/a,III/10/e,III/9/f,III/9/f,III/9/g,III/6/h
+ELECAUDITS,PASSTHROUGHAWARD,Indicates whether or not funds were passed through to any subrecipients for the Federal program,(Y)es / (N)o indicator,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITS,PASSTHROUGHAMOUNT,Amount passed through to subrecipients,12 digit max,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITS,MAJORPROGRAM,Indicate whether or not the Federal program is a major program,(Y)es / (N)o indicator,III/7/a,III/10/f,III/9/g,III/9/g,III/9/h,III/6/i
+ELECAUDITS,TYPEREPORT_MP,Type of Report Issued on the Major Program Compliance,"U=Unqualifed, Q=Qualified, A=Adverse, D=Disclaimer",n/a,n/a,III/9/h,III/9/h,III/9/i,III/6/j
+ELECAUDITS,TYPEREQUIREMENT,Type Requirement Failure,A=Activities allowed or unallowed,III/7/b,III/11/a,III/10/a,III/10/a,III/10/a,III/7/e
+ELECAUDITS,TYPEREQUIREMENT,Type Requirement Failure,B=Allowable costs/cost principles,III/7/b,III/11/a,III/10/a,III/10/a,III/10/a,III/7/e
+ELECAUDITS,TYPEREQUIREMENT,Type Requirement Failure,C=Cash management,III/7/b,III/11/a,III/10/a,III/10/a,III/10/a,III/7/e
+ELECAUDITS,TYPEREQUIREMENT,Type Requirement Failure,D=Davis-Bacon Act,III/7/b,III/11/a,III/10/a,III/10/a,III/10/a,III/7/e
+ELECAUDITS,TYPEREQUIREMENT,Type Requirement Failure,E=Eligibility,III/7/b,III/11/a,III/10/a,III/10/a,III/10/a,III/7/e
+ELECAUDITS,TYPEREQUIREMENT,Type Requirement Failure,F=Equipment and real property management,III/7/b,III/11/a,III/10/a,III/10/a,III/10/a,III/7/e
+ELECAUDITS,TYPEREQUIREMENT,Type Requirement Failure,"G=Matching, level of effort, earmarking",III/7/b,III/11/a,III/10/a,III/10/a,III/10/a,III/7/e
+ELECAUDITS,TYPEREQUIREMENT,Type Requirement Failure,H=Period of availability of Federal funds,III/7/b,III/11/a,III/10/a,III/10/a,III/10/a,III/7/e
+ELECAUDITS,TYPEREQUIREMENT,Type Requirement Failure,I=Procurement and suspension and debarment,III/7/b,III/11/a,III/10/a,III/10/a,III/10/a,III/7/e
+ELECAUDITS,TYPEREQUIREMENT,Type Requirement Failure,J=Program income,III/7/b,III/11/a,III/10/a,III/10/a,III/10/a,III/7/e
+ELECAUDITS,TYPEREQUIREMENT,Type Requirement Failure,K=Real prperty acquisition and relocation assistance,III/7/b,III/11/a,III/10/a,III/10/a,III/10/a,III/7/e
+ELECAUDITS,TYPEREQUIREMENT,Type Requirement Failure,L=Reporting,III/7/b,III/11/a,III/10/a,III/10/a,III/10/a,III/7/e
+ELECAUDITS,TYPEREQUIREMENT,Type Requirement Failure,M=Subrecipient monitoring,III/7/b,III/11/a,III/10/a,III/10/a,III/10/a,III/7/e
+ELECAUDITS,TYPEREQUIREMENT,Type Requirement Failure,N=Special tests and provisions,III/7/b,III/11/a,III/10/a,III/10/a,III/10/a,III/7/e
+ELECAUDITS,TYPEREQUIREMENT,Type Requirement Failure,O=None,III/7/b,III/11/a,III/10/a,III/10/a,III/10/a,III/7/e
+ELECAUDITS,TYPEREQUIREMENT,Type Requirement Failure,P=Other,III/7/b,III/11/a,III/10/a,III/10/a,III/10/a,III/7/e
+ELECAUDITS,FINDINGREFNUMS,Findings Reference Numbers,100 character max,III/7/e,III/11/b,III/10/b,III/10/b,III/10/b,III/7/d
+ELECAUDITS,FINDINGSCOUNT,Number of findings for the federal program (only available for audit years 2013 and beyond),Use findingscount and elecauditsid fields to link CFDA INFO and FINDINGS,n/a,n/a,n/a,n/a,n/a,III/6/k
+ELECAUDITS,ELECAUDITSID,FAC system generated sequence number used to link to Findings data between CFDA Info and Findings,Use findingscount and elecauditsid fields to link CFDA INFO and FINDINGS,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITS,OTHERCLUSTERNAME,The name of the cluster (if not listed in the Compliance Supplement),75 character max,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITS,CFDAPROGRAMNAME,Name of Federal Program (auto-generated by FAC from the CFDA catalog),300 character max,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITFINDINGS,DBKEY,Audit Year and DBKEY (database key) combined make up the primary key.,Use these fields to link tables- 4 digits,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITFINDINGS,AUDITYEAR,Audit Year and DBKEY (database key) combined make up the primary key.,Use these fields to link tables- 1-6 digits,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITFINDINGS,ELECAUDITSID,FAC system generated sequence number used to link to Findings data between CFDA Info and Findings,Use findingscount and elecauditsid fields to link CFDA INFO and FINDINGS,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITFINDINGS,ELECAUDITFINDINGSID,FAC system generated sequence number for finding,Use findingscount and elecauditsid fields to link CFDA INFO and FINDINGS,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITFINDINGS,FINDINGREFNUMS,Findings Reference Numbers,100 character max,n/a,n/a,n/a,n/a,n/a,III/7/d
+ELECAUDITFINDINGS,TYPEREQUIREMENT,Type Requirement Failure,A=Activities allowed or unallowed,n/a,n/a,n/a,n/a,n/a,III/7/e
+ELECAUDITFINDINGS,TYPEREQUIREMENT,Type Requirement Failure,B=Allowable costs/cost principles,n/a,n/a,n/a,n/a,n/a,III/7/e
+ELECAUDITFINDINGS,TYPEREQUIREMENT,Type Requirement Failure,C=Cash management,n/a,n/a,n/a,n/a,n/a,III/7/e
+ELECAUDITFINDINGS,TYPEREQUIREMENT,Type Requirement Failure,D=Davis-Bacon Act,n/a,n/a,n/a,n/a,n/a,III/7/e
+ELECAUDITFINDINGS,TYPEREQUIREMENT,Type Requirement Failure,E=Eligibility,n/a,n/a,n/a,n/a,n/a,III/7/e
+ELECAUDITFINDINGS,TYPEREQUIREMENT,Type Requirement Failure,F=Equipment and real property management,n/a,n/a,n/a,n/a,n/a,III/7/e
+ELECAUDITFINDINGS,TYPEREQUIREMENT,Type Requirement Failure,"G=Matching, level of effort, earmarking",n/a,n/a,n/a,n/a,n/a,III/7/e
+ELECAUDITFINDINGS,TYPEREQUIREMENT,Type Requirement Failure,H=Period of availability of Federal funds,n/a,n/a,n/a,n/a,n/a,III/7/e
+ELECAUDITFINDINGS,TYPEREQUIREMENT,Type Requirement Failure,I=Procurement and suspension and debarment,n/a,n/a,n/a,n/a,n/a,III/7/e
+ELECAUDITFINDINGS,TYPEREQUIREMENT,Type Requirement Failure,J=Program income,n/a,n/a,n/a,n/a,n/a,III/7/e
+ELECAUDITFINDINGS,TYPEREQUIREMENT,Type Requirement Failure,K=Real prperty acquisition and relocation assistance,n/a,n/a,n/a,n/a,n/a,III/7/e
+ELECAUDITFINDINGS,TYPEREQUIREMENT,Type Requirement Failure,L=Reporting,n/a,n/a,n/a,n/a,n/a,III/7/e
+ELECAUDITFINDINGS,TYPEREQUIREMENT,Type Requirement Failure,M=Subrecipient monitoring,n/a,n/a,n/a,n/a,n/a,III/7/e
+ELECAUDITFINDINGS,TYPEREQUIREMENT,Type Requirement Failure,N=Special tests and provisions,n/a,n/a,n/a,n/a,n/a,III/7/e
+ELECAUDITFINDINGS,TYPEREQUIREMENT,Type Requirement Failure,O=None,n/a,n/a,n/a,n/a,n/a,III/7/e
+ELECAUDITFINDINGS,TYPEREQUIREMENT,Type Requirement Failure,P=Other,n/a,n/a,n/a,n/a,n/a,III/7/e
+ELECAUDITFINDINGS,MODIFIEDOPINION,Modified Opinion finding,(Y)es / (N)o indicator,n/a,n/a,n/a,n/a,n/a,III/7/f
+ELECAUDITFINDINGS,OTHERNONCOMPLIANCE,Other Noncompliance finding,(Y)es / (N)o indicator,n/a,n/a,n/a,n/a,n/a,III/7/g
+ELECAUDITFINDINGS,MATERIALWEAKNESS,Material Weakness finding,(Y)es / (N)o indicator,n/a,n/a,n/a,n/a,n/a,III/7/h
+ELECAUDITFINDINGS,SIGNIFICANTDEFICIENCY,Significant Deficiency finding,(Y)es / (N)o indicator,n/a,n/a,n/a,n/a,n/a,III/7/i
+ELECAUDITFINDINGS,OTHERFINDINGS,Other findings,(Y)es / (N)o indicator,n/a,n/a,n/a,n/a,n/a,III/7/j
+ELECAUDITFINDINGS,QCOSTS,Questioned Costs,(Y)es / (N)o indicator,n/a,n/a,n/a,n/a,n/a,III/7/k
+ELECAUDITFINDINGS,REPEATFINDING,Indicates whether or not the audit finding was a repeat of an audit finding in the immediate prior audit,(Y)es / (N)o indicator,n/a,n/a,n/a,n/a,n/a,n/a
+ELECAUDITFINDINGS,PRIORFINDINGREFNUMS,Audit finding reference numbers from the immediate prior audit,100 character max,n/a,n/a,n/a,n/a,n/a,n/a
+ELECEINS,AUDITYEAR,Audit Year and DBKEY (database key) combined make up the primary key.,Use these fields to link tables- 4 digits,n/a,n/a,n/a,n/a,n/a,n/a
+ELECEINS,DBKEY,Audit Year and DBKEY (database key) combined make up the primary key.,Use these fields to link tables- 1-6 digits,n/a,n/a,n/a,n/a,n/a,n/a
+ELECEINS,EIN,Multiple Employer Identification Numbers,9 digits,n/a,I/5/c,I/5/c,I/4/c,I/4/c,I/4/c
+ELECEINS,EINSEQNUM,Order that EINs were reported on page 4 of SF-SAC,number,n/a,n/a,n/a,n/a,n/a,n/a
+ELECUEIS,AUDITYEAR,Audit Year and DBKEY (database key) combined make up the primary key.,Use these fields to link tables- 4 digits,n/a,n/a,n/a,n/a,n/a,n/a
+ELECUEIS,DBKEY,Audit Year and DBKEY (database key) combined make up the primary key.,Use these fields to link tables- 1-6 digits,n/a,n/a,n/a,n/a,n/a,n/a
+ELECUEIS,UEI,Multiple Unique Entity Identifier Numbers,12 alpha-mumeric,n/a,n/a,I/5/f,I/4/f,I/4/f,I/4/f
+ELECUEIS,UEISEQNUM,Order that UEI was reported on page 4 of SF-SAC,number,n/a,n/a,n/a,n/a,n/a,n/a
+ELECCPAS,AUDITYEAR,Audit Year and DBKEY (database key) combined make up the primary key.,Use these fields to link tables- 4 digits,n/a,n/a,n/a,n/a,n/a,n/a
+ELECCPAS,DBKEY,Audit Year and DBKEY (database key) combined make up the primary key.,Use these fields to link tables- 1-6 digits,n/a,n/a,n/a,n/a,n/a,n/a
+ELECCPAS,SEQNUM,Order that Auditors were reported on page 5 of SF-SAC,,n/a,n/a,n/a,n/a,n/a,n/a
+ELECCPAS,CPAFIRMNAME,CPA Firm Name,64 characters max,n/a,n/a,n/a,I/8/a,I/8/a,I/8/a
+ELECCPAS,CPAEIN,CPA Firm EIN (only available for audit years 2013 and beyond),9 digits,n/a,n/a,n/a,n/a,n/a,I/8/b
+ELECCPAS,CPASTREET1,CPA Street Address,45 characters max,n/a,n/a,n/a,I/8/b,I/8/b,I/8/c
+ELECCPAS,CPACITY,CPA City,30 characters max,n/a,n/a,n/a,I/8/b,I/8/b,I/8/d
+ELECCPAS,CPASTATE,CPA State,2 characters,n/a,n/a,n/a,I/8/b,I/8/b,I/8/e
+ELECCPAS,CPAZIPCODE,CPA Zip Code,5 or 9 digits,n/a,n/a,n/a,I/8/b,I/8/b,I/8/f
+ELECCPAS,CPACONTACT,Name of CPA Contact,50 characters max,n/a,n/a,n/a,I/8/c,I/8/c,I/8/g
+ELECCPAS,CPATITLE,Title of CPA Contact,40 characters max,n/a,n/a,n/a,I/8/c,I/8/c,I/8/h
+ELECCPAS,CPAPHONE,CPA phone number,10 digits,n/a,n/a,n/a,I/8/d,I/8/d,I/8/i
+ELECCPAS,CPAFAX,CPA fax number (optional),10 digits,n/a,n/a,n/a,I/8/e,I/8/e,I/8/j
+ELECCPAS,CPAEMAIL,CPA email address (optional),60 characters max,n/a,n/a,n/a,I/8/f,I/8/f,I/8/k
+ELECPASSTHROUGH,DBKEY,Audit Year and DBKEY (database key) combined make up the primary key,Use these fields to link tables 1 -6 digits,n/a,n/a,n/a,n/a,n/a,n/a
+ELECPASSTHROUGH,AUDITYEAR,Audit Year and DBKEY (database key) combined make up the primary key,Use these fields to link tables 1 - 4 digits,n/a,n/a,n/a,n/a,n/a,n/a
+ELECPASSTHROUGH,ELECAUDITSID,FAC system generated sequence number used to link to Passthrough data between CFDA Info and Passthrough,Use elecauditsid fields to link CFDA INFO and PASSTHROUGH,n/a,n/a,n/a,n/a,n/a,n/a
+ELECPASSTHROUGH,PASSTHROUGHNAME,Name of Pass-through Entity,70 character max,n/a,n/a,n/a,n/a,n/a,n/a
+ELECPASSTHROUGH,PASSTHROUGHID,Identifying Number Assigned by the Pass-through Entity,70 character max,n/a,n/a,n/a,n/a,n/a,n/a

@@ -1,0 +1,12 @@
+Census,GSA,Transformations
+CPAZIPCODE,address_zipcode,"Removes hyphens.
+Pads with a leading zero when zipcode only contains 4 or 8 digits."
+CPATITLE,contact_title,No transformation
+CPACITY,address_city,No transformation
+CPASTATE,address_state,No transformation
+CPACONTACT,contact_name,No transformation
+CPAEIN,auditor_ein,No transformation
+CPAFIRMNAME,auditor_name,No transformation
+CPAEMAIL,contact_email,No transformation
+CPAPHONE,contact_phone,No transformation
+CPASTREET1,address_street,No transformation

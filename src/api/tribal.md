@@ -1,26 +1,27 @@
 ---
 layout: home.njk
-title: Accessing suppressed Tribal data via the API
+title: Accessing suppressed suppressed data via the API
 meta:
-  name: Accessing Tribal data via the API
+  name: Accessing suppressed data via the API
   description: How to access suppressed SF-SAC data.
 eleventyComputed:
   eleventyNavigation:
-    key: Tribal data access
+    key: Suppressed data access
     parent: API resources
+in_page_nav: true
 ---
 
-# Accessing suppressed Tribal data via the API
+# Accessing suppressed data via API
 
 Tribes and Tribal organizations have the option, per [2 CFR 200.512(b)(2)](https://www.ecfr.gov/current/title-2/part-200/subpart-F#p-200.512(b)(2)), to suppress their Single Audit data.
 
 For Tribes and Tribal organizations who choose to protect their data, the API will show `is_public` in the `/general` endpoint set to `False`.
 
-If you believe you should have access to these audits, you will need to request a copy of the Tribal API Access Agreement via the [helpdesk](https://support.fac.gov/hc/en-us).
+If you believe you should have access to these audits, you will need to request a copy of the Tribal API Access Agreement via the [helpdesk](https://support.fac.gov/hc/en-us). An NSAC or other Federal official with Single Audit oversight will need to approve this request.
 
 ## Working with the data
 
-Your Tribal access API key will let you request a one-time access token. You'll use this token to download suppressed reports.
+Your access API key will let you request a one-time access token. You'll use this token to download suppressed reports.
 
 Once you have your token, use the instructions below to complete your API set-up: 
 
@@ -155,7 +156,8 @@ def download_file(access_info):
                 pdf_file.write(response.content)
             print("File downloaded successfully.")
         else:
-            print("Failed to download file. Status code:", response.status_code)
+            print("Failed to download; status code:", 
+                response.status_code)
             print("Response content:", response.text)
     except Exception as e:
         print("Error occurred while downloading file:", e)

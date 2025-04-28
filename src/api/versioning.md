@@ -8,6 +8,7 @@ eleventyComputed:
   eleventyNavigation:
     key: API versioning
     parent: API resources
+in_page_nav: true
 ---
 
 # FAC API versioning

@@ -1,0 +1,3 @@
+Census,GSA,Transformations
+PASSTHROUGHNAME,passthrough_name,Uses “GSA_MIGRATION” when DIRECT =”N” and PASSTHROUGHID exists but no corresponding PASSTHROUGHNAME is found
+PASSTHROUGHID,passthrough_id,Uses “GSA_MIGRATION” when DIRECT =”N” and PASSTHROUGHNAME exists but no corresponding PASSTHROUGHID is found.

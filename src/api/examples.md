@@ -8,14 +8,16 @@ eleventyComputed:
   eleventyNavigation:
     key: Examples
     parent: API resources
+in_page_nav: true
 ---
 
 # FAC API Example Queries
 
 This page provides examples of how to interact with the **FAC API** using different programming languages. In each example, you should insert [your own API key](https://api.data.gov/signup/) where the example calls for YOUR_API_KEY.
 
-## **cURL**
-Retrieve the first 5 audit reports using cURL:
+## cURL
+
+Retrieve the first 5 audit reports using cURL.
 
 ```sh
 curl -X GET "https://api.fac.gov/general?limit=5" -H "X-Api-Key: YOUR_API_KEY"
@@ -37,8 +39,9 @@ $response = Invoke-RestMethod -Uri $URL -Headers $headers -Method Get
 $response | ConvertTo-Json -Depth 2
 ```
 
-## **Python: Filtering by Year and Agency**
-Retrieve audit reports for a specific year and specific agency (e.g., using the year 2024 and the agency code 21 for Treasury):
+## Python: Filtering by Year and Agency
+
+Retrieve audit reports for a specific year and specific agency (e.g., using the year 2024 and the agency code 21 for Treasury).
 
 ```python
 import requests
@@ -48,26 +51,11 @@ BASE_URL = "https://api.fac.gov"
 API_KEY = "YOUR_API_KEY"
 
 def fetch_comprehensive_audits(year=2024, agency=21):
-    fields = ",".join([
-        "report_id", "auditee_uei", "audit_year", "auditee_certify_name", "auditee_certify_title",
-        "auditee_contact_name", "auditee_email", "auditee_name", "auditee_phone", 
-        "auditee_contact_title", "auditee_address_line_1", "auditee_city", "auditee_state",
-        "auditee_ein", "auditee_zip", "auditor_phone", "auditor_state", "auditor_city", 
-        "auditor_contact_title", "auditor_address_line_1", "auditor_zip", "auditor_country",
-        "auditor_contact_name", "auditor_email", "auditor_firm_name", "auditor_foreign_address",
-        "auditor_ein", "cognizant_agency", "oversight_agency", "date_created",
-        "ready_for_certification_date", "auditor_certified_date", "auditee_certified_date", 
-        "submitted_date", "fac_accepted_date", "fy_end_date", "fy_start_date", "audit_type",
-        "gaap_results", "sp_framework_basis", "is_sp_framework_required", "sp_framework_opinions",
-        "is_going_concern_included", "is_internal_control_deficiency_disclosed",
-        "is_internal_control_material_weakness_disclosed", "is_material_noncompliance_disclosed",
-        "dollar_threshold", "is_low_risk_auditee", "agencies_with_prior_findings", "entity_type",
-        "number_months", "audit_period_covered", "total_amount_expended", "type_audit_code",
-        "is_public", "data_source", "is_aicpa_audit_guide_included", "is_additional_ueis",
-        "is_multiple_eins", "is_secondary_auditors"
-    ])
 
-    url = f"{BASE_URL}/general?audit_year=eq.{year}&cognizant_agency=eq.{agency}&select={fields}"
+    url = (f"{BASE_URL}/general" 
+        + f"?audit_year=eq.{year}"
+        + f"&cognizant_agency=eq.{agency}"
+        )
     headers = {"X-Api-Key": API_KEY}
     
     response = requests.get(url, headers=headers)
@@ -93,8 +81,9 @@ fetch_comprehensive_audits()
 
 ```
 
-## **Python: Retrieving a Specific Report by ID**
-Retrieve details for a single audit report with user input of report ID:
+## Python: Retrieving a Specific Report by ID
+
+Retrieve details for a single audit report with user input of report ID.
 
 ```python
 import requests
@@ -124,9 +113,11 @@ report_id = input("Enter the Report ID: ").strip()
 fetch_audit_by_id(report_id)
 
 ```
----
-## **Python: Retrieving Reports from the Last Week and Saving as CSV File**
-Retrieve audit reports in the last 7 days and export as CSV file:
+
+
+## Python: Saving as a CSV File
+
+Retrieve audit reports in the last 7 days and export as CSV file.
 
 ```python
 import requests
@@ -147,11 +138,17 @@ def fetch_audits_last_7_days(output_csv="FAC_last_7_days_audit_reports.csv"):
     print(f"\nSearching audits from {start_date} to {end_date} (last 7 days)...")
 
     fields = [
-        "report_id", "auditee_uei", "audit_year", "auditee_name", "auditee_state",
-        "submitted_date", "total_amount_expended", "audit_type"
+        "report_id", "auditee_uei", "audit_year", 
+        "auditee_name", "auditee_state",
+        "submitted_date", "total_amount_expended", 
+        "audit_type"
     ]
 
-    url = f"{BASE_URL}/general?submitted_date=gte.{start_date}&submitted_date=lte.{end_date}&select={','.join(fields)}"
+    url = (f"{BASE_URL}/general" 
+        + f"?submitted_date=gte.{start_date}"
+        + f"&submitted_date=lte.{end_date}"
+        + f"&select={','.join(fields)}"
+        )
     headers = {"X-Api-Key": API_KEY}
 
     try:
@@ -164,12 +161,14 @@ def fetch_audits_last_7_days(output_csv="FAC_last_7_days_audit_reports.csv"):
             
             if audits:
                 
-                with open(output_csv, "w", newline="", encoding="utf-8") as csv_file:
+                with open(output_csv, "w", 
+                    newline="", 
+                    encoding="utf-8") as csv_file:
                     writer = csv.DictWriter(csv_file, fieldnames=fields)
                     writer.writeheader()
                     writer.writerows(audits)
 
-                print(f"Data saved to {output_json} (JSON) and {output_csv} (CSV).")
+                print(f"Data saved to {output_csv} (CSV).")
 
             else:
                 print("No audits found in the last 7 days.")

@@ -1,4 +1,5 @@
 site_name: Federal Audit Clearinghouse
+csv_base: https://app.fac.gov/dissemination/public-data
 
 navigation:
   primary:
@@ -13,21 +14,32 @@ navigation:
           href: 'tribal'
         - text: Search resources
           href: 'search-resources'
-        - text: Developer API resources
-          href: 'api'
-        - text: Data reliability
-          href: 'data-reliability'
     - text: Audit submission
       id: audits
       links:
+        - text: Submit an audit
+          href: https://app.fac.gov/openid/login/
         - text: Submission resources
           href: 'audit-resources'
-        - text: Submission home
-          href: https://app.fac.gov/openid/login/
         - text: Submission guide
           href: 'audit-resources/submission-guide/about'
         - text: SF-SAC workbooks
           href: 'audit-resources/sf-sac'
+    - text: Data
+      id: data
+      links:
+        - text: About the data
+          href: 'data'
+        - text: Download CSV data
+          href: 'data/download'
+        - text: Developer API resources
+          href: 'api'
+        - text: Data reliability
+          href: 'data/reliability'
+        - text: Data curation
+          href: 'data/reliability/curation'
+        - text: Data migration
+          href: 'data/migration'
     - text: Updates & News
       id: news
       links:
