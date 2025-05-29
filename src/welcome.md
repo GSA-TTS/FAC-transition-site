@@ -8,17 +8,19 @@ meta:
 
 # Welcome to the FAC
 
-The General Services Administration (GSA) launched the new Federal Audit Clearinghouse in October, 2023. All single audit submissions should now be submitted using [our new system](https://app.fac.gov/openid/login/). 
+The General Services Administration (GSA) launched the new Federal Audit Clearinghouse in October 2023. All single audit submissions should now be submitted using [our system](https://app.fac.gov/openid/login/).
 
-Users can also [search single audit reports](https://app.fac.gov/dissemination/search/) submitted to the FAC since October 1, 2023. For the time being, [search and download of historical audit data](https://facdissem.census.gov/Main.aspx) will remain on the Census' site.
+You can [search single audit reports](https://app.fac.gov/dissemination/search/) submitted since October 1, 2023. For now, [search and download of historical audit data](https://facdissem.census.gov/Main.aspx) is still available on the Census Bureau’s website.
 
-To help make this transition smooth, we've put together several resources for your use. In addition to being able to log in and complete the audit submission process, the new site includes:
+Whether you're submitting an audit, using audit data, or developing tools with our API, we’ve gathered helpful resources to guide you:
 
-- [An overview of the GSA FAC process]({{ config.baseUrl }}resources/instructions/)
-- [Download links for the audit workbooks and instructions for completing them]({{ config.baseUrl }}resources/workbooks/)
-- [Developer resources for using the new FAC API to access audit data]({{ config.baseUrl }}developers)
-- [Our help center](https://support.fac.gov/hc/en-us)
+- [Overview of the FAC process]({{ config.baseUrl }}resources/instructions/)
+- [Download audit workbooks and completion instructions]({{ config.baseUrl }}resources/workbooks/)
+- [Developer documentation for accessing data through our API]({{ config.baseUrl }}developers)
+- [Visit our help center](https://support.fac.gov/hc/en-us)
 
-## For ACEE submitters
+## Note for ACEE Submitters
 
-At this time, the FAC is not accepting submissions for Alternative Compliance Examination Engagements (ACEE).
+The FAC is not currently accepting submissions for Alternative Compliance Examination Engagements (ACEE).
+
+

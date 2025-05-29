@@ -13,59 +13,71 @@ in_page_nav: true
 
 # Using the FAC API
 
-Once you have [signed up]({{ config.baseUrl }}api/signup/) and received a key from [api.data.gov](https://api.data.gov/), you're ready to begin using the FAC API. 
+To use the FAC API, you must first [sign up]({{ config.baseUrl }}api/signup/) and receive an API key from [api.data.gov](https://api.data.gov/).
 
-The examples in this repository assume that you have two environment variables set. In a Bash shell, you would:
+---
 
-```
-export API_GOV_KEY="..."
+## Environment Setup
+
+The examples in this documentation assume you’ve set two environment variables. In a Bash shell:
+
+```bash
+export API_GOV_KEY="your-api-key"
 export API_GOV_URL="https://api-staging.fac.gov"
 ```
 
-Those two environment variables must be present in your shell for the code provided to work "as is." 
+These variables are used in command-line and code examples throughout the API documentation.
 
-If you are on Windows, you can either use the Windows Subshell for Linux (WSL) to run the code, or in a Windows command shell:
+If you're using Windows, you can either use Windows Subsystem for Linux (WSL) or set the variables like this in Command Prompt:
 
+```cmd
+set API_GOV_KEY=your-api-key
+set API_GOV_URL=https://api-staging.fac.gov
 ```
-set API_GOV_KEY="as above..."
-set API_GOV_URL="as above..."
-```
 
-## API endpoints
+---
 
-You can set `API_GOV_URL` to one of four URLs:
+## API Endpoints
 
-1. `api.fac.gov`: This endpoint is is for current, submitted data. Production services should use this endpoint. It is typically updated once per week on Wednesdays.
-2. `api-staging.fac.gov`: This endpoint will contain a mix of submitted data as well as test data. This environment is updated daily at 5 a.m. ET.
-3. `api-dev.fac.gov`: This endpoint may contain a mix of submitted and test data. Every time we accept a pull request into `main`, this environment updates. `dev` is considered unstable.
-4. `api-preview.fac.gov`: This is a testing environment for our FAC developers. You shouldn't use `preview` unless asked to by the FAC team.
+You can point `API_GOV_URL` to one of the following environments depending on your use case:
+
+- `https://api.fac.gov` – **Production**  
+  Access official, submitted data. Typically updated weekly on Wednesdays.
+
+- `https://api-staging.fac.gov` – **Staging**  
+  Contains a mix of submitted and test data. Updated daily at 5 a.m. ET.
+
+- `https://api-dev.fac.gov` – **Development**  
+  Updated with every pull request to `main`. Considered unstable.
+
+- `https://api-preview.fac.gov` – **Preview**  
+  Internal testing environment. Only use if directed by the FAC team.
+
+---
 
 ## Testing the API
 
-From the command line, you should be able to use `curl` to execute a simple query against the API if everything is working:
+To test your setup, use the following `curl` command to request sample audit records:
 
-```
+```bash
 curl -s -X "GET" \
      -H "X-Api-Key: ${API_GOV_KEY}" \
      "${API_GOV_URL}/general?limit=5"
 ```
 
-This will return an [array of JSON objects](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON). Each object will represent a row in the general information table, which roughly maps to the `gen.txt` file that Census has historically exported from their download page.
+This command returns an array of JSON objects. It's a quick way to confirm that your credentials and environment variables are working properly.
 
-To format the results in a cleaner way, you can use `jq`:
+---
 
-```
-curl -s -X "GET" \
-     -H "X-Api-Key: ${API_GOV_KEY}" \
-     "${API_GOV_URL}/general?limit=5" | jq
-```
+## Common Query Parameters
 
-Because `jq` is a general-purpose tool for manipulating JSON, you could get a list of the report IDs that you found:
+You can use these parameters with most list-based endpoints (like `/general/`, `/findings/`, etc.):
 
-```
-curl -s -X "GET" \
-     -H "X-Api-Key: ${API_GOV_KEY}" \
-     "${API_GOV_URL}/general?limit=5" | jq '.[] | .report_id'
-```
+| Parameter      | Description |
+|----------------|-------------|
+| `page`         | The page of results to return. Defaults to 1. |
+| `limit`        | The number of records per page. Maximum is 1000. |
+| `ordering`     | Sort results by a specific field (e.g. `audit_year`). |
+| `field=value`  | You can filter by most available fields (e.g. `auditee_state=CA`). |
 
-These are examples of how to use tools like `curl` and `jq` to build automations against the FAC API. You can also use other coding languages, like Java, Python, or even Excel macros.
+

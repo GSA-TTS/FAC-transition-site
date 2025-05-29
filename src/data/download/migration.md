@@ -1,11 +1,10 @@
 ---
 # Metadata
 layout: home.njk
-title: Migration metadata 2016-2022
-header: Migration metadata 2016-2022
+title: Migration Metadata (2016–2022)
 meta:
-  name: Migration metadata 2016-2022
-  description: Find resources for downloading single audit data.
+  name: Migration metadata 2016–2022
+  description: Download audit metadata documenting the transition from Census to GSA.
 # Layout
 eleventyComputed:
   eleventyNavigation:
@@ -14,132 +13,84 @@ eleventyComputed:
 in_page_nav: true
 ---
 
-# Migration metadata: 2016-2022
+# {{ title }}
 
-These files will be of most interest to researchers, IGs, and oversight officials.
+These files document how data collected by the Census Federal Audit Clearinghouse from 2016 to 2022 was transformed to meet new standards set by the GSA FAC.
 
-When data was migrated from Census to GSA, it was modified to meet the validation requirements imposed by GSA. These files record the changes made during that process.
+The migration process involved:
+- Applying updated validation rules
+- Standardizing formats and field names
+- Logging changes for transparency and oversight
 
-## The process
+This metadata helps oversight professionals and researchers trace how original records were modified during the transition.
 
-The process of migrating data was developed in conjunction with OMB and Federal partners. Decisions regarding the process are captured through the FACâ€™s Decision Record process:
+---
 
-* [https://github.com/GSA-TTS/FAC/blob/main/docs/architecture/decisions/0039-data-migration-iterative-approach.md](https://github.com/GSA-TTS/FAC/blob/main/docs/architecture/decisions/0039-data-migration-iterative-approach.md)   
-* [https://github.com/GSA-TTS/FAC/blob/main/docs/architecture/decisions/0040-data-migration-implementing-logging-and-transformation-tracking.md](https://github.com/GSA-TTS/FAC/blob/main/docs/architecture/decisions/0040-data-migration-implementing-logging-and-transformation-tracking.md) 
+## About the Migration
 
-## Census to GSA submission crosswalk
+This work was conducted with support from OMB and federal partners. Key decisions are documented here:
 
-The data collected at Census and GSA is identified in different ways.
+- [Iterative approach to data migration](https://github.com/GSA-TTS/FAC/blob/main/docs/architecture/decisions/0039-data-migration-iterative-approach.md)  
+- [Logging and transformation tracking](https://github.com/GSA-TTS/FAC/blob/main/docs/architecture/decisions/0040-data-migration-implementing-logging-and-transformation-tracking.md)
 
-Data collected at Census had a compound identifier. It used the `AUDITYEAR` of the submission along with a `DBKEY`, which was a manually-assigned numerical value. The combination of the `AUDITYEAR` and `DBKEY` was meant to be a unique identifier for each SF-SAC and audit report submission.
+---
 
-Data collected at GSA uses an identifier that combines:
+## File Types
 
-* the year and month of the fiscal year end date (e.g. `2023-09`), 
-* a six-character string indicating who collected the audit (either `CENSUS` or `GSAFAC`), and
-* A number. If the audit was collected by...
-  * `CENSUS`: the number is the `DBKEY`
-  * `GSAFAC`: the number is an auto-incrementing value with no meaning
+For each audit year (2016–2022), we provide:
 
-We provide a [CSV containing a crosswalk of data migrated from Census to GSA]({{global.csv_base}}/gsa/migration/census_gsa_crosswalk.csv). This CSV has 8 columns:
+- **`inspectionrecord.csv`**  
+  Lists corrections or changes applied during migration. Includes what was changed and how.
 
-* A row id
-* `audit_year` of the submission
-* `dbkey` of the submission
-* GSA-assigned `report_id` for the submission
-* `auditee_uei`, the SAM.gov-provided unique identifier (if it exists; only present from 2022 onward; `GSA_MIGRATION` in many cases)
-* `auditee_ein`, the auditee's tax identification number (always present)
-* `run_date`, which is when the migration was run
-* `migration_status` (always `SUCCESS` in this crosswalk)
+- **`invalidauditrecord.csv`**  
+  Lists audits that were incomplete or could not be fully validated. These were migrated as-is but flagged for awareness.
 
-There were two audits that were unable to be migrated. These are, for all intents and purposes, [lost](https://github.com/GSA-TTS/FAC/issues/3788#issuecomment-2420020424).
+You can also download a **crosswalk file** that links Census identifiers (`audit_year` and `dbkey`) to GSA `report_id` values:
 
-* AUDITYEAR: 2019, DBKEY: 243753
-* AUDITYEAR: 2022, DBKEY: 247680
+- [Census–GSA crosswalk CSV]({{global.csv_base}}/gsa/migration/census_gsa_crosswalk.csv)
 
+---
 
-
-## By audit year
-
-For each audit year, there are two migration metadata tables:
-
-* **invalidauditrecord**: records where audit data was incorrect or otherwise irrecoverably invalid in the migration process  
-* **inspectionrecord**: records values that were incorrect or incompatible with modern data validations, and the transformations or changes that were made to migrate the data to GSA
-
-[All of the code](https://github.com/GSA-TTS/FAC/blob/main/backend/census_historical_migration/README.md) to carry and tests developed to support this data migration are retained as part of the FAC.
-
-### The data
+## Download Migration Files by Year
 
 <ul>
 {%- for year in [2016, 2017, 2018, 2019, 2020, 2021, 2022] -%}
   <li>{{year}}: 
-  {% set first_comma = true%}
-  {%- for table in ["invalidauditrecord", "inspectionrecord"] -%}
-    <a href="{{global.csv_base}}/gsa/migration/{{year}}-{{table}}.csv">{{table}}</a>{%- if first_comma -%},&nbsp;{%- endif -%} 
-    {% set first_comma = false %}
-  {%- endfor -%}
+    <a href="{{global.csv_base}}/gsa/migration/{{year}}-invalidauditrecord.csv">invalidauditrecord</a>, 
+    <a href="{{global.csv_base}}/gsa/migration/{{year}}-inspectionrecord.csv">inspectionrecord</a>
   </li>
 {%- endfor -%}
 </ul>
 
-## How to work with this data
+---
 
-The `invalidauditrecord` is most useful in terms of identifying the handful of audits that contained irreconcilable migration errors. For example, a record may have been missing one or more sections of the SF-SAC. These tables record the audits that were, quite literally, incomplete, and brought into the new system despite this.
+## How to Use This Data
 
-The `inspectionrecords` are most useful in understanding what changes were enacted in order to modernize historical data. The table contains 15 columns:
+### `invalidauditrecord.csv`
 
-* id  
-* audit\_year  
-* dbkey  
-* report\_id  
-* run\_datetime  
-* â€¦ *and one column per audit table (general, federal\_awards, findings, etc.)*
+Identifies submissions with unrecoverable issues, such as missing sections. These records may still appear in FAC data but are marked for caution.
 
-The first five columns are linking information; they allow for connecting back to the historic data (via `audit_year` and `dbkey`), or to the migrated records (via `report_id`). Within the per-table cells are JSON documents of the following form:
+### `inspectionrecord.csv`
 
-```
-{
-     "census_data": [
-         {
-             "column": "sample_col1",
-             "value": "sample_data1"
-         },
-         {
-             "column": "sample_col2",
-             "value": "sample_data2"
-         }
-     ],
-     "gsa_fac_data": {
-         "field": "sample_gsa_fac_field",
-         "value":  "sample_value"
-     },
-     "transformation_functions": "function_name"
- }
-```
+Captures valid changes made to historic records. For example:
+- Fixing outdated or invalid codes
+- Filling in missing fields using documented rules
 
-As an example:
+Each row shows the field that was changed, the original value, the updated value, and the transformation applied.
 
-```
-[
-  [
-    {
-      "census_data": [
-        {
-          "value": "027",
-          "column": "CFDA_EXT"
-        }
-      ],
-      "gsa_fac_data": {
-        "field": "federal_award_extension",
-        "value": "027"
-      },
-      "transformation_functions": [
-        "xform_replace_invalid_extension"
-      ]
-    }
-  ]
-]
-```
+If you’re interested in the exact transformation logic, the code used is publicly available:
+- [Migration tools and scripts](https://github.com/GSA-TTS/FAC/blob/main/backend/census_historical_migration/README.md)
 
-There is one migration record in this list. It records that the Census data in the `CFDA_EXT` column was the value `027`, which is not a valid federal award extension. We then recorded the function that was used to correct this issue: [xform\_replace\_invalid\_extension](https://github.com/GSA-TTS/FAC/blob/707f1327f65446ddd3615451716e101d37bf271b/backend/census_historical_migration/workbooklib/federal_awards.py#L529). If you search the FAC codebase for these functions, it is possible to see exactly what transformation was enacted in order to produce data that would pass modern data validations. In this case, we would replace invalid data with `GSA_MIGRATION`.
+---
+
+## Two Records Could Not Be Migrated
+
+The following audits were lost in migration and are not part of the current FAC dataset:
+
+- `AUDITYEAR: 2019, DBKEY: 243753`
+- `AUDITYEAR: 2022, DBKEY: 247680`
+
+[See discussion on GitHub](https://github.com/GSA-TTS/FAC/issues/3788#issuecomment-2420020424)
+
+
 

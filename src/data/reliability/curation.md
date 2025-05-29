@@ -1,10 +1,10 @@
 ---
 # Metadata
 layout: home.njk
-title: Data curation
+title: How We Prepare the Data
 meta:
-  name: General migration transforms
-  description: Documentation about the data migration from Census to GSA.
+  name: Curation and Transforms
+  description: How the Federal Audit Clearinghouse cleans, fixes, and transforms data for public use.
 # Layout
 eleventyComputed:
   eleventyNavigation:
@@ -13,37 +13,56 @@ eleventyComputed:
 in_page_nav: true
 ---
 
-# {{title}}
+# How We Prepare the Data
 
-The Federal Audit Clearinghouse holds the record of Single Audit submissions from 2016-present. It is easy to think that data collected in the past "never changes," but as systems evolve, so must the data and the tools that access it. And, sometimes, the data itself must change or be cared for. 
+We want you to trust the data in the Federal Audit Clearinghouse (FAC). That means we don’t just collect and store information—we also maintain and improve it over time. This page explains the steps we take to clean up, fix, and prepare the data you see on this site.
 
-## What is data curation?
+## Why Do We Make Changes?
 
-**Curation** is the act of looking after a collection. We use this word intentionally to describe how we manage the data contained within the FAC, as it implies that we do not simply *collect* and *store* data, but we must also *monitor* and *improve* the quality of that data over time, where possible. Sometimes we engage in curatorial acts because of errors discovered by users (or ourselves), and sometimes because of changes to the data collection or system itself.
+Sometimes we discover mistakes in the data. Other times, the systems or rules that shape the data change. Our job is to keep the data accurate, consistent, and useful for public oversight.
 
-Our curation process follows 6 high-level steps.
+---
 
-## 1. Identify an issue in the data 
+## Our Curation Process
 
-A member of the public, grantee, Federal resolution official, IG, or a member of the Clearinghouse may identify some issue in the data. It might involve a single record, or it might be systemic across many, many records.
+Here’s what happens when we find a problem:
 
-## 2. Document the issue 
+### 1. We Identify the Issue  
+A data issue might come from a user, an inspector general, or someone on our team. It could be a typo in one record or a widespread issue across many.
 
-We document our [data concerns]({{"../concerns/" | absoluteUrl}}) publicly. The FAC data is public, and it is important for users and systems downstream to know about any concerns we have about the data.
+### 2. We Document It  
+We publish known issues on our [data concerns]({{"../concerns/" | absoluteUrl}}) page. Transparency matters, and it’s important to let users know what we’ve found.
 
-## 3. Implement a data quality regression test 
+### 3. We Write a Test  
+When possible, we write a test that will fail if the problem happens again. This helps us catch the issue automatically in the future.
 
-A regression test is a test that *fails* because of a known problem. Once the problem is fixed, the test *passes*, indicating the problem no longer exists. That test is then run regularly, in the future, to ensure that the problem does not happen again. Not all data errors can have regression tests applied, but we will strive to do so to ensure the quality of data is ever-improving.
+### 4. We Propose a Fix  
+We share our proposed solution through our [Decision Record process](https://github.com/GSA-TTS/FAC/blob/main/docs/architecture/decisions/0001-record-architecture-decisions.md). We may consult with other federal offices before finalizing a plan.
 
-## 4. Communicate a solution 
+### 5. We Fix the Data  
+Once a fix is approved, we update the affected records. These changes are always made with care and according to our data policies.
 
-The Clearinghouse, in consultation with appropriate agencies and advisory boards, will propose a solution via our [Decision Record process](https://github.com/GSA-TTS/FAC/blob/main/docs/architecture/decisions/0001-record-architecture-decisions.md).
+### 6. We Log What Changed  
+We track what we changed, both in an internal log and in a public [curation log]({{"../curation-log/" | absoluteUrl}}). This way, everyone can see what was done and why.
 
-## 5. Implement the solution 
+---
 
-The solution will be implemented and executed, acknowleging our ongoing feature roadmap.
+## How We Transform Tables
 
-## 6. Log the change
+As part of our migration from Census to GSA, we had to clean up old tables to match new standards. Here are examples of the changes:
 
-The curation process generates an internal audit log; we will also publish, publicly, the results of the action to our [curation log]({{"../curation-log/" | absoluteUrl }}). This provides a public record of the completion of the curatoral act and the results of our work.
+- **Renaming fields** for clarity (e.g., `awd_amt` became `award_amount`)
+- **Splitting combined fields** (e.g., one field holding multiple years was split into separate year-based fields)
+- **Fixing formatting** (e.g., removing stray characters or aligning date formats)
 
+These transformations don’t change the meaning of the data. They make it easier to understand, use, and compare.
+
+---
+
+## General Adjustments We Make
+
+In addition to fixing specific problems, we make ongoing improvements such as:
+
+- Filling in missing values when we can verify them
+- Correcting data types (e.g., changing a ZIP code stored as a number into a string to preserve leading zeroes)
+- Ensuring consistency across years, even when the original format changed

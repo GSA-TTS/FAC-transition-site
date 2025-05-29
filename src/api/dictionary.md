@@ -1,11 +1,9 @@
 ---
-# Metadata
 layout: home.njk
-title: FAC data dictionary
+title: FAC Data Dictionary
 meta:
   name: FAC data dictionary
-  description: A description of fields in the API.
-# Layout
+  description: Definitions, descriptions, and mappings for data fields used in the FAC API.
 eleventyComputed:
   eleventyNavigation:
     key: Data dictionary
@@ -36,16 +34,25 @@ formerly:
   - eins
 ---
 
-# Data dictionary
+# FAC Data Dictionary
 
-[Download the Data Dictionary (Excel)](/assets/api/FAC%20API%20Data%20Dictionary.xlsx) for definitions, descriptions, and details of the data fields for each endpoint of the FAC API. 
+This page describes the data fields available through the FAC API, including each endpoint�s structure and the types of values returned.
 
-# Legacy Field Mapping
+For a complete reference, you can also download the full data dictionary as an Excel file:
 
-The following table maps fields from the Census Bureau’s previous data structure to the new FAC API fields.
+- [Download the Data Dictionary (Excel)](/assets/api/FAC%20API%20Data%20Dictionary.xlsx)
 
+---
 
-## Dictionary by endpoint
+## Legacy Field Mapping
+
+The tables below show how field names from the former Census-based system map to the current GSA API fields. This is helpful if you're comparing historical downloads or reusing past queries.
+
+---
+
+## Dictionary by Endpoint
+
+The following endpoints are available in the API:
 
 <ol>
 {% for ep in endpoints %}
@@ -53,33 +60,32 @@ The following table maps fields from the Census Bureau’s previous data structu
 {% endfor %}
 </ol>
 
+---
 
 {% for ep in endpoints %}
+<h3 id="endpoint-{{ep}}">Endpoint: <code>{{ep}}</code> (formerly <code>{{formerly[loop.index0]}})</h3>
 
-  <h3 id="endpoint-{{ep}}">Endpoint: <code>{{ep}}</code> (formerly <code>{{formerly[loop.index0]}})</h3>
-
-  <div class="usa-table-container--scrollable" tabindex="0">
-    <table class="usa-table">
-      <caption>
-      Data from the {{ep}} endpoint in the FAC API.
-      </caption>
-      <thead>
-        <tr>
-          <th scope="col">Census</th>
-          <th scope="col">GSA</th>
-          <th scope="col">Data type</th>
-        </tr>
-      </thead>
-      <tbody>
-  {% for line in dictionary_json[ep] %}
+<div class="usa-table-container--scrollable" tabindex="0">
+<table class="usa-table">
+  <caption>Field mappings and types for the <code>{{ep}}</code> endpoint.</caption>
+  <thead>
     <tr>
-          <td>{{line.Census}}</td>
-          <th scope="row">{{line.GSAFAC}}</th>
-          <td>{{line.Type}}</td>
+      <th scope="col">Census Field</th>
+      <th scope="col">GSA Field</th>
+      <th scope="col">Data Type</th>
     </tr>
-  {% endfor %}
-    </tbody>
-    </table>
-  </div>
+  </thead>
+  <tbody>
+{% for line in dictionary_json[ep] %}
+    <tr>
+      <td>{{line.Census}}</td>
+      <th scope="row">{{line.GSAFAC}}</th>
+      <td>{{line.Type}}</td>
+    </tr>
 {% endfor %}
+  </tbody>
+</table>
+</div>
+{% endfor %}
+
 

@@ -1,10 +1,10 @@
 ---
 # Metadata
 layout: home.njk
-title: Known errors in FAC data
+title: Known Errors in FAC Data
 meta:
   name: Historic data curation
-  description: Documentation about the data migration from Census to GSA.
+  description: Public list of known issues in Federal Audit Clearinghouse data and how we’re addressing them.
 # Layout
 eleventyComputed:
   eleventyNavigation:
@@ -15,15 +15,26 @@ in_page_nav: true
 
 # {{title}}
 
-The data contained within the FAC is a living thing. Whether it is an error in how data is validated, errors introduced as a result of system changes, or mistakes made on the part of auditors and grantees, the data needs to be tended and cared for. 
+Even with built-in validations and checks, some issues still make it into our data.
 
-Here, we document the errors we know about in the FAC data. We follow our [curation process](../curation/) when repairing data.
+This page tracks known errors in the Federal Audit Clearinghouse (FAC) data—whether introduced by system changes, validation oversights, or mistakes in submissions. If we know about a problem, you’ll find it here.
 
-This page summarizes the known issues, and links to our strategies, timelines, and outcomes.
+We take these issues seriously and follow our [curation process]({{'../curation/' | htmlBaseUrl(baseUrl)}}) to correct them.
 
-You can subscribe to an [RSS]({{"/feeds/rss/concerns.xml" | htmlBaseUrl(baseUrl)}}) or [Atom]({{"/feeds/atom/concerns.xml" | htmlBaseUrl(baseUrl)}}) feed to learn about new concerns as they are discovered. See [Microsoft's documentation for subscribing to feeds](https://support.microsoft.com/en-us/office/what-are-rss-feeds-e8aaebc3-a0a7-40cd-9e10-88f9c1e74b97) as a starting point.
+---
 
-## Known concerns
+## How to Stay Updated
+
+You can subscribe to new data concern alerts through our feeds:
+
+- [RSS Feed]({{"/feeds/rss/concerns.xml" | htmlBaseUrl(baseUrl)}})
+- [Atom Feed]({{"/feeds/atom/concerns.xml" | htmlBaseUrl(baseUrl)}})
+
+Need help subscribing? Try [Microsoft’s guide to RSS feeds](https://support.microsoft.com/en-us/office/what-are-rss-feeds-e8aaebc3-a0a7-40cd-9e10-88f9c1e74b97).
+
+---
+
+## Current Open Issues
 
 {% set counter = 0 %}
 {% for item in collections.known_errors | sort(false, false, 'data.discovered_date') %}
@@ -32,22 +43,28 @@ You can subscribe to an [RSS]({{"/feeds/rss/concerns.xml" | htmlBaseUrl(baseUrl)
   {% endif %}
 {% endfor %}
 
-We are currently tracking {{ counter }} concerns in the data.
+We are currently tracking **{{ counter }} known issues**.
 
-We include a brief, one-line summary of each error here, and full explanations can be found on the linked pages.
+Each item below includes a short summary and a link to more detail.
 
 <hr>
 
 {% set counter = 1 %}
 {% for item in collections.known_errors | sort(false, false, 'data.discovered_date') %}
-    {% if (item.data.title | length) and (item.data.log | length) < 1 %}
-                <h3 id="{{ item.data.title | slugify }}" >{{counter}}. {{item.data.title}}</h3>
-                <p>{{item.data.slug}}</p>
-                <p><b>Details</b>: <a href="{{ item.url | htmlBaseUrl(baseUrl) }}">{{item.data.title}}</a></p>
-                <p><b>Discovered</b>: {{item.data.discovered_date}}</p>
-                {% if item.data.github %}<p><b>Github issue</b>: {{item.data.github}}</p>{%endif%}
-                {% if item.data.log %}<p><b>Log</b>: <a href="{{ ['/data/reliability/curation-log/', item.data.log] | join | htmlBaseUrl(baseUrl) }}">{{item.data.log}}</a></p>{%endif%}
-  {% set counter = counter + 1 %}
+  {% if (item.data.title | length) and (item.data.log | length) < 1 %}
+    <h3 id="{{ item.data.title | slugify }}">{{ counter }}. {{ item.data.title }}</h3>
+    <p>{{ item.data.slug }}</p>
+    <p><strong>Details:</strong> <a href="{{ item.url | htmlBaseUrl(baseUrl) }}">{{ item.data.title }}</a></p>
+    <p><strong>Discovered:</strong> {{ item.data.discovered_date }}</p>
+    {% if item.data.github %}
+      <p><strong>GitHub Issue:</strong> {{ item.data.github }}</p>
     {% endif %}
+    {% if item.data.log %}
+      <p><strong>Curation Log:</strong> <a href="{{ ['/data/reliability/curation-log/', item.data.log] | join | htmlBaseUrl(baseUrl) }}">{{ item.data.log }}</a></p>
+    {% endif %}
+    {% set counter = counter + 1 %}
+  {% endif %}
 {% endfor %}
+
+
 

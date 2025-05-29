@@ -1,219 +1,119 @@
 ---
 # Metadata
 layout: home.njk
-title: Data from 2016‚ÄìPresent
+title: Data from 2016ñPresent
 meta:
-  name: Data from 2016‚ÄìPresent
-  description: Documentation about the data migration from Census to GSA.
+  name: Data from 2016ñPresent
+  description: Download audit data collected by the GSA FAC and explore available data tables.
 # Layout
 eleventyComputed:
   eleventyNavigation:
     key: Current
     parent: Download
 in_page_nav: true
-# Page data
-tables:
-  - name: general
-    abbrev: g
-    desc: Metadata about the submission
-  - name: federal_awards
-    abbrev: fa
-    desc: Financial award data associated with submissions
-  - name: notes_to_sefa
-    abbrev: nts
-    desc: Metadata about the SEFA
-  - name: findings
-    abbrev: f
-    desc: Findings associated with the audit
-  - name: findings_text
-    abbrev: ft
-    desc: Text of the findings
-  - name: corrective_action_plans
-    abbrev: cap
-    desc: Text of corrective action plans associated with findings
-  - name: passthrough
-    abbrev: p
-    desc: Awards passed through to subentities
-  - name: secondary_auditors
-    abbrev: sa
-    desc: Additional auditors on the report
-  - name: additional_ueis
-    abbrev: au
-    desc: UEIs of entities included in the report
-  - name: additional_eins
-    abbrev: ae
-    desc: EINs of entities included in the report
 ---
 
-<script>
-function setAttrs(e, attr_dict) {
-  for (const [key, value] of Object.entries(attr_dict)) {
-    e.setAttribute(key, value);
-  }
-}
+# {{ title }}
 
-function tableCreate(root, caption_text, tag, baseUrl) {
-  var tbl = document.createElement('table');
-  setAttrs(tbl, {"role": "table", "class": "usa-table"});
+This is the complete dataset collected by the GSA Federal Audit Clearinghouse (FAC) since 2016. It reflects all audits submitted since we transitioned from Census and includes the same information available via our [web search](https://app.fac.gov/dissemination/search/) and [API]({{'/api/' | htmlBaseUrl(baseUrl)}}).
 
-  var caption = document.createElement("caption");
-  var txt = document.createTextNode(caption_text);
-  caption.appendChild(txt);
-  tbl.appendChild(caption);
+You can download this data:
+- As complete files
+- By audit year
+- By federal fiscal year
 
-  var currentTime = new Date()
-  var current_year = new Date().getFullYear();
-  var month = currentTime.getMonth() + 1;
-  
-  // The FFY table wants to go out to +1 year if it is 
-  // October or greater in the current year.
-  if (tag == "ffy" && month >= 10) {
-    current_year += 1;
-  } 
+---
 
-  // Header row
-  var thead = document.createElement("thead");
-  setAttrs(thead, {"role": "rowgroup"});
+## File Options
 
-  tr = document.createElement("tr");
-  
-  th = document.createElement("th");
-  th.appendChild(document.createTextNode("Table")); 
-  setAttrs(th, {"scope": "col"});
-  
-  tr.appendChild(th);
-  for (let year = 2016; year <= current_year; year++) {
-    th = document.createElement("th");
-    setAttrs(th, {"scope": "col"});
-    th.appendChild(document.createTextNode(year)); 
-    tr.appendChild(th);
-  }
-  thead.appendChild(tr);
-  tbl.appendChild(thead);
-    
-  {% for table in tables %}
-    tr = document.createElement("tr");
-    td = tr.insertCell().appendChild(document.createTextNode(`{{table['name']}}`));
+### Full Datasets (All Years Combined)
 
-    for (let year = 2016; year <= current_year; year++) {
-      td = tr.insertCell();
-      setAttrs(td, {"role": "cell"});
-      a = document.createElement("a");
-      setAttrs(a, {"href": `${baseUrl}/${year}-${tag}-{{table['name']}}.csv`});
-      a.appendChild(document.createTextNode(`${year}-${tag}-{{table['abbrev']}}`));
-      td.appendChild(a);
-    }
-    tbl.appendChild(tr);
-  {% endfor %}
-
-  root.appendChild(tbl);
-}
-</script>
-
-# Data from 2016‚ÄìPresent
-
-These files will be of most interest to users exploring audits of Federal grants made in the past several years. This is the same as the data currently [available in our search](https://app.fac.gov/dissemination/search/).
-
-We've split the data in three different ways for different use cases.
-
-{#
-FIXME: Mini TOC here
-#}
-
-## Full data files
-
-The full data files are complete exports of data from the FAC. These files are too large to load into Excel and will require programs like Python notebooks, SAS, SPSS, and other code-oriented tools to manage.
+These files are large and best suited for use with tools like Python, R, SAS, or SPSSónot Excel.
 
 <div class="usa-table-container" tabindex="0">
 <table role="table" class="usa-table">
-    <caption>
-    Full CSV files for download  
-    </caption>
-    <thead role="rowgroup">
+  <caption>Complete Dataset by Table</caption>
+  <thead role="rowgroup">
     <tr>
-        <th scope="col">Table</th>
-        <th scope="col">Link</th>
-        <th scope="col">Description</th>
+      <th scope="col">Table</th>
+      <th scope="col">CSV</th>
+      <th scope="col">Description</th>
     </tr>
-    </thead>
-    <tbody role="rowgroup">
-{%- for table in tables -%}
-  <tr role="row">
-    <td role="cell">{{table['name']}}</td>
-    <td role="cell"><a href="{{global.csv_base}}/gsa/full/{{table['name']}}.csv">CSV</a>
-    <td role="cell">{{table['desc']}}</td>
-  </tr>
-{%- endfor -%}
-    </tbody>
-  </table>
+  </thead>
+  <tbody role="rowgroup">
+    {% for table in tables %}
+    <tr>
+      <td>{{ table.name }}</td>
+      <td><a href="{{global.csv_base}}/gsa/full/{{table.name}}.csv">Download</a></td>
+      <td>{{ table.desc }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
 </div>
 
-## Data by audit year
+---
 
-These files are the same data divided by the submission audit year. For example, the file `general-ay-2016.csv` contains all the general information from audit submissions for the audit year 2016.
+### By Audit Year
 
-If you are using Excel or similar tools to explore this data, we recommend the files split by year.
+Ideal for spreadsheet users and smaller-scale analysis.
 
 <div class="usa-table-container" tabindex="0">
   <div id="ay-table"></div>
-  <script>tableCreate(document.getElementById("ay-table"), "CSVs by audit year", "ay", "{{global.csv_base}}/gsa/audit-year")</script>
+  <script>tableCreate(document.getElementById("ay-table"), "Download by Audit Year", "ay", "{{global.csv_base}}/gsa/audit-year")</script>
 </div>
 
-## Data by federal fiscal year
+---
 
-These files are split based on the federal fiscal year in which the auditee submitted their audit.
+### By Federal Fiscal Year
 
-This means that the file named `general-ffy-2106.csv` is the record of audits collected from October 1st, 2015, through September 30, 2016. 
+Groups audits by the year they were received (Oct 1ñSept 30 fiscal calendar).
 
 <div class="usa-table-container" tabindex="0">
   <div id="ffy-table"></div>
-  <script>tableCreate(document.getElementById("ffy-table"), "CSVs by federal fiscal year", "ffy", "{{global.csv_base}}/gsa/federal-fiscal-year")</script>
+  <script>tableCreate(document.getElementById("ffy-table"), "Download by Federal Fiscal Year", "ffy", "{{global.csv_base}}/gsa/federal-fiscal-year")</script>
 </div>
 
+---
 
-## How to work with this data
+## Data Dictionary
 
-We describe both the data itself, and how to get you started exploring and doing work with this data. 
+Need help understanding the columns and data types in each file?
 
-### Data dictionary
+- [View the data dictionary]({{'/data/download/current-dictionary/' | htmlBaseUrl(baseUrl)}})
 
-This data is provided as CSV (comma-separated value) files. CSV files are, in many ways, like spreadsheets; you can use Excel, Google Docs, or an open source alternative (like LibreOffice) to open these files. 
+Each table's entry describes:
+- Field name
+- Data type
+- Description
+- Notes or constraints
 
-Each file has a header row, and then the rest of the file is data. 
+---
 
-* [Data dictionary for current data]({{'/data/download/current-dictionary/' | htmlBaseUrl(baseUrl)}})
+## Working With the Data
 
-### Using the data in a spreadsheet
+### In a Spreadsheet
 
-The files are organized according to the data tables exported by the FAC. Our data export files have the same ‚Äúshape‚Äù as our API. Our [data dictionary]({{'/data/download/current-dictionary/' | htmlBaseUrl(baseUrl)}}) describes the columns, data types, and values contained within each of these files.
+You can open smaller CSV files using Excel, Google Sheets, or LibreOffice. Use the audit-year or fiscal-year versions if you're working without code.
 
-This means that the file `general-ay-2016.csv` is data from audit year 2016, it contains the same data that could be found via the [API for the general table](https://www.fac.gov/api/dictionary/#endpoint-general), and it therefore contains all of the [columns described online](https://www.fac.gov/api/dictionary/) and in our dictionary.
+Example: To calculate total expenditures for 2016:
+1. Download `general-ay-2016.csv`  
+2. Open in a spreadsheet  
+3. Sum the `total_amount_expended` column
 
-By the same logic, the file `federal_awards-fy-2018.csv` contains data from the federal fiscal year 2018 (Oct 1, 2017 through Sept 30, 2018). The columns in the file are the same as the fields presented in the [federal\_awards table in the API](https://www.fac.gov/api/dictionary/#endpoint-federal_awards).
+### In Code
 
-For example, you could:
+Use pandas or similar tools to load and work with large datasets.
 
-1. download the file `general-ay-2016.csv`,   
-2. open the file in a spreadsheet, and  
-3. sum the column `total_amount_expended`. 
-
-This will tell you what the total (audited) federal expenditures were in 2016\. 
-
-### Using the data files in code
-
-The CSV files should import cleanly using tooling like SAS, SPSS, or any number of other programming languages (PowerBI, Python, etc.).
-
-If you work with code, you might write something like the following to get the same total expenditures as above.
-
-```py
+```python
 import pandas as pd
-file_path = "general-ay-2016.csv"
-chunk_size = 10_000
-total_expenditures = 0
-for chunk in pd.read_csv(file_path, chunksize=chunk_size):
-    total_expend_series = chunk.loc[:, "total_amount_expended"]
-    total_expend_numeric = pd.to_numeric(total_expend_series, errors="coerce")
-    total_expenditures += total_expend_numeric.sum()
-print(f"There were ${total_expenditures} audited")
-```
+
+total = 0
+for chunk in pd.read_csv("general-ay-2016.csv", chunksize=10000):
+    amounts = pd.to_numeric(chunk["total_amount_expended"], errors="coerce")
+    total += amounts.sum()
+
+print(f"Total audited in 2016: ${total:,.2f}")
+
+
 

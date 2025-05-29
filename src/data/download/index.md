@@ -1,42 +1,53 @@
 ---
 layout: home.njk
-title: Download FAC data
-header: Download FAC data
+title: Download FAC Data
+header: Download FAC Data
 in_page_nav: true
 meta:
   name: Download FAC data
-  description: Find resources for downloading single audit data.
+  description: Get access to current, historic, and migrated audit data from the Federal Audit Clearinghouse.
 eleventyComputed:
   eleventyNavigation:
     key: Download
     parent: Data
 ---
 
-# Download FAC data
+# {{ title }}
 
-Our CSVs ([comma-separated-value files](https://en.wikipedia.org/wiki/Comma-separated_values)) collect the data currently contained within the Clearinghouse for download and use on your computer. You can use the resources below to access and interpret all the data available from the FAC.
+You can download audit data from the Federal Audit Clearinghouse (FAC) in bulk as CSV files. These files are organized into three categories:
 
-## Current data: 2016â€“Present
+- **Current Data (2016–Present)**  
+- **Historic Data (1998–2015)**  
+- **Migration Metadata (2016–2022)**
 
-These files will be of most interest to users exploring audits of Federal grants made in the past several years. This is the same as the data currently [available in our search](https://app.fac.gov/dissemination/search/).
+Use the links below to explore, download, and work with these datasets. Each page includes information about the files, how to open them, and where to find the data dictionary.
 
-* [Data files]({{'/data/download/current/' | htmlBaseUrl(baseUrl)}})  
-* [Current data dictionary]({{'/data/download/current-dictionary/' | htmlBaseUrl(baseUrl)}})
-* [How to work with the current data]({{'/data/download/current/#how-to-work-with-this-data' | htmlBaseUrl(baseUrl)}})
+---
 
-## Historic data: 1998-2015
+## Current Data: 2016–Present
 
-These files will be of interest to researchers exploring the long history of Federal grants and the audits of those grants.
+This is the most recent audit data submitted to the FAC. It includes all fields available via our [web search](https://app.fac.gov/dissemination/search/) and [API]({{'/api/' | htmlBaseUrl(baseUrl)}}).
 
-* [Data files]({{'/data/download/historic/' | htmlBaseUrl(baseUrl)}})  
-* [Historic data dictionary]({{'/data/download/historic-dictionary/' | htmlBaseUrl(baseUrl)}})
-* [How to work with the historic data]({{'/data/download/historic/#how-to-work-with-this-data' | htmlBaseUrl(baseUrl)}})
+- [Download current data files]({{'/data/download/current/' | htmlBaseUrl(baseUrl)}})  
+- [View the current data dictionary]({{'/data/download/current/#data-dictionary' | htmlBaseUrl(baseUrl)}})
 
-## Migration metadata: 2016-2023
+---
 
-These files will be of most interest to researchers, IGs, and oversight officials.
+## Historic Data: 1998–2015
 
-When data was migrated from Census to GSA, it was modified to meet the validation requirements imposed by GSA. These files record the changes made during that process.
+Audit data from 1998 to 2015 was collected under the Census FAC. It is available for download as-is and is not searchable through our site or API.
 
-* [Data files]({{'/data/download/migration/' | htmlBaseUrl(baseUrl)}})
-* [How to work with the migration data]({{'/data/download/migration/#how-to-work-with-this-data' | htmlBaseUrl(baseUrl)}})
+- [Download historic data files]({{'/data/download/historic/' | htmlBaseUrl(baseUrl)}})  
+- [View the historic data dictionary]({{'/data/download/historic/#data-dictionary' | htmlBaseUrl(baseUrl)}})
+
+---
+
+## Migration Metadata: 2016–2022
+
+These files track how data was migrated from Census to GSA, including corrections and transformations made along the way. Oversight professionals may find this useful.
+
+- [Download migration metadata]({{'/data/download/migration/' | htmlBaseUrl(baseUrl)}})  
+- [Learn how to interpret migration records]({{'/data/download/migration/#how-to-work-with-this-data' | htmlBaseUrl(baseUrl)}})
+
+
+

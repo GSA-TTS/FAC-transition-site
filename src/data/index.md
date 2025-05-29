@@ -1,10 +1,10 @@
 ---
 # Metadata
 layout: home.njk
-title: Using FAC data
+title: Using FAC Data
 meta:
   name: Historic data curation
-  description: Documentation about the data migration from Census to GSA.
+  description: How to search, download, and understand data from the Federal Audit Clearinghouse.
 # Layout
 eleventyComputed:
   eleventyNavigation:
@@ -13,46 +13,58 @@ eleventyComputed:
 in_page_nav: true
 ---
 
-# About our data
+# About Our Data
 
-The data collected by the FAC is **free to use and in the public domain**.
+The data collected by the Federal Audit Clearinghouse (FAC) is **free to use and in the public domain**.
 
-The Federal Audit Clearinghouse (The FAC) collects Single Audit report packages, as required by the [Single Audit Act](https://www.congress.gov/bill/98th-congress/senate-bill/1510). This act mandates an annual audit of all non-Federal entities that spend ${{glossary.variables.threshold_post}}) or more of Federal Financial Assistance (Federal grant dollars) in a fiscal year. A Single Audit report package comprises two parts: The audit report PDF and Form SF-SAC. The audit report PDF is prepared by an independent auditor, and it presents both an organization's financial statements and compliance with Federal award requirements. Form SF-SAC collects data about the awards made and, in some cases, audit findings.
+We collect Single Audit report packages from entities that spend ${{glossary.variables.threshold_post}} or more in Federal financial assistance during a fiscal year. These packages are required under the [Single Audit Act](https://www.congress.gov/bill/98th-congress/senate-bill/1510).
 
-## How do I access the data?
+Each submission includes:
 
-There are many audiences for the data provided by the FAC. If you're exploring the data for the first time, we recommend you start with our web search. If you're a programmer or data scientist looking to dive deep, we recommend our CSVs or the API.
+- A PDF audit report prepared by an independent auditor
+- Form SF-SAC, which includes details about federal awards received and any audit findings
 
-### Access via the WWW
+---
 
-There are two search interfaces:
+## How to Access the Data
 
-* [Basic search]({{glossary.sites.basic_search.url}}): Use this if you are just starting out. Look for your hometown, or a school you've attended.
-* [Advanced search]({{glossary.sites.advanced_search.url}}): Use this if you are starting to dig deeper; perhaps look for your home state, and discover what entities had audit findings in your state. 
+We offer several ways to explore the data depending on your goals and experience level:
 
-### Download the data
+### Web Search
 
-A CSV, or comma-separated-value file, can be explored using spreadsheets and code alike. If you are trying to analyze a lot of the data, you can use programming languages like SAS, SPSS, Python, and R to explore the files.
+Use our web interface if you're just getting started:
 
-[Download all of our data as CSVs]({{'/data/download/' | htmlBaseUrl(baseUrl)}}). 
+- [Basic Search]({{glossary.sites.basic_search.url}}): Use this if you are just starting out. Look for your hometown, or a school you've attended.
 
-### Access via code (API)
+- [Advanced Search]({{glossary.sites.advanced_search.url}}): Use this if you are starting to dig deeper; perhaps look for your home state, and discover what entities had audit findings in your state.
 
-API stands for **Application Programming Interface**. APIs make it easy for computer programs to request and receive information in a useable format. The FAC provides data that is easily computer-readable so that you can search and incorporate SF-SAC data directly into your own analyses.
 
-[Get started]({{'/api/' | htmlBaseUrl(baseUrl)}}) with our API.
-   
-## How do we care for the data?
+### Download the Data as CSV Files
 
-Caring for a data collection of this size requires ongoing effort. We, or our users, discover errors. When this happens, we follow a process to document, schedule, and repair those inconsistencies or errors in the data. Museums curate arts and antiquities; at the FAC, we curate the record of the Single Audit.
+Our full datasets are available as downloadable CSV files. These can be opened in spreadsheet software or analyzed using tools like Python, R, SAS, or SPSS.
 
-In (Federal) Fiscal Year 2024, we migrated data from 2016-2022 from Census to GSA. That migration both improved the quality of the data in the FAC and annotated anywhere parts of the record were missing.
+- [Download all data as CSVs]({{'/data/download/' | htmlBaseUrl(baseUrl)}})
 
-You can read more about:
+### Use the API
 
-* [Reliability]({{'/data/reliability/' | htmlBaseUrl(baseUrl)}}): How we validate the data we collect
-* [Curation]({{'/data/reliability/curation/' | htmlBaseUrl(baseUrl)}}): The curation process
-* [Curation Log]({{'/data/reliability/curation-log/' | htmlBaseUrl(baseUrl)}}): The log of changes made
-* [Concerns]({{'/data/reliability/concerns/' | htmlBaseUrl(baseUrl)}}): Known concerns and inconsistencies in the data
-* [Migration]({{'/data/migration/' | htmlBaseUrl(baseUrl)}}): The migration of FAC data from Census to GSA
+If you're building software or performing advanced analysis, the FAC offers an open API to programmatically access the data.
 
+- [Get started with the API]({{'/api/' | htmlBaseUrl(baseUrl)}})
+
+---
+
+## How We Maintain the Data
+
+We don’t just collect data—we take care of it.
+
+When errors or inconsistencies are found (by us or our users), we document them and take steps to correct or explain them. Our approach is similar to a museum curator caring for a collection—only we’re working with audit data instead of artifacts.
+
+In 2024, we migrated historical records from Census to GSA, improving overall quality and documenting any known gaps in the data.
+
+Learn more about how we manage data quality:
+
+- [Reliability]({{'/data/reliability/' | htmlBaseUrl(baseUrl)}}): How we validate what we collect
+- [Curation Process]({{'/data/reliability/curation/' | htmlBaseUrl(baseUrl)}}): How we correct and improve data
+- [Curation Log]({{'/data/reliability/curation-log/' | htmlBaseUrl(baseUrl)}}): What changes we've made
+- [Data Concerns]({{'/data/reliability/concerns/' | htmlBaseUrl(baseUrl)}}): Known issues and inconsistencies
+- [Data Migration]({{'/data/migration/' | htmlBaseUrl(baseUrl)}}): Our transition from Census to GSA
