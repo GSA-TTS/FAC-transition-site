@@ -57,7 +57,7 @@ If you're building software or performing advanced analysis, the FAC offers an o
 
 We don’t just collect data—we take care of it.
 
-When errors or inconsistencies are found (by us or our users), we document them and take steps to correct or explain them. Our approach is similar to a museum curator caring for a collection—only we’re working with audit data instead of artifacts.
+When errors or inconsistencies are found (by us or our users), we document them and take steps to correct or explain them.
 
 In 2024, we migrated historical records from Census to GSA, improving overall quality and documenting any known gaps in the data.
 
