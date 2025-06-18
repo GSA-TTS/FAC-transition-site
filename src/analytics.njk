@@ -1,0 +1,29 @@
+---
+layout: home.njk
+title: Testing analytics bits
+meta:
+  name: Name
+  description: Desc
+eleventyNavigation:
+  key: Analytics
+  parent: Home
+---
+
+<div class="usa-alert usa-alert--warning margin-y-4">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">Warning</h4>
+    <p class="usa-alert__text">
+      The data included here is based on a static download of the FAC database.
+      It is not up to date with the latest records.
+      The FAC API and Search pages will contain the most up to date information.
+    </p>
+  </div>
+</div>
+
+<iframe class="margin-bottom-8"
+    src={% iFrameUrl %}
+    frameborder="0"
+    width="1000"
+    height="1000"
+    allowtransparency >
+</iframe>
