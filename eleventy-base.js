@@ -1,4 +1,5 @@
 /* MODULES */
+const jwt = require("jsonwebtoken");
 const yaml = require('js-yaml');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
@@ -9,7 +10,8 @@ const md = require('markdown-it')({
   linkify: true,
 });
 
-/* FILTERS */
+const METABASE_SECRET_KEY = process.env.METABASE_SECRET_KEY;
+
 const hashCode = function (s) {
   var hash = 0,
     i,
@@ -90,6 +92,19 @@ function config(baseUrl) {
         .map((a) => Object.assign(a.data.eleventyNavigation, { url: a.url }))
         .sort((a, b) => a.order - b.order);
       return filtered;
+    });
+
+    eleventyConfig.addShortcode("iFrameUrl", function () {
+      const METABASE_SITE_URL = "http://metabase-sandbox.app.cloud.gov";
+
+      const payload = {
+        resource: { dashboard: 3 },
+        params: {},
+      };
+      const token = jwt.sign(payload, METABASE_SECRET_KEY);
+
+      return METABASE_SITE_URL + "/embed/dashboard/" + token +
+      "#bordered=true&titled=true";
     });
 
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
