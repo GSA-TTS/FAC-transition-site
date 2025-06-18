@@ -95,7 +95,7 @@ function config(baseUrl) {
     });
 
     eleventyConfig.addShortcode("iFrameUrl", function () {
-      const METABASE_SITE_URL = "http://metabase-sandbox.app.cloud.gov";
+      const METABASE_SITE_URL = "https://metabase-sandbox.app.cloud.gov";
 
       const payload = {
         resource: { dashboard: 3 },
