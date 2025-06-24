@@ -74,7 +74,7 @@ function config(baseUrl) {
       return contents.slice(1, contents.length);
     });
 
-    // Sort an array by path name. Used to ensure collections are sorted by 01, 02, ... 
+    // Sort an array by path name. Used to ensure collections are sorted by 01, 02, ...
     // Rather than by creation date.
     eleventyConfig.addFilter("sortAscendingByName", function (array) {
       return array.sort(function (a, b) {
@@ -98,7 +98,7 @@ function config(baseUrl) {
       const METABASE_SITE_URL = "https://metabase-sandbox.app.cloud.gov";
 
       const payload = {
-        resource: { dashboard: 3 },
+        resource: { dashboard: 4 },
         params: {},
       };
       const token = jwt.sign(payload, METABASE_SECRET_KEY);
