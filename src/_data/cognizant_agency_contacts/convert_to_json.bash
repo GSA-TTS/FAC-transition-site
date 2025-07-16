@@ -8,6 +8,8 @@ for csvf in `ls *.csv`; do
         > ./$base.json
     sed -i -e 's/ \"/\"/g' ./$base.json
     sed -i -e 's/\\u00a0//g' ./$base.json
+    sed -i -e 's/(//g' ./$base.json
+    sed -i -e 's/)//g' ./$base.json
 done
 
 cat cognizant_agency_contacts_20250609.json | jq "." > cognizant_agency_contacts.json
