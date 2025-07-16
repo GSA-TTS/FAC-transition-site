@@ -16,21 +16,25 @@ eleventyComputed:
 
 
 
-<div class="usa-table-container--scrollable" tabindex="0">
+<div class="" tabindex="0">
   <table class="usa-table usa-table--compact usa-table--striped usa-table--sticky-header width-full">
     <thead>
       <tr>
         <th scope="col">Agency</th>
         <th scope="col">Cognizant Agency POC Name</th>
         <th scope="col">Cognizant Agency POC Email </th>
+        <th scope="col">Single Audit Extension POC Name </th>
+        <th scope="col">Single Audit Extension POC Email </th>
       </tr>
     </thead>
     <tbody>
       {% for line in cognizant_agency_contacts["cognizant_agency_contacts"] %}
         <tr>
-          <th scope="row">{{line.Agency}}</th>
-          <th>{{line["Cognizant Agency POC Name"]}}</th>
-          <th>{{line["Cognizant Agency POC Email"]}}</th>
+          <td scope="row">{{line.Agency}}</td>
+          <td>{{line["Cognizant Agency for Audit POC Name"]}}</td>
+          <td>{{line["Cognizant Agency for Audit POC Email"]}}</td>
+          <td>{{line["Single Audit Extension POC Name"]}}</td>
+          <td>{{line["Single Audit Extension POC Email"]}}</td>
         </tr>
       {% endfor %}
     </tbody>
