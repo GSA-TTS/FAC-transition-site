@@ -215,3 +215,7 @@ We intend to:
 This change, to be clear, will *not* delete any data from the FAC database. It will add metadata to each SF-SAC indicating which records are linked as resubmissions, and then suppress them from public view. Federal users will still have full access to the entire audit history of a given submission, and each submission will be clearly marked as to where it lives in a submission chain.
 
 Once this curation action is complete, we will enable our resubmission tooling, so as to prevent further audits from being submitted for a given UEI/AY combination; all such submissions will need to be resubmissions, which will automatically build linkages as the resubmission takes place.
+
+## Proposed resubmission linkages
+
+The following audits are believed to be resubmissions. After processing, only the most recent audit in these sequences will be publicly available. 
