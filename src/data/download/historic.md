@@ -15,7 +15,7 @@ in_page_nav: true
 
 # {{ title }}
 
-This dataset includes Single Audit submissions collected by the Census FAC from 1998 to 2015. It is provided as-is for historical research and is not included in our [search]({{'/data/search/' | htmlBaseUrl(baseUrl)}}) or [API]({{'/api/' | htmlBaseUrl(baseUrl)}}).
+This dataset includes Single Audit submissions collected by the Census FAC from 1998 to 2015. It is provided as-is for historical research and is not included in our web-based search or API.
 
 ---
 
