@@ -12,4 +12,4 @@ for csvf in `ls *.csv`; do
     sed -i -e 's/)//g' ./$base.json
 done
 
-cat cognizant_agency_contacts_20250609.json | jq "." > cognizant_agency_contacts.json
+cat cognizant_agency_contacts_20250806.json | jq "." > cognizant_agency_contacts.json
