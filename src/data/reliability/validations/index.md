@@ -69,7 +69,7 @@ These are the last checks before a submission is certified.
 
 ## Step 4: Dissemination validations
 
-After a submission is certified, we convert it into a format for public access�used in our downloadable files and [API]({{'/api/' | absoluteUrl}}).
+After a submission is certified, we convert it into a format for public access used in our downloadable files and [API]({{'/api/' | absoluteUrl}}).
 
 This final validation ensures:
 
