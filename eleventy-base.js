@@ -72,9 +72,13 @@ function config(baseUrl) {
       return contents.slice(1, contents.length);
     });
 
-    // Sort an array by path name. Used to ensure collections are sorted by 01, 02, ... 
+    // Sort an array by path name. Used to ensure collections are sorted by 01, 02, ...
     // Rather than by creation date.
     eleventyConfig.addFilter("sortAscendingByName", function (array) {
+      if (!array || !Array.isArray(array)) {
+        return [];
+      }
+
       return array.sort(function (a, b) {
         return a.inputPath.localeCompare(b.inputPath);
       });
