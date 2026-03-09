@@ -19,25 +19,6 @@ eleventyComputed:
 {% import "components/image_modal.njk" as image_modal with context %}
 
 # Starting a new audit
-The first step of beginning an audit is confirming your entity must submit an audit. You’ll answer a few questions about what type of entity you are and how much you spent in federal grants during the applicable fiscal year. 
-
-Your answers to these questions can’t be changed once you complete this step. If you make a mistake in answering any of these questions, you must begin a new audit.
-
-<img class="cursor-pointer" src="{{config.baseUrl}}assets/img/walkthrough/walkthrough-04-eligibility.png" width=500 style="margin: 1em; border: 1px solid #555;" aria-controls="image-modal-walkthrough/walkthrough-04-eligibility.png" data-open-modal />
-{{ image_modal.modal('walkthrough/walkthrough-04-eligibility.png', 'assets/img/walkthrough/walkthrough-04-eligibility.png', 'A screenshot of the FAC submission eligibilty page. One multiple choice question and three true or false questions ask if an entity meets the single audit criteria.') }}
-
-Per [2 CFR 200.501](https://www.ecfr.gov/current/title-2/section-200.501), the single audit submission process is for the following types of entities:
-* Non-profits
-* State and local governments
-* Institutions of higher education
-* Indian tribes or Tribal organizations
-
-Entities that spend federal grant funds are required to submit an audit if they meet the following spending thresholds:
-* $750,000 or more for Fiscal Years starting before October 1, 2024  
-* $1,000,000 or more for Fiscal Years starting on or after October 1, 2024
-
-### ACEE submissions
-ACEE audits must be submitted directly to the Department of Treasury using [their documentation](https://home.treasury.gov/system/files/136/ACEE-Report-User-Guide.pdf). Please [contact the Department of Treasury](https://home.treasury.gov/utility/contact) with any additional questions on this topic.
 
 ## Auditee information
 The FAC uses the Unique Entity ID (UEI) for all audit submissions.
@@ -52,6 +33,25 @@ The fiscal period start and end dates should be the start and end date for your 
 <img class="cursor-pointer" src="{{config.baseUrl}}assets/img/walkthrough/walkthrough-05-auditee-info.png" width=500 style="margin: 1em; border: 1px solid #555;" aria-controls="image-modal-walkthrough/walkthrough-05-auditee-info.png" data-open-modal />
 {{ image_modal.modal('walkthrough/walkthrough-05-auditee-info.png', 'assets/img/walkthrough/walkthrough-05-auditee-info.png', 'A screenshot of the FAC auditee information page. On the center left, there are three text input fields. From top to bottom: Entity UEI, Fiscal period start date, and Fiscal period end date.') }}
 
+The next step is confirming that your entity must submit an audit. You’ll answer a few questions about what type of entity you are and how much you spent in federal grants during the applicable fiscal year.
+
+Your answers to these questions can’t be changed once you complete this step. If you make a mistake in answering any of these questions, you must begin a new audit.
+
+<img class="cursor-pointer" src="{{config.baseUrl}}assets/img/walkthrough/walkthrough-04-eligibility.png" width=500 style="margin: 1em; border: 1px solid #555;" aria-controls="image-modal-walkthrough/walkthrough-04-eligibility.png" data-open-modal />
+{{ image_modal.modal('walkthrough/walkthrough-04-eligibility.png', 'assets/img/walkthrough/walkthrough-04-eligibility.png', 'A screenshot of the FAC submission eligibilty page. One multiple choice question and three true or false questions ask if an entity meets the single audit criteria.') }}
+
+Per [2 CFR 200.501](https://www.ecfr.gov/current/title-2/section-200.501), the single audit submission process is for the following types of entities:
+* Non-profits
+* State and local governments
+* Institutions of higher education
+* Indian tribes or Tribal organizations
+
+Entities that spend federal grant funds are required to submit an audit if they meet the following spending thresholds:
+* $750,000 or more for Fiscal Years starting before October 1, 2024
+* $1,000,000 or more for Fiscal Years starting on or after October 1, 2024
+
+### ACEE submissions
+ACEE audits must be submitted directly to the Department of Treasury using [their documentation](https://home.treasury.gov/system/files/136/ACEE-Report-User-Guide.pdf). Please [contact the Department of Treasury](https://home.treasury.gov/utility/contact) with any additional questions on this topic.
 
 ## Audit access
 This is where you will list the auditee and auditor certifying officials, as well as anyone who will need to enter data or edit the single audit. Be sure to gather the names and email addresses of all individuals who will require access to the audit before proceeding with this step.
