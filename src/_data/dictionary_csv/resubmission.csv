@@ -1,0 +1,9 @@
+Census,GSAFAC,Type,Column Reference
+AUDITYEAR + DBKEY,General.report_id,TEXT,gen.report_id
+EUI,General.auditee_uei,TEXT,gen.auditee_uei
+AUDITYEAR,General.audit_year,TEXT,gen.audit_year
+FACACCEPTEDDATE,General.fac_accepted_date,DATE,gen.fac_accepted_date
+____,version,BIGINT,resub.version
+____,status,TEXT,resub.status
+____,previous_report_id,TEXT,resub.previous_report_id
+____,next_report_id,TEXT,resub.next_report_id
