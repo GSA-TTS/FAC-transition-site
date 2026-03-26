@@ -10,5 +10,5 @@ eleventyExcludeFromCollections: true
 ---
 
 The FAC has added new fields to its API in preparation for allowing resubmissions. A new data dictionary will be available soon.
-The FAC has also updated the SF-SAC Data Collection workbooks to version 1.1.8. The new version adds the latest Federal Program and Cluter Names.
+The FAC has also updated the SF-SAC Data Collection workbooks to version 1.1.8. The new version adds the latest Federal Program and Cluster Names.
 
