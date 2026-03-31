@@ -2,10 +2,7 @@
 tags: post 
 date: "2026-03-31"
 title: March 2026
-description: API changes, Workbook version update, various things
-image_path: "assets/img/updates/an-image-name.png"
-image_alt: Alt text that describes the image, for accessibility reasons. 
-image_caption: Some caption content that goes below the image.
+description: API changes, Workbook version update
 ---
 
 The FAC has added new fields to its API in preparation for allowing resubmissions. A new data dictionary will be available soon.
