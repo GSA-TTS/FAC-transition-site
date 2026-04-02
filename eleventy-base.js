@@ -10,7 +10,9 @@ const md = require('markdown-it')({
   linkify: true,
 });
 
-const METABASE_SECRET_KEY = process.env.METABASE_SECRET_KEY;
+const METABASE_HOST_URL = process.env.METABASE_HOST_URL || '';
+const METABASE_TOKEN_DASHBOARDS = process.env.METABASE_TOKEN_DASHBOARDS || '';
+const METABASE_TOKEN_DATA_EXPLORER = process.env.METABASE_TOKEN_DATA_EXPLORER || '';
 
 const hashCode = function (s) {
   var hash = 0,
@@ -29,6 +31,9 @@ function config(baseUrl) {
   return function (eleventyConfig) {
     /* GLOBAL DATA */
     eleventyConfig.addGlobalData("baseUrl", baseUrl);
+    eleventyConfig.addGlobalData("metabaseHostUrl", METABASE_HOST_URL);
+    eleventyConfig.addGlobalData("metabaseTokenDashboards", METABASE_TOKEN_DASHBOARDS);
+    eleventyConfig.addGlobalData("metabaseTokenDataExplorer", METABASE_TOKEN_DATA_EXPLORER);
     /* PASSTHROUGH COPIES */
     eleventyConfig.addPassthroughCopy('assets');
     eleventyConfig.addPassthroughCopy('favicon.ico');
@@ -98,18 +103,19 @@ function config(baseUrl) {
       return filtered;
     });
 
-    eleventyConfig.addShortcode("iFrameUrl", function () {
-      const METABASE_SITE_URL = "https://metabase-sandbox.app.cloud.gov";
+    // Used for a previous iteration on Metabase embeds. May be useful for gatekeeping certain dashboards.
+    // eleventyConfig.addShortcode("iFrameUrl", function () {
+    //   const METABASE_SITE_URL = "https://metabase-sandbox.app.cloud.gov";
 
-      const payload = {
-        resource: { dashboard: 3 },
-        params: {},
-      };
-      const token = jwt.sign(payload, METABASE_SECRET_KEY);
+    //   const payload = {
+    //     resource: { dashboard: 3 },
+    //     params: {},
+    //   };
+    //   const token = jwt.sign(payload, METABASE_SECRET_KEY);
 
-      return METABASE_SITE_URL + "/embed/dashboard/" + token +
-      "#bordered=true&titled=true";
-    });
+    //   return METABASE_SITE_URL + "/embed/dashboard/" + token +
+    //   "#bordered=true&titled=true";
+    // });
 
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
