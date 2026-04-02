@@ -1,10 +1,10 @@
 /* MODULES */
-const jwt = require("jsonwebtoken");
-const yaml = require('js-yaml');
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+import { load } from 'js-yaml';
+import pluginRss, { dateToRfc3339, dateToRfc822 } from "@11ty/eleventy-plugin-rss";
+import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
+import markdownIt from 'markdown-it';
 
-const md = require('markdown-it')({
+const md = markdownIt({
   html: false,
   breaks: true,
   linkify: true,
@@ -39,7 +39,7 @@ function config(baseUrl) {
     eleventyConfig.addPassthroughCopy('favicon.ico');
     eleventyConfig.addPassthroughCopy('robots.txt');
     /* DATA EXTENSIONS */
-    eleventyConfig.addDataExtension('yaml', (contents) => yaml.load(contents));
+    eleventyConfig.addDataExtension('yaml', (contents) => load(contents));
     /* PLUGINS */
     eleventyConfig.addPlugin(pluginRss);
     /* FILTERS */
@@ -55,8 +55,8 @@ function config(baseUrl) {
         return url;
       }
     });
-    eleventyConfig.addLiquidFilter("dateToRfc3339", pluginRss.dateToRfc3339);
-    eleventyConfig.addLiquidFilter("dateToRfc822", pluginRss.dateToRfc822);
+    eleventyConfig.addLiquidFilter("dateToRfc3339", dateToRfc3339);
+    eleventyConfig.addLiquidFilter("dateToRfc822", dateToRfc822);
 
     // Take Eleventy's default "YY-MM-DD" to "Month DD, YYYY"
     // Usage: {{ dateString | friendlydate }}
@@ -132,4 +132,4 @@ function config(baseUrl) {
   }
 };
 
-module.exports = config;
+export default config;

@@ -8,9 +8,9 @@
     "gulpCompile": "npx gulp compile",
     "gulpCopy": "npx gulp copyAssets",
     "gulpWatch": "npx gulp watch",
-    "eleventy": "npx @11ty/eleventy --config=local-eleventy.js",
-    "eleventyFederalist": "npx @11ty/eleventy --config=federalist-eleventy.js",
-    "eleventyServe": "npx @11ty/eleventy --config=local-eleventy.js --serve",
+    "eleventy": "npx @11ty/eleventy --config=local-eleventy.mjs",
+    "eleventyFederalist": "npx @11ty/eleventy --config=federalist-eleventy.mjs",
+    "eleventyServe": "npx @11ty/eleventy --config=local-eleventy.mjs --serve",
     "start": "npm-run-all -p gulpCopy gulpWatch eleventyServe",
     "build": "npm-run-all -s gulpCopy gulpCompile eleventy",
     "federalist": "npm-run-all -s gulpCopy gulpCompile eleventyFederalist"
@@ -35,7 +35,6 @@
     "@11ty/eleventy": ">=3.1.2",
     "@11ty/eleventy-navigation": "^1.0.4",
     "@11ty/eleventy-plugin-rss": ">2.0.0",
-    "gulp": "^5.0.1",
-    "jsonwebtoken": "^9.0.2"
+    "gulp": "^5.0.1"
   }
 }
