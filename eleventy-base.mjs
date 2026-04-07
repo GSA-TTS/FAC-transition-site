@@ -10,6 +10,7 @@ const md = markdownIt({
   linkify: true,
 });
 
+/* ENV */
 const METABASE_HOST_URL = process.env.METABASE_HOST_URL || '';
 const METABASE_TOKEN_DASHBOARDS = process.env.METABASE_TOKEN_DASHBOARDS || '';
 const METABASE_TOKEN_DATA_EXPLORER = process.env.METABASE_TOKEN_DATA_EXPLORER || '';
