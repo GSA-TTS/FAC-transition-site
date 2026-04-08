@@ -1,3 +1,6 @@
+/* ENV */
+import 'dotenv/config';
+
 /* MODULES */
 import { load } from 'js-yaml';
 import pluginRss, { dateToRfc3339, dateToRfc822 } from "@11ty/eleventy-plugin-rss";
@@ -9,11 +12,6 @@ const md = markdownIt({
   breaks: true,
   linkify: true,
 });
-
-/* ENV */
-const METABASE_HOST_URL = process.env.METABASE_HOST_URL || '';
-const METABASE_TOKEN_DASHBOARDS = process.env.METABASE_TOKEN_DASHBOARDS || '';
-const METABASE_TOKEN_DATA_EXPLORER = process.env.METABASE_TOKEN_DATA_EXPLORER || '';
 
 const hashCode = function (s) {
   var hash = 0,
@@ -32,9 +30,8 @@ function config(baseUrl) {
   return function (eleventyConfig) {
     /* GLOBAL DATA */
     eleventyConfig.addGlobalData("baseUrl", baseUrl);
-    eleventyConfig.addGlobalData("metabaseHostUrl", METABASE_HOST_URL);
-    eleventyConfig.addGlobalData("metabaseTokenDashboards", METABASE_TOKEN_DASHBOARDS);
-    eleventyConfig.addGlobalData("metabaseTokenDataExplorer", METABASE_TOKEN_DATA_EXPLORER);
+    eleventyConfig.addGlobalData('env', process.env);
+
     /* PASSTHROUGH COPIES */
     eleventyConfig.addPassthroughCopy('assets');
     eleventyConfig.addPassthroughCopy('favicon.ico');
