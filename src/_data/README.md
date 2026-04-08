@@ -10,18 +10,20 @@ Make sure you have the following installed:
 
 ## How to Run the Script
 
-1. **Ensure the script has execute permissions:** 
+1. `cd src/_data/dictionary_csv/`
+
+1. **Ensure the script has execute permissions:**
 
    Before running the script, ensure it has execute permissions. Run the following command:
 
    ```bash
-   chmod +x dictionary_csv/convert_to_json.bash
+   chmod +x convert_to_json.bash
    ```
 
-2. **Run the script:**
+1. **Run the script:**
 
     Execute the script by running the following command:
-    
+
    ```bash
-   ./dictionary_csv/convert_to_json.bash
+   ./convert_to_json.bash
    ```
