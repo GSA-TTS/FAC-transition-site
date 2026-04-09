@@ -1,0 +1,33 @@
+---
+layout: home.njk
+title: DEMO - Metabase Embedding
+meta:
+  name: Metabase Analytics Embedding
+  description: A demonstration page for embedding a metabase dashboard.
+eleventyNavigation:
+  key: Analytics
+  parent: Home
+---
+
+{% if env.METABASE_HOST_URL %}
+  <iframe class="margin-y-8"
+      src="{{ env.METABASE_HOST_URL }}/{{ env.METABASE_TOKEN_DASHBOARDS }}"
+      frameborder="0"
+      width="100%"
+      height="960"
+      allowtransparency >
+  </iframe>
+
+  <iframe class="margin-bottom-8"
+      src="{{ env.METABASE_HOST_URL }}/{{ env.METABASE_TOKEN_DATA_EXPLORER }}"
+      frameborder="0"
+      width="100%"
+      height="960"
+      allowtransparency >
+  </iframe>
+{% else %}
+  <div class="margin-y-8">
+    <h2>Service Unavailable</h2>
+    <p>Metabase host is not configured. Please try again later.</p>
+  </div>
+{% endif %}
