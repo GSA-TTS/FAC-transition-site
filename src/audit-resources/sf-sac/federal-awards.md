@@ -70,7 +70,7 @@ This field can't be left blank.
 
 Enter the amount of expenditures for each Federal award, as defined in [2 CFR 200.502](https://www.ecfr.gov/current/title-2/section-200.502). Round the amount to the nearest whole dollar.
 
-If you have a negative expenditure, enter it as “-123.45”.
+If you have a negative expenditure, enter it as “-123”.
 
 This field can't be left blank.
 
