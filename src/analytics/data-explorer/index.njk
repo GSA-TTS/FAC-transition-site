@@ -8,18 +8,7 @@ eleventyNavigation:
   key: Data Explorer
   parent: Analytics
 ---
+{% from "macros/analytics_dashboard.njk" import dashboardFrame %}
 
-<iframe class="margin-bottom-8"
-  src="{{ env.METABASE_HOST_URL }}/{{ env.METABASE_TOKEN_DATA_EXPLORER }}"
-  frameborder="0"
-  frameborder="0"
-  allowtransparency
-  style="
-    width: 90vw;
-    height: 960px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    display: block;
-  ">
-</iframe>
+{{ dashboardFrame(env.METABASE_HOST_URL + "/" + env.METABASE_TOKEN_DATA_EXPLORER) }}
+

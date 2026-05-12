@@ -9,10 +9,28 @@ eleventyNavigation:
   parent: Home
 ---
 
-<div class="margin-y-8">
-  <h2>Analytics</h2>
-  <ul>
-    <li><a href="/analytics/dashboards/">Dashboards</a></li>
-    <li><a href="/analytics/data-explorer/">Data Explorer</a></li>
+{% from "macros/analytics_list.njk" import listingLink %}
+
+<div class="margin-y-8" style="width: 50%;">
+  <h1>Analytics</h1>
+  <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:6px;">
+    <li>
+      {{ listingLink("/analytics/data-explorer/", "Data Explorer") }}
+    </li>
+    <li>
+      {{ listingLink("/analytics/yearly-trends/", "Yearly Trends") }}
+    </li>
+    <li>
+      {{ listingLink("/analytics/state-graphs/", "State Graphs") }}
+    </li>
+    <li>
+      {{ listingLink("/analytics/oversight-summaries/", "Oversight Summaries") }}
+    </li>
+    <li>
+      {{ listingLink("/analytics/aln-search/", "ALN Search") }}
+    </li>
+    <li>
+      {{ listingLink("/analytics/findings/", "Findings") }}
+    </li>
   </ul>
 </div>
