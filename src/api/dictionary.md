@@ -23,6 +23,7 @@ endpoints:
   - secondary_auditors
   - additional_ueis
   - additional_eins
+  - resubmission
 formerly:
   - gen
   - cfda
