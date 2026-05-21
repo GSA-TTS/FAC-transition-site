@@ -1,0 +1,14 @@
+---
+layout: home.njk
+title: DEMO - Dashboards
+meta:
+  name: Metabase Dashboards
+  description: Embedded Metabase dashboards.
+eleventyNavigation:
+  key: State Graphs
+  parent: FAC Analytics
+---
+{% from "macros/analytics_dashboard.njk" import dashboardFrame %}
+
+{{ dashboardFrame(env.METABASE_HOST_URL + "/" + env.METABASE_TOKEN_STATE_GRAPHS) }}
+

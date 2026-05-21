@@ -5,29 +5,32 @@ meta:
   name: Metabase Analytics Embedding
   description: A demonstration page for embedding a metabase dashboard.
 eleventyNavigation:
-  key: Analytics
+  key: FAC Analytics
   parent: Home
 ---
 
-{% if env.METABASE_HOST_URL %}
-  <iframe class="margin-y-8"
-      src="{{ env.METABASE_HOST_URL }}/{{ env.METABASE_TOKEN_DASHBOARDS }}"
-      frameborder="0"
-      width="100%"
-      height="960"
-      allowtransparency >
-  </iframe>
+{% from "macros/analytics_list.njk" import listingLink %}
 
-  <iframe class="margin-bottom-8"
-      src="{{ env.METABASE_HOST_URL }}/{{ env.METABASE_TOKEN_DATA_EXPLORER }}"
-      frameborder="0"
-      width="100%"
-      height="960"
-      allowtransparency >
-  </iframe>
-{% else %}
-  <div class="margin-y-8">
-    <h2>Service Unavailable</h2>
-    <p>Metabase host is not configured. Please try again later.</p>
-  </div>
-{% endif %}
+<div class="margin-y-4" style="width: 50%;">
+  <h1>FAC Analytics</h1>
+  <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:6px;">
+    <li>
+      {{ listingLink(config.baseUrl + "analytics/data-explorer/", "Data Explorer") }}
+    </li>
+    <li>
+      {{ listingLink(config.baseUrl + "analytics/yearly-trends/", "Yearly Trends") }}
+    </li>
+    <li>
+      {{ listingLink(config.baseUrl + "analytics/state-graphs/", "State Graphs") }}
+    </li>
+    <li>
+      {{ listingLink(config.baseUrl + "analytics/oversight-summaries/", "Oversight Summaries") }}
+    </li>
+    <li>
+      {{ listingLink(config.baseUrl + "analytics/aln-search/", "ALN Search") }}
+    </li>
+    <li>
+      {{ listingLink(config.baseUrl + "analytics/findings/", "Findings") }}
+    </li>
+  </ul>
+</div>

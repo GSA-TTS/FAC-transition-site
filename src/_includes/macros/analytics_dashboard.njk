@@ -1,0 +1,15 @@
+{% macro dashboardFrame(src) %}
+<iframe class="margin-top-8 margin-bottom-8"
+  src="{{ src }}"
+  frameborder="0"
+  allowtransparency
+  style="
+    width: 90vw;
+    height: 960px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+  ">
+</iframe>
+{% endmacro %}

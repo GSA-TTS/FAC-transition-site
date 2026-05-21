@@ -40,7 +40,7 @@ navigation:
           href: 'data/reliability/curation'
         - text: Data migration
           href: 'data/migration'
-        # - text: Analytics
+        # - text: FAC Analytics
         #   href: 'analytics'
     - text: Updates & News
       id: news
