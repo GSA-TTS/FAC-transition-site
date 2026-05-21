@@ -15,22 +15,22 @@ eleventyNavigation:
   <h1>Analytics</h1>
   <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:6px;">
     <li>
-      {{ listingLink("{{ config.baseUrl }}analytics/data-explorer/", "Data Explorer") }}
+      {{ listingLink(config.baseUrl + "analytics/data-explorer/", "Data Explorer") }}
     </li>
     <li>
-      {{ listingLink("/analytics/yearly-trends/", "Yearly Trends") }}
+      {{ listingLink(config.baseUrl + "analytics/yearly-trends/", "Yearly Trends") }}
     </li>
     <li>
-      {{ listingLink("/analytics/state-graphs/", "State Graphs") }}
+      {{ listingLink(config.baseUrl + "analytics/state-graphs/", "State Graphs") }}
     </li>
     <li>
-      {{ listingLink("/analytics/oversight-summaries/", "Oversight Summaries") }}
+      {{ listingLink(config.baseUrl + "analytics/oversight-summaries/", "Oversight Summaries") }}
     </li>
     <li>
-      {{ listingLink("/analytics/aln-search/", "ALN Search") }}
+      {{ listingLink(config.baseUrl + "analytics/aln-search/", "ALN Search") }}
     </li>
     <li>
-      {{ listingLink("/analytics/findings/", "Findings") }}
+      {{ listingLink(config.baseUrl + "analytics/findings/", "Findings") }}
     </li>
   </ul>
 </div>
