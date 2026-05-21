@@ -5,14 +5,14 @@ meta:
   name: Metabase Analytics Embedding
   description: A demonstration page for embedding a metabase dashboard.
 eleventyNavigation:
-  key: Analytics
+  key: FAC Analytics
   parent: Home
 ---
 
 {% from "macros/analytics_list.njk" import listingLink %}
 
-<div class="margin-y-8" style="width: 50%;">
-  <h1>Analytics</h1>
+<div class="margin-y-4" style="width: 50%;">
+  <h1>FAC Analytics</h1>
   <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:6px;">
     <li>
       {{ listingLink(config.baseUrl + "analytics/data-explorer/", "Data Explorer") }}
