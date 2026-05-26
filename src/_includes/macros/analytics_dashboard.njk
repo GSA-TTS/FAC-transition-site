@@ -1,4 +1,5 @@
 {% macro dashboardFrame(src) %}
+{% if src %}
 <iframe class="margin-top-8 margin-bottom-8"
   src="{{ src }}"
   frameborder="0"
@@ -12,4 +13,10 @@
     display: block;
   ">
 </iframe>
+{% else %}
+  <div class="margin-y-8">
+    <h2>Service Unavailable</h2>
+    <p>Metabase host is not configured. Please try again later.</p>
+  </div>
+{% endif %}
 {% endmacro %}

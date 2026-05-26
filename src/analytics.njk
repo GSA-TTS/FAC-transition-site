@@ -13,7 +13,10 @@ eleventyNavigation:
 
 <div class="margin-y-4" style="width: 50%;">
   <h1>FAC Analytics</h1>
-  <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:6px;">
+
+  <ul
+    style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:6px;"
+  >
     <li>
       {{ listingLink(config.baseUrl + "analytics/data-explorer/", "Data Explorer") }}
     </li>
@@ -33,4 +36,12 @@ eleventyNavigation:
       {{ listingLink(config.baseUrl + "analytics/findings/", "Findings") }}
     </li>
   </ul>
+
+  <p class="margin-top-3">
+    View the
+    <a href="{{ config.baseUrl }}assets/metabase/FAC_Metabase_User_Guide.pdf" target="_blank" rel="noopener">
+      FAC Metabase User Guide
+    </a>
+    for instructions.
+  </p>
 </div>
