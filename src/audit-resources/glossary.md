@@ -1,5 +1,6 @@
 ---
 title: Glossary
+layout: resources_page.njk
 ---
 
 # Glossary
