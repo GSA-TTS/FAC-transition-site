@@ -14,3 +14,5 @@ eleventyComputed:
 ---
 
 We’re here to help make your audit submission as easy as possible. Use our submission resources to complete the process.
+
+- [Glossary](/audit-resources/glossary/)
