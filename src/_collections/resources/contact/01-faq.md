@@ -1,5 +1,5 @@
 ---
-tags: resources, contact
+tags: resources-contact
 header: Fac.gov FAQ
 link: https://support.fac.gov/hc/en-us
 link_text: View FAQ

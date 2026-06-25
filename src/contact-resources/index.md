@@ -2,7 +2,7 @@
 layout: contact_page.njk
 title: Contact
 header: Have questions? Start here.
-collectionName: resources, contact
+collectionName: resources-contact
 meta:
   name: Contact
   description: Tools and resources for successfully submiting your single audit package to the Federal Audit Clearinghouse.

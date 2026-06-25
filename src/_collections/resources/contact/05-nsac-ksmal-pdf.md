@@ -1,5 +1,5 @@
 ---
-tags: resources, contact
+tags: resources-contact
 header: NSAC, KSAML and Federal program contacts
 link: assets/agency-contacts/2024-agency-contacts.pdf
 link_text: Download PDF
