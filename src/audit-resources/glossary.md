@@ -1,6 +1,10 @@
 ---
 title: FAC Glossary
-layout: resources_page.njk
+layout: home.njk
+eleventyComputed:
+  eleventyNavigation:
+    key: Glossary
+    parent: Audit submission resources
 ---
 
 # Glossary
