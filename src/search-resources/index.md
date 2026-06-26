@@ -2,7 +2,7 @@
 layout: resources_page.njk
 title: Audit search resources
 header: Audit search resources
-collectionName: resources, search
+collectionName: resources-search
 faqLink: https://support.fac.gov/hc/en-us/categories/18291273575181-Audit-Search
 meta:
   name: Audit search resources

@@ -1,5 +1,5 @@
 ---
-tags: resources, contact
+tags: resources-contact
 header: Cognizant agency contacts
 link: 'contact-resources/cognizant-agency-contacts'
 link_text: View contacts
