@@ -6,6 +6,10 @@ meta:
   description: "Follow these step-by-step instructions for completing SF-SAC Section 6: Additional UEIs."
 workbook:
   name: "additional-ueis-workbook"
+eleventyComputed:
+  eleventyNavigation:
+    key: Additional UEIs
+    parent: SF-SAC workbooks
 ---
 
 # SF-SAC Section 6: Additional UEIs

@@ -6,6 +6,10 @@ meta:
   description: "Follow these step-by-step instructions for completing SF-SAC Section 3: Federal awards audit findings."
 workbook:
   name: "federal-awards-audit-findings-workbook"
+eleventyComputed:
+  eleventyNavigation:
+    key: Audit findings
+    parent: SF-SAC workbooks
 ---
 
 # SF-SAC Section 3: Federal awards audit findings
