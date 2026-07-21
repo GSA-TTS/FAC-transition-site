@@ -6,6 +6,10 @@ meta:
   description: "Follow these step-by-step instructions for completing SF-SAC Section 7: Secondary auditors."
 workbook:
   name: "secondary-auditors-workbook"
+eleventyComputed:
+  eleventyNavigation:
+    key: Secondary auditors
+    parent: SF-SAC workbooks
 ---
 
 # SF-SAC Section 7: Secondary auditors

@@ -6,6 +6,10 @@ meta:
   description: "Follow these step-by-step instructions for completing SF-SAC Section 2: Notes to SEFA."
 workbook:
   name: "notes-to-sefa-workbook"
+eleventyComputed:
+  eleventyNavigation:
+    key: Notes to SEFA
+    parent: SF-SAC workbooks
 ---
 
 # SF-SAC Section 2: Notes to the Schedule of Expenditures of Federal Awards (SEFA)

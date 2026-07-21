@@ -6,6 +6,10 @@ meta:
   description: "Follow these step-by-step instructions for completing SF-SAC Section 5: Corrective action plan."
 workbook:
   name: "corrective-action-plan-workbook"
+eleventyComputed:
+  eleventyNavigation:
+    key: Corrective action plan
+    parent: SF-SAC workbooks
 ---
 
 # SF-SAC Section 5: Corrective Action Plan

@@ -6,6 +6,10 @@ meta:
   description: "Follow these step-by-step instructions for completing the first section of the SF-SAC, the Federal awards workbook."
 workbook:
   name: "federal-awards-workbook"
+eleventyComputed:
+  eleventyNavigation:
+    key: Federal awards
+    parent: SF-SAC workbooks
 ---
 
 # SF-SAC Section 1: Federal awards
