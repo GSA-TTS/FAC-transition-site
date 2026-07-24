@@ -27,7 +27,7 @@ Enter the auditee UEI on the coversheet before completing the Form tab. Make sur
 For each finding, all columns must be completed.
 ### Column A: Award Reference
 
-Enter the award reference number as listed in SF-SAC Section 1: Federal Awards. Award references must be formatted “AWARD-####”.
+Enter the award reference number as listed in SF-SAC Section 1: Federal Awards. Award references must be formatted “AWARD-#####”.
 
 ### Column B: Audit Finding Reference Number
 
