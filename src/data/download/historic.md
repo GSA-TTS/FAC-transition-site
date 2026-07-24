@@ -11,6 +11,8 @@ eleventyComputed:
     key: Historic data
     parent: Download
 in_page_nav: true
+# Page data
+sizes: [15,16,16,20,22,23,22,23,24,24,24,27,32,32,30,30,28,29]
 ---
 
 # {{ title }}
