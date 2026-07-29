@@ -73,7 +73,7 @@ If column D is “Y”, this field must be “N.”
 
 Select "Y" if the auditor identified an audit finding as a Material Weakness in the audit report PDF. 
 
-If not, select "N".
+If not, select "N". If this field is "Y", column G (Significant Deficiency) must be "N", because a finding cannot be classified as both a Material Weakness and a Significant Deficiency.
 
 For more on material weaknesses, review the Internal Control section of the [compliance supplements]({{ config.baseUrl }}compliance) provided by the Office of Management and Budget.
 
@@ -81,13 +81,13 @@ For more on material weaknesses, review the Internal Control section of the [com
 
 Select "Y" if the auditor identified an audit finding as a Significant Deficiency in the audit report PDF. 
 
-If not, select "N".
+If not, select "N". If this field is "Y", column F (Material Weakness) must be "N", because a finding cannot be classified as both a Significant Deficiency and a Material Weakness.
 
 For more on significant deficiencies, review the Internal Control section of the [compliance supplements]({{ config.baseUrl }}compliance) provided by the Office of Management and Budget.
 
 ### Column H: Other Findings
 
-Select "Y" if Modified Opinion (column D), Other Matters (column E), Material Weakness (column F), and Significant Deficiency (collumn G) are all marked "N". 
+Select "Y" if Modified Opinion (column D), Other Matters (column E), Material Weakness (column F), and Significant Deficiency (column G) are all marked "N". 
 
 Select "N" if any of these fields are marked "Y".
 
