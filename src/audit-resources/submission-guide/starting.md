@@ -28,9 +28,7 @@ The fiscal period dates should be the start and end date for the expenditures co
 <img class="cursor-pointer" src="{{config.baseUrl}}assets/img/walkthrough/walkthrough-05-auditee-info.png" width=500 style="margin: 1em; border: 1px solid #555;" aria-controls="image-modal-walkthrough/walkthrough-05-auditee-info.png" data-open-modal />
 {{ image_modal.modal('walkthrough/walkthrough-05-auditee-info.png', 'assets/img/walkthrough/walkthrough-05-auditee-info.png', 'A screenshot of the FAC auditee information page. On the center left, there are three text input fields. From top to bottom: Entity UEI, Fiscal period start date, and Fiscal period end date.') }}
 
-Next, you'll answer a few questions to determine whether your entity must submit a Single Audit. You’ll answer a few questions about what type of entity you are and how much you spent in federal grants during the applicable fiscal year.
-
-After completing this step, you can only change your answers by beginning a new audit.
+Next, you'll answer a few questions to determine whether your entity must submit a Single Audit. These include questions about the entity type and federal award expenditures during the applicable fiscal year.
 
 <img class="cursor-pointer" src="{{config.baseUrl}}assets/img/walkthrough/walkthrough-04-eligibility.png" width=500 style="margin: 1em; border: 1px solid #555;" aria-controls="image-modal-walkthrough/walkthrough-04-eligibility.png" data-open-modal />
 {{ image_modal.modal('walkthrough/walkthrough-04-eligibility.png', 'assets/img/walkthrough/walkthrough-04-eligibility.png', 'A screenshot of the FAC submission eligibilty page. One multiple choice question and three true or false questions ask if an entity meets the single audit criteria.') }}
