@@ -28,7 +28,7 @@ The inconsistency resulted from the FAC's transition from 4-digit to
 5-digit award references and submissions made using older workbook
 versions.
 
-The affected records were updated to 4-digit award references so the
+The affected records were updated to 5-digit award references so the
 references match across FAC data.
 
 Affected records:
