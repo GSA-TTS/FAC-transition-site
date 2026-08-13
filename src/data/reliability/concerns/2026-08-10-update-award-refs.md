@@ -66,9 +66,9 @@ https://api.fac.gov/federal_awards?select=report_id,award_reference&report_id=eq
 
 ## Consequences
 
-Users would have difficulties reconciling the award reference between other API calls and the SF-SAC report
+Users would have difficulties reconciling the award reference between API calls and the SF-SAC report.
 
 ## Resolution
 
 1. Query the DB and identify potential reports with the issue.
-2. Update the award reference in 'audit_singleauditchecklist.findings_uniform_guidance' and  'dissemination_finding.award_reference' for those reports
+2. Update the award reference in 'audit_singleauditchecklist.findings_uniform_guidance' and  'dissemination_finding.award_reference' for those reports.
