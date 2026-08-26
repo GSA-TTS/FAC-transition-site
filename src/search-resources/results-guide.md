@@ -12,7 +12,7 @@ eleventyComputed:
 
 # Interpreting the search results table
 
-This page will show you how to interpret the various columns that make up the [search](tps://app.fac.gov/dissemination/search/) results table for the FAC.
+This page will show you how to interpret the various columns that make up the [search](https://app.fac.gov/dissemination/search/) results table for the FAC.
 
 The search results table consists of the following columns:
 
