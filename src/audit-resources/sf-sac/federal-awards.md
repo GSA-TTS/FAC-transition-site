@@ -32,22 +32,26 @@ This field is auto-generated for you as you complete the workbook and can’t be
 
 ### Column B: Federal Agency Prefix
 
-Enter the first two digits of the agency's Assistance Listing Number (ALN). This was formerly called the CFDA. To find an agency's ALN, search [SAM.gov](https://sam.gov/content/assistance-listings).
+Enter the first two digits of the agency's Assistance Listing Number (ALN). This was formerly called the CFDA. To find an agency's ALN, search [SAM.gov](https://sam.gov/assistance-listings).
 
 This field can't be left blank.
 
-### Column C: ALN (formerly CFDA) Three Digit Extension
+### Column C: Assistance Listing Number (ALN, formerly CFDA) Three-Character Extension
+Enter the last three characters of the agency's ALN.
 
-Enter the last three digits of the agency's ALN.
+- To verify an ALN, search [SAM.gov](https://sam.gov/assistance-listings) using the ALN or federal program name. Review the search result to confirm that the Assistance Listing ID and program name match the federal program associated with your award. If you are unsure which ALN applies to your award, contact the federal awarding agency for assistance.
+
 - For programs with no ALN or if the ALN is Unknown, enter a "U" followed by a two-digit number (e.g. U12) to identify one or more Federal award lines that form the program.
-  - If the ALN is Unknown, column D can't be blank.
+  - If including a "U" in the ALN extension, then column D can't be blank.
 
-- If the Federal program is part of the Research and Development (R&D) cluster and the three-digit ALN extension is unknown, enter "RD".
-  - If the ALN is Unknown, column D can't be blank.
+- If the Federal program is part of the Research and Development (R&D) cluster and the three-character ALN extension is unknown, enter "RD".
+  - If including "RD" in the ALN extension, then column D can't be blank.
 
-- If the Federal program is part of the R&D cluster and the ALN Three-Digit Extension is known, enter the ALN extension.
+- If the Federal program is part of an R&D cluster and the ALN three-character extension is known, enter the ALN three-character extension.
 
 This field can't be left blank.
+
+
 
 ### Column D: Additional Award Identification
 
