@@ -128,18 +128,22 @@ Use the dropdown menu to select the end month of the auditee’s fiscal year.
 
 ## <a name=type-of-compliance-requirement></a>Type of compliance requirement
 
-TODO: Fill this in
+Use the dropdown menu to select one or more types of compliance requirements.
+
+Types of compliance requirements identify the areas tested by auditors for major federal programs, such as allowable costs, eligibility, reporting, or subrecipient monitoring. Selecting a type of compliance requirement will limit the results to audits where that compliance requirement was reported for a major program.
+
+You can select as many options as you’d like or leave this filter blank.
 
 
 ## <a name=entity-type></a>Entity type
 
-Select the type of entity you would like to return. You can select as many options as you’d like, or leave this filter blank.
+Select the type of entity you would like to return. You can select as many options as you’d like or leave this filter blank.
 
 
 ## <a name=passthrough-name></a>Passthrough name
 Enter one word per line.
 
-This filter looks at awards listed as passed through to a subrecpient and the recipient of those awards.
+This filter looks at awards listed as passed through to a subrecipient and the recipient of those awards.
 
 At this time, the FAC matches whole words, not parts of words. The terms “school” and “schools” are not the same.
 
@@ -147,12 +151,14 @@ The search ignores the capitalization of words. The terms “school,” “Schoo
 
 Enter one word per line.
 
-**Example:** If  you are looking for a school, you might use the word “SCHOOL” as a part of your search. This will find “Ripley School District of Oklahoma,” but it will not find “Sand Creek Community Schools.” To find both, you would enter “SCHOOL” on one line, and “SCHOOLS” on the next.
+**Example:** If you are looking for a school, you might use the word “SCHOOL” as a part of your search. This will find “Ripley School District of Oklahoma,” but it will not find “Sand Creek Community Schools.” To find both, you would enter “SCHOOL” on one line, and “SCHOOLS” on the next.
 
 
 ## <a name=federal-program-name></a>Federal program name
 
-TODO: Fill this in
+Enter one or more words from the name of a federal program.
+
+This filter searches the federal program names associated with awards reported in single audit submissions. You can use it to find audits that include awards for a particular federal program without knowing the program’s Assistance Listing Number (ALN).
 
 
 ## <a name=report-id></a>Report ID
