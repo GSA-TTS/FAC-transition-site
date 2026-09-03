@@ -25,23 +25,20 @@ There are many audiences for the data provided by the FAC. If you're exploring t
 
 ### Access via the WWW
 
-There are two search interfaces:
-
-* [Basic search]({{glossary.sites.basic_search.url}}): Use this if you are just starting out. Look for your hometown, or a school you've attended.
-* [Advanced search]({{glossary.sites.advanced_search.url}}): Use this if you are starting to dig deeper; perhaps look for your home state, and discover what entities had audit findings in your state. 
+The search interface can be found [here]({{glossary.sites.search.url}}). TODO: What to put here?
 
 ### Download the data
 
 A CSV, or comma-separated-value file, can be explored using spreadsheets and code alike. If you are trying to analyze a lot of the data, you can use programming languages like SAS, SPSS, Python, and R to explore the files.
 
-[Download all of our data as CSVs]({{'/data/download/' | htmlBaseUrl(baseUrl)}}). 
+[Download all of our data as CSVs]({{'/data/download/' | htmlBaseUrl(baseUrl)}}).
 
 ### Access via code (API)
 
 API stands for **Application Programming Interface**. APIs make it easy for computer programs to request and receive information in a useable format. The FAC provides data that is easily computer-readable so that you can search and incorporate SF-SAC data directly into your own analyses.
 
 [Get started]({{'/api/' | htmlBaseUrl(baseUrl)}}) with our API.
-   
+
 ## How do we care for the data?
 
 Caring for a data collection of this size requires ongoing effort. We, or our users, discover errors. When this happens, we follow a process to document, schedule, and repair those inconsistencies or errors in the data. Museums curate arts and antiquities; at the FAC, we curate the record of the Single Audit.
