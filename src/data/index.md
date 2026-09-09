@@ -25,7 +25,7 @@ There are many audiences for the data provided by the FAC. If you're exploring t
 
 ### Access via the WWW
 
-The search interface can be found [here]({{glossary.sites.search.url}}). TODO: What to put here?
+The search interface can be found [here]({{glossary.sites.search.url}}).
 
 ### Download the data
 
