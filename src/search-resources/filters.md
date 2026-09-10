@@ -44,8 +44,7 @@ Enter one UEI or EIN per line.
 
 The FAC searches for all of the UEIs or EINS you enter; the system will ignore any that are incorrect.
 
-<!-- TODO: A single audit? -->
-> **Example**: If you enter only `RHVRCYWNTFX3`, the system will return a single audit for Clinton County. If you add a second line, and enter `UVLVR8CN2FM4`, the system will return two results, one for Clinton County and one for Santa Cruz County.
+> **Example**: If you enter only `RHVRCYWNTFX3`, the system will return only audits for Clinton County. If you add a second line, and enter `UVLVR8CN2FM4`, the system will return results for both Clinton County and Santa Cruz County.
 
 
 ## <a name=assistance-listing-number-alncfda></a>Assistance Listing Number (ALN/CFDA)
