@@ -19,8 +19,8 @@
   "author": "",
   "license": "CC0",
   "devDependencies": {
-    "@uswds/compile": "1.2.2",
-    "@uswds/uswds": "3.12.0",
+    "@uswds/compile": "^1.2.2",
+    "@uswds/uswds": "^3.12.0",
     "dotenv": "17.4.2",
     "eleventy-plugin-toc": "1.1.5",
     "js-yaml": "5.4.1",
