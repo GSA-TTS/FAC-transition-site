@@ -29,14 +29,17 @@ eleventyNavigation:
     <li>
       {{ listingLink(config.baseUrl + "analytics/oversight-summaries/", "Oversight Summaries") }}
     </li>
-    <li>
+    {# <li>
       {{ listingLink(config.baseUrl + "analytics/aln-search/", "ALN Search") }}
-    </li>
+    </li> #}
     <li>
       {{ listingLink(config.baseUrl + "analytics/findings/", "Findings") }}
     </li>
-        <li>
+    {# <li>
       {{ listingLink(config.baseUrl + "analytics/passthrough/", "Passthrough Findings Count") }}
+    </li> #}
+    <li>
+      {{ listingLink(config.baseUrl + "analytics/text-search/", "Text Search") }}
     </li>
   </ul>
 
@@ -48,7 +51,7 @@ eleventyNavigation:
     for instructions.
   </p>
 
-<p>
+  <p>
   Not sure what a term means? Visit the
   <a href="{{ config.baseUrl }}audit-resources/glossary/">FAC Glossary</a>
   for definitions of common audit, reporting, and federal award terminology.
