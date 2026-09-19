@@ -6,10 +6,8 @@ navigation:
     - text: Audit search
       id: search
       links:
-        - text: Basic search
+        - text: Search
           href: 'https://app.fac.gov/dissemination/search/'
-        - text: Advanced search
-          href: 'https://app.fac.gov/dissemination/search/advanced'
         - text: Tribal audit search
           href: 'tribal'
         - text: Search resources
