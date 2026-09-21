@@ -19,7 +19,14 @@ eleventyComputed:
 
 # Searching Tribal audit submissions
 
-Tribal entities have the option to suppress parts of their single audit report data from our public search results. When a Tribal entity exercises this option, only Federal employees with approved access can search and download this protected information.
+Tribal entities have the option to suppress certain parts of their single audit report data from public access. When a Tribal entity exercises this option, the following information is not available through the FAC's public search:
+
+- Notes to the Schedule of Expenditures of Federal Awards (SEFA)
+- Audit finding text
+- Corrective action plan text
+- The audit report PDF
+
+Other information from the submission remains publicly available and will appear in a regular FAC search. Federal employees with approved access can view and download the suppressed information.
 
 If you are a Federal employee who needs access to Tribal data via our [web search](https://app.fac.gov/dissemination/search/), please contact your agency's National Single Audit Coordinator (NSAC) or Key Single Audit Management Liaison (KSAML) and ask them to email their written approval to [*support@fac-gov.zendesk.com*](mailto:support@fac-gov.zendesk.com). Once we’ve received their confirmation we will add you to the list of approved users.
 
