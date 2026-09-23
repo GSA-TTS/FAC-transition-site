@@ -69,3 +69,18 @@ curl -s -X "GET" \
 ```
 
 These are examples of how to use tools like `curl` and `jq` to build automations against the FAC API. You can also use other coding languages, like Java, Python, or even Excel macros.
+
+## Using `DEMO_KEY` for API requests
+
+The FAC API uses API keys provided through [api.data.gov](https://api.data.gov/). For initial testing and exploration, api.data.gov provides a shared public key called `DEMO_KEY`.
+
+`DEMO_KEY` is intentionally published for demonstration purposes. It is not a personal API credential and does not need to be kept secret.
+
+Because `DEMO_KEY` is shared, it has much lower request limits than an individual api.data.gov key:
+
+* 30 requests per IP address per hour
+* 50 requests per IP address per day
+
+`DEMO_KEY` is appropriate for testing a request or briefly exploring the public API. For regular API use, scripts, or applications, request your own free api.data.gov key and keep that key private.
+
+`DEMO_KEY` provides access only to publicly available FAC data. It does not provide access to suppressed Tribal audit information. Access to suppressed Tribal data requires separate Federal authorization and the Tribal API access process.
