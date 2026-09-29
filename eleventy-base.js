@@ -2,11 +2,18 @@
 const yaml = require('js-yaml');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-
+const markdownItAnchor = require("markdown-it-anchor");
 const md = require('markdown-it')({
-  html: false,
+  html: true,
   breaks: true,
   linkify: true,
+}).use(markdownItAnchor, {
+  slugify: (s) =>
+    s
+      .trim()
+      .toLowerCase()
+      .replace(/[^\w\s-]/g, '')
+      .replace(/\s+/g, '-')
 });
 
 /* FILTERS */
@@ -25,6 +32,8 @@ const hashCode = function (s) {
 
 function config(baseUrl) {
   return function (eleventyConfig) {
+    eleventyConfig.setLibrary("md", md);
+
     /* GLOBAL DATA */
     eleventyConfig.addGlobalData("baseUrl", baseUrl);
     /* PASSTHROUGH COPIES */
