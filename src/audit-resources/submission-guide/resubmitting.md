@@ -20,7 +20,7 @@ eleventyComputed:
         key: Resubmitting an audit
         parent: Audit submission resources
         order: 5
-        title: Resubmission Guide
+        title: Resubmitting an audit
 ---
 
 {% import "components/image_modal.njk" as image_modal with context %}
