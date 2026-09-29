@@ -34,7 +34,7 @@ Everyone involved in the audit process must have an account with [Login.gov](htt
 
 ## Your audit submissions
 
-Once logged in, you can create a new audit and see the status of audits currently in progress. You'll be able to view the status of all audits associated with your email address.
+Once logged in, you can create a new audit and see the status of audits currently in progress. You'll be able to view the status of all audits associated with your email address. If you need to make changes to an audit that has already been accepted by the FAC, see the [Resubmission Guide]({{ config.baseUrl }}audit-resources/submission-guide/resubmitting/).
 
 You can also delete any “In Progress” audits from this view by clicking on the trash can icon in the table. Anyone with access to an audit can delete it while it’s still in progress.
 
