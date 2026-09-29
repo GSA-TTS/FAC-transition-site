@@ -91,8 +91,8 @@ Reasons include:
 - Low-Risk Auditee Determination Errors
 - Audit Performed by an Auditor Not Meeting Professional Requirements
 
-<img class="cursor-pointer" src="{{config.baseUrl}}assets/img/walkthrough/resubmission-02-material-change.png" width=500 style="margin: 1em; border: 1px solid #555;" aria-controls="image-modal-walkthrough/resubmission-02-material-change.png" data-open-modal />
-{{ image_modal.modal('walkthrough/resubmission-02-material-change.png', 'assets/img/walkthrough/resubmission-02-material-change.png', 'A screenshot of the FAC resubmission form with the material change to the audit PDF option selected and the available material-change reasons displayed.') }}
+<img class="cursor-pointer" src="{{config.baseUrl}}assets/img/walkthrough/resubmission-03-nonmaterial-change.png" width=500 style="margin: 1em; border: 1px solid #555;" aria-controls="image-modal-walkthrough/resubmission-03-nonmaterial-change.png" data-open-modal />
+{{ image_modal.modal('walkthrough/resubmission-03-nonmaterial-change.png', 'assets/img/walkthrough/resubmission-03-nonmaterial-change.png', 'A screenshot of the FAC resubmission form with the material change to the audit PDF option selected and the available material-change reasons displayed.') }}
 
 ### Non-material changes to the PDF audit report
 
@@ -108,8 +108,8 @@ Reasons include:
 - Corrections to Listed Major Programs, Type A Threshold, or Low-Risk Auditee Status When Audit Conclusions and SF-SAC Are Correct
 - Immaterial SEFA and Federal Program Reporting Errors
 
-<img class="cursor-pointer" src="{{config.baseUrl}}assets/img/walkthrough/resubmission-03-nonmaterial-change.png" width=500 style="margin: 1em; border: 1px solid #555;" aria-controls="image-modal-walkthrough/resubmission-03-nonmaterial-change.png" data-open-modal />
-{{ image_modal.modal('walkthrough/resubmission-03-nonmaterial-change.png', 'assets/img/walkthrough/resubmission-03-nonmaterial-change.png', 'A screenshot of the FAC resubmission form with the non-material change to the audit PDF option selected and the available non-material-change reasons displayed.') }}
+<img class="cursor-pointer" src="{{config.baseUrl}}assets/img/walkthrough/resubmission-02-material-change.png" width=500 style="margin: 1em; border: 1px solid #555;" aria-controls="image-modal-walkthrough/resubmission-02-material-change.png" data-open-modal />
+{{ image_modal.modal('walkthrough/resubmission-02-material-change.png', 'assets/img/walkthrough/resubmission-02-material-change.png', 'A screenshot of the FAC resubmission form with the non-material change to the audit PDF option selected and the available non-material-change reasons displayed.') }}
 
 ### Modifications only to the SF-SAC
 
