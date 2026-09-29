@@ -6,11 +6,19 @@ import { load } from 'js-yaml';
 import pluginRss, { dateToRfc3339, dateToRfc822 } from "@11ty/eleventy-plugin-rss";
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import markdownIt from 'markdown-it';
+import markdownItAnchor from 'markdown-it-anchor';
 
 const md = markdownIt({
-  html: false,
+  html: true,
   breaks: true,
   linkify: true,
+}).use(markdownItAnchor, {
+  slugify: (s) =>
+    s
+      .trim()
+      .toLowerCase()
+      .replace(/[^\w\s-]/g, '')
+      .replace(/\s+/g, '-')
 });
 
 const hashCode = function (s) {
@@ -28,6 +36,8 @@ const hashCode = function (s) {
 
 function config(baseUrl) {
   return function (eleventyConfig) {
+    eleventyConfig.setLibrary("md", md);
+
     /* GLOBAL DATA */
     eleventyConfig.addGlobalData("baseUrl", baseUrl);
     eleventyConfig.addGlobalData('env', process.env);
