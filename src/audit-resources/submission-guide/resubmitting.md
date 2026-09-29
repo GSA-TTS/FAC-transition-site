@@ -17,7 +17,7 @@ subnav:
     href: '#frequently-asked-questions'
 eleventyComputed:
     eleventyNavigation:
-        key: Resubmission Guide
+        key: Resubmitting an audit
         parent: Audit submission resources
         order: 5
         title: Resubmission Guide
