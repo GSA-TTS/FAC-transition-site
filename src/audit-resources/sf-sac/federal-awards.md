@@ -6,6 +6,10 @@ meta:
   description: "Follow these step-by-step instructions for completing the first section of the SF-SAC, the Federal awards workbook."
 workbook:
   name: "federal-awards-workbook"
+eleventyComputed:
+  eleventyNavigation:
+    key: Federal awards
+    parent: SF-SAC workbooks
 ---
 
 # SF-SAC Section 1: Federal awards
@@ -28,22 +32,26 @@ This field is auto-generated for you as you complete the workbook and can’t be
 
 ### Column B: Federal Agency Prefix
 
-Enter the first two digits of the agency's Assistance Listing Number (ALN). This was formerly called the CFDA. To find an agency's ALN, search [SAM.gov](https://sam.gov/content/assistance-listings).
+Enter the first two digits of the agency's Assistance Listing Number (ALN). This was formerly called the CFDA. To find an agency's ALN, search [SAM.gov](https://sam.gov/assistance-listings).
 
 This field can't be left blank.
 
-### Column C: ALN (formerly CFDA) Three Digit Extension
+### Column C: Assistance Listing Number (ALN, formerly CFDA) Three-Character Extension
+Enter the last three characters of the agency's ALN. If no program name pre-populates in the Column E dropdown, you should verify that your ALN is correct as entered. (NOTE: Recently added ALNs may not yet appear in the workbook.)
 
-Enter the last three digits of the agency's ALN.
-- For programs with no ALN or if the ALN is Unknown, enter a "U" followed by a two-digit number (e.g. U12) to identify one or more Federal award lines that form the program.
-  - If the ALN is Unknown, column D can't be blank.
+- To verify an ALN, search [SAM.gov](https://sam.gov/assistance-listings) using the ALN or federal program name. Review the search result to confirm that the Assistance Listing ID and program name match the federal program associated with your award. If you are unsure which ALN applies to your award, contact the federal awarding agency for assistance.
 
-- If the Federal program is part of the Research and Development (R&D) cluster and the three-digit ALN extension is unknown, enter "RD".
-  - If the ALN is Unknown, column D can't be blank.
+- For programs with no ALN or if the ALN is Unknown, you should search [SAM.gov](https://sam.gov/assistance-listings) for the ALN corresponding to the federal program. If it is not found, enter a "U" followed by a two-digit number (e.g. U12) to identify one or more Federal award lines that form the program.
+  - If including a "U" in the ALN extension, then column D can't be blank.
 
-- If the Federal program is part of the R&D cluster and the ALN Three-Digit Extension is known, enter the ALN extension.
+- If the Federal program is part of the Research and Development (R&D) cluster and the three-character ALN extension is unknown, enter "RD".
+  - If including "RD" in the ALN extension, then column D can't be blank.
+
+- If the Federal program is part of an R&D cluster and the ALN three-character extension is known, enter the ALN three-character extension.
 
 This field can't be left blank.
+
+
 
 ### Column D: Additional Award Identification
 
@@ -70,7 +78,7 @@ This field can't be left blank.
 
 Enter the amount of expenditures for each Federal award, as defined in [2 CFR 200.502](https://www.ecfr.gov/current/title-2/section-200.502). Round the amount to the nearest whole dollar.
 
-If you have a negative expenditure, enter it as “-123.45”.
+If you have a negative expenditure, enter it as “-123”.
 
 This field can't be left blank.
 
@@ -120,43 +128,43 @@ If the outstanding loan balance is not applicable, enter "N/A". For example, som
 
 If the award isn't a loan or loan guarantee (column L is “N”), leave this field blank. For more information on loan and loan guarantees, refer to [2 CFR 200.502(b)](https://www.ecfr.gov/current/title-2/part-200/section-200.502#p-200.502(b)).
 
-### Column N: Direct Award
+### Column N: Direct Award [Y/N]
 
-Select "Y" if the award came directly from a Federal awarding agency.  
+Select "Y" if a Federal awarding agency provided the award directly to you (the recipient).  
 
-If it didn't come directly from a Federal awarding agency, select "N" and complete column O.
+If a Federal awarding agency did not provide the Federal award directly to you (e.g., you received the award from a state government, local government, university, etc.), select "N" and complete column O.  Selecting “N” indicates this funding is an indirect award (not provided directly by a Federal awarding agency).
 
 This field can't be left blank.
 
-### Column O: If no (Direct Award), Name of Passthrough Entity
+### Column O: Name of Pass-through Entity for Indirect Award
 
-If column N is "N". this field can't be left blank. You must enter the name of your pass-through entity per [2 CFR 200.510(b)(2)](https://www.ecfr.gov/current/title-2/part-200/section-200.510#p-200.510(b)(2)).
+If column N is “N”, enter the name of the pass-through entity that provided you the (indirect) award, per 2 CFR 200.510(b)(2). If column N is "N" this field can't be left blank.
 
 If column N is "Y", you must leave this field blank.
 
-### Column P: If no (Direct Award), Identifying Number Assigned by the Pass-through Entity, if assigned
-
-If the award didn't come directly from a Federal awarding agency, enter the identifying number assigned by the pass-through entity.
+### Column P: Identifying Number Assigned by Pass-through Entity for Indirect Award, if assigned
+Enter the identifying number assigned by the pass-through entity that provided the indirect award, per 2 CFR 200.510(b)(2).
 
 If there isn't an identifying number assigned by the pass-through entity, leave this field blank.
 
 This field can't be blank if Direct Award (column N) is “N”.
 
-### Column Q: Federal Award Passed Through to Subrecipients
+If column N is "Y", you must leave this field blank.
 
-Select "Y" if the auditee entity passed on the Federal award to a subrecpient and complete column R.
+### Column Q: Funding provided to Subrecipients [Y/N]
 
-If the auditee entity didn’t pass on the Federal award to a subrecpient, select "N".
+Select "Y" if you provided all or a portion of the award to another entity (this is a subrecipient), and complete column R.
 
-Direct awards transferred within departments of the auditee entity are not considered passthrough funds.
+If you did not provide all or a portion of the award to another entity, select "N".
+
+Awards transferred between your departments (inside your entity) are not considered subawards and you should select “N”.
 
 This field can’t be left blank.
 
-### Column R: If yes (Passed Through), Amount Passed Through to Subrecipients
+### Column R: Amount Provided to Subrecipients
+If you provide all or a portion of the award to another entity, enter the amount provided to subrecipients, rounding to the nearest whole dollar, as required by  [2 CFR 200.510(b)(4)](https://www.ecfr.gov/current/title-2/part-200/section-200.510#p-200.510(b)(4)).
 
-Enter the amount passed through to the subrecipient, rounding to the nearest whole dollar, as required by [2 CFR 200.510(b)(4)](https://www.ecfr.gov/current/title-2/part-200/section-200.510#p-200.510(b)(4)).
-
-If Federal Award Passed Through (column Q) is “N”, leave this field blank.
+If column Q is “N”, leave this field blank.
 
 ### Column S: Major Program (MP)
 

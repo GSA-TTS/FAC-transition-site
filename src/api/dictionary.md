@@ -23,6 +23,7 @@ endpoints:
   - secondary_auditors
   - additional_ueis
   - additional_eins
+  - resubmission
 formerly:
   - gen
   - cfda
@@ -34,6 +35,7 @@ formerly:
   - cpas
   - ueis
   - eins
+  - ____
 ---
 
 # Data dictionary

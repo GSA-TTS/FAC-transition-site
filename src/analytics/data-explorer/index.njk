@@ -1,0 +1,14 @@
+---
+layout: home.njk
+title: DEMO - Data Explorer
+meta:
+  name: Metabase Data Explorer
+  description: Embedded Metabase data explorer.
+eleventyNavigation:
+  key: Data Explorer
+  parent: FAC Analytics
+---
+{% from "macros/analytics_dashboard.njk" import dashboardFrame %}
+
+{{ dashboardFrame(env.METABASE_HOST_URL + "/" + env.METABASE_TOKEN_DATA_EXPLORER) }}
+

@@ -1,5 +1,5 @@
 ---
-tags: resources, contact
+tags: resources-contact
 header: Helpdesk
 link: https://support.fac.gov/hc/en-us/requests/new
 link_text: Contact FAC Helpdesk

@@ -6,6 +6,10 @@ meta:
   description: "Follow these step-by-step instructions for completing SF-SAC Section 3: Federal awards audit findings."
 workbook:
   name: "federal-awards-audit-findings-workbook"
+eleventyComputed:
+  eleventyNavigation:
+    key: Audit findings
+    parent: SF-SAC workbooks
 ---
 
 # SF-SAC Section 3: Federal awards audit findings
@@ -23,11 +27,11 @@ Enter the auditee UEI on the coversheet before completing the Form tab. Make sur
 For each finding, all columns must be completed.
 ### Column A: Award Reference
 
-Enter the award reference number as listed in SF-SAC Section 1: Federal Awards. Award references must be formatted “AWARD-####”.
+Enter the award reference number as listed in SF-SAC Section 1: Federal Awards. Award references must be formatted “AWARD-#####”.
 
 ### Column B: Audit Finding Reference Number
 
-Enter the audit finding reference number as listed in SF-SAC Section 1: Federal Awards.
+Enter the audit finding reference number as listed in the audit report.
 
 ### Column C: Type(s) of Compliance Requirement(s)
 
@@ -69,7 +73,7 @@ If column D is “Y”, this field must be “N.”
 
 Select "Y" if the auditor identified an audit finding as a Material Weakness in the audit report PDF. 
 
-If not, select "N".
+If not, select "N". If this field is "Y", column G (Significant Deficiency) must be "N", because a finding cannot be classified as both a Material Weakness and a Significant Deficiency.
 
 For more on material weaknesses, review the Internal Control section of the [compliance supplements]({{ config.baseUrl }}compliance) provided by the Office of Management and Budget.
 
@@ -77,13 +81,13 @@ For more on material weaknesses, review the Internal Control section of the [com
 
 Select "Y" if the auditor identified an audit finding as a Significant Deficiency in the audit report PDF. 
 
-If not, select "N".
+If not, select "N". If this field is "Y", column F (Material Weakness) must be "N", because a finding cannot be classified as both a Significant Deficiency and a Material Weakness.
 
 For more on significant deficiencies, review the Internal Control section of the [compliance supplements]({{ config.baseUrl }}compliance) provided by the Office of Management and Budget.
 
 ### Column H: Other Findings
 
-Select "Y" if Modified Opinion (column D), Other Matters (column E), Material Weakness (column F), and Significant Deficiency (collumn G) are all marked "N". 
+Select "Y" if Modified Opinion (column D), Other Matters (column E), Material Weakness (column F), and Significant Deficiency (column G) are all marked "N". 
 
 Select "N" if any of these fields are marked "Y".
 

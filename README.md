@@ -108,6 +108,18 @@ Required Node packages are defined in `package.json`. To update a package:
 6. Verify the site builds and serves correctly with `npm run start`
 7. Commit _both_ `package.json` and `package-lock.json`
 
+### Environment variables
+
+Environment variables are pulled from a `.env` on startup. They are then added to a global `env` object. They can be accessed with `{{ env.VARIABLE_NAME }}` in templates and `process.env.VARIABLE_NAME` in JavaScript.
+
+No environment variables are _required_ to run the site locally. Metabase access requires a base URL and the two relevant dashboard tokens. For example:
+
+```.env
+METABASE_HOST_URL="https://example.com/public/dashboard"
+METABASE_TOKEN_DASHBOARDS="UUID"
+METABASE_TOKEN_DATA_EXPLORER="UUID"
+```
+
 # Link checking
 
 BLC seems to be a reasonable link checker. Install via

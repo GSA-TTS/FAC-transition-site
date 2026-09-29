@@ -1,6 +1,7 @@
 Census,GSAFAC,Type,Column Reference
 AUDITYEAR + DBKEY,report_id,TEXT,gen.report_id
 AUDITYEAR,audit_year,TEXT,gen.audit_year
+____,General.auditee_uei,TEXT,"gen.auditee_uei"
 FACACCEPTEDDATE,fac_accepted_date,DATE,gen.fac_accepted_date
 TYPEOFENTITY,entity_type,TEXT,gen.entity_type
 FYSTARTDATE,fy_start_date,DATE,gen.fy_start_date
@@ -26,6 +27,8 @@ CPASTATE,auditor_state,TEXT,gen.auditor_state
 CPAZIPCODE,auditor_zip,TEXT,gen.auditor_zip
 CPACONTACT,auditor_contact_name,TEXT,gen.auditor_contact_name
 CPATITLE,auditor_contact_title,TEXT,gen.auditor_contact_title
+____,auditor_certify_name,TEXT,gen.auditor_certify_name
+____,auditor_certify_title,TEXT,gen.auditor_certify_title
 CPAPHONE,auditor_phone,TEXT,gen.auditor_phone
 CPAEMAIL,auditor_email,TEXT,gen.auditor_email
 CPADATESIGNED,auditor_certified_date,DATE,gen.auditor_certified_date
@@ -42,6 +45,7 @@ LOWRISK,is_low_risk_auditee,BOOLEAN,gen.is_low_risk_auditee
 TOTFEDEXPEND,total_amount_expended,BIGINT,gen.total_amount_expended
 AUDITOR_EIN,auditor_ein,BIGINT,gen.auditor_ein
 FACACCEPTEDDATE,fac_accepted_date,DATE,gen.fac_accepted_date
+____,submitted_date,DATE,gen.submitted_date
 CPAFOREIGN,auditor_foreign_address,TEXT,gen.auditor_foreign_address
 CPACOUNTRY,auditor_country,TEXT,gen.auditor_country
 EUI,auditee_uei,TEXT,gen.auditee_uei
@@ -57,4 +61,6 @@ TYPE_AUDITCODE,type_audit_code,TEXT,gen.type_audit_code
 SUPPRESSION_CODE,is_public,BOOLEAN,gen.is_public
 ____,ready_for_certification_date,DATE,Date auditor/auditee marked audit as ready for certification
 ____,data_source,TEXT,"GSAFAC" or "CENSUS"
+____,resubmission_version,BIGINT,gen.resubmission_version
+____,is_multiple_eins,BOOLEAN,gen.is_multiple_eins
 ____,is_secondary_auditors,TEXT,If secondary auditors data included

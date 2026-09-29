@@ -1,0 +1,59 @@
+---
+layout: home.njk
+title: DEMO - Metabase Embedding
+meta:
+  name: Metabase Analytics Embedding
+  description: A demonstration page for embedding a metabase dashboard.
+eleventyNavigation:
+  key: FAC Analytics
+  parent: Home
+---
+
+{% from "macros/analytics_list.njk" import listingLink %}
+
+<div class="margin-y-4" style="width: 50%;">
+  <h1>FAC Analytics</h1>
+
+  <ul
+    style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:6px;"
+  >
+    <li>
+      {{ listingLink(config.baseUrl + "analytics/data-explorer/", "Data Explorer") }}
+    </li>
+    <li>
+      {{ listingLink(config.baseUrl + "analytics/yearly-trends/", "Yearly Trends") }}
+    </li>
+    <li>
+      {{ listingLink(config.baseUrl + "analytics/state-graphs/", "State Graphs") }}
+    </li>
+    <li>
+      {{ listingLink(config.baseUrl + "analytics/oversight-summaries/", "Oversight Summaries") }}
+    </li>
+    {# <li>
+      {{ listingLink(config.baseUrl + "analytics/aln-search/", "ALN Search") }}
+    </li> #}
+    <li>
+      {{ listingLink(config.baseUrl + "analytics/findings/", "Findings") }}
+    </li>
+    {# <li>
+      {{ listingLink(config.baseUrl + "analytics/passthrough/", "Passthrough Findings Count") }}
+    </li> #}
+    <li>
+      {{ listingLink(config.baseUrl + "analytics/text-search/", "Text Search") }}
+    </li>
+  </ul>
+
+  <p class="margin-top-3">
+    View the
+    <a href="{{ config.baseUrl }}assets/metabase/FAC_Metabase_User_Guide.pdf" target="_blank" rel="noopener">
+      FAC Metabase User Guide
+    </a>
+    for instructions.
+  </p>
+
+  <p>
+  Not sure what a term means? Visit the
+  <a href="{{ config.baseUrl }}audit-resources/glossary/">FAC Glossary</a>
+  for definitions of common audit, reporting, and federal award terminology.
+</p>
+</div>

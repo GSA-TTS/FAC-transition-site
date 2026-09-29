@@ -1,6 +1,8 @@
 Census,GSAFAC,Type,Column Reference
-AUDITYEAR + DBKEY,General.report_id,TEXT,"gen.report_id,"
+AUDITYEAR + DBKEY,General.report_id,TEXT,"gen.report_id"
 AUDITYEAR,General.audit_year,TEXT,gen.audit_year
+____,General.auditee_uei,TEXT,"gen.auditee_uei"
+____,General.fac_accepted_date,DATE,"gen.fac_accepted_date"
 ELECAUDITSID,FederalAward.award_reference,TEXT,finding.award_reference
 FINDINGSREFNUMS,reference_number,TEXT,finding.reference_number
 TYPEREQUIREMENT,type_requirement,TEXT,finding.type_requirement

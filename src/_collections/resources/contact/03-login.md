@@ -1,5 +1,5 @@
 ---
-tags: resources, contact
+tags: resources-contact
 header: Login.gov
 link: https://www.login.gov/help/
 link_text: Contact Login.gov

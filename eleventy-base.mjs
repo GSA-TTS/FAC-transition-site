@@ -1,15 +1,18 @@
-/* MODULES */
-const yaml = require('js-yaml');
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+/* ENV */
+import 'dotenv/config';
 
-const md = require('markdown-it')({
+/* MODULES */
+import { load } from 'js-yaml';
+import pluginRss, { dateToRfc3339, dateToRfc822 } from "@11ty/eleventy-plugin-rss";
+import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
+import markdownIt from 'markdown-it';
+
+const md = markdownIt({
   html: false,
   breaks: true,
   linkify: true,
 });
 
-/* FILTERS */
 const hashCode = function (s) {
   var hash = 0,
     i,
@@ -27,12 +30,14 @@ function config(baseUrl) {
   return function (eleventyConfig) {
     /* GLOBAL DATA */
     eleventyConfig.addGlobalData("baseUrl", baseUrl);
+    eleventyConfig.addGlobalData('env', process.env);
+
     /* PASSTHROUGH COPIES */
     eleventyConfig.addPassthroughCopy('assets');
     eleventyConfig.addPassthroughCopy('favicon.ico');
     eleventyConfig.addPassthroughCopy('robots.txt');
     /* DATA EXTENSIONS */
-    eleventyConfig.addDataExtension('yaml', (contents) => yaml.load(contents));
+    eleventyConfig.addDataExtension('yaml', (contents) => load(contents));
     /* PLUGINS */
     eleventyConfig.addPlugin(pluginRss);
     /* FILTERS */
@@ -48,8 +53,8 @@ function config(baseUrl) {
         return url;
       }
     });
-    eleventyConfig.addLiquidFilter("dateToRfc3339", pluginRss.dateToRfc3339);
-    eleventyConfig.addLiquidFilter("dateToRfc822", pluginRss.dateToRfc822);
+    eleventyConfig.addLiquidFilter("dateToRfc3339", dateToRfc3339);
+    eleventyConfig.addLiquidFilter("dateToRfc822", dateToRfc822);
 
     // Take Eleventy's default "YY-MM-DD" to "Month DD, YYYY"
     // Usage: {{ dateString | friendlydate }}
@@ -96,6 +101,20 @@ function config(baseUrl) {
       return filtered;
     });
 
+    // Used for a previous iteration on Metabase embeds. May be useful for gatekeeping certain dashboards.
+    // eleventyConfig.addShortcode("iFrameUrl", function () {
+    //   const METABASE_SITE_URL = "https://metabase-sandbox.app.cloud.gov";
+
+    //   const payload = {
+    //     resource: { dashboard: 3 },
+    //     params: {},
+    //   };
+    //   const token = jwt.sign(payload, METABASE_SECRET_KEY);
+
+    //   return METABASE_SITE_URL + "/embed/dashboard/" + token +
+    //   "#bordered=true&titled=true";
+    // });
+
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
     return {
@@ -111,4 +130,4 @@ function config(baseUrl) {
   }
 };
 
-module.exports = config;
+export default config;

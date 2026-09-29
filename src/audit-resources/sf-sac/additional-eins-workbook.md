@@ -6,6 +6,10 @@ meta:
   description: "Follow these step-by-step instructions for completing SF-SAC Section 8: Additional EINs."
 workbook:
   name: "additional-eins-workbook"
+eleventyComputed:
+  eleventyNavigation:
+    key: Additional EINs
+    parent: SF-SAC workbooks
 ---
 
 # SF-SAC Section 8: Additional EINs

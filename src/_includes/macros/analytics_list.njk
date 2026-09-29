@@ -1,0 +1,5 @@
+{% macro listingLink(href, label, class="listing-link", arrow="→") %}
+<a href="{{ href }}" class="{{ class }}">
+  {{ label }} <span>{{ arrow }}</span>
+</a>
+{% endmacro %}

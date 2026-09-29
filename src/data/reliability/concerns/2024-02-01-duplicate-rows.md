@@ -28,7 +28,7 @@ In February of 2024, we discovered a bug where, if users pressed the "submit" bu
 
 ### Example
 
-Some records in the `federal_awards` and `findings` tables can be replicated because of this bug. For example, report [2023-06-GSAFAC-0000020785]() encountered this bug. As a result, its award rows were duplicated. Below is a subset of rows from the `federal_awards` data table demonstrating how a set of awards were listed twice.
+Some records in the `federal_awards` and `findings` tables can be replicated because of this bug. For example, report [2023-06-GSAFAC-0000020785](https://app.fac.gov/dissemination/summary/2023-06-GSAFAC-0000020785) encountered this bug. As a result, its award rows were duplicated. Below is a subset of rows from the `federal_awards` data table demonstrating how a set of awards were listed twice.
 
 | <div style="width:220px">report_id</div> | reference | prefix | extension |
 | -- | -- | -- | -- |
@@ -53,6 +53,3 @@ Searches for audits are not impacted, but calculations over the awards may yield
 ## Possible resolution
 
 Remove the records from dissemination that contain this error, and re-disseminate the original record. This will yield correct data in the public-facing record.
-
-
-

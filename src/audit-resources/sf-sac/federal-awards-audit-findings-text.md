@@ -6,6 +6,10 @@ meta:
   description: "Follow these step-by-step instructions for completing SF-SAC Section 4: Federal awards audit findings text."
 workbook:
   name: "audit-findings-text-workbook"
+eleventyComputed:
+  eleventyNavigation:
+    key: Findings text
+    parent: SF-SAC workbooks
 ---
 
 # SF-SAC Section 4: Federal awards audit findings text
