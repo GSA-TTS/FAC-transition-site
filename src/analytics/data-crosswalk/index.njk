@@ -2,13 +2,13 @@
 layout: home.njk
 title: DEMO - Dashboards
 meta:
-  name: Metabase Passthroughs
+  name: Metabase Data Crosswalk
   description: Embedded Metabase dashboards.
 eleventyNavigation:
-  key: Passthrough
+  key: Data Crosswalk
   parent: FAC Analytics
 ---
 {% from "macros/analytics_dashboard.njk" import dashboardFrame %}
 
-{{ dashboardFrame(env.METABASE_HOST_URL + "/" + env.METABASE_TOKEN_PASSTHROUGH) }}
+{{ dashboardFrame(env.METABASE_HOST_URL + "/" + env.METABASE_TOKEN_DATA_CROSSWALK) }}
 
