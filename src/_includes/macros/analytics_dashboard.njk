@@ -1,22 +1,31 @@
-{% macro dashboardFrame(src) %}
-{% if src %}
-<iframe class="margin-top-8 margin-bottom-8"
-  src="{{ src }}"
-  frameborder="0"
-  allowtransparency
-  style="
-    width: 90vw;
-    height: 960px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    display: block;
-  ">
-</iframe>
+{#
+  Embeds a Metabase guest dashboard, given its ID.
+  Note that moving/recreating a dashboard will break these IDs. Entity ID based referencing requires PRO.
+  Metabase Docs: https://www.metabase.com/docs/latest/embedding/guest-embedding
+
+  Example:
+    {% from "macros/analytics_dashboard.njk" import dashboardFrame with context %}
+    {{ dashboardFrame(dahsboardID) }}
+#}
+{% macro dashboardFrame(dashboardId, withTitle=true, withDownloads=true) %}
+{% if env.METABASE_HOST_URL and dashboardId %}
+  <script defer src="{{ env.METABASE_HOST_URL }}/app/embed.js"></script>
+  <script>
+    window.metabaseConfig = {
+      theme: { preset: "light" },
+      isGuest: true,
+      instanceUrl: "{{ env.METABASE_HOST_URL }}"
+    };
+  </script>
+
+  <metabase-dashboard
+    token="{% metabaseToken dashboardId %}"
+    with-title="{{ 'true' if withTitle else 'false' }}"
+    with-downloads="{{ 'true' if withDownloads else 'false' }}"></metabase-dashboard>
 {% else %}
   <div class="margin-y-8">
     <h2>Service Unavailable</h2>
-    <p>Metabase host is not configured. Please try again later.</p>
+    <p>There was an error configuring Metabase. Please try again later.</p>
   </div>
 {% endif %}
 {% endmacro %}

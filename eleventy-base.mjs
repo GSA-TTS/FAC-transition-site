@@ -5,6 +5,7 @@ import 'dotenv/config';
 import { load } from 'js-yaml';
 import pluginRss, { dateToRfc3339, dateToRfc822 } from "@11ty/eleventy-plugin-rss";
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
+import jwt from 'jsonwebtoken';
 import markdownIt from 'markdown-it';
 import markdownItAnchor from 'markdown-it-anchor';
 
@@ -111,19 +112,28 @@ function config(baseUrl) {
       return filtered;
     });
 
-    // Used for a previous iteration on Metabase embeds. May be useful for gatekeeping certain dashboards.
-    // eleventyConfig.addShortcode("iFrameUrl", function () {
-    //   const METABASE_SITE_URL = "https://metabase-sandbox.app.cloud.gov";
-
-    //   const payload = {
-    //     resource: { dashboard: 3 },
-    //     params: {},
-    //   };
-    //   const token = jwt.sign(payload, METABASE_SECRET_KEY);
-
-    //   return METABASE_SITE_URL + "/embed/dashboard/" + token +
-    //   "#bordered=true&titled=true";
-    // });
+    // Sign a Metabase guest-embedding JWT at build time, such that the token never reaches the browser.
+    // This token expires. Since it's generated on build rather than on site load or on request, we want it to last a long time.
+    // I'm defaulting to 180 days. We'll drop it if/when we can rebuild more often, or opt to generate these on load/request.
+    // Ex. {% metabaseToken 1 %}
+    eleventyConfig.addShortcode("metabaseToken", (dashboardId) => {
+      const secret = process.env.METABASE_SECRET_KEY;
+      if (!secret) {
+        console.warn("METABASE_SECRET_KEY is not set; skipping Metabase token.");
+        return "";
+      }
+      // 180 days in seconds
+      const ttl = Number(process.env.METABASE_TOKEN_TTL) || 60 * 60 * 24 * 180;
+      return jwt.sign(
+        {
+          resource: { dashboard: Number(dashboardId) },
+          params: {},
+          // now() in seconds plus TTL
+          exp: Math.round(Date.now() / 1000) + ttl,
+        },
+        secret
+      );
+    });
 
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
