@@ -2,13 +2,12 @@
 layout: home.njk
 title: DEMO - Dashboards
 meta:
-  name: Metabase Dashboards
+  name: Metabase Passthroughs
   description: Embedded Metabase dashboards.
 eleventyNavigation:
-  key: Passthrough
+  key: Passthrough & Subrecipient Findings
   parent: FAC Analytics
 ---
-{% from "macros/analytics_dashboard.njk" import dashboardFrame %}
+{% from "macros/analytics_dashboard.njk" import dashboardFrame with context %}
 
-{{ dashboardFrame(env.METABASE_HOST_URL + "/" + env.METABASE_TOKEN_PASSTHROUGH) }}
-
+{{ dashboardFrame(9) }}

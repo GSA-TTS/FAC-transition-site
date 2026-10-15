@@ -1,0 +1,13 @@
+---
+layout: home.njk
+title: DEMO - Dashboards
+meta:
+  name: Metabase Repeat Findings
+  description: Embedded Metabase dashboards.
+eleventyNavigation:
+  key: Repeat Findings
+  parent: FAC Analytics
+---
+{% from "macros/analytics_dashboard.njk" import dashboardFrame with context %}
+
+{{ dashboardFrame(11) }}
