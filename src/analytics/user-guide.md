@@ -193,40 +193,40 @@ If you see a dashboard error or results that do not appear to match your filters
 
 ### How can I track repeat findings?
 
-Use **Repeat Findings**. First filter by ALN prefix, audit year, and optional state to find repeat findings. Then enter a Report ID, UEI, or EIN in the tracker to reconstruct the finding chain across years. The tracker uses EIN to connect older `GSA_MIGRATION` records with later UEI-based records.
+Use Repeat Findings. First filter by ALN prefix, audit year, and optional state to find repeat findings. Then enter a Report ID, UEI, or EIN in the tracker to reconstruct the finding chain across years. The tracker uses EIN to connect older `GSA_MIGRATION` records with later UEI-based records.
 
 ### How can I see findings tied to questioned costs?
 
-Use **Findings (Browse Findings)** and set **Questioned Costs = Yes** to isolate findings that report questioned costs.
+Use Findings (Browse Findings) and set Questioned Costs = Yes to isolate findings that report questioned costs.
 
 ### How can I analyze audit activity for a specific state?
 
-Use the **State** filter in **Data Explorer (Browse General)** to narrow the list of submissions. Use **State Graphs** to compare geographic patterns.
+Use the State filter in Data Explorer (Browse General) to narrow the list of submissions. Use State Graphs to compare geographic patterns.
 
 ### How can I research a specific entity, UEI, or EIN?
 
-Use **Data Explorer (Browse General)** for report-level details and **Data Crosswalks** for historical UEI/EIN relationships, entity-name changes, and additional identifiers.
+Use Data Explorer (Browse General) for report-level details and Data Crosswalks for historical UEI/EIN relationships, entity-name changes, and additional identifiers.
 
 ### How can I explore trends over time?
 
-Use **Yearly Trends** to compare audit submissions, federal award volume, and findings across audit years.
+Use Yearly Trends to compare audit submissions, federal award volume, and findings across audit years.
 
 ### How can I review findings by category?
 
-Use **Findings (Browse Findings)**. Apply a filter such as **Material Weakness = Yes** or **Significant Deficiency = Yes**.
+Use Findings (Browse Findings). Apply a filter such as Material Weakness = Yes or Significant Deficiency = Yes.
 
 ### How can I compare pass-through recipient and subrecipient findings by state?
 
-Use **Pass-Through Recipient and Subrecipient Findings**. Its two maps show the percentage of findings associated with reports containing each type of award activity. Select a state to see the corresponding finding details.
+Use Pass-Through Recipient and Subrecipient Findings. Its two maps show the percentage of findings associated with reports containing each type of award activity. Select a state to see the corresponding finding details.
 
 ### How can I find findings associated with a particular federal program (ALN)?
 
-Use **Findings (Browse Findings)**. Filter by ALN, agency prefix, or ALN extension to view program, auditee, finding, and auditor information.
+Use Findings (Browse Findings). Filter by ALN, agency prefix, or ALN extension to view program, auditee, finding, and auditor information.
 
 ### How can I search narrative text across FAC submissions?
 
-Use **Text Search**. Select the relevant narrative field—Findings Text, CAPs, SEFA Notes, Accounting Policies, or De Minimis Rate Explanations—and enter your search terms. Records must contain all entered terms.
+Use Text Search. Select the relevant narrative field—Findings Text, CAPs, SEFA Notes, Accounting Policies, or De Minimis Rate Explanations—and enter your search terms. Records must contain all entered terms.
 
 ### How can I review historical identifiers, including `GSA_MIGRATION` records?
 
-Use **Data Crosswalks**. Search by UEI or EIN to locate associated reports and historical identifier relationships, including older records whose UEI field contains `GSA_MIGRATION`.
+Use Data Crosswalks. Search by UEI or EIN to locate associated reports and historical identifier relationships, including older records whose UEI field contains `GSA_MIGRATION`.
