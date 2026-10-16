@@ -186,7 +186,8 @@ If you see a dashboard error or results that do not appear to match your filters
 2. Select **Apply** or **Update filter**, or press **Enter/Return**, as appropriate for that filter.
 3. Refresh the page.
 4. If the filter has a default value, remove it and manually re-enter the value. Some defaults can lead to stale searches.
-5. If the problem continues, submit a ticket to the **FAC Help Desk**.
+5. Try using more filters for your search: a search that is too broad can fail and return an error.
+6. If the problem continues, submit a ticket to the **FAC Help Desk**.
 
 ## Frequently asked questions
 
