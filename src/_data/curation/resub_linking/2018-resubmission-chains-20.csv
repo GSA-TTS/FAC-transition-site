@@ -1,0 +1,43 @@
+chain_index,report_id,audit_year,fac_accepted_date,auditee_uei,auditee_ein,auditee_email,auditee_name,auditee_state,prior_submission_status,prior_resubmission_meta,skipped
+0,2018-02-CENSUS-0000198461,2018,2018-07-02 00:00:00,GSA_MIGRATION,630814888,dtune@dalcormgt.com,mayfair towers corporation  062-eh051-np-l8,al,disseminated,,N
+0,2018-08-CENSUS-0000247701,2018,2018-11-15 00:00:00,GSA_MIGRATION,630814888,dtune@dalcormgt.com,mayfair towers corporation  062-eh051-np-l8,al,disseminated,,N
+1,2018-02-CENSUS-0000214004,2018,2018-07-10 00:00:00,GSA_MIGRATION,610734695,pdees@tescoproperties.com,"fifth street hi-rise, inc. dba j.o. blanton house ky36-l000-020",tn,disseminated,,N
+1,2018-10-CENSUS-0000248884,2018,2019-11-20 00:00:00,GSA_MIGRATION,610734695,pdees@tescoproperties.com,"fifth street hi-rise, inc. dba j.o. blanton house ky36-l000-020",tn,disseminated,,N
+2,2018-01-CENSUS-0000073816,2018,2018-08-03 00:00:00,GSA_MIGRATION,521020023,smayne@ecmhsp.org,east coast migrant head start project,nc,disseminated,,N
+2,2018-12-CENSUS-0000248410,2018,2019-06-26 00:00:00,GSA_MIGRATION,521020023,smayne@ecmhsp.org,east coast migrant head start project,nc,disseminated,,N
+3,2018-06-CENSUS-0000186015,2018,2018-09-20 00:00:00,GSA_MIGRATION,310936874,ncrauditteam@nationalchurchresidences.org,"ncr of sharpsburg, pa d/b/a sharpsburg towers 033-11097",oh,disseminated,,N
+3,2018-12-CENSUS-0000248045,2018,2019-03-19 00:00:00,GSA_MIGRATION,310936874,ncrauditteam@nationalchurchresidences.org,"ncr of sharpsburg, pa d/b/a sharpsburg towers 033-11097",oh,disseminated,,N
+4,2018-06-CENSUS-0000104387,2018,2018-09-27 00:00:00,GSA_MIGRATION,750957351,bfeaster@jacksonville-college.edu,jacksonville college,tx,disseminated,,N
+4,2018-12-CENSUS-0000248296,2018,2019-05-20 00:00:00,GSA_MIGRATION,750957351,bfeaster@jacksonville-college.edu,jacksonville college,tx,disseminated,,N
+5,2018-06-CENSUS-0000197562,2018,2018-10-02 00:00:00,GSA_MIGRATION,042254705,kotecha@asa.org,american student assistance,ma,disseminated,,N
+5,2018-12-CENSUS-0000248303,2018,2019-05-22 00:00:00,GSA_MIGRATION,042254705,kotecha@asa.org,american student assistance,ma,disseminated,,N
+6,2018-06-CENSUS-0000204974,2018,2018-10-09 00:00:00,GSA_MIGRATION,311499484,ncrauditteam@nationalchurchresidences.org,"ncr of denver, colorado d/b/a  aspen place 101-ee028-np-wah",oh,disseminated,,N
+6,2018-12-CENSUS-0000248010,2018,2019-03-08 00:00:00,GSA_MIGRATION,311499484,ncrauditteam@nationalchurchresidences.org,"ncr of denver, colorado d/b/a  aspen place 101-ee028-np-wah",oh,disseminated,,N
+7,2018-06-CENSUS-0000233040,2018,2018-10-11 00:00:00,GSA_MIGRATION,271218956,michelle.micka@sanfordhealth.org,sanford health,sd,disseminated,,N
+7,2018-12-CENSUS-0000248192,2018,2019-04-04 00:00:00,GSA_MIGRATION,271218956,michelle.micka@sanfordhealth.org,sanford health,sd,disseminated,,N
+8,2018-06-CENSUS-0000186208,2018,2018-10-27 00:00:00,GSA_MIGRATION,770418640,jcerna@edenhousing.org,charles apartments housing corporation  121-44128,ca,disseminated,,N
+8,2018-10-CENSUS-0000247964,2018,2019-02-21 00:00:00,GSA_MIGRATION,770418640,jcerna@edenhousing.org,charles apartments housing corporation  121-44128,ca,disseminated,,N
+9,2018-06-CENSUS-0000043479,2018,2018-11-05 00:00:00,GSA_MIGRATION,341399903,ncrauditteam@nationalchurchresidences.org,"st. paul's senior housing, inc. 042-11092",oh,disseminated,,N
+9,2018-10-CENSUS-0000247928,2018,2019-02-05 00:00:00,GSA_MIGRATION,341399903,ncrauditteam@nationalchurchresidences.org,"st. paul's senior housing, inc. 042-11092",oh,disseminated,,N
+10,2018-08-CENSUS-0000039303,2018,2018-11-15 00:00:00,GSA_MIGRATION,311070756,ncrauditteam@nationalchurchresidences.org,national church residences of new jersey d/b/a kinder towers 031-eh144,oh,disseminated,,N
+10,2018-12-CENSUS-0000248759,2018,2019-11-05 00:00:00,GSA_MIGRATION,311070756,ncrauditteam@nationalchurchresidences.org,national church residences of new jersey d/b/a kinder towers 031-eh144,oh,disseminated,,N
+11,2018-06-CENSUS-0000074226,2018,2018-11-15 00:00:00,GSA_MIGRATION,521130140,afleming@jrsa.org,"justice research and statistics association, inc.",dc,disseminated,,N
+11,2018-12-CENSUS-0000248259,2018,2019-05-01 00:00:00,GSA_MIGRATION,521130140,afleming@jrsa.org,"justice research and statistics association, inc.",dc,disseminated,,N
+12,2018-04-CENSUS-0000186833,2018,2018-11-27 00:00:00,GSA_MIGRATION,366006132,kwachtel@invillapark.com,village of villa park,il,disseminated,,N
+12,2018-12-CENSUS-0000248564,2018,2019-09-03 00:00:00,GSA_MIGRATION,366006132,kwachtel@invillapark.com,village of villa park,il,disseminated,,N
+13,2018-06-CENSUS-0000218438,2018,2018-12-12 00:00:00,GSA_MIGRATION,941747079,mpham@sjbcdc.org,sjb child development centers,ca,disseminated,,N
+13,2018-06-CENSUS-0000248058,2018,2019-03-21 00:00:00,GSA_MIGRATION,941747079,mpham@sjbcdc.org,sjb child development centers,ca,disseminated,,N
+14,2018-07-CENSUS-0000198076,2018,2019-02-05 00:00:00,GSA_MIGRATION,160918009,cburns@mvcaa.com,"mohawk valley community action agency, inc.",ny,disseminated,,N
+14,2018-12-CENSUS-0000248765,2018,2019-11-06 00:00:00,GSA_MIGRATION,160918009,cburns@mvcaa.com,"mohawk valley community action agency, inc.",ny,disseminated,,N
+15,2018-06-CENSUS-0000242582,2018,2019-03-28 00:00:00,GSA_MIGRATION,231744259,mflaherty@wbasd.k12.pa.us,wilkes barre area school district,pa,disseminated,,N
+15,2018-06-CENSUS-0000248467,2018,2019-07-16 00:00:00,GSA_MIGRATION,231744259,mflaherty@wbasd.k12.pa.us,wilkes barre area school district,pa,disseminated,,N
+16,2018-06-CENSUS-0000158301,2018,2019-03-28 00:00:00,GSA_MIGRATION,856000179,susie.martinez@taosschools.org,taos municipal schools,nm,disseminated,,N
+16,2018-06-CENSUS-0000248240,2018,2019-04-26 00:00:00,GSA_MIGRATION,856000179,susie.martinez@taosschools.org,taos municipal schools,nm,disseminated,,N
+17,2018-12-CENSUS-0000204271,2018,2019-09-30 00:00:00,GSA_MIGRATION,540703143,lallen@stauntonrha.org,staunton redevelopment and housing authority,va,disseminated,,N
+17,2018-12-CENSUS-0000248867,2018,2020-01-06 00:00:00,GSA_MIGRATION,540703143,lallen@stauntonrha.org,staunton redevelopment and housing authority,va,disseminated,,N
+18,2018-11-CENSUS-0000248745,2018,2019-11-20 00:00:00,GSA_MIGRATION,841548541,thershfeldt@cditeam.org,community development institute - head start,co,disseminated,,Y
+18,2018-10-CENSUS-0000248756,2018,2019-11-20 00:00:00,GSA_MIGRATION,841548541,thershfeldt@cditeam.org,community development institute - head start,co,disseminated,,Y
+18,2018-10-CENSUS-0000248757,2018,2019-11-20 00:00:00,GSA_MIGRATION,841548541,thershfeldt@cditeam.org,community development institute - head start,co,disseminated,,Y
+18,2018-05-CENSUS-0000248743,2018,2019-11-20 00:00:00,GSA_MIGRATION,841548541,thershfeldt@cditeam.org,community development institute - head start,co,disseminated,,Y
+19,2016-12-CENSUS-0000244335,2018,2020-11-10 00:00:00,GSA_MIGRATION,061088834,kimalee@faithassetmgt.com,"tuscan brotherhood homes ii, inc.",ct,disseminated,,Y
+19,2018-12-CENSUS-0000244335,2018,2020-11-10 00:00:00,GSA_MIGRATION,061088834,kimalee@faithassetmgt.com,"tuscan brotherhood homes ii, inc.",ct,disseminated,,Y

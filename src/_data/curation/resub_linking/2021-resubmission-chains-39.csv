@@ -1,0 +1,79 @@
+chain_index,report_id,audit_year,fac_accepted_date,auditee_uei,auditee_ein,auditee_email,auditee_name,auditee_state,prior_submission_status,prior_resubmission_meta,skipped
+0,2021-12-CENSUS-0000213605,2021,2023-09-21 00:00:00,GSA_MIGRATION,742555602,lromero@ephcc.org,el paso hispanic chamber of commerce,tx,disseminated,,N
+0,2021-12-GSAFAC-0000000597,2021,2023-10-23 22:27:03,SLZMSJCXWF29,742555602,lromero@ephcc.org,el paso hispanic chamber of commerce,tx,disseminated,,N
+1,2021-12-CENSUS-0000162431,2021,2022-09-28 00:00:00,GSA_MIGRATION,346000236,cindi.henry@belmontcountyohio.org,belmont county,oh,disseminated,,N
+1,2021-12-GSAFAC-0000001977,2021,2023-10-30 13:58:28,DRKNA8XARGU5,346000236,cindi.henry@belmontcountyohio.org,belmont county,oh,disseminated,,N
+2,2021-09-GSAFAC-0000004774,2021,2023-11-01 19:24:18,QHAZVMAW9175,826000243,rhi@cityofplummer.org,city of plummer,id,disseminated,,N
+2,2021-09-GSAFAC-0000040502,2021,2024-06-18 22:32:33,QHAZVMAW9175,826000243,rhi@cityofplummer.org,city of plummer,id,disseminated,,N
+3,2021-12-CENSUS-0000187704,2021,2022-09-29 00:00:00,GSA_MIGRATION,916001359,brandon.kirkwood@piercecountywa.gov,pierce county,wa,disseminated,,N
+3,2021-12-GSAFAC-0000009821,2021,2023-12-01 21:25:32,ZLQHKM7CHCF3,916001359,brandon.kirkwood@piercecountywa.gov,pierce county,wa,disseminated,,N
+4,2021-06-CENSUS-0000192304,2021,2023-08-12 00:00:00,GSA_MIGRATION,616000718,rnotton@boonecountyky.org,boone county fiscal court,ky,disseminated,,N
+4,2021-06-GSAFAC-0000017764,2021,2024-01-08 18:40:32,WFWZSDV1H194,616000718,rnotton@boonecountyky.org,boone county fiscal court,ky,disseminated,,N
+5,2021-06-CENSUS-0000148663,2021,2022-02-17 00:00:00,GSA_MIGRATION,386029206,jabeauch@nmu.edu,northern michigan university,mi,disseminated,,N
+5,2021-06-GSAFAC-0000010312,2021,2024-02-07 16:30:27,M6MUFMANCJC7,386029206,jabeauch@nmu.edu,northern michigan university,mi,disseminated,,N
+6,2021-06-CENSUS-0000246591,2021,2021-11-17 00:00:00,GSA_MIGRATION,042562646,shubacz@mves.org,"mystic valley elder services, inc.",ma,disseminated,,N
+6,2021-06-GSAFAC-0000020718,2021,2024-01-26 16:27:21,KLLCP8R5Q5F6,042562646,shubacz@mves.org,"mystic valley elder services, inc.",ma,disseminated,,N
+7,2021-12-GSAFAC-0000021032,2021,2024-01-31 16:22:58,NT2LVCK2AYP7,236003044,ksdoran@buckscounty.org,"county of bucks, pennsylvania",pa,disseminated,,N
+7,2021-12-GSAFAC-0000410119,2021,2026-03-21 00:38:54,NT2LVCK2AYP7,236003044,ksdoran@buckscounty.org,"county of bucks, pennsylvania",pa,disseminated,,N
+8,2021-09-CENSUS-0000186071,2021,2022-06-30 00:00:00,GSA_MIGRATION,746000756,michaelnunez@umcelpaso.org,el paso county hospital district d/b/a university medical center,tx,disseminated,,N
+8,2021-09-GSAFAC-0000024130,2021,2024-02-09 16:01:21,QPVTGH1TLF49,746000756,michaelnunez@umcelpaso.org,el paso county hospital district d/b/a university medical center,tx,disseminated,,N
+9,2021-12-CENSUS-0000258994,2021,2023-09-27 00:00:00,GSA_MIGRATION,454133644,jayb@hopeforprisoners.org,"hope for prisoners, inc.",nv,disseminated,,N
+9,2021-06-GSAFAC-0000000570,2021,2024-03-05 18:44:24,CJ5KB1UJU3A4,454133644,jayb@hopeforprisoners.org,"hope for prisoners, inc.",nv,disseminated,,N
+10,2021-12-GSAFAC-0000026321,2021,2024-02-22 23:01:26,KVU7N952WLU8,453337093,roberto@ecschicago.org,envision community services inc,il,disseminated,,N
+10,2021-12-GSAFAC-0000038484,2021,2024-04-22 19:43:11,KVU7N952WLU8,453337093,roberto@ecschicago.org,envision community services inc,il,disseminated,,N
+11,2021-06-CENSUS-0000169769,2021,2022-03-16 00:00:00,GSA_MIGRATION,256003295,jspence@clarion-schools.com,clarion area school district,pa,disseminated,,N
+11,2021-06-GSAFAC-0000036013,2021,2024-09-06 14:57:15,RNQSEK6R4Q86,256003295,jspence@clarion-schools.com,clarion area school district,pa,disseminated,,N
+12,2021-12-CENSUS-0000246097,2021,2023-08-15 00:00:00,GSA_MIGRATION,646010402,mwoodward@winstonmedical.org,winston county medical foundation and subsidiary,ms,disseminated,,N
+12,2021-12-GSAFAC-0000038245,2021,2024-04-25 20:26:10,M65NDLGK5WG8,646010402,mwoodward@winstonmedical.org,winston county medical foundation and subsidiary,ms,disseminated,,N
+13,2021-12-GSAFAC-0000037759,2021,2024-04-25 15:16:40,M7PFGNEBVN74,236003032,angel.price@lebanoncountypa.gov,"the county of lebanon, pennsylvania",pa,disseminated,,N
+13,2021-12-GSAFAC-0000040076,2021,2024-05-13 15:33:53,M7PFGNEBVN74,236003032,angel.price@lebanoncountypa.gov,"the county of lebanon, pennsylvania",pa,disseminated,,N
+14,2021-12-CENSUS-0000254540,2021,2023-03-09 00:00:00,GSA_MIGRATION,232790107,ladycharlenefisher@gmail.com,greater bethel temple incorporated,pa,disseminated,,N
+14,2021-12-GSAFAC-0000039893,2021,2024-05-06 13:08:52,H4LYJ7JJLDC6,232790107,ladycharlenefisher@gmail.com,greater bethel temple incorporated,pa,disseminated,,N
+15,2021-06-GSAFAC-0000039678,2021,2024-05-07 19:23:51,KL9MRCBZUK34,640884671,sscott@olemiss.edu,"north mississippi education consortium, inc.",ms,disseminated,,N
+15,2021-06-GSAFAC-0000347870,2021,2025-07-29 13:58:44,KL9MRCBZUK34,640884671,sscott@olemiss.edu,"north mississippi education consortium, inc.",ms,disseminated,,N
+16,2021-06-CENSUS-0000122362,2021,2022-08-16 00:00:00,GSA_MIGRATION,946000533,trish.phan@fin.sccgov.org,county of santa clara,ca,disseminated,,N
+16,2021-06-GSAFAC-0000041455,2021,2024-05-24 23:17:22,JN6JQKW5G6G6,946000533,trish.phan@fin.sccgov.org,county of santa clara,ca,disseminated,,N
+17,2021-12-CENSUS-0000253948,2021,2022-07-13 00:00:00,GSA_MIGRATION,952630300,joe@interfaithshelter.org,interfaith shelter network of san diego,ca,disseminated,,N
+17,2021-12-GSAFAC-0000043740,2021,2024-06-13 23:06:22,RTUYNTXT1MM6,952630300,joe@interfaithshelter.org,interfaith shelter network of san diego,ca,disseminated,,N
+18,2021-12-CENSUS-0000193162,2021,2022-09-29 00:00:00,GSA_MIGRATION,237359018,yl11219@gmail.com,united talmudical academy of boro park and subsidiaries,ny,disseminated,,N
+18,2021-12-GSAFAC-0000043201,2021,2024-06-25 19:23:48,C6JMYM7VHAL7,237359018,yl11219@gmail.com,united talmudical academy of boro park and subsidiaries,ny,disseminated,,N
+19,2021-12-CENSUS-0000252722,2021,2022-09-13 00:00:00,GSA_MIGRATION,236000414,manager@manortwp.org,manor township,pa,disseminated,,N
+19,2021-12-GSAFAC-0000044506,2021,2024-06-20 13:40:20,CDZWR57KE223,236000414,manager@manortwp.org,manor township,pa,disseminated,,N
+20,2021-06-CENSUS-0000131803,2021,2023-04-05 00:00:00,GSA_MIGRATION,680284175,cheryl.mccormick@dof.ca.gov,state of california,ca,disseminated,,N
+20,2021-06-GSAFAC-0000044839,2021,2024-06-25 20:15:04,RN15SP9CPJE6,680284175,cheryl.mccormick@dof.ca.gov,state of california,ca,disseminated,,N
+21,2021-12-GSAFAC-0000050302,2021,2024-08-09 17:47:41,YRLVBH8FJ9L6,520749775,mbrosnan@aapt.org,"american association of physics teachers, inc.",md,disseminated,,N
+21,2021-12-GSAFAC-0000060670,2021,2024-10-10 14:34:00,YRLVBH8FJ9L6,520749775,mbrosnan@aapt.org,"american association of physics teachers, inc.",md,disseminated,,N
+22,2021-06-CENSUS-0000079119,2021,2022-06-24 00:00:00,GSA_MIGRATION,541037615,kerrie.wilson@cornerstonesva.org,"cornerstones inc, cornerstones housing corporation & rihc partners, lp",va,disseminated,,N
+22,2021-06-GSAFAC-0000050189,2021,2024-07-31 16:07:37,HZDEJ668RLK4,541037615,kerrie.wilson@cornerstonesva.org,"cornerstones inc, cornerstones housing corporation & rihc partners, lp",va,disseminated,,N
+23,2021-06-CENSUS-0000200659,2021,2022-03-08 00:00:00,GSA_MIGRATION,856000230,joanne_hethcox@lunacountynm.us,luna county,nm,disseminated,,N
+23,2021-06-GSAFAC-0000051878,2021,2024-08-12 18:15:58,SFBFXJFCCEB3,856000230,joanne_hethcox@lunacountynm.us,luna county,nm,disseminated,,N
+24,2021-09-CENSUS-0000206478,2021,2022-04-25 00:00:00,GSA_MIGRATION,742867580,aballew@wacofhc.org,"heart of texas community health center, inc.",tx,disseminated,,N
+24,2021-09-GSAFAC-0000051832,2021,2024-08-14 18:54:04,NYA9KT6XWEL7,742867580,aballew@wacofhc.org,"heart of texas community health center, inc.",tx,disseminated,,N
+25,2021-06-CENSUS-0000192054,2021,2022-09-28 00:00:00,GSA_MIGRATION,046001151,rgh@framinghamma.gov,city of framingham,ma,disseminated,,N
+25,2021-06-GSAFAC-0000049272,2021,2024-10-28 15:29:31,RDLTFV8YY8Q3,046001151,rgh@framinghamma.gov,city of framingham,ma,disseminated,,N
+26,2021-09-CENSUS-0000132044,2021,2022-06-30 00:00:00,GSA_MIGRATION,956000733,stefannie.kodrat@longbeach.gov,city of long beach,ca,disseminated,,N
+26,2021-09-GSAFAC-0000061776,2021,2024-11-07 23:46:24,RXK8HCFVLS49,956000733,stefannie.kodrat@longbeach.gov,city of long beach,ca,disseminated,,N
+27,2021-11-CENSUS-0000138696,2021,2022-09-27 00:00:00,GSA_MIGRATION,376002171,mdeluhery@tazewell-il.gov,"tazewell county, illinois",il,disseminated,,N
+27,2021-11-GSAFAC-0000063906,2021,2024-11-14 01:49:54,C121C5LKZU91,376002171,mdeluhery@tazewell-il.gov,"tazewell county, illinois",il,disseminated,,N
+28,2021-04-CENSUS-0000187452,2021,2022-01-14 00:00:00,GSA_MIGRATION,362491861,lpetersen@schaumburg.com,village of schaumburg,il,disseminated,,N
+28,2021-04-GSAFAC-0000352914,2021,2025-02-04 17:21:46,DH35E8UQTG79,362491861,lpetersen@schaumburg.com,village of schaumburg,il,disseminated,,N
+29,2021-09-CENSUS-0000255292,2021,2022-09-29 00:00:00,GSA_MIGRATION,930508781,richard.rico@skylakes.org,sky lakes medical center,or,disseminated,,N
+29,2021-09-GSAFAC-0000354192,2021,2025-02-12 20:02:55,EGWRFW1HT4D4,930508781,richard.rico@skylakes.org,sky lakes medical center,or,disseminated,,N
+30,2021-06-GSAFAC-0000364893,2021,2025-04-01 18:28:36,LE9ULNNQRZM9,611354329,k62airport@gmail.com,falmouth-pendleton county airport board,oh,disseminated,,N
+30,2021-06-GSAFAC-0000371766,2021,2025-06-17 20:13:09,LE9ULNNQRZM9,611354329,k62airport@gmail.com,falmouth-pendleton county airport board,ky,disseminated,,N
+31,2021-06-GSAFAC-0000366430,2021,2025-04-23 13:20:33,US18M75S1ML3,470870772,cmitchell@ihimv.org,"island health, inc.",ma,disseminated,,N
+31,2021-06-GSAFAC-0000367744,2021,2025-04-29 14:30:22,US18M75S1ML3,470870772,cmitchell@ihimv.org,"island health, inc.",ma,disseminated,,N
+32,2021-12-GSAFAC-0000368624,2021,2025-05-20 12:39:54,H81GQNXSTTV5,256002921,tbracken@sandytownship.net,sandy township and sandy township municipal authority,pa,disseminated,,N
+32,2021-12-GSAFAC-0000370984,2021,2025-06-03 18:30:55,H81GQNXSTTV5,256002921,tbracken@sandytownship.net,sandy township and sandy township municipal authority,pa,disseminated,,N
+33,2021-10-CENSUS-0000181736,2021,2022-07-15 00:00:00,GSA_MIGRATION,136019627,sonya.kinckle@hcr.ny.gov,new york state housing finance agency,ny,disseminated,,N
+33,2021-10-GSAFAC-0000373602,2021,2025-09-23 21:16:27,C26FCTUN91C7,136019627,sonya.kinckle@hcr.ny.gov,new york state housing finance agency,ny,disseminated,,N
+34,2021-12-CENSUS-0000176396,2021,2022-09-23 00:00:00,GSA_MIGRATION,916001372,llarsen@stevenscountywa.gov,stevens county,wa,disseminated,,N
+34,2021-12-GSAFAC-0000387127,2021,2025-12-03 18:14:00,EFKLFV5CKUE4,916001372,llarsen@stevenscountywa.gov,stevens county,wa,disseminated,,N
+35,2021-12-CENSUS-0000156754,2021,2023-08-15 00:00:00,GSA_MIGRATION,226002138,guzmanb@ci.newark.nj.us,city of newark,nj,disseminated,,N
+35,2021-12-GSAFAC-0000414397,2021,2026-04-03 20:59:42,DWH3JE9WFYY5,226002138,guzmanb@ci.newark.nj.us,city of newark,nj,disseminated,,N
+36,2021-06-CENSUS-0000147949,2021,2022-03-23 00:00:00,GSA_MIGRATION,046001415,pburns@springfieldcityhall.com,city of springfield,ma,disseminated,,N
+36,2021-06-GSAFAC-0000426755,2021,2026-10-07 13:56:47,N5F2KKASSZR7,046001415,pburns@springfieldcityhall.com,city of springfield,ma,disseminated,,N
+37,2021-05-CENSUS-0000218554,2021,2021-11-01 00:00:00,GSA_MIGRATION,520954751,tchildress@gmfus.org,the german marshall fund of the u.s. - a memorial to the marshall plan,dc,disseminated,,N
+37,2021-12-CENSUS-0000253993,2021,2022-07-19 00:00:00,GSA_MIGRATION,520954751,tchildress@gmfus.org,the german marshall fund of the u.s. - a memorial to the marshall plan,dc,disseminated,,N
+38,2021-04-CENSUS-0000904604,2021,2022-01-17 00:00:00,GSA_MIGRATION,376002365,treasurer@cityofmarionil.gov,city of marion illinois,il,disseminated,,N
+38,2021-04-CENSUS-0000139581,2021,2022-01-21 00:00:00,GSA_MIGRATION,376002365,treasurer@cityofmarionil.gov,city of marion illinois,il,disseminated,,N

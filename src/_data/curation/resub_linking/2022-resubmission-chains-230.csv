@@ -1,0 +1,466 @@
+chain_index,report_id,audit_year,fac_accepted_date,auditee_uei,auditee_ein,auditee_email,auditee_name,auditee_state,prior_submission_status,prior_resubmission_meta,skipped
+0,2022-03-CENSUS-0000085490,2022,2022-10-07 00:00:00,RSPGAXJK4555,581394645,dward@medlinkga.org,"medlink georgia, inc.",ga,disseminated,,N
+0,2022-03-GSAFAC-0000372569,2022,2025-06-20 19:34:36,RSPGAXJK4555,581394645,dward@medlinkga.org,"medlink georgia, inc.",ga,disseminated,,N
+1,2022-06-CENSUS-0000228781,2022,2022-10-25 00:00:00,HMF8RR93STY4,202024019,sorielly@victoryhousing.org,"cheval court, inc.",md,disseminated,,N
+1,2022-12-GSAFAC-0000006434,2022,2023-11-21 01:36:14,HMF8RR93STY4,202024019,sorielly@victoryhousing.org,"cheval court, inc.",md,disseminated,,N
+2,2022-06-CENSUS-0000186093,2022,2022-10-25 00:00:00,JB3LA65PX3K3,521681046,sorielly@victoryhousing.org,"manor apartments, inc.",md,disseminated,,N
+2,2022-12-GSAFAC-0000006451,2022,2023-11-21 01:36:44,JB3LA65PX3K3,521681046,sorielly@victoryhousing.org,"manor apartments, inc.",md,disseminated,,N
+3,2022-06-CENSUS-0000224920,2022,2022-10-25 00:00:00,KFRLKTJ8USS1,300017331,sorielly@victoryhousing.org,"palmer park senior housing, inc.",md,disseminated,,N
+3,2022-12-GSAFAC-0000006460,2022,2023-11-21 01:37:17,KFRLKTJ8USS1,300017331,sorielly@victoryhousing.org,"palmer park senior housing, inc.",md,disseminated,,N
+4,2022-06-CENSUS-0000239800,2022,2022-10-25 00:00:00,ZWVBCEE4NFG7,264381436,sorielly@victoryhousing.org,"victory oaks, inc.",md,disseminated,,N
+4,2022-12-GSAFAC-0000006523,2022,2023-11-21 01:39:29,ZWVBCEE4NFG7,264381436,sorielly@victoryhousing.org,"victory oaks, inc.",md,disseminated,,N
+5,2022-06-CENSUS-0000242043,2022,2022-10-25 00:00:00,LPD9TUN3QQG8,260040672,sorielly@victoryhousing.org,"winslow house, inc.",md,disseminated,,N
+5,2022-12-GSAFAC-0000006519,2022,2023-11-21 01:39:00,LPD9TUN3QQG8,260040672,sorielly@victoryhousing.org,"winslow house, inc.",md,disseminated,,N
+6,2022-06-CENSUS-0000237652,2022,2022-10-25 00:00:00,EQAJKW83QL21,453615582,darcy.green@ellimanpm.com,division housing corporation,ny,disseminated,,N
+6,2022-12-GSAFAC-0000001431,2022,2023-10-22 19:49:25,EQAJKW83QL21,453615582,darcy.green@ellimanpm.com,division housing corporation,ny,disseminated,,N
+7,2022-06-CENSUS-0000214341,2022,2022-10-25 00:00:00,URNHCBT3NNV7,522219830,sorielly@victoryhousing.org,"andrew kim house, inc.",md,disseminated,,N
+7,2022-12-GSAFAC-0000005767,2022,2023-11-21 01:33:42,URNHCBT3NNV7,522219830,sorielly@victoryhousing.org,"andrew kim house, inc.",md,disseminated,,N
+8,2022-06-CENSUS-0000186059,2022,2022-10-25 00:00:00,TRW6KEV39MG9,522028130,sorielly@victoryhousing.org,"avondale park apartments, inc",md,disseminated,,N
+8,2022-12-GSAFAC-0000006333,2022,2023-11-21 01:35:06,TRW6KEV39MG9,522028130,sorielly@victoryhousing.org,"avondale park apartments, inc",md,disseminated,,N
+9,2022-06-CENSUS-0000220352,2022,2022-10-25 00:00:00,KW3QNFRG6KM6,522293450,sorielly@victoryhousing.org,"trinity terrace, inc.",md,disseminated,,N
+9,2022-12-GSAFAC-0000006515,2022,2023-11-21 01:38:27,KW3QNFRG6KM6,522293450,sorielly@victoryhousing.org,"trinity terrace, inc.",md,disseminated,,N
+10,2022-06-CENSUS-0000228777,2022,2022-10-25 00:00:00,PMHJDK326KS7,141869907,sorielly@victoryhousing.org,"victory heights, inc.",md,disseminated,,N
+10,2022-12-GSAFAC-0000006499,2022,2023-11-21 01:37:56,PMHJDK326KS7,141869907,sorielly@victoryhousing.org,"victory heights, inc.",md,disseminated,,N
+11,2022-06-CENSUS-0000064318,2022,2022-10-25 00:00:00,FRRGW37432P4,420680344,sangerj@central.edu,central college,ia,disseminated,,N
+11,2022-06-GSAFAC-0000032027,2022,2024-03-26 19:23:42,FRRGW37432P4,420680344,sangerj@central.edu,central college,ia,disseminated,,N
+12,2022-06-CENSUS-0000234982,2022,2022-10-25 00:00:00,RCPGJMVN4H13,208067069,sorielly@victoryhousing.org,"victory crest, inc.",md,disseminated,,N
+12,2022-12-GSAFAC-0000005806,2022,2023-11-21 01:34:36,RCPGJMVN4H13,208067069,sorielly@victoryhousing.org,"victory crest, inc.",md,disseminated,,N
+13,2022-01-CENSUS-0000041363,2022,2022-10-26 00:00:00,DGZLCHANCJL1,330274917,christopher.purcell@rhf.org,"bennett elderly housing, inc dba bennett place 033-eh231",ca,disseminated,,N
+13,2022-09-CENSUS-0000258294,2022,2023-06-09 00:00:00,DGZLCHANCJL1,330274917,christopher.purcell@rhf.org,"bennett elderly housing, inc dba bennett place 033-eh231",ca,disseminated,,N
+14,2022-06-CENSUS-0000185918,2022,2022-10-31 00:00:00,VVQDJ9YAH9L7,156008079,cpattington@cayboces.org,cayuga-onondaga board of cooperative educational services,ny,disseminated,,N
+14,2022-06-GSAFAC-0000031981,2022,2024-04-05 12:27:44,VVQDJ9YAH9L7,156008079,cpattington@cayboces.org,cayuga-onondaga board of cooperative educational services,ny,disseminated,,N
+15,2022-01-CENSUS-0000117255,2022,2022-10-31 00:00:00,F5DLNFE1DTH8,930910794,rhinkle@onecommunityhealth.org,one community health,or,disseminated,,N
+15,2022-12-GSAFAC-0000028753,2022,2024-03-07 02:29:27,F5DLNFE1DTH8,930910794,rhinkle@onecommunityhealth.org,one community health,or,disseminated,,N
+16,2022-06-CENSUS-0000235135,2022,2022-11-01 00:00:00,DBT8G6VQ6EN5,611285124,cdykstra@familyscholarhouse.org,"family scholar house, inc.",ky,disseminated,,N
+16,2022-12-GSAFAC-0000009303,2022,2024-01-16 14:41:51,DBT8G6VQ6EN5,611285124,cdykstra@familyscholarhouse.org,"family scholar house, inc.",ky,disseminated,,N
+17,2022-06-CENSUS-0000085539,2022,2022-11-28 00:00:00,CJG2DJGB8NX5,581409385,pmakris@porterleath.org,porter-leath,tn,disseminated,,N
+17,2022-06-GSAFAC-0000371476,2022,2025-06-23 16:33:07,CJG2DJGB8NX5,581409385,pmakris@porterleath.org,porter-leath,tn,disseminated,,N
+18,2022-06-CENSUS-0000180356,2022,2022-11-29 00:00:00,JCKQY7NM1EX1,620694743,ed.oliphant@nashville.gov,metropolitan transit authority,tn,disseminated,,N
+18,2023-06-GSAFAC-0000003077,2022,2023-10-20 20:07:03,JCKQY7NM1EX1,620694743,ed.oliphant@nashville.gov,metropolitan transit authority,tn,disseminated,,N
+18,2022-06-GSAFAC-0000023140,2022,2024-02-07 18:15:42,JCKQY7NM1EX1,620694743,ed.oliphant@nashville.gov,metropolitan transit authority,tn,disseminated,,N
+19,2022-06-CENSUS-0000147043,2022,2022-11-29 00:00:00,G9U4S3LXE2L8,726000392,amy.lafleur@epsb.com,evangeline parish school board,la,disseminated,,N
+19,2022-06-GSAFAC-0000024572,2022,2024-02-14 16:57:00,G9U4S3LXE2L8,726000392,amy.lafleur@epsb.com,evangeline parish school board,la,disseminated,,N
+20,2022-06-CENSUS-0000124941,2022,2022-12-07 00:00:00,Y7LLRCKZDEA3,952850121,sue.schaffner@servingseniors.org,serving seniors and subsidiaries,ca,disseminated,,N
+20,2022-06-GSAFAC-0000013797,2022,2023-12-28 23:13:56,Y7LLRCKZDEA3,952850121,sue.schaffner@servingseniors.org,serving seniors and subsidiaries,ca,disseminated,,N
+21,2022-06-CENSUS-0000222055,2022,2022-12-15 00:00:00,ZY26KDVPVDW4,237156847,karine@californiachildrensacademy.org,california children's academy,ca,disseminated,,N
+21,2022-06-GSAFAC-0000009210,2022,2023-12-21 18:35:25,ZY26KDVPVDW4,237156847,karine@californiachildrensacademy.org,california children's academy,ca,disseminated,,N
+22,2022-06-CENSUS-0000179959,2022,2022-12-15 00:00:00,ZKJ4MEAMG275,830210974,cgay@jcsd1.us,johnson county school district #1,wy,disseminated,,N
+22,2022-06-GSAFAC-0000028612,2022,2024-03-19 02:06:20,ZKJ4MEAMG275,830210974,cgay@jcsd1.us,johnson county school district #1,wy,disseminated,,N
+23,2022-06-CENSUS-0000170727,2022,2022-12-16 00:00:00,WNG5JDUMFFM5,576001050,moorem@acsd3.org,anderson county school district #3,sc,disseminated,,N
+23,2022-06-GSAFAC-0000050950,2022,2024-07-29 13:39:25,WNG5JDUMFFM5,576001050,moorem@acsd3.org,anderson county school district #3,sc,disseminated,,N
+24,2022-09-CENSUS-0000246753,2022,2022-12-21 00:00:00,JPDYJ5PUB836,646001540,tcanizaro@scrmc.com,south central regional medical center,ms,disseminated,,N
+24,2022-09-GSAFAC-0000019073,2022,2024-03-25 16:21:31,JPDYJ5PUB836,646001540,tcanizaro@scrmc.com,south central regional medical center,ms,disseminated,,N
+25,2022-06-CENSUS-0000222408,2022,2022-12-23 00:00:00,CCE5NDCMCWK7,277068446,jkimbrough@childrenscollective.org,"the children's collective, inc.",ca,disseminated,,N
+25,2022-06-GSAFAC-0000010438,2022,2023-12-22 19:59:16,CCE5NDCMCWK7,277068446,jkimbrough@childrenscollective.org,"the children's collective, inc.",ca,disseminated,,N
+26,2022-06-CENSUS-0000126718,2022,2022-12-23 00:00:00,HJ61ZENFYR83,954134752,jclarke@drewcdc.org,drew child development corporation,ca,disseminated,,N
+26,2022-06-GSAFAC-0000009852,2022,2023-12-22 23:44:31,HJ61ZENFYR83,954134752,jclarke@drewcdc.org,drew child development corporation,ca,disseminated,,N
+27,2022-06-CENSUS-0000125751,2022,2023-01-02 00:00:00,L45MNGTLQBJ1,953510046,jmajors@crystalstairs.org,"crystal stairs, inc.",ca,disseminated,,N
+27,2022-06-GSAFAC-0000009824,2022,2024-01-10 19:45:18,L45MNGTLQBJ1,953510046,jmajors@crystalstairs.org,"crystal stairs, inc.",ca,disseminated,,N
+28,2022-06-CENSUS-0000251847,2022,2023-01-05 00:00:00,CTC7AXH4NK64,223171185,bsneath@commongroundct.org,common ground high school,ct,disseminated,,N
+28,2022-06-GSAFAC-0000009650,2022,2023-12-20 18:38:43,CTC7AXH4NK64,223171185,bsneath@commongroundct.org,common ground high school,ct,disseminated,,N
+29,2022-06-CENSUS-0000170771,2022,2023-01-05 00:00:00,YLBXDCS5D2C7,576000371,jatana.norris@lcsd.k12.sc.us,lancaster county school district,sc,disseminated,,N
+29,2022-06-GSAFAC-0000357960,2022,2025-03-19 20:13:33,YLBXDCS5D2C7,576000371,jatana.norris@lcsd.k12.sc.us,lancaster county school district,sc,disseminated,,N
+30,2022-06-CENSUS-0000256548,2022,2023-01-05 00:00:00,CVAAL66BWHG9,453586665,ttaylor@reptay.com,arts academy charter school,pa,disseminated,,N
+30,2022-06-GSAFAC-0000008465,2022,2023-12-07 12:12:59,CVAAL66BWHG9,453586665,ttaylor@reptay.com,arts academy charter school,pa,disseminated,,N
+31,2022-06-CENSUS-0000036558,2022,2023-01-05 00:00:00,TNEAFTDPRPJ3,251392652,cgarcia@literacypittsburgh.org,literacy pittsburgh,pa,disseminated,,N
+31,2022-06-GSAFAC-0000037389,2022,2024-04-12 12:15:38,TNEAFTDPRPJ3,251392652,cgarcia@literacypittsburgh.org,literacy pittsburgh,pa,disseminated,,N
+32,2022-06-CENSUS-0000176284,2022,2023-01-06 00:00:00,Z39HFK2G3JL3,541049477,dcriner@vcsb.org,valley community services board,va,disseminated,,N
+32,2022-06-GSAFAC-0000037995,2022,2024-05-10 18:33:08,Z39HFK2G3JL3,541049477,dcriner@vcsb.org,valley community services board,va,disseminated,,N
+33,2022-06-CENSUS-0000166042,2022,2023-01-09 00:00:00,UJDSUECKJVE9,936002305,bpalmer@co.linn.or.us,linn county,or,disseminated,,N
+33,2022-06-GSAFAC-0000017959,2022,2024-01-10 17:54:34,UJDSUECKJVE9,936002305,bpalmer@co.linn.or.us,linn county,or,disseminated,,N
+34,2022-06-CENSUS-0000250075,2022,2023-01-09 00:00:00,LTVKRCUGBUK6,860550646,swati.webb@bgcaz.org,"boys & girls clubs of the valley, inc.",az,disseminated,,N
+34,2022-06-GSAFAC-0000021770,2022,2024-01-31 17:47:13,LTVKRCUGBUK6,860550646,swati.webb@bgcaz.org,"boys & girls clubs of the valley, inc.",az,disseminated,,N
+35,2022-06-CENSUS-0000250356,2022,2023-01-10 00:00:00,JUDHKLTT2JN4,271824650,mdinwoodie@missionfirsthousing.org,mission first housing development corporation,dc,disseminated,,N
+35,2022-06-GSAFAC-0000020611,2022,2024-03-26 15:14:56,JUDHKLTT2JN4,271824650,mdinwoodie@missionfirsthousing.org,mission first housing development corporation,dc,disseminated,,N
+36,2022-06-CENSUS-0000135383,2022,2023-01-11 00:00:00,FLECYHFF3C67,846001185,cathy.watts@asd20.org,academy school district twenty,co,disseminated,,N
+36,2022-06-GSAFAC-0000018529,2022,2024-01-22 21:31:12,FLECYHFF3C67,846001185,cathy.watts@asd20.org,academy school district twenty,co,disseminated,,N
+37,2022-06-CENSUS-0000176120,2022,2023-01-13 00:00:00,K7EPDEL2B141,546001649,amatney@tazewellcounty.org,"county of tazewell, va",va,disseminated,,N
+37,2022-06-GSAFAC-0000032288,2022,2024-03-27 14:27:13,K7EPDEL2B141,546001649,amatney@tazewellcounty.org,"county of tazewell, va",va,disseminated,,N
+38,2022-06-CENSUS-0000176289,2022,2023-01-17 00:00:00,NAZGLF3NYJR4,546001683,celeste.broadstreet@winchesterva.gov,"city of winchester, virginia",va,disseminated,,N
+38,2022-06-GSAFAC-0000025853,2022,2024-02-22 13:25:55,NAZGLF3NYJR4,546001683,celeste.broadstreet@winchesterva.gov,"city of winchester, virginia",va,disseminated,,N
+39,2022-06-CENSUS-0000238357,2022,2023-01-18 00:00:00,SHMFHCL27714,232959842,theresa.doggett@belmontcharternetwork.org,inquiry charter school,pa,disseminated,,N
+39,2022-06-GSAFAC-0000010837,2022,2023-12-11 17:59:05,SHMFHCL27714,232959842,theresa.doggett@belmontcharternetwork.org,inquiry charter school,pa,disseminated,,N
+40,2022-06-CENSUS-0000169681,2022,2023-01-18 00:00:00,EHFKH7MJ1K22,231667987,emathias@tvsd.org,twin valley school district,pa,disseminated,,N
+40,2022-06-GSAFAC-0000019265,2022,2024-01-15 20:10:00,EHFKH7MJ1K22,231667987,emathias@tvsd.org,twin valley school district,pa,disseminated,,N
+40,2022-06-GSAFAC-0000024021,2022,2024-02-08 13:01:04,EHFKH7MJ1K22,231667987,emathias@tvsd.org,twin valley school district,pa,disseminated,,N
+41,2022-06-CENSUS-0000233344,2022,2023-01-18 00:00:00,HM5GYV7PNF43,371437182,theresa.doggett@belmontcharternetwork.org,belmont charter school,pa,disseminated,,N
+41,2022-06-GSAFAC-0000017158,2022,2024-01-05 18:01:01,HM5GYV7PNF43,371437182,theresa.doggett@belmontcharternetwork.org,belmont charter school,pa,disseminated,,N
+42,2022-06-CENSUS-0000164675,2022,2023-01-19 00:00:00,MT5CGVPKHMJ5,346000342,jordan.weber@brookfieldschools.us,brookfield local school district,oh,disseminated,,N
+42,2022-06-GSAFAC-0000052236,2022,2024-08-13 12:58:32,MT5CGVPKHMJ5,346000342,jordan.weber@brookfieldschools.us,brookfield local school district,al,disseminated,,N
+43,2022-06-CENSUS-0000023463,2022,2023-01-23 00:00:00,GLNEB9FT6PP8,222842846,crenjilian@childcareconsultants.org,"child care consultants, inc.",pa,disseminated,,N
+43,2022-06-GSAFAC-0000049929,2022,2024-07-14 15:39:53,GLNEB9FT6PP8,222842846,crenjilian@childcareconsultants.org,"child care consultants, inc.",pa,disseminated,,N
+44,2022-06-CENSUS-0000170059,2022,2023-01-24 00:00:00,H66KUFFW9GK5,231654595,manningb@shikbraves.org,shikellamy school district,pa,disseminated,,N
+44,2022-06-GSAFAC-0000013326,2022,2024-01-08 15:16:17,H66KUFFW9GK5,231654595,manningb@shikbraves.org,shikellamy school district,pa,disseminated,,N
+45,2022-06-CENSUS-0000169966,2022,2023-01-24 00:00:00,CTECNNVRKRB9,231667968,lamannat@hasdk12.org,hazleton area school district,pa,disseminated,,N
+45,2022-06-GSAFAC-0000013145,2022,2023-12-19 14:07:54,CTECNNVRKRB9,231667968,lamannat@hasdk12.org,hazleton area school district,pa,disseminated,,N
+46,2022-06-CENSUS-0000186533,2022,2023-01-31 00:00:00,HKGKC6MV2VP5,231671515,nicdel@bhasd.org,brandywine heights area school district,pa,disseminated,,N
+46,2022-06-GSAFAC-0000017397,2022,2024-01-08 19:35:10,HKGKC6MV2VP5,231671515,nicdel@bhasd.org,brandywine heights area school district,pa,disseminated,,N
+47,2022-06-CENSUS-0000244306,2022,2023-02-03 00:00:00,CQMASJE2B624,272294198,kalvarnaz@yorkarcs.org,york academy regional charter school,pa,disseminated,,N
+47,2022-06-GSAFAC-0000018833,2022,2024-01-11 20:41:13,CQMASJE2B624,272294198,kalvarnaz@yorkarcs.org,york academy regional charter school,pa,disseminated,,N
+48,2022-06-CENSUS-0000002351,2022,2023-02-03 00:00:00,UYCSSC3J9CG5,042104257,jpasquariello@ebsoc.org,"east boston social centers, inc.",ma,disseminated,,N
+48,2022-06-GSAFAC-0000030719,2022,2024-03-26 21:50:28,UYCSSC3J9CG5,042104257,jpasquariello@ebsoc.org,"east boston social centers, inc.",ma,disseminated,,N
+49,2022-06-CENSUS-0000170184,2022,2023-02-07 00:00:00,QUHFHL8N56W9,231683558,jboyer@ytech.edu,york county school of technology,pa,disseminated,,N
+49,2022-06-GSAFAC-0000026780,2022,2024-02-28 12:56:55,QUHFHL8N56W9,231683558,jboyer@ytech.edu,york county school of technology,pa,disseminated,,N
+50,2022-06-CENSUS-0000169579,2022,2023-02-10 00:00:00,G4AWN7SLJL79,231726310,jpeart@bermudian.org,bermudian springs school district,pa,disseminated,,N
+50,2022-06-GSAFAC-0000059798,2022,2024-10-02 14:47:23,G4AWN7SLJL79,231726310,jpeart@bermudian.org,bermudian springs school district,pa,disseminated,,N
+51,2022-06-CENSUS-0000169577,2022,2023-02-10 00:00:00,RAJKEK9M7XK3,236003533,s.hobbs@upperadams.org,upper adams school district,pa,disseminated,,N
+51,2022-06-GSAFAC-0000027756,2022,2024-03-01 11:07:09,RAJKEK9M7XK3,236003533,s.hobbs@upperadams.org,upper adams school district,pa,disseminated,,N
+52,2022-06-CENSUS-0000170179,2022,2023-02-13 00:00:00,GCUTDULVPN99,236004845,czappm@sgasd.org,spring grove area school district,pa,disseminated,,N
+52,2022-06-GSAFAC-0000026777,2022,2024-03-04 23:24:35,GCUTDULVPN99,236004845,czappm@sgasd.org,spring grove area school district,pa,disseminated,,N
+53,2022-06-CENSUS-0000188906,2022,2023-02-13 00:00:00,JU55PYN2DH41,236003894,duncanl@cvcolonials.org,conewago valley school district,pa,disseminated,,N
+53,2022-06-GSAFAC-0000054776,2022,2024-09-09 12:06:34,JU55PYN2DH41,236003894,duncanl@cvcolonials.org,conewago valley school district,pa,disseminated,,N
+54,2022-06-CENSUS-0000190708,2022,2023-02-15 00:00:00,C1K6WQLR1741,231671279,chuck@abmelonecpa.com,greater nanticoke area school district,pa,disseminated,,N
+54,2022-06-GSAFAC-0000011811,2022,2023-12-14 19:41:46,C1K6WQLR1741,231671279,chuck@abmelonecpa.com,greater nanticoke area school district,pa,disseminated,,N
+55,2022-06-CENSUS-0000244572,2022,2023-02-16 00:00:00,JZ64U6ZQ9RX8,271625785,dilgardj@breakthrough.net,valor christian college,oh,disseminated,,N
+55,2022-06-GSAFAC-0000001291,2022,2023-10-10 17:05:15,JZ64U6ZQ9RX8,271625785,dilgardj@breakthrough.net,valor christian college,oh,disseminated,,N
+56,2022-06-CENSUS-0000194429,2022,2023-02-17 00:00:00,N96AHLXUVPP3,246002530,jcaputo@lakelandsd.org,lakeland school district,pa,disseminated,,N
+56,2022-06-GSAFAC-0000057982,2022,2024-10-02 22:32:07,N96AHLXUVPP3,246002530,jcaputo@lakelandsd.org,lakeland school district,pa,disseminated,,N
+57,2021-07-CENSUS-0000182173,2022,2022-01-03 00:00:00,GSA_MIGRATION,421104334,sbenson@iora.org,iowa oncology research association,ia,disseminated,,N
+57,2022-07-CENSUS-0000182173,2022,2023-02-20 00:00:00,H8L1ZGQ62AP9,421104334,sbenson@iora.org,iowa oncology research association,ia,disseminated,,N
+58,2022-03-CENSUS-0000105356,2022,2023-02-22 00:00:00,E4FKQ11W1CW3,751904829,rmanik@spfb.org,"south plains food bank, inc.",tx,disseminated,,N
+58,2022-09-GSAFAC-0000003692,2022,2023-10-25 15:43:55,E4FKQ11W1CW3,751904829,rmanik@spfb.org,"south plains food bank, inc.",tx,disseminated,,N
+59,2022-06-CENSUS-0000183449,2022,2023-02-22 00:00:00,WLC3DLXCM574,251665243,kowens@lifesteps.net,"lifesteps, inc.",pa,disseminated,,N
+59,2022-06-GSAFAC-0000022063,2022,2024-03-06 17:52:03,WLC3DLXCM574,251665243,kowens@lifesteps.net,"lifesteps, inc.",pa,disseminated,,N
+60,2022-06-CENSUS-0000124691,2022,2023-03-01 00:00:00,W7W9J5BKMGU3,952594166,cchen@maof.org,mexican american opportunity foundation,ca,disseminated,,N
+60,2022-06-GSAFAC-0000006974,2022,2024-01-31 22:24:44,W7W9J5BKMGU3,952594166,cchen@maof.org,mexican american opportunity foundation,ca,disseminated,,N
+61,2022-06-CENSUS-0000148589,2022,2023-03-03 00:00:00,WPCHCCDSK1F9,046006337,aosborne@hwrsd.org,hampden-wilbraham regional school district,ma,disseminated,,N
+61,2022-06-GSAFAC-0000029487,2022,2024-03-18 14:44:16,WPCHCCDSK1F9,046006337,aosborne@hwrsd.org,hampden-wilbraham regional school district,ma,disseminated,,N
+62,2022-06-CENSUS-0000202043,2022,2023-03-03 00:00:00,QMUFKL83DM29,660404491,vsantiago@atlanticu.edu,"atlantic university college, inc.",pr,disseminated,,N
+62,2022-06-GSAFAC-0000344353,2022,2024-12-20 23:31:30,QMUFKL83DM29,660404491,vsantiago@atlanticu.edu,"atlantic university college, inc.",pr,disseminated,,N
+63,2022-09-CENSUS-0000197444,2022,2023-03-07 00:00:00,Z8U9PWEHD717,631192346,lwilliams@madisoncity.k12.al.us,madison city board of education,al,disseminated,,N
+63,2022-09-GSAFAC-0000016473,2022,2024-01-05 18:27:23,Z8U9PWEHD717,631192346,lwilliams@madisoncity.k12.al.us,madison city board of education,al,disseminated,,N
+64,2022-09-CENSUS-0000251235,2022,2023-03-07 00:00:00,EUNQB6C9FBT4,942505916,karen.keene@disabilityrightsca.org,disability rights california,ca,disseminated,,N
+64,2022-09-GSAFAC-0000055418,2022,2024-10-03 20:45:31,EUNQB6C9FBT4,942505916,karen.keene@disabilityrightsca.org,disability rights california,ca,disseminated,,N
+65,2022-06-CENSUS-0000130448,2022,2023-03-09 00:00:00,XNKPKH4MYH54,866000535,scrosier@susd.org,scottsdale unified school district no. 48,az,disseminated,,N
+65,2023-06-GSAFAC-0000014884,2022,2024-01-08 15:43:37,XNKPKH4MYH54,866000535,scrosier@susd.org,scottsdale unified school district no. 48,az,disseminated,,N
+66,2022-06-CENSUS-0000002667,2022,2023-03-09 00:00:00,HJNQME41NBU4,042121659,jclapp1@wpi.edu,worcester polytechnic institute,ma,disseminated,,N
+66,2022-06-GSAFAC-0000012702,2022,2024-01-07 02:30:13,HJNQME41NBU4,042121659,jclapp1@wpi.edu,worcester polytechnic institute,ma,disseminated,,N
+67,2022-06-CENSUS-0000031399,2022,2023-03-10 00:00:00,VJMTERRG2EP4,237160437,michelle-smith@4cforkids.com,"community coordinated child care, inc.",ky,disseminated,,N
+67,2022-06-GSAFAC-0000033657,2022,2024-03-28 16:08:25,VJMTERRG2EP4,237160437,michelle-smith@4cforkids.com,"community coordinated child care, inc.",ky,disseminated,,N
+68,2022-06-CENSUS-0000170142,2022,2023-03-15 00:00:00,LVKNSU5QN6F5,231726316,jfirmstone@whsdk12.com,wayne highlands school district,pa,disseminated,,N
+68,2022-06-GSAFAC-0000040622,2022,2024-05-29 14:58:11,LVKNSU5QN6F5,231726316,jfirmstone@whsdk12.com,wayne highlands school district,pa,disseminated,,N
+69,2022-06-CENSUS-0000232907,2022,2023-03-16 00:00:00,R7XVV6ZR6SM9,232934986,kgarland@upcs.net,northside urban pathways charter school,pa,disseminated,,N
+69,2022-06-GSAFAC-0000052214,2022,2024-08-13 18:01:37,R7XVV6ZR6SM9,232934986,kgarland@upcs.net,northside urban pathways charter school,pa,disseminated,,N
+70,2022-06-CENSUS-0000160736,2022,2023-03-17 00:00:00,WNVUXFKG4VX5,116002066,kloughlin@cmschools.org,center moriches union free school district,ny,disseminated,,N
+70,2022-06-GSAFAC-0000030404,2022,2024-03-18 19:56:40,WNVUXFKG4VX5,116002066,kloughlin@cmschools.org,center moriches union free school district,ny,disseminated,,N
+71,2022-06-CENSUS-0000147138,2022,2023-03-20 00:00:00,LZKCFAJXBAC8,016000032,boconnell@portlandmaine.gov,city of portland maine,me,disseminated,,N
+71,2022-06-GSAFAC-0000062608,2022,2024-10-25 21:39:07,LZKCFAJXBAC8,016000032,boconnell@portlandmaine.gov,city of portland maine,me,disseminated,,N
+72,2022-06-CENSUS-0000203600,2022,2023-03-21 00:00:00,ZZURKVEBSJL1,952690540,jane@laclj.org,los angeles center for law and justice,ca,disseminated,,N
+72,2022-06-GSAFAC-0000063555,2022,2024-10-30 21:30:51,ZZURKVEBSJL1,952690540,jane@laclj.org,los angeles center for law and justice,ca,disseminated,,N
+73,2022-06-CENSUS-0000210134,2022,2023-03-24 00:00:00,ELJEHN5Q6D81,116002012,rlufrano@bellmoreschools.org,bellmore union free school district,ny,disseminated,,N
+73,2022-06-GSAFAC-0000027080,2022,2024-02-28 22:48:59,ELJEHN5Q6D81,116002012,rlufrano@bellmoreschools.org,bellmore union free school district,ny,disseminated,,N
+74,2022-06-CENSUS-0000082074,2022,2023-03-24 00:00:00,TDE2FUVAYJW6,561073632,mzechmann@havenhousenc.org,"haven house, inc.",nc,disseminated,,N
+74,2022-06-GSAFAC-0000010905,2022,2023-12-08 16:21:23,TDE2FUVAYJW6,561073632,mzechmann@havenhousenc.org,"haven house, inc.",nc,disseminated,,N
+75,2022-06-CENSUS-0000048465,2022,2023-03-24 00:00:00,KR45MXYL5SE9,362171681,sperkins@henryboothhouse.org,henry booth house,il,disseminated,,N
+75,2022-06-GSAFAC-0000005564,2022,2023-11-14 18:01:50,KR45MXYL5SE9,362171681,sperkins@henryboothhouse.org,henry booth house,il,disseminated,,N
+76,2022-06-CENSUS-0000249207,2022,2023-03-24 00:00:00,J248CHZUAND3,381357980,jwright@adrian.edu,adrian college,mi,disseminated,,N
+76,2022-06-GSAFAC-0000031793,2022,2024-03-30 15:52:50,J248CHZUAND3,381357980,jwright@adrian.edu,adrian college,mi,disseminated,,N
+77,2022-06-CENSUS-0000169776,2022,2023-03-28 00:00:00,F53FBCBMW2N3,256003246,heplerml@unionsd.net,union school district,pa,disseminated,,N
+77,2022-06-GSAFAC-0000032019,2022,2024-04-17 16:03:44,F53FBCBMW2N3,256003246,heplerml@unionsd.net,union school district,pa,disseminated,,N
+77,2022-06-GSAFAC-0000034429,2022,2024-04-17 16:03:53,F53FBCBMW2N3,256003246,heplerml@unionsd.net,union school district,pa,disseminated,,N
+78,2022-06-CENSUS-0000257583,2022,2023-03-28 00:00:00,JVGMDJ5YDKL7,611617717,mariapaluselli@providentcharterschool.org,provident charter school,pa,disseminated,,N
+78,2022-06-GSAFAC-0000065257,2022,2024-11-12 13:35:44,JVGMDJ5YDKL7,611617717,mariapaluselli@providentcharterschool.org,provident charter school,pa,disseminated,,N
+79,2022-06-CENSUS-0000214536,2022,2023-03-28 00:00:00,NEYQCXLHAMH5,346002708,harvey.randy@olsohio.org,ontario local school district,oh,disseminated,,N
+79,2022-06-GSAFAC-0000023699,2022,2024-03-06 18:00:09,NEYQCXLHAMH5,346002708,harvey.randy@olsohio.org,ontario local school district,oh,disseminated,,N
+80,2022-06-CENSUS-0000132206,2022,2023-03-29 00:00:00,LJ4AVJ6C8NW5,330076484,annabellew@moval.org,city of moreno valley,ca,disseminated,,N
+80,2022-06-GSAFAC-0000030224,2022,2024-03-27 16:40:43,LJ4AVJ6C8NW5,330076484,annabellew@moval.org,city of moreno valley,ca,disseminated,,N
+81,2022-06-CENSUS-0000229868,2022,2023-03-30 00:00:00,N3XQBMG845U1,134119998,philipleconte@aol.com,roosevelt children's academy charter school,ny,disseminated,,N
+81,2022-06-GSAFAC-0000022045,2022,2024-01-30 18:53:15,N3XQBMG845U1,134119998,philipleconte@aol.com,roosevelt children's academy charter school,ny,disseminated,,N
+82,2022-06-CENSUS-0000181609,2022,2023-03-30 00:00:00,D337CUHNA2L7,626050783,cmcmahan@swhra.org,southwest human resource agency,tn,disseminated,,N
+82,2022-06-GSAFAC-0000366567,2022,2025-04-16 16:03:23,D337CUHNA2L7,626050783,cmcmahan@swhra.org,southwest human resource agency,tn,disseminated,,N
+83,2022-06-CENSUS-0000144671,2022,2023-03-30 00:00:00,UHXRPL5G4FY3,420926354,bjvoaklander@dmacc.edu,des moines area community college,ia,disseminated,,N
+83,2022-06-GSAFAC-0000016194,2022,2024-01-04 20:46:03,UHXRPL5G4FY3,420926354,bjvoaklander@dmacc.edu,des moines area community college,ia,disseminated,,N
+84,2022-09-CENSUS-0000208778,2022,2023-03-30 00:00:00,QEWYJ3DVSLS6,586000686,myronmixon@yahoo.com,"city of unadilla, georgia",ga,disseminated,,N
+84,2022-09-GSAFAC-0000050444,2022,2024-08-22 18:05:14,QEWYJ3DVSLS6,586000686,myronmixon@yahoo.com,"city of unadilla, georgia",ga,disseminated,,N
+85,2022-06-CENSUS-0000122362,2022,2023-03-31 00:00:00,JN6JQKW5G6G6,946000533,trish.phan@fin.sccgov.org,county of santa clara,ca,disseminated,,N
+85,2022-06-GSAFAC-0000041145,2022,2024-05-24 23:17:33,JN6JQKW5G6G6,946000533,trish.phan@fin.sccgov.org,county of santa clara,ca,disseminated,,N
+86,2022-06-CENSUS-0000007262,2022,2023-03-31 00:00:00,P5PNN9R2JEE1,060910080,maryellen.schloth@rnpinc.org,"recovery network of programs, inc.",ct,disseminated,,N
+86,2022-06-GSAFAC-0000021377,2022,2024-02-22 03:29:39,P5PNN9R2JEE1,060910080,maryellen.schloth@rnpinc.org,"recovery network of programs, inc.",ct,disseminated,,N
+87,2022-06-CENSUS-0000201151,2022,2023-03-31 00:00:00,DNATBJK556C9,942527939,jcrosby@fvlc.org,family violence law center,ca,disseminated,,N
+87,2022-06-GSAFAC-0000052656,2022,2024-08-16 23:14:30,DNATBJK556C9,942527939,jcrosby@fvlc.org,family violence law center,ca,disseminated,,N
+88,2022-06-CENSUS-0000186915,2022,2023-03-31 00:00:00,JJEDKELTZA96,841420492,wilsonjes@chphealth.org,"community health partners, inc.",mt,disseminated,,N
+88,2022-06-GSAFAC-0000028894,2022,2024-03-12 17:49:56,JJEDKELTZA96,841420492,wilsonjes@chphealth.org,"community health partners, inc.",mt,disseminated,,N
+89,2022-06-CENSUS-0000132155,2022,2023-03-31 00:00:00,J34GBL8PSNU5,956000666,dmoreno@anaheim.net,city of anaheim,ca,disseminated,,N
+89,2022-06-GSAFAC-0000037338,2022,2024-05-03 16:07:50,J34GBL8PSNU5,956000666,dmoreno@anaheim.net,city of anaheim,ca,disseminated,,N
+90,2022-06-CENSUS-0000198800,2022,2023-03-31 00:00:00,C4A1GH8YACH4,760590551,melissa.crenwelge-nedbalek@christushealth.org,christus health,tx,disseminated,,N
+90,2022-06-GSAFAC-0000033152,2022,2024-03-29 02:34:41,C4A1GH8YACH4,760590551,melissa.crenwelge-nedbalek@christushealth.org,christus health,tx,disseminated,,N
+91,2022-06-CENSUS-0000237465,2022,2023-03-31 00:00:00,QGWZT63766L6,481202402,mshort2@kumc.edu,university of kansas hospital authority,ks,disseminated,,N
+91,2022-06-GSAFAC-0000007270,2022,2024-03-21 13:23:25,QGWZT63766L6,481202402,mshort2@kumc.edu,university of kansas hospital authority,ks,disseminated,,N
+92,2022-06-CENSUS-0000169973,2022,2023-03-31 00:00:00,V174XLC7AP67,231741699,jgordon@liu18.org,luzerne intermediate unit 18,pa,disseminated,,N
+92,2022-06-GSAFAC-0000051852,2022,2024-08-07 15:05:48,V174XLC7AP67,231741699,jgordon@liu18.org,luzerne intermediate unit 18,pa,disseminated,,N
+93,2022-06-CENSUS-0000252425,2022,2023-03-31 00:00:00,KGBSN9MGLM65,820538372,amanda.burke@arizonafuture.org,center for the future of arizona,az,disseminated,,N
+93,2022-06-GSAFAC-0000038242,2022,2024-04-25 19:59:24,KGBSN9MGLM65,820538372,amanda.burke@arizonafuture.org,center for the future of arizona,az,disseminated,,N
+94,2022-06-CENSUS-0000169959,2022,2023-03-31 00:00:00,QK1KFJN93NV3,231932389,coyj@cliu.org,carbon lehigh intermediate unit 21,pa,disseminated,,N
+94,2022-06-GSAFAC-0000063778,2022,2024-11-04 22:12:24,QK1KFJN93NV3,231932389,coyj@cliu.org,carbon lehigh intermediate unit 21,pa,disseminated,,N
+95,2022-06-CENSUS-0000169711,2022,2023-03-31 00:00:00,NHA7SBFMAY75,231667963,anthony.rapp@crsd.org,council rock school district,pa,disseminated,,N
+95,2022-06-GSAFAC-0000057177,2022,2024-09-30 19:13:58,NHA7SBFMAY75,231667963,anthony.rapp@crsd.org,council rock school district,pa,disseminated,,N
+96,2022-09-CENSUS-0000191686,2022,2023-04-14 00:00:00,Z1QNT7ZY7272,591863042,rcrawford@nassauclerk.com,"nassau county, fl",fl,disseminated,,N
+96,2022-09-GSAFAC-0000004132,2022,2023-11-07 21:10:59,Z1QNT7ZY7272,591863042,rcrawford@nassauclerk.com,"nassau county, fl",fl,disseminated,,N
+97,2022-06-CENSUS-0000247633,2022,2023-04-21 00:00:00,SFF8ZDG66LH7,552231031,sorielly@victoryhousing.org,"cambridge apartments, inc.",md,disseminated,,N
+97,2022-12-GSAFAC-0000006395,2022,2023-11-21 01:35:43,SFF8ZDG66LH7,552231031,sorielly@victoryhousing.org,"cambridge apartments, inc.",md,disseminated,,N
+98,2022-12-CENSUS-0000250557,2022,2023-04-27 00:00:00,EW9WSQQJ3YA7,421311668,alicia@willisdady.org,"willis dady emergency shelter, inc.",ia,disseminated,,N
+98,2022-12-GSAFAC-0000041840,2022,2024-05-29 13:56:09,EW9WSQQJ3YA7,421311668,alicia@willisdady.org,"willis dady emergency shelter, inc.",ia,disseminated,,N
+99,2022-06-CENSUS-0000153683,2022,2023-05-02 00:00:00,LVVGFKVEN787,446001429,mcaldwell@monettschools.org,monett school district r-1,mo,disseminated,,N
+99,2022-06-GSAFAC-0000021042,2022,2024-01-24 14:55:53,LVVGFKVEN787,446001429,mcaldwell@monettschools.org,monett school district r-1,mo,disseminated,,N
+100,2022-12-CENSUS-0000013336,2022,2023-05-10 00:00:00,G3UPAJTVZ294,133238657,bdoreian@nff.org,nonprofit finance fund and affiliate,ny,disseminated,,N
+100,2022-06-GSAFAC-0000041282,2022,2024-05-24 14:43:11,G3UPAJTVZ294,133238657,bdoreian@nff.org,nonprofit finance fund and affiliate,ny,disseminated,,N
+101,2022-12-CENSUS-0000200430,2022,2023-05-12 00:00:00,YH3HHG1AG4K8,050368134,kcabral@providencechc.org,"the providence community health centers, inc. and affiliates",ri,disseminated,,N
+101,2022-12-GSAFAC-0000050334,2022,2024-08-05 22:52:53,YH3HHG1AG4K8,050368134,kcabral@providencechc.org,"the providence community health centers, inc. and affiliates",ri,disseminated,,N
+102,2022-08-CENSUS-0000177156,2022,2023-05-22 00:00:00,KNQKL9KQBNJ7,916001546,elouderback@asd5.org,aberdeen school district no. 5,wa,disseminated,,N
+102,2022-08-GSAFAC-0000036135,2022,2024-04-02 22:02:34,KNQKL9KQBNJ7,916001546,elouderback@asd5.org,aberdeen school district no. 5,wa,disseminated,,N
+103,2022-08-CENSUS-0000177159,2022,2023-05-26 00:00:00,XKCQE3LYMGB7,916001563,kounsted@hoquiam.net,hoquiam school district no. 28,wa,disseminated,,N
+103,2022-08-GSAFAC-0000039897,2022,2024-05-07 03:57:21,XKCQE3LYMGB7,916001563,kounsted@hoquiam.net,hoquiam school district no. 28,wa,disseminated,,N
+104,2022-06-CENSUS-0000235455,2022,2023-05-30 00:00:00,NFLNBE19F2U5,363682559,reganb@jane-addams.org,jane addams resource corporation,il,disseminated,,N
+104,2022-06-GSAFAC-0000000803,2022,2024-01-04 17:58:40,NFLNBE19F2U5,363682559,reganb@jane-addams.org,jane addams resource corporation,il,disseminated,,N
+105,2022-08-CENSUS-0000253959,2022,2023-05-31 00:00:00,CDRBWXUMFCT7,260030908,mfoote@dreamprogram.org,"the dream program, inc.",vt,disseminated,,N
+105,2022-08-GSAFAC-0000038161,2022,2024-04-19 16:57:09,CDRBWXUMFCT7,260030908,mfoote@dreamprogram.org,"the dream program, inc.",vt,disseminated,,N
+106,2022-08-CENSUS-0000258254,2022,2023-06-01 00:00:00,QC55J5VHKQF7,610447248,josh@hindmansettlement.org,hindman settlement school,ky,disseminated,,N
+106,2022-08-GSAFAC-0000005829,2022,2023-11-10 15:38:53,QC55J5VHKQF7,610447248,josh@hindmansettlement.org,hindman settlement school,ky,disseminated,,N
+107,2022-12-CENSUS-0000238227,2022,2023-06-06 00:00:00,N1W8YN4MSHY6,386142925,mshinkonis@greenpath.com,"greenpath, inc. dba greenpath financial wellness",mi,disseminated,,N
+107,2022-12-GSAFAC-0000032099,2022,2024-04-08 16:53:46,N1W8YN4MSHY6,386142925,mshinkonis@greenpath.com,"greenpath, inc. dba greenpath financial wellness",mi,disseminated,,N
+108,2022-06-CENSUS-0000235849,2022,2023-06-08 00:00:00,PD4CEJ1ARNJ5,446004292,cholcomb@nevc.k12.mo.us,northeast vernon county r1 school district,mo,disseminated,,N
+108,2022-06-GSAFAC-0000029268,2022,2024-03-18 17:20:23,PD4CEJ1ARNJ5,446004292,cholcomb@nevc.k12.mo.us,northeast vernon county r1 school district,mo,disseminated,,N
+109,2022-12-CENSUS-0000124475,2022,2023-06-09 00:00:00,XBWKZHSRNHC1,952408642,lynnehiortdahl@nlsla.org,neighborhood legal services of los angeles county,ca,disseminated,,N
+109,2022-12-GSAFAC-0000052200,2022,2024-10-02 01:42:28,XBWKZHSRNHC1,952408642,lynnehiortdahl@nlsla.org,neighborhood legal services of los angeles county,ca,disseminated,,N
+110,2022-06-CENSUS-0000237811,2022,2023-06-13 00:00:00,C1TUBRBX59M3,611645049,kflagg@rsu73.com,regional school unit no. 73,me,disseminated,,N
+110,2022-06-GSAFAC-0000059680,2022,2024-10-03 15:58:38,C1TUBRBX59M3,611645049,kflagg@rsu73.com,regional school unit no. 73,me,disseminated,,N
+111,2022-06-CENSUS-0000022182,2022,2023-06-13 00:00:00,TYJ8L79EZEJ9,222483916,glennseagraves@libertyresources.org,"liberty resources, inc.",pa,disseminated,,N
+111,2022-06-GSAFAC-0000002721,2022,2023-11-01 22:10:30,TYJ8L79EZEJ9,222483916,glennseagraves@libertyresources.org,"liberty resources, inc.",pa,disseminated,,N
+112,2022-06-CENSUS-0000079119,2022,2023-06-14 00:00:00,HZDEJ668RLK4,541037615,kerrie.wilson@cornerstonesva.org,"cornerstones inc, cornerstones housing corporation & rihc partners, lp",va,disseminated,,N
+112,2022-06-GSAFAC-0000050165,2022,2024-07-31 16:07:09,HZDEJ668RLK4,541037615,kerrie.wilson@cornerstonesva.org,"cornerstones inc, cornerstones housing corporation & rihc partners, lp",va,disseminated,,N
+113,2022-10-CENSUS-0000095942,2022,2023-06-14 00:00:00,NMKBFAVAK5N5,640561264,srockoff@mhc.state.ms.us,"mississippi humanities council, inc.",ms,disseminated,,N
+113,2022-10-GSAFAC-0000379160,2022,2025-08-28 20:42:45,NMKBFAVAK5N5,640561264,srockoff@mhc.state.ms.us,"mississippi humanities council, inc.",ms,disseminated,,N
+114,2022-06-CENSUS-0000078812,2022,2023-06-14 00:00:00,K7ELG3CTBGZ8,540801556,mary.prillaman@stepincva.com,"solutions that empower people, inc.",va,disseminated,,N
+114,2022-06-GSAFAC-0000034171,2022,2024-04-02 14:21:20,K7ELG3CTBGZ8,540801556,mary.prillaman@stepincva.com,"solutions that empower people, inc.",va,disseminated,,N
+115,2022-12-CENSUS-0000030815,2022,2023-06-21 00:00:00,VH2TMA4PAX35,237121174,robertbrainin@justastart.org,just-a-start corporation and affiliates,ma,disseminated,,N
+115,2022-12-GSAFAC-0000054518,2022,2024-10-15 13:20:41,VH2TMA4PAX35,237121174,robertbrainin@justastart.org,just-a-start corporation and affiliates,ma,disseminated,,N
+116,2022-06-CENSUS-0000027784,2022,2023-06-22 00:00:00,NYQ5ENN6GLQ9,232575901,dclark@theenterprisecenter.com,the enterprise center,pa,disseminated,,N
+116,2022-06-GSAFAC-0000023703,2022,2024-02-12 01:04:27,NYQ5ENN6GLQ9,232575901,dclark@theenterprisecenter.com,the enterprise center,pa,disseminated,,N
+117,2022-09-CENSUS-0000223295,2022,2023-06-26 00:00:00,FRMNXEUG7DY9,566017737,ssessoms@wakemed.org,wakemed,nc,disseminated,,N
+117,2022-09-GSAFAC-0000347505,2022,2025-01-15 03:00:04,FRMNXEUG7DY9,566017737,ssessoms@wakemed.org,wakemed,nc,disseminated,,N
+118,2022-12-CENSUS-0000245361,2022,2023-06-26 00:00:00,GMMSQJQKLKX5,460788470,jane@northernhomes.org,mm nonprofit housing corporation,mi,disseminated,,N
+118,2022-12-GSAFAC-0000034327,2022,2024-04-14 17:23:49,GMMSQJQKLKX5,460788470,jane@northernhomes.org,mm nonprofit housing corporation,mi,disseminated,,N
+119,2022-06-CENSUS-0000219566,2022,2023-06-30 00:00:00,V1TBZGFCJL18,364122225,jmota@chicookworks.org,chicago cook workforce partnership,il,disseminated,,N
+119,2022-06-GSAFAC-0000027973,2022,2024-03-28 20:19:09,V1TBZGFCJL18,364122225,jmota@chicookworks.org,chicago cook workforce partnership,il,disseminated,,N
+120,2022-09-CENSUS-0000253784,2022,2023-06-30 00:00:00,S5L7QDYL5XF1,941433890,imageron@gmail.com,the society of st vincent de paul district council of sonoma county,ca,disseminated,,N
+120,2022-09-GSAFAC-0000055201,2022,2024-09-20 23:40:10,S5L7QDYL5XF1,941433890,imageron@gmail.com,the society of st vincent de paul district council of sonoma county,ca,disseminated,,N
+121,2022-12-CENSUS-0000209987,2022,2023-06-30 00:00:00,W23XBMGT4XQ7,571138357,matt.cleland@metroparkstoledo.com,metropolitan park district of the toledo area,oh,disseminated,,N
+121,2022-12-GSAFAC-0000066680,2022,2024-11-20 16:02:03,W23XBMGT4XQ7,571138357,matt.cleland@metroparkstoledo.com,metropolitan park district of the toledo area,oh,disseminated,,N
+122,2022-09-CENSUS-0000111728,2022,2023-06-30 00:00:00,J2EMM918DAG4,860215009,michael.prudence@lafrontera.org,"la frontera center, inc.",az,disseminated,,N
+122,2022-09-GSAFAC-0000054736,2022,2024-09-17 22:56:49,J2EMM918DAG4,860215009,michael.prudence@lafrontera.org,"la frontera center, inc.",az,disseminated,,N
+123,2022-12-CENSUS-0000149886,2022,2023-06-30 00:00:00,LM5STP2RVDB7,386008155,sarah.clay@cantonmi.gov,charter township of canton,mi,disseminated,,N
+123,2022-12-GSAFAC-0000043764,2022,2024-07-16 19:05:17,LM5STP2RVDB7,386008155,sarah.clay@cantonmi.gov,charter township of canton,mi,disseminated,,N
+124,2022-12-CENSUS-0000086127,2022,2023-07-05 00:00:00,P3LZJASBHV77,581666179,talmage.whitehead@arcare.net,arcare,ar,disseminated,,N
+124,2022-12-GSAFAC-0000365121,2022,2025-04-23 21:31:57,P3LZJASBHV77,581666179,talmage.whitehead@arcare.net,arcare,ar,disseminated,,N
+125,2022-12-CENSUS-0000244209,2022,2023-07-06 00:00:00,ZXXLDBF9K3B7,270563115,tds@thomastaylortowers.com,westland taylor corporation,mi,disseminated,,N
+125,2022-12-GSAFAC-0000050118,2022,2024-08-07 14:09:16,ZXXLDBF9K3B7,270563115,tds@thomastaylortowers.com,westland taylor corporation,mi,disseminated,,N
+126,2022-12-CENSUS-0000251574,2022,2023-07-06 00:00:00,XM7MMFME1TM5,363317058,omahomed@achn.net,access community health network,il,disseminated,,N
+126,2022-12-GSAFAC-0000016739,2022,2024-02-26 16:59:17,XM7MMFME1TM5,363317058,omahomed@achn.net,access community health network,il,disseminated,,N
+127,2022-06-CENSUS-0000029479,2022,2023-07-12 00:00:00,EK81Q7HQA8N3,237046393,tlove@uac.org,urban affairs coalition,pa,disseminated,,N
+127,2022-06-GSAFAC-0000023707,2022,2024-04-01 16:14:12,EK81Q7HQA8N3,237046393,tlove@uac.org,urban affairs coalition,pa,disseminated,,N
+128,2022-06-CENSUS-0000147971,2022,2023-07-14 00:00:00,ULNKF5VSEMJ3,046006004,jreddington@leominster-ma.gov,city of leominster,ma,disseminated,,N
+128,2022-06-GSAFAC-0000028878,2022,2024-04-24 17:06:16,ULNKF5VSEMJ3,046006004,jreddington@leominster-ma.gov,city of leominster,ma,disseminated,,N
+129,2022-12-CENSUS-0000066042,2022,2023-07-21 00:00:00,GKE2GK1SHBV3,430817642,loconnor@affiniahealthcare.org,affinia healthcare,mo,disseminated,,N
+129,2022-12-GSAFAC-0000066002,2022,2024-11-22 20:04:01,GKE2GK1SHBV3,430817642,loconnor@affiniahealthcare.org,affinia healthcare,mo,disseminated,,N
+130,2022-12-CENSUS-0000222581,2022,2023-07-31 00:00:00,GLD9FBKHPMM3,592201374,scottt@irecusa.org,"interstate renewable energy council, inc.",ny,disseminated,,N
+130,2022-12-GSAFAC-0000049720,2022,2024-07-10 11:15:15,GLD9FBKHPMM3,592201374,scottt@irecusa.org,"interstate renewable energy council, inc.",ny,disseminated,,N
+131,2022-09-CENSUS-0000199921,2022,2023-07-31 00:00:00,F824ZJB5ZD46,910786940,andream@ynha.com,yakama nation housing authority,wa,disseminated,,N
+131,2022-09-GSAFAC-0000017622,2022,2024-01-23 22:04:09,F824ZJB5ZD46,910786940,andream@ynha.com,yakama nation housing authority,wa,disseminated,,N
+132,2022-12-CENSUS-0000162633,2022,2023-08-01 00:00:00,VENLJQ2NMMJ3,346000965,jsmith@cityofeuclid.com,city of euclid,oh,disseminated,,N
+132,2022-12-GSAFAC-0000052224,2022,2024-08-14 16:00:29,VENLJQ2NMMJ3,346000965,jsmith@cityofeuclid.com,city of euclid,oh,disseminated,,N
+133,2022-12-CENSUS-0000250903,2022,2023-08-02 00:00:00,JK5ENKSSGJ29,391372488,katie@embracewi.org,"embrace services, inc.",wi,disseminated,,N
+133,2022-12-GSAFAC-0000049794,2022,2024-08-01 22:07:43,JK5ENKSSGJ29,391372488,katie@embracewi.org,"embrace services, inc.",wi,disseminated,,N
+134,2022-12-CENSUS-0000253091,2022,2023-08-04 00:00:00,VQRGAMNKRGZ3,821993706,patrick.ezzell@up-cdc.org,urban partnerships community development corporation,tx,disseminated,,N
+134,2022-12-GSAFAC-0000391085,2022,2026-05-08 18:44:20,VQRGAMNKRGZ3,821993706,patrick.ezzell@up-cdc.org,urban partnerships community development corporation,tx,disseminated,,N
+135,2022-06-CENSUS-0000147973,2022,2023-08-07 00:00:00,K38JRF8NQRL8,046001093,eflemming@townofbourne.com,town of bourne,ma,disseminated,,N
+135,2022-06-GSAFAC-0000044272,2022,2024-09-18 13:00:56,K38JRF8NQRL8,046001093,eflemming@townofbourne.com,town of bourne,ma,disseminated,,N
+136,2022-12-CENSUS-0000241642,2022,2023-08-08 00:00:00,V2BDJK5JZU56,060726487,cdillow@savechildren.org,"save the children federation, inc and related entities",ct,disseminated,,N
+136,2022-12-GSAFAC-0000051650,2022,2024-08-20 19:48:48,V2BDJK5JZU56,060726487,cdillow@savechildren.org,"save the children federation, inc and related entities",ct,disseminated,,N
+137,2022-12-CENSUS-0000102118,2022,2023-08-15 00:00:00,KM1RNAPAV2E7,741943398,vhibbs@purpledoortx.org,women's shelter of south texas dba the purple door,tx,disseminated,,N
+137,2022-12-GSAFAC-0000006940,2022,2023-11-14 21:42:37,KM1RNAPAV2E7,741943398,vhibbs@purpledoortx.org,women's shelter of south texas dba the purple door,tx,disseminated,,N
+138,2022-06-CENSUS-0000163917,2022,2023-08-15 00:00:00,U9AGUBN66LM5,316000188,reema.ruberg@cintimha.com,cincinnati metropolitan housing authority,oh,disseminated,,N
+138,2022-06-GSAFAC-0000011607,2022,2024-02-14 13:23:48,U9AGUBN66LM5,316000188,reema.ruberg@cintimha.com,cincinnati metropolitan housing authority,oh,disseminated,,N
+139,2022-12-CENSUS-0000219502,2022,2023-08-21 00:00:00,WF9BUCZVKKE6,232823744,stripp@philalegal.org,"philadelphia legal assistance center, inc.",pa,disseminated,,N
+139,2022-12-GSAFAC-0000030991,2022,2024-03-19 17:39:14,WF9BUCZVKKE6,232823744,stripp@philalegal.org,"philadelphia legal assistance center, inc.",pa,disseminated,,N
+140,2022-12-CENSUS-0000177918,2022,2023-08-24 00:00:00,YLACED3H7UG7,396005729,julie.brickner@co.pierce.wi.us,"pierce county, wisconsin",wi,disseminated,,N
+140,2022-12-GSAFAC-0000006076,2022,2023-12-07 18:04:47,YLACED3H7UG7,396005729,julie.brickner@co.pierce.wi.us,"pierce county, wisconsin",wi,disseminated,,N
+141,2022-12-CENSUS-0000246097,2022,2023-08-24 00:00:00,M65NDLGK5WG8,646010402,mwoodward@winstonmedical.org,winston county medical foundation and subsidiary,ms,disseminated,,N
+141,2022-12-GSAFAC-0000038252,2022,2024-04-25 20:28:12,M65NDLGK5WG8,646010402,mwoodward@winstonmedical.org,winston county medical foundation and subsidiary,ms,disseminated,,N
+142,2022-06-CENSUS-0000049353,2022,2023-08-25 00:00:00,YGS9Y8GLKDN1,362720602,scook@alternativesyouth.org,"alternatives, inc.",il,disseminated,,N
+142,2022-06-GSAFAC-0000036508,2022,2024-06-19 19:57:08,YGS9Y8GLKDN1,362720602,scook@alternativesyouth.org,"alternatives, inc.",il,disseminated,,N
+143,2022-12-CENSUS-0000076112,2022,2023-08-29 00:00:00,KVK6EDCLA123,521655740,tad.asbury@bridgestowork.org,bridges from school to work,md,disseminated,,N
+143,2022-12-GSAFAC-0000002703,2022,2023-10-18 19:08:58,KVK6EDCLA123,521655740,tad.asbury@bridgestowork.org,bridges from school to work,md,disseminated,,N
+144,2022-06-CENSUS-0000169621,2022,2023-08-31 00:00:00,L1JZNLFN5QR3,251157968,tvalicenti@eawildcats.net,east allegheny school district,pa,disseminated,,N
+144,2022-06-GSAFAC-0000067903,2022,2024-12-03 16:12:35,L1JZNLFN5QR3,251157968,tvalicenti@eawildcats.net,east allegheny school district,pa,disseminated,,N
+145,2022-06-CENSUS-0000146261,2022,2023-08-31 00:00:00,KCPNB7D6M1E5,616001830,stacey.clark@georgetownky.gov,city of georgetown,ky,disseminated,,N
+145,2022-06-GSAFAC-0000026037,2022,2024-03-07 15:20:05,KCPNB7D6M1E5,616001830,stacey.clark@georgetownky.gov,city of georgetown,ky,disseminated,,N
+146,2022-11-CENSUS-0000088596,2022,2023-08-31 00:00:00,QA8HEH6FZTB9,591118735,k.dean@capc-pensacola.org,"community action program committee, inc.",fl,disseminated,,N
+146,2022-11-GSAFAC-0000007539,2022,2023-11-27 22:05:26,QA8HEH6FZTB9,591118735,k.dean@capc-pensacola.org,"community action program committee, inc.",fl,disseminated,,N
+147,2022-12-CENSUS-0000158368,2022,2023-09-01 00:00:00,ZHE4NDMABLV6,166002558,timothy.callan@erie.gov,"county of erie, new york",ny,disseminated,,N
+147,2022-12-GSAFAC-0000014834,2022,2024-01-17 16:56:17,ZHE4NDMABLV6,166002558,timothy.callan@erie.gov,"county of erie, new york",ny,disseminated,,N
+148,2022-12-CENSUS-0000199865,2022,2023-09-15 00:00:00,C49NJVT1JK91,916001038,henshaw@skagitpud.org,public utility district no. 1 of skagit county,wa,disseminated,,N
+148,2022-12-GSAFAC-0000056188,2022,2024-09-20 20:56:10,C49NJVT1JK91,916001038,henshaw@skagitpud.org,public utility district no. 1 of skagit county,wa,disseminated,,N
+149,2022-12-CENSUS-0000223792,2022,2023-09-20 00:00:00,VHSJFRQKMXG9,830337192,paul@wrdf.org,wind river development fund,wy,disseminated,,N
+149,2022-12-GSAFAC-0000014049,2022,2023-12-27 16:48:29,VHSJFRQKMXG9,830337192,paul@wrdf.org,wind river development fund,wy,disseminated,,N
+150,2022-12-CENSUS-0000257895,2022,2023-09-20 00:00:00,RLQ5SFJB8FN8,843297905,bgrayson@urbantriage.org,"urban triage, inc.",wi,disseminated,,N
+150,2022-12-GSAFAC-0000402838,2022,2026-02-18 20:34:00,RLQ5SFJB8FN8,843297905,bgrayson@urbantriage.org,"urban triage, inc.",wi,disseminated,,N
+151,2022-12-CENSUS-0000224514,2022,2023-09-20 00:00:00,TGGBCN5KEMU9,750818140,sarah.proctor@achservices.org,ach child and family services,tx,disseminated,,N
+151,2022-12-GSAFAC-0000006832,2022,2023-11-14 20:09:06,TGGBCN5KEMU9,750818140,sarah.proctor@achservices.org,ach child and family services,tx,disseminated,,N
+152,2022-06-CENSUS-0000107726,2022,2023-09-22 00:00:00,MKN4DG2L39U8,770279528,laura@mealsthatconnect.org,senior nutrition program of san luis obispo county,ca,disseminated,,N
+152,2022-06-GSAFAC-0000360516,2022,2025-03-25 16:47:06,MKN4DG2L39U8,770279528,laura@mealsthatconnect.org,senior nutrition program of san luis obispo county,ca,disseminated,,N
+153,2022-12-CENSUS-0000258961,2022,2023-09-26 00:00:00,GNU9RNVE6J68,237399677,ms74cchs@atlanticbb.net,jackson township volunteer fire company,pa,disseminated,,N
+153,2022-12-GSAFAC-0000006317,2022,2023-11-10 13:25:50,GNU9RNVE6J68,237399677,ms74cchs@atlanticbb.net,jackson township volunteer fire company,pa,disseminated,,N
+153,2022-12-GSAFAC-0000058536,2022,2024-10-01 14:45:30,GNU9RNVE6J68,237399677,ms74cchs@atlanticbb.net,jackson township volunteer fire company,pa,disseminated,,N
+154,2022-06-CENSUS-0000000223,2022,2023-09-27 00:00:00,ETBJHAQLQFT7,010262323,missy.boutot@nmgeneral.org,northern maine general,me,disseminated,,N
+154,2022-06-GSAFAC-0000017240,2022,2024-02-12 14:00:44,ETBJHAQLQFT7,010262323,missy.boutot@nmgeneral.org,northern maine general,nh,disseminated,,N
+155,2022-12-CENSUS-0000188323,2022,2023-09-27 00:00:00,LJ2LVU92Y4S5,916001361,lauraf@co.skagit.wa.us,skagit county,wa,disseminated,,N
+155,2022-12-GSAFAC-0000061117,2022,2024-10-25 15:37:05,LJ2LVU92Y4S5,916001361,lauraf@co.skagit.wa.us,skagit county,wa,disseminated,,N
+156,2022-12-CENSUS-0000222380,2022,2023-09-28 00:00:00,KBS4UMN5B2G6,222565278,redwards@chsbuffalo.org,"catholic health system, inc. & subsidiaries",ny,disseminated,,N
+156,2022-12-GSAFAC-0000007921,2022,2023-11-28 19:29:06,KBS4UMN5B2G6,222565278,redwards@chsbuffalo.org,"catholic health system, inc. & subsidiaries",ny,disseminated,,N
+157,2022-12-CENSUS-0000114284,2022,2023-09-28 00:00:00,VLQVKK9UJRG5,910916176,yiuc@acrs.org,asian counseling and referral service,wa,disseminated,,N
+157,2022-12-GSAFAC-0000019918,2022,2024-02-22 19:32:40,VLQVKK9UJRG5,910916176,yiuc@acrs.org,asian counseling and referral service,wa,disseminated,,N
+158,2022-12-CENSUS-0000193162,2022,2023-09-28 00:00:00,C6JMYM7VHAL7,237359018,yl11219@gmail.com,united talmudical academy of boro park and subsidiaries,ny,disseminated,,N
+158,2022-12-GSAFAC-0000043979,2022,2024-06-25 19:24:34,C6JMYM7VHAL7,237359018,yl11219@gmail.com,united talmudical academy of boro park and subsidiaries,ny,disseminated,,N
+159,2022-12-CENSUS-0000259006,2022,2023-09-28 00:00:00,WDYGDVE66KH1,540829568,lward@peoplesadvfcu.org,peoples advantage federal credit union,va,disseminated,,N
+159,2022-12-GSAFAC-0000000024,2022,2024-01-25 13:27:43,WDYGDVE66KH1,540829568,lward@peoplesadvfcu.org,peoples advantage federal credit union,va,disseminated,,N
+160,2022-12-GSAFAC-0000000193,2022,2023-09-28 21:41:15,NQKZGBVPDBW7,660190521,iortiz@coopaca.com,cooperativa de ahorro y credito de arecibo,pr,disseminated,,N
+160,2022-12-CENSUS-0000254748,2022,2023-09-29 00:00:00,NQKZGBVPDBW7,660190521,iortiz@coopaca.com,cooperativa de ahorro y credito de arecibo,pr,disseminated,,N
+161,2022-12-CENSUS-0000248694,2022,2023-09-29 00:00:00,LSA8QYJ7R7K7,200530683,michelle@rtsaratoga.org,"rebuilding together saratoga county, inc.",ny,disseminated,,N
+161,2022-12-GSAFAC-0000008696,2022,2024-01-05 15:47:41,LSA8QYJ7R7K7,200530683,michelle@rtsaratoga.org,"rebuilding together saratoga county, inc.",ny,disseminated,,N
+162,2022-12-CENSUS-0000255166,2022,2023-09-29 00:00:00,D5LDZQ4KBND6,751250450,tscroggins@wisehealthsystem.com,decatur hospital authority d/b/a wise health system and affiliates,tx,disseminated,,N
+162,2022-12-GSAFAC-0000006809,2022,2023-11-14 21:36:03,D5LDZQ4KBND6,751250450,tscroggins@wisehealthsystem.com,decatur hospital authority d/b/a wise health system and affiliates,tx,disseminated,,N
+163,2022-12-CENSUS-0000142395,2022,2023-09-29 00:00:00,FLLTFJDL9W95,356000207,james.bramble@vigocounty.in.gov,vigo county,in,disseminated,,N
+163,2022-12-GSAFAC-0000049327,2022,2024-09-27 14:37:28,FLLTFJDL9W95,356000207,james.bramble@vigocounty.in.gov,vigo county,in,disseminated,,N
+164,2022-12-CENSUS-0000166823,2022,2023-09-29 00:00:00,F65KN4D4MJV4,256001059,sfranz@co.crawford.pa.us,"the county of crawford, pennsylvania",pa,disseminated,,N
+164,2022-12-GSAFAC-0000021915,2022,2024-02-21 15:55:18,F65KN4D4MJV4,256001059,sfranz@co.crawford.pa.us,"the county of crawford, pennsylvania",pa,disseminated,,N
+165,2022-12-CENSUS-0000128274,2022,2023-09-29 00:00:00,LEY5CM6DEK56,990073533,bjohnson@ymcahonolulu.org,young men's christian association of honolulu,hi,disseminated,,N
+165,2022-12-GSAFAC-0000347040,2022,2025-01-07 00:29:30,LEY5CM6DEK56,990073533,bjohnson@ymcahonolulu.org,young men's christian association of honolulu,hi,disseminated,,N
+166,2022-12-CENSUS-0000255436,2022,2023-09-29 00:00:00,ULRYKYC9HJF7,161492011,ldorsey@oneidahealthcare.org,"oneida health systems, inc.",ny,disseminated,,N
+166,2022-12-GSAFAC-0000031944,2022,2024-03-26 20:21:04,ULRYKYC9HJF7,161492011,ldorsey@oneidahealthcare.org,"oneida health systems, inc.",ny,disseminated,,N
+167,2022-12-CENSUS-0000250368,2022,2023-09-29 00:00:00,L3WKLMCL7KD6,204668756,kmcnulty@panthera.org,panthera corporation,ny,disseminated,,N
+167,2022-12-GSAFAC-0000050758,2022,2024-09-27 17:43:27,L3WKLMCL7KD6,204668756,kmcnulty@panthera.org,panthera corporation,ny,disseminated,,N
+168,2022-12-CENSUS-0000247574,2022,2023-09-29 00:00:00,V1P8HKMBEHD5,465408781,nadia.martinez29@yahoo.com,bright nutrition,tx,disseminated,,N
+168,2022-12-GSAFAC-0000015958,2022,2023-12-29 22:01:28,V1P8HKMBEHD5,465408781,nadia.martinez29@yahoo.com,bright nutrition,tx,disseminated,,N
+169,2022-12-CENSUS-0000147135,2022,2023-09-29 00:00:00,D34YRM3KT695,016000033,bturner@presqueisleme.us,"city of presque isle, maine",me,disseminated,,N
+169,2022-12-GSAFAC-0000045964,2022,2024-06-28 12:48:07,D34YRM3KT695,016000033,bturner@presqueisleme.us,"city of presque isle, maine",me,disseminated,,N
+170,2022-12-CENSUS-0000199681,2022,2023-09-30 00:00:00,GFCMA234QPH3,942193845,corey@stewartspoint.org,kashia band of pomo indians of the stewarts point rancheria,ca,disseminated,,N
+170,2023-06-GSAFAC-0000002622,2022,2024-01-10 18:06:33,GFCMA234QPH3,942193845,corey@stewartspoint.org,kashia band of pomo indians of the stewarts point rancheria,ca,disseminated,,N
+171,2022-12-CENSUS-0000202936,2022,2023-10-01 00:00:00,ZUQGAQ428S99,972714533,michelle@wiyot.us,wiyot tribe,ca,disseminated,,N
+171,2022-12-GSAFAC-0000003037,2022,2024-01-19 17:08:06,ZUQGAQ428S99,972714533,michelle@wiyot.us,wiyot tribe,ca,disseminated,,N
+172,2022-12-CENSUS-0000114174,2022,2023-10-02 00:00:00,K2RZJM3HAXM9,910859922,dharris@communityyouthservices.org,community youth services,wa,disseminated,,N
+172,2022-12-GSAFAC-0000024207,2022,2024-02-09 18:26:26,K2RZJM3HAXM9,910859922,dharris@communityyouthservices.org,community youth services,wa,disseminated,,N
+173,2022-12-CENSUS-0000188422,2022,2023-10-02 00:00:00,NSMVNJXZP269,236003050,gfbower@yorkcountypa.gov,"county of york, pennsylvania",pa,disseminated,,N
+173,2022-12-GSAFAC-0000368958,2022,2025-05-12 16:00:08,NSMVNJXZP269,236003050,gfbower@yorkcountypa.gov,"county of york, pennsylvania",pa,disseminated,,N
+174,2022-12-GSAFAC-0000000101,2022,2023-10-03 03:52:06,WT9MJ8VP92H7,111635081,eschmidt@maimonidesmed.org,maimonides medical center,ny,disseminated,,N
+174,2022-12-GSAFAC-0000038437,2022,2024-04-25 21:27:16,WT9MJ8VP92H7,111635081,eschmidt@maimonidesmed.org,maimonides medical center,ny,disseminated,,N
+175,2022-11-GSAFAC-0000000409,2022,2023-10-10 20:52:03,C121C5LKZU91,376002171,mdeluhery@tazewell-il.gov,"tazewell county, illinois",il,disseminated,,N
+175,2022-11-GSAFAC-0000064177,2022,2024-11-14 01:50:37,C121C5LKZU91,376002171,mdeluhery@tazewell-il.gov,"tazewell county, illinois",il,disseminated,,N
+176,2022-12-GSAFAC-0000001604,2022,2023-10-11 12:44:20,L2LLFSC41LC5,386004890,nroskey@sanilaccounty.net,sanilac county,mi,disseminated,,N
+176,2022-12-GSAFAC-0000020600,2022,2024-03-04 16:00:08,L2LLFSC41LC5,386004890,nroskey@sanilaccounty.net,sanilac county,mi,disseminated,,N
+177,2022-09-GSAFAC-0000003620,2022,2024-03-01 16:48:25,N3WNEVKZ9J39,640515776,sferguson@mscoastcoliseum.com,ms coast coliseum & convention center,ms,disseminated,,N
+177,2022-09-GSAFAC-0000039869,2022,2025-07-08 15:05:32,N3WNEVKZ9J39,640515776,sferguson@mscoastcoliseum.com,ms coast coliseum & convention center,ms,disseminated,,N
+178,2022-12-GSAFAC-0000005541,2022,2023-11-28 19:23:58,D9MJER6MTH41,846000768,jallaire@gilpincounty.org,gilpin county,co,disseminated,,N
+178,2022-12-GSAFAC-0000035005,2022,2024-03-29 17:34:29,D9MJER6MTH41,846000768,jallaire@gilpincounty.org,gilpin county,co,disseminated,,N
+179,2022-12-GSAFAC-0000003177,2022,2024-01-04 21:07:48,TEQFK7MADJE4,466000216,financeofficer@huronsd.com,city of huron,sd,disseminated,,N
+179,2022-12-GSAFAC-0000013745,2022,2024-01-05 20:33:06,TEQFK7MADJE4,466000216,financeofficer@huronsd.com,city of huron,sd,disseminated,,N
+180,2022-12-GSAFAC-0000006222,2022,2023-11-21 15:40:20,F8HUNAEASCP7,454927486,erikwallinesq@osdri.org,"stand down housing westerly, inc.",ri,disseminated,,N
+180,2022-12-GSAFAC-0000005827,2022,2023-11-21 20:06:00,F8HUNAEASCP7,454927486,erikwallinesq@osdri.org,"stand down housing westerly, inc.",ri,disseminated,,N
+181,2022-12-GSAFAC-0000006629,2022,2023-11-22 14:21:41,CJ9LVQTLT3N7,341603502,ebenny@mhmltd.com,holy redeemer senior citizens facility,oh,disseminated,,N
+181,2022-12-GSAFAC-0000008143,2022,2023-11-22 14:22:24,CJ9LVQTLT3N7,341603502,ebenny@mhmltd.com,holy redeemer senior citizens facility,oh,disseminated,,N
+182,2022-12-GSAFAC-0000006840,2022,2023-11-14 17:18:54,KR23CHB632S5,364377387,klarry@gagdc.org,greater auburn gresham development corporation,il,disseminated,,N
+182,2022-12-GSAFAC-0000007006,2022,2023-11-14 19:02:22,KR23CHB632S5,364377387,klarry@gagdc.org,greater auburn gresham development corporation,il,disseminated,,N
+182,2022-12-GSAFAC-0000006681,2022,2024-05-07 13:26:14,KR23CHB632S5,364377387,klarry@gagdc.org,greater auburn gresham development corporation,il,disseminated,,N
+183,2022-12-GSAFAC-0000005498,2022,2023-11-14 17:57:18,CYYCLBFLP125,472219464,barrera@metisfoundationusa.org,the metis foundation,tx,disseminated,,N
+183,2022-12-GSAFAC-0000029747,2022,2024-03-22 19:49:58,CYYCLBFLP125,472219464,barrera@metisfoundationusa.org,the metis foundation,tx,disseminated,,N
+184,2023-06-GSAFAC-0000006669,2022,2023-11-21 14:52:10,Z45JV84FSNT4,352166123,belisa@serfam.org,ser familia,ga,disseminated,,N
+184,2022-12-GSAFAC-0000008252,2022,2023-12-29 16:26:28,Z45JV84FSNT4,352166123,belisa@serfam.org,ser familia,ga,disseminated,,N
+185,2022-12-GSAFAC-0000007462,2022,2023-11-18 20:24:01,MVVFA4FW3CL4,593051173,cjepsen@clhcares.org,calhoun liberty hospital association inc,fl,disseminated,,N
+185,2022-12-GSAFAC-0000022226,2022,2024-02-22 16:22:40,MVVFA4FW3CL4,593051173,cjepsen@clhcares.org,calhoun liberty hospital association inc,fl,disseminated,,N
+186,2022-06-GSAFAC-0000008411,2022,2023-11-22 14:39:28,EJ8SEG48KJ49,043291266,tammy.ginn@maineindianeducation.org,pleasant point passamaquoddy school committee,me,disseminated,,N
+186,2022-06-GSAFAC-0000022703,2022,2024-02-01 15:06:38,EJ8SEG48KJ49,043291266,tammy.ginn@maineindianeducation.org,pleasant point passamaquoddy school committee,me,disseminated,,N
+187,2022-06-GSAFAC-0000008430,2022,2023-11-22 14:39:22,HWJLRPE2QUD7,010502144,tammy.ginn@maineindianeducation.org,penobscot indian school committee,me,disseminated,,N
+187,2022-06-GSAFAC-0000022716,2022,2024-02-01 15:07:18,HWJLRPE2QUD7,010502144,tammy.ginn@maineindianeducation.org,penobscot indian school committee,me,disseminated,,N
+188,2022-12-GSAFAC-0000008432,2022,2023-11-27 13:36:34,W4HAKV12R9K5,156000464,rufflesa@otsegocounty.com,county of otsego,ny,disseminated,,N
+188,2022-12-GSAFAC-0000022390,2022,2024-01-31 19:46:14,W4HAKV12R9K5,156000464,rufflesa@otsegocounty.com,county of otsego,ny,disseminated,,N
+189,2022-12-GSAFAC-0000009166,2022,2023-12-05 23:20:15,VPPBX1NQ4KH9,846000743,derek.woodman@archuletacounty.org,"archuleta county, colorado",co,disseminated,,N
+189,2022-12-GSAFAC-0000023218,2022,2024-03-15 16:19:00,VPPBX1NQ4KH9,846000743,derek.woodman@archuletacounty.org,"archuleta county, colorado",co,disseminated,,N
+190,2022-06-GSAFAC-0000012303,2022,2024-01-22 17:51:28,K4V1DYKLKKA5,850204963,jclemons@epcaa.org,"eastern plains community action agency, inc.",nm,disseminated,,N
+190,2022-06-GSAFAC-0000039863,2022,2024-05-23 15:39:12,K4V1DYKLKKA5,850204963,jclemons@epcaa.org,"eastern plains community action agency, inc.",nm,disseminated,,N
+191,2022-06-GSAFAC-0000014615,2022,2024-01-17 22:09:44,M1MCHNQN91L9,061787661,hwallace@marincityclinic.org,marin city health and wellness center,ca,disseminated,,N
+191,2022-06-GSAFAC-0000019897,2022,2024-10-22 19:33:17,M1MCHNQN91L9,061787661,hwallace@marincityclinic.org,marin city health and wellness center,ca,disseminated,,N
+192,2022-09-GSAFAC-0000017255,2022,2024-01-05 22:51:54,YLLAKFSXB9R3,826000242,tkoepke@cityofpierce.com,city of pierce,id,disseminated,,N
+192,2022-09-GSAFAC-0000063018,2022,2024-10-25 22:34:08,YLLAKFSXB9R3,826000242,tkoepke@cityofpierce.com,city of pierce,id,disseminated,,N
+193,2022-12-GSAFAC-0000017958,2022,2024-01-09 21:29:33,TNVBJGK8ANE5,540625939,chalterman@harrisonburgrha.com,harrisonburg redevelopment and housing authority,va,disseminated,,N
+193,2022-12-GSAFAC-0000032240,2022,2024-03-22 16:16:09,TNVBJGK8ANE5,540625939,chalterman@harrisonburgrha.com,harrisonburg redevelopment and housing authority,va,disseminated,,N
+194,2022-09-GSAFAC-0000021701,2022,2024-02-01 18:07:14,RSXGKBMLSKH3,561022483,mvazquez@telamon.org,telamon corporation,nc,disseminated,,N
+194,2022-09-GSAFAC-0000027204,2022,2024-02-29 13:44:58,RSXGKBMLSKH3,561022483,mvazquez@telamon.org,telamon corporation,nc,disseminated,,N
+195,2022-12-GSAFAC-0000023745,2022,2024-02-13 15:03:25,WGDJKNJZEMJ4,222126370,tsilverstein@hispanicfamilycenter.com,hispanic family center of southern new jersey,nj,disseminated,,N
+195,2022-12-GSAFAC-0000025483,2022,2024-02-19 17:35:24,WGDJKNJZEMJ4,222126370,tsilverstein@hispanicfamilycenter.com,hispanic family center of southern new jersey,nj,disseminated,,N
+196,2022-12-GSAFAC-0000006089,2022,2024-02-21 18:15:25,NGHGVQYBRGX3,436003958,dstotler@warrencountymo.org,"warren county, missouri",mo,disseminated,,N
+196,2022-12-GSAFAC-0000066332,2022,2024-11-18 21:23:06,NGHGVQYBRGX3,436003958,dstotler@warrencountymo.org,"warren county, missouri",mo,disseminated,,N
+197,2022-06-GSAFAC-0000025523,2022,2024-02-22 17:57:53,FJHKEKYNQN74,016000243,manager@lfme.org,town of livermore falls,me,disseminated,,N
+197,2022-06-GSAFAC-0000415460,2022,2026-05-06 15:37:53,FJHKEKYNQN74,016000243,manager@lfme.org,town of livermore falls,me,disseminated,,N
+198,2022-12-GSAFAC-0000026496,2022,2024-02-23 01:33:29,KVU7N952WLU8,453337093,roberto@ecschicago.org,envision community services inc,il,disseminated,,N
+198,2022-12-GSAFAC-0000347257,2022,2024-12-23 21:39:48,KVU7N952WLU8,453337093,roberto@ecschicago.org,envision community services inc,il,disseminated,,N
+199,2022-12-GSAFAC-0000025568,2022,2024-04-02 20:41:56,XJJ9RLFV2674,362119989,kbares@themagnificentmile.com,the magnificent mile association,il,disseminated,,N
+199,2022-12-GSAFAC-0000037887,2022,2024-04-24 14:15:56,XJJ9RLFV2674,362119989,kbares@themagnificentmile.com,the magnificent mile association,il,disseminated,,N
+200,2022-06-GSAFAC-0000030342,2022,2024-07-18 13:17:10,CN4JM64A5LP4,586009375,china.agu@doravillega.us,city of doraville,ga,disseminated,,N
+200,2022-09-GSAFAC-0000061325,2022,2024-10-21 20:58:26,CN4JM64A5LP4,586009375,china.agu@doravillega.us,city of doraville,ga,disseminated,,N
+201,2022-06-GSAFAC-0000028121,2022,2024-03-18 16:05:46,UMBMZHE7JDP5,046001397,sspencer@lynnma.gov,city of lynn,ma,disseminated,,N
+201,2022-06-GSAFAC-0000049973,2022,2024-07-09 23:24:31,UMBMZHE7JDP5,046001397,sspencer@lynnma.gov,city of lynn,ma,disseminated,,N
+202,2022-12-GSAFAC-0000002628,2022,2024-07-23 15:19:12,CSR1XAMKNW64,346401532,panderson@wapakoneta.net,city of wapakoneta,oh,disseminated,,N
+202,2022-12-GSAFAC-0000377201,2022,2025-08-12 19:10:18,CSR1XAMKNW64,346401532,panderson@wapakoneta.net,city of wapakoneta,oh,disseminated,,N
+203,2022-12-GSAFAC-0000008542,2022,2024-03-21 13:59:57,JH36NMXLMH88,061451581,scox@ehmchm.org,chestnut hill housing inc,ct,disseminated,,N
+203,2022-12-GSAFAC-0000008549,2022,2024-03-21 14:00:24,JH36NMXLMH88,061451581,scox@ehmchm.org,chestnut hill housing inc,ct,disseminated,,N
+204,2022-09-GSAFAC-0000032635,2022,2024-03-25 17:20:08,R12ETJH6DDL3,646000949,ckerkowcpa@gmail.com,"city of pascagoula, mississippi",ms,disseminated,,N
+204,2022-09-GSAFAC-0000039304,2022,2024-04-29 19:13:33,R12ETJH6DDL3,646000949,ckerkowcpa@gmail.com,"city of pascagoula, mississippi",ms,disseminated,,N
+205,2022-12-GSAFAC-0000033032,2022,2024-04-01 13:45:09,DSLMJKQ1DSW1,436001823,kapprill@jeffcomo.org,the county of jefferson,mo,disseminated,,N
+205,2022-12-GSAFAC-0000037918,2022,2024-04-29 15:39:07,DSLMJKQ1DSW1,436001823,kapprill@jeffcomo.org,the county of jefferson,mo,disseminated,,N
+206,2022-12-GSAFAC-0000038105,2022,2024-04-22 20:55:46,S59BZCFK9K18,161660966,eric.dale@agapefamilyhealth.org,"agape community health center, inc.",fl,disseminated,,N
+206,2022-12-GSAFAC-0000040482,2022,2024-05-13 12:33:17,S59BZCFK9K18,161660966,eric.dale@agapefamilyhealth.org,"agape community health center, inc.",fl,disseminated,,N
+207,2022-12-GSAFAC-0000008387,2022,2024-04-25 12:20:11,UAW7EFGSLXM9,346002162,bday@cityofparma-oh.gov,city of parma,oh,disseminated,,N
+207,2022-12-GSAFAC-0000039825,2022,2024-05-08 15:02:50,UAW7EFGSLXM9,346002162,bday@cityofparma-oh.gov,city of parma,oh,disseminated,,N
+208,2022-12-GSAFAC-0000041064,2022,2024-05-22 13:59:31,NPPQWJ3Y9LM4,456002178,darcieh@wahpeton.com,city of wahpeton,nd,disseminated,,N
+208,2022-12-GSAFAC-0000418692,2022,2026-06-02 18:26:23,NPPQWJ3Y9LM4,456002178,darcieh@wahpeton.com,city of wahpeton,nd,disseminated,,N
+209,2022-06-GSAFAC-0000050117,2022,2024-07-17 22:21:59,EF8YARMRL985,640808037,tinisha.williams@etsdk12.org,east tallahatchie school district,ms,disseminated,,N
+209,2022-06-GSAFAC-0000053834,2022,2024-09-04 14:52:03,EF8YARMRL985,640808037,tinisha.williams@etsdk12.org,east tallahatchie school district,ms,disseminated,,N
+210,2022-06-GSAFAC-0000050714,2022,2024-07-18 15:57:13,W9G3G7ZN3DK6,640364542,scarson@southeasternbaptist.edu,"southeastern baptist college, inc.",ms,disseminated,,N
+210,2022-06-GSAFAC-0000051568,2022,2024-07-30 20:19:05,W9G3G7ZN3DK6,640364542,scarson@southeasternbaptist.edu,"southeastern baptist college, inc.",ms,disseminated,,N
+211,2022-06-GSAFAC-0000038436,2022,2024-10-23 13:09:45,ELZNT3RE53S3,561270967,terri.brown@enolagroup.org,"the enola group, inc.",nc,disseminated,,N
+211,2022-06-GSAFAC-0000050920,2022,2024-10-23 13:19:17,ELZNT3RE53S3,561270967,terri.brown@enolagroup.org,"the enola group, inc.",nc,disseminated,,N
+212,2022-08-GSAFAC-0000052210,2022,2024-08-11 14:21:25,K5QDPHPNDJK1,113359430,rabbielidavid@gmail.com,bet yaakov ohr sarah,ny,disseminated,,N
+212,2022-08-GSAFAC-0000063559,2022,2024-11-27 16:59:07,K5QDPHPNDJK1,113359430,rabbielidavid@gmail.com,bet yaakov ohr sarah,ny,disseminated,,N
+213,2022-12-GSAFAC-0000052296,2022,2024-08-28 17:18:39,YRLVBH8FJ9L6,520749775,mbrosnan@aapt.org,"american association of physics teachers, inc.",md,disseminated,,N
+213,2022-12-GSAFAC-0000060684,2022,2024-10-10 14:55:06,YRLVBH8FJ9L6,520749775,mbrosnan@aapt.org,"american association of physics teachers, inc.",md,disseminated,,N
+214,2022-12-GSAFAC-0000054568,2022,2024-09-09 18:19:45,DWH3JE9WFYY5,226002138,guzmanb@ci.newark.nj.us,city of newark,nj,disseminated,,N
+214,2022-12-GSAFAC-0000415125,2022,2026-04-10 17:07:36,DWH3JE9WFYY5,226002138,guzmanb@ci.newark.nj.us,city of newark,nj,disseminated,,N
+215,2022-12-GSAFAC-0000050034,2022,2024-10-16 21:23:31,S7DLR8S7XMP2,916001521,clerktreasurer@townoftwisp.com,town of twisp,wa,disseminated,,N
+215,2022-12-GSAFAC-0000386735,2022,2025-12-18 17:45:24,S7DLR8S7XMP2,916001521,clerktreasurer@townoftwisp.com,town of twisp,wa,disseminated,,N
+216,2022-06-GSAFAC-0000062057,2022,2024-10-21 18:07:23,N3MXKSEKTLH7,251401743,regaji@whsd.us,woodland hills school district,pa,disseminated,,N
+216,2022-06-GSAFAC-0000063662,2022,2024-10-31 15:42:54,N3MXKSEKTLH7,251401743,regaji@whsd.us,woodland hills school district,pa,disseminated,,N
+217,2022-06-GSAFAC-0000063036,2022,2024-10-28 18:17:24,J9NVEWGJ74G9,236005528,lutzdoemlingc@cattysd.org,catasauqua area school district,pa,disseminated,,N
+217,2022-06-GSAFAC-0000346803,2022,2024-12-24 13:00:40,J9NVEWGJ74G9,236005528,lutzdoemlingc@cattysd.org,catasauqua area school district,pa,disseminated,,N
+218,2022-06-GSAFAC-0000065105,2022,2024-11-08 20:20:37,J6JTLQLKVSV9,474638568,mickowski@indianarmc.org,pennsylvania mountains care network,pa,disseminated,,N
+218,2022-06-GSAFAC-0000344200,2022,2024-12-11 21:00:54,J6JTLQLKVSV9,474638568,mickowski@indianarmc.org,pennsylvania mountains care network,pa,disseminated,,N
+219,2022-06-GSAFAC-0000030756,2022,2024-12-23 01:33:54,X8BEWZU5KHY9,310898802,bmarcano@gemfellowship.org,national consortium for graduate degrees for minorities in engineering,va,disseminated,,N
+219,2022-06-GSAFAC-0000357552,2022,2025-04-15 20:45:05,X8BEWZU5KHY9,310898802,bmarcano@gemfellowship.org,national consortium for graduate degrees for minorities in engineering,va,disseminated,,N
+220,2022-06-GSAFAC-0000066629,2022,2024-12-04 21:17:48,MM7GKFZE4T98,926002302,wzamos@anchorageconcerts.org,anchorage concert association,ak,disseminated,,N
+220,2022-06-GSAFAC-0000068972,2022,2025-02-25 18:42:40,MM7GKFZE4T98,926002302,wzamos@anchorageconcerts.org,anchorage concert association,ak,disseminated,,N
+221,2022-09-GSAFAC-0000347302,2022,2024-12-27 20:37:39,K9J3VGVPK6C3,741666921,jerodriguez@stdc.cog.tx.us,south texas development council,tx,disseminated,,N
+221,2022-09-GSAFAC-0000352192,2022,2025-01-25 03:04:12,K9J3VGVPK6C3,741666921,jerodriguez@stdc.cog.tx.us,south texas development council,tx,disseminated,,N
+222,2022-12-GSAFAC-0000357632,2022,2025-03-14 13:19:44,CVGCB39AQCX9,410987441,kellumm@juelfairbanks.org,juel fairbanks chemical dependency services,mn,disseminated,,N
+222,2022-12-GSAFAC-0000397190,2022,2026-01-15 15:37:45,CVGCB39AQCX9,410987441,kellumm@juelfairbanks.org,juel fairbanks chemical dependency services,mn,disseminated,,N
+223,2022-12-GSAFAC-0000360035,2022,2025-03-20 12:59:52,SQHTKEN7GHA6,246000722,kherman@carboncounty.net,county of carbon,pa,disseminated,,N
+223,2022-12-GSAFAC-0000379256,2022,2025-08-28 19:58:09,SQHTKEN7GHA6,246000722,kherman@carboncounty.net,county of carbon,pa,disseminated,,N
+224,2022-09-GSAFAC-0000067551,2022,2025-03-25 19:15:09,GFJ2F491T6N3,460217757,kevinckeckler@yahoo.com,cheyenne river sioux tribe,sd,disseminated,,N
+224,2022-09-GSAFAC-0000369112,2022,2025-05-23 21:09:07,GFJ2F491T6N3,460217757,kevinckeckler@yahoo.com,cheyenne river sioux tribe,sd,disseminated,,N
+225,2022-12-GSAFAC-0000354711,2022,2025-03-28 18:47:22,HZK4TRM2F3P4,911538352,smarsh@spokanepfd.org,spokane public facilities district,wa,disseminated,,N
+225,2022-12-GSAFAC-0000369110,2022,2025-05-15 21:16:06,HZK4TRM2F3P4,911538352,smarsh@spokanepfd.org,spokane public facilities district,wa,disseminated,,N
+226,2022-01-GSAFAC-0000365305,2022,2025-04-17 05:26:34,HF6NE8JKLGV3,411000060,mmartin01@chsiclinics.org,"community health service, inc.",mn,disseminated,,N
+226,2022-01-GSAFAC-0000378255,2022,2025-08-19 13:14:17,HF6NE8JKLGV3,411000060,mmartin01@chsiclinics.org,"community health service, inc.",mn,disseminated,,N
+227,2022-12-GSAFAC-0000366927,2022,2025-04-22 18:44:35,HZKBYTAKF622,363809778,john@anypositivechange.org,chicago recovery alliance,il,disseminated,,N
+227,2022-12-GSAFAC-0000378548,2022,2025-09-15 17:10:54,HZKBYTAKF622,363809778,john@anypositivechange.org,chicago recovery alliance,il,disseminated,,N
+228,2022-09-GSAFAC-0000370305,2022,2025-05-28 22:10:41,TLNABGNSKQ87,731132826,beckyc@finley-cook.com,ponca tribe of oklahoma,or,disseminated,,N
+228,2022-09-GSAFAC-0000371364,2022,2025-06-05 18:22:50,TLNABGNSKQ87,731132826,beckyc@finley-cook.com,ponca tribe of oklahoma,ok,disseminated,,N
+229,2022-06-GSAFAC-0000370605,2022,2025-05-30 21:04:48,JKE6XHKZY9C7,146001883,jfroehich@roscoe.k12.ny.us,roscoe central school district,ny,disseminated,,N
+229,2022-06-GSAFAC-0000375413,2022,2025-07-11 12:42:28,JKE6XHKZY9C7,146001883,jfroehich@roscoe.k12.ny.us,roscoe central school district,ny,disseminated,,N
