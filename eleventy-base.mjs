@@ -8,6 +8,7 @@ import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import jwt from 'jsonwebtoken';
 import markdownIt from 'markdown-it';
 import markdownItAnchor from 'markdown-it-anchor';
+import resubLinking from './src/_data/resub-linking.js';
 
 const md = markdownIt({
   html: true,
@@ -42,6 +43,8 @@ function config(baseUrl) {
     /* GLOBAL DATA */
     eleventyConfig.addGlobalData("baseUrl", baseUrl);
     eleventyConfig.addGlobalData('env', process.env);
+    // Explicitly links the resub-linking.js file to this variable name.
+    eleventyConfig.addGlobalData('resubLinking', resubLinking);
 
     /* PASSTHROUGH COPIES */
     eleventyConfig.addPassthroughCopy('assets');
