@@ -1,0 +1,109 @@
+---
+# Metadata
+layout: home.njk
+title: Resubmission linking
+meta:
+  name: Resubmission linking
+  description: Audit records the Federal Audit Clearinghouse identified as resubmissions of one another and linked together in October 2026.
+in_page_nav: true
+
+# Layout
+eleventyComputed:
+  eleventyNavigation:
+    key: Resubmission linking
+    parent: Curation log
+
+# Curation specific
+concern: 2026-07-01-duplicate-submissions
+slug: Linking of resubmitted records
+adr: None
+repair_date: 2026-10-19 and 2026-10-20
+github_pr: https://github.com/GSA-TTS/FAC/issues/5464
+short: Resubmissions were linked by duplicate metadata
+tags: curation_log
+---
+
+<h1>{{ title }}</h1>
+
+<p>On October 19 and 20, 2026, we linked audit records that we identified as resubmissions of one another. This page lists every affected record from these runs.</p>
+
+<h2>What we did</h2>
+
+<p>Some audits were submitted more than once for the same auditee and audit year. This is because resubmission was not yet feature-complete, and entities needed to issue up-to-date corrections regardless of our status.</p>
+<p>For these groups of records, the "original" or "first version" was intended to be made obsolete, or otherwise marked as incorrect. We have taken a first pass at finding these groups of records and linking them such that the incorrect "original" is marked DEPRECATED, and is no longer publicly available.</p>
+
+<h2>Note</h2>
+
+<p>We have taken care that our first pass only identifies records we can say with certainty are resubmissions of one another. To meet our process, these records must have duplicate:</p>
+<ul>
+    <li><code>audit_year</code></li>
+    <li><code>auditee_uei</code></li>
+    <li><code>auditee_ein</code></li>
+    <li><code>auditee_email</code></li>
+    <li><code>auditee_name</code></li>
+    <li><code>auditee_state</code></li>
+</ul>
+<p>If any of these values were updated by the resubmission, they were not identified with this pass.</p>
+<p>The list of affected records is quite long (3,515 records), and may be difficult to digest in web format. For a single searchable and machine-readable format,
+    <a href="{{ config.baseUrl }}assets/curation/resubmission-chains-rollup.csv" download>Download the full list of linked records (CSV)</a>, covering all audit years.
+    All records in the list were affected by having metadata added to them. Only the first value(s) in a chain were marked "DEPRECATED".
+</p>
+
+<h2>Summary</h2>
+
+<table class="usa-table usa-table--borderless" width="100%">
+  <caption class="usa-sr-only">Linked groups per audit year</caption>
+  <thead>
+    <tr>
+      <th scope="col">Audit year</th>
+      <th scope="col">Linked groups</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for y in resubLinking %}
+    <tr>
+      <td><a href="#audit-year-{{ y.year }}">{{ y.year }}</a></td>
+      <td>{{ y.chainCount }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+{% for y in resubLinking %}
+<h2 id="audit-year-{{ y.year }}">Audit year {{ y.year }}</h2>
+
+<p>{{ y.chainCount }} linked group{{ "s" if y.chainCount != 1 }}. Reports without a linked Summary Page have been marked DEPRECATED.</p>
+<p><a href="{{ config.baseUrl }}assets/curation/{{ y.file }}" download>Download audit year {{ y.year }} linked records (CSV)</a></p>
+
+<table class="usa-table usa-table--stacked usa-table--striped" width="100%">
+  <caption class="usa-sr-only">Resubmissions for audit year {{ y.year }}</caption>
+  <thead>
+    <tr>
+      <th scope="col">Group</th>
+      <th scope="col">Report ID</th>
+      <th scope="col">Accepted</th>
+      <th scope="col">Auditee</th>
+      <th scope="col">UEI</th>
+      <th scope="col">EIN</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for chain in y.chains %}{% for r in chain %}
+    <tr>
+      <td data-label="Group">{{ r.chain_index }}</td>
+      <td data-label="Report ID">
+        {% if not loop.last %}
+            {{ r.report_id }}
+        {% else %}
+            <a href="https://app.fac.gov/dissemination/summary/{{ r.report_id }}">{{ r.report_id }}</a>
+        {% endif %}
+    </td>
+      <td data-label="Accepted">{{ r.fac_accepted_date }}</td>
+      <td data-label="Auditee">{{ r.auditee_name }}</td>
+      <td data-label="UEI">{{ r.auditee_uei }}</td>
+      <td data-label="EIN">{{ r.auditee_ein }}</td>
+    </tr>
+  {% endfor %}{% endfor %}
+  </tbody>
+</table>
+{% endfor %}
