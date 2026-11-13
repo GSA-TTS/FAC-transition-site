@@ -5,5 +5,10 @@ AUDITYEAR,General.audit_year,TEXT,gen.audit_year
 FACACCEPTEDDATE,General.fac_accepted_date,DATE,gen.fac_accepted_date
 ____,version,BIGINT,resub.version
 ____,status,TEXT,resub.status
+____,resubmission_requester,TEXT,resub.resubmission_requester
+____,audit_opinion_changes,TEXT,resub.audit_opinion_changes
+____,resubmission_type,TEXT,resub.resubmission_type
+____,resubmission_justification,TEXT,resub.resubmission_justification
 ____,previous_report_id,TEXT,resub.previous_report_id
 ____,next_report_id,TEXT,resub.next_report_id
+____,original_submission_date,TEXT,resub.original_submission_date
