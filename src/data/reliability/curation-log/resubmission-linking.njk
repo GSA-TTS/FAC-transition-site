@@ -55,20 +55,25 @@ tags: curation_log
   <caption class="usa-sr-only">Linked groups per audit year</caption>
   <thead>
     <tr>
-      <th scope="col">Audit year</th>
-      <th scope="col">Linked groups</th>
+      <th scope="col">Download for audit year</th>
+      <th scope="col"># of linked groups</th>
     </tr>
   </thead>
   <tbody>
   {% for y in resubLinking %}
     <tr>
-      <td><a href="#audit-year-{{ y.year }}">{{ y.year }}</a></td>
+      <td><a href="{{ config.baseUrl }}assets/curation/{{ y.file }}" download>{{ y.year }}</a></td>
       <td>{{ y.chainCount }}</td>
     </tr>
   {% endfor %}
   </tbody>
 </table>
 
+{#
+  This is a for loop. For each yearly CSV, it creates a section with a download link for the file and a table with every affected record in it.
+  These sections are super long. We may want to bring them back in the case that a user wants to be able to CTRL+F in a list without downloading a doc.
+#}
+{#
 {% for y in resubLinking %}
 <h2 id="audit-year-{{ y.year }}">Audit year {{ y.year }}</h2>
 
@@ -107,3 +112,4 @@ tags: curation_log
   </tbody>
 </table>
 {% endfor %}
+#}
