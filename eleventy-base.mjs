@@ -50,6 +50,7 @@ function config(baseUrl) {
     eleventyConfig.addPassthroughCopy('assets');
     eleventyConfig.addPassthroughCopy('favicon.ico');
     eleventyConfig.addPassthroughCopy('robots.txt');
+    eleventyConfig.addPassthroughCopy({'src/_data/curation/resub_linking/*.csv': 'assets/curation'})
     /* DATA EXTENSIONS */
     eleventyConfig.addDataExtension('yaml', (contents) => load(contents));
     /* PLUGINS */
