@@ -1,0 +1,25 @@
+chain_index,report_id,audit_year,fac_accepted_date,auditee_uei,auditee_ein,auditee_email,auditee_name,auditee_state,prior_submission_status,prior_resubmission_meta,skipped
+0,2020-12-CENSUS-0000176834,2020,2023-08-18 00:00:00,GSA_MIGRATION,916000976,msb@rentonhousing.org,housing authority of the city of renton,wa,disseminated,,N
+0,2020-12-GSAFAC-0000004283,2020,2023-11-22 00:14:47,LTK4P8KABWF8,916000976,msb@rentonhousing.org,housing authority of the city of renton,wa,disseminated,,N
+1,2020-06-CENSUS-0000215944,2020,2021-03-29 00:00:00,GSA_MIGRATION,231664406,darren.williams@phdc.phila.gov,philadelphia housing development corporation,pa,disseminated,,N
+1,2020-06-GSAFAC-0000008699,2020,2023-11-27 18:24:26,GKL3BZAZ4KU5,231664406,darren.williams@phdc.phila.gov,philadelphia housing development corporation,pa,disseminated,,N
+2,2020-11-CENSUS-0000223826,2020,2022-12-15 00:00:00,GSA_MIGRATION,912189932,rthompson@pancarefl.org,"pancare of florida, inc",fl,disseminated,,N
+2,2020-11-GSAFAC-0000029931,2020,2024-04-09 16:53:34,QFDWZ7HMLM53,912189932,rthompson@pancarefl.org,"pancare of florida, inc",fl,disseminated,,N
+3,2020-09-GSAFAC-0000007546,2020,2024-03-25 18:31:49,VS8LQK5RAFK6,381986574,callen@centralcityhealth.com,"detroit central city cmh, inc.",mi,disseminated,,N
+3,2020-09-GSAFAC-0000032965,2020,2024-03-28 21:13:26,VS8LQK5RAFK6,381986574,callen@centralcityhealth.com,"detroit central city cmh, inc.",mi,disseminated,,N
+4,2020-12-CENSUS-0000193162,2020,2022-01-25 00:00:00,GSA_MIGRATION,237359018,yl11219@gmail.com,united talmudical academy of boro park and subsidiaries,ny,disseminated,,N
+4,2020-12-GSAFAC-0000043192,2020,2024-06-25 19:22:50,C6JMYM7VHAL7,237359018,yl11219@gmail.com,united talmudical academy of boro park and subsidiaries,ny,disseminated,,N
+5,2020-06-GSAFAC-0000043289,2020,2024-06-10 21:19:07,US18M75S1ML3,470870772,cmitchell@ihimv.org,"island health, inc.",ma,disseminated,,N
+5,2020-06-GSAFAC-0000044795,2020,2024-06-24 15:14:05,US18M75S1ML3,470870772,cmitchell@ihimv.org,"island health, inc.",ma,disseminated,,N
+6,2020-12-CENSUS-0000252722,2020,2022-03-30 00:00:00,GSA_MIGRATION,236000414,manager@manortwp.org,manor township,pa,disseminated,,N
+6,2020-12-GSAFAC-0000044485,2020,2024-06-20 13:40:27,CDZWR57KE223,236000414,manager@manortwp.org,manor township,pa,disseminated,,N
+7,2020-12-GSAFAC-0000043794,2020,2024-08-09 14:27:13,YRLVBH8FJ9L6,520749775,mbrosnan@aapt.org,"american association of physics teachers, inc.",md,disseminated,,N
+7,2020-12-GSAFAC-0000060198,2020,2024-10-10 14:31:02,YRLVBH8FJ9L6,520749775,mbrosnan@aapt.org,"american association of physics teachers, inc.",md,disseminated,,N
+8,2020-09-CENSUS-0000132044,2020,2021-09-30 00:00:00,GSA_MIGRATION,956000733,stefannie.kodrat@longbeach.gov,city of long beach,ca,disseminated,,N
+8,2020-09-GSAFAC-0000061773,2020,2024-11-07 21:18:26,RXK8HCFVLS49,956000733,stefannie.kodrat@longbeach.gov,city of long beach,ca,disseminated,,N
+9,2020-12-GSAFAC-0000347011,2020,2024-12-20 22:34:08,V7M9C3ZFCLS7,522326356,jread@cuahsi.org,"consortium of universities for the advancement of hydrological science, inc.",ma,disseminated,,N
+9,2020-12-GSAFAC-0000357157,2020,2025-02-28 20:46:23,V7M9C3ZFCLS7,522326356,jread@cuahsi.org,"consortium of universities for the advancement of hydrological science, inc.",ma,disseminated,,N
+10,2020-06-CENSUS-0000904475,2020,2021-01-28 00:00:00,GSA_MIGRATION,860287804,dfrain@mohave.edu,mohave county community college district,az,disseminated,,N
+10,2020-06-CENSUS-0000130477,2020,2021-02-03 00:00:00,GSA_MIGRATION,860287804,dfrain@mohave.edu,mohave county community college district,az,disseminated,,N
+11,2020-12-CENSUS-0000252660,2020,2022-12-30 00:00:00,GSA_MIGRATION,216000418,joconyer@ci.camden.nj.us,city of camden,nj,disseminated,,N
+11,2020-06-CENSUS-0000156704,2020,2023-03-29 00:00:00,GSA_MIGRATION,216000418,joconyer@ci.camden.nj.us,city of camden,nj,disseminated,,N

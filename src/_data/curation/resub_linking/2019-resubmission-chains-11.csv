@@ -1,0 +1,24 @@
+chain_index,report_id,audit_year,fac_accepted_date,auditee_uei,auditee_ein,auditee_email,auditee_name,auditee_state,prior_submission_status,prior_resubmission_meta,skipped
+0,2019-12-GSAFAC-0000020794,2019,2024-02-01 01:09:10,V7M9C3ZFCLS7,522326356,jread@cuahsi.org,"consortium of universities for the advancement of hydrologic science, inc.",ma,disseminated,,N
+0,2019-12-GSAFAC-0000025498,2019,2024-03-13 21:22:57,V7M9C3ZFCLS7,522326356,jread@cuahsi.org,"consortium of universities for the advancement of hydrologic science, inc.",ma,disseminated,,N
+1,2019-12-CENSUS-0000193162,2019,2020-12-31 00:00:00,GSA_MIGRATION,237359018,yl11219@gmail.com,united talmudical academy of boro park and subsidiaries,ny,disseminated,,N
+1,2019-12-GSAFAC-0000043164,2019,2024-06-25 19:21:47,C6JMYM7VHAL7,237359018,yl11219@gmail.com,united talmudical academy of boro park and subsidiaries,ny,disseminated,,N
+2,2019-06-CENSUS-0000205057,2019,2020-08-21 00:00:00,GSA_MIGRATION,946050067,harris@hbmwd.com,humboldt bay municipal water district,ca,disseminated,,N
+2,2019-06-GSAFAC-0000388168,2019,2026-07-16 23:15:09,CEZLLFQMDLK3,946050067,harris@hbmwd.com,humboldt bay municipal water district,ca,disseminated,,N
+3,2019-06-CENSUS-0000200964,2019,2019-10-09 00:00:00,GSA_MIGRATION,366004344,kpicciolini@crsd1275.org,chicago ridge public school district 127.5,il,disseminated,,N
+3,2019-06-CENSUS-0000248989,2019,2020-01-24 00:00:00,GSA_MIGRATION,366004344,kpicciolini@crsd1275.org,chicago ridge public school district 127.5,il,disseminated,,N
+4,2019-06-CENSUS-0000234876,2019,2019-10-16 00:00:00,GSA_MIGRATION,208168472,vtran@voa.org,victory cathedral voa elderly hsg inc. victory cathedral apts 017ee098,va,disseminated,,N
+4,2019-10-CENSUS-0000248953,2019,2020-01-17 00:00:00,GSA_MIGRATION,208168472,vtran@voa.org,victory cathedral voa elderly hsg inc. victory cathedral apts 017ee098,va,disseminated,,N
+5,2019-06-CENSUS-0000098945,2019,2019-11-20 00:00:00,GSA_MIGRATION,720851751,jjkarle@yahoo.com,"cane river children's services, inc.",la,disseminated,,N
+5,2019-06-CENSUS-0000248996,2019,2020-01-28 00:00:00,GSA_MIGRATION,720851751,jjkarle@yahoo.com,"cane river children's services, inc.",la,disseminated,,N
+6,2019-06-CENSUS-0000205208,2019,2019-11-20 00:00:00,GSA_MIGRATION,383251354,rsnow@cfhinc.org,"center for family health, inc.",mi,disseminated,,N
+6,2019-12-CENSUS-0000249436,2019,2020-04-22 00:00:00,GSA_MIGRATION,383251354,rsnow@cfhinc.org,"center for family health, inc.",mi,disseminated,,N
+7,2019-04-CENSUS-0000248744,2019,2019-11-20 00:00:00,GSA_MIGRATION,841548541,thershfeldt@cditeam.org,community development institute - head start,co,disseminated,,Y
+7,2019-05-CENSUS-0000248743,2019,2019-11-20 00:00:00,GSA_MIGRATION,841548541,thershfeldt@cditeam.org,community development institute - head start,co,disseminated,,Y
+7,2019-06-CENSUS-0000238304,2019,2020-05-15 00:00:00,GSA_MIGRATION,841548541,thershfeldt@cditeam.org,community development institute - head start,co,disseminated,,Y
+8,2019-03-CENSUS-0000226281,2019,2019-11-20 00:00:00,GSA_MIGRATION,521926756,jboaitey@astc.org,association of science technology centers,dc,disseminated,,N
+8,2019-12-CENSUS-0000249842,2019,2020-10-29 00:00:00,GSA_MIGRATION,521926756,jboaitey@astc.org,association of science technology centers,dc,disseminated,,N
+9,2019-06-CENSUS-0000169698,2019,2020-01-08 00:00:00,GSA_MIGRATION,246002165,mboardman@nebpanthers.com,northeast bradford school district,pa,disseminated,,N
+9,2019-06-CENSUS-0000248950,2019,2020-01-16 00:00:00,GSA_MIGRATION,246002165,mboardman@nebpanthers.com,northeast bradford school district,pa,disseminated,,N
+10,2019-09-CENSUS-0000216667,2019,2020-02-10 00:00:00,GSA_MIGRATION,820579904,tom.kalbfleisch@wcaa.us,wayne county airport authority,mi,disseminated,,N
+10,2019-12-CENSUS-0000249484,2019,2020-05-13 00:00:00,GSA_MIGRATION,820579904,tom.kalbfleisch@wcaa.us,wayne county airport authority,mi,disseminated,,N
